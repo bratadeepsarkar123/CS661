@@ -1,0 +1,154 @@
+#!/usr/bin/env python3
+"""Enrich institution_master: fix missing geo, join NIRF ids/ranks."""
+from __future__ import annotations
+
+import re
+import sys
+from difflib import SequenceMatcher
+from pathlib import Path
+
+import pandas as pd
+
+sys.path.insert(0, str(Path(__file__).parent))
+from config import DATA_DIR, PROCESSED_DIR, RAW_DIR  # noqa: E402
+from nirf_utils import best_nirf_match, load_nirf_id_overrides  # noqa: E402
+
+MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
+GEO_PATH = RAW_DIR / "india_higher_education.csv"
+NIRF_PATH = RAW_DIR / "nirf_rankings.csv"
+OPENALEX_PATH = PROCESSED_DIR / "openalex_institutions.parquet"
+
+
+def _norm(s: str) -> str:
+    s = str(s or "").lower()
+    s = re.sub(r"[^a-z0-9]+", " ", s)
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _sim(a: str, b: str) -> float:
+    return SequenceMatcher(None, _norm(a), _norm(b)).ratio()
+
+
+def load_geo_lookup() -> pd.DataFrame:
+    if not GEO_PATH.exists():
+        return pd.DataFrame()
+    geo = pd.read_csv(GEO_PATH, encoding="latin-1")
+    geo["name_norm"] = geo["proper_university"].fillna(geo.get("university", "")).map(_norm)
+    return geo
+
+
+def load_nirf_best() -> pd.DataFrame:
+    if not NIRF_PATH.exists():
+        return pd.DataFrame()
+    nirf = pd.read_csv(NIRF_PATH)
+    # Prefer Overall category; keep best (lowest) rank per institute_id
+    overall = nirf[nirf["ranking_category"] == "Overall"].copy()
+    if overall.empty:
+        overall = nirf.copy()
+    overall = overall.sort_values(["institute_id", "rank"]).drop_duplicates("institute_id", keep="first")
+    overall["name_norm"] = overall["institute_name"].map(_norm)
+    return overall
+
+
+def load_nirf_all() -> pd.DataFrame:
+    if not NIRF_PATH.exists():
+        return pd.DataFrame()
+    nirf = pd.read_csv(NIRF_PATH)
+    nirf["name_norm"] = nirf["institute_name"].map(_norm)
+    return nirf
+
+
+def fill_geo_from_sources(master: pd.DataFrame, geo: pd.DataFrame, oa: pd.DataFrame) -> pd.DataFrame:
+    master = master.copy()
+    oa_idx = oa.set_index("openalex_id") if not oa.empty else pd.DataFrame()
+
+    for idx, row in master.iterrows():
+        if pd.notna(row.get("latitude")) and pd.notna(row.get("longitude")):
+            continue
+        oid = row.get("openalex_id")
+        if not oa.empty and oid in oa_idx.index:
+            o = oa_idx.loc[oid]
+            if pd.notna(o.get("latitude")) and pd.notna(o.get("longitude")):
+                master.at[idx, "latitude"] = o["latitude"]
+                master.at[idx, "longitude"] = o["longitude"]
+                continue
+        if not geo.empty:
+            best = None
+            best_score = 0.0
+            for _, g in geo.iterrows():
+                score = _sim(row["canonical_name"], g["name_norm"])
+                if row.get("city") and pd.notna(g.get("lat")):
+                    city_norm = _norm(row["city"])
+                    if city_norm and city_norm in g["name_norm"]:
+                        score += 0.05
+                if score > best_score:
+                    best_score = score
+                    best = g
+            if best is not None and best_score >= 0.65:
+                master.at[idx, "latitude"] = best["lat"]
+                master.at[idx, "longitude"] = best["long"]
+
+    return master
+
+
+def join_nirf(master: pd.DataFrame, nirf: pd.DataFrame, nirf_all: pd.DataFrame) -> pd.DataFrame:
+    master = master.copy()
+    for col in ["nirf_institute_id", "nirf_rank", "nirf_score", "nirf_year"]:
+        if col not in master.columns:
+            master[col] = pd.NA
+
+    if nirf.empty:
+        return master
+
+    overrides = load_nirf_id_overrides()
+    for idx, row in master.iterrows():
+        name = row["canonical_name"]
+        if name in overrides:
+            iid = overrides[name]
+            hits = nirf_all[nirf_all["institute_id"] == iid]
+            if not hits.empty:
+                best = hits.sort_values("rank").iloc[0]
+                master.at[idx, "nirf_institute_id"] = best["institute_id"]
+                master.at[idx, "nirf_rank"] = int(best["rank"])
+                master.at[idx, "nirf_score"] = float(best["score"])
+                master.at[idx, "nirf_year"] = int(best["nirf_year"])
+                continue
+
+        best, best_score = best_nirf_match(
+            name,
+            city=row.get("city"),
+            state=row.get("state"),
+            nirf=nirf,
+        )
+        if best is not None and best_score >= 0.72:
+            master.at[idx, "nirf_institute_id"] = best["institute_id"]
+            master.at[idx, "nirf_rank"] = int(best["rank"])
+            master.at[idx, "nirf_score"] = float(best["score"])
+            master.at[idx, "nirf_year"] = int(best["nirf_year"])
+    return master
+
+
+def main() -> None:
+    if not MASTER_PATH.exists():
+        raise FileNotFoundError(f"Run 03_build_institution_master.py first: {MASTER_PATH}")
+
+    master = pd.read_csv(MASTER_PATH)
+    geo = load_geo_lookup()
+    nirf = load_nirf_best()
+    nirf_all = load_nirf_all()
+    oa = pd.read_parquet(OPENALEX_PATH) if OPENALEX_PATH.exists() else pd.DataFrame()
+
+    before_missing = master["latitude"].isna().sum()
+    master = fill_geo_from_sources(master, geo, oa)
+    master = join_nirf(master, nirf, nirf_all)
+
+    master.to_csv(MASTER_PATH, index=False)
+    after_missing = master["latitude"].isna().sum()
+    nirf_matched = master["nirf_institute_id"].notna().sum()
+    print(f"Updated -> {MASTER_PATH}")
+    print(f"  Geo fixed: {before_missing - after_missing} rows (missing lat/lon now: {after_missing})")
+    print(f"  NIRF matched: {nirf_matched} / {len(master)}")
+
+
+if __name__ == "__main__":
+    main()

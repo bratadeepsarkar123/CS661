@@ -1,0 +1,841 @@
+institute_id,institute_name,city,state,score,rank,ranking_category,nirf_year
+IR-G-U-0101,Indian Agricultural Research Institute,New Delhi,Delhi,83.16,1,Agriculture,2023
+IR-G-U-0171,ICAR - National Dairy Research Institute,Karnal,Haryana,70.45,2,Agriculture,2023
+IR-G-U-0381,"Punjab Agricultural University, Ludhiana",Ludhiana,Punjab,65.98,3,Agriculture,2023
+IR-G-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,63.68,4,Agriculture,2023
+IR-G-U-0485,Tamil Nadu Agricultural University,Coimbatore,Tamil Nadu,61.71,5,Agriculture,2023
+IR-G-U-0518,"Indian Veterinary Research Institute, Izatnagar",Bareilly,Uttar Pradesh,61.62,6,Agriculture,2023
+IR-G-U-0293,"Central Institute of Fisheries Education, Fishries University",Mumbai,Maharashtra,61.03,7,Agriculture,2023
+IR-G-U-0554,"G.B. Pant Universtiy of Agriculture and Technology, Pantnagar",Pantnagar,Uttarakhand,60.03,8,Agriculture,2023
+IR-G-U-0200,"Sher-e-Kashmir University of Agricultural Science & Technology of Kashmir, Srinagar",Srinagar,Jammu and Kashmir,59.5,9,Agriculture,2023
+IR-G-U-0159,Chaudhary Charan Singh Haryana Agricultural University,Hisar,Haryana,59.07,10,Agriculture,2023
+IR-G-U-0248,"University of Agricultural Sciences, Bangalore",Bangalore,Karnataka,56.74,11,Agriculture,2023
+IR-G-U-0487,Tamil Nadu Veterinary & Animal Sciences University,Chennai,Tamil Nadu,54.2,12,Agriculture,2023
+IR-G-C-45375,"National Institute of Food Technology, Entrepreneurship and Management",Thanjavur,Tamil Nadu,53.27,13,Agriculture,2023
+IR-G-U-0179,Chaudhary Sarwan Kumar Himachal Pardesh Krishi Vishvavidyalaya,Kangra,Himachal Pradesh,52.67,14,Agriculture,2023
+IR-G-U-0257,"Kerala Agricultural University, Thrissur",Thrissur,Kerala,52.52,15,Agriculture,2023
+IR-G-U-0568,Bidhan Chandra Krishi Vishwavidyalaya,Nadia,West Bengal,52.07,16,Agriculture,2023
+IR-G-U-0181,"Dr. Y.S. Parmar University of Horticulture and Forestry, Solan",Solan,Himachal Pradesh,51.63,17,Agriculture,2023
+IR-G-U-0123,Anand Agricultural University,Anand,Gujarat,51.13,18,Agriculture,2023
+IR-G-U-0048,"Assam Agricultural University, Jorhat",Jorhat,Assam,50.35,19,Agriculture,2023
+IR-G-U-0004,"Acharya NG Ranga Agricultural University, Guntur",Guntur,Andhra Pradesh,48.57,20,Agriculture,2023
+IR-G-U-0375,Guru Angad Dev Veterinary & Animal Sciences University,Ludhiana,Punjab,47.79,21,Agriculture,2023
+IR-G-U-0360,"Orissa University of Agriculture & Technology, Bhubaneswar",Khordha,Odisha,47.6,22,Agriculture,2023
+IR-G-U-0443,Annamalai University,Annamalainagar,Tamil Nadu,47.46,23,Agriculture,2023
+IR-G-S-8898,"National Institute of Food Technology, Enterprenurship & Management",Sonipat,Haryana,47.14,24,Agriculture,2023
+IR-G-U-0259,Kerala University of Fisheries & Ocean Studies,Kochi,Kerala,46.86,25,Agriculture,2023
+IR-G-U-0591,"West Bengal University of Animal and Fishery Sciences, Kolkata",Kolkata,West Bengal,46.64,26,Agriculture,2023
+IR-G-U-0379,Lovely Professional University,Phagwara,Punjab,46.6,27,Agriculture,2023
+IR-G-U-0246,University of Agricultural Sciences,Dharwad,Karnataka,46.5,28,Agriculture,2023
+IR-G-U-0336,Central Agricultural University,Imphal West,Manipur,45.46,29,Agriculture,2023
+IR-G-U-0504,"Chandra Shekhar Azad University of Agriculture & Technology, Kanpur",Kanpur,Uttar Pradesh,43.87,30,Agriculture,2023
+IR-G-U-0039,Sri Venkateswara Veterinary University,Tirupati,Andhra Pradesh,43.83,31,Agriculture,2023
+IR-G-S-14553,National Institute of Agricultural Extension Management,Hyderabad,Telangana,43.46,32,Agriculture,2023
+IR-G-U-0075,"Dr Rajendra Prasad Central Agricultural University, Samastipur",Samastipur,Bihar,43.34,33,Agriculture,2023
+IR-G-U-0165,Lala lajpat Rai University of Veterinary and Animal Sciences,Hisar,Haryana,43.26,34,Agriculture,2023
+IR-G-U-0531,"Acharya Narendra Deva University of Agriculture & Technology, Kumarganj, Ayodhya",Faizabad,Uttar Pradesh,43.13,35,Agriculture,2023
+IR-G-U-0315,"Mahatma Phule Krishi Vidyapeeth, Rahuri",Rahuri,Maharashtra,42.89,36,Agriculture,2023
+IR-G-U-0231,"Karnataka Vetrinary, Animal & Fisheries Science University, Nandinagar",Bidar,Karnataka,42.57,37,Agriculture,2023
+IR-G-U-0140,Junagadh Agricultural University,Junagadh,Gujarat,42.34,38,Agriculture,2023
+IR-G-U-0247,"University of Agricultural Sciences, Raichur",Raichur,Karnataka,42.23,39,Agriculture,2023
+IR-G-U-0665,Tamil Nadu Dr.J.Jayalalithaa Fisheries University,Nagapattinam,Tamil Nadu,42.1,40,Agriculture,2023
+IR-A-U-0560,Indian Institute of Technology Roorkee,Roorkee,Uttarakhand,83.21,1,Architecture,2023
+IR-A-U-0263,National Institute of Technology Calicut,Kozhikode,Kerala,78.18,2,Architecture,2023
+IR-A-U-0573,Indian Institute of Technology Kharagpur,Kharagpur,West Bengal,76.82,3,Architecture,2023
+IR-A-U-0467,National Institute of Technology Tiruchirappalli,Tiruchirappalli,Tamil Nadu,65.42,4,Architecture,2023
+IR-A-U-0116,School of Planning and Architecture New Delhi,New Delhi,Delhi,65.14,5,Architecture,2023
+IR-A-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,65.13,6,Architecture,2023
+IR-A-U-0127,Centre for Environmental Planning and Technology University,Ahmedabad,Gujarat,63.97,7,Architecture,2023
+IR-A-U-0357,National Institute of Technology Rourkela,Rourkela,Odisha,63.76,8,Architecture,2023
+IR-A-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,62.38,9,Architecture,2023
+IR-A-U-0584,"Indian Institute of Engineering Science and Technology, Shibpur",Howrah,West Bengal,62.09,10,Architecture,2023
+IR-A-U-0626,School of Planning and Architecture Bhopal,Bhopal,Madhya Pradesh,61.99,11,Architecture,2023
+IR-A-U-0334,"Visvesvaraya National Institute of Technology, Nagpur",Nagpur,Maharashtra,61.89,12,Architecture,2023
+IR-A-U-0410,Malaviya National Institute of Technology,Jaipur,Rajasthan,60.23,13,Architecture,2023
+IR-A-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,58.97,14,Architecture,2023
+IR-A-U-0747,Chandigarh University,Mohali,Punjab,58.59,15,Architecture,2023
+IR-A-U-0379,Lovely Professional University,Phagwara,Punjab,58.25,16,Architecture,2023
+IR-A-C-43708,College of Engineering Trivandrum,Thiruvananthapuram,Kerala,56.54,17,Architecture,2023
+IR-A-U-0627,"School of Planning & Architecture, Vijayawada",Vijayawada,Andhra Pradesh,55.72,18,Architecture,2023
+IR-A-U-0072,National Institute of Technology Patna,Patna,Bihar,54.79,19,Architecture,2023
+IR-A-U-0202,Birla Institute of Technology,Ranchi,Jharkhand,54.43,20,Architecture,2023
+IR-A-C-57952,BMS College of Architecture,Bengaluru,Karnataka,54.21,21,Architecture,2023
+IR-A-U-0146,Nirma University,Ahmedabad,Gujarat,54.06,22,Architecture,2023
+IR-A-C-1331,M. S. Ramaiah Institute of Technology,Bengaluru,Karnataka,53.69,23,Architecture,2023
+IR-A-U-0284,Maulana Azad National Institute of Technology,Bhopal,Madhya Pradesh,53.64,24,Architecture,2023
+IR-A-C-46330,"Manipal School of Architecture and Planning, MAHE",Udupi,Karnataka,53.13,25,Architecture,2023
+IR-A-U-0201,Shri Mata Vaishno Devi University,Katra,Jammu and Kashmir,51.94,26,Architecture,2023
+IR-A-U-0461,Dr. M. G. R. Educational and Research Institute,Chennai,Tamil Nadu,51.8,27,Architecture,2023
+IR-A-U-0189,National Institute of Technology Hamirpur,Hamirpur,Himachal Pradesh,51.54,28,Architecture,2023
+IR-A-C-29341,Chandigarh College of Architecture Sector-12,Chandigarh,Chandigarh,51.38,29,Architecture,2023
+IR-A-U-0373,Chitkara University,Rajpura,Punjab,51.06,30,Architecture,2023
+IR-C-C-6355,Miranda House,Delhi,Delhi,74.81,1,College,2023
+IR-C-C-6377,Hindu College,Delhi,Delhi,72.39,2,College,2023
+IR-C-C-43921,Presidency College,Chennai,Tamil Nadu,71.18,3,College,2023
+IR-C-C-41046,PSGR Krishnammal College for Women,Coimbatore,Tamil Nadu,71.05,4,College,2023
+IR-C-C-11881,St. Xavier`s College,Kolkata,West Bengal,70.8,5,College,2023
+IR-C-C-22462,Atma Ram Sanatan Dharm College,New Delhi,Delhi,70.78,6,College,2023
+IR-C-C-44006,Loyola College,Chennai,Tamil Nadu,70.46,7,College,2023
+IR-C-I-1317,Rama Krishna Mission Vivekananda Centenary College,Kolkata,West Bengal,69.53,8,College,2023
+IR-C-C-6385,Kirori Mal College,Delhi,Delhi,69.32,9,College,2023
+IR-C-C-6415,Lady Shri Ram College For Women,New Delhi,Delhi,69.32,9,College,2023
+IR-C-C-6419,Shri Ram College of Commerce,Delhi,Delhi,68.86,11,College,2023
+IR-C-C-6425,Hans Raj College,Delhi,Delhi,68.42,12,College,2023
+IR-C-C-6369,Sri Venkateswara College,Delhi,Delhi,67.89,13,College,2023
+IR-C-C-22470,St. Stephens's College,Delhi,Delhi,67.83,14,College,2023
+IR-C-C-11926,Ramakrishna Mission Vidyamandira,Howrah,West Bengal,67.38,15,College,2023
+IR-C-C-43965,Madras Christian College,Chennai,Tamil Nadu,66.61,16,College,2023
+IR-C-C-6409,Deshbandhu College,New Delhi,Delhi,65.22,17,College,2023
+IR-C-C-36513,Thiagarajar College,Madurai,Tamil Nadu,65.08,18,College,2023
+IR-C-C-42814,Ramakrishna Mission Residential College,Kolkata,West Bengal,65.05,19,College,2023
+IR-C-C-41124,PSG College of Arts and Science,Coimbatore,Tamil Nadu,64.61,20,College,2023
+IR-C-C-6380,Acharya Narendra Dev College,New Delhi,Delhi,63.85,21,College,2023
+IR-C-C-6387,Bhaskaracharya College of Applied Sciences,New Delhi,Delhi,63.59,22,College,2023
+IR-C-C-27608,Lady Irwin College,Delhi,Delhi,63.59,22,College,2023
+IR-C-C-6361,Deen Dayal Upadhyaya College,New Delhi,Delhi,63.42,24,College,2023
+IR-C-C-35860,St. Joseph's College,Tiruchirappalli,Tamil Nadu,62.48,25,College,2023
+IR-C-C-43671,"University College, Thiruvananthapuram",Thiruvananthapuram,Kerala,62.25,26,College,2023
+IR-C-C-41157,V.O. Chidambaram College,Tuticorin,Tamil Nadu,62.14,27,College,2023
+IR-C-C-6367,Daulat Ram College,Delhi,Delhi,61.95,28,College,2023
+IR-C-C-41106,Kongunadu Arts & Science College,Coimbatore,Tamil Nadu,61.56,29,College,2023
+IR-C-C-11691,Rajagiri College of Social Sciences,Ernakulam,Kerala,61.3,30,College,2023
+IR-C-C-6429,Gargi College,Delhi,Delhi,60.4,31,College,2023
+IR-C-C-6426,Shaheed Rajguru College of Applied Sciences for Women,Delhi,Delhi,60.01,32,College,2023
+IR-C-C-41126,Sri Krishna Arts and Science College,Coimbatore,Tamil Nadu,59.74,33,College,2023
+IR-C-C-35825,Bishop Heber College,Tiruchirappalli,Tamil Nadu,59.15,34,College,2023
+IR-C-C-8308,Pachhunga University College,Aizawl,Mizoram,59.15,34,College,2023
+IR-C-C-6391,Maitreyi College,New Delhi,Delhi,58.39,36,College,2023
+IR-C-C-43931,Stella Maris College for Women,Chennai,Tamil Nadu,58.19,37,College,2023
+IR-C-C-6420,Jesus & Mary College,New Delhi,Delhi,58.05,38,College,2023
+IR-C-C-43964,Madras School of Social Work,Chennai,Tamil Nadu,58.02,39,College,2023
+IR-C-C-35787,"Holy Cross College, Tiruchirappalli",Tiruchirappalli,Tamil Nadu,57.88,40,College,2023
+IR-C-C-11582,St. Teresa's College,Ernakulam,Kerala,57.59,41,College,2023
+IR-C-C-36411,Sacred Heart College (Autonomous),Tirupattur,Tamil Nadu,57.49,42,College,2023
+IR-C-C-6417,Kamala Nehru College,Delhi,Delhi,57.29,43,College,2023
+IR-C-C-41035,Government Arts College,Coimbatore,Tamil Nadu,57.09,44,College,2023
+IR-C-C-43767,"Mar Ivanios College, Thiruvananthapuram",Thiruvananthapuram,Kerala,56.89,45,College,2023
+IR-C-C-11697,Maharaja's College,Ernakulam,Kerala,56.85,46,College,2023
+IR-C-C-6413,Sri Guru Gobind Singh College of Commerce,Delhi,Delhi,56.71,47,College,2023
+IR-C-C-6432,Dyal Singh College,New Delhi,Delhi,56.6,48,College,2023
+IR-C-C-6431,Ramanujan College,New Delhi,Delhi,56.22,49,College,2023
+IR-C-C-6502,Kanchi Mamunivar Govt. Institute for Postgraduate Studies and Research,Puducherry,Pondicherry,56.12,50,College,2023
+IR-C-C-43711,"Bishop Moore College, Mavelikkara, Alappuzha",Alappuzha,Kerala,56.05,51,College,2023
+IR-C-C-29284,"Govt Home Science College,Sector-10",Chandigarh,Chandigarh,55.94,52,College,2023
+IR-C-C-8169,"St. Thomas College, Thrissur",Thrissur,Kerala,55.91,53,College,2023
+IR-C-C-11831,"S.B. College, Changanacherry",Kottayam,Kerala,55.9,54,College,2023
+IR-C-C-41173,St.Xavier's College,Palayamkottai,Tamil Nadu,55.73,55,College,2023
+IR-C-C-35832,Jamal Mohamed College,Tiruchirappalli,Tamil Nadu,55.2,56,College,2023
+IR-C-C-33688,College of Social Work Nirmala Niketan,Mumbai,Maharashtra,55.18,57,College,2023
+IR-C-C-36547,The American College,Madurai,Tamil Nadu,55.04,58,College,2023
+IR-C-C-8010,"St. Joseph's College, Devagiri",Kozhikode,Kerala,55.0,59,College,2023
+IR-C-N-6,Queen Mary`s College,Chennai,Tamil Nadu,54.87,60,College,2023
+IR-C-C-29454,I.C.College of Home Science,Hisar,Haryana,54.85,61,College,2023
+IR-C-C-6353,Sri Guru Tegh Bahadur Khalsa College,Delhi,Delhi,54.83,62,College,2023
+IR-C-C-28526,"Alagappa Government Arts College, Karaikudi",Karaikudi,Tamil Nadu,54.76,63,College,2023
+IR-C-C-19059,Raja Narendra Lal Khan Women's College - Autonomous,Midnapore,West Bengal,54.64,64,College,2023
+IR-C-C-20830,St. Joseph`s College of Commerce,Bengaluru,Karnataka,54.58,65,College,2023
+IR-C-C-43946,Women`s Christian College,Chennai,Tamil Nadu,54.57,66,College,2023
+IR-C-C-6371,Ramjas College,Delhi,Delhi,54.47,67,College,2023
+IR-C-C-6357,Shyam Lal College,Delhi,Delhi,54.44,68,College,2023
+IR-C-C-36579,Ayya Nadar Janaki Ammal College,Sivakasi,Tamil Nadu,54.41,69,College,2023
+IR-C-C-6366,Shivaji College,Delhi,Delhi,54.27,70,College,2023
+IR-C-I-1293,Sri Ramakrishna Mission Vidyalaya College of Arts and Science,Coimbatore,Tamil Nadu,54.24,71,College,2023
+IR-C-C-11708,Sacred Heart College,Kochi,Kerala,54.21,72,College,2023
+IR-C-C-19103,Midnapore College,Paschim Medinipur,West Bengal,54.2,73,College,2023
+IR-C-C-35868,Dhanalakshmi Srinivasan College of Arts & Science for Women,Perambalur,Tamil Nadu,54.09,74,College,2023
+IR-C-C-43705,"Govt. College for Women, Thiruvananthapuram",Thiruvananthapuram,Kerala,54.03,75,College,2023
+IR-C-C-36502,Virudhunagar Hindu Nadars Senthikumara Nadar College,Virudhunagar,Tamil Nadu,54.01,76,College,2023
+IR-C-C-11742,Union Christian College,Ernakulam,Kerala,53.97,77,College,2023
+IR-C-C-11991,Bethune College,Kolkata,West Bengal,53.94,78,College,2023
+IR-C-I-1385,Fergusson College (Autonomous),Pune,Maharashtra,53.88,79,College,2023
+IR-C-C-16897,St. Aloysius College,Mangaluru,Karnataka,53.87,80,College,2023
+IR-C-C-6412,Maharaja Agrasen College,Delhi,Delhi,53.73,81,College,2023
+IR-C-C-43998,Guru Nanak College,Chennai,Tamil Nadu,53.66,82,College,2023
+IR-C-C-18938,"Government Institute of Science, Nagpur",Nagpur,Maharashtra,53.54,83,College,2023
+IR-C-C-6376,Delhi College of Arts & Commerce,South West,Delhi,53.51,84,College,2023
+IR-C-C-11771,CMS College Kottayam,Kottayam,Kerala,53.21,85,College,2023
+IR-C-C-41100,Sri Ramakrishna College of Arts and Science,Coimbatore,Tamil Nadu,53.19,86,College,2023
+IR-C-C-11815,Mar Athanasius College,Kothamangalam,Kerala,53.17,87,College,2023
+IR-C-C-41154,Nesamony Memorial Christian College,Marthandam,Tamil Nadu,53.11,88,College,2023
+IR-C-C-41042,Dr. S. N. S. Rajalakshmi College of Arts and Science,Coimbatore,Tamil Nadu,53.0,89,College,2023
+IR-C-C-35878,National College,Tiruchirappalli,Tamil Nadu,52.95,90,College,2023
+IR-C-C-41184,Women's Christian College,Nagercoil,Tamil Nadu,52.89,91,College,2023
+IR-C-C-6411,Shaheed Sukhdev College of Business Studies,New Delhi,Delhi,52.88,92,College,2023
+IR-C-C-6381,Keshav Mahavidyalya,Delhi,Delhi,52.72,93,College,2023
+IR-C-C-43902,Ethiraj College for Women,Chennai,Tamil Nadu,52.64,94,College,2023
+IR-C-C-41073,N. G. M. College,Pollachi,Tamil Nadu,52.59,95,College,2023
+IR-C-C-5855,St. Xavier's College,Ahmedabad,Gujarat,52.57,96,College,2023
+IR-C-C-6365,Indraprastha College for Women,Delhi,Delhi,52.49,97,College,2023
+IR-C-C-25990,St. Francis College for Women,Hyderabad,Telangana,52.48,98,College,2023
+IR-C-C-41044,Dr.G.R.Damodaran College of Science,Coimbatore,Tamil Nadu,52.45,99,College,2023
+IR-C-C-11964,Scottish Church College,Kolkata,West Bengal,52.36,100,College,2023
+IR-N-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,84.08,1,Dental,2023
+IR-N-C-7254,"Manipal College of Dental Sciences, Manipal",Manipal,Karnataka,77.51,2,Dental,2023
+IR-N-I-1110,Dr. D. Y. Patil Vidyapeeth,Pune,Maharashtra,73.08,3,Dental,2023
+IR-N-C-28507,Maulana Azad Institute of Dental Sciences,Delhi,Delhi,70.96,4,Dental,2023
+IR-N-C-19320,A.B.Shetty Memorial Institute of Dental Sciences,Mangaluru,Karnataka,69.21,5,Dental,2023
+IR-N-N-352,SRM Dental College,Chennai,Tamil Nadu,67.02,6,Dental,2023
+IR-N-I-1486,Sri Ramachandra Institute of Higher Education and Research,Chennai,Tamil Nadu,63.96,7,Dental,2023
+IR-N-C-7240,"Manipal College of Dental Sciences, Mangalore",Mangalore,Karnataka,62.44,8,Dental,2023
+IR-N-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,61.56,9,Dental,2023
+IR-N-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,61.14,10,Dental,2023
+IR-N-C-35008,JSS Dental College and Hospital,Mysuru,Karnataka,60.06,11,Dental,2023
+IR-N-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,59.82,12,Dental,2023
+IR-N-C-30756,Postgraduate Institute of Dental Sciences,Rohtak,Haryana,59.66,13,Dental,2023
+IR-N-U-0724,M.S. Ramaiah University of Applied Sciences,Bangalore,Karnataka,58.99,14,Dental,2023
+IR-N-C-14033,"Govt. Dental College, Nagpur",Nagpur,Maharashtra,58.87,15,Dental,2023
+IR-N-U-0465,Meenakshi Academy of Higher Education and Research,Chennai,Tamil Nadu,58.31,16,Dental,2023
+IR-N-U-0295,Datta Meghe Institute of Higher Education and Research,Wardha,Maharashtra,57.63,17,Dental,2023
+IR-N-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,56.05,18,Dental,2023
+IR-N-N-153,Nair Hospital Dental College,Mumbai,Maharashtra,55.7,19,Dental,2023
+IR-N-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,55.68,20,Dental,2023
+IR-N-C-5910,Government Dental College,Ahmedabad,Gujarat,55.62,21,Dental,2023
+IR-N-N-238,SDM College of Dental Sciences & Hospital,Dharwad,Karnataka,55.29,22,Dental,2023
+IR-N-U-0461,Dr. M. G. R. Educational and Research Institute,Chennai,Tamil Nadu,55.15,23,Dental,2023
+IR-N-C-40178,"Government Dental College, Bangalore",Bangalore,Karnataka,54.94,24,Dental,2023
+IR-N-C-48122,Government Dental College,Thiruvananthapuram,Kerala,54.49,25,Dental,2023
+IR-N-C-30570,"Vishnu Dental College, Bheemavaram",Bhimavaram,Andhra Pradesh,54.41,26,Dental,2023
+IR-N-C-45605,Chettinad Dental College and Research Institute,Kelambakkam,Tamil Nadu,53.9,27,Dental,2023
+IR-N-C-8528,Yenepoya Dental College,Mangaluru,Karnataka,53.77,28,Dental,2023
+IR-N-C-13829,"Govt. Dental College, Mumbai",Mumbai,Maharashtra,53.09,29,Dental,2023
+IR-N-C-29150,Christian Dental College,Ludhiana,Punjab,52.84,30,Dental,2023
+IR-N-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,52.83,31,Dental,2023
+IR-N-C-29701,"Govt. Dental College, Indore",Indore,Madhya Pradesh,51.63,32,Dental,2023
+IR-N-N-73,Army College of Dental Sciences,Secunderabad,Telangana,51.53,33,Dental,2023
+IR-N-U-0078,Panjab University,Chandigarh,Chandigarh,51.21,34,Dental,2023
+IR-N-C-24504,KLE Vishwanath Katti Institute of Dental Sciences,Belgaum,Karnataka,50.62,35,Dental,2023
+IR-N-C-40193,Bapuji Dental College & Hospital,Davangere,Karnataka,50.52,36,Dental,2023
+IR-N-C-5911,Karnavati University,Gandhinagar,Gujarat,49.87,37,Dental,2023
+IR-N-U-0321,"Padmashree Dr. D. Y. Patil Vidyapeeth, Mumbai",Mumbai,Maharashtra,49.69,38,Dental,2023
+IR-N-C-35422,Bharati Vidyapeeth (Deemed to be University) Dental College and Hospital,Pune,Maharashtra,49.48,39,Dental,2023
+IR-N-C-49744,Saraswati Dental College & Hospital,Lucknow,Uttar Pradesh,49.32,40,Dental,2023
+IR-E-U-0456,Indian Institute of Technology Madras,Chennai,Tamil Nadu,89.79,1,Engineering,2023
+IR-E-I-1074,Indian Institute of Technology Delhi,New Delhi,Delhi,87.09,2,Engineering,2023
+IR-E-U-0306,Indian Institute of Technology Bombay,Mumbai,Maharashtra,80.74,3,Engineering,2023
+IR-E-I-1075,Indian Institute of Technology Kanpur,Kanpur,Uttar Pradesh,80.65,4,Engineering,2023
+IR-E-U-0560,Indian Institute of Technology Roorkee,Roorkee,Uttarakhand,75.64,5,Engineering,2023
+IR-E-U-0573,Indian Institute of Technology Kharagpur,Kharagpur,West Bengal,73.76,6,Engineering,2023
+IR-E-U-0053,Indian Institute of Technology Guwahati,Guwahati,Assam,70.32,7,Engineering,2023
+IR-E-U-0013,Indian Institute of Technology Hyderabad,Hyderabad,Telangana,70.28,8,Engineering,2023
+IR-E-U-0467,National Institute of Technology Tiruchirappalli,Tiruchirappalli,Tamil Nadu,69.71,9,Engineering,2023
+IR-E-U-0575,Jadavpur University,Kolkata,West Bengal,67.04,10,Engineering,2023
+IR-E-U-0490,Vellore Institute of Technology,Vellore,Tamil Nadu,66.59,11,Engineering,2023
+IR-E-U-0237,"National Institute of Technology Karnataka, Surathkal",Surathkal,Karnataka,65.26,12,Engineering,2023
+IR-E-U-0439,Anna University,Chennai,Tamil Nadu,65.06,13,Engineering,2023
+IR-E-U-0273,Indian Institute of Technology Indore,Indore,Madhya Pradesh,63.93,14,Engineering,2023
+IR-E-U-0701,Indian Institute of Technology (Banaras Hindu University) Varanasi,Varanasi,Uttar Pradesh,63.74,15,Engineering,2023
+IR-E-U-0357,National Institute of Technology Rourkela,Rourkela,Odisha,62.79,16,Engineering,2023
+IR-E-U-0205,Indian Institute of Technology (Indian School of Mines),Dhanbad,Jharkhand,62.37,17,Engineering,2023
+IR-E-U-0139,Indian Institute of Technology Gandhinagar,Gandhinagar,Gujarat,61.66,18,Engineering,2023
+IR-E-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,61.54,19,Engineering,2023
+IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),Patiala,Punjab,61.24,20,Engineering,2023
+IR-E-U-0025,National Institute of Technology Warangal,Warangal,Telangana,61.13,21,Engineering,2023
+IR-E-U-0378,Indian Institute of Technology Ropar,Rupnagar,Punjab,60.51,22,Engineering,2023
+IR-E-U-0263,National Institute of Technology Calicut,Kozhikode,Kerala,60.28,23,Engineering,2023
+IR-E-U-0308,Institute of Chemical Technology,Mumbai,Maharashtra,59.7,24,Engineering,2023
+IR-E-U-0391,Birla Institute of Technology & Science -Pilani,Pilani,Rajasthan,59.52,25,Engineering,2023
+IR-E-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,59.3,26,Engineering,2023
+IR-E-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,58.92,27,Engineering,2023
+IR-E-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,58.56,28,Engineering,2023
+IR-E-U-0098,Delhi Technological University,New Delhi,Delhi,58.34,29,Engineering,2023
+IR-E-U-0395,Indian Institute of Technology Jodhpur,Jodhpur,Rajasthan,58.03,30,Engineering,2023
+IR-E-U-0497,Amity University,Gautam Budh Nagar,Uttar Pradesh,57.3,31,Engineering,2023
+IR-E-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,57.26,32,Engineering,2023
+IR-E-U-0184,Indian Institute of Technology Mandi,Mandi,Himachal Pradesh,56.49,33,Engineering,2023
+IR-E-U-0476,Shanmugha Arts Science Technology & Research Academy,Thanjavur,Tamil Nadu,56.21,34,Engineering,2023
+IR-E-U-0584,"Indian Institute of Engineering Science and Technology, Shibpur",Howrah,West Bengal,56.12,35,Engineering,2023
+IR-E-U-0458,Kalasalingam Academy of Research and Education,Srivilliputtur,Tamil Nadu,55.69,36,Engineering,2023
+IR-E-U-0410,Malaviya National Institute of Technology,Jaipur,Rajasthan,55.6,37,Engineering,2023
+IR-E-U-0747,Chandigarh University,Mohali,Punjab,55.2,38,Engineering,2023
+IR-E-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,55.14,39,Engineering,2023
+IR-E-U-0055,National Institute of Technology Silchar,Silchar,Assam,55.07,40,Engineering,2023
+IR-E-U-0064,Indian Institute of Technology Patna,Patna,Bihar,55.03,41,Engineering,2023
+IR-E-U-0334,"Visvesvaraya National Institute of Technology, Nagpur",Nagpur,Maharashtra,55.03,41,Engineering,2023
+IR-E-U-0577,National Institute of Technology Durgapur,Durgapur,West Bengal,53.91,43,Engineering,2023
+IR-E-U-0020,Koneru Lakshmaiah Education Foundation University (K L College of Engineering),Vaddeswaram,Andhra Pradesh,53.69,44,Engineering,2023
+IR-E-C-16604,Sri Sivasubramaniya Nadar College of Engineering,Kalavakkam,Tamil Nadu,52.88,45,Engineering,2023
+IR-E-U-0374,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Jalandhar,Punjab,52.85,46,Engineering,2023
+IR-E-U-0355,Indian Institute of Technology Bhubaneswar,Bhubaneswar,Odisha,52.42,47,Engineering,2023
+IR-E-U-0255,Indian Institute of Space Science and Technology,Thiruvananthapuram,Kerala,52.04,48,Engineering,2023
+IR-E-U-0530,Motilal Nehru National Institute of Technology,Prayagraj,Uttar Pradesh,51.89,49,Engineering,2023
+IR-E-U-0379,Lovely Professional University,Phagwara,Punjab,51.47,50,Engineering,2023
+IR-E-U-0622,National Institute of Technology Delhi,Delhi,Delhi,51.41,51,Engineering,2023
+IR-E-U-0249,Visvesvaraya Technological University,Belgaum,Karnataka,51.38,52,Engineering,2023
+IR-E-U-0202,Birla Institute of Technology,Ranchi,Jharkhand,50.68,53,Engineering,2023
+IR-E-U-0564,UPES,Dehradun,Uttarakhand,50.63,54,Engineering,2023
+IR-E-U-0014,International Institute of Information Technology Hyderabad,Hyderabad,Telangana,50.33,55,Engineering,2023
+IR-E-U-0072,National Institute of Technology Patna,Patna,Bihar,50.16,56,Engineering,2023
+IR-E-U-0297,Defence Institute of Advanced Technology,Pune,Maharashtra,50.14,57,Engineering,2023
+IR-E-U-0172,National Institute of Technology Kurukshetra,Kurukshetra,Haryana,49.89,58,Engineering,2023
+IR-E-U-0844,"Indian Institute of Technology, Tirupati",Yerpedu,Andhra Pradesh,49.8,59,Engineering,2023
+IR-E-C-6379,Netaji Subhas University of Technology (NSUT),South West,Delhi,49.68,60,Engineering,2023
+IR-E-C-7252,Manipal Institute of Technology,Manipal,Karnataka,49.62,61,Engineering,2023
+IR-E-U-0555,Graphic Era University,Dehradun,Uttarakhand,49.59,62,Engineering,2023
+IR-E-C-37013,PSG College of Technology,Coimbatore,Tamil Nadu,49.43,63,Engineering,2023
+IR-E-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,49.3,64,Engineering,2023
+IR-E-U-0149,Sardar Vallabhbhai National Institute of Technology,Surat,Gujarat,49.0,65,Engineering,2023
+IR-E-U-0474,Sathyabama Institute of Science and Technology,Chennai,Tamil Nadu,48.87,66,Engineering,2023
+IR-E-U-0906,Indian Institute of Technology Jammu,Jammu,Jammu and Kashmir,48.15,67,Engineering,2023
+IR-E-U-0389,Banasthali Vidyapith,Banasthali,Rajasthan,47.93,68,Engineering,2023
+IR-E-U-0878,Indian Institute of Technology Palakkad,Palakkad,Kerala,47.86,69,Engineering,2023
+IR-E-U-0092,"National Institute of Technology, Raipur",Raipur,Chhattisgarh,47.69,70,Engineering,2023
+IR-E-U-0042,University of Hyderabad,Hyderabad,Telangana,47.51,71,Engineering,2023
+IR-E-U-0619,National Institute of Technology Meghalaya,Shillong,Meghalaya,47.27,72,Engineering,2023
+IR-E-C-41593,"College of Engineering, Pune",Pune,Maharashtra,46.89,73,Engineering,2023
+IR-E-U-0221,International Institute of Information Technology Bangalore,Bengaluru,Karnataka,46.58,74,Engineering,2023
+IR-E-U-0105,Indraprastha Institute of Information Technology Delhi,New Delhi,Delhi,46.57,75,Engineering,2023
+IR-E-U-0749,Manipal University Jaipur,Jaipur,Rajasthan,46.39,76,Engineering,2023
+IR-E-C-36995,Sri Krishna College of Engineering and Technology,Coimbatore,Tamil Nadu,46.03,77,Engineering,2023
+IR-E-C-1331,M. S. Ramaiah Institute of Technology,Bengaluru,Karnataka,45.99,78,Engineering,2023
+IR-E-U-0535,Rajiv Gandhi Institute of Petroleum Technology,Amethi,Uttar Pradesh,45.97,79,Engineering,2023
+IR-E-U-0284,Maulana Azad National Institute of Technology,Bhopal,Madhya Pradesh,45.9,80,Engineering,2023
+IR-E-U-0946,Indian Institute of Technology Bhilai,Raipur,Chhattisgarh,45.86,81,Engineering,2023
+IR-E-U-0197,National Institute of Technology Srinagar,Srinagar,Jammu and Kashmir,45.7,82,Engineering,2023
+IR-E-U-0017,Jawaharlal Nehru Technological University,Hyderabad,Telangana,44.75,83,Engineering,2023
+IR-E-U-0099,Guru Gobind Singh Indraprastha University,New Delhi,Delhi,44.31,84,Engineering,2023
+IR-E-U-0043,"Vignan's Foundation for Science, Technology and Research",Guntur,Andhra Pradesh,43.74,85,Engineering,2023
+IR-E-C-16626,Rajalakshmi Engineering College,Chennai,Tamil Nadu,43.46,86,Engineering,2023
+IR-E-U-0489,Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology,Chennai,Tamil Nadu,43.43,87,Engineering,2023
+IR-E-U-0267,Atal Bihari Vajpayee Indian Institute of Information Technology and Management,Gwalior,Madhya Pradesh,43.41,88,Engineering,2023
+IR-E-U-0516,Indian Institute of Information Technology Allahabad,Prayagraj (Allahabad),Uttar Pradesh,43.29,89,Engineering,2023
+IR-E-U-0620,National Institute of Technology Goa,Ponda,Goa,43.28,90,Engineering,2023
+IR-E-U-0493,National Institute of Technology Agartala,Agratala,Tripura,43.24,91,Engineering,2023
+IR-E-U-0373,Chitkara University,Rajpura,Punjab,42.48,92,Engineering,2023
+IR-E-U-0899,Indian Institute Of Technology Dharwad,Dharwad,Karnataka,42.36,93,Engineering,2023
+IR-E-C-24004,AU College of Engineering (A),Visakhapatnam,Andhra Pradesh,42.32,94,Engineering,2023
+IR-E-U-0613,National Institute of Technology Manipur,Imphal,Manipur,42.28,95,Engineering,2023
+IR-E-C-1269,R.V. College of Engineering,Bengaluru,Karnataka,42.22,96,Engineering,2023
+IR-E-U-0286,"Pandit Dwarka Prasad Mishra Indian Institute of Information Technology, Design and Manufacturing (IIITDM)",Jabalpur,Madhya Pradesh,42.14,97,Engineering,2023
+IR-E-C-19754,SR University,Warangal,Telangana,42.09,98,Engineering,2023
+IR-E-U-0155,"Amity University Haryana, Gurgaon","Gurugram, Haryana",Haryana,41.99,99,Engineering,2023
+IR-E-C-30045,"C.V. Raman Global University, Odisha",Bhubaneswar,Odisha,41.93,100,Engineering,2023
+IR-L-U-0238,National Law School of India University,Bengaluru,Karnataka,80.52,1,Law,2023
+IR-L-U-0111,National Law University,New Delhi,Delhi,73.91,2,Law,2023
+IR-L-N-18,Nalsar University of Law,Hyderabad,Telangana,73.76,3,Law,2023
+IR-L-U-0585,The West Bengal National University of Juridicial Sciences,Kolkata,West Bengal,69.34,4,Law,2023
+IR-L-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,68.3,5,Law,2023
+IR-L-C-19328,Symbiosis Law School,Pune,Maharashtra,66.67,6,Law,2023
+IR-L-U-0134,Gujarat National Law University,Gandhinagar,Gujarat,65.69,7,Law,2023
+IR-L-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,64.04,8,Law,2023
+IR-L-U-0573,Indian Institute of Technology Kharagpur,Kharagpur,West Bengal,62.2,9,Law,2023
+IR-L-U-0498,Babasheb Bhimrao Ambedkar University,Lucknow,Uttar Pradesh,61.05,10,Law,2023
+IR-L-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,59.37,11,Law,2023
+IR-L-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,59.2,12,Law,2023
+IR-L-U-0217,Christ University,Bengaluru,Karnataka,57.78,13,Law,2023
+IR-L-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,56.51,14,Law,2023
+IR-L-U-0476,Shanmugha Arts Science Technology & Research Academy,Thanjavur,Tamil Nadu,56.37,15,Law,2023
+IR-L-U-0379,Lovely Professional University,Phagwara,Punjab,55.41,16,Law,2023
+IR-L-U-0103,Indian Law Institute,New Delhi,Delhi,55.34,17,Law,2023
+IR-L-U-0285,"National Law Institute University, Bhopal",Bhopal,Madhya Pradesh,54.68,18,Law,2023
+IR-L-U-0099,Guru Gobind Singh Indraprastha University,New Delhi,Delhi,54.13,19,Law,2023
+IR-L-U-0386,"The Rajiv Gandhi National University of Law, Patiala",Patiala,Punjab,51.53,20,Law,2023
+IR-L-U-0511,"Dr. Ram Manohar Lohiya National Law University, Lucknow",Lucknow,Uttar Pradesh,50.9,21,Law,2023
+IR-L-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,50.18,22,Law,2023
+IR-L-U-0155,"Amity University Haryana, Gurgaon",Gurugram,Haryana,49.55,23,Law,2023
+IR-L-U-0600,National University of Study & Research in Law,Ranchi,Jharkhand,48.2,24,Law,2023
+IR-L-U-0213,Alliance University,Bengaluru,Karnataka,48.13,25,Law,2023
+IR-L-C-22215,"Army Institute of Law, Sector-68",Mohali,Punjab,47.65,26,Law,2023
+IR-L-U-0146,Nirma University,Ahmedabad,Gujarat,47.57,27,Law,2023
+IR-L-U-0677,National Law University and Judicial Academy,Kamrup,Assam,46.6,28,Law,2023
+IR-L-U-0749,Manipal University Jaipur,Jaipur,Rajasthan,46.54,29,Law,2023
+IR-L-U-0358,National Law University,Cuttack,Odisha,46.02,30,Law,2023
+IR-M-S-8890,Indian Institute of Management Ahmedabad,Ahmedabad,Gujarat,83.2,1,Management,2023
+IR-M-S-8903,Indian Institute of Management Bangalore,Bengaluru,Karnataka,80.89,2,Management,2023
+IR-M-S-8909,Indian Institute of Management Kozhikode,Kozhikode,Kerala,76.48,3,Management,2023
+IR-M-S-8972,Indian Institute of Management Calcutta,Kolkata,West Bengal,75.53,4,Management,2023
+IR-M-I-1074,Indian Institute of Technology Delhi,New Delhi,Delhi,74.14,5,Management,2023
+IR-M-S-8959,Indian Institute of Management Lucknow,Lucknow,Uttar Pradesh,74.11,6,Management,2023
+IR-M-S-8931,"National Institute of Industrial Engineering, Mumbai",Mumbai,Maharashtra,71.99,7,Management,2023
+IR-M-S-8918,Indian Institute of Management Indore,Indore,Madhya Pradesh,71.95,8,Management,2023
+IR-M-S-132,XLRI-Xavier School of Management,Jamshedpur,Jharkhand,70.75,9,Management,2023
+IR-M-U-0306,Indian Institute of Technology Bombay,Mumbai,Maharashtra,68.11,10,Management,2023
+IR-M-S-8868,Indian Institute of Management Raipur,Raipur,Chhattisgarh,66.18,11,Management,2023
+IR-M-S-8895,Indian Institute of Management Rohtak,Rohtak,Haryana,65.88,12,Management,2023
+IR-M-I-1170,Management Development Institute,Gurugram,Haryana,64.88,13,Management,2023
+IR-M-U-0573,Indian Institute of Technology Kharagpur,Kharagpur,West Bengal,63.92,14,Management,2023
+IR-M-U-0456,Indian Institute of Technology Madras,Chennai,Tamil Nadu,62.83,15,Management,2023
+IR-M-S-8942,Indian Institute of Management Udaipur,Udaipur,Rajasthan,62.78,16,Management,2023
+IR-M-C-19343,Symbiosis Institute of Business Management,Pune,Maharashtra,62.74,17,Management,2023
+IR-M-U-0560,Indian Institute of Technology Roorkee,Roorkee,Uttarakhand,62.14,18,Management,2023
+IR-M-S-8967,Indian Institute of Management Kashipur,Kashipur,Uttarakhand,61.07,19,Management,2023
+IR-M-I-1044,S.P. Jain Institute of Management & Research,Mumbai,Maharashtra,60.91,20,Management,2023
+IR-M-N-10,SVKM`s Narsee Monjee Institute of Management Studies,Mumbai,Maharashtra,60.84,21,Management,2023
+IR-M-S-8948,Indian Institute of Management Tiruchirappalli,Tiruchirappalli,Tamil Nadu,60.83,22,Management,2023
+IR-M-I-1075,Indian Institute of Technology Kanpur,Kanpur,Uttar Pradesh,60.63,23,Management,2023
+IR-M-S-8904,Indian Institute of Management Ranchi,Ranchi,Jharkhand,59.99,24,Management,2023
+IR-M-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,59.78,25,Management,2023
+IR-M-S-8937,Indian Institute of Management Shillong,Shillong,Meghalaya,59.12,26,Management,2023
+IR-M-U-0102,Indian Institute of Foreign Trade,New Delhi,Delhi,58.6,27,Management,2023
+IR-M-U-0497,Amity University,Gautam Budh Nagar,Uttar Pradesh,58.56,28,Management,2023
+IR-M-U-1007,Indian Institute of Management Visakhapatnam,Visakhapatnam,Andhra Pradesh,57.57,29,Management,2023
+IR-M-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,57.02,30,Management,2023
+IR-M-N-16,Great Lakes Institute of Management,Chennai,Tamil Nadu,56.62,31,Management,2023
+IR-M-U-0379,Lovely Professional University,Phagwara,Punjab,56.44,32,Management,2023
+IR-M-S-87,Goa Institute of Management,Sanquelim,Goa,56.28,33,Management,2023
+IR-M-I-1064,International Management Institute,New Delhi,Delhi,56.05,34,Management,2023
+IR-M-U-0467,National Institute of Technology Tiruchirappalli,Tiruchirappalli,Tamil Nadu,56.01,35,Management,2023
+IR-M-U-0747,Chandigarh University,Mohali,Punjab,55.98,36,Management,2023
+IR-M-S-14875,MICA,Ahmedabad,Gujarat,55.47,37,Management,2023
+IR-M-S-394,"Institute of Management Technology, Ghaziabad",Ghaziabad,Uttar Pradesh,55.26,38,Management,2023
+IR-M-U-0564,UPES,Dehradun,Uttarakhand,54.83,39,Management,2023
+IR-M-U-0012,"ICFAI Foundation for Higher Education, Hyderabad",Hyderabad,Telangana,54.29,40,Management,2023
+IR-M-U-1004,Indian Institute of Management Jammu (IIMJ),Jammu,Jammu and Kashmir,54.17,41,Management,2023
+IR-M-S-156,T. A. Pai Management Institute Manipal,Manipal,Karnataka,53.48,42,Management,2023
+IR-M-S-15962,Indian Institute of Management,Nagpur,Maharashtra,53.41,43,Management,2023
+IR-M-U-0205,Indian Institute of Technology (Indian School of Mines),Dhanbad,Jharkhand,52.64,44,Management,2023
+IR-M-C-56616,K J Somaiya Institute of Management Studies and Research,Mumbai Suburban,Maharashtra,52.14,45,Management,2023
+IR-M-U-0715,XIM University,Bhubaneswar,Odisha,52.09,46,Management,2023
+IR-M-S-3283,Jaipuria Institute of Management,Noida,Uttar Pradesh,51.81,47,Management,2023
+IR-M-S-354,Birla Institute of Management Technology,Greater Noida,Uttar Pradesh,51.74,48,Management,2023
+IR-M-U-0439,Anna University,Chennai,Tamil Nadu,51.67,49,Management,2023
+IR-M-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),Patiala,Punjab,51.67,49,Management,2023
+IR-M-S-16881,"Indian Institute of Management, Amritsar",Amritsar,Punjab,51.3,51,Management,2023
+IR-M-U-0020,Koneru Lakshmaiah Education Foundation University (K L College of Engineering),Vaddeswaram,Andhra Pradesh,51.29,52,Management,2023
+IR-M-U-1006,Indian Institute of Management Bodh Gaya,Gaya,Bihar,51.28,53,Management,2023
+IR-M-S-92,Institute of Rural Management Anand,Anand,Gujarat,51.19,54,Management,2023
+IR-M-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,51.18,55,Management,2023
+IR-M-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,51.07,56,Management,2023
+IR-M-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,51.03,57,Management,2023
+IR-M-S-6,Indian Institute of Management Sambalpur,Sambalpur,Odisha,50.9,58,Management,2023
+IR-M-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,50.78,59,Management,2023
+IR-M-U-0217,Christ University,Bengaluru,Karnataka,50.69,60,Management,2023
+IR-M-U-0146,Nirma University,Ahmedabad,Gujarat,50.04,61,Management,2023
+IR-M-S-17295,"Great Lakes Institute of Management,Gurgaon",Gurgaon,Haryana,49.95,62,Management,2023
+IR-M-I-1066,Fore School of Management,New Delhi,Delhi,49.85,63,Management,2023
+IR-M-U-0373,Chitkara University,Rajpura,Punjab,49.8,64,Management,2023
+IR-M-U-0555,Graphic Era University,Dehradun,Uttarakhand,49.77,65,Management,2023
+IR-M-U-0099,Guru Gobind Singh Indraprastha University,New Delhi,Delhi,49.71,66,Management,2023
+IR-M-I-1124,International Management Institute,Bhubaneswar,Odisha,49.3,67,Management,2023
+IR-M-U-0267,Atal Bihari Vajpayee Indian Institute of Information Technology and Management,Gwalior,Madhya Pradesh,49.13,68,Management,2023
+IR-M-U-0410,Malaviya National Institute of Technology,Jaipur,Rajasthan,48.98,69,Management,2023
+IR-M-I-1408,International Management Institute,Kolkata,West Bengal,48.43,70,Management,2023
+IR-M-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,48.34,71,Management,2023
+IR-M-U-0735,BML Munjal University,Gurgaon,Haryana,48.27,72,Management,2023
+IR-M-C-34129,Principal L N Welingkar Institute of Management Development and Research,Mumbai,Maharashtra,48.21,73,Management,2023
+IR-M-I-1238,Krea University,"Sri City, Chittoor",Andhra Pradesh,48.0,74,Management,2023
+IR-M-U-0263,National Institute of Technology Calicut,Kozhikode,Kerala,47.99,75,Management,2023
+IR-M-S-14565,National Institute of Bank Management,Pune,Maharashtra,47.08,76,Management,2023
+IR-M-U-0202,Birla Institute of Technology,Ranchi,Jharkhand,46.96,77,Management,2023
+IR-M-U-0498,Babasheb Bhimrao Ambedkar University,Lucknow,Uttar Pradesh,46.61,78,Management,2023
+IR-M-U-0749,Manipal University Jaipur,Jaipur,Rajasthan,46.23,79,Management,2023
+IR-M-S-309,Jaipuria Institute of Management,Jaipur,Rajasthan,46.15,80,Management,2023
+IR-M-U-0155,"Amity University Haryana, Gurgaon",Gurugram,Haryana,46.07,81,Management,2023
+IR-M-U-0078,Panjab University,Chandigarh,Chandigarh,46.05,82,Management,2023
+IR-M-S-164,Rajagiri Business School,Cochin,Kerala,46.03,83,Management,2023
+IR-M-I-1132,Institute of Management Technology,Hyderabad,Telangana,45.78,84,Management,2023
+IR-M-U-0223,"Jain university,Bangalore",Bengaluru,Karnataka,45.63,85,Management,2023
+IR-M-N-4,Bharathidasan Institute of Management,Tiruchirappalli,Tamil Nadu,45.59,86,Management,2023
+IR-M-U-0213,Alliance University,Bengaluru,Karnataka,45.55,87,Management,2023
+IR-M-C-32855,Jagan Institute of Management Studies,Delhi,Delhi,45.54,88,Management,2023
+IR-M-C-37013,PSG College of Technology,Coimbatore,Tamil Nadu,45.44,89,Management,2023
+IR-M-C-36557,Thiagarajar School of Management,Madurai,Tamil Nadu,44.79,90,Management,2023
+IR-M-U-0643,Galgotias University,Gautam Budh Nagar,Uttar Pradesh,44.3,91,Management,2023
+IR-M-S-419,Jaipuria Institute of Management,Lucknow,Uttar Pradesh,44.22,92,Management,2023
+IR-M-U-0056,Tezpur University,Tezpur,Assam,44.01,93,Management,2023
+IR-M-U-0147,Pandit Deendayal Energy University,Gandhinagar,Gujarat,43.92,94,Management,2023
+IR-M-U-0249,Visvesvaraya Technological University,Belgaum,Karnataka,43.84,95,Management,2023
+IR-M-U-0107,Jamia Hamdard,New Delhi,Delhi,43.74,96,Management,2023
+IR-M-S-14553,National Institute of Agricultural Extension Management,Hyderabad,Telangana,43.47,97,Management,2023
+IR-M-S-15911,Indian Institute of Management,Sirmaur,Himachal Pradesh,43.26,98,Management,2023
+IR-M-C-32887,New Delhi Institute Of Management,Delhi,Delhi,42.61,99,Management,2023
+IR-M-U-0162,Guru Jambheshwar University of Science and Technology,Hisar,Haryana,42.13,100,Management,2023
+IR-D-N-15,"All India Institute of Medical Sciences, Delhi",New Delhi,Delhi,94.32,1,Medical,2023
+IR-D-U-0079,Post Graduate Institute of Medical Education and Research,Chandigarh,Chandigarh,81.1,2,Medical,2023
+IR-D-C-45654,Christian Medical College,Vellore,Tamil Nadu,75.29,3,Medical,2023
+IR-D-U-0236,National Institute of Mental Health & Neuro Sciences,Bangalore,Karnataka,72.46,4,Medical,2023
+IR-D-U-0368,Jawaharlal Institute of Post Graduate Medical Education & Research,Puducherry,Pondicherry,72.1,5,Medical,2023
+IR-D-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,70.84,6,Medical,2023
+IR-D-N-33,Sanjay Gandhi Postgraduate Institute of Medical Sciences,Lucknow,Uttar Pradesh,69.62,7,Medical,2023
+IR-D-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,68.75,8,Medical,2023
+IR-D-C-7242,"Kasturba Medical College, Manipal",Manipal,Karnataka,66.19,9,Medical,2023
+IR-D-U-0266,Sree Chitra Tirunal Institute for Medical Sciences and Technology,Thiruvananthapuram,Kerala,65.24,10,Medical,2023
+IR-D-C-49008,Madras Medical College & Government General Hospital,Chennai,Tamil Nadu,64.43,11,Medical,2023
+IR-D-U-0523,King George`s Medical University,Lucknow,Uttar Pradesh,63.93,12,Medical,2023
+IR-D-U-0689,All India Institute of Medical Sciences Jodhpur,Jodhpur,Rajasthan,62.43,13,Medical,2023
+IR-D-C-32922,Vardhman Mahavir Medical College & Safdarjung Hospital,New Delhi,Delhi,61.73,14,Medical,2023
+IR-D-I-1110,Dr. D. Y. Patil Vidyapeeth,Pune,Maharashtra,61.35,15,Medical,2023
+IR-D-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,60.66,16,Medical,2023
+IR-D-U-0688,All India Institute of Medical Sciences Bhubaneswar,Khordha,Odisha,60.65,17,Medical,2023
+IR-D-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,60.61,18,Medical,2023
+IR-D-C-40453,St. John's Medical College,Bengaluru,Karnataka,60.49,19,Medical,2023
+IR-D-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,60.47,20,Medical,2023
+IR-D-I-1486,Sri Ramachandra Institute of Higher Education and Research,Chennai,Tamil Nadu,60.44,21,Medical,2023
+IR-D-U-0691,"All India Institute of Medical Sciences, Rishikesh",Rishikesh,Uttarakhand,60.06,22,Medical,2023
+IR-D-U-0106,Institute of Liver and Biliary Sciences,New Delhi,Delhi,59.59,23,Medical,2023
+IR-D-C-16428,Institute of Post Graduate Medical Education & Research,Kolkata,West Bengal,58.49,24,Medical,2023
+IR-D-U-0295,Datta Meghe Institute of Higher Education and Research,Wardha,Maharashtra,58.48,25,Medical,2023
+IR-D-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,57.39,26,Medical,2023
+IR-D-U-0686,"All India Institute of Medical Sciences, Patna",Patna,Bihar,57.3,27,Medical,2023
+IR-D-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,56.92,28,Medical,2023
+IR-D-U-0107,Jamia Hamdard,New Delhi,Delhi,56.36,29,Medical,2023
+IR-D-C-7251,"Kasturba Medical College, Mangalore",Mangalore,Karnataka,56.3,30,Medical,2023
+IR-D-C-22461,Lady Hardinge Medical College,New Delhi,Delhi,55.78,31,Medical,2023
+IR-D-C-29442,Govt. Medical College & Hospital,Chandigarh,Chandigarh,55.34,32,Medical,2023
+IR-D-C-6414,Maulana Azad Medical College,Delhi,Delhi,55.34,32,Medical,2023
+IR-D-U-0168,Maharishi Markandeshwar,Ambala,Haryana,54.87,34,Medical,2023
+IR-D-C-29255,Dayanand Medical College,Ludhiana,Punjab,54.75,35,Medical,2023
+IR-D-I-1409,University College of Medical Sciences,Delhi,Delhi,54.68,36,Medical,2023
+IR-D-C-35009,"JSS Medical College, Mysore",Mysore,Karnataka,54.13,37,Medical,2023
+IR-D-U-0687,All India Institute of Medical Sciences Bhopal,Bhopal,Madhya Pradesh,53.94,38,Medical,2023
+IR-D-U-0690,All India Institute of Medical Sciences Raipur,Raipur,Chhattisgarh,53.92,39,Medical,2023
+IR-D-C-45515,PSG Institute of Medical Sciences & Research,Coimbatore,Tamil Nadu,53.68,40,Medical,2023
+IR-D-C-5838,Gujarat Cancer & Research Institute,Ahmadabad,Gujarat,52.61,41,Medical,2023
+IR-D-C-29209,"Christian Medical College, Brown Road, Ludhiana",Ludhiana,Punjab,52.46,42,Medical,2023
+IR-D-C-40345,M. S. Ramaiah Medical College,Bengaluru,Karnataka,52.44,43,Medical,2023
+IR-D-C-48124,Government Medical College Thiruvananthapuram,Thiruvananthapuram,Kerala,51.91,44,Medical,2023
+IR-D-C-16424,Medical College,Kolkata,West Bengal,51.17,45,Medical,2023
+IR-D-N-17,Sawai Man Singh Medical College,Jaipur,Rajasthan,51.12,46,Medical,2023
+IR-D-C-47762,Mahatma Gandhi Medical College and Research Institute,Puducherry,Pondicherry,50.86,47,Medical,2023
+IR-D-U-0451,Chettinad Academy of Research and Education,"Kelambakkam, Chengalpattu District",Tamil Nadu,50.72,48,Medical,2023
+IR-D-C-30767,"Pt. B.D.Sharma, PGIMS",Rohtak,Haryana,49.73,49,Medical,2023
+IR-D-C-6051,B. J. Medical College,Ahmadabad,Gujarat,49.71,50,Medical,2023
+IR-O-U-0456,Indian Institute of Technology Madras,Chennai,Tamil Nadu,86.69,1,Overall,2023
+IR-O-U-0220,Indian Institute of Science,Bengaluru,Karnataka,83.09,2,Overall,2023
+IR-O-I-1074,Indian Institute of Technology Delhi,New Delhi,Delhi,82.16,3,Overall,2023
+IR-O-U-0306,Indian Institute of Technology Bombay,Mumbai,Maharashtra,81.28,4,Overall,2023
+IR-O-I-1075,Indian Institute of Technology Kanpur,Kanpur,Uttar Pradesh,77.23,5,Overall,2023
+IR-O-N-15,"All India Institute of Medical Sciences, Delhi",New Delhi,Delhi,72.14,6,Overall,2023
+IR-O-U-0573,Indian Institute of Technology Kharagpur,Kharagpur,West Bengal,71.82,7,Overall,2023
+IR-O-U-0560,Indian Institute of Technology Roorkee,Roorkee,Uttarakhand,71.66,8,Overall,2023
+IR-O-U-0053,Indian Institute of Technology Guwahati,Guwahati,Assam,68.78,9,Overall,2023
+IR-O-U-0109,Jawaharlal Nehru University,New Delhi,Delhi,67.44,10,Overall,2023
+IR-O-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,67.21,11,Overall,2023
+IR-O-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,65.52,12,Overall,2023
+IR-O-U-0575,Jadavpur University,Kolkata,West Bengal,64.3,13,Overall,2023
+IR-O-U-0013,Indian Institute of Technology Hyderabad,Hyderabad,Telangana,64.24,14,Overall,2023
+IR-O-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,62.74,15,Overall,2023
+IR-O-U-0234,Manipal Academy of Higher Education-Manipal,Manipal,Karnataka,62.71,16,Overall,2023
+IR-O-U-0490,Vellore Institute of Technology,Vellore,Tamil Nadu,62.7,17,Overall,2023
+IR-O-U-0439,Anna University,Chennai,Tamil Nadu,62.36,18,Overall,2023
+IR-O-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,62.27,19,Overall,2023
+IR-O-U-0042,University of Hyderabad,Hyderabad,Telangana,60.49,20,Overall,2023
+IR-O-U-0467,National Institute of Technology Tiruchirappalli,Tiruchirappalli,Tamil Nadu,60.43,21,Overall,2023
+IR-O-U-0120,University of Delhi,Delhi,Delhi,60.24,22,Overall,2023
+IR-O-U-0570,Calcutta University,Kolkata,West Bengal,60.22,23,Overall,2023
+IR-O-U-0139,Indian Institute of Technology Gandhinagar,Gandhinagar,Gujarat,58.89,24,Overall,2023
+IR-O-U-0391,Birla Institute of Technology & Science -Pilani,Pilani,Rajasthan,58.76,25,Overall,2023
+IR-O-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,58.35,26,Overall,2023
+IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,58.14,27,Overall,2023
+IR-O-U-0273,Indian Institute of Technology Indore,Indore,Madhya Pradesh,58.0,28,Overall,2023
+IR-O-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,57.52,29,Overall,2023
+IR-O-U-0304,Homi Bhabha National Institute,Mumbai,Maharashtra,57.09,30,Overall,2023
+IR-O-U-0701,Indian Institute of Technology (Banaras Hindu University) Varanasi,Varanasi,Uttar Pradesh,57.08,31,Overall,2023
+IR-O-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,56.44,32,Overall,2023
+IR-O-U-0378,Indian Institute of Technology Ropar,Rupnagar,Punjab,56.16,33,Overall,2023
+IR-O-U-0305,Indian Institute of Science Education & Research Pune,Pune,Maharashtra,56.05,34,Overall,2023
+IR-O-U-0323,Savitribai Phule Pune University,Pune,Maharashtra,55.78,35,Overall,2023
+IR-O-U-0447,Bharathiar University,Coimbatore,Tamil Nadu,55.58,36,Overall,2023
+IR-O-U-0357,National Institute of Technology Rourkela,Rourkela,Odisha,55.52,37,Overall,2023
+IR-O-U-0237,"National Institute of Technology Karnataka, Surathkal",Surathkal,Karnataka,55.47,38,Overall,2023
+IR-O-U-0368,Jawaharlal Institute of Post Graduate Medical Education & Research,Puducherry,Pondicherry,55.41,39,Overall,2023
+IR-O-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),Patiala,Punjab,55.17,40,Overall,2023
+IR-O-U-0308,Institute of Chemical Technology,Mumbai,Maharashtra,54.53,41,Overall,2023
+IR-O-U-0205,Indian Institute of Technology (Indian School of Mines),Dhanbad,Jharkhand,53.86,42,Overall,2023
+IR-O-U-0572,Indian Institute of Science Education & Research Kolkata,Mohanpur,West Bengal,53.72,43,Overall,2023
+IR-O-U-0078,Panjab University,Chandigarh,Chandigarh,53.31,44,Overall,2023
+IR-O-U-0747,Chandigarh University,Mohali,Punjab,53.29,45,Overall,2023
+IR-O-U-0379,Lovely Professional University,Phagwara,Punjab,53.22,46,Overall,2023
+IR-O-U-0260,Kerala University,Thiruvananthapuram,Kerala,52.75,47,Overall,2023
+IR-O-U-0458,Kalasalingam Academy of Research and Education,Srivilliputtur,Tamil Nadu,52.52,48,Overall,2023
+IR-O-U-0476,Shanmugha Arts Science Technology & Research Academy,Thanjavur,Tamil Nadu,52.0,49,Overall,2023
+IR-O-U-0020,Koneru Lakshmaiah Education Foundation University (K L College of Engineering),Vaddeswaram,Andhra Pradesh,51.96,50,Overall,2023
+IR-O-U-0377,"Indian Institute of Science Education & Research, Mohali",Mohali,Punjab,51.86,51,Overall,2023
+IR-O-U-0262,"Mahatma Gandhi University, Kottayam",Kottayam,Kerala,51.84,52,Overall,2023
+IR-O-U-0025,National Institute of Technology Warangal,Warangal,Telangana,51.83,53,Overall,2023
+IR-O-U-0263,National Institute of Technology Calicut,Kozhikode,Kerala,51.62,54,Overall,2023
+IR-O-U-0222,JSS Academy of Higher Education and Research,Mysuru,Karnataka,51.15,55,Overall,2023
+IR-O-U-0435,Alagappa University,Karaikudi,Tamil Nadu,50.99,56,Overall,2023
+IR-O-U-0497,Amity University,Gautam Budh Nagar,Uttar Pradesh,50.88,57,Overall,2023
+IR-O-U-0196,University of Kashmir,Srinagar,Jammu and Kashmir,50.77,58,Overall,2023
+IR-O-U-0329,Symbiosis International,Pune,Maharashtra,50.59,59,Overall,2023
+IR-O-U-0272,Indian Institute of Science Education & Research Bhopal,Bhopal,Madhya Pradesh,50.58,60,Overall,2023
+IR-O-U-0098,Delhi Technological University,New Delhi,Delhi,50.54,61,Overall,2023
+IR-O-U-0410,Malaviya National Institute of Technology,Jaipur,Rajasthan,50.36,62,Overall,2023
+IR-O-U-0253,Cochin University of Science and Technology,Cochin,Kerala,50.34,63,Overall,2023
+IR-O-U-0027,Osmania University,Hyderabad,Telangana,49.94,64,Overall,2023
+IR-O-I-1357,University of Madras,Chennai,Tamil Nadu,49.93,65,Overall,2023
+IR-O-U-0584,"Indian Institute of Engineering Science and Technology, Shibpur",Howrah,West Bengal,49.79,66,Overall,2023
+IR-O-U-0395,Indian Institute of Technology Jodhpur,Jodhpur,Rajasthan,49.79,66,Overall,2023
+IR-O-U-0064,Indian Institute of Technology Patna,Patna,Bihar,49.79,66,Overall,2023
+IR-O-U-0498,Babasheb Bhimrao Ambedkar University,Lucknow,Uttar Pradesh,49.53,69,Overall,2023
+IR-O-U-0448,Bharathidasan University,Tiruchirappalli,Tamil Nadu,49.45,70,Overall,2023
+IR-O-U-0235,Mysore University,Mysuru,Karnataka,49.17,71,Overall,2023
+IR-O-U-0374,"Dr. B R Ambedkar National Institute of Technology, Jalandhar",Jalandhar,Punjab,49.04,72,Overall,2023
+IR-O-U-0184,Indian Institute of Technology Mandi,Mandi,Himachal Pradesh,49.03,73,Overall,2023
+IR-O-U-0381,"Punjab Agricultural University, Ludhiana",Ludhiana,Punjab,48.97,74,Overall,2023
+IR-O-U-0295,Datta Meghe Institute of Higher Education and Research,Wardha,Maharashtra,48.92,75,Overall,2023
+IR-O-U-0006,"Andhra University, Visakhapatnam",Visakhapatnam,Andhra Pradesh,48.54,76,Overall,2023
+IR-O-U-0523,King George`s Medical University,Lucknow,Uttar Pradesh,48.52,77,Overall,2023
+IR-O-U-0107,Jamia Hamdard,New Delhi,Delhi,48.4,78,Overall,2023
+IR-O-U-0564,UPES,Dehradun,Uttarakhand,48.34,79,Overall,2023
+IR-O-C-16604,Sri Sivasubramaniya Nadar College of Engineering,Kalavakkam,Tamil Nadu,48.18,80,Overall,2023
+IR-O-I-1110,Dr. D. Y. Patil Vidyapeeth,Pune,Maharashtra,48.17,81,Overall,2023
+IR-O-U-0334,"Visvesvaraya National Institute of Technology, Nagpur",Nagpur,Maharashtra,48.15,82,Overall,2023
+IR-O-U-0055,National Institute of Technology Silchar,Silchar,Assam,48.12,83,Overall,2023
+IR-O-U-0474,Sathyabama Institute of Science and Technology,Chennai,Tamil Nadu,47.95,84,Overall,2023
+IR-O-U-0136,Gujarat University,Ahmedabad,Gujarat,47.91,85,Overall,2023
+IR-O-U-0691,"All India Institute of Medical Sciences, Rishikesh",Rishikesh,Uttarakhand,47.89,86,Overall,2023
+IR-O-U-0376,Guru Nanak Dev University,Amritsar,Punjab,47.55,87,Overall,2023
+IR-O-N-10,SVKM`s Narsee Monjee Institute of Management Studies,Mumbai,Maharashtra,47.46,88,Overall,2023
+IR-O-U-0555,Graphic Era University,Dehradun,Uttarakhand,47.29,89,Overall,2023
+IR-O-U-0577,National Institute of Technology Durgapur,Durgapur,West Bengal,46.81,90,Overall,2023
+IR-O-U-0355,Indian Institute of Technology Bhubaneswar,Bhubaneswar,Odisha,46.73,91,Overall,2023
+IR-O-U-0249,Visvesvaraya Technological University,Belgaum,Karnataka,46.48,92,Overall,2023
+IR-O-U-0485,Tamil Nadu Agricultural University,Coimbatore,Tamil Nadu,46.33,93,Overall,2023
+IR-O-U-0463,Madurai Kamaraj University,Madurai,Tamil Nadu,46.26,94,Overall,2023
+IR-O-U-0642,Shiv Nadar University,Gautam Buddha Nagar,Uttar Pradesh,46.18,95,Overall,2023
+IR-O-U-0318,Mumbai University,Mumbai,Maharashtra,45.86,96,Overall,2023
+IR-O-U-0389,Banasthali Vidyapith,Banasthali,Rajasthan,45.85,97,Overall,2023
+IR-O-I-1486,Sri Ramachandra Institute of Higher Education and Research,Chennai,Tamil Nadu,45.84,98,Overall,2023
+IR-O-S-8972,Indian Institute of Management Calcutta,Kolkata,West Bengal,45.74,99,Overall,2023
+IR-O-U-0217,Christ University,Bengaluru,Karnataka,45.65,100,Overall,2023
+IR-P-I-1077,National Institute of Pharmaceutical Education and Research Hyderabad,Hyderabad,Telangana,78.86,1,Pharmacy,2023
+IR-P-U-0107,Jamia Hamdard,New Delhi,Delhi,78.74,2,Pharmacy,2023
+IR-P-U-0391,Birla Institute of Technology & Science -Pilani,Pilani,Rajasthan,76.67,3,Pharmacy,2023
+IR-P-C-35006,JSS College of Pharmacy,Ooty,Tamil Nadu,76.55,4,Pharmacy,2023
+IR-P-U-0308,Institute of Chemical Technology,Mumbai,Maharashtra,75.42,5,Pharmacy,2023
+IR-P-U-0380,"National Institute of Pharmaceutical Education and Research, Mohali",Mohali,Punjab,73.58,6,Pharmacy,2023
+IR-P-C-35007,JSS College of Pharmacy,Mysore,Karnataka,72.78,7,Pharmacy,2023
+IR-P-U-0078,Panjab University,Chandigarh,Chandigarh,72.34,8,Pharmacy,2023
+IR-P-C-7249,"Manipal College of Pharmaceutical Sciences, Manipal",Udupi,Karnataka,69.33,9,Pharmacy,2023
+IR-P-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,68.91,10,Pharmacy,2023
+IR-P-N-10,SVKM`s Narsee Monjee Institute of Management Studies,Mumbai,Maharashtra,68.1,11,Pharmacy,2023
+IR-P-I-1073,National Institute of Pharmaceutical Education and Research Guwahati,Guwahati,Assam,66.32,12,Pharmacy,2023
+IR-P-N-14,National Institute of Pharmaceutical Education and Research Ahmedabad,Gandhinagar,Gujarat,64.24,13,Pharmacy,2023
+IR-P-N-26,National Institute of Pharmaceutical Education and Research Raebareli,Lucknow,Uttar Pradesh,63.58,14,Pharmacy,2023
+IR-P-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,63.2,15,Pharmacy,2023
+IR-P-U-0373,Chitkara University,Rajpura,Punjab,62.58,16,Pharmacy,2023
+IR-P-U-0379,Lovely Professional University,Phagwara,Punjab,61.95,17,Pharmacy,2023
+IR-P-U-0575,Jadavpur University,Kolkata,West Bengal,61.27,18,Pharmacy,2023
+IR-P-U-0372,Central University of Punjab,Bathinda,Punjab,59.09,19,Pharmacy,2023
+IR-P-U-0498,Babasheb Bhimrao Ambedkar University,Lucknow,Uttar Pradesh,58.68,20,Pharmacy,2023
+IR-P-U-0497,Amity University,Gautam Budh Nagar,Uttar Pradesh,58.64,21,Pharmacy,2023
+IR-P-I-1450,"AU College of Pharmaceutical Sciences, Andhra University",Visakhapatnam,Andhra Pradesh,58.1,22,Pharmacy,2023
+IR-P-U-0389,Banasthali Vidyapith,Banasthali,Rajasthan,57.96,23,Pharmacy,2023
+IR-P-C-10398,I. S. F. College of Pharmacy,Moga,Punjab,57.8,24,Pharmacy,2023
+IR-P-U-0853,Delhi Pharmaceutical Sciences and Research University,Delhi,Delhi,57.64,25,Pharmacy,2023
+IR-P-U-0443,Annamalai University,Annamalainagar,Tamil Nadu,57.39,26,Pharmacy,2023
+IR-P-U-0392,Central University of Rajasthan,Kishangarh,Rajasthan,57.07,27,Pharmacy,2023
+IR-P-U-0202,Birla Institute of Technology,Ranchi,Jharkhand,56.72,28,Pharmacy,2023
+IR-P-C-35430,"Poona College of Pharmacy, Pune",Pune,Maharashtra,56.43,29,Pharmacy,2023
+IR-P-U-0143,Maharaja Sayajirao University of Baroda,Vadodara,Gujarat,55.91,30,Pharmacy,2023
+IR-P-U-0168,Maharishi Markandeshwar,Ambala,Haryana,55.24,31,Pharmacy,2023
+IR-P-I-1072,National Institute of Pharmaceutical Education and Research Kolkata,Kolkata,West Bengal,54.94,32,Pharmacy,2023
+IR-P-U-0051,Dibrugarh University,Dibrugarh,Assam,54.84,33,Pharmacy,2023
+IR-P-U-0747,Chandigarh University,Mohali,Punjab,54.5,34,Pharmacy,2023
+IR-P-I-1280,Maharshi Dayanand University,Rohtak,Haryana,54.21,35,Pharmacy,2023
+IR-P-I-1486,Sri Ramachandra Institute of Higher Education and Research,Chennai,Tamil Nadu,53.75,36,Pharmacy,2023
+IR-P-U-0146,Nirma University,Ahmedabad,Gujarat,53.34,37,Pharmacy,2023
+IR-P-C-33877,SVKM'S Dr. Bhanuben Nanavati College of Pharmacy,Mumbai,Maharashtra,52.96,38,Pharmacy,2023
+IR-P-C-24505,KLE College of Pharmacy,Belgaum,Karnataka,51.94,39,Pharmacy,2023
+IR-P-U-0383,"Punjabi University, Patiala",Patiala,Punjab,51.84,40,Pharmacy,2023
+IR-P-U-0190,Shoolini University of Biotechnology and Management Sciences,Solan,Himachal Pradesh,51.74,41,Pharmacy,2023
+IR-P-I-1256,Noida Institute of Engineering and Technology (Pharmacy Institute),Greater Noida,Uttar Pradesh,51.73,42,Pharmacy,2023
+IR-P-U-0085,Guru Ghasidas Vishwavidyalaya,Bilaspur,Chhattisgarh,51.27,43,Pharmacy,2023
+IR-P-S-58036,National Institute Of Pharmaceutical Education And Research Hajipur,Hajipur,Bihar,51.22,44,Pharmacy,2023
+IR-P-I-1335,DR D Y Patil Institute of Pharmaceutical Sciences and Research,Pune,Maharashtra,50.24,45,Pharmacy,2023
+IR-P-C-19322,N.G.S.M. Institute of Pharmaceutical Sciences,Mangaluru,Karnataka,49.92,46,Pharmacy,2023
+IR-P-U-0491,"VELS Institute of Science Technology & Advanced Studies (Vistas) ,Chennai",Chennai,Tamil Nadu,49.7,47,Pharmacy,2023
+IR-P-U-0011,Gandhi Institute of Technology and Management,Visakhapatnam,Andhra Pradesh,49.11,48,Pharmacy,2023
+IR-P-U-0162,"Guru Jambheshwar University of Science and Technology, Hissar",Hisar,Haryana,49.05,49,Pharmacy,2023
+IR-P-I-1045,R. C. Patel Institute of Pharmaceutical Education & Research,Shirpur,Maharashtra,48.43,50,Pharmacy,2023
+IR-P-U-0332,The Rashtrasant Tukadoji Maharaj Nagpur University,Nagpur,Maharashtra,48.39,51,Pharmacy,2023
+IR-P-U-0643,Galgotias University,Gautam Budh Nagar,Uttar Pradesh,48.08,52,Pharmacy,2023
+IR-P-U-0763,Parul University,Vadodara,Gujarat,47.98,53,Pharmacy,2023
+IR-P-U-0513,G. L. A. University,Mathura,Uttar Pradesh,47.95,54,Pharmacy,2023
+IR-P-C-33873,Bombay College of Pharmacy,Mumbai,Maharashtra,47.77,55,Pharmacy,2023
+IR-P-U-0519,Integral University,Lucknow,Uttar Pradesh,47.46,56,Pharmacy,2023
+IR-P-C-26904,Sri Venkateswara College of Pharmacy,Chittoor,Andhra Pradesh,47.37,57,Pharmacy,2023
+IR-P-C-409,L. M. College of Pharmacy,Ahmedabad,Gujarat,46.36,58,Pharmacy,2023
+IR-P-U-0427,Suresh Gyan Vihar University,Jaipur,Rajasthan,46.26,59,Pharmacy,2023
+IR-P-U-0034,Sri Padmavathi Mahila Visvavidyalayam,Tirupathi,Andhra Pradesh,45.93,60,Pharmacy,2023
+IR-P-C-45540,PSG College of Pharmacy,Coimbatore,Tamil Nadu,45.61,61,Pharmacy,2023
+IR-P-U-0541,Sharda University,Greater Noida,Uttar Pradesh,45.6,62,Pharmacy,2023
+IR-P-I-1289,Acharya Nagarjuna University College of Pharmaceutical Sciences,Guntur,Andhra Pradesh,45.41,63,Pharmacy,2023
+IR-P-U-0562,"Kumaun University, Nainital",Nainital,Uttarakhand,45.09,64,Pharmacy,2023
+IR-P-U-0724,M.S. Ramaiah University of Applied Sciences,Bangalore,Karnataka,44.58,65,Pharmacy,2023
+IR-P-C-30858,Goa College of Pharmacy,Panaji,Goa,44.23,66,Pharmacy,2023
+IR-P-C-40354,Acharya & B M Reddy College of Pharmacy,Bengaluru,Karnataka,44.17,67,Pharmacy,2023
+IR-P-C-18900,Smt. Kishoritai Bhoyar College of Pharmacy,Nagpur,Maharashtra,44.14,68,Pharmacy,2023
+IR-P-C-10250,Amar Shaheed Baba Ajit Singh Jujhar Singh Memorial College of,Bela,Punjab,44.08,69,Pharmacy,2023
+IR-P-U-0536,"Sam Higginbottom Institute of Agriculture, Technology & Sciences",Prayagraj,Uttar Pradesh,44.02,70,Pharmacy,2023
+IR-P-U-0135,Gujarat Technological University,Ahmedabad,Gujarat,43.79,71,Pharmacy,2023
+IR-P-C-30768,"College of Pharmacy, Pt. B. D. Sharma, PGIMS",Rohtak,Haryana,43.57,72,Pharmacy,2023
+IR-P-U-0413,Mohan Lal Sukhadia University,Udaipur,Rajasthan,43.54,73,Pharmacy,2023
+IR-P-I-1243,"College of Pharmacy, Madras Medical College",Chennai,Tamil Nadu,43.53,74,Pharmacy,2023
+IR-P-C-19613,Vishnu Institute of Pharmaceutical Education and Research,Narsapur,Telangana,43.43,75,Pharmacy,2023
+IR-P-C-24007,Shri Vishnu College of Pharmacy,Bhimavaram,Andhra Pradesh,43.12,76,Pharmacy,2023
+IR-P-C-45585,Nandha College of Pharmacy,Erode,Tamil Nadu,43.02,77,Pharmacy,2023
+IR-P-C-40080,Sri Adichunchanagiri College of Pharmacy,B.G Nagara,Karnataka,42.85,78,Pharmacy,2023
+IR-P-C-11091,Bharati Vidyapeeth College of Pharmacy,Kolhapur,Maharashtra,42.84,79,Pharmacy,2023
+IR-P-C-34531,Y. B. Chavan College of Pharmacy,Aurangabad,Maharashtra,42.18,80,Pharmacy,2023
+IR-P-C-19747,Anurag University,Hyderabad,Telangana,41.78,81,Pharmacy,2023
+IR-P-U-0019,Kakatiya University,Hanumakonda,Telangana,41.75,82,Pharmacy,2023
+IR-P-U-0502,Bundelkhand University,Jhansi,Uttar Pradesh,41.71,83,Pharmacy,2023
+IR-P-C-39481,"Nirmala College of Pharmacy, Mangalagiri",Mangalagiri,Andhra Pradesh,41.71,83,Pharmacy,2023
+IR-P-C-19611,CMR College of Pharmacy,Rangareddy,Telangana,41.58,85,Pharmacy,2023
+IR-P-C-10283,"Chandigarh College of Pharmacy, Landran",Landran,Punjab,40.64,86,Pharmacy,2023
+IR-P-S-10906,Guru Nanak Institute of Pharmaceutical Science & Technology,Kolkata,West Bengal,40.59,87,Pharmacy,2023
+IR-P-C-46111,KIET Group of Institutions,Ghaziabad,Uttar Pradesh,40.16,88,Pharmacy,2023
+IR-P-C-39486,Chalapathi Institute of Pharmaceutical Sciences,Guntur,Andhra Pradesh,40.11,89,Pharmacy,2023
+IR-P-I-1248,Maliba Pharmacy College,Tarsadi,Gujarat,39.86,90,Pharmacy,2023
+IR-P-C-33635,Principal K.M. Kundnani College of Pharmacy,Mumbai,Maharashtra,39.71,91,Pharmacy,2023
+IR-P-C-26907,Raghavendra Institute of Pharmaceuatical Education & Research,Anantapuramu,Andhra Pradesh,39.67,92,Pharmacy,2023
+IR-P-I-1276,AISSMS College of Pharmacy,Pune,Maharashtra,39.48,93,Pharmacy,2023
+IR-P-U-0938,Dr. Vishwanath Karad MIT World Peace University,Pune,Maharashtra,39.31,94,Pharmacy,2023
+IR-P-C-44200,C.U.Shah College of Pharmacy,Mumbai,Maharashtra,38.81,95,Pharmacy,2023
+IR-P-C-41451,Marathwada Mitra Mandal's College of Pharmacy,Pune,Maharashtra,38.78,96,Pharmacy,2023
+IR-P-C-45757,Arulmigu Kalasalingam College of Pharmacy,Srivilliputtur,Tamil Nadu,38.47,97,Pharmacy,2023
+IR-P-C-6594,Himalayan Pharmacy Institute,East Sikkim,Sikkim,38.46,98,Pharmacy,2023
+IR-P-U-0811,Maharaja Ranjit Singh State Technical University,Bathinda,Punjab,38.3,99,Pharmacy,2023
+IR-P-C-6178,Dr. B. C. Roy College of Pharmacy and Allied Health Sciences,Durgapur,West Bengal,38.26,100,Pharmacy,2023
+IR-R-U-0220,Indian Institute of Science,Bengaluru,Karnataka,86.22,1,Research,2023
+IR-R-U-0456,Indian Institute of Technology Madras,Chennai,Tamil Nadu,84.01,2,Research,2023
+IR-R-I-1074,Indian Institute of Technology Delhi,New Delhi,Delhi,82.07,3,Research,2023
+IR-R-U-0306,Indian Institute of Technology Bombay,Mumbai,Maharashtra,79.19,4,Research,2023
+IR-R-U-0573,Indian Institute of Technology Kharagpur,Kharagpur,West Bengal,71.63,5,Research,2023
+IR-R-I-1075,Indian Institute of Technology Kanpur,Kanpur,Uttar Pradesh,71.33,6,Research,2023
+IR-R-U-0560,Indian Institute of Technology Roorkee,Roorkee,Uttarakhand,66.52,7,Research,2023
+IR-R-N-15,"All India Institute of Medical Sciences, Delhi",New Delhi,Delhi,66.13,8,Research,2023
+IR-R-U-0053,Indian Institute of Technology Guwahati,Guwahati,Assam,64.68,9,Research,2023
+IR-R-U-0330,Tata Institute of Fundamental Research,Mumbai,Maharashtra,62.66,10,Research,2023
+IR-R-U-0490,Vellore Institute of Technology,Vellore,Tamil Nadu,62.41,11,Research,2023
+IR-R-U-0713,Academy of Scientific & Innovative Research,Ghaziabad,Uttar Pradesh,59.85,12,Research,2023
+IR-R-U-0439,Anna University,Chennai,Tamil Nadu,59.65,13,Research,2023
+IR-R-U-0013,Indian Institute of Technology Hyderabad,Hyderabad,Telangana,59.41,14,Research,2023
+IR-R-U-0304,Homi Bhabha National Institute,Mumbai,Maharashtra,58.88,15,Research,2023
+IR-R-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,58.14,16,Research,2023
+IR-R-U-0120,University of Delhi,Delhi,Delhi,57.45,17,Research,2023
+IR-R-U-0109,Jawaharlal Nehru University,New Delhi,Delhi,57.33,18,Research,2023
+IR-R-U-0575,Jadavpur University,Kolkata,West Bengal,56.69,19,Research,2023
+IR-R-U-0108,"Jamia Millia Islamia,New Delhi",New Delhi,Delhi,55.86,20,Research,2023
+IR-R-U-0273,Indian Institute of Technology Indore,Indore,Madhya Pradesh,53.71,21,Research,2023
+IR-R-U-0467,National Institute of Technology Tiruchirappalli,Tiruchirappalli,Tamil Nadu,53.63,22,Research,2023
+IR-R-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,53.58,23,Research,2023
+IR-R-U-0205,Indian Institute of Technology (Indian School of Mines),Dhanbad,Jharkhand,52.8,24,Research,2023
+IR-R-U-0234,Manipal Academy of Higher Education-Manipal,Manipal,Karnataka,52.48,25,Research,2023
+IR-R-U-0391,Birla Institute of Technology & Science -Pilani,Pilani,Rajasthan,52.32,26,Research,2023
+IR-R-U-0305,Indian Institute of Science Education & Research Pune,Pune,Maharashtra,52.22,27,Research,2023
+IR-R-U-0042,University of Hyderabad,Hyderabad,Telangana,51.85,28,Research,2023
+IR-R-U-0357,National Institute of Technology Rourkela,Rourkela,Odisha,51.32,29,Research,2023
+IR-R-U-0224,Jawaharlal Nehru Centre for Advanced Scientific Research,Bengaluru,Karnataka,51.08,30,Research,2023
+IR-R-U-0139,Indian Institute of Technology Gandhinagar,Gandhinagar,Gujarat,50.84,31,Research,2023
+IR-R-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,50.83,32,Research,2023
+IR-R-U-0078,Panjab University,Chandigarh,Chandigarh,50.65,33,Research,2023
+IR-R-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),Patiala,Punjab,50.06,34,Research,2023
+IR-R-U-0570,Calcutta University,Kolkata,West Bengal,49.76,35,Research,2023
+IR-R-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,49.54,36,Research,2023
+IR-R-U-0308,Institute of Chemical Technology,Mumbai,Maharashtra,48.82,37,Research,2023
+IR-R-U-0447,Bharathiar University,Coimbatore,Tamil Nadu,48.72,38,Research,2023
+IR-R-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,48.58,39,Research,2023
+IR-R-U-0572,Indian Institute of Science Education & Research Kolkata,Mohanpur,West Bengal,46.95,40,Research,2023
+IR-R-U-0237,"National Institute of Technology Karnataka, Surathkal",Surathkal,Karnataka,46.89,41,Research,2023
+IR-R-U-0379,Lovely Professional University,Phagwara,Punjab,44.87,42,Research,2023
+IR-R-U-0435,Alagappa University,Karaikudi,Tamil Nadu,44.06,43,Research,2023
+IR-R-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,43.98,44,Research,2023
+IR-R-U-0497,Amity University,Gautam Budh Nagar,Uttar Pradesh,43.89,45,Research,2023
+IR-R-U-0378,Indian Institute of Technology Ropar,Rupnagar,Punjab,43.65,46,Research,2023
+IR-R-U-0410,Malaviya National Institute of Technology,Jaipur,Rajasthan,43.37,47,Research,2023
+IR-R-U-0236,"National Institute of Mental Health & Neuro Sciences, Bangalore",Bangalore,Karnataka,43.35,48,Research,2023
+IR-R-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,43.21,49,Research,2023
+IR-R-U-0377,"Indian Institute of Science Education & Research, Mohali",Mohali,Punjab,43.15,50,Research,2023
+IR-O-U-0220,Indian Institute of Science,Bengaluru,Karnataka,83.16,1,University,2023
+IR-O-U-0109,Jawaharlal Nehru University,New Delhi,Delhi,68.92,2,University,2023
+IR-O-U-0108,Jamia Millia Islamia,New Delhi,Delhi,67.73,3,University,2023
+IR-O-U-0575,Jadavpur University,Kolkata,West Bengal,66.07,4,University,2023
+IR-O-U-0500,Banaras Hindu University,Varanasi,Uttar Pradesh,65.85,5,University,2023
+IR-O-U-0234,Manipal Academy of Higher Education-Manipal,Manipal,Karnataka,64.98,6,University,2023
+IR-O-U-0436,Amrita Vishwa Vidyapeetham,Coimbatore,Tamil Nadu,64.67,7,University,2023
+IR-O-U-0490,Vellore Institute of Technology,Vellore,Tamil Nadu,64.33,8,University,2023
+IR-O-U-0496,Aligarh Muslim University,Aligarh,Uttar Pradesh,63.88,9,University,2023
+IR-O-U-0042,University of Hyderabad,Hyderabad,Telangana,62.09,10,University,2023
+IR-O-U-0120,University of Delhi,Delhi,Delhi,61.45,11,University,2023
+IR-O-U-0570,Calcutta University,Kolkata,West Bengal,61.14,12,University,2023
+IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Chennai,Tamil Nadu,60.98,13,University,2023
+IR-O-U-0439,Anna University,Chennai,Tamil Nadu,60.48,14,University,2023
+IR-O-U-0363,Siksha `O` Anusandhan,Bhubaneswar,Odisha,60.33,15,University,2023
+IR-O-U-0356,Kalinga Institute of Industrial Technology,Bhubaneswar,Odisha,60.09,16,University,2023
+IR-O-U-0304,Homi Bhabha National Institute,Mumbai,Maharashtra,59.31,17,University,2023
+IR-O-U-0473,S.R.M. Institute of Science and Technology,Chennai,Tamil Nadu,58.73,18,University,2023
+IR-O-U-0323,Savitribai Phule Pune University,Pune,Maharashtra,58.31,19,University,2023
+IR-O-U-0391,Birla Institute of Technology & Science -Pilani,Pilani,Rajasthan,58.0,20,University,2023
+IR-O-U-0447,Bharathiar University,Coimbatore,Tamil Nadu,57.82,21,University,2023
+IR-O-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),Patiala,Punjab,57.32,22,University,2023
+IR-O-U-0308,Institute of Chemical Technology,Mumbai,Maharashtra,57.06,23,University,2023
+IR-O-U-0260,Kerala University,Thiruvananthapuram,Kerala,55.5,24,University,2023
+IR-O-U-0078,Panjab University,Chandigarh,Chandigarh,54.86,25,University,2023
+IR-O-U-0476,Shanmugha Arts Science Technology & Research Academy,Thanjavur,Tamil Nadu,54.71,26,University,2023
+IR-O-U-0747,Chandigarh University,Mohali,Punjab,54.63,27,University,2023
+IR-O-U-0020,Koneru Lakshmaiah Education Foundation University (K L College of Engineering),Vaddeswaram,Andhra Pradesh,54.52,28,University,2023
+IR-O-U-0458,Kalasalingam Academy of Research and Education,Srivilliputtur,Tamil Nadu,53.76,29,University,2023
+IR-O-U-0435,Alagappa University,Karaikudi,Tamil Nadu,53.53,30,University,2023
+IR-O-U-0262,"Mahatma Gandhi University, Kottayam",Kottayam,Kerala,53.44,31,University,2023
+IR-O-U-0329,Symbiosis International,Pune,Maharashtra,53.13,32,University,2023
+IR-O-U-0196,University of Kashmir,Srinagar,Jammu and Kashmir,53.08,33,University,2023
+IR-O-U-0222,JSS Academy of Higher Education and Research,Mysuru,Karnataka,52.88,34,University,2023
+IR-O-U-0497,Amity University,Gautam Budh Nagar,Uttar Pradesh,52.78,35,University,2023
+IR-O-U-0027,Osmania University,Hyderabad,Telangana,52.67,36,University,2023
+IR-O-U-0253,Cochin University of Science and Technology,Cochin,Kerala,52.33,37,University,2023
+IR-O-U-0379,Lovely Professional University,Phagwara,Punjab,52.3,38,University,2023
+IR-O-U-0295,Datta Meghe Institute of Higher Education and Research,Wardha,Maharashtra,51.92,39,University,2023
+IR-O-U-0098,Delhi Technological University,New Delhi,Delhi,51.49,40,University,2023
+IR-O-U-0448,Bharathidasan University,Tiruchirappalli,Tamil Nadu,51.48,41,University,2023
+IR-O-U-0498,Babasheb Bhimrao Ambedkar University,Lucknow,Uttar Pradesh,51.27,42,University,2023
+IR-O-U-0006,"Andhra University, Visakhapatnam",Visakhapatnam,Andhra Pradesh,51.04,43,University,2023
+IR-O-U-0235,Mysore University,Mysuru,Karnataka,50.82,44,University,2023
+IR-O-U-0523,King George`s Medical University,Lucknow,Uttar Pradesh,50.63,45,University,2023
+IR-O-I-1110,Dr. D. Y. Patil Vidyapeeth,Pune,Maharashtra,50.62,46,University,2023
+IR-O-N-10,SVKM`s Narsee Monjee Institute of Management Studies,Mumbai,Maharashtra,50.31,47,University,2023
+IR-O-U-0376,Guru Nanak Dev University,Amritsar,Punjab,50.19,48,University,2023
+IR-O-U-0107,Jamia Hamdard,New Delhi,Delhi,49.85,49,University,2023
+IR-O-I-1357,University of Madras,Chennai,Tamil Nadu,49.5,50,University,2023
+IR-O-U-0474,Sathyabama Institute of Science and Technology,Chennai,Tamil Nadu,49.26,51,University,2023
+IR-O-U-0564,UPES,Dehradun,Uttarakhand,49.1,52,University,2023
+IR-O-U-0463,Madurai Kamaraj University,Madurai,Tamil Nadu,48.95,53,University,2023
+IR-O-U-0381,"Punjab Agricultural University, Ludhiana",Ludhiana,Punjab,48.74,54,University,2023
+IR-O-U-0555,Graphic Era University,Dehradun,Uttarakhand,48.69,55,University,2023
+IR-O-U-0318,Mumbai University,Mumbai,Maharashtra,48.63,56,University,2023
+IR-O-I-1486,Sri Ramachandra Institute of Higher Education and Research,Chennai,Tamil Nadu,48.61,57,University,2023
+IR-O-U-0389,Banasthali Vidyapith,Banasthali,Rajasthan,48.6,58,University,2023
+IR-O-U-0470,Periyar University,Salem,Tamil Nadu,48.3,59,University,2023
+IR-O-U-0037,Sri Venkateswara University,Tirupati,Andhra Pradesh,48.18,60,University,2023
+IR-O-U-0136,Gujarat University,Ahmedabad,Gujarat,47.82,61,University,2023
+IR-O-U-0642,Shiv Nadar University,Gautam Buddha Nagar,Uttar Pradesh,47.69,62,University,2023
+IR-O-U-0195,University of Jammu,Jammu,Jammu and Kashmir,47.58,63,University,2023
+IR-O-U-0249,Visvesvaraya Technological University,Belgaum,Karnataka,47.58,63,University,2023
+IR-O-U-0239,NITTE,Mangaluru,Karnataka,47.07,65,University,2023
+IR-O-U-0446,Bharath Institute of Higher Education & Research,Chennai,Tamil Nadu,46.91,66,University,2023
+IR-O-U-0217,Christ University,Bengaluru,Karnataka,46.88,67,University,2023
+IR-O-U-0223,"Jain university,Bangalore",Bengaluru,Karnataka,46.85,68,University,2023
+IR-O-U-0056,Tezpur University,Tezpur,Assam,46.7,69,University,2023
+IR-O-U-0251,"Calicut University, Thenhipalem, Malapuram",Malappuram,Kerala,46.56,70,University,2023
+IR-O-U-0202,Birla Institute of Technology,Ranchi,Jharkhand,46.12,71,University,2023
+IR-O-U-0485,Tamil Nadu Agricultural University,Coimbatore,Tamil Nadu,46.02,72,University,2023
+IR-O-U-0190,Shoolini University of Biotechnology and Management Sciences,Solan,Himachal Pradesh,45.76,73,University,2023
+IR-O-U-0099,Guru Gobind Singh Indraprastha University,New Delhi,Delhi,45.45,74,University,2023
+IR-O-U-0043,"Vignan's Foundation for Science, Technology and Research",Guntur,Andhra Pradesh,45.4,75,University,2023
+IR-O-U-0345,Mizoram University,Aizawl,Mizoram,45.18,76,University,2023
+IR-O-U-0370,Sri Balaji Vidyapeeth Mahatma Gandhi Medical College Campus,Puducherry,Pondicherry,45.14,77,University,2023
+IR-O-U-0168,Maharishi Markandeshwar,Ambala,Haryana,45.09,78,University,2023
+IR-O-U-0554,"G.B. Pant Universtiy of Agriculture and Technology, Pantnagar",Pantnagar,Uttarakhand,45.02,79,University,2023
+IR-O-U-0341,North Eastern Hill University,Shillong,Meghalaya,44.95,80,University,2023
+IR-O-U-0444,Avinashilingam Institute for Home Science & Higher Education for Women,Coimbatore,Tamil Nadu,44.92,81,University,2023
+IR-O-U-0451,Chettinad Academy of Research and Education,"Kelambakkam, Chengalpattu District",Tamil Nadu,44.88,82,University,2023
+IR-O-U-0464,"Manonmaniam Sundaranar University, Tirunelveli",Tirunelveli,Tamil Nadu,44.85,83,University,2023
+IR-O-U-0014,International Institute of Information Technology Hyderabad,Hyderabad,Telangana,44.52,84,University,2023
+IR-O-U-0250,Yenepoya University,Mangaluru,Karnataka,44.2,85,University,2023
+IR-O-U-0569,The University of Burdwan,Bardhaman,West Bengal,44.16,86,University,2023
+IR-O-U-0541,Sharda University,Greater Noida,Uttar Pradesh,44.11,87,University,2023
+IR-O-U-0052,Gauhati University,Guwahati,Assam,44.1,88,University,2023
+IR-O-U-0449,Central University of Tamil Nadu,Tiruvarur,Tamil Nadu,44.09,89,University,2023
+IR-O-U-0248,"University of Agricultural Sciences, Bangalore",Bangalore,Karnataka,44.07,90,University,2023
+IR-O-I-1361,Bharati Vidyapeeth,Pune,Maharashtra,43.63,91,University,2023
+IR-O-U-0461,Dr. M. G. R. Educational and Research Institute,Chennai,Tamil Nadu,43.62,92,University,2023
+IR-O-U-0366,Utkal University,Bhubaneswar,Odisha,43.45,93,University,2023
+IR-O-U-0155,"Amity University Haryana, Gurgaon",Gurugram,Haryana,43.35,94,University,2023
+IR-O-C-6379,Netaji Subhas University of Technology (NSUT),South West,Delhi,43.15,95,University,2023
+IR-O-I-1280,Maharshi Dayanand University,Rohtak,Haryana,43.13,96,University,2023
+IR-O-U-0589,Visva Bharati,Santiniketan,West Bengal,43.11,97,University,2023
+IR-O-U-0331,Tata Institute of Social Sciences,Mumbai,Maharashtra,43.03,98,University,2023
+IR-O-U-0159,Chaudhary Charan Singh Haryana Agricultural University,Hisar,Haryana,42.99,99,University,2023
+IR-O-U-0372,Central University of Punjab,Bathinda,Punjab,42.93,100,University,2023
