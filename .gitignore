@@ -1,0 +1,32 @@
+# Local secrets — never commit
+.env
+.env.local
+.env.*.local
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+desktop.ini
+Thumbs.db
+
+# Extracted friend dashboard scratch
+_friend_dashboard/
+
+# Large ETL artifacts (regenerate from scripts)
+data/cache/
+data/checkpoints/
+data/processed/*.parquet
+data/raw/openalex/
+
+# Agent / scratch / large archives
+.agentbridge/
+_docx_extract/
+_tmp_india_he/
+markdown_files/
+*.zip

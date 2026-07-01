@@ -1,0 +1,554 @@
+Idp;Institution;Country;Sector;Rank;Global Rank;Percentage;Percentile
+94786;Microsoft, India;IND;Companies;1;2687;0.18;4
+61877;IBM India;IND;Companies;2;8709;0.36;4
+26206;Council of Scientific and Industrial Research *;IND;Government;3;360;0.54;6
+87261;Tata Consultancy Services Ltd, India;IND;Companies;4;9239;0.72;7
+3502;VIT University *;IND;Universities;5;661;0.9;12
+26239;Indian Council of Agricultural Research *;IND;Government;6;735;1.08;12
+3232;All India Institute of Medical Sciences;IND;Universities;7;710;1.27;14
+62099;Tata Group, India;IND;Companies;8;9491;1.45;17
+3319;Indian Institute of Science;IND;Universities;9;2305;1.63;18
+3381;Manipal Academy of Higher Education, India;IND;Universities;10;1539;1.81;18
+3324;Indian Institute of Technology, Kharagpur;IND;Universities;11;2907;1.99;19
+3321;Indian Institute of Technology, Delhi;IND;Universities;12;2895;2.17;19
+3336;International Institute of Information Technology, Hyderabad;IND;Universities;13;6231;2.35;20
+3281;University of Delhi *;IND;Universities;14;3042;2.53;20
+97185;Translational Health Science and Technology Institute;IND;Health;15;3804;2.71;21
+10197;Amity University *;IND;Universities;16;2992;2.89;22
+3320;Indian Institute of Technology, Bombay *;IND;Universities;17;3493;3.07;22
+3325;Indian Institute of Technology, Madras;IND;Universities;18;3578;3.25;22
+71661;Sri Ramaswamy Memorial University;IND;Universities;19;2556;3.44;25
+26240;Indian Council of Medical Research *;IND;Health;20;2485;3.62;25
+77657;World Health Organization, India;IND;Health;21;4295;3.8;25
+80567;Academy of Scientific and Innovative Research;IND;Universities;22;3164;3.98;25
+97062;National Agri-Food Biotechnology Institute;IND;Government;23;5888;4.16;25
+71662;National Institute of Virology;IND;Health;24;2975;4.34;26
+26311;International Crops Research Institute for the Semi-Arid Tropics India;IND;Non-Profit;25;2094;4.52;27
+3264;Birla Institute of Technology and Science *;IND;Universities;26;4906;4.7;28
+81223;Indraprastha Institute of Information Technology, Delhi;IND;Universities;27;7384;4.88;29
+10302;Indian Institute of Technology, Roorkee;IND;Universities;28;4493;5.06;31
+3249;Banaras Hindu University;IND;Universities;29;4437;5.24;33
+3323;Indian Institute of Technology, Kanpur;IND;Universities;30;5769;5.42;34
+3419;Postgraduate Institute of Medical Education and Research;IND;Universities;31;2832;5.61;35
+70984;Amrita University;IND;Universities;32;5041;5.79;37
+3322;Indian Institute of Technology Guwahati;IND;Universities;33;5969;5.97;37
+70977;Lovely Professional University;IND;Universities;34;4465;6.15;37
+69207;Indian Institute of Chemical Biology;IND;Government;35;7064;6.33;37
+71617;Institute of Microbial Technology;IND;Government;36;5693;6.51;38
+77639;Indian Institute of Science Education and Research, Pune;IND;Government;37;4654;6.69;39
+26357;National Institute of Cholera and Enteric Diseases;IND;Health;38;4698;6.87;39
+3342;Jamia Millia Islamia Central University;IND;Universities;39;3753;7.05;39
+97859;Regional Centre for Biotechnology;IND;Government;40;5263;7.23;39
+3237;Anna University;IND;Universities;41;6042;7.41;39
+3415;Panjab University;IND;Universities;42;5902;7.59;39
+3231;Aligarh Muslim University;IND;Universities;43;3790;7.78;40
+3375;Mahatma Gandhi University;IND;Universities;44;8802;7.96;40
+73482;Indian Institute of Technology, Hyderabad;IND;Universities;45;6584;8.14;41
+3273;Chaudhary Charan Singh University;IND;Universities;46;7934;8.32;41
+3491;University of Pune;IND;Universities;47;6613;8.5;42
+3472;Thapar Institute of Engineering and Technology;IND;Universities;48;6545;8.68;43
+77673;Institute of Chemical Technology, Mumbai;IND;Universities;49;9067;8.86;44
+26158;Central Food Technological Research Institute;IND;Government;50;8211;9.04;45
+10234;Indian Veterinary Research Institute;IND;Universities;51;6183;9.22;46
+96187;National Institute for Plant Biotechnology;IND;Government;52;7091;9.4;46
+26207;Defence Research and Development Organisation;IND;Government;53;8109;9.58;47
+70931;Saveetha Institute of Medical and Technical Sciences *;IND;Universities;54;2995;9.76;47
+66532;Guru Tegh Bahadur Hospital;IND;Health;55;7463;9.95;48
+3341;Jamia Hamdard University;IND;Universities;56;6013;10.13;48
+3345;Jawaharlal Nehru University;IND;Universities;57;7183;10.31;48
+77693;NMIMS University;IND;Universities;58;8940;10.49;49
+56265;Christian Medical College, Vellore;IND;Universities;59;5139;10.67;49
+3442;Shanmugha Arts, Science, Technology and Research Academy;IND;Universities;60;7597;10.85;49
+3395;National Institute of Pharmaceutical Education and Research;IND;Universities;61;8010;11.03;49
+26436;Tata Memorial Centre;IND;Government;62;4659;11.21;49
+69307;Central Electrochemical Research Institute;IND;Government;63;9041;11.39;50
+26212;Energy and Resources Institute India;IND;Non-Profit;64;7064;11.57;51
+96224;Chitkara University, Punjab;IND;Universities;65;4645;11.75;51
+77676;KIIT University;IND;Universities;66;6368;11.93;51
+71663;National Centre for Cell Science;IND;Government;67;6343;12.12;51
+68983;National Chemical Laboratory;IND;Government;68;9454;12.3;51
+80461;Indian Agricultural Research Institute;IND;Government;69;6404;12.48;51
+58797;Tata Institute of Fundamental Research;IND;Universities;70;3889;12.66;51
+3327;Indian Institute of Technology, Dhanbad;IND;Universities;71;6909;12.84;51
+70629;Delhi Technological University;IND;Universities;72;7379;13.02;52
+96188;Indian Institute of Pulses Research;IND;Government;73;7436;13.2;52
+90167;Shoolini University;IND;Universities;74;3711;13.38;52
+70787;Public Health Foundation of India *;IND;Health;75;2169;13.56;52
+96330;Indian Institute of Science Education and Research, Tirupati;IND;Government;76;6959;13.74;52
+69208;King Georges Medical University;IND;Universities;77;4862;13.92;53
+71618;Institute of Genomics and Integrative Biology;IND;Government;78;5438;14.1;53
+3463;Symbiosis International University;IND;Universities;79;5986;14.29;53
+83509;Indian Institute of Technology, Varanasi;IND;Universities;80;7541;14.47;53
+26408;Indian Institute of Integrative Medicine;IND;Government;81;8856;14.65;53
+3481;University of Hyderabad;IND;Universities;82;7845;14.83;53
+3328;Indian Statistical Institute;IND;Universities;83;7084;15.01;53
+97091;Bharatiya Vidya Bhavans Sardar Patel Institute of Technology;IND;Universities;84;9702;15.19;54
+71323;Central Scientific Instruments Organisation;IND;Government;85;9290;15.37;54
+26343;National Institute of Plant Genome Research;IND;Government;86;6415;15.55;54
+71026;Centre for Cellular and Molecular Biology;IND;Government;87;6454;15.73;54
+26234;India Meteorological Department;IND;Government;88;8597;15.91;54
+91908;Central University of Punjab;IND;Universities;89;7234;16.09;55
+3230;Alagappa University;IND;Universities;90;7764;16.27;55
+73485;Indian Institute of Technology, Indore;IND;Universities;91;7137;16.46;55
+26313;Inter-University Centre for Astronomy and Astrophysics;IND;Government;92;1325;16.64;55
+91915;Chandigarh University;IND;Universities;93;6286;16.82;55
+10246;Jawaharlal Nehru Centre for Advanced Scientific Research;IND;Universities;94;7659;17;55
+69351;International Centre for Genetic Engineering and Biotechnology, New Delhi;IND;Government;95;5333;17.18;55
+92155;Institute of Liver & Biliary Sciences;IND;Health;96;5784;17.36;56
+10268;Nirma University;IND;Universities;97;8040;17.54;57
+3394;National Institute of Mental Health and Neuro Sciences;IND;Universities;98;5823;17.72;57
+62101;Department of Atomic Energy *;IND;Government;99;6773;17.9;57
+79127;University of Petroleum and Energy Studies;IND;Universities;100;6784;18.08;57
+3418;Pondicherry University;IND;Universities;101;8394;18.26;58
+72773;National Institute of Epidemiology;IND;Health;102;2719;18.44;58
+77720;KL University;IND;Universities;103;5333;18.63;58
+3492;University of Rajasthan;IND;Universities;104;7900;18.81;58
+69210;Central Drug Research Institute;IND;Government;105;8907;18.99;59
+3318;Indian Institute of Information Technology;IND;Universities;106;9123;19.17;59
+69209;L. V. Prasad Eye Institute;IND;Health;107;4472;19.35;59
+96390;Indian Agricultural Statistics Research Institute;IND;Government;108;7265;19.53;60
+10265;National Institute of Technology, Tiruchirappalli;IND;Universities;109;8059;19.71;60
+71066;St.John's National Academy of Health Sciences *;IND;Health;110;5544;19.89;60
+3412;Osmania University *;IND;Universities;111;8761;20.07;60
+80572;National Institute of Science Education and Research;IND;Government;112;4821;20.25;60
+80537;Indian Institute of Science Education and Research, Bhopal;IND;Government;113;7006;20.43;60
+74688;Indian Institute of Technology, Gandhinagar;IND;Universities;114;7888;20.61;60
+92197;George Institute for Global Health, India;IND;Health;115;2687;20.8;60
+3399;National Institute of Technology Rourkela;IND;Universities;116;7291;20.98;60
+26273;Indian Space Research Organization *;IND;Government;117;9246;21.16;61
+3337;Jadavpur University;IND;Universities;118;6688;21.34;61
+10299;University of Calcutta;IND;Universities;119;8047;21.52;61
+80539;Indian Institute of Science Education and Research, Mohali;IND;Government;120;6368;21.7;61
+91891;Christ University;IND;Universities;121;7876;21.88;61
+3255;Bharathiar University;IND;Universities;122;8252;22.06;61
+96388;ICAR Research Complex for NEH Region;IND;Government;123;7337;22.24;61
+3471;Tezpur University;IND;Universities;124;9022;22.42;62
+77701;JSS Academy of Higher Education and Research;IND;Universities;125;6006;22.6;62
+71615;Indian Institute of Chemical Technology;IND;Government;126;9197;22.78;62
+70986;Thiruvalluvar University;IND;Universities;127;7849;22.97;62
+26146;Bhabha Atomic Research Centre;IND;Government;128;8218;23.15;62
+91905;Central University of Rajasthan;IND;Universities;129;8619;23.33;62
+91912;Sharda University;IND;Universities;130;8329;23.51;62
+3397;National Institute of Technology Karnataka;IND;Universities;131;8519;23.69;62
+3485;University of Kerala;IND;Universities;132;8585;23.87;63
+73481;Indian Institute of Technology Patna;IND;Universities;133;8211;24.05;63
+3371;Maharshi Dayanand University;IND;Universities;134;7074;24.23;63
+77696;Gujarat Technological University;IND;Universities;135;9202;24.41;63
+3464;Tamil Nadu Agricultural University;IND;Universities;136;7291;24.59;63
+96185;National Rice Research Institute;IND;Government;137;7659;24.77;63
+97857;VIT Bhopal University;IND;Universities;138;2982;24.95;63
+3248;Babasaheb Bhimrao Ambedkar University;IND;Universities;139;8428;25.14;63
+3352;Kannur University;IND;Universities;140;9545;25.32;64
+92077;Indian Institute of Technology Mandi;IND;Universities;141;8385;25.5;64
+56234;Amrita Institute for Medical Science and Research;IND;Health;142;6739;25.68;64
+3257;Bharati Vidyapeeth Deemed University;IND;Universities;143;8769;25.86;64
+26151;Bose Institute Kolkata;IND;Government;144;6860;26.04;64
+3436;Sanjay Gandhi Postgraduate Institute of Medical Sciences;IND;Universities;145;6212;26.22;64
+26178;Central Plantation Crops Research Institute;IND;Government;146;7505;26.4;64
+3444;Sher-e-Kashmir University of Agricultural Sciences and Technology-Srinagar;IND;Universities;147;7670;26.58;64
+3489;University of Mysore;IND;Universities;148;8178;26.76;64
+71660;National Institute for Research in Tuberculosis;IND;Health;149;3847;26.94;65
+3364;Madurai Kamaraj University;IND;Universities;150;9123;27.12;65
+96182;Bennett University;IND;Universities;151;7784;27.31;65
+3236;Andhra University;IND;Universities;152;8666;27.49;65
+77743;Jain University;IND;Universities;153;8354;27.67;66
+3312;Guru Nanak Dev University;IND;Universities;154;8172;27.85;66
+62560;Central Salt and Marine Chemicals Research Institute;IND;Government;155;8807;28.03;66
+92151;National Institute of Technology Raipur;IND;Universities;156;8130;28.21;66
+26314;Jawaharlal Institute of Postgraduate Medical Education and Research;IND;Universities;157;5761;28.39;67
+3310;Guru Gobind Singh Indraprastha University;IND;Universities;158;8927;28.57;67
+3252;Barkatullah University;IND;Universities;159;9447;28.75;67
+3439;Sathyabama Institute of Science and Technology;IND;Universities;160;7659;28.93;67
+3358;Kumaun University;IND;Universities;161;8165;29.11;67
+72486;Institute of Himalayan Bioresource Technology;IND;Government;162;6522;29.29;67
+71288;Aryabhatta Research Institute of Observational Sciences;IND;Government;163;2963;29.48;67
+71003;National Environmental Engineering Research Institute;IND;Government;164;7764;29.66;67
+62562;Sir Ganga Ram Hospital;IND;Health;165;5915;29.84;68
+3487;University of Madras;IND;Universities;166;8968;30.02;68
+80575;St John's Medical College Hospital;IND;Health;167;6784;30.2;68
+3401;National Institute of Technology Warangal;IND;Universities;168;8339;30.38;68
+71030;Advanced Materials and Processes Research Institute;IND;Government;169;9160;30.56;69
+3484;University of Kashmir;IND;Universities;170;7173;30.74;69
+26303;Institute of Mathematical Sciences;IND;Government;171;4571;30.92;69
+3379;Malaviya National Institute of Technology;IND;Universities;172;7242;31.1;69
+3344;Jawaharlal Nehru Technological University, Hyderabad;IND;Universities;173;9324;31.28;69
+3285;Dibrugarh University;IND;Universities;174;8541;31.46;69
+3335;International Institute for Population Sciences;IND;Universities;175;4215;31.65;69
+92157;Indian Institute of Technology, Jodhpur;IND;Universities;176;8352;31.83;69
+96256;Institute of Nano Science and Technology, Mohali;IND;Government;177;9152;32.01;69
+3256;Bharathidasan University;IND;Universities;178;7982;32.19;69
+3242;Atal Bihari Vajpayee Indian Institute of Information Technology and Management, Gwalior;IND;Universities;179;9578;32.37;69
+80538;Indian Institute of Science Education and Research, Kolkata;IND;Government;180;6712;32.55;70
+80196;Maharishi Markandeshwar University *;IND;Universities;181;7070;32.73;70
+3239;Annamalai University;IND;Universities;182;7833;32.91;70
+3348;Kakatiya University;IND;Universities;183;9137;33.09;70
+73484;Indian Institute of Technology, Ropar;IND;Universities;184;8745;33.27;70
+91885;GLA University;IND;Universities;185;7689;33.45;70
+92032;Homi Bhabha National Institute;IND;Universities;186;5467;33.63;71
+3480;University of Calicut;IND;Universities;187;9215;33.82;71
+97154;Centre for Energy and Environmental Sustainability;IND;Non-Profit;188;2202;34;71
+3486;University of Lucknow;IND;Universities;189;9007;34.18;71
+3503;Vidyasagar University;IND;Universities;190;7014;34.36;71
+26245;Indian Institute of Astrophysics;IND;Government;191;3377;34.54;71
+3414;Pandit Ravishankar Shukla University;IND;Universities;192;8865;34.72;71
+3501;Veer Narmad South Gujarat University;IND;Universities;193;9175;34.9;72
+77608;Jaypee Institute of Information Technology;IND;Universities;194;9173;35.08;72
+3234;Allahabad University;IND;Universities;195;8815;35.26;72
+3488;University of Mumbai;IND;Universities;196;9374;35.44;72
+71309;National Institute for Interdisciplinary Science and Technology;IND;Government;197;9248;35.62;72
+96236;National Institute of Technology, Patna;IND;Universities;198;8375;35.8;72
+80570;College of Engineering, Thiruvananthapuram;IND;Universities;199;9707;35.99;72
+97068;Doon University;IND;Universities;200;8385;36.17;72
+3452;Sree Chitra Tirunal Institute for Medical Sciences and Technology;IND;Universities;201;8271;36.35;72
+26305;Institute of Physics Bhubaneswar;IND;Government;202;3210;36.53;72
+96460;National Bureau of Plant Genetic Resources;IND;Government;203;8059;36.71;72
+3300;Gauhati University;IND;Universities;204;8047;36.89;72
+3398;National Institute of Technology Kurukshetra;IND;Universities;205;8560;37.07;73
+97191;Indian Institute of Science Education and Research, Berhampur;IND;Government;206;6892;37.25;73
+26237;Indian Association for the Cultivation of Science;IND;Universities;207;8761;37.43;73
+3422;I K Gujral Punjab Technical University;IND;Universities;208;7817;37.61;73
+70906;Gandhi Institute of Technology and Management;IND;Universities;209;8659;37.79;73
+88360;Teerthanker Mahaveer University;IND;Universities;210;8144;37.97;73
+73483;Indian Institute of Technology, Bhubaneswar;IND;Universities;211;7730;38.16;73
+3376;Mahatma Jyotiba Phule Rohilkhand University;IND;Universities;212;8438;38.34;73
+62349;Indian Institute of Management, Ahmedabad;IND;Universities;213;8955;38.52;73
+70922;Kalasalingam Academy of Research and Education;IND;Universities;214;7110;38.7;73
+3409;North-Eastern Hill University;IND;Universities;215;9115;38.88;73
+97201;Indian Institute of Technology, Dharwad;IND;Universities;216;9653;39.06;74
+26414;Sant Longowal Institute of Engineering and Technology;IND;Universities;217;8111;39.24;74
+3490;University of North Bengal;IND;Universities;218;8837;39.42;74
+26227;Harish Chandra Research Institute;IND;Government;219;3484;39.6;74
+96387;ICAR Research Complex for Eastern Region;IND;Government;220;8535;39.78;74
+26198;Chennai Mathematical Institute;IND;Universities;221;5748;39.96;74
+3276;Cochin University of Science and Technology;IND;Universities;222;9183;40.14;74
+3507;Visva-Bharati University;IND;Universities;223;8177;40.33;74
+94678;APJ Abdul Kalam Technological University;IND;Universities;224;9141;40.51;74
+3272;Chaudhary Charan Singh Haryana Agricultural University;IND;Universities;225;8029;40.69;74
+3263;Birla Institute of Technology;IND;Universities;226;8815;40.87;75
+80574;St Johns Medical College;IND;Universities;227;5878;41.05;75
+26264;Indian Institute of Tropical Meteorology;IND;Government;228;7384;41.23;75
+3241;Assam University;IND;Universities;229;8597;41.41;75
+3462;Siksha O Anusandhan University;IND;Universities;230;8339;41.59;75
+97094;KLE Technological University;IND;Universities;231;7927;41.77;75
+3400;National Institute of Technology Silchar;IND;Universities;232;8088;41.95;75
+80513;Regional Medical Research Centre, Bhubaneswar;IND;Health;233;4219;42.13;76
+69263;Indian Grassland and Fodder Research Institute;IND;Government;234;9082;42.31;76
+69337;Indian Institute of Petroleum;IND;Government;235;9306;42.5;76
+3303;Govind Ballabh Pant University of Agriculture and Technology;IND;Universities;236;8327;42.68;76
+3508;Visvesvaraya National Institute of Technology;IND;Universities;237;9281;42.86;76
+3396;National Institute of Technology Calicut;IND;Universities;238;9433;43.04;76
+3299;Gandhigram Rural Institute;IND;Universities;239;9058;43.22;76
+26260;Indian Institute of Soil Sciences;IND;Government;240;9224;43.4;76
+97072;Jaipuria Institute of Management;IND;Universities;241;7286;43.58;76
+77741;Graphic Era University;IND;Universities;242;7454;43.76;76
+94616;REVA University;IND;Universities;243;8522;43.94;76
+3445;Shivaji University;IND;Universities;244;8689;44.12;76
+96347;Central Potato Research Institute;IND;Government;245;8144;44.3;77
+3423;Punjabi University;IND;Universities;246;8978;44.48;77
+26378;National Remote Sensing Centre;IND;Government;247;9641;44.67;77
+68786;Presidency University, Kolkata;IND;Universities;248;7091;44.85;77
+10261;Motilal Nehru National Institute of Technology;IND;Universities;249;8890;45.03;77
+97187;Central University of Jharkhand;IND;Universities;250;8257;45.21;77
+77714;South Asian University;IND;Universities;251;9109;45.39;77
+3449;Shri Mata Vaishno Devi University;IND;Universities;252;8120;45.57;77
+77227;Loyola College;IND;Universities;253;9265;45.75;77
+71037;Central Institute of Medicinal and Aromatic Plants;IND;Government;254;8633;45.93;77
+3385;Maulana Azad National Institute of Technology;IND;Universities;255;8385;46.11;77
+72550;Indian Institute of Management, Bangalore;IND;Universities;256;8689;46.29;77
+96350;Indian Institute of Soil and Water Conservation;IND;Government;257;8978;46.47;77
+3479;University of Burdwan;IND;Universities;258;8196;46.65;78
+70875;Punjab Engineering College;IND;Universities;259;9409;46.84;78
+77740;Nitte University;IND;Universities;260;7222;47.02;78
+84961;Gautam Buddha University;IND;Universities;261;9422;47.2;78
+10241;Integral University;IND;Universities;262;8589;47.38;78
+96178;Sardar Vallabhbhai National Institute of Technology;IND;Universities;263;8694;47.56;78
+3287;Dr Babasaheb Ambedkar Marathwada University;IND;Universities;264;7674;47.74;78
+56254;Seth Gordhandas Sunderdas Medical College and King Edward Memorial Hospital;IND;Health;265;6946;47.92;78
+68792;Karunya Institute of Technology and Sciences;IND;Universities;266;7943;48.1;78
+77733;Pandit Deendayal Energy University;IND;Universities;267;7735;48.28;78
+10230;PDPM Indian Institute of Information Technology, Design and Manufacturing Jabalpur;IND;Universities;268;9071;48.46;78
+71619;Central Building Research Institute;IND;Government;269;7326;48.64;78
+3307;Gujarat University;IND;Universities;270;9397;48.82;78
+68796;Government Medical College and Hospital, Chandigarh;IND;Health;271;7404;49.01;78
+3421;Punjab Agricultural University;IND;Universities;272;8299;49.19;79
+80540;Indian Institute of Science Education and Research, Thiruvananthapuram;IND;Government;273;8047;49.37;79
+26412;S.N. Bose National Centre for Basic Sciences;IND;Government;274;7305;49.55;79
+26407;Raman Research Institute;IND;Government;275;6019;49.73;79
+91889;Yenepoya University;IND;Universities;276;7876;49.91;79
+3387;Mohan Lal Sukhadia University;IND;Universities;277;8996;50.09;79
+71285;Sri Siva Subramania Nadar College of Engineering;IND;Universities;278;8683;50.27;79
+84948;Central University of Gujarat;IND;Universities;279;9207;50.45;79
+3346;Jaypee University of Information Technology;IND;Universities;280;9150;50.63;80
+3253;Indian Institute of Engineering Science and Technology, Shibpur;IND;Universities;281;9256;50.81;80
+3309;Guru Ghasidas Vishwavidyalaya;IND;Universities;282;8940;50.99;80
+77709;Vignan University;IND;Universities;283;8390;51.18;80
+3440;Saurashtra University;IND;Universities;284;9673;51.36;80
+69354;Indira Gandhi Medical College;IND;Universities;285;6613;51.54;80
+97073;Maharaja Agrasen Institute of Technology;IND;Universities;286;8613;51.72;80
+91920;Veer Surendra Sai University of Technology;IND;Universities;287;8983;51.9;80
+71332;National Botanical Research Institute;IND;Government;288;8694;52.08;80
+96234;Gokaraju Rangaraju Institute of Engineering & Technology;IND;Universities;289;6545;52.26;80
+3467;Tamil Nadu Veterinary and Animal Sciences University;IND;Universities;290;8886;52.44;80
+91904;DIT University;IND;Universities;291;7934;52.62;80
+96186;Indian Institute of Wheat and Barley Research;IND;Government;292;7584;52.8;80
+96189;Ashoka University;IND;Universities;293;7645;52.98;80
+92499;Charotar University of Science and Technology;IND;Universities;294;8745;53.16;80
+3386;Mizoram University;IND;Universities;295;8057;53.35;80
+10298;Thiagarajar College of Engineering;IND;Universities;296;9197;53.53;81
+3243;Avinashilingam University for Women;IND;Universities;297;8781;53.71;81
+26445;Variable Energy Cyclotron Centre;IND;Government;298;4509;53.89;81
+92129;Techno India College of Technology;IND;Universities;299;9234;54.07;81
+3240;Assam Agricultural University;IND;Universities;300;8844;54.25;81
+77596;National Institute of Technology Hamirpur;IND;Universities;301;8802;54.43;81
+3509;Visvesvaraya Technological University;IND;Universities;302;8745;54.61;81
+26413;Saha Institute of Nuclear Physics;IND;Government;303;4716;54.79;81
+26173;Central Leather Research Institute;IND;Government;304;9566;54.97;81
+96179;University of Gour Banga;IND;Universities;305;5915;55.15;81
+3496;Kavayitri Bahinabai Chaudhari North Maharashtra University;IND;Universities;306;9589;55.33;81
+71136;Lady Hardinge Medical College;IND;Health;307;6942;55.52;82
+3417;Periyar University;IND;Universities;308;8569;55.7;82
+97180;Jaypee University of Engineering and Technology;IND;Universities;309;8761;55.88;82
+70624;PES University;IND;Universities;310;9709;56.06;82
+70655;Armed Forces Medical College;IND;Universities;311;6240;56.24;82
+26183;Central Soil Salinity Research Institute;IND;Government;312;6204;56.42;82
+80462;National Dairy Research Institute;IND;Government;313;8158;56.6;82
+3473;The Maharaja Sayajirao University of Baroda;IND;Universities;314;9338;56.78;82
+3407;Nizam's Institute of Medical Sciences;IND;Universities;315;7526;56.96;82
+80569;M. S. Ramaiah Institute of Technology;IND;Universities;316;9427;57.14;82
+3311;Guru Jambheshwar University of Science and Technology;IND;Universities;317;8917;57.32;82
+3512;Maulana Abul Kalam Azad University of Technology, West Bengal;IND;Universities;318;9303;57.5;82
+3283;Devi Ahilya University;IND;Universities;319;9404;57.69;83
+3301;Goa University;IND;Universities;320;9321;57.87;83
+97148;Islamic University of Science and Technology;IND;Universities;321;8394;58.05;83
+3315;Hemwati Nandan Bahuguna Garhwal University;IND;Universities;322;9041;58.23;83
+96181;Galgotias University;IND;Universities;323;8871;58.41;83
+97856;VIT-AP University;IND;Universities;324;8059;58.59;83
+77573;University College of Medical Sciences;IND;Universities;325;7443;58.77;83
+97043;Chennai Institute of Technology;IND;Universities;326;7828;58.95;83
+3359;Kurukshetra University;IND;Universities;327;9391;59.13;83
+3353;Karnatak University;IND;Universities;328;8344;59.31;83
+97102;International Institute of Information Technology, Bhubaneswar;IND;Universities;329;9427;59.49;83
+56218;Safdarjang Hospital;IND;Health;330;5928;59.67;83
+26399;Physical Research Laboratory;IND;Government;331;5784;59.86;84
+26446;Veermata Jijabai Technological Institute;IND;Universities;332;9620;60.04;84
+71104;National Institute of Technology Durgapur;IND;Universities;333;9331;60.22;84
+3229;Acharya Nagarjuna University;IND;Universities;334;8781;60.4;84
+77692;Bharath Institute of Higher Education and Research;IND;Universities;335;7652;60.58;84
+70786;Dr BR Ambedkar National Institute of Technology;IND;Universities;336;9078;60.76;84
+97147;Ravenshaw University;IND;Universities;337;9354;60.94;84
+96346;Central Marine Fisheries Research Institute;IND;Government;338;8472;61.12;84
+97106;National Institute of Technology, Delhi;IND;Universities;339;9416;61.3;84
+3455;Sri Krishnadevaraya University;IND;Universities;340;8158;61.48;85
+3389;Rashtrasant Tukadoji Maharaj Nagpur University;IND;Universities;341;9256;61.66;85
+96223;Chitkara University, Himachal Pradesh;IND;Universities;342;8228;61.84;85
+3347;Jiwaji University;IND;Universities;343;9014;62.03;85
+26156;Central Electronics Engineering Research Institute;IND;Government;344;9725;62.21;85
+3437;Sardar Patel University;IND;Universities;345;9262;62.39;85
+91914;BS Abdur Rahman Crescent Institute of Science and Technology;IND;Universities;346;9110;62.57;85
+77595;GH Raisoni College of Engineering;IND;Universities;347;7860;62.75;85
+3275;Chhatrapati Shahu Ji Maharaj University;IND;Universities;348;9522;62.93;85
+97200;OP Jindal Global University;IND;Universities;349;8672;63.11;85
+69338;Institute of Management Technology, Ghaziabad;IND;Universities;350;8856;63.29;85
+96349;Central Inland Fisheries Research Institute;IND;Government;351;8412;63.47;85
+3304;Anand Agricultural University;IND;Universities;352;8902;63.65;85
+3459;Sri Venkateswara University;IND;Universities;353;9041;63.83;86
+26377;National Physical Laboratory India;IND;Government;354;8992;64.01;86
+96307;Madanapalle Institute of Technology and Science;IND;Universities;355;9071;64.2;86
+77697;Hindustan Institute of Technology and Science;IND;Universities;356;9078;64.38;86
+3477;University of Agricultural Sciences, Bangalore;IND;Universities;357;8927;64.56;86
+91907;Central University of Tamil Nadu;IND;Universities;358;8659;64.74;86
+3250;Banasthali University;IND;Universities;359;9319;64.92;86
+97152;Indian Institute of Management, Kashipur;IND;Universities;360;9361;65.1;86
+3292;Dr Hari Singh Gour Vishwavidyalaya;IND;Universities;361;9047;65.28;86
+69347;Management Development Institute, Gurgaon;IND;Universities;362;8021;65.46;86
+3443;Sher-e-Kashmir University of Agricultural Sciences and Technology-Jammu;IND;Universities;363;8370;65.64;86
+97004;SR University;IND;Universities;364;6712;65.82;86
+3434;Sambalpur University;IND;Universities;365;8849;66;86
+77735;Vel Tech University;IND;Universities;366;8015;66.18;86
+3316;Himachal Pradesh University;IND;Universities;367;9570;66.37;86
+62098;Ministry of Earth Sciences *;IND;Government;368;8172;66.55;86
+3360;Kuvempu University;IND;Universities;369;8652;66.73;86
+77699;Lala Lajpat Rai University of Veterinary and Animal Sciences;IND;Universities;370;9029;66.91;87
+87263;Tata Steel Ltd, India;IND;Companies;371;9745;67.09;87
+3356;Kerala Agricultural University;IND;Universities;372;8878;67.27;87
+97065;National Institute of Technology, Meghalaya;IND;Universities;373;9539;67.45;87
+96308;Indira Gandhi Delhi Technical University for Women;IND;Universities;374;9684;67.63;87
+68788;Guru Angad Dev Veterinary and Animal Sciences University;IND;Universities;375;8428;67.81;87
+97099;National Institute of Technology, Puducherry;IND;Universities;376;8068;67.99;87
+91886;Madan Mohan Malaviya University Of Technology;IND;Universities;377;8735;68.17;87
+26416;Pandit Bhagwat Dayal Sharma Post Graduate Institute of Medical Sciences;IND;Universities;378;6024;68.35;87
+3278;Dayalbagh Educational Institute;IND;Universities;379;9602;68.54;87
+91884;JC Bose University of Science and Technology YMCA;IND;Universities;380;9589;68.72;88
+97186;Cotton University;IND;Universities;381;9141;68.9;88
+97064;National Institute of Technology, Srinagar;IND;Universities;382;9012;69.08;88
+80564;Space Applications Centre;IND;Government;383;9668;69.26;88
+96304;Aliah University;IND;Universities;384;9374;69.44;88
+3483;University of Kalyani;IND;Universities;385;9001;69.62;88
+69265;Central Glass and Ceramic Research Institute;IND;Government;386;9625;69.8;88
+91888;JECRC University;IND;Universities;387;7764;69.98;88
+92133;Indian Institute of Space Science and Technology;IND;Universities;388;9613;70.16;89
+97145;Velammal Engineering College;IND;Universities;389;9516;70.34;89
+26409;Institute of Minerals and Materials Technology;IND;Government;390;9418;70.52;89
+3383;Manonmaniam Sundaranar University;IND;Universities;391;9092;70.71;89
+96303;Azim Premji University;IND;Universities;392;8394;70.89;89
+97293;Parul University;IND;Universities;393;9239;71.07;89
+97135;Rajalakshmi Institute of Technology;IND;Universities;394;7682;71.25;89
+77675;PSG College of Arts and Science;IND;Universities;395;8771;71.43;89
+96269;Central University of Karnataka;IND;Universities;396;8745;71.61;89
+69214;Datta Meghe Institute of Higher Education and Research *;IND;Universities;397;6800;71.79;89
+77691;Karpagam University;IND;Universities;398;8745;71.97;89
+3482;University of Jammu;IND;Universities;399;7747;72.15;90
+96193;Uttaranchal University;IND;Universities;400;8694;72.33;90
+97137;Chaitanya Bharathi Institute of Technology;IND;Universities;401;8633;72.51;90
+97224;Aditya University;IND;Universities;402;7379;72.69;90
+3380;Mangalore University;IND;Universities;403;8886;72.88;90
+71601;North East Institute of Science and Technology;IND;Government;404;8332;73.06;90
+3494;Utkal University;IND;Universities;405;9321;73.24;90
+70620;Dhirubhai Ambani Institute of Information and Communication Technology;IND;Universities;406;9719;73.42;90
+97069;KIET Group of Institutions;IND;Universities;407;9095;73.6;90
+80463;Central Institute of Fisheries Education;IND;Government;408;7985;73.78;90
+77626;BMS College of Engineering;IND;Universities;409;9693;73.96;90
+97195;Centurion University of Technology and Management;IND;Universities;410;8865;74.14;90
+97199;Institute of Infrastructure, Technology, Research and Management;IND;Universities;411;7855;74.32;90
+77659;Rajalakshmi Engineering College;IND;Universities;412;8837;74.5;90
+97105;Indian Institute of Management, Rohtak;IND;Universities;413;9212;74.68;90
+3267;Central Agricultural University;IND;Universities;414;8479;74.86;91
+96267;Kongu Engineering College;IND;Universities;415;7960;75.05;91
+97056;CMR Institute of Technology, Bangalore;IND;Universities;416;9468;75.23;91
+97090;ISF College of Pharmacy;IND;Universities;417;9508;75.41;91
+97161;PSG Institute of Technology and Applied Research;IND;Universities;418;9637;75.59;91
+96230;Sri Krishna College of Engineering & Technology;IND;Universities;419;9087;75.77;91
+10278;Rajasthan Technical University;IND;Universities;420;8728;75.95;91
+70682;Bannari Amman Institute of Technology;IND;Universities;421;8855;76.13;91
+94677;TKM College of Engineering;IND;Universities;422;9619;76.31;91
+72965;Jawaharlal Nehru Technological University, Kakinada;IND;Universities;423;9369;76.49;91
+71243;Kumaraguru College of Technology;IND;Universities;424;8689;76.67;92
+77734;Uttarakhand Technical University;IND;Universities;425;9622;76.85;92
+96301;Vardhaman College of Engineering;IND;Universities;426;9433;77.03;92
+72964;Jawaharlal Nehru Technological University, Anantapur;IND;Universities;427;8955;77.22;92
+80571;LNM Institute of Information Technology;IND;Universities;428;9617;77.4;92
+97128;Acharya Institutes *;IND;Universities;429;9437;77.58;92
+3382;Manipur University;IND;Universities;430;9156;77.76;92
+96498;Galgotias Educational Institutions *;IND;Universities;431;8589;77.94;92
+3469;Tata Institute of Social Sciences;IND;Universities;432;9202;78.12;92
+97140;Pimpri Chinchwad College of Engineering;IND;Universities;433;9586;78.3;92
+3280;Deen Dayal Upadhyay Gorakhpur University;IND;Universities;434;8912;78.48;92
+97144;M Kumarasamy College of Engineering;IND;Universities;435;7837;78.66;92
+26258;Indian Institute of Remote Sensing;IND;Government;436;8895;78.84;92
+66683;ISS Academy of Technical Education, Noida;IND;Universities;437;8934;79.02;92
+3235;Sant Gadge Baba Amravati University;IND;Universities;438;9160;79.2;92
+80562;Vikram Sarabhai Space Centre;IND;Government;439;9721;79.39;92
+97121;Silicon University;IND;Universities;440;9383;79.57;93
+96253;Guru Nanak Dev Engineering College, Ludhiana;IND;Universities;441;8907;79.75;93
+67436;Madhav Institute of Technology and Science, Gwalior;IND;Universities;442;9545;79.93;93
+3366;Maharana Pratap University of Agriculture and Technology;IND;Universities;443;8479;80.11;93
+26280;Indian Institute of Toxicology Research;IND;Government;444;8252;80.29;93
+97087;Vallurupalli Nageswara Rao Vignana Jyothi Institute of Engineering & Technology;IND;Universities;445;9189;80.47;93
+72561;Indian Institute of Management, Indore;IND;Universities;446;9218;80.65;93
+80568;College of Engineering, Pune;IND;Universities;447;9645;80.83;93
+77587;Government College of Technology;IND;Universities;448;9351;81.01;93
+97054;CMR Group of Institutions, Bangalore *;IND;Universities;449;9432;81.19;93
+91887;Vels Institute of Science Technology and Advanced Studies;IND;Universities;450;9197;81.37;93
+96300;National Institute of Technical Teachers Training and Research, Chandigarh;IND;Universities;451;9491;81.56;93
+70933;Jaipur National University;IND;Universities;452;9298;81.74;93
+26168;Central Institute of Mining and Fuel Research;IND;Government;453;9502;81.92;93
+80573;Mepco Schlenk Engineering College;IND;Universities;454;9255;82.1;93
+96392;Indian Institute of Horticultural Research;IND;Government;455;9369;82.28;93
+71279;National Institute of Technology Jamshedpur;IND;Universities;456;8722;82.46;93
+97071;Panimalar Engineering College;IND;Universities;457;8454;82.64;93
+3429;Avinashilingam Institute for Home Science & Higher Education for Women;IND;Universities;458;9067;82.82;93
+26286;Institute for Plasma Research;IND;Government;459;9500;83;94
+97193;St Joseph's College of Engineering;IND;Universities;460;9357;83.18;94
+97181;XIM University *;IND;Universities;461;9712;83.36;94
+96367;Graphic Era Hill University;IND;Universities;462;9460;83.54;94
+77591;Vishwakarma Institute of Technology;IND;Universities;463;9736;83.73;94
+71326;Sri Venkateswara College of Engineering;IND;Universities;464;9246;83.91;94
+10274;PSG College of Technology;IND;Universities;465;9545;84.09;94
+26401;Puducherry Technological University;IND;Universities;466;9600;84.27;94
+97153;Maharaja Surajmal Institute of Technology;IND;Universities;467;9443;84.45;94
+71621;National Institute of Nutrition, Hyderabad;IND;Health;468;6221;84.63;94
+96333;Central Arid Zone Research Institute;IND;Government;469;9202;84.81;94
+97075;National Institute of Technology, Agartala;IND;Universities;470;9391;84.99;94
+77716;Tumkur University;IND;Universities;471;8978;85.17;94
+71286;Central Mechanical Engineering Research Institute;IND;Government;472;9404;85.35;94
+97100;University of Engineering & Management, Kolkata;IND;Universities;473;9628;85.53;94
+97074;Nitte Meenakshi Institute of Technology;IND;Universities;474;9047;85.71;94
+96302;Sri Sairam Engineering College;IND;Universities;475;9525;85.9;94
+72567;Indian Institute of Management Lucknow;IND;Universities;476;9331;86.08;95
+96227;ABES Engineering College;IND;Universities;477;9635;86.26;95
+97066;Sri Krishna College of Technology;IND;Universities;478;9487;86.44;95
+72568;Indian Institute of Management, Kozhikode;IND;Universities;479;9391;86.62;95
+69264;National Aerospace Laboratories;IND;Government;480;9733;86.8;95
+97103;GMR Institute of Technology;IND;Universities;481;8463;86.98;95
+97092;Institute of Aeronautical Engineering;IND;Universities;482;9097;87.16;95
+26277;Indira Gandhi Centre for Atomic Research;IND;Government;483;9743;87.34;95
+70915;AMET University;IND;Universities;484;8917;87.52;95
+26352;National Geophysical Research Institute;IND;Government;485;9374;87.7;95
+97097;Bapatla Engineering College;IND;Universities;486;8924;87.88;95
+97149;Noida Institute of Engineering & Technology;IND;Universities;487;9348;88.07;95
+96272;KPR Institute of Engineering and Technology;IND;Universities;488;5079;88.25;95
+69339;Coimbatore Institute of Technology;IND;Universities;489;9361;88.43;95
+97098;Hindusthan College of Engineering and Technology;IND;Universities;490;8722;88.61;95
+77739;Manav Rachna International Institute of Research and Studies;IND;Universities;491;9197;88.79;95
+97122;Ajay Kumar Garg Engineering College;IND;Universities;492;9688;88.97;95
+96222;Chitkara Educational Trust *;IND;Universities;493;4566;89.15;95
+97160;Indian Institute of Management, Raipur;IND;Universities;494;8722;89.33;95
+88346;Krishna Institute of Medical Sciences University;IND;Universities;495;7091;89.51;96
+26450;Wadia Institute of Himalayan Geology;IND;Government;496;9234;89.69;96
+97059;CMR College of Engineering & Technology;IND;Universities;497;8418;89.87;96
+96299;Karpagam College of Engineering;IND;Universities;498;9057;90.05;96
+96251;Institute of Engineering and Management, Kolkata;IND;Universities;499;9648;90.24;96
+97159;Deenbandhu Chhotu Ram University of Science and Technology;IND;Universities;500;9348;90.42;96
+96257;International Advanced Research Centre for Powder Metallurgy and New Materials *;IND;Government;501;9677;90.6;96
+96438;Galgotias College of Engineering & Technology;IND;Universities;502;9328;90.78;96
+97107;SNS College of Technology;IND;Universities;503;9284;90.96;96
+26402;Raja Ramanna Centre for Advanced Technology;IND;Government;504;9676;91.14;96
+97058;CMR Institute of Technology, Hyderabad;IND;Universities;505;8354;91.32;96
+97086;SRM Easwari Engineering College;IND;Universities;506;9193;91.5;96
+97136;Sreenidhi Institute of Science and Technology;IND;Universities;507;9578;91.68;96
+97819;Vishwakarma Institute of Information Technology;IND;Universities;508;9314;91.86;96
+97190;All India Institute of Speech and Hearing;IND;Universities;509;9071;92.04;97
+3254;Berhampur University;IND;Universities;510;9634;92.22;97
+69335;JSS Science and Technology University;IND;Universities;511;9529;92.41;97
+77711;Navsari Agricultural University;IND;Universities;512;9437;92.59;97
+97088;KCG College of Technology;IND;Universities;513;9606;92.77;97
+96233;Sona College of Technology;IND;Universities;514;9097;92.95;97
+96190;National Institute of Advanced Studies;IND;Non-Profit;515;9166;93.13;97
+56210;Maulana Azad Medical College;IND;Health;516;5515;93.31;97
+97070;Poornima University;IND;Universities;517;9248;93.49;97
+77694;University Visvesvaraya College of Engineering;IND;Universities;518;9741;93.67;97
+77700;West Bengal State University;IND;Universities;519;9475;93.85;97
+97138;Indian Institute of Management, Ranchi;IND;Universities;520;9592;94.03;97
+97139;National Engineering College;IND;Universities;521;9298;94.21;97
+96250;Shri Ramdeobaba College of Engineering and Management;IND;Universities;522;9620;94.39;97
+70963;Yogi Vemana University;IND;Universities;523;8904;94.58;97
+97157;ITM University Gwalior;IND;Universities;524;9699;94.76;97
+96232;Sri Ramakrishna Engineering College;IND;Universities;525;9506;94.94;98
+97089;FORE School of Management;IND;Universities;526;9465;95.12;98
+96297;MLR Institute of Technology;IND;Universities;527;9234;95.3;98
+77631;Pranveer Singh Institute of Technology;IND;Universities;528;9691;95.48;98
+96309;Haldia Institute of Technology;IND;Universities;529;9559;95.66;98
+97096;PSGR Krishnammal College for Women;IND;Universities;530;9576;95.84;98
+71616;National Metallurgical Laboratory;IND;Government;531;9705;96.02;98
+97057;CMR Group of Institutions, Hyderabad *;IND;Universities;532;8771;96.2;98
+26149;Birbal Sahni Institute of Palaeobotany;IND;Government;533;9479;96.38;99
+97044;CMR Technical Campus;IND;Universities;534;9487;96.56;99
+96270;Yeshwantrao Chavan College of Engineering, Nagpur;IND;Universities;535;9643;96.75;99
+97076;PSNA College of Engineering & Technology;IND;Universities;536;9502;96.93;99
+71034;National Institute of Oceanography;IND;Government;537;9215;97.11;99
+62371;Ugc-Dae Consortium for Scientific Research Indore *;IND;Government;538;9686;97.29;99
+71307;Medical College and Hospital Kolkata;IND;Health;539;6231;97.47;99
+96327;Saveetha Dental College Hospital;IND;Health;540;5998;97.65;99
+97133;CVR College of Engineering;IND;Universities;541;9387;97.83;99
+10301;Saveetha Engineering College;IND;Universities;542;9653;98.01;99
+97163;Kalyani Government Engineering College;IND;Universities;543;9730;98.19;99
+26395;Inter-University Accelerator Centre;IND;Government;544;9721;98.37;99
+97077;Heritage Institute of Technology;IND;Universities;545;9747;98.55;99
+70953;Rajiv Gandhi Proudyogiki Vishwavidyalaya;IND;Universities;546;8472;98.73;100
+97142;Arignar Anna Government Arts College, Cheyyar;IND;Universities;547;8822;98.92;100
+77656;MIT World Peace University;IND;Universities;548;9082;99.1;100
+3411;Orissa University of Agriculture and Technology;IND;Universities;549;9256;99.28;100
+94676;TKM Educational Trust *;IND;Non-Profit;550;9558;99.46;100
+96363;Saveetha Medical College Hospital;IND;Health;551;6454;99.64;100
+3251;Bangalore University;IND;Universities;552;9629;99.82;100
+97386;Lajpat Rai Educational Society *;IND;Universities;553;9173;100;100
