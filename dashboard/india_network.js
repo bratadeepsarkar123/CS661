@@ -45,7 +45,7 @@ const INDIA = (() => {
         return data;
       })
       .catch(() => {
-        if (cache.full) return cache.full;
+        console.warn(`India network: missing payload for year ${year}`);
         throw new Error(`No payload for year ${year}`);
       });
   }
@@ -142,6 +142,11 @@ const INDIA = (() => {
     return Math.max(MIN_HIT_PX, markerRadius(node) * HIT_RADIUS_MULT);
   }
 
+  function edgeStrokeWeight(weight) {
+    const w = Math.max(1, Number(weight) || 1);
+    return Math.min(4, 1 + Math.log2(w));
+  }
+
   function collabStats(node, net) {
     const links = net.edges.filter((e) => e.source === node.id || e.target === node.id);
     const collabTotal = links.reduce((s, l) => s + (l.weight || 0), 0);
@@ -174,8 +179,8 @@ const INDIA = (() => {
       .join("");
 
     const footnote =
-      net.meta.quality_note ||
-      "~120 research-active institutions mapped; tier averages include wider affiliated systems.";
+      "Map shows ~120 research-active institutions. ~40k affiliated colleges are represented in tier averages only. " +
+      (net.meta.quality_note ? net.meta.quality_note : "");
 
     return `
       <h4>India Domestic HE Network</h4>
@@ -204,7 +209,7 @@ const INDIA = (() => {
 
     const zeroNote =
       collabTotal === 0
-        ? `<p class="india-data-note">No domestic co-pub edge in pilot export yet — OpenAlex works fetch still in progress for most institutions.</p>`
+        ? `<p class="india-data-note">No domestic co-publication edges in this year slice for this institution (weight threshold ≥ 2).</p>`
         : "";
 
     if (tab === "funding") {
@@ -263,9 +268,10 @@ const INDIA = (() => {
       <h3 class="inst-name">${node.name}</h3>
       <span class="inst-tier" style="background:${col}33;color:${col}">${tierLabel(node.tier)}</span>
       ${tabs}
+      <div class="inst-stat-row"><span>NIRF rank (Overall)</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
       <div class="inst-stat-row"><span>OpenAlex works (2015–24)</span><strong>${(node.total_works || 0).toLocaleString()}</strong></div>
       <div class="inst-stat-row"><span>SCImago impact (${node.scimago_year || "—"})</span><strong>${node.scimago_pct != null ? node.scimago_pct + "%" : "—"}</strong></div>
-      <div class="inst-stat-row"><span>Domestic co-pubs (pilot)</span><strong>${collabTotal || "—"}</strong></div>
+      <div class="inst-stat-row"><span>Domestic co-pubs (year slice)</span><strong>${collabTotal || "—"}</strong></div>
       ${zeroNote}
       <ul class="india-partner-list">
         ${links
@@ -277,7 +283,7 @@ const INDIA = (() => {
             if (!partner) return "";
             return `<li><span>${partner.name}</span><strong>${l.weight || 0}</strong></li>`;
           })
-          .join("") || "<li class='india-search-empty'>No partners in pilot edge set</li>"}
+          .join("") || "<li class='india-search-empty'>No domestic co-publication partners in this year slice</li>"}
       </ul>
     `;
   }
@@ -313,7 +319,7 @@ const INDIA = (() => {
           ctx.moveTo(s._px, s._py);
           ctx.lineTo(t._px, t._py);
           ctx.strokeStyle = "rgba(168,85,247,0.45)";
-          ctx.lineWidth = Math.max(1, Math.sqrt(e.weight || 1) * 0.4);
+          ctx.lineWidth = edgeStrokeWeight(e.weight);
           ctx.stroke();
         });
         hubs.forEach((n) => {
@@ -412,8 +418,9 @@ const INDIA = (() => {
       if (selectedId) {
         const ego = egoSet(selectedId, net.edges);
         return {
-          nodes: net.nodes.filter((n) => ego.has(n.id)),
-          edges: net.edges.filter((e) => ego.has(e.source) && ego.has(e.target)),
+          nodes: net.nodes,
+          edges: net.edges,
+          egoIds: ego,
         };
       }
       return {
@@ -421,6 +428,7 @@ const INDIA = (() => {
         edges: net.edges.filter(
           (e) => net.hubIds.has(e.source) && net.hubIds.has(e.target)
         ),
+        egoIds: null,
       };
     }
 
@@ -461,22 +469,25 @@ const INDIA = (() => {
         markerMeta.clear();
       }
 
-      const { nodes: visNodes, edges: visEdges } = visibleGraph();
+      const { nodes: visNodes, edges: visEdges, egoIds } = visibleGraph();
 
       if (fullRedraw) {
         visEdges.forEach((e) => {
           const a = net.nodeById.get(e.source);
           const b = net.nodeById.get(e.target);
           if (!a || !b) return;
+          const inEgo =
+            !egoIds ||
+            (egoIds.has(e.source) && egoIds.has(e.target));
           L.polyline(
             [
               [a.lat, a.lon],
               [b.lat, b.lon],
             ],
             {
-              color: "#c084fc",
-              weight: Math.max(1.5, Math.sqrt(e.weight || 1) * 0.55),
-              opacity: 0.85,
+              color: "#64748b",
+              weight: edgeStrokeWeight(e.weight),
+              opacity: egoIds ? (inEgo ? 0.85 : 0.08) : inEgo ? 0.85 : 0.15,
             }
           ).addTo(edgeLayer);
         });
@@ -485,17 +496,19 @@ const INDIA = (() => {
           const r = markerRadius(node);
           const col = TIER_COLORS[node.tier] || node.color || "#3b82f6";
           const isSelected = node.id === selectedId;
+          const inEgo = !egoIds || egoIds.has(node.id);
+          const dimmed = egoIds && !inEgo;
 
           const vis = L.circleMarker([node.lat, node.lon], {
             radius: r,
             fillColor: col,
             color: isSelected ? "#ffffff" : "rgba(255,255,255,0.65)",
             weight: isSelected ? 3 : 1.5,
-            fillOpacity: 0.9,
-            opacity: 1,
+            fillOpacity: dimmed ? 0.18 : 0.9,
+            opacity: dimmed ? 0.35 : 1,
             interactive: false,
           }).addTo(markerLayer);
-          markerMeta.set(node.id, { layer: vis, node });
+          markerMeta.set(node.id, { layer: vis, node, dimmed, inEgo });
 
           if (node.is_hub || isSelected) {
             L.marker([node.lat, node.lon], {
@@ -543,7 +556,7 @@ const INDIA = (() => {
     }
 
     function applyHighlight() {
-      markerMeta.forEach(({ layer, node }, nodeId) => {
+      markerMeta.forEach(({ layer, node, dimmed }, nodeId) => {
         const r = markerRadius(node);
         const isSelected = nodeId === selectedId;
         const isHover = nodeId === hoverId && !locked;
@@ -551,8 +564,8 @@ const INDIA = (() => {
         layer.setStyle({
           color: isSelected || isHover ? "#ffffff" : "rgba(255,255,255,0.65)",
           weight: isSelected ? 3 : isHover ? 2 : 1.5,
-          fillOpacity: 0.9,
-          opacity: 1,
+          fillOpacity: dimmed && !isSelected && !isHover ? 0.18 : 0.9,
+          opacity: dimmed && !isSelected && !isHover ? 0.35 : 1,
         });
       });
     }
@@ -688,7 +701,7 @@ const INDIA = (() => {
         }
         return loadYearPayload(y).then((payload) => {
           activeYear = y;
-          cache.full = payload;
+          cache.byYear[String(y)] = payload;
           const prev = selectedId;
           net = filterNetwork(payload, tierFilter);
           if (prev && !net.nodeById.has(prev)) {

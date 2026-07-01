@@ -24,7 +24,7 @@ UNRANKED_NIRF_NAMES = {
 }
 
 
-def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_lookup: dict) -> tuple[pd.Series | None, float]:
+def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_lookup: dict) -> tuple[pd.Series | None, float, str | None]:
     name = inst["canonical_name"]
     nn = norm_name(FUNDING_NAME_ALIASES.get(name, name))
 
@@ -32,12 +32,13 @@ def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_look
     if pd.isna(nirf_id):
         nirf_id = load_nirf_id_overrides().get(name)
     if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
-        return id_lookup[str(nirf_id)], 1.0
+        row = id_lookup[str(nirf_id)]
+        return row, 1.0, str(row.get("nirf_institute_id") or nirf_id)
     if nn in idx.index:
         row = idx.loc[nn]
         if isinstance(row, pd.DataFrame):
             row = row.iloc[0]
-        return row, 1.0
+        return row, 1.0, str(row.get("nirf_institute_id") or nn)
 
     best = None
     best_score = 0.0
@@ -49,29 +50,28 @@ def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_look
             best_score = score
             best = p
     if best is not None and best_score >= 0.78:
-        return best, best_score
-    return None, 0.0
+        return best, best_score, str(best.get("nirf_institute_id") or best.get("name_norm"))
+    return None, 0.0, None
 
 
 def _dedupe_patent_collisions(out: pd.DataFrame) -> pd.DataFrame:
-    """Null duplicate patent triples assigned to multiple institutions (data-leakage fix)."""
+    """Only one institution may claim the same NIRF source row (by nirf_institute_id)."""
     out = out.copy()
-    has = out["patents_published"].notna()
+    if "nirf_patent_source_id" not in out.columns:
+        return out
+    has = out["nirf_patent_source_id"].notna()
     if not has.any():
         return out
 
-    grouped = out[has].groupby(
-        ["patents_published", "patents_granted", "patent_calendar_year"],
-        dropna=False,
-    )
     null_cols = [
         "patents_published",
         "patents_granted",
         "patents_published_3yr",
         "patents_granted_3yr",
         "patent_calendar_year",
+        "nirf_patent_source_id",
     ]
-    for _, group in grouped:
+    for _, group in out[has].groupby("nirf_patent_source_id", dropna=False):
         if len(group) <= 1:
             continue
         keep_idx = group.sort_values(
@@ -111,12 +111,13 @@ def main() -> None:
                     "patents_granted_3yr": pd.NA,
                     "patent_calendar_year": pd.NA,
                     "match_score": pd.NA,
+                    "nirf_patent_source_id": pd.NA,
                     "patent_status": "unranked",
                 }
             )
             continue
 
-        row, score = _pick_row(inst, patents, idx, id_lookup)
+        row, score, source_id = _pick_row(inst, patents, idx, id_lookup)
         if row is not None and pd.notna(row.get("patents_published")):
             status = "reported"
         elif pd.notna(inst.get("nirf_rank")) or pd.notna(inst.get("nirf_institute_id")):
@@ -133,6 +134,7 @@ def main() -> None:
                 "patents_granted_3yr": row.get("patents_granted_3yr", pd.NA) if row is not None else pd.NA,
                 "patent_calendar_year": row.get("patent_calendar_year", pd.NA) if row is not None else pd.NA,
                 "match_score": score if row is not None else pd.NA,
+                "nirf_patent_source_id": source_id if source_id else pd.NA,
                 "patent_status": status if row is not None else status,
             }
         )
