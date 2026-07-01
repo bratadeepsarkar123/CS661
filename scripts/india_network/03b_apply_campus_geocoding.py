@@ -16,6 +16,7 @@ from config import PROCESSED_DIR  # noqa: E402
 
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 CACHE_PATH = PROCESSED_DIR / "campus_coordinates.csv"
+ALL_OVERRIDES_PATH = PROCESSED_DIR / "campus_all_overrides.csv"
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
 USER_AGENT = "CS661-IndiaNetwork/1.0 (campus-geocode; bratadeeps24@iitk.ac.in)"
 
@@ -141,12 +142,30 @@ def _load_cache() -> dict[str, dict]:
     return df.set_index("openalex_id")[["latitude", "longitude", "geo_source"]].to_dict("index")
 
 
+def _load_all_overrides() -> dict[str, tuple[float, float, str]]:
+    """Authoritative 120-row campus lockfile (run generate_campus_all_overrides.py)."""
+    if not ALL_OVERRIDES_PATH.exists():
+        return {}
+    df = pd.read_csv(ALL_OVERRIDES_PATH)
+    out: dict[str, tuple[float, float, str]] = {}
+    for _, row in df.iterrows():
+        out[str(row["openalex_id"])] = (
+            float(row["latitude"]),
+            float(row["longitude"]),
+            str(row["geo_source"]),
+        )
+    return out
+
+
 def main() -> None:
     if not MASTER_PATH.exists():
         raise FileNotFoundError(f"Run 03_build_institution_master.py first: {MASTER_PATH}")
 
     master = pd.read_csv(MASTER_PATH)
     cache_map = _load_cache()
+    locked = _load_all_overrides()
+    if locked:
+        MANUAL_CAMPUS.update(locked)
     rows: list[dict] = []
     nominatim_calls = 0
     updated = 0
@@ -205,6 +224,8 @@ def main() -> None:
 
     print(f"Wrote {CACHE_PATH} ({len(geo)} rows)")
     print(f"  Manual campus overrides: {len(MANUAL_CAMPUS)}")
+    if locked:
+        print(f"  Locked campus_all_overrides.csv: {len(locked)} rows")
     print(f"  Nominatim calls this run: {nominatim_calls}")
     print(f"  Coordinates moved (>0.01 deg): {updated}")
     print(f"  Remaining duplicate stacks: {len(stacks)}")

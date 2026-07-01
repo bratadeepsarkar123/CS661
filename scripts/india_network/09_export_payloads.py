@@ -28,6 +28,8 @@ PATENTS_PATH = PROCESSED_DIR / "institution_patents.csv"
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 EDGES_PATH = PROCESSED_DIR / "collaboration_edges_full.csv"
 HUBS_PATH = PROCESSED_DIR / "hub_flags.csv"
+TRIADS_PATH = PROCESSED_DIR / "collaboration_triads.parquet"
+DOMESTIC_WORKS_PATH = PROCESSED_DIR / "domestic_works.parquet"
 SCIMAGEO_YEAR = 2019
 
 UNRANKED_NIRF_NAMES = {
@@ -243,6 +245,38 @@ def _sort_nodes_for_display(nodes: list[dict]) -> list[dict]:
     )
 
 
+def build_triads_payload(
+    master: pd.DataFrame,
+    year: int | None,
+    node_ids: set[str],
+) -> dict[str, list[list]]:
+    """Per-focus partner-pair triads for 3+ institution papers (full payload only)."""
+    if TRIADS_PATH.exists():
+        tri = pd.read_parquet(TRIADS_PATH)
+        ykey = -1 if year is None else int(year)
+        tri = tri[tri["year"] == ykey]
+        tri = tri[
+            tri["focus_id"].isin(node_ids)
+            & tri["partner_a"].isin(node_ids)
+            & tri["partner_b"].isin(node_ids)
+        ]
+        out: dict[str, list[list]] = {}
+        for focus, grp in tri.groupby("focus_id"):
+            out[str(focus)] = [
+                [str(r.partner_a), str(r.partner_b), int(r.weight)] for r in grp.itertuples()
+            ]
+        return out
+
+    if not DOMESTIC_WORKS_PATH.exists():
+        return {}
+
+    from triad_builder import build_triads_from_works, load_domestic_works, oa_map_from_master  # noqa: WPS433
+
+    domestic = load_domestic_works(DOMESTIC_WORKS_PATH)
+    oa_map = oa_map_from_master(master)
+    return build_triads_from_works(domestic, oa_map, year=year, node_ids=node_ids)
+
+
 def hub_annotations(nodes: list[dict]) -> list[str]:
     labels = []
     for hub in [n for n in nodes if n.get("is_hub")][:HUB_COUNT]:
@@ -290,6 +324,7 @@ def export_year(year: int | None, master: pd.DataFrame, edges: pd.DataFrame, hub
         **overview,
         "nodes": full_nodes,
         "edges": full_edges,
+        "triads": build_triads_payload(master, year, full_node_ids),
         "tier_panels": {
             "premier": next((t for t in tier_summary(nodes) if t["tier"] == "premier"), {}),
             "state_affiliated": next((t for t in tier_summary(nodes) if t["tier"] == "state_affiliated"), {}),

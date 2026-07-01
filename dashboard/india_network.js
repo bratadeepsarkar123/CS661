@@ -120,16 +120,33 @@ const INDIA = (() => {
     );
     const nodeById = new Map(filteredNodes.map((n) => [n.id, n]));
     const hubIds = new Set(filteredNodes.filter((n) => n.is_hub).map((n) => n.id));
-    return { nodes: filteredNodes, edges, nodeById, hubIds, meta: payload };
+    return { nodes: filteredNodes, edges, nodeById, hubIds, meta: payload, triads: payload.triads || {} };
   }
 
-  function egoSet(nodeId, edges) {
-    const set = new Set([nodeId]);
+  function partnerSet(nodeId, edges) {
+    const set = new Set();
     edges.forEach((e) => {
       if (e.source === nodeId) set.add(e.target);
       if (e.target === nodeId) set.add(e.source);
     });
     return set;
+  }
+
+  function focusGraph(selectedId, edges, triads) {
+    const partners = partnerSet(selectedId, edges);
+    const starEdges = edges
+      .filter((e) => e.source === selectedId || e.target === selectedId)
+      .map((e) => ({ ...e, kind: "star" }));
+
+    const triadEdges = [];
+    (triads[selectedId] || []).forEach(([a, b, w]) => {
+      if (partners.has(a) && partners.has(b)) {
+        triadEdges.push({ source: a, target: b, weight: w, kind: "triad" });
+      }
+    });
+
+    const visibleIds = new Set([selectedId, ...partners]);
+    return { visibleIds, starEdges, triadEdges };
   }
 
   function markerRadius(node) {
@@ -145,6 +162,21 @@ const INDIA = (() => {
   function edgeStrokeWeight(weight) {
     const w = Math.max(1, Number(weight) || 1);
     return Math.min(4, 1 + Math.log2(w));
+  }
+
+  /** Overview hub mesh: 3 discrete bins only (visible at country zoom). */
+  function overviewEdgeWeight(weight) {
+    const w = Number(weight) || 0;
+    if (w >= 50) return 3;
+    if (w >= 15) return 2;
+    return 1.2;
+  }
+
+  function focusEdgeStyle(kind) {
+    if (kind === "triad") {
+      return { color: "#f59e0b", weight: 2, opacity: 0.9, dashArray: "6 4" };
+    }
+    return { color: "#94a3b8", weight: 2.5, opacity: 0.92, dashArray: null };
   }
 
   function collabStats(node, net) {
@@ -188,7 +220,7 @@ const INDIA = (() => {
       <div class="india-tier-strip india-tier-strip-panel">${tierLines}</div>
       <div class="india-lecture-callouts">
         <p><strong>Encoding</strong> — position = geography; color = tier (2 levels); node size ∝ √(publications).</p>
-        <p><strong>Focus + context</strong> — click an institution to highlight its ego-network; rest dims.</p>
+        <p><strong>Focus + context</strong> — click an institution: direct partners (solid) + triad++ links (amber dashed) where a paper includes all three.</p>
         <p><strong>Data note</strong> — ${net.meta.year && net.meta.year !== "all" ? `Showing co-publications for ${net.meta.year}.` : "All-years rollup."} OpenAlex cache complete for 120 institutions; NIRF funding/patents from official PDFs where available.</p>
       </div>
       <p class="india-footnote india-footnote-panel">${footnote}</p>
@@ -262,12 +294,21 @@ const INDIA = (() => {
       `;
     }
 
+    const triadCount = (net.triads && net.triads[node.id]) ? net.triads[node.id].length : 0;
+    const focusNote = locked
+      ? `<p class="india-focus-note">Showing <strong>direct domestic co-publication partners</strong> for this year slice. ` +
+        `Solid lines = papers with this institution; amber dashed = papers with this institution <em>and</em> both partners (triad++).` +
+        (triadCount ? ` ${triadCount} triad++ pair${triadCount === 1 ? "" : "s"} among partners.` : "") +
+        `</p>`
+      : "";
+
     return `
       ${lockLabel}
       <button type="button" class="india-panel-close" aria-label="Clear selection">×</button>
       <h3 class="inst-name">${node.name}</h3>
       <span class="inst-tier" style="background:${col}33;color:${col}">${tierLabel(node.tier)}</span>
       ${tabs}
+      ${focusNote}
       <div class="inst-stat-row"><span>NIRF rank (Overall)</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
       <div class="inst-stat-row"><span>OpenAlex works (2015–24)</span><strong>${(node.total_works || 0).toLocaleString()}</strong></div>
       <div class="inst-stat-row"><span>SCImago impact (${node.scimago_year || "—"})</span><strong>${node.scimago_pct != null ? node.scimago_pct + "%" : "—"}</strong></div>
@@ -416,19 +457,22 @@ const INDIA = (() => {
 
     function visibleGraph() {
       if (selectedId) {
-        const ego = egoSet(selectedId, net.edges);
+        const fg = focusGraph(selectedId, net.edges, net.triads || {});
         return {
-          nodes: net.nodes,
-          edges: net.edges,
-          egoIds: ego,
+          nodes: net.nodes.filter((n) => fg.visibleIds.has(n.id)),
+          starEdges: fg.starEdges,
+          triadEdges: fg.triadEdges,
+          focusMode: true,
         };
       }
       return {
         nodes: net.nodes,
-        edges: net.edges.filter(
+        starEdges: null,
+        triadEdges: null,
+        hubEdges: net.edges.filter(
           (e) => net.hubIds.has(e.source) && net.hubIds.has(e.target)
         ),
-        egoIds: null,
+        focusMode: false,
       };
     }
 
@@ -459,6 +503,96 @@ const INDIA = (() => {
     }
 
     const markerMeta = new Map();
+    let lastEdgeKeys = new Set();
+    let animToken = 0;
+
+    function edgeKey(e) {
+      const a = e.source < e.target ? e.source : e.target;
+      const b = e.source < e.target ? e.target : e.source;
+      return `${e.kind || "hub"}|${a}|${b}`;
+    }
+
+    function addEdgeLine(a, b, style, weight, opacity, dashArray) {
+      const line = L.polyline(
+        [
+          [a.lat, a.lon],
+          [b.lat, b.lon],
+        ],
+        {
+          color: style.color || "#64748b",
+          weight: weight ?? style.weight,
+          opacity: opacity ?? style.opacity,
+          dashArray: dashArray !== undefined ? dashArray : style.dashArray,
+        }
+      );
+      line.addTo(edgeLayer);
+      return line;
+    }
+
+    function animateEdge(fromNode, toNode, style, durationMs, retract) {
+      return new Promise((resolve) => {
+        const start = retract ? toNode : fromNode;
+        const end = retract ? fromNode : toNode;
+        const steps = 14;
+        let step = 0;
+        const partial = L.polyline([[start.lat, start.lon], [start.lat, start.lon]], {
+          color: style.color,
+          weight: style.weight,
+          opacity: style.opacity,
+          dashArray: style.dashArray,
+        }).addTo(edgeLayer);
+
+        const tick = () => {
+          step += 1;
+          const t = Math.min(1, step / steps);
+          const lat = start.lat + (end.lat - start.lat) * t;
+          const lon = start.lon + (end.lon - start.lon) * t;
+          partial.setLatLngs([
+            [start.lat, start.lon],
+            [lat, lon],
+          ]);
+          if (t >= 1) {
+            edgeLayer.removeLayer(partial);
+            if (!retract) {
+              addEdgeLine(fromNode, toNode, style);
+            }
+            resolve();
+            return;
+          }
+          requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+      });
+    }
+
+    async function animateYearEdgeDiff(prevKeys, nextGraph) {
+      if (!selectedId) return;
+      const focus = net.nodeById.get(selectedId);
+      if (!focus) return;
+      const nextEdges = [...(nextGraph.starEdges || []), ...(nextGraph.triadEdges || [])];
+      const nextKeys = new Set(nextEdges.map(edgeKey));
+      const added = nextEdges.filter((e) => !prevKeys.has(edgeKey(e)));
+      const removed = [...prevKeys].filter((k) => !nextKeys.has(k));
+
+      const token = ++animToken;
+      for (const e of added) {
+        if (token !== animToken) return;
+        const other = net.nodeById.get(e.source === selectedId ? e.target : e.source);
+        if (!other) continue;
+        const style = focusEdgeStyle(e.kind);
+        await animateEdge(focus, other, style, 380, false);
+      }
+      for (const key of removed) {
+        if (token !== animToken) return;
+        const [, id1, id2] = key.split("|");
+        const partnerId = id1 === selectedId ? id2 : id2 === selectedId ? id1 : null;
+        const partner = partnerId ? net.nodeById.get(partnerId) : null;
+        if (!partner) continue;
+        const kind = key.startsWith("triad|") ? "triad" : "star";
+        await animateEdge(focus, partner, focusEdgeStyle(kind), 320, true);
+      }
+      lastEdgeKeys = nextKeys;
+    }
 
     function drawNetwork(fullRedraw = true) {
       if (fullRedraw) {
@@ -469,46 +603,60 @@ const INDIA = (() => {
         markerMeta.clear();
       }
 
-      const { nodes: visNodes, edges: visEdges, egoIds } = visibleGraph();
+      const graph = visibleGraph();
+      const { nodes: visNodes, focusMode } = graph;
 
       if (fullRedraw) {
-        visEdges.forEach((e) => {
-          const a = net.nodeById.get(e.source);
-          const b = net.nodeById.get(e.target);
-          if (!a || !b) return;
-          const inEgo =
-            !egoIds ||
-            (egoIds.has(e.source) && egoIds.has(e.target));
-          L.polyline(
-            [
-              [a.lat, a.lon],
-              [b.lat, b.lon],
-            ],
-            {
-              color: "#64748b",
-              weight: edgeStrokeWeight(e.weight),
-              opacity: egoIds ? (inEgo ? 0.85 : 0.08) : inEgo ? 0.85 : 0.15,
-            }
-          ).addTo(edgeLayer);
-        });
+        if (focusMode) {
+          graph.starEdges.forEach((e) => {
+            const a = net.nodeById.get(e.source);
+            const b = net.nodeById.get(e.target);
+            if (!a || !b) return;
+            const style = focusEdgeStyle("star");
+            addEdgeLine(a, b, style);
+          });
+          graph.triadEdges.forEach((e) => {
+            const a = net.nodeById.get(e.source);
+            const b = net.nodeById.get(e.target);
+            if (!a || !b) return;
+            const style = focusEdgeStyle("triad");
+            addEdgeLine(a, b, style);
+          });
+          lastEdgeKeys = new Set(
+            [...graph.starEdges, ...graph.triadEdges].map(edgeKey)
+          );
+        } else {
+          graph.hubEdges.forEach((e) => {
+            const a = net.nodeById.get(e.source);
+            const b = net.nodeById.get(e.target);
+            if (!a || !b) return;
+            addEdgeLine(
+              a,
+              b,
+              { color: "#64748b", weight: overviewEdgeWeight(e.weight), opacity: 0.55 },
+              overviewEdgeWeight(e.weight),
+              0.55,
+              null
+            );
+          });
+          lastEdgeKeys = new Set();
+        }
 
         visNodes.forEach((node) => {
           const r = markerRadius(node);
           const col = TIER_COLORS[node.tier] || node.color || "#3b82f6";
           const isSelected = node.id === selectedId;
-          const inEgo = !egoIds || egoIds.has(node.id);
-          const dimmed = egoIds && !inEgo;
 
           const vis = L.circleMarker([node.lat, node.lon], {
             radius: r,
             fillColor: col,
             color: isSelected ? "#ffffff" : "rgba(255,255,255,0.65)",
             weight: isSelected ? 3 : 1.5,
-            fillOpacity: dimmed ? 0.18 : 0.9,
-            opacity: dimmed ? 0.35 : 1,
+            fillOpacity: 0.9,
+            opacity: 1,
             interactive: false,
           }).addTo(markerLayer);
-          markerMeta.set(node.id, { layer: vis, node, dimmed, inEgo });
+          markerMeta.set(node.id, { layer: vis, node });
 
           if (node.is_hub || isSelected) {
             L.marker([node.lat, node.lon], {
@@ -556,7 +704,7 @@ const INDIA = (() => {
     }
 
     function applyHighlight() {
-      markerMeta.forEach(({ layer, node, dimmed }, nodeId) => {
+      markerMeta.forEach(({ layer, node }, nodeId) => {
         const r = markerRadius(node);
         const isSelected = nodeId === selectedId;
         const isHover = nodeId === hoverId && !locked;
@@ -564,8 +712,8 @@ const INDIA = (() => {
         layer.setStyle({
           color: isSelected || isHover ? "#ffffff" : "rgba(255,255,255,0.65)",
           weight: isSelected ? 3 : isHover ? 2 : 1.5,
-          fillOpacity: dimmed && !isSelected && !isHover ? 0.18 : 0.9,
-          opacity: dimmed && !isSelected && !isHover ? 0.35 : 1,
+          fillOpacity: 0.9,
+          opacity: 1,
         });
       });
     }
@@ -696,10 +844,9 @@ const INDIA = (() => {
       setYear(year) {
         const y = Number(year);
         if (!Number.isFinite(y)) return Promise.resolve();
-        if (activeYear === y && cache.byYear[String(y)]) {
-          return Promise.resolve();
-        }
-        return loadYearPayload(y).then((payload) => {
+        const prevKeys = new Set(lastEdgeKeys);
+        const prevSelected = selectedId;
+        return loadYearPayload(y).then(async (payload) => {
           activeYear = y;
           cache.byYear[String(y)] = payload;
           const prev = selectedId;
@@ -708,12 +855,21 @@ const INDIA = (() => {
             locked = false;
             selectedId = null;
             showDefaultPanel();
+            drawNetwork(true);
           } else if (prev) {
+            selectedId = prev;
             showLockedPanel(net.nodeById.get(prev));
+            const nextGraph = visibleGraph();
+            if (prevSelected && prevSelected === selectedId && prevKeys.size) {
+              drawNetwork(true);
+              await animateYearEdgeDiff(prevKeys, nextGraph);
+            } else {
+              drawNetwork(true);
+            }
           } else {
             showDefaultPanel();
+            drawNetwork(true);
           }
-          drawNetwork(true);
           if (onYearChange) onYearChange(y);
         });
       },
