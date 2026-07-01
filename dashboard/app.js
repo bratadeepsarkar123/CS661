@@ -703,9 +703,22 @@ function toggleAnimation(slider, yearVal, btn, yearMin, yearMax) {
   if (!APP.isPlaying) {
     APP.isPlaying = true;
     btn.textContent = "⏸ Pause";
-    if (APP.year >= yMax) { APP.year = yMin; }
+    if (APP.year >= yMax) {
+      APP.year = yMin;
+      slider.value = APP.year;
+      yearVal.textContent = APP.year;
+      if (APP.activeViz === 5 && APP.indiaController?.setYear) {
+        APP.indiaController.setYear(APP.year);
+      } else if (APP.activeViz !== 5) {
+        renderViz(APP.activeViz);
+      }
+    }
     APP.animTimer = setInterval(() => {
-      APP.year = APP.year >= yMax ? yMin : APP.year + 1;
+      if (APP.year >= yMax) {
+        stopAnimation();
+        return;
+      }
+      APP.year += 1;
       slider.value = APP.year;
       yearVal.textContent = APP.year;
       if (APP.activeViz === 5 && APP.indiaController?.setYear) {
