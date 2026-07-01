@@ -118,6 +118,36 @@ def _negative_foreign_test(master: pd.DataFrame, works_path: Path, domestic_path
     return True, "sampled works: foreign co-auth papers absent from domestic_works (spot check)"
 
 
+def _payload_orphan_edges(payload_path: Path) -> tuple[bool, str]:
+    try:
+        data = json.loads(payload_path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        return False, f"invalid JSON: {exc}"
+    node_ids = {n["id"] for n in data.get("nodes", [])}
+    orphans = [
+        e
+        for e in data.get("edges", [])
+        if e.get("source") not in node_ids or e.get("target") not in node_ids
+    ]
+    ok = len(orphans) == 0
+    return ok, f"{len(orphans)} orphan edges (nodes={len(node_ids)}, edges={len(data.get('edges', []))})"
+
+
+def _coord_stack_check(master: pd.DataFrame) -> tuple[bool, str]:
+    if master.empty:
+        return False, "no master"
+    m = master.copy()
+    m["lat_r"] = m["latitude"].round(4)
+    m["lon_r"] = m["longitude"].round(4)
+    stacks = m.groupby(["lat_r", "lon_r"]).size()
+    worst = int(stacks.max()) if len(stacks) else 0
+    bad_india = m[
+        (m["latitude"] < 6) | (m["latitude"] > 38) | (m["longitude"] < 68) | (m["longitude"] > 98)
+    ]
+    ok = worst <= 2 and len(bad_india) == 0
+    return ok, f"max stack={worst}, out_of_india={len(bad_india)}"
+
+
 def main() -> None:
     results: list[dict] = []
     master_path = PROCESSED_DIR / "institution_master.csv"
@@ -182,8 +212,32 @@ def main() -> None:
             )
         except json.JSONDecodeError:
             results.append(check("SCImago static year footnote", False, "invalid overview JSON"))
+        ok_ov, det_ov = _payload_orphan_edges(ov)
+        results.append(check("overview payload edge integrity", ok_ov, det_ov))
+        ok_full, det_full = _payload_orphan_edges(full)
+        results.append(check("full payload edge integrity", ok_full, det_full))
+        manifest = dash / "manifest.json"
+        if manifest.exists():
+            try:
+                mdata = json.loads(manifest.read_text(encoding="utf-8"))
+                years = mdata.get("available_years") or []
+                results.append(
+                    check(
+                        "year slice manifest",
+                        len(years) >= 5,
+                        f"{len(years)} years listed in manifest.json",
+                    )
+                )
+            except json.JSONDecodeError:
+                results.append(check("year slice manifest", False, "invalid manifest.json"))
+        else:
+            results.append(check("year slice manifest", False, "manifest.json missing — run 09b_export_year_slices.py"))
     else:
         results.append(check("dashboard JSON payloads", False, "2024 payloads missing"))
+
+    if not master.empty:
+        ok_coord, det_coord = _coord_stack_check(master)
+        results.append(check("campus coordinate stacks", ok_coord, det_coord))
 
     if domestic_path.exists():
         dom = pd.read_parquet(domestic_path)
