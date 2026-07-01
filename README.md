@@ -13,6 +13,8 @@ python -m http.server 8766
 
 Open **http://localhost:8766** → click any panel for fullscreen interaction.
 
+**Live site (GitHub Pages):** https://bratadeepsarkar123.github.io/CS661/
+
 Module 5 (India network) loads pre-computed JSON from `dashboard/data/india_network/`.
 
 ## Module 5 ETL (India Domestic HE Network)
