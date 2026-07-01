@@ -14,6 +14,7 @@ from config import (  # noqa: E402
     CORRIDOR_CITIES,
     EDGE_WEIGHT_MIN_FULL,
     EDGE_WEIGHT_MIN_OVERVIEW,
+    FULL_NODE_CAP,
     HUB_COUNT,
     MAX_EDGES_FULL,
     MAX_EDGES_OVERVIEW,
@@ -303,7 +304,7 @@ def export_year(year: int | None, master: pd.DataFrame, edges: pd.DataFrame, hub
         MAX_EDGES_OVERVIEW,
     )
 
-    full_nodes = nodes[:80]
+    full_nodes = nodes[:FULL_NODE_CAP]
     full_node_ids = {n["id"] for n in full_nodes}
     full_edges = build_edges(year_edges, full_node_ids, EDGE_WEIGHT_MIN_FULL, MAX_EDGES_FULL)
 

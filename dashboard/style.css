@@ -822,6 +822,9 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   bottom: 14px;
   left: 14px;
   z-index: 999;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 .india-tool-btn {
@@ -834,6 +837,184 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   font-size: 0.78rem;
   font-weight: 600;
   cursor: pointer;
+}
+
+.india-tool-btn.is-on {
+  border-color: rgba(245, 158, 11, 0.65);
+  background: rgba(245, 158, 11, 0.18);
+  color: #fde68a;
+}
+
+.india-map-legend {
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(15, 23, 42, 0.9);
+  font-family: var(--font-b);
+  font-size: 0.72rem;
+  color: #cbd5e1;
+}
+
+.india-map-legend span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.india-map-legend i {
+  display: inline-block;
+  width: 22px;
+  height: 0;
+  border-top: 2.5px solid #94a3b8;
+}
+
+.india-leg-triad i {
+  border-top-style: dashed;
+  border-top-color: #f59e0b;
+}
+
+.india-partner-title,
+.india-triad-title {
+  margin: 0.85rem 0 0.35rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #e2e8f0;
+}
+
+.india-triad-sub {
+  font-weight: 500;
+  color: #64748b;
+  font-size: 0.72rem;
+}
+
+.india-partner-list,
+.india-triad-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.25rem 0 0;
+  font-size: 0.82rem;
+}
+
+.india-partner-list li,
+.india-triad-list li {
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.05);
+}
+
+.india-partner-hit,
+.india-triad-hit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.4rem 0.35rem;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-family: var(--font-b);
+  font-size: 0.82rem;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.india-partner-hit:hover,
+.india-triad-hit:hover {
+  background: rgba(99, 102, 241, 0.12);
+  color: #e2e8f0;
+}
+
+.india-partner-row.is-active .india-partner-hit,
+.india-triad-row.is-active .india-triad-hit {
+  background: rgba(34, 211, 238, 0.12);
+  color: #f1f5f9;
+}
+
+.india-partner-hit strong,
+.india-triad-hit strong {
+  color: #22d3ee;
+  font-weight: 700;
+}
+
+.india-triad-block {
+  margin-top: 0.5rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.india-node-hover-tip {
+  font-size: 11px !important;
+  font-weight: 600;
+  padding: 4px 8px !important;
+}
+
+.india-cluster-hover-tip {
+  font-size: 11px !important;
+  line-height: 1.35 !important;
+  max-width: 220px;
+}
+
+.india-cluster-picker {
+  position: absolute;
+  z-index: 1100;
+  min-width: 200px;
+  max-width: 260px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(15, 23, 42, 0.96);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+  transform: translate(-50%, -100%);
+  margin-top: -10px;
+}
+
+.india-cluster-picker-head {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.india-cluster-picker ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.35rem 0;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+.india-cluster-picker button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0.45rem 0.75rem;
+  border: none;
+  background: transparent;
+  color: #e2e8f0;
+  font-family: var(--font-b);
+  font-size: 0.8rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.india-cluster-picker button span {
+  font-size: 0.68rem;
+  color: #64748b;
+}
+
+.india-cluster-picker button:hover {
+  background: rgba(99, 102, 241, 0.15);
 }
 
 @media (max-width: 900px) {
@@ -964,10 +1145,9 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .india-partner-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.35rem 0;
-  border-bottom: 1px dashed rgba(255,255,255,0.05);
+  display: block;
+  padding: 0;
+  border-bottom: none;
   color: #94a3b8;
 }
 
