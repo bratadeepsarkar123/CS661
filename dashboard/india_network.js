@@ -18,6 +18,20 @@ const INDIA = (() => {
   const FOCUS_Y_RATIO = 0.48;
   const HIT_RADIUS_MULT = 2.5;
   const MIN_HIT_PX = 14;
+  const TRIAD_MAP_TOP_K = 5;
+  const TRIAD_PANEL_TOP_K = 12;
+  const ANIM_MS = 520;
+  const CLUSTER_MAX_ZOOM = 7;
+  const CLUSTER_PIXEL_DIST = 34;
+
+  function easeInOutCubic(t) {
+    return t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
+  }
+
+  function parseEdgeKey(key) {
+    const parts = key.split("|");
+    return { kind: parts[0] || "star", id1: parts[1], id2: parts[2] };
+  }
 
   const cache = {
     overview: null,
@@ -132,21 +146,38 @@ const INDIA = (() => {
     return set;
   }
 
-  function focusGraph(selectedId, edges, triads) {
+  function focusGraph(selectedId, edges, triads, opts = {}) {
+    const { showTriadsOnMap = false, highlightPartnerId = null, triadTopK = TRIAD_MAP_TOP_K } = opts;
     const partners = partnerSet(selectedId, edges);
     const starEdges = edges
       .filter((e) => e.source === selectedId || e.target === selectedId)
       .map((e) => ({ ...e, kind: "star" }));
 
-    const triadEdges = [];
-    (triads[selectedId] || []).forEach(([a, b, w]) => {
-      if (partners.has(a) && partners.has(b)) {
-        triadEdges.push({ source: a, target: b, weight: w, kind: "triad" });
+    const triadRows = triadPartnerRows(selectedId, edges, triads);
+    let triadEdges = [];
+    if (showTriadsOnMap) {
+      let rows = triadRows;
+      if (highlightPartnerId) {
+        rows = rows.filter((r) => r.a === highlightPartnerId || r.b === highlightPartnerId);
       }
-    });
+      triadEdges = rows.slice(0, triadTopK).map((r) => ({
+        source: r.a,
+        target: r.b,
+        weight: r.weight,
+        kind: "triad",
+      }));
+    }
 
     const visibleIds = new Set([selectedId, ...partners]);
-    return { visibleIds, starEdges, triadEdges };
+    return { visibleIds, starEdges, triadEdges, triadRows };
+  }
+
+  function triadPartnerRows(focusId, edges, triads) {
+    const partners = partnerSet(focusId, edges);
+    return (triads[focusId] || [])
+      .filter(([a, b]) => partners.has(a) && partners.has(b))
+      .sort((x, y) => y[2] - x[2])
+      .map(([a, b, w]) => ({ a, b, weight: w }));
   }
 
   function markerRadius(node) {
@@ -220,7 +251,7 @@ const INDIA = (() => {
       <div class="india-tier-strip india-tier-strip-panel">${tierLines}</div>
       <div class="india-lecture-callouts">
         <p><strong>Encoding</strong> — position = geography; color = tier (2 levels); node size ∝ √(publications).</p>
-        <p><strong>Focus + context</strong> — click an institution: direct partners (solid) + triad++ links (amber dashed) where a paper includes all three.</p>
+        <p><strong>Focus + context</strong> — click an institution: star edges to direct partners on the map; triad++ pairs (3-institution papers) in the sidebar; optional toolbar toggle for top links on map.</p>
         <p><strong>Data note</strong> — ${net.meta.year && net.meta.year !== "all" ? `Showing co-publications for ${net.meta.year}.` : "All-years rollup."} OpenAlex cache complete for 120 institutions; NIRF funding/patents from official PDFs where available.</p>
       </div>
       <p class="india-footnote india-footnote-panel">${footnote}</p>
@@ -228,7 +259,8 @@ const INDIA = (() => {
     `;
   }
 
-  function buildDetailPanelHtml(node, net, tab, locked) {
+  function buildDetailPanelHtml(node, net, tab, locked, ui = {}) {
+    const { highlightPartnerId = null, showTriadsOnMap = false } = ui;
     const { links, collabTotal } = collabStats(node, net);
     const col = TIER_COLORS[node.tier] || "#3b82f6";
     const lockLabel = locked ? "" : `<p class="india-preview-badge">Preview — click map node to lock</p>`;
@@ -294,13 +326,44 @@ const INDIA = (() => {
       `;
     }
 
-    const triadCount = (net.triads && net.triads[node.id]) ? net.triads[node.id].length : 0;
+    const triadRows = triadPartnerRows(node.id, net.edges, net.triads || {});
+    const triadCount = triadRows.length;
     const focusNote = locked
-      ? `<p class="india-focus-note">Showing <strong>direct domestic co-publication partners</strong> for this year slice. ` +
-        `Solid lines = papers with this institution; amber dashed = papers with this institution <em>and</em> both partners (triad++).` +
-        (triadCount ? ` ${triadCount} triad++ pair${triadCount === 1 ? "" : "s"} among partners.` : "") +
+      ? `<p class="india-focus-note">Map shows <strong>direct domestic co-publication partners</strong> (solid lines). ` +
+        `Triad++ = papers that include this institution and both partners — listed below; ` +
+        `${showTriadsOnMap ? `top ${TRIAD_MAP_TOP_K} shown on map (dashed).` : "use toolbar to show top links on map."}` +
         `</p>`
       : "";
+
+    const triadTable =
+      locked && triadCount > 0
+        ? `<div class="india-triad-block">
+        <h4 class="india-triad-title">Triad++ partner pairs <span class="india-triad-sub">3-institution papers</span></h4>
+        <ul class="india-triad-list">
+          ${triadRows
+            .slice(0, TRIAD_PANEL_TOP_K)
+            .map((r) => {
+              const pa = net.nodeById.get(r.a);
+              const pb = net.nodeById.get(r.b);
+              if (!pa || !pb) return "";
+              const active =
+                highlightPartnerId && (r.a === highlightPartnerId || r.b === highlightPartnerId)
+                  ? " is-active"
+                  : "";
+              return `<li class="india-triad-row${active}">
+                <button type="button" class="india-triad-hit" data-partner-a="${r.a}" data-partner-b="${r.b}">
+                  <span>${pa.city || pa.name.split(" ").slice(-1)[0]} ↔ ${pb.city || pb.name.split(" ").slice(-1)[0]}</span>
+                  <strong>${r.weight}</strong>
+                </button>
+              </li>`;
+            })
+            .join("")}
+        </ul>
+        ${triadCount > TRIAD_PANEL_TOP_K ? `<p class="india-data-note">+ ${triadCount - TRIAD_PANEL_TOP_K} more pairs (panel cap)</p>` : ""}
+      </div>`
+        : locked
+          ? `<p class="india-data-note">No triad++ pairs among direct partners in this year slice.</p>`
+          : "";
 
     return `
       ${lockLabel}
@@ -314,6 +377,7 @@ const INDIA = (() => {
       <div class="inst-stat-row"><span>SCImago impact (${node.scimago_year || "—"})</span><strong>${node.scimago_pct != null ? node.scimago_pct + "%" : "—"}</strong></div>
       <div class="inst-stat-row"><span>Domestic co-pubs (year slice)</span><strong>${collabTotal || "—"}</strong></div>
       ${zeroNote}
+      <h4 class="india-partner-title">Direct partners <span class="india-triad-sub">co-publication count</span></h4>
       <ul class="india-partner-list">
         ${links
           .sort((a, b) => (b.weight || 0) - (a.weight || 0))
@@ -322,10 +386,12 @@ const INDIA = (() => {
             const pid = l.source === node.id ? l.target : l.source;
             const partner = net.nodeById.get(pid);
             if (!partner) return "";
-            return `<li><span>${partner.name}</span><strong>${l.weight || 0}</strong></li>`;
+            const active = highlightPartnerId === pid ? " is-active" : "";
+            return `<li class="india-partner-row${active}"><button type="button" class="india-partner-hit" data-partner-id="${pid}"><span>${partner.name}</span><strong>${l.weight || 0}</strong></button></li>`;
           })
           .join("") || "<li class='india-search-empty'>No domestic co-publication partners in this year slice</li>"}
       </ul>
+      ${triadTable}
     `;
   }
 
@@ -407,13 +473,26 @@ const INDIA = (() => {
     toolbar.className = "india-map-toolbar";
     toolbar.innerHTML = `
       <button type="button" class="india-tool-btn" data-action="reset" title="Reset view">⌂ India</button>
+      <button type="button" class="india-tool-btn india-tool-triads" data-action="toggle-triads" title="Show top triad++ links on map" hidden>Triad++ map</button>
     `;
+
+    const mapLegend = document.createElement("div");
+    mapLegend.className = "india-map-legend";
+    mapLegend.hidden = true;
+    mapLegend.innerHTML = `
+      <span class="india-leg-star"><i></i> Direct partner</span>
+      <span class="india-leg-triad"><i></i> Triad++ (top ${TRIAD_MAP_TOP_K})</span>
+    `;
+
+    const clusterPicker = document.createElement("div");
+    clusterPicker.className = "india-cluster-picker";
+    clusterPicker.hidden = true;
 
     const sidePanel = document.createElement("aside");
     sidePanel.className = "india-detail-panel";
     sidePanel.innerHTML = buildDefaultPanelHtml(net);
 
-    mapStage.append(mapEl, searchWrap, toolbar);
+    mapStage.append(mapEl, searchWrap, toolbar, mapLegend, clusterPicker);
     layout.append(mapStage, sidePanel);
     body.appendChild(layout);
 
@@ -454,10 +533,32 @@ const INDIA = (() => {
     let hoverId = null;
     let panelTab = "publications";
     let locked = false;
+    let showTriadsOnMap = false;
+    let highlightPartnerId = null;
+
+    function panelUi() {
+      return { highlightPartnerId, showTriadsOnMap };
+    }
+
+    function updateMapChrome() {
+      const triadBtn = toolbar.querySelector('[data-action="toggle-triads"]');
+      if (triadBtn) {
+        triadBtn.hidden = !selectedId;
+        triadBtn.classList.toggle("is-on", showTriadsOnMap);
+        triadBtn.textContent = showTriadsOnMap ? `Triad++ map (${TRIAD_MAP_TOP_K})` : "Triad++ map";
+      }
+      mapLegend.hidden = !selectedId;
+      if (selectedId) {
+        mapLegend.querySelector(".india-leg-triad").style.display = showTriadsOnMap ? "" : "none";
+      }
+    }
 
     function visibleGraph() {
       if (selectedId) {
-        const fg = focusGraph(selectedId, net.edges, net.triads || {});
+        const fg = focusGraph(selectedId, net.edges, net.triads || {}, {
+          showTriadsOnMap,
+          highlightPartnerId,
+        });
         return {
           nodes: net.nodes.filter((n) => fg.visibleIds.has(n.id)),
           starEdges: fg.starEdges,
@@ -481,30 +582,57 @@ const INDIA = (() => {
       sidePanel.querySelectorAll(".india-tab").forEach((btn) => {
         btn.addEventListener("click", () => {
           panelTab = btn.dataset.tab;
-          sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, isLocked);
+          sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, isLocked, panelUi());
           wirePanel(node, isLocked);
+        });
+      });
+      sidePanel.querySelectorAll(".india-partner-hit").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const pid = btn.dataset.partnerId;
+          highlightPartnerId = highlightPartnerId === pid ? null : pid;
+          sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, isLocked, panelUi());
+          wirePanel(node, isLocked);
+          drawNetwork(true);
+          updateMapChrome();
+        });
+      });
+      sidePanel.querySelectorAll(".india-triad-hit").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const a = btn.dataset.partnerA;
+          const b = btn.dataset.partnerB;
+          const next = highlightPartnerId === a ? b : a;
+          highlightPartnerId = highlightPartnerId === next ? null : next;
+          if (!showTriadsOnMap) showTriadsOnMap = true;
+          sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, isLocked, panelUi());
+          wirePanel(node, isLocked);
+          drawNetwork(true);
+          updateMapChrome();
         });
       });
     }
 
     function showDefaultPanel() {
       sidePanel.innerHTML = buildDefaultPanelHtml(net);
+      updateMapChrome();
     }
 
     function showHoverPanel(node) {
       if (locked) return;
-      sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, false);
+      sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, false, panelUi());
       wirePanel(node, false);
     }
 
     function showLockedPanel(node) {
-      sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, true);
+      sidePanel.innerHTML = buildDetailPanelHtml(node, net, panelTab, true, panelUi());
       wirePanel(node, true);
+      updateMapChrome();
     }
 
     const markerMeta = new Map();
     let lastEdgeKeys = new Set();
     let animToken = 0;
+    let clusterMode = false;
+    let clusteredNodeIds = new Set();
 
     function edgeKey(e) {
       const a = e.source < e.target ? e.source : e.target;
@@ -512,89 +640,212 @@ const INDIA = (() => {
       return `${e.kind || "hub"}|${a}|${b}`;
     }
 
-    function addEdgeLine(a, b, style, weight, opacity, dashArray) {
-      const line = L.polyline(
-        [
-          [a.lat, a.lon],
-          [b.lat, b.lon],
-        ],
-        {
-          color: style.color || "#64748b",
-          weight: weight ?? style.weight,
-          opacity: opacity ?? style.opacity,
-          dashArray: dashArray !== undefined ? dashArray : style.dashArray,
-        }
-      );
+    function triadOffsetPx() {
+      const z = map.getZoom();
+      if (z <= 6) return 14;
+      if (z <= 8) return 9;
+      if (z <= 10) return 5;
+      return 2;
+    }
+
+    function edgePathLatLngs(a, b, kind) {
+      const p1 = map.latLngToContainerPoint([a.lat, a.lon]);
+      const p2 = map.latLngToContainerPoint([b.lat, b.lon]);
+      let ox = 0;
+      let oy = 0;
+      if (kind === "triad") {
+        const dx = p2.x - p1.x;
+        const dy = p2.y - p1.y;
+        const len = Math.hypot(dx, dy) || 1;
+        const off = triadOffsetPx();
+        ox = (-dy / len) * off;
+        oy = (dx / len) * off;
+      }
+      const ll1 = map.containerPointToLatLng(L.point(p1.x + ox, p1.y + oy));
+      const ll2 = map.containerPointToLatLng(L.point(p2.x + ox, p2.y + oy));
+      return [
+        [ll1.lat, ll1.lng],
+        [ll2.lat, ll2.lng],
+      ];
+    }
+
+    function polylineStyle(style) {
+      return {
+        color: style.color || "#64748b",
+        weight: style.weight ?? 2,
+        opacity: style.opacity ?? 0.9,
+        dashArray: style.dashArray ?? null,
+      };
+    }
+
+    function addEdgeLine(a, b, style, kind = "star") {
+      const line = L.polyline(edgePathLatLngs(a, b, kind), polylineStyle(style));
       line.addTo(edgeLayer);
       return line;
     }
 
-    function animateEdge(fromNode, toNode, style, durationMs, retract) {
+    function animateEdgeWorm(anchorNode, farNode, style, retract, kind = "star") {
       return new Promise((resolve) => {
-        const start = retract ? toNode : fromNode;
-        const end = retract ? fromNode : toNode;
-        const steps = 14;
-        let step = 0;
-        const partial = L.polyline([[start.lat, start.lon], [start.lat, start.lon]], {
-          color: style.color,
-          weight: style.weight,
-          opacity: style.opacity,
-          dashArray: style.dashArray,
-        }).addTo(edgeLayer);
+        const coords = edgePathLatLngs(anchorNode, farNode, kind);
+        const [anchor, far] = coords;
+        const initial = retract ? [anchor, far] : [anchor, anchor];
+        const partial = L.polyline(initial, polylineStyle(style)).addTo(edgeLayer);
+        const t0 = performance.now();
 
-        const tick = () => {
-          step += 1;
-          const t = Math.min(1, step / steps);
-          const lat = start.lat + (end.lat - start.lat) * t;
-          const lon = start.lon + (end.lon - start.lon) * t;
-          partial.setLatLngs([
-            [start.lat, start.lon],
-            [lat, lon],
-          ]);
+        const frame = (now) => {
+          const t = Math.min(1, (now - t0) / ANIM_MS);
+          const e = easeInOutCubic(t);
+          const [a, b] = edgePathLatLngs(anchorNode, farNode, kind);
+          if (retract) {
+            const lat = b[0] + (a[0] - b[0]) * e;
+            const lng = b[1] + (a[1] - b[1]) * e;
+            partial.setLatLngs([a, [lat, lng]]);
+          } else {
+            const lat = a[0] + (b[0] - a[0]) * e;
+            const lng = a[1] + (b[1] - a[1]) * e;
+            partial.setLatLngs([a, [lat, lng]]);
+          }
           if (t >= 1) {
             edgeLayer.removeLayer(partial);
-            if (!retract) {
-              addEdgeLine(fromNode, toNode, style);
-            }
+            if (!retract) addEdgeLine(anchorNode, farNode, style, kind);
             resolve();
-            return;
+          } else {
+            requestAnimationFrame(frame);
           }
-          requestAnimationFrame(tick);
         };
-        requestAnimationFrame(tick);
+        requestAnimationFrame(frame);
       });
     }
 
-    async function animateYearEdgeDiff(prevKeys, nextGraph) {
+    function collectFocusEdges(graph) {
+      return [...(graph.starEdges || []), ...(showTriadsOnMap ? graph.triadEdges || [] : [])];
+    }
+
+    async function animateYearTransition(prevKeys, prevNet, nextGraph) {
       if (!selectedId) return;
       const focus = net.nodeById.get(selectedId);
       if (!focus) return;
-      const nextEdges = [...(nextGraph.starEdges || []), ...(nextGraph.triadEdges || [])];
+
+      const nextEdges = collectFocusEdges(nextGraph);
       const nextKeys = new Set(nextEdges.map(edgeKey));
       const added = nextEdges.filter((e) => !prevKeys.has(edgeKey(e)));
       const removed = [...prevKeys].filter((k) => !nextKeys.has(k));
-
       const token = ++animToken;
-      for (const e of added) {
+
+      const removalAnims = removed.map(async (key) => {
         if (token !== animToken) return;
-        const other = net.nodeById.get(e.source === selectedId ? e.target : e.source);
-        if (!other) continue;
+        const { kind, id1, id2 } = parseEdgeKey(key);
+        const edgeKind = kind === "triad" ? "triad" : "star";
+        const style = focusEdgeStyle(edgeKind);
+        if (kind === "triad") {
+          const a = prevNet.nodeById.get(id1) || net.nodeById.get(id1);
+          const b = prevNet.nodeById.get(id2) || net.nodeById.get(id2);
+          if (!a || !b) return;
+          await animateEdgeWorm(a, b, style, true, "triad");
+        } else {
+          const partnerId = id1 === selectedId ? id2 : id1;
+          const partner = prevNet.nodeById.get(partnerId) || net.nodeById.get(partnerId);
+          if (!partner) return;
+          await animateEdgeWorm(focus, partner, style, true, "star");
+        }
+      });
+
+      const additionAnims = added.map(async (e) => {
+        if (token !== animToken) return;
         const style = focusEdgeStyle(e.kind);
-        await animateEdge(focus, other, style, 380, false);
-      }
-      for (const key of removed) {
-        if (token !== animToken) return;
-        const [, id1, id2] = key.split("|");
-        const partnerId = id1 === selectedId ? id2 : id2 === selectedId ? id1 : null;
-        const partner = partnerId ? net.nodeById.get(partnerId) : null;
-        if (!partner) continue;
-        const kind = key.startsWith("triad|") ? "triad" : "star";
-        await animateEdge(focus, partner, focusEdgeStyle(kind), 320, true);
-      }
+        if (e.kind === "triad") {
+          const a = net.nodeById.get(e.source);
+          const b = net.nodeById.get(e.target);
+          if (!a || !b) return;
+          await animateEdgeWorm(a, b, style, false, "triad");
+        } else {
+          const other = net.nodeById.get(e.source === selectedId ? e.target : e.source);
+          if (!other) return;
+          await animateEdgeWorm(focus, other, style, false, "star");
+        }
+      });
+
+      await Promise.all([...removalAnims, ...additionAnims]);
+
+      if (token !== animToken) return;
       lastEdgeKeys = nextKeys;
     }
 
-    function drawNetwork(fullRedraw = true) {
+    function computeScreenClusters(nodes) {
+      const items = nodes.map((n) => ({
+        node: n,
+        pt: map.latLngToContainerPoint([n.lat, n.lon]),
+        r: markerRadius(n),
+      }));
+      const used = new Set();
+      const clusters = [];
+      for (let i = 0; i < items.length; i++) {
+        if (used.has(i)) continue;
+        const group = [items[i]];
+        used.add(i);
+        for (let j = i + 1; j < items.length; j++) {
+          if (used.has(j)) continue;
+          const d = Math.hypot(items[i].pt.x - items[j].pt.x, items[i].pt.y - items[j].pt.y);
+          if (d < CLUSTER_PIXEL_DIST + items[i].r) {
+            group.push(items[j]);
+            used.add(j);
+          }
+        }
+        if (group.length > 1) clusters.push(group);
+      }
+      return clusters;
+    }
+
+    function showClusterPicker(clusterNodes, latlng) {
+      clusterPicker.innerHTML = `
+        <div class="india-cluster-picker-head">Select institution</div>
+        <ul>${clusterNodes
+          .map(
+            (n) =>
+              `<li><button type="button" data-id="${n.id}">${n.name}<span>${n.city || ""}</span></button></li>`
+          )
+          .join("")}</ul>`;
+      const pt = map.latLngToContainerPoint(latlng);
+      clusterPicker.style.left = `${Math.min(pt.x, mapStage.clientWidth - 220)}px`;
+      clusterPicker.style.top = `${Math.max(pt.y - 8, 8)}px`;
+      clusterPicker.hidden = false;
+      clusterPicker.querySelectorAll("button").forEach((btn) => {
+        btn.addEventListener("click", (evt) => {
+          L.DomEvent.stopPropagation(evt);
+          const node = net.nodeById.get(btn.dataset.id);
+          if (node) selectNode(node);
+          clusterPicker.hidden = true;
+        });
+      });
+    }
+
+    function drawEdgesFromList(edges) {
+      edges.forEach((e) => {
+        const a = net.nodeById.get(e.source);
+        const b = net.nodeById.get(e.target);
+        if (!a || !b) return;
+        const kind = e.kind === "triad" ? "triad" : e.kind === "star" ? "star" : "hub";
+        if (kind === "hub") {
+          const line = L.polyline(
+            [
+              [a.lat, a.lon],
+              [b.lat, b.lon],
+            ],
+            {
+              color: "#64748b",
+              weight: overviewEdgeWeight(e.weight),
+              opacity: 0.55,
+            }
+          );
+          line.addTo(edgeLayer);
+          return;
+        }
+        const style = focusEdgeStyle(kind);
+        addEdgeLine(a, b, style, kind);
+      });
+    }
+
+    function drawNetwork(fullRedraw = true, edgeOverride = null) {
       if (fullRedraw) {
         edgeLayer.clearLayers();
         markerLayer.clearLayers();
@@ -605,44 +856,58 @@ const INDIA = (() => {
 
       const graph = visibleGraph();
       const { nodes: visNodes, focusMode } = graph;
+      clusterMode = map.getZoom() <= CLUSTER_MAX_ZOOM;
+      clusteredNodeIds = new Set();
 
       if (fullRedraw) {
-        if (focusMode) {
-          graph.starEdges.forEach((e) => {
-            const a = net.nodeById.get(e.source);
-            const b = net.nodeById.get(e.target);
-            if (!a || !b) return;
-            const style = focusEdgeStyle("star");
-            addEdgeLine(a, b, style);
-          });
-          graph.triadEdges.forEach((e) => {
-            const a = net.nodeById.get(e.source);
-            const b = net.nodeById.get(e.target);
-            if (!a || !b) return;
-            const style = focusEdgeStyle("triad");
-            addEdgeLine(a, b, style);
-          });
-          lastEdgeKeys = new Set(
-            [...graph.starEdges, ...graph.triadEdges].map(edgeKey)
-          );
+        let edgesToDraw;
+        if (edgeOverride !== null) {
+          edgesToDraw = edgeOverride;
+        } else if (focusMode) {
+          edgesToDraw = collectFocusEdges(graph);
         } else {
-          graph.hubEdges.forEach((e) => {
-            const a = net.nodeById.get(e.source);
-            const b = net.nodeById.get(e.target);
-            if (!a || !b) return;
-            addEdgeLine(
-              a,
-              b,
-              { color: "#64748b", weight: overviewEdgeWeight(e.weight), opacity: 0.55 },
-              overviewEdgeWeight(e.weight),
-              0.55,
-              null
-            );
-          });
-          lastEdgeKeys = new Set();
+          edgesToDraw = graph.hubEdges || [];
+        }
+        drawEdgesFromList(edgesToDraw);
+        if (edgeOverride === null) {
+          lastEdgeKeys = new Set(edgesToDraw.map(edgeKey));
         }
 
+        const clusters = clusterMode ? computeScreenClusters(visNodes) : [];
+        clusters.forEach((group) => group.forEach((g) => clusteredNodeIds.add(g.node.id)));
+
+        clusters.forEach((group) => {
+          const nodes = group.map((g) => g.node);
+          const lat =
+            nodes.reduce((s, n) => s + n.lat, 0) / nodes.length;
+          const lon =
+            nodes.reduce((s, n) => s + n.lon, 0) / nodes.length;
+          const maxR = Math.max(...group.map((g) => g.r));
+          const clusterHit = L.circleMarker([lat, lon], {
+            radius: Math.max(MIN_HIT_PX, maxR + 6),
+            fillColor: "rgba(99,102,241,0.35)",
+            color: "#a5b4fc",
+            weight: 2,
+            fillOpacity: 0.55,
+            interactive: true,
+          });
+          const label = `${nodes.length} nearby`;
+          clusterHit.bindTooltip(
+            `<div class="india-cluster-tip"><strong>${label}</strong><br>${nodes
+              .map((n) => n.name)
+              .join("<br>")}</div>`,
+            { direction: "top", sticky: true, className: "india-leaflet-tip india-cluster-hover-tip" }
+          );
+          clusterHit.on("click", (evt) => {
+            L.DomEvent.stopPropagation(evt);
+            showClusterPicker(nodes, [lat, lon]);
+          });
+          clusterHit.addTo(hitLayer);
+        });
+
         visNodes.forEach((node) => {
+          if (clusterMode && clusteredNodeIds.has(node.id)) return;
+
           const r = markerRadius(node);
           const col = TIER_COLORS[node.tier] || node.color || "#3b82f6";
           const isSelected = node.id === selectedId;
@@ -679,6 +944,14 @@ const INDIA = (() => {
             bubblingMouseEvents: false,
           });
 
+          if (selectedId) {
+            hit.bindTooltip(node.name, {
+              direction: "top",
+              offset: [0, -Math.max(8, r)],
+              className: "india-leaflet-tip india-node-hover-tip",
+            });
+          }
+
           hit.on("mouseover", () => {
             hoverId = node.id;
             if (!locked) showHoverPanel(node);
@@ -693,6 +966,7 @@ const INDIA = (() => {
 
           hit.on("click", (evt) => {
             L.DomEvent.stopPropagation(evt);
+            clusterPicker.hidden = true;
             selectNode(node);
           });
 
@@ -723,6 +997,9 @@ const INDIA = (() => {
       locked = true;
       selectedId = node.id;
       panelTab = "publications";
+      if (!already) {
+        highlightPartnerId = null;
+      }
       drawNetwork(true);
       showLockedPanel(node);
       if (!already) {
@@ -736,14 +1013,34 @@ const INDIA = (() => {
       selectedId = null;
       hoverId = null;
       panelTab = "publications";
+      showTriadsOnMap = false;
+      highlightPartnerId = null;
+      clusterPicker.hidden = true;
       showDefaultPanel();
       drawNetwork(true);
       if (onSelect) onSelect(null, net);
     }
 
     map.on("click", () => {
+      clusterPicker.hidden = true;
       if (locked) clearSelection();
     });
+
+    map.on("zoomend", () => {
+      drawNetwork(true);
+    });
+
+    toolbar.querySelector('[data-action="toggle-triads"]')?.addEventListener("click", () => {
+      if (!selectedId) return;
+      showTriadsOnMap = !showTriadsOnMap;
+      drawNetwork(true);
+      updateMapChrome();
+      const node = net.nodeById.get(selectedId);
+      if (node && locked) showLockedPanel(node);
+    });
+
+    const searchInput = searchWrap.querySelector(".india-search-input");
+    const searchResults = searchWrap.querySelector(".india-search-results");
 
     drawNetwork(true);
 
@@ -754,10 +1051,9 @@ const INDIA = (() => {
         showLockedPanel(node);
         requestAnimationFrame(() => focusInstitutionOnMap(map, node.lat, node.lon, mapStage));
       }
+    } else {
+      showDefaultPanel();
     }
-
-    const searchInput = searchWrap.querySelector(".india-search-input");
-    const searchResults = searchWrap.querySelector(".india-search-results");
 
     function runSearch(q) {
       const query = q.trim().toLowerCase();
@@ -844,6 +1140,7 @@ const INDIA = (() => {
       setYear(year) {
         const y = Number(year);
         if (!Number.isFinite(y)) return Promise.resolve();
+        const prevNet = net;
         const prevKeys = new Set(lastEdgeKeys);
         const prevSelected = selectedId;
         return loadYearPayload(y).then(async (payload) => {
@@ -860,12 +1157,17 @@ const INDIA = (() => {
             selectedId = prev;
             showLockedPanel(net.nodeById.get(prev));
             const nextGraph = visibleGraph();
-            if (prevSelected && prevSelected === selectedId && prevKeys.size) {
-              drawNetwork(true);
-              await animateYearEdgeDiff(prevKeys, nextGraph);
+            const nextEdges = collectFocusEdges(nextGraph);
+            const nextKeys = new Set(nextEdges.map(edgeKey));
+            const stableEdges = nextEdges.filter((e) => prevKeys.has(edgeKey(e)));
+
+            if (prevSelected && prevSelected === selectedId) {
+              drawNetwork(true, stableEdges);
+              await animateYearTransition(prevKeys, prevNet, nextGraph);
             } else {
               drawNetwork(true);
             }
+            lastEdgeKeys = nextKeys;
           } else {
             showDefaultPanel();
             drawNetwork(true);
