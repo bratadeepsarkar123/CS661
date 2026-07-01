@@ -1,0 +1,121 @@
+openalex_id,canonical_name,latitude,longitude,geo_source
+I145894827,Indian Institute of Technology Kharagpur,22.3146519,87.3099912,nominatim:way/52435606
+I162827531,Indian Institute of Technology Bombay,19.133602,72.915631,campus_powai_iitb
+I24676775,Indian Institute of Technology Madras,12.9915,80.2337,campus_iit_madras
+I94234084,Indian Institute of Technology Kanpur,26.513188,80.2364843,nominatim:way/52434888
+I68891433,Indian Institute of Technology Delhi,28.5455,77.1926,campus_iit_delhi
+I1317621060,Indian Institute of Technology Guwahati,26.1924788,91.6946357,nominatim:way/52435139
+I154851008,Indian Institute of Technology Roorkee,29.8661656,77.8957348,nominatim:way/52435788
+I99729588,Indian Institute of Technology Bhubaneswar,20.2961,85.8248,campus_iit_bbs
+I27674431,Indian Institute of Technology Gandhinagar,23.2166690826416,72.6833267211914,openalex_normalized
+I65181880,Indian Institute of Technology Hyderabad,17.4224884,78.5404469,nominatim:way/740780519
+I154549908,Indian Institute of Technology Jodhpur,26.4729401,73.1143375,nominatim:way/603118969
+I132153292,Indian Institute of Technology Patna,25.5424381,84.8516072,nominatim:way/1368115899
+I119241673,Indian Institute of Technology Ropar,30.9659501,76.4729772,nominatim:way/620975887
+I64295750,Indian Institute of Technology Indore,22.5269276,75.9262066,nominatim:way/659577709
+I9579091,Indian Institute of Technology Mandi,31.7063321,76.9385693,nominatim:way/172517275
+I56404289,Indian Institute of Technology (BHU) Varanasi,25.2621544,82.9925896,nominatim:node/11694241597
+I4210113248,Indian Institute of Technology Palakkad,10.7905,76.6548,campus_iit_palakkad
+I4210109292,Indian Institute of Technology Tirupati,13.712786,79.5899932,nominatim:relation/17933003
+I189109744,Indian Institute of Technology (ISM) Dhanbad,23.797590255737305,86.42991638183594,openalex_normalized
+I4210121466,Indian Institute of Technology Bhilai,21.209190368652344,81.42849731445312,openalex_normalized
+I4210112052,Indian Institute of Technology Goa,15.4232905,73.9789313,nominatim:node/12588784611
+I4210127441,Indian Institute of Technology Jammu,32.8022368,74.8913825,nominatim:way/1415473522
+I4210152718,Indian Institute of Technology Dharwad,15.4862017,74.9385785,nominatim:way/1266446267
+I59270414,Indian Institute of Science,13.0222347,77.5671832,nominatim:relation/9676004
+I63739035,All India Institute of Medical Sciences,28.5667,77.209,campus_aiims
+I110166357,University of Delhi,28.6829,77.2065,campus_du_north
+I876193797,Vellore Institute of Technology University,12.9692,79.1559,campus_vit
+I91357014,Banaras Hindu University,25.2663747,82.9904648,nominatim:way/26681638
+I85461943,Saveetha University,13.0549,80.2832,campus_saveetha
+I45294948,Post Graduate Institute of Medical Education and Research,30.764,76.7754,campus_pgi
+I164861460,Manipal Academy of Higher Education,13.352,74.7869,campus_manipal
+I145286018,SRM Institute of Science and Technology,12.82361125946045,80.0441665649414,openalex_normalized
+I99552915,University of Rajasthan,26.8912,75.8153,campus_rajasthan_univ
+I170979836,Jadavpur University,22.4995309,88.3715953,nominatim:way/119068217
+I51317819,Institute of Medical Sciences,25.2622446,82.909614,nominatim:node/6884803396
+I33585257,"Anna University, Chennai",13.0116,80.2362,campus_anna_univ
+I171210897,Aligarh Muslim University,27.917369842529297,78.07785034179688,openalex_normalized
+I106542073,University of Calcutta,22.5763,88.3639,campus_calcutta_univ
+I99364266,Academy of Scientific and Innovative Research,28.66535,77.43915,openalex_normalized
+I81556334,Amrita Vishwa Vidyapeetham,10.9024,76.9024,campus_amrita_coimbatore
+I110360157,Lovely Professional University,31.2534122,75.7034029,nominatim:way/422435593
+I51452335,Panjab University,30.7639,76.7885,campus_panjab_univ
+I878213199,Savitribai Phule Pune University,18.5535,73.8257,campus_sp_pune
+I11947397,Tata Institute of Fundamental Research,18.907124,72.804964,campus_colaba_tifr
+I101407740,Chandigarh University,30.679950714111328,76.72210693359375,openalex_normalized
+I152429107,Jawaharlal Nehru University,28.5383,77.166,campus_jnu
+I36893310,University of Hyderabad,17.4530357,78.3270312,nominatim:way/277804473
+I197081775,Annamalai University,11.390716,79.7114928,nominatim:way/257579986
+I48018076,Christ University,12.9337799,77.6051611,nominatim:way/38774082
+I191972202,Amity University,28.5432229,77.3327483,nominatim:way/502875300
+I74319210,Chitkara University,30.5165,76.6598,campus_chitkara
+I200207707,Homi Bhabha National Institute,19.0484,72.9254,campus_anushakti_hbni
+I60054993,Graphic Era University,30.3165,78.0322,campus_graphic_era
+I6498739,Indian Statistical Institute,22.5258,88.3662,campus_isi_kolkata
+I59475050,Jamia Millia Islamia,28.5617,77.28,campus_jamia
+I172917736,"Christian Medical College, Vellore",12.9249,79.1336,campus_cmc_vellore
+I16292982,National Institute of Technology Rourkela,22.2501589,84.9066856,nominatim:way/150794461
+I83205935,Malaviya National Institute of Technology Jaipur,26.8727,75.8187,campus_mnit_jaipur
+I74796645,"Birla Institute of Technology and Science, Pilani",28.367250442504883,75.60352325439453,openalex_normalized
+I215927,University of Madras,13.0661,80.2713,campus_madras_univ
+I122964287,National Institute of Technology Tiruchirappalli,10.7587,78.8044,campus_nit_trichy
+I875944469,Koneru Lakshmaiah Education Foundation,16.507450103759766,80.64659881591797,openalex_normalized
+I244572783,Symbiosis International University,18.5364,73.8314,campus_symbiosis
+I76414455,"Kasturba Medical College, Manipal",13.355,74.7862,campus_kmc_manipal
+I67357951,KIIT University,20.3558,85.8138,campus_kiit
+I106826634,Jain University,12.9181468,77.5919058,nominatim:way/164569256
+I100887729,Andhra University,17.7324,83.3265,campus_andhra_univ
+I43814544,Sathyabama Institute of Science and Technology,12.8734977,80.2198655,nominatim:way/1067160183
+I175691731,Pondicherry University,12.0271,79.8587,campus_pondicherry
+I8975392,Osmania University,17.419,78.526,campus_osmania
+I4210131147,SRM University,28.9190359,77.1285878,nominatim:way/1149855851
+I169877490,University of Mumbai,19.07609,72.851498,campus_kalina_mumbai_uni
+I193073490,Siksha O Anusandhan University,20.25919914245605,85.79199981689453,openalex_normalized
+I863896202,Delhi Technological University,28.7506,77.1172,campus_dtu
+I162030827,Thapar Institute of Engineering & Technology,30.33625030517578,76.39219665527344,openalex_normalized
+I167751958,Institute of Chemical Technology,19.0239129,72.8587665,nominatim:way/311083990
+I165682329,Guru Nanak Dev University,31.6401718,74.8226685,nominatim:way/537950488
+I134900695,Tamil Nadu Agricultural University,11.0044,76.9308,campus_tnau
+I4076070,Bharathidasan University,10.6795,78.7094,campus_bharathidasan
+I11880225,National Institute of Technology Karnataka,13.0156,74.7963,campus_nitk_surathkal
+I111575329,Bharathiar University,11.0389,77.0356,campus_bharathiar
+I121750182,National Institute of Technology Warangal,17.9833537,79.5335163,nominatim:way/469538078
+I8977528,Dr. Hari Singh Gour University,23.82793426513672,78.77153015136719,openalex_normalized
+I170558118,Sri Venkateswara University,13.63600254058838,79.39298248291016,openalex_normalized
+I1330855593,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,13.1868,80.0972,campus_veltech
+I280994,King George's Medical University,26.8670236,80.9154604,nominatim:way/212500773
+I885392262,GITAM University,17.778,83.3778,campus_gitam
+I899646,Punjab Agricultural University,30.9040094,75.8004222,nominatim:way/8111854
+I186246823,University of Lucknow,26.9260863,80.9381237,nominatim:way/214750337
+I165998391,Indian Association for the Cultivation of Science,22.5386,88.3964,campus_iacs
+I887998513,Bharati Vidyapeeth Deemed University,18.4593068,73.8569804,nominatim:way/106358633
+I168893459,University of Allahabad,25.4297089,81.7728296,nominatim:way/198509957
+I77501641,University of Kalyani,22.9848568,88.446038,nominatim:way/1242131352
+I204743663,University of Mysore,12.3059327,76.6403692,nominatim:way/400949009
+I4210106490,All India Institute of Medical Sciences Bhopal,23.2093426,77.4584547,nominatim:node/7106710075
+I4210144496,"G.S. Science, Arts And Commerce College",20.716089248657227,76.56190490722656,openalex_normalized
+I98365261,"Indian Institute of Engineering Science and Technology, Shibpur",22.576879501342773,88.31857299804688,openalex_normalized
+I129734738,All India Institute of Medical Sciences Raipur,21.256146,81.5788694,nominatim:way/343167390
+I20497027,Cochin University of Science and Technology,10.0449079,76.3261437,nominatim:way/475140702
+I5847235,University of Petroleum and Energy Studies,30.2958,77.9956,campus_upes
+I61923386,Jawaharlal Institute of Post Graduate Medical Education and Research,11.9564,79.8057,campus_jipmer
+I42014448,Sardar Vallabhbhai National Institute of Technology Surat,21.1634495,72.7861213,nominatim:way/150694694
+I76777374,Central University of Rajasthan,26.6276045,75.0288021,nominatim:way/1071631408
+I157674215,Presidency University,22.7757,88.3647,campus_presidency
+I129862065,Government Medical College,8.8114405,76.7499316,nominatim:relation/10893380
+I155837530,National Institute of Technology Durgapur,23.5486963,87.2910571,nominatim:way/388008422
+I19716509,Jamia Hamdard,28.51645851135254,77.24980926513672,openalex_normalized
+I82571370,GLA University,27.50349998474121,77.67214965820312,openalex_normalized
+I135388327,University of Kashmir,34.133915,74.8367448,nominatim:way/421078555
+I115715567,"Birla Institute of Technology, Mesra",23.34316062927246,85.30940246582031,openalex_normalized
+I20107917,Sri Ramachandra Institute of Higher Education and Research,13.041498184204102,80.14395141601562,openalex_normalized
+I155125381,Galgotias University,28.49614906311035,77.5360107421875,openalex_normalized
+I79161377,Punjabi University,30.3580954,76.4503254,nominatim:way/46677877
+I141641110,Shivaji University,16.6779671,74.2515616,nominatim:way/112973948
+I932239252,SASTRA University,10.9628655,79.3853065,nominatim:way/375238494
+I19008122,Mangalore University,12.8767,74.8356,campus_mangalore_univ
+I4210108783,Christian Medical College,30.9106068,75.8628985,nominatim:way/17174945
+I10874241,"Jawaharlal Nehru Technological University, Hyderabad",17.4982,78.3916,campus_jntu_hyd
+I65220239,Karpagam Academy of Higher Education,11.0282,77.0143,campus_karpagam
+I158338959,University of Kerala,8.5589987,76.8792581,nominatim:way/361866866
