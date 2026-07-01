@@ -11,7 +11,7 @@ const APP = {
   tier: "All",
   sort: "gain",            // Viz 4 dumbbell sort
   isPlaying: false,
-  speed: 900,
+  speed: 1200,
   animTimer: null,
   selectedNode: null,      // Viz 5: clicked institution
   indiaController: null,
@@ -703,17 +703,9 @@ function toggleAnimation(slider, yearVal, btn, yearMin, yearMax) {
   if (!APP.isPlaying) {
     APP.isPlaying = true;
     btn.textContent = "⏸ Pause";
-    if (APP.year >= yMax) {
-      APP.year = yMin;
-      slider.value = APP.year;
-      yearVal.textContent = APP.year;
-      if (APP.activeViz === 5 && APP.indiaController?.setYear) {
-        APP.indiaController.setYear(APP.year);
-      } else if (APP.activeViz !== 5) {
-        renderViz(APP.activeViz);
-      }
-    }
-    APP.animTimer = setInterval(() => {
+
+    const runStep = async () => {
+      if (!APP.isPlaying) return;
       if (APP.year >= yMax) {
         stopAnimation();
         return;
@@ -722,11 +714,32 @@ function toggleAnimation(slider, yearVal, btn, yearMin, yearMax) {
       slider.value = APP.year;
       yearVal.textContent = APP.year;
       if (APP.activeViz === 5 && APP.indiaController?.setYear) {
-        APP.indiaController.setYear(APP.year);
+        await APP.indiaController.setYear(APP.year);
       } else {
         renderViz(APP.activeViz);
       }
-    }, APP.speed);
+      if (APP.isPlaying && APP.year < yMax) {
+        APP.animTimer = setTimeout(runStep, APP.speed);
+      } else if (APP.year >= yMax) {
+        stopAnimation();
+      }
+    };
+
+    const startPlay = async () => {
+      if (APP.year >= yMax) {
+        APP.year = yMin;
+        slider.value = APP.year;
+        yearVal.textContent = APP.year;
+        if (APP.activeViz === 5 && APP.indiaController?.setYear) {
+          await APP.indiaController.setYear(APP.year);
+        } else if (APP.activeViz !== 5) {
+          renderViz(APP.activeViz);
+        }
+      }
+      if (APP.isPlaying) APP.animTimer = setTimeout(runStep, APP.speed);
+    };
+
+    startPlay();
     APP.cleanupFns.push(() => stopAnimation());
   } else {
     btn.textContent = "▶ Play";
@@ -736,7 +749,10 @@ function toggleAnimation(slider, yearVal, btn, yearMin, yearMax) {
 
 function stopAnimation() {
   APP.isPlaying = false;
-  if (APP.animTimer) { clearInterval(APP.animTimer); APP.animTimer = null; }
+  if (APP.animTimer) {
+    clearTimeout(APP.animTimer);
+    APP.animTimer = null;
+  }
   const btn = document.getElementById("play-btn");
   if (btn) btn.textContent = "▶ Play";
 }
