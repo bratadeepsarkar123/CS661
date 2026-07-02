@@ -604,10 +604,600 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   display: flex;
 }
 
-.panel-body.india-fullbleed {
-  padding: 0;
-  display: block;
+.panel-body > svg { width: 100%; height: 100%; }
+
+/* Special: viz 1 split layout */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  width: 100%;
+  height: 100%;
 }
+
+.split-pane {
+  position: relative;
+  overflow: hidden;
+}
+
+.split-pane + .split-pane {
+  border-left: 1px solid var(--border);
+}
+
+/* India map + sidebar */
+.india-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.india-map-pane { position: relative; overflow: hidden; }
+
+.india-sidebar {
+  border-left: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.15);
+}
+
+.india-sidebar h4 {
+  font-family: var(--font-h);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.inst-placeholder {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.inst-details { display: none; flex-direction: column; gap: 1rem; }
+.inst-details.shown { display: flex; }
+
+.inst-name { font-family: var(--font-h); font-size: 1.05rem; font-weight: 700; }
+.inst-tier {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.tier-premier { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+.tier-central { background: rgba(96,165,250,0.15); color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
+.tier-private { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+
+.inst-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+}
+
+.stat-box .s-label {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.stat-box .s-val {
+  font-family: var(--font-h);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.collab-section h5 {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+.collab-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.65rem;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.collab-row .c-name { font-weight: 500; }
+.collab-row .c-count { font-weight: 700; color: var(--accent2); }
+
+/* Panel footer */
+.panel-footer {
+  border-top: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.data-credit {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.panel-nav { display: flex; gap: 0.75rem; }
+
+.nav-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-b);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  border-color: var(--border-accent);
+  color: var(--text);
+}
+
+/* ──────────────────────────────────────────────
+   D3 TOOLTIP
+   ────────────────────────────────────────────── */
+.d3-tooltip {
+  position: fixed;
+  background: rgba(10, 15, 28, 0.97);
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text);
+  pointer-events: none;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  z-index: 9999;
+  opacity: 0;
+  max-width: 260px;
+  transition: opacity 0.15s;
+}
+
+.d3-tooltip.visible { opacity: 1; }
+.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #c7d2fe; }
+
+/* ──────────────────────────────────────────────
+   AXIS / CHART ELEMENT STYLES
+   ────────────────────────────────────────────── */
+.tick text { fill: var(--text-muted); font-family: var(--font-b); font-size: 10px; }
+.tick line, .domain { stroke: rgba(255,255,255,0.08); }
+
+/* Legend pill */
+.legend-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.legend-pill .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ──────────────────────────────────────────────
+   PREVIEW CANVAS FILLS
+   ────────────────────────────────────────────── */
+#preview-1 { background: linear-gradient(135deg, #0d1117 0%, rgba(99,102,241,0.08) 100%); }
+#preview-2 { background: linear-gradient(135deg, #0d1117 0%, rgba(168,85,247,0.08) 100%); }
+#preview-3 { background: linear-gradient(135deg, #0d1117 0%, rgba(34,211,238,0.08) 100%); }
+#preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
+#preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
+
+/* ──────────────────────────────────────────────
+   RESPONSIVE
+   ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .viz-grid { grid-template-columns: 1fr; }
+  .viz-card.featured { grid-column: span 1; }
+  .split-layout, .india-layout { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+  .split-pane + .split-pane, .india-sidebar { border-left: none; border-top: 1px solid var(--border); }
+  .panel-header { flex-direction: column; align-items: flex-start; }
+  input[type="range"].ctrl-range { width: 120px; }
+}
+
+
+
+.india-search-empty {
+  padding: 0.65rem 0.85rem;
+  font-size: 0.82rem;
+  color: #94a3b8;
+}
+
+.india-map-toolbar {
+  position: absolute;
+  bottom: 14px;
+  left: 14px;
+  z-index: 999;
+}
+
+.india-tool-btn {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 23, 42, 0.9);
+  color: #e2e8f0;
+  font-family: var(--font-b);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .india-map-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min(40vh, 320px);
+  }
+  .india-detail-panel {
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+}
+
+.india-leaflet-tip {
+  background: rgba(15, 23, 42, 0.95) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #e2e8f0 !important;
+  font-family: var(--font-b) !important;
+  font-size: 12px !important;
+  border-radius: 8px !important;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4) !important;
+}
+
+.india-leaflet-tip::before {
+  border-top-color: rgba(15, 23, 42, 0.95) !important;
+}
+
+.leaflet-container {
+  font-family: var(--font-b);
+}
+
+.panel-body > svg { width: 100%; height: 100%; }
+
+/* Special: viz 1 split layout */
+.split-layout {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.split-pane {
+  position: relative;
+  overflow: hidden;
+}
+
+.split-pane + .split-pane {
+  border-left: 1px solid var(--border);
+}
+
+/* India map + sidebar */
+.india-layout {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+.india-map-pane {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.india-tier-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  padding: 0.65rem 1rem;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--text-muted);
+  background: rgba(0,0,0,0.12);
+}
+
+.india-tier-chip { display: flex; align-items: center; gap: 0.4rem; }
+.india-tier-chip .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+
+.india-footnote {
+  margin: 0;
+  padding: 0.45rem 1rem 0.75rem;
+  font-size: 10px;
+  color: var(--text-dim);
+  line-height: 1.45;
+  border-top: 1px dashed rgba(255,255,255,0.06);
+}
+
+.india-sidebar-tabs {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.india-tab {
+  flex: 1;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.india-tab.active {
+  background: rgba(99,102,241,0.2);
+  border-color: rgba(99,102,241,0.5);
+  color: #e2e8f0;
+}
+
+.inst-stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.inst-stat-row strong { color: #f1f5f9; }
+
+.india-partner-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0;
+  font-size: 0.82rem;
+}
+
+.india-partner-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.05);
+  color: #94a3b8;
+}
+
+.india-partner-list strong { color: #22d3ee; }
+
+.india-funding-note {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.55;
+  margin: 0.75rem 0;
+}
+
+.india-map-inner { flex: 1; min-height: 280px; width: 100%; position: relative; }
+
+.india-sidebar {
+  border-left: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.15);
+}
+
+.india-sidebar h4 {
+  font-family: var(--font-h);
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.75rem;
+}
+
+.inst-placeholder {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.inst-details { display: none; flex-direction: column; gap: 1rem; }
+.inst-details.shown { display: flex; }
+
+.inst-name { font-family: var(--font-h); font-size: 1.05rem; font-weight: 700; }
+.inst-tier {
+  display: inline-block;
+  padding: 0.2rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.tier-premier { background: rgba(52,211,153,0.15); color: #34d399; border: 1px solid rgba(52,211,153,0.3); }
+.tier-central { background: rgba(96,165,250,0.15); color: #60a5fa; border: 1px solid rgba(96,165,250,0.3); }
+.tier-private { background: rgba(251,191,36,0.15); color: #fbbf24; border: 1px solid rgba(251,191,36,0.3); }
+
+.inst-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+}
+
+.stat-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem;
+}
+
+.stat-box .s-label {
+  font-size: 0.68rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+
+.stat-box .s-val {
+  font-family: var(--font-h);
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+.collab-section h5 {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+  margin-bottom: 0.6rem;
+}
+
+.collab-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.65rem;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.collab-row .c-name { font-weight: 500; }
+.collab-row .c-count { font-weight: 700; color: var(--accent2); }
+
+/* Panel footer */
+.panel-footer {
+  border-top: 1px solid var(--border);
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background: rgba(0,0,0,0.3);
+}
+
+.data-credit {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+}
+
+.panel-nav { display: flex; gap: 0.75rem; }
+
+.nav-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-family: var(--font-b);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-btn:hover {
+  border-color: var(--border-accent);
+  color: var(--text);
+}
+
+/* ──────────────────────────────────────────────
+   D3 TOOLTIP
+   ────────────────────────────────────────────── */
+.d3-tooltip {
+  position: fixed;
+  background: rgba(10, 15, 28, 0.97);
+  border: 1px solid var(--border-accent);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.55;
+  color: var(--text);
+  pointer-events: none;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  z-index: 9999;
+  opacity: 0;
+  max-width: 260px;
+  transition: opacity 0.15s;
+}
+
+.d3-tooltip.visible { opacity: 1; }
+.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #c7d2fe; }
+
+/* ──────────────────────────────────────────────
+   AXIS / CHART ELEMENT STYLES
+   ────────────────────────────────────────────── */
+.tick text { fill: var(--text-muted); font-family: var(--font-b); font-size: 10px; }
+.tick line, .domain { stroke: rgba(255,255,255,0.08); }
+
+/* Legend pill */
+.legend-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.legend-pill .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ──────────────────────────────────────────────
+   PREVIEW CANVAS FILLS
+   ────────────────────────────────────────────── */
+#preview-1 { background: linear-gradient(135deg, #0d1117 0%, rgba(99,102,241,0.08) 100%); }
+#preview-2 { background: linear-gradient(135deg, #0d1117 0%, rgba(168,85,247,0.08) 100%); }
+#preview-3 { background: linear-gradient(135deg, #0d1117 0%, rgba(34,211,238,0.08) 100%); }
+#preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
+#preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
+
+/* ──────────────────────────────────────────────
+   RESPONSIVE
+   ────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .viz-grid { grid-template-columns: 1fr; }
+  .viz-card.featured { grid-column: span 1; }
+  .split-layout, .india-layout { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
+  .split-pane + .split-pane, .india-sidebar { border-left: none; border-top: 1px solid var(--border); }
+  .panel-header { flex-direction: column; align-items: flex-start; }
+  input[type="range"].ctrl-range { width: 120px; }
+}
+
 
 /* ── Module 5: Leaflet map + right detail panel ── */
 .india-map-layout {

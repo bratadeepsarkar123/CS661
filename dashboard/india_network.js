@@ -43,25 +43,23 @@ const INDIA = (() => {
   };
 
   function fetchJson(url) {
-    return fetch(url).then((res) => {
-      if (!res.ok) throw new Error(`Failed to load ${url}`);
-      return res.text().then((text) => JSON.parse(text.replace(/:\s*NaN/g, ": null")));
-    });
+    const filename = url.replace(BASE, '');
+    if (INDIA_NETWORK_DATA[filename]) {
+        return Promise.resolve(INDIA_NETWORK_DATA[filename]);
+    }
+    return Promise.reject(new Error(`Failed to load ${url}`));
   }
 
   function loadYearPayload(year) {
     const key = String(year);
     if (cache.byYear[key]) return Promise.resolve(cache.byYear[key]);
-    const url = `${BASE}${key}_full.json`;
-    return fetchJson(url)
-      .then((data) => {
-        cache.byYear[key] = data;
-        return data;
-      })
-      .catch(() => {
-        console.warn(`India network: missing payload for year ${year}`);
-        throw new Error(`No payload for year ${year}`);
-      });
+    const filename = `${key}_full.json`;
+    if (INDIA_NETWORK_DATA[filename]) {
+        cache.byYear[key] = INDIA_NETWORK_DATA[filename];
+        return Promise.resolve(cache.byYear[key]);
+    }
+    console.warn(`India network: missing payload for year ${year}`);
+    return Promise.reject(new Error(`No payload for year ${year}`));
   }
 
   function availableYears() {
@@ -90,25 +88,14 @@ const INDIA = (() => {
   function ensureLoaded() {
     if (cache.overview && cache.full) return Promise.resolve(cache);
     if (!cache.loadPromise) {
-      cache.loadPromise = Promise.all([
-        fetchJson(`${BASE}2024_overview.json`),
-        fetchJson(`${BASE}2024_full.json`),
-        fetch(`${BASE}manifest.json`)
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null),
-        fetch(`${BASE}india_outline.geojson`)
-          .then((r) => (r.ok ? r.json() : null))
-          .catch(() => null),
-      ]).then(([overview, full, manifest, outline]) => {
-        cache.overview = overview;
-        cache.full = full;
-        cache.manifest = manifest;
-        cache.outline = outline;
-        if (full?.year && full.year !== "all") {
-          cache.byYear[String(full.year)] = full;
-        }
-        return cache;
-      });
+      cache.overview = INDIA_NETWORK_DATA["2024_overview.json"];
+      cache.full = INDIA_NETWORK_DATA["2024_full.json"];
+      cache.manifest = INDIA_NETWORK_DATA["manifest.json"] || null;
+      cache.outline = INDIA_NETWORK_DATA["india_outline.geojson"] || null;
+      if (cache.full?.year && cache.full.year !== "all") {
+        cache.byYear[String(cache.full.year)] = cache.full;
+      }
+      cache.loadPromise = Promise.resolve(cache);
     }
     return cache.loadPromise;
   }
