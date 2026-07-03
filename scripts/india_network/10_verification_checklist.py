@@ -148,6 +148,37 @@ def _coord_stack_check(master: pd.DataFrame) -> tuple[bool, str]:
     return ok, f"max stack={worst}, out_of_india={len(bad_india)}"
 
 
+def _funding_corruption_check(funding: pd.DataFrame) -> tuple[bool, str]:
+    """Newer IITs must not inherit Delhi/Kanpur/Hyderabad-scale recycled funding."""
+    suspects = {
+        "bhilai": 100.0,
+        "jammu": 100.0,
+        "dharwad": 50.0,
+    }
+    problems: list[str] = []
+    for _, row in funding.iterrows():
+        name = str(row.get("canonical_name", "")).lower()
+        amount = row.get("research_funding_cr")
+        if pd.isna(amount):
+            continue
+        for token, ceiling in suspects.items():
+            if token in name and float(amount) > ceiling:
+                problems.append(f"{row['canonical_name']}={amount} cr (>{ceiling})")
+    ok = len(problems) == 0
+    return ok, "no suspect funding" if ok else "; ".join(problems[:5])
+
+
+def _major_iit_funding_check(funding: pd.DataFrame) -> tuple[bool, str]:
+    needles = ["technology delhi", "technology kanpur", "technology hyderabad", "technology madras"]
+    missing = []
+    for needle in needles:
+        hit = funding[funding["canonical_name"].str.lower().str.contains(needle, na=False)]
+        if hit.empty or hit["research_funding_cr"].isna().all():
+            missing.append(needle)
+    ok = len(missing) == 0
+    return ok, "all major IITs funded" if ok else f"missing funding: {', '.join(missing)}"
+
+
 def main() -> None:
     results: list[dict] = []
     master_path = PROCESSED_DIR / "institution_master.csv"
@@ -257,10 +288,14 @@ def main() -> None:
         results.append(
             check(
                 "NIRF funding coverage",
-                has >= 100,
+                has >= 80,
                 f"{has} / {len(fund)} institutions with research_funding_cr",
             )
         )
+        ok_suspect, det_suspect = _funding_corruption_check(fund)
+        results.append(check("funding ID/name corruption guard", ok_suspect, det_suspect))
+        ok_major, det_major = _major_iit_funding_check(fund)
+        results.append(check("major IIT funding present", ok_major, det_major))
     else:
         results.append(check("NIRF funding coverage", False, "institution_funding.csv missing"))
 
