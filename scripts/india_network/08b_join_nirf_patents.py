@@ -50,11 +50,19 @@ def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_look
             best_score = score
             best = p
     if best is not None and best_score >= 0.78:
+        patent_id = str(best.get("nirf_institute_id") or "")
+        inst_id = inst.get("nirf_institute_id")
+        if pd.notna(inst_id) and patent_id and str(inst_id) != patent_id:
+            return None, 0.0, None
         return best, best_score, str(best.get("nirf_institute_id") or best.get("name_norm"))
     return None, 0.0, None
 
 
-def _dedupe_patent_collisions(out: pd.DataFrame) -> pd.DataFrame:
+def _name_match_rank(canonical_name: str, patent_institute_name: str) -> float:
+    return name_similarity(canonical_name, patent_institute_name)
+
+
+def _dedupe_patent_collisions(out: pd.DataFrame, patents: pd.DataFrame) -> pd.DataFrame:
     """Only one institution may claim the same NIRF source row (by nirf_institute_id)."""
     out = out.copy()
     if "nirf_patent_source_id" not in out.columns:
@@ -62,6 +70,12 @@ def _dedupe_patent_collisions(out: pd.DataFrame) -> pd.DataFrame:
     has = out["nirf_patent_source_id"].notna()
     if not has.any():
         return out
+
+    patent_names = {
+        str(row["nirf_institute_id"]): str(row.get("institute_name_nirf") or "")
+        for _, row in patents.iterrows()
+        if pd.notna(row.get("nirf_institute_id"))
+    }
 
     null_cols = [
         "patents_published",
@@ -71,12 +85,17 @@ def _dedupe_patent_collisions(out: pd.DataFrame) -> pd.DataFrame:
         "patent_calendar_year",
         "nirf_patent_source_id",
     ]
-    for _, group in out[has].groupby("nirf_patent_source_id", dropna=False):
+    for source_id, group in out[has].groupby("nirf_patent_source_id", dropna=False):
         if len(group) <= 1:
             continue
-        keep_idx = group.sort_values(
-            ["match_score", "canonical_name"],
-            ascending=[False, True],
+        patent_name = patent_names.get(str(source_id), "")
+        ranked = group.copy()
+        ranked["_name_match"] = ranked["canonical_name"].map(
+            lambda n: _name_match_rank(n, patent_name) if patent_name else 0.0
+        )
+        keep_idx = ranked.sort_values(
+            ["_name_match", "match_score", "canonical_name"],
+            ascending=[False, False, True],
         ).index[0]
         for idx in group.index:
             if idx == keep_idx:
@@ -140,7 +159,10 @@ def main() -> None:
         )
 
     out = pd.DataFrame(rows)
-    out = _dedupe_patent_collisions(out)
+    out = _dedupe_patent_collisions(out, patents)
+    # Losers in a collision have nulled source ids; treat as unavailable in the UI.
+    stale_dup = out["patent_status"].eq("duplicate_resolved") & out["nirf_patent_source_id"].isna()
+    out.loc[stale_dup, "patent_status"] = "unavailable"
     out.to_csv(OUT_PATH, index=False)
     has = out["patents_published"].notna().sum()
     dup = (out["patent_status"] == "duplicate_resolved").sum()

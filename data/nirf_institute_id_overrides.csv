@@ -1,5 +1,5 @@
 canonical_name,nirf_institute_id,notes
-Academy of Scientific and Innovative Research,IR-R-U-0713,Research category
+Academy of Scientific and Innovative Research,IR-R-U-0713,Research category only
 "Christian Medical College, Vellore",IR-D-C-45654,Medical
 Christian Medical College,IR-D-C-29209,Medical Ludhiana
 Koneru Lakshmaiah Education Foundation,IR-O-U-0020,Overall
@@ -11,3 +11,5 @@ University of Petroleum and Energy Studies,IR-O-U-0564,Overall UPES
 Government Medical College,IR-D-C-48124,Medical Thiruvananthapuram
 "Jawaharlal Nehru Technological University, Hyderabad",IR-E-U-0017,Engineering
 All India Institute of Medical Sciences Raipur,IR-D-U-0690,Medical was wrongly Jodhpur id
+Post Graduate Institute of Medical Education and Research,IR-O-U-0446,Name similarity ambiguous
+Jawaharlal Institute of Post Graduate Medical Education and Research,IR-O-U-0368,Name similarity ambiguous
