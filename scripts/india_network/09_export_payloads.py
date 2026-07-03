@@ -57,6 +57,7 @@ OVERVIEW_NODE_KEYS = frozenset(
         "scimago_pct",
         "scimago_year",
         "nirf_rank",
+        "nirf_ranking_category",
     }
 )
 
@@ -184,6 +185,9 @@ def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame)
                 "scimago_pct": pct,
                 "scimago_year": SCIMAGEO_YEAR if pct is not None else None,
                 "nirf_rank": int(r["nirf_rank"]) if pd.notna(r.get("nirf_rank")) else None,
+                "nirf_ranking_category": (
+                    str(r["nirf_ranking_category"]) if pd.notna(r.get("nirf_ranking_category")) else None
+                ),
                 "research_funding_cr": funding_cr,
                 "total_expenditure_cr": expenditure_cr,
                 "sponsored_projects": sponsored_projects,
@@ -252,6 +256,7 @@ def build_triads_payload(
     node_ids: set[str],
 ) -> dict[str, list[list]]:
     """Per-focus partner-pair triads for 3+ institution papers (full payload only)."""
+    cap = 15
     if TRIADS_PATH.exists():
         tri = pd.read_parquet(TRIADS_PATH)
         ykey = -1 if year is None else int(year)
@@ -263,9 +268,11 @@ def build_triads_payload(
         ]
         out: dict[str, list[list]] = {}
         for focus, grp in tri.groupby("focus_id"):
-            out[str(focus)] = [
-                [str(r.partner_a), str(r.partner_b), int(r.weight)] for r in grp.itertuples()
-            ]
+            sorted_triads = sorted(
+                [[str(r.partner_a), str(r.partner_b), int(r.weight)] for r in grp.itertuples()],
+                key=lambda x: -x[2],
+            )
+            out[str(focus)] = sorted_triads[:cap]
         return out
 
     if not DOMESTIC_WORKS_PATH.exists():
@@ -275,7 +282,11 @@ def build_triads_payload(
 
     domestic = load_domestic_works(DOMESTIC_WORKS_PATH)
     oa_map = oa_map_from_master(master)
-    return build_triads_from_works(domestic, oa_map, year=year, node_ids=node_ids)
+    triads_raw = build_triads_from_works(domestic, oa_map, year=year, node_ids=node_ids)
+    out = {}
+    for focus, rows in triads_raw.items():
+        out[focus] = rows[:cap]
+    return out
 
 
 def hub_annotations(nodes: list[dict]) -> list[str]:

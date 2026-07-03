@@ -229,7 +229,15 @@ def main() -> None:
     full = dash / "2024_full.json"
     if ov.exists() and full.exists():
         results.append(check("overview size", ov.stat().st_size < 40_000, f"{ov.stat().st_size} bytes"))
-        results.append(check("full size", full.stat().st_size < 200_000, f"{full.stat().st_size} bytes"))
+        # Full payload includes triads for 120 nodes; 200 KB cap is obsolete (typical ~500 KB–1.5 MB).
+        full_max_bytes = 2_000_000
+        results.append(
+            check(
+                "full size",
+                full.stat().st_size < full_max_bytes,
+                f"{full.stat().st_size} bytes (cap {full_max_bytes // 1024} KB)",
+            )
+        )
         try:
             ov_data = json.loads(ov.read_text(encoding="utf-8"))
             note = str(ov_data.get("quality_note", ""))

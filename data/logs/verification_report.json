@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-07-07T17:22:39.661857+00:00",
+  "passed": 17,
+  "total": 17,
+  "all_pass": true,
+  "checks": [
+    {
+      "name": "institution_master rows + geo",
+      "ok": true,
+      "detail": "120 rows, 100% with lat/lon"
+    },
+    {
+      "name": "collaboration_edges weight>=2",
+      "ok": true,
+      "detail": "13236 edge rows"
+    },
+    {
+      "name": "edge endpoints in master (domestic IN institutions)",
+      "ok": true,
+      "detail": "all endpoints in institution_master"
+    },
+    {
+      "name": "overview size",
+      "ok": true,
+      "detail": "31368 bytes"
+    },
+    {
+      "name": "full size",
+      "ok": true,
+      "detail": "395396 bytes (cap 1953 KB)"
+    },
+    {
+      "name": "SCImago static year footnote",
+      "ok": true,
+      "detail": "SCImago research impact % snapshot (2019 data); static across year slider"
+    },
+    {
+      "name": "overview payload edge integrity",
+      "ok": true,
+      "detail": "0 orphan edges (nodes=45, edges=40)"
+    },
+    {
+      "name": "full payload edge integrity",
+      "ok": true,
+      "detail": "0 orphan edges (nodes=120, edges=300)"
+    },
+    {
+      "name": "year slice manifest",
+      "ok": true,
+      "detail": "10 years listed in manifest.json"
+    },
+    {
+      "name": "campus coordinate stacks",
+      "ok": true,
+      "detail": "max stack=1, out_of_india=0"
+    },
+    {
+      "name": "domestic_works.parquet non-empty",
+      "ok": true,
+      "detail": "108705 rows, 1252 KB"
+    },
+    {
+      "name": "NIRF funding coverage",
+      "ok": true,
+      "detail": "84 / 120 institutions with research_funding_cr"
+    },
+    {
+      "name": "funding ID/name corruption guard",
+      "ok": true,
+      "detail": "no suspect funding"
+    },
+    {
+      "name": "major IIT funding present",
+      "ok": true,
+      "detail": "all major IITs funded"
+    },
+    {
+      "name": "positive domestic co-auth test",
+      "ok": true,
+      "detail": "IIT Kanpur \u2194 IIT Delhi edge weight=234 in collaboration_edges_full.csv"
+    },
+    {
+      "name": "negative foreign co-auth test",
+      "ok": true,
+      "detail": "foreign co-auth work W3044674088 correctly excluded from domestic_works"
+    },
+    {
+      "name": "temporal edge variance (2015 vs 2022)",
+      "ok": true,
+      "detail": "2015 weight sum=7184, 2022 weight sum=20139"
+    }
+  ]
+}
