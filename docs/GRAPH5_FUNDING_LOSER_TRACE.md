@@ -9,9 +9,18 @@
 
 | Area | Finding |
 |------|---------|
-| **Duplicate clusters** | 6 groups — **3 are join bugs** (fuzzy match too loose), **2 are coincidental** (similar true amounts), **1 is alias/entity** (CMC, Rajasthan) |
-| **NIRF losers** | 22 total — **20** `no_fuzzy_match`, **2** `id_blocked_by_uniqueness` |
-| **Actionable overrides** | **~5** institutes have clear NIRF rows but failed matching |
+| **Duplicate clusters** | **2 remaining** (post-join fixes) — `bhu_campus_family` (206.94 cr × 3) and `coincidental_rounding` (19.84 cr × 2); informational PASS in verification |
+| **NIRF losers** | **14** accepted gaps — see `nirf_match_losers.csv` and `GRAPH5_GAP_ASSESSMENT.md` |
+| **Historical join bugs** | 6 clusters at audit time — **3 join bugs fixed** (`2effa39`, `f15e208`); clusters A–C below are historical |
+
+### Remaining duplicate clusters (2026-07-08)
+
+| Amount (₹ cr) | Institutes | Classification |
+|---------------|------------|----------------|
+| 206.94 | IIT BHU Varanasi, Banaras Hindu University, Institute of Medical Sciences | **Legitimate** — shared NIRF Overall row `IR-O-U-0500` (38 projects) |
+| 19.84 | Panjab University, NIT Durgapur | **Coincidental** — distinct IDs; raw amounts differ by ~₹0.02 cr |
+
+Dashboard export tags: `funding_duplicate_cluster` = `bhu_campus_family` | `coincidental_rounding`.
 
 ---
 

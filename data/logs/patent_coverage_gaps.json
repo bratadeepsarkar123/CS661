@@ -1,0 +1,329 @@
+{
+  "generated_from": "report_nirf_gaps.py",
+  "patents_reported": 57,
+  "patents_total": 120,
+  "funding_reported": 91,
+  "nirf_matched": 106,
+  "nirf_losers": 14,
+  "unavailable": [
+    {
+      "canonical_name": "Indian Institute of Technology Jodhpur",
+      "nirf_institute_id": "IR-O-U-0395",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Patna",
+      "nirf_institute_id": "IR-O-U-0064",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Bhilai",
+      "nirf_institute_id": "IR-E-U-0946",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Goa",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Jammu",
+      "nirf_institute_id": "IR-E-U-0906",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Dharwad",
+      "nirf_institute_id": "IR-E-U-0899",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "All India Institute of Medical Sciences",
+      "nirf_institute_id": "IR-D-N-15",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Delhi",
+      "nirf_institute_id": "IR-O-U-0120",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Post Graduate Institute of Medical Education and Research",
+      "nirf_institute_id": "IR-O-U-0446",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Rajasthan",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Jadavpur University",
+      "nirf_institute_id": "IR-O-U-0575",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Calcutta",
+      "nirf_institute_id": "IR-M-S-8972",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Academy of Scientific and Innovative Research",
+      "nirf_institute_id": "IR-R-U-0713",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Amrita Vishwa Vidyapeetham",
+      "nirf_institute_id": "IR-O-U-0436",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Savitribai Phule Pune University",
+      "nirf_institute_id": "IR-O-U-0323",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Tata Institute of Fundamental Research",
+      "nirf_institute_id": "IR-R-U-0330",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Hyderabad",
+      "nirf_institute_id": "IR-O-U-0042",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Christ University",
+      "nirf_institute_id": "IR-O-U-0217",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Homi Bhabha National Institute",
+      "nirf_institute_id": "IR-O-U-0304",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Graphic Era University",
+      "nirf_institute_id": "IR-O-U-0555",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Indian Statistical Institute",
+      "nirf_institute_id": "IR-O-U-0574",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Christian Medical College, Vellore",
+      "nirf_institute_id": "IR-D-C-45654",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Birla Institute of Technology and Science, Pilani",
+      "nirf_institute_id": "IR-E-U-0391",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Madras",
+      "nirf_institute_id": "IR-O-I-1357",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Kasturba Medical College, Manipal",
+      "nirf_institute_id": "IR-D-C-7242",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Pondicherry University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Osmania University",
+      "nirf_institute_id": "IR-O-U-0027",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "SRM University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "University of Mumbai",
+      "nirf_institute_id": "IR-L-U-0886",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Siksha O Anusandhan University",
+      "nirf_institute_id": "IR-O-U-0363",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Institute of Chemical Technology",
+      "nirf_institute_id": "IR-O-U-0308",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Guru Nanak Dev University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Tamil Nadu Agricultural University",
+      "nirf_institute_id": "IR-O-U-0485",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Bharathidasan University",
+      "nirf_institute_id": "IR-O-U-0448",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Dr. Hari Singh Gour University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Sri Venkateswara University",
+      "nirf_institute_id": "IR-O-U-0037",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "King George's Medical University",
+      "nirf_institute_id": "IR-D-U-0523",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Punjab Agricultural University",
+      "nirf_institute_id": "IR-O-U-0381",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Lucknow",
+      "nirf_institute_id": "IR-O-U-0524",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Indian Association for the Cultivation of Science",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Bharati Vidyapeeth Deemed University",
+      "nirf_institute_id": "IR-O-I-1361",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Allahabad",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "University of Kalyani",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "University of Mysore",
+      "nirf_institute_id": "IR-O-U-0235",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "All India Institute of Medical Sciences Bhopal",
+      "nirf_institute_id": "IR-D-U-0687",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "G.S. Science, Arts And Commerce College",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Indian Institute of Engineering Science and Technology, Shibpur",
+      "nirf_institute_id": "IR-E-U-0584",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "All India Institute of Medical Sciences Raipur",
+      "nirf_institute_id": "IR-D-U-0690",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Cochin University of Science and Technology",
+      "nirf_institute_id": "IR-O-U-0253",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Jawaharlal Institute of Post Graduate Medical Education and Research",
+      "nirf_institute_id": "IR-O-U-0368",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Sardar Vallabhbhai National Institute of Technology Surat",
+      "nirf_institute_id": "IR-E-U-0149",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Central University of Rajasthan",
+      "nirf_institute_id": "IR-P-U-0392",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Government Medical College",
+      "nirf_institute_id": "IR-D-C-48124",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "National Institute of Technology Durgapur",
+      "nirf_institute_id": "IR-E-U-0577",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "University of Kashmir",
+      "nirf_institute_id": "IR-O-U-0196",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Sri Ramachandra Institute of Higher Education and Research",
+      "nirf_institute_id": "IR-O-I-1486",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Punjabi University",
+      "nirf_institute_id": "IR-P-U-0383",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Shivaji University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Mangalore University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "Christian Medical College",
+      "nirf_institute_id": "IR-D-C-29209",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Jawaharlal Nehru Technological University, Hyderabad",
+      "nirf_institute_id": "IR-E-U-0017",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Karpagam Academy of Higher Education",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "University of Kerala",
+      "nirf_institute_id": "IR-O-U-0260",
+      "reason": "no_innovation_pdf"
+    }
+  ],
+  "by_reason": {
+    "no_nirf_id": 13,
+    "no_innovation_pdf": 50
+  }
+}

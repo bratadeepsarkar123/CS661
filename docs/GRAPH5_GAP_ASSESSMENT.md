@@ -286,7 +286,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 
 **Severity:** P2.
 
-**Status (2026-07-08):** **Synced** — full year slices copied from `dashboard/data/india_network/` to `hierarchy-app/public/india_network/` per README sync command. Rebuild `dist/` only when previewing the Vite app.
+**Status (2026-07-08):** **Synced** — `scripts/sync_hierarchy_app.ps1` copies `dashboard/data/india_network/` → `public/` and `dist/india_network/`. Vite rebuild requires `package.json` (not always in repo).
 
 ### P2-7 — Documentation drift
 
@@ -301,7 +301,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 
 | Item | Status | Notes |
 |------|--------|-------|
-| **P3-1** AISHE xlsx (`data/raw/aishe_universities.xlsx`) | **Optional / missing** | Listed in `01_download_sources.py` for enrichment; tier narrative uses NSTMIS/AISHE report aggregates; pipeline runs without it |
+| **P3-1** AISHE xlsx (`data/raw/aishe_universities.xlsx`) | **Validated (optional)** | `01_download_sources.py` marks optional; `validate_aishe.py` → `data/logs/aishe_coverage_summary.json` |
 | **P3-2** Plan doc script drift | **Closed** | See `india_domestic_he_network_plan.md` repo layout + Phase 1 table |
 
 ---
@@ -318,8 +318,12 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 | Review 14 losers for valid overrides | **Done** | All 14 reviewed 2026-07-08; no new overrides (see table below) | [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) |
 | Duplicate funding cluster root cause | **Traced** | 3 join bugs; see trace doc |
 | `01b` scrape gap diff | **Done** | `01b_scrape_nirf_rankings.py`, `nirf_utils.py`, `nirf_scrape_gaps.json` |
-| `hierarchy-app` dedup | **Done** | Synced `public/india_network/` from dashboard (2026-07-08); README documents command |
-| Update `nirf_coverage_gaps.md` | **Done** | report_nirf_gaps.py → **91/120** funding, **57/120** patents (post re-scrape) |
+| `hierarchy-app` dedup | **Done** | `scripts/sync_hierarchy_app.ps1`; `public/` + `dist/` synced from dashboard |
+| Update `nirf_coverage_gaps.md` | **Done** | `report_nirf_gaps.py` wired in `10_verification_checklist.py` |
+| Patent gap JSON | **Done** | `data/logs/patent_coverage_gaps.json` |
+| Export `nirf_match_status` + `coverage` meta | **Done** | `09_export_payloads.py`, `dashboard/india_network.js` |
+| Duplicate funding UI tags | **Done** | `funding_duplicate_cluster` on export + funding tab footnotes |
+| AISHE validate script | **Done** | `validate_aishe.py` → `aishe_coverage_summary.json` |
 
 ---
 

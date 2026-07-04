@@ -32,12 +32,15 @@ HUBS_PATH = PROCESSED_DIR / "hub_flags.csv"
 TRIADS_PATH = PROCESSED_DIR / "collaboration_triads.parquet"
 DOMESTIC_WORKS_PATH = PROCESSED_DIR / "domestic_works.parquet"
 SCIMAGEO_YEAR = 2019
+LOSERS_PATH = PROCESSED_DIR / "nirf_match_losers.csv"
 
-UNRANKED_NIRF_NAMES = {
-    "Guru Nanak Dev University",
-    "Dr. Hari Singh Gour University",
-    "Indian Association for the Cultivation of Science",
-    "G.S. Science, Arts And Commerce College",
+# Institutes sharing identical NIRF funding rows (informational — not join bugs).
+FUNDING_DUPLICATE_CLUSTER_BY_NAME: dict[str, str] = {
+    "Indian Institute of Technology (BHU) Varanasi": "bhu_campus_family",
+    "Banaras Hindu University": "bhu_campus_family",
+    "Institute of Medical Sciences": "bhu_campus_family",
+    "Panjab University": "coincidental_rounding",
+    "National Institute of Technology Durgapur": "coincidental_rounding",
 }
 
 OVERVIEW_NODE_KEYS = frozenset(
@@ -106,8 +109,27 @@ def load_patents() -> pd.DataFrame:
     return pd.read_csv(PATENTS_PATH)
 
 
-def _funding_status(name: str, funding_cr: float | None, nirf_rank) -> str:
-    if name in UNRANKED_NIRF_NAMES:
+def load_nirf_losers() -> dict[str, str]:
+    """canonical_name -> reason from nirf_match_losers.csv."""
+    if not LOSERS_PATH.exists():
+        return {}
+    df = pd.read_csv(LOSERS_PATH)
+    return {str(r["canonical_name"]): str(r["reason"]) for _, r in df.iterrows()}
+
+
+def _nirf_match_status(name: str, nirf_id, losers: dict[str, str]) -> str:
+    if pd.notna(nirf_id):
+        return "matched"
+    if name in losers:
+        reason = losers[name]
+        if reason == "id_blocked_by_uniqueness":
+            return "blocked"
+        return "unranked"
+    return "unranked"
+
+
+def _funding_status(name: str, funding_cr: float | None, nirf_rank, nirf_match_status: str) -> str:
+    if nirf_match_status in ("unranked", "blocked"):
         return "unranked"
     if funding_cr is not None:
         return "reported"
@@ -116,14 +138,29 @@ def _funding_status(name: str, funding_cr: float | None, nirf_rank) -> str:
     return "unavailable"
 
 
-def _patent_status(name: str, prow: pd.Series | None) -> str:
-    if name in UNRANKED_NIRF_NAMES:
+def _patent_status(name: str, prow: pd.Series | None, nirf_match_status: str) -> str:
+    if nirf_match_status in ("unranked", "blocked"):
         return "unranked"
     if prow is not None and pd.notna(prow.get("patent_status")):
         return str(prow["patent_status"])
     if prow is not None and pd.notna(prow.get("patents_published")):
         return "reported"
     return "unavailable"
+
+
+def build_coverage_meta(nodes: list[dict], losers: dict[str, str]) -> dict:
+    nirf_matched = sum(1 for n in nodes if n.get("nirf_match_status") == "matched")
+    funding_reported = sum(1 for n in nodes if n.get("research_funding_cr") is not None)
+    patents_reported = sum(1 for n in nodes if n.get("patents_published") is not None)
+    return {
+        "nirf_matched": nirf_matched,
+        "nirf_losers": len(losers),
+        "loser_names": sorted(losers.keys()),
+        "funding_reported": funding_reported,
+        "patents_reported": patents_reported,
+        "institutions_total": len(nodes),
+        "patent_ceiling_note": "Innovation PDF only; see data/logs/patent_coverage_gaps.json",
+    }
 
 
 def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame) -> list[dict]:
@@ -133,6 +170,7 @@ def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame)
     fmap = fmap.set_index("institution_id") if not fmap.empty and "institution_id" in fmap.columns else None
     pmap = load_patents()
     pmap = pmap.set_index("institution_id") if not pmap.empty and "institution_id" in pmap.columns else None
+    losers = load_nirf_losers()
 
     nodes = []
     for _, r in master.iterrows():
@@ -168,37 +206,42 @@ def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame)
             if pd.notna(prow.get("patent_calendar_year")):
                 patent_year = int(prow["patent_calendar_year"])
         name = r["canonical_name"]
-        nodes.append(
-            {
-                "id": r["institution_id"],
-                "openalex_id": r["openalex_id"],
-                "name": name,
-                "tier": r["tier"],
-                "city": r.get("city"),
-                "state": r.get("state"),
-                "lat": float(r["latitude"]),
-                "lon": float(r["longitude"]),
-                "total_works": int(r.get("total_works") or 0),
-                "is_hub": bool(hub_map.get(r["institution_id"], r.get("is_hub", False))),
-                "color": _tier_color(str(r["tier"])),
-                "radius": _node_radius(r.get("total_works")),
-                "scimago_pct": pct,
-                "scimago_year": SCIMAGEO_YEAR if pct is not None else None,
-                "nirf_rank": int(r["nirf_rank"]) if pd.notna(r.get("nirf_rank")) else None,
-                "nirf_ranking_category": (
-                    str(r["nirf_ranking_category"]) if pd.notna(r.get("nirf_ranking_category")) else None
-                ),
-                "research_funding_cr": funding_cr,
-                "total_expenditure_cr": expenditure_cr,
-                "sponsored_projects": sponsored_projects,
-                "funding_academic_year": funding_year,
-                "funding_status": _funding_status(name, funding_cr, r.get("nirf_rank")),
-                "patents_published": patents_published,
-                "patents_granted": patents_granted,
-                "patent_calendar_year": patent_year,
-                "patent_status": _patent_status(name, prow),
-            }
-        )
+        nirf_id = r.get("nirf_institute_id")
+        match_status = _nirf_match_status(name, nirf_id, losers)
+        dup_cluster = FUNDING_DUPLICATE_CLUSTER_BY_NAME.get(name)
+        node: dict = {
+            "id": r["institution_id"],
+            "openalex_id": r["openalex_id"],
+            "name": name,
+            "tier": r["tier"],
+            "city": r.get("city"),
+            "state": r.get("state"),
+            "lat": float(r["latitude"]),
+            "lon": float(r["longitude"]),
+            "total_works": int(r.get("total_works") or 0),
+            "is_hub": bool(hub_map.get(r["institution_id"], r.get("is_hub", False))),
+            "color": _tier_color(str(r["tier"])),
+            "radius": _node_radius(r.get("total_works")),
+            "scimago_pct": pct,
+            "scimago_year": SCIMAGEO_YEAR if pct is not None else None,
+            "nirf_rank": int(r["nirf_rank"]) if pd.notna(r.get("nirf_rank")) else None,
+            "nirf_ranking_category": (
+                str(r["nirf_ranking_category"]) if pd.notna(r.get("nirf_ranking_category")) else None
+            ),
+            "nirf_match_status": match_status,
+            "research_funding_cr": funding_cr,
+            "total_expenditure_cr": expenditure_cr,
+            "sponsored_projects": sponsored_projects,
+            "funding_academic_year": funding_year,
+            "funding_status": _funding_status(name, funding_cr, r.get("nirf_rank"), match_status),
+            "patents_published": patents_published,
+            "patents_granted": patents_granted,
+            "patent_calendar_year": patent_year,
+            "patent_status": _patent_status(name, prow, match_status),
+        }
+        if dup_cluster:
+            node["funding_duplicate_cluster"] = dup_cluster
+        nodes.append(node)
     return nodes
 
 
@@ -323,10 +366,13 @@ def export_year(year: int | None, master: pd.DataFrame, edges: pd.DataFrame, hub
     out_dir = PUBLIC_DIR
     out_dir.mkdir(parents=True, exist_ok=True)
 
+    losers = load_nirf_losers()
+    coverage = build_coverage_meta(nodes, losers)
     overview = {
         "year": year if year is not None else "all",
         "quality_year": SCIMAGEO_YEAR,
         "quality_note": "SCImago research impact % snapshot (2019 data); static across year slider",
+        "coverage": coverage,
         "nodes": [node_for_overview(n) for n in overview_nodes],
         "edges": overview_edges,
         "tier_summary": tier_summary(nodes),

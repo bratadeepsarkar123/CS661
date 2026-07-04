@@ -90,6 +90,27 @@ const INDIA = (() => {
     return cat ? `NIRF rank (${cat})` : "NIRF rank";
   }
 
+  function nirfStatusNote(node) {
+    if (node.nirf_rank != null) return "";
+    if (node.nirf_match_status === "blocked") {
+      return `<p class="india-data-note">NIRF ID blocked — another institute holds the nearest matching ID (see pipeline loser report).</p>`;
+    }
+    if (node.nirf_match_status === "unranked" || node.nirf_rank == null) {
+      return `<p class="india-data-note">Not ranked in NIRF 2024 — no official NIRF metadata.</p>`;
+    }
+    return "";
+  }
+
+  function fundingDuplicateNote(node) {
+    if (node.funding_duplicate_cluster === "bhu_campus_family") {
+      return `<p class="india-data-note">Funding amount shared with BHU campus entities — same NIRF Overall submission (IR-O-U-0500).</p>`;
+    }
+    if (node.funding_duplicate_cluster === "coincidental_rounding") {
+      return `<p class="india-data-note">Funding amount coincidentally matches another institute after rounding (distinct NIRF PDF rows).</p>`;
+    }
+    return "";
+  }
+
   function ensureLoaded() {
     if (cache.overview && cache.full) return Promise.resolve(cache);
     if (!cache.loadPromise) {
@@ -290,6 +311,7 @@ const INDIA = (() => {
         <div class="inst-stat-row"><span>Sponsored projects (count)</span><strong>${projects != null ? projects : "—"}</strong></div>
         <div class="inst-stat-row"><span>Total expenditure</span><strong>${expCr != null ? "₹" + expCr.toFixed(1) + " Cr" : "—"}</strong></div>`;
       }
+      const dupNote = fundingDuplicateNote(node);
 
       let patentBlock = "";
       if (patentStatus === "unranked") {
@@ -311,7 +333,9 @@ const INDIA = (() => {
         <span class="inst-tier" style="background:${col}33;color:${col}">${tierLabel(node.tier)}</span>
         ${tabs}
         ${fundingBlock}
+        ${dupNote}
         <div class="inst-stat-row"><span>${nirfRankLabel(node)}</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
+        ${nirfStatusNote(node)}
         ${patentBlock}
         ${tierAvg != null ? `<p class="india-funding-note">${tierLabel(node.tier)} tier avg sponsored research: <strong>₹${tierAvg.toFixed(1)} Cr</strong> (institutions with NIRF submissions only).</p>` : ""}
         <p class="india-funding-note">Source: official NIRF PDFs on nirfindia.org (free). Not all HEIs file detailed returns.</p>
@@ -365,6 +389,7 @@ const INDIA = (() => {
       ${tabs}
       ${focusNote}
       <div class="inst-stat-row"><span>${nirfRankLabel(node)}</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
+      ${nirfStatusNote(node)}
       <div class="inst-stat-row"><span>OpenAlex works (2015–24)</span><strong>${(node.total_works || 0).toLocaleString()}</strong></div>
       <div class="inst-stat-row"><span>SCImago impact (${node.scimago_year || "—"})</span><strong>${node.scimago_pct != null ? node.scimago_pct + "%" : "—"}</strong></div>
       <div class="inst-stat-row"><span>Domestic co-pubs (year slice)</span><strong>${collabTotal || "—"}</strong></div>

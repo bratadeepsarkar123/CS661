@@ -13,12 +13,12 @@ Living status for audit IDs still tracked after P0 fixes. **Do not edit the hist
 | **P1-1** | 14 NIRF match losers after uniqueness pass | **Closed (accepted gap)** — 14 institutes documented; no risky overrides added | [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) §14 losers; `data/processed/nirf_match_losers.csv` |
 | **P1-2** | Patent coverage 42/120 | **Improved** — **57/120** reported after `01f` re-scrape; remainder honestly `unavailable` | [`verification_report.md`](../data/processed/verification_report.md); [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) §P2-3 |
 | **P1-4** | Duplicate funding value clusters | **Closed (informational)** — **2 clusters** remain (19.84 cr × 2; 206.94 cr × 3); earlier 4-cluster audit list reduced post-join fixes | [`verification_report.md`](../data/processed/verification_report.md); `data/processed/institution_funding.csv` |
-| **P1-5** | `hierarchy-app` stale fork of network JSON | **Closed** — `dashboard/data/india_network/` synced to `hierarchy-app/public/india_network/`; README documents canonical path + sync command | [`hierarchy-app/README.md`](../hierarchy-app/README.md) |
-| **P2-2** | KIIT + Siksha O Anusandhan share Bhubaneswar coords | **Closed (cosmetic P2)** — intentional `campus_kiit` / `campus_soa_bhubaneswar` stack in `03b`; verification max stack ≤ 1 | [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) §P2-2 coords |
-| **P3-1** | AISHE xlsx listed required but missing | **Backlog (optional)** — `data/raw/aishe_universities.xlsx` not present; no pipeline break; tier narrative uses NSTMIS/AISHE aggregates elsewhere | [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) §P3 backlog |
-| **P3-2** | Plan doc references nonexistent scripts | **Closed** — `india_domestic_he_network_plan.md` updated to actual pipeline map (`07_join_scimago_quality.py`, metrics/tier in `09_export_payloads.py`) | [`india_domestic_he_network_plan.md`](../india_domestic_he_network_plan.md) |
+| **P1-5** | `hierarchy-app` stale fork of network JSON | **Closed** — `scripts/sync_hierarchy_app.ps1` syncs dashboard → `public/` + `dist/` | [`hierarchy-app/README.md`](../hierarchy-app/README.md) |
+| **P2-2** | KIIT + Siksha O Anusandhan share Bhubaneswar coords | **Closed (cosmetic P2)** — intentional `campus_kiit` / `campus_soa_bhubaneswar` stack in `03b` | [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) |
+| **P3-1** | AISHE xlsx listed required but missing | **Validated (optional)** — `validate_aishe.py` emits `data/logs/aishe_coverage_summary.json`; always PASS if missing | [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) §P3 |
+| **P3-2** | Plan doc references nonexistent scripts | **Closed** — `india_domestic_he_network_plan.md` updated | [`india_domestic_he_network_plan.md`](../india_domestic_he_network_plan.md) |
 
-**Verification gate:** **18/18 PASS** — see [`data/processed/verification_report.md`](../data/processed/verification_report.md) (generated 2026-07-07T18:49:34Z).
+**Verification gate:** **20/20 PASS** — includes NIRF gap report + AISHE validation checks.
 
 # Graph 5 (India Domestic HE Network) — Pipeline Audit Report
 

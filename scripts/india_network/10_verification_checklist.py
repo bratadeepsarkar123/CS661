@@ -186,14 +186,27 @@ def _duplicate_funding_check(funding: pd.DataFrame) -> tuple[bool, str]:
     funded = funding[funding["research_funding_cr"].notna()].copy()
     if funded.empty:
         return True, "no funded rows"
+    cluster_labels = {
+        frozenset(
+            {
+                "Indian Institute of Technology (BHU) Varanasi",
+                "Banaras Hindu University",
+                "Institute of Medical Sciences",
+            }
+        ): "bhu_campus_family (shared NIRF IR-O-U-0500)",
+        frozenset({"Panjab University", "National Institute of Technology Durgapur"}): "coincidental_rounding",
+    }
     clusters: list[str] = []
     for amount, group in funded.groupby("research_funding_cr"):
         if len(group) < 2:
             continue
         names = group["canonical_name"].astype(str).tolist()
-        if len(names) >= 2:
+        name_set = frozenset(names)
+        label = cluster_labels.get(name_set)
+        if label:
+            clusters.append(f"{amount} cr [{label}]: {', '.join(names[:3])}")
+        else:
             clusters.append(f"{amount} cr: {len(names)} institutes ({names[0][:30]}…, {names[1][:30]}…)")
-    # Informational — duplicate clusters are P2, not a hard fail
     ok = len(clusters) <= 8
     detail = f"{len(clusters)} duplicate-value clusters" if clusters else "no duplicate funding values"
     if clusters:
@@ -348,6 +361,33 @@ def main() -> None:
                 f"2015 weight sum={int(w2015)}, 2022 weight sum={int(w2022)}",
             )
         )
+
+    try:
+        from report_nirf_gaps import run_report  # noqa: WPS433
+
+        gap_summary = run_report()
+        results.append(
+            check(
+                "NIRF coverage gap report",
+                True,
+                f"funding {gap_summary['funding_reported']}/{gap_summary['funding_total']}, "
+                f"patents {gap_summary['patents_reported']}/{gap_summary['patents_total']}",
+            )
+        )
+    except Exception as exc:  # noqa: BLE001
+        results.append(check("NIRF coverage gap report", False, str(exc)))
+
+    try:
+        from validate_aishe import run_validate  # noqa: WPS433
+
+        aishe = run_validate()
+        if aishe.get("present"):
+            det = f"present, {aishe.get('row_count', 0)} rows"
+        else:
+            det = "optional file missing"
+        results.append(check("AISHE xlsx validation", True, det))
+    except Exception as exc:  # noqa: BLE001
+        results.append(check("AISHE xlsx validation", False, str(exc)))
 
     passed = sum(1 for r in results if r["ok"])
     summary = {
