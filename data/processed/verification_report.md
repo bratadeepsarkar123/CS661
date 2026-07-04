@@ -1,20 +1,20 @@
 # Module 5 verification checklist
 
-Generated: 2026-07-07T18:33:06.842638+00:00
+Generated: 2026-07-07T18:37:37.480538+00:00
 **18/18 passed**
 
 - [PASS] institution_master rows + geo: 120 rows, 100% with lat/lon
 - [PASS] collaboration_edges weight>=2: 13236 edge rows
 - [PASS] edge endpoints in master (domestic IN institutions): all endpoints in institution_master
-- [PASS] overview size: 31371 bytes
-- [PASS] full size: 395430 bytes (cap 1953 KB)
+- [PASS] overview size: 31376 bytes
+- [PASS] full size: 395446 bytes (cap 1953 KB)
 - [PASS] SCImago static year footnote: SCImago research impact % snapshot (2019 data); static across year slider
 - [PASS] overview payload edge integrity: 0 orphan edges (nodes=45, edges=40)
 - [PASS] full payload edge integrity: 0 orphan edges (nodes=120, edges=300)
 - [PASS] year slice manifest: 10 years listed in manifest.json
 - [PASS] campus coordinate stacks: max stack=1, out_of_india=0
 - [PASS] domestic_works.parquet non-empty: 108705 rows, 1252 KB
-- [PASS] NIRF funding coverage: 89 / 120 institutions with research_funding_cr
+- [PASS] NIRF funding coverage: 91 / 120 institutions with research_funding_cr
 - [PASS] funding ID/name corruption guard: no suspect funding
 - [PASS] major IIT funding present: all major IITs funded
 - [PASS] duplicate funding value clusters: 2 duplicate-value clusters — 19.84 cr: 2 institutes (Panjab University…, National Institute of Technolo…); 206.94 cr: 3 institutes (Indian Institute of Technology…, Banaras Hindu University…)

@@ -764,21 +764,39 @@ ranking_year,ranking_category,institute_id,institute_name,state,city,academic_ye
 2024,Overall,IR-O-U-0260,Kerala University,Kerala,Thiruvananthapuram,2022-23,Amount received (INR),332000000.0,value in Rupees
 2024,Overall,IR-O-U-0260,Kerala University,Kerala,Thiruvananthapuram,2021-22,Amount received (INR),262830217.0,value in Rupees
 2024,Overall,IR-O-U-0260,Kerala University,Kerala,Thiruvananthapuram,2020-21,Amount received (INR),166621630.0,value in Rupees
-2024,Overall,IR-O-U-0473,S.R.M. Institute of Science and Technology,,Chennai,2022-23,Number of sponsored projects,391.0,value in Absolute Number
-2024,Overall,IR-O-U-0473,S.R.M. Institute of Science and Technology,,Chennai,2021-22,Number of sponsored projects,147.0,value in Absolute Number
-2024,Overall,IR-O-U-0473,S.R.M. Institute of Science and Technology,,Chennai,2020-21,Number of sponsored projects,87.0,value in Absolute Number
-2024,Overall,IR-O-U-0473,S.R.M. Institute of Science and Technology,,Chennai,2022-23,Amount received (INR),282447565.0,value in Rupees
-2024,Overall,IR-O-U-0473,S.R.M. Institute of Science and Technology,,Chennai,2021-22,Amount received (INR),90703348.0,value in Rupees
-2024,Overall,IR-O-U-0473,S.R.M. Institute of Science and Technology,,Chennai,2020-21,Amount received (INR),73315484.0,value in Rupees
 2024,Engineering,IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),,Patiāla,2022-23,Number of sponsored projects,44.0,value in Absolute Number
 2024,Engineering,IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),,Patiāla,2021-22,Number of sponsored projects,52.0,value in Absolute Number
 2024,Engineering,IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),,Patiāla,2020-21,Number of sponsored projects,66.0,value in Absolute Number
 2024,Engineering,IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),,Patiāla,2022-23,Amount received (INR),108490000.0,value in Rupees
 2024,Engineering,IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),,Patiāla,2021-22,Amount received (INR),103620000.0,value in Rupees
 2024,Engineering,IR-E-I-1480,Thapar Institute of Engineering and Technology (Deemed-to-be-university),,Patiāla,2020-21,Amount received (INR),84804000.0,value in Rupees
-2024,Pharmacy,IR-P-U-0513,G. L. A. University,,Mathura,2022-23,Number of sponsored projects,0.0,value in Absolute Number
-2024,Pharmacy,IR-P-U-0513,G. L. A. University,,Mathura,2021-22,Number of sponsored projects,0.0,value in Absolute Number
-2024,Pharmacy,IR-P-U-0513,G. L. A. University,,Mathura,2020-21,Number of sponsored projects,0.0,value in Absolute Number
-2024,Pharmacy,IR-P-U-0513,G. L. A. University,,Mathura,2022-23,Amount received (INR),0.0,value in Rupees
-2024,Pharmacy,IR-P-U-0513,G. L. A. University,,Mathura,2021-22,Amount received (INR),0.0,value in Rupees
-2024,Pharmacy,IR-P-U-0513,G. L. A. University,,Mathura,2020-21,Amount received (INR),0.0,value in Rupees
+2024,Overall,IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Tamil Nadu,Chennai,2022-23,Number of sponsored projects,3038.0,value in Absolute Number
+2024,Overall,IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Tamil Nadu,Chennai,2021-22,Number of sponsored projects,5225.0,value in Absolute Number
+2024,Overall,IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Tamil Nadu,Chennai,2020-21,Number of sponsored projects,6270.0,value in Absolute Number
+2024,Overall,IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Tamil Nadu,Chennai,2022-23,Amount received (INR),283062130.0,value in Rupees
+2024,Overall,IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Tamil Nadu,Chennai,2021-22,Amount received (INR),6431200.0,value in Rupees
+2024,Overall,IR-O-I-1441,Saveetha Institute of Medical and Technical Sciences,Tamil Nadu,Chennai,2020-21,Amount received (INR),11990250.0,value in Rupees
+2024,Medical,IR-D-U-0500,Banaras Hindu University,,Varanasi,2022-23,Number of sponsored projects,38.0,value in Absolute Number
+2024,Medical,IR-D-U-0500,Banaras Hindu University,,Varanasi,2021-22,Number of sponsored projects,115.0,value in Absolute Number
+2024,Medical,IR-D-U-0500,Banaras Hindu University,,Varanasi,2020-21,Number of sponsored projects,52.0,value in Absolute Number
+2024,Medical,IR-D-U-0500,Banaras Hindu University,,Varanasi,2022-23,Amount received (INR),128221542.0,value in Rupees
+2024,Medical,IR-D-U-0500,Banaras Hindu University,,Varanasi,2021-22,Amount received (INR),201829671.0,value in Rupees
+2024,Medical,IR-D-U-0500,Banaras Hindu University,,Varanasi,2020-21,Amount received (INR),114044496.0,value in Rupees
+2024,Overall,IR-O-U-0356,Kalinga Institute of Industrial Technology,,Bhubaneswar,2022-23,Number of sponsored projects,151.0,value in Absolute Number
+2024,Overall,IR-O-U-0356,Kalinga Institute of Industrial Technology,,Bhubaneswar,2021-22,Number of sponsored projects,126.0,value in Absolute Number
+2024,Overall,IR-O-U-0356,Kalinga Institute of Industrial Technology,,Bhubaneswar,2020-21,Number of sponsored projects,101.0,value in Absolute Number
+2024,Overall,IR-O-U-0356,Kalinga Institute of Industrial Technology,,Bhubaneswar,2022-23,Amount received (INR),204116643.0,value in Rupees
+2024,Overall,IR-O-U-0356,Kalinga Institute of Industrial Technology,,Bhubaneswar,2021-22,Amount received (INR),99127693.0,value in Rupees
+2024,Overall,IR-O-U-0356,Kalinga Institute of Industrial Technology,,Bhubaneswar,2020-21,Amount received (INR),103503419.0,value in Rupees
+2024,Pharmacy,IR-P-U-0011,Gandhi Institute of Technology and Management,Andhra Pradesh,Visakhapatnam,2022-23,Number of sponsored projects,0.0,value in Absolute Number
+2024,Pharmacy,IR-P-U-0011,Gandhi Institute of Technology and Management,Andhra Pradesh,Visakhapatnam,2021-22,Number of sponsored projects,0.0,value in Absolute Number
+2024,Pharmacy,IR-P-U-0011,Gandhi Institute of Technology and Management,Andhra Pradesh,Visakhapatnam,2020-21,Number of sponsored projects,0.0,value in Absolute Number
+2024,Pharmacy,IR-P-U-0011,Gandhi Institute of Technology and Management,Andhra Pradesh,Visakhapatnam,2022-23,Amount received (INR),0.0,value in Rupees
+2024,Pharmacy,IR-P-U-0011,Gandhi Institute of Technology and Management,Andhra Pradesh,Visakhapatnam,2021-22,Amount received (INR),0.0,value in Rupees
+2024,Pharmacy,IR-P-U-0011,Gandhi Institute of Technology and Management,Andhra Pradesh,Visakhapatnam,2020-21,Amount received (INR),0.0,value in Rupees
+2024,Overall,IR-O-U-0476,Shanmugha Arts Science Technology and Research Academy,,Thanjavur,2022-23,Number of sponsored projects,73.0,value in Absolute Number
+2024,Overall,IR-O-U-0476,Shanmugha Arts Science Technology and Research Academy,,Thanjavur,2021-22,Number of sponsored projects,87.0,value in Absolute Number
+2024,Overall,IR-O-U-0476,Shanmugha Arts Science Technology and Research Academy,,Thanjavur,2020-21,Number of sponsored projects,87.0,value in Absolute Number
+2024,Overall,IR-O-U-0476,Shanmugha Arts Science Technology and Research Academy,,Thanjavur,2022-23,Amount received (INR),539685492.0,value in Rupees
+2024,Overall,IR-O-U-0476,Shanmugha Arts Science Technology and Research Academy,,Thanjavur,2021-22,Amount received (INR),117233514.0,value in Rupees
+2024,Overall,IR-O-U-0476,Shanmugha Arts Science Technology and Research Academy,,Thanjavur,2020-21,Amount received (INR),397610718.0,value in Rupees

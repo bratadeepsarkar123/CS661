@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T18:27:18.175315+00:00",
+  "generated_at": "2026-07-07T18:36:24.238346+00:00",
   "source": "03a_enrich_institution_master",
   "nirf_year": 2024,
   "missing_from_csv": [
@@ -101,25 +101,20 @@
   "master_institutes_without_nirf_match": [
     "Dr. Hari Singh Gour University",
     "G.S. Science, Arts And Commerce College",
-    "GITAM University",
     "Guru Nanak Dev University",
     "Indian Association for the Cultivation of Science",
     "Indian Institute of Technology Goa",
-    "Institute of Medical Sciences",
-    "KIIT University",
     "Karpagam Academy of Higher Education",
     "Mangalore University",
     "Pondicherry University",
     "Presidency University",
-    "SASTRA University",
     "SRM University",
-    "Saveetha University",
     "Shivaji University",
     "University of Allahabad",
     "University of Kalyani",
     "University of Rajasthan"
   ],
-  "master_nirf_matched": 101,
+  "master_nirf_matched": 106,
   "master_total": 120,
   "csv_rows": 860,
   "csv_unique_institutes": 796
