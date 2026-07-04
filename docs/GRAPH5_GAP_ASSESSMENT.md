@@ -279,7 +279,8 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding 84/120; major IIT fund
 | NIRF loser report | **Done** | `nirf_utils.py`, `03a_enrich`, `nirf_match_losers.csv` |
 | Duplicate funding detector | **Done** | `10_verification_checklist.py` |
 | Session summary markdown | **Done** | `docs/MULTITASK_SESSION_SUMMARY.md` |
-| Review 22 losers for valid overrides | Pending | manual review of `nirf_match_losers.csv` |
+| Review 22 losers for valid overrides | **Traced** | [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) — 5 overrides recommended |
+| Duplicate funding cluster root cause | **Traced** | 3 join bugs; see trace doc |
 | `01b` scrape gap diff | **Done** | `01b_scrape_nirf_rankings.py`, `nirf_utils.py`, `nirf_scrape_gaps.json` |
 | `hierarchy-app` dedup | Pending | remove stale fork |
 | Update `nirf_coverage_gaps.md` | Pending | `data/processed/` |

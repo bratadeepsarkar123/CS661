@@ -171,6 +171,7 @@ def main() -> None:
         targets = targets.head(args.limit)
 
     cat_map = load_nirf_categories()
+    id_to_name = load_nirf_id_canonical_names()
     all_rows: list[dict] = []
     ok = 0
     fail = 0
@@ -194,7 +195,7 @@ def main() -> None:
                             "ranking_year": NIRF_YEAR,
                             "ranking_category": cat,
                             "institute_id": iid,
-                            "institute_name": name,
+                            "institute_name": id_to_name.get(iid, name),
                             "state": row.get("state"),
                             "city": row.get("city"),
                             **p,
