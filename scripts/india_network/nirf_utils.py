@@ -158,6 +158,9 @@ NIRF_ID_OVERRIDES: dict[str, str] = {
     "Post Graduate Institute of Medical Education and Research": "IR-O-U-0446",
     "Jawaharlal Institute of Post Graduate Medical Education and Research": "IR-O-U-0368",
     "Indian Institute of Technology Dharwad": "IR-E-U-0899",
+    "SRM Institute of Science and Technology": "IR-O-U-0473",
+    "Thapar Institute of Engineering & Technology": "IR-E-I-1480",
+    "GLA University": "IR-P-U-0513",
 }
 
 # canonical_name -> preferred NIRF institute_name substring for funding join
@@ -171,6 +174,9 @@ FUNDING_NAME_ALIASES: dict[str, str] = {
     "Institute of Medical Sciences": "Banaras Hindu University",
     "Indian Institute of Science": "Indian Institute of Science, Bengaluru",
     "Indian Institute of Technology (ISM) Dhanbad": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
+    "Thapar Institute of Engineering & Technology": "Thapar Institute of Engineering and Technology (Deemed-to-be-university)",
+    "GLA University": "G. L. A. University",
+    "SRM Institute of Science and Technology": "S.R.M. Institute of Science and Technology",
 }
 
 MATCH_THRESHOLD = 0.78
@@ -194,10 +200,28 @@ def _city_aliases(city: str | None) -> set[str]:
     return CITY_ALIASES.get(key, {key})
 
 
+def _spaced_acronyms(norm: str) -> set[str]:
+    """Collapse single-letter runs (e.g. s r m -> srm) from NIRF dotted abbreviations."""
+    parts = norm.split()
+    out: set[str] = set()
+    buf: list[str] = []
+    for part in parts:
+        if len(part) == 1 and part.isalpha():
+            buf.append(part)
+        else:
+            if len(buf) >= 2:
+                out.add("".join(buf))
+            buf = []
+    if len(buf) >= 2:
+        out.add("".join(buf))
+    return out
+
+
 def extract_distinguishing_tokens(canonical_name: str) -> set[str]:
     """Location or campus tokens that must align with a NIRF row."""
     norm = norm_name(canonical_name)
     tokens = {t for t in norm.split() if len(t) > 2 and t not in NAME_STOP_TOKENS}
+    tokens |= _spaced_acronyms(norm)
     return tokens
 
 

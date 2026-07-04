@@ -70,7 +70,7 @@ def _funding_name_score(inst: pd.Series, funding_row: pd.Series, alias: str | No
 
     canon_tokens = extract_distinguishing_tokens(name)
     if canon_tokens:
-        target_tokens = set(norm_name(target).split())
+        target_tokens = extract_distinguishing_tokens(target)
         if not (canon_tokens & target_tokens):
             return 0.0
 
