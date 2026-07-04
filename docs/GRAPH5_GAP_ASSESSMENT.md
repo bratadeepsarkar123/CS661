@@ -27,9 +27,9 @@
 |-------|----------|---------------------|---------------------|----------------------|-------------------------|
 | IIT Dharwad absent from `01b` NIRF scrape (`nirf_rankings.csv`) despite NIRF 2024 Engineering participation | **P0** | No algorithmic match possible without override/supplemental row | ID assignment blocked at source | 1 | Yes |
 | `dashboard/data/india_network/` drift from `public/india_network/` after export | **P1** | UI bundle stale until manual copy | Dashboard shows old fields (no `nirf_ranking_category`) | All 120 nodes | Yes — fixes invisible in UI |
-| Duplicate funding values across unrelated institutes | **P1** | Same ₹ cr shown for distinct universities | Possible join/source duplication | 6 clusters (12 institutes) | No — suspicious but not corrupt |
+| Duplicate funding values across unrelated institutes | **P1** | Same ₹ cr shown for distinct universities | Possible join/source duplication | **2 clusters** (5 institutes) | No — suspicious but not corrupt |
 | 14 NIRF match losers (no ID after uniqueness pass) | **P1** | Missing NIRF rank in panel | Silent loss of metadata | 14 | No — documented limitation |
-| `hierarchy-app/dist/india_network/` partial/stale fork | **P2** | Submodule app shows old 2024 slice only | Fork drift | N/A | No |
+| `hierarchy-app/dist/india_network/` partial/stale fork | **P2** | Submodule app shows old slice if not rebuilt | Fork drift until sync + build | N/A | No — sync `public/` from dashboard |
 | Triad map lines drift when zoomed out | **P0** (fixed) | Dashed triad endpoints 33–133 km off at zoom 4–6 | Visual misread of collaboration geography | All triad++ users | Yes — fixed `d1ac9d8` |
 | Stale `nirf_coverage_gaps.md` / old verification claims (116/120 funding) | **P2** | Maintainer confusion | Documentation drift | N/A | No |
 | Patent scrape limited to institutes with Innovation PDF on nirfindia.org | **P1** | Newer IITs (Bhilai, Jammu, Dharwad, etc.) show patent unavailable | Honest gap — no PDF exists | ~47 NIRF-ranked with no Innovation PDF | No |
@@ -42,9 +42,9 @@
 | Funding duplicates (same ₹, different institutes) | **2 clusters** (informational check passes) — see duplicate table below |
 | NIRF match losers | **14 unmatched** (Saveetha/KIIT/SASTRA/IMS/GITAM fixed post-f15e208) — IIT Goa, SRM Sonipat, Pondicherry, etc. |
 | Dashboard ↔ public JSON drift | **Fixed** — `09b` now syncs to `dashboard/data/india_network/` |
-| `hierarchy-app` fork | **Stale** — only 3 files under `hierarchy-app/public/india_network/` |
+| `hierarchy-app` fork | **Synced** — `dashboard/data/india_network/` copied to `hierarchy-app/public/india_network/` (2026-07-08) |
 | Edge/orphan integrity | **PASS** — 0 orphan edges in overview/full payloads |
-| Geo stacking | **PASS** — max stack=1 (improved from audit's stack=2 note) |
+| Geo stacking | **PASS** — max stack=1; KIIT + Siksha O Anusandhan share Bhubaneswar pin (cosmetic P2, see below) |
 | Verification artifacts | **Current** — 18/18 pass (10_verification_checklist.py) |
 | Commits `40a71aa` / `2dd626d` regressions | **No regressions** — funding corruption guard passes; major IIT funding present |
 | Raw source quality | Dataful funding IDs still unreliable; PDF scrape path authoritative |
@@ -183,7 +183,7 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding **91/120**; patents **
 | 14 NIRF losers | Expand overrides as NIRF adds categories; emit loser report from `assign_nirf_matches` |
 | Duplicate funding clusters | Add duplicate-value detector in `10_verification_checklist.py` |
 | `01b` scrape completeness | Diff official NIRF HTML vs CSV after each scrape season |
-| `hierarchy-app` fork | Point at `dashboard/data/india_network` or remove duplicate |
+| `hierarchy-app` fork | Synced `public/india_network/` from dashboard; rebuild `dist/` when previewing |
 | Patent ceiling ~57/120 | Accept honest unavailable; re-scrape when NIRF publishes Innovation PDFs |
 | Lecture assets 376 MB | **Do not commit.** Use `.gitignore` + release artifact or Git LFS |
 
@@ -242,7 +242,15 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 2. Review losers CSV each pipeline run; add overrides only for institutes with **distinct** NIRF rows
 3. Do **not** relax uniqueness — collisions were P0
 
-### P2-2 — Duplicate funding clusters (6 groups)
+### P2-2 — KIIT + Siksha O Anusandhan coordinate stack (Bhubaneswar)
+
+**Severity:** P2 — cosmetic; no data integrity issue.
+
+**Current state:** `institution_master.csv` assigns KIIT `(20.3558, 85.8138, campus_kiit)` and Siksha O Anusandhan `(20.356, 85.814, campus_soa_bhubaneswar)` — sub-km apart, same Bhubaneswar corridor pattern as Delhi/Mumbai stacks in `03b_apply_campus_geocoding.py`.
+
+**Disposition:** **Accept as intentional** — follows existing `MANUAL_CAMPUS` / `generate_campus_all_overrides.py` pattern; verification reports max stack=1 (rounded coords do not exceed stack threshold). No coordinate fix unless Nominatim or official campus geocodes are added later.
+
+### P2-3 — Duplicate funding clusters (2 groups, was 6)
 
 **Severity:** P1 — suspicious, not proven corrupt post-`2dd626d`.
 
@@ -252,11 +260,11 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 3. If same PDF row joined twice via name variants → dedupe in `01d` on `name_norm` + amount
 4. Medical college pairs (CMC Vellore/Ludhiana) may be legitimately similar — verify against NIRF PDF
 
-### P2-3 — Patent ceiling (~51/120)
+### P2-4 — Patent ceiling (~57/120)
 
 **Severity:** P1 — coverage gap, honest `unavailable` status.
 
-**Root cause:** NIRF Innovation PDF exists for only ~51 institutes on nirfindia.org.
+**Root cause:** NIRF Innovation PDF exists for only ~57 institutes on nirfindia.org after 2026-07-08 re-scrape.
 
 **Core fix design:**
 1. ✅ Re-ran `01f_scrape_nirf_patents_from_pdfs.py` 2026-07-08 (incremental: 64 institutes in raw scrape → **57/120** reported in payload after join/dedupe)
@@ -265,7 +273,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 
 **Do not fabricate** patent counts from Engineering/Overall PDFs.
 
-### P2-4 — `01b` scrape completeness
+### P2-5 — `01b` scrape completeness
 
 **Severity:** P1 — systemic risk (Dharwad was missing until supplemental row added).
 
@@ -274,21 +282,27 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 2. ✅ Log missing IDs to `data/logs/nirf_scrape_gaps.json`
 3. ✅ Supplemental rows in `data/raw/nirf_rankings_supplement.csv` merged in `load_nirf_all()` (`03a`)
 
-### P2-5 — `hierarchy-app` fork drift
+### P2-6 — `hierarchy-app` fork drift
 
 **Severity:** P2.
 
-**Core fix design:**
-1. **Preferred:** Remove duplicate `hierarchy-app/public/india_network/`; document that `dashboard/` is canonical
-2. **Alternative:** Symlink or build step copying `dashboard/data/india_network/` → hierarchy-app
+**Status (2026-07-08):** **Synced** — full year slices copied from `dashboard/data/india_network/` to `hierarchy-app/public/india_network/` per README sync command. Rebuild `dist/` only when previewing the Vite app.
 
-### P2-6 — Documentation drift
+### P2-7 — Documentation drift
 
 **Severity:** P2.
 
 **Actions:**
-1. Archive or update `data/processed/nirf_coverage_gaps.md` to match 84/120 funding, 51/120 patents
+1. Archive or update `data/processed/nirf_coverage_gaps.md` to match **91/120** funding, **57/120** patents
 2. Point maintainers to `docs/GRAPH5_GAP_ASSESSMENT.md` as living doc
+3. ✅ `india_domestic_he_network_plan.md` script map updated (deprecated `07_build_institution_metrics.py` / `08_compute_tier_aggregates.py` names)
+
+### P3 backlog — optional sources (no pipeline break)
+
+| Item | Status | Notes |
+|------|--------|-------|
+| **P3-1** AISHE xlsx (`data/raw/aishe_universities.xlsx`) | **Optional / missing** | Listed in `01_download_sources.py` for enrichment; tier narrative uses NSTMIS/AISHE report aggregates; pipeline runs without it |
+| **P3-2** Plan doc script drift | **Closed** | See `india_domestic_he_network_plan.md` repo layout + Phase 1 table |
 
 ---
 
@@ -304,7 +318,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 | Review 14 losers for valid overrides | **Done** | All 14 reviewed 2026-07-08; no new overrides (see table below) | [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) |
 | Duplicate funding cluster root cause | **Traced** | 3 join bugs; see trace doc |
 | `01b` scrape gap diff | **Done** | `01b_scrape_nirf_rankings.py`, `nirf_utils.py`, `nirf_scrape_gaps.json` |
-| `hierarchy-app` dedup | **Done** | `hierarchy-app/README.md` — canonical `dashboard/data/india_network/`; sync command documented |
+| `hierarchy-app` dedup | **Done** | Synced `public/india_network/` from dashboard (2026-07-08); README documents command |
 | Update `nirf_coverage_gaps.md` | **Done** | report_nirf_gaps.py → **91/120** funding, **57/120** patents (post re-scrape) |
 
 ---
