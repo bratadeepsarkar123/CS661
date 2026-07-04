@@ -1,4 +1,6 @@
 name_norm,institute_name_nirf,nirf_institute_id,patent_calendar_year,patents_published,patents_granted,patents_published_3yr,patents_granted_3yr
+institute of medical sciences,Institute of Medical Sciences,IR-D-U-0500,2022,6,4,16,9
+thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-E-I-1480,2022,75,17,130,74
 national institute of technology warangal,National Institute of Technology Warangal,IR-E-U-0025,2022,10,2,27,27
 birla institute of technology mesra,"Birla Institute of Technology, Mesra",IR-E-U-0202,2022,11,4,22,11
 national institute of technology karnataka,National Institute of Technology Karnataka,IR-E-U-0237,2022,18,9,44,24
@@ -12,6 +14,7 @@ indian institute of technology palakkad,Indian Institute of Technology Palakkad,
 galgotias university,Galgotias University,IR-M-U-0643,2022,99,17,237,59
 indian institute of technology delhi,Indian Institute of Technology Delhi,IR-O-I-1074,2022,108,88,359,221
 indian institute of technology kanpur,Indian Institute of Technology Kanpur,IR-O-I-1075,2022,52,104,141,214
+saveetha university,Saveetha University,IR-O-I-1441,2022,252,7,455,22
 thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-O-I-1480,2022,75,17,130,74
 andhra university,Andhra University,IR-O-U-0006,2022,63,9,127,18
 indian institute of technology hyderabad,Indian Institute of Technology Hyderabad,IR-O-U-0013,2022,28,12,83,20
@@ -33,6 +36,7 @@ national institute of technology karnataka,National Institute of Technology Karn
 indian institute of technology indore,Indian Institute of Technology Indore,IR-O-U-0273,2022,13,8,31,19
 indian institute of technology bombay,Indian Institute of Technology Bombay,IR-O-U-0306,2022,228,140,499,357
 symbiosis international university,Symbiosis International University,IR-O-U-0329,2022,88,3,161,5
+kiit university,KIIT University,IR-O-U-0356,2022,100,34,210,97
 national institute of technology rourkela,National Institute of Technology Rourkela,IR-O-U-0357,2022,11,8,37,17
 chitkara university,Chitkara University,IR-O-U-0373,2022,381,193,540,293
 indian institute of technology ropar,Indian Institute of Technology Ropar,IR-O-U-0378,2022,11,6,41,13
@@ -45,6 +49,7 @@ national institute of technology tiruchirappalli,National Institute of Technolog
 presidency university,Presidency University,IR-O-U-0470,2022,9,2,17,5
 srm institute of science and technology,SRM Institute of Science and Technology,IR-O-U-0473,2022,126,32,383,70
 sathyabama institute of science and technology,Sathyabama Institute of Science and Technology,IR-O-U-0474,2022,199,78,393,115
+sastra university,SASTRA University,IR-O-U-0476,2022,11,5,24,15
 vel tech rangarajan dr sagunthala r d institute of science and technology,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,IR-O-U-0489,2022,43,13,102,25
 vellore institute of technology university,Vellore Institute of Technology University,IR-O-U-0490,2022,76,12,333,39
 aligarh muslim university,Aligarh Muslim University,IR-O-U-0496,2022,5,5,24,26
@@ -55,4 +60,6 @@ university of petroleum and energy studies,University of Petroleum and Energy St
 indian institute of technology kharagpur,Indian Institute of Technology Kharagpur,IR-O-U-0573,2022,41,25,174,62
 indian institute of technology bhu varanasi,Indian Institute of Technology (BHU) Varanasi,IR-O-U-0701,2022,17,41,129,43
 chandigarh university,Chandigarh University,IR-O-U-0747,2022,810,24,1524,91
+gitam university,GITAM University,IR-P-U-0011,2022,122,4,226,22
 annamalai university,Annamalai University,IR-P-U-0443,2022,6,0,6,0
+gla university,GLA University,IR-P-U-0513,2022,125,10,346,30

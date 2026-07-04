@@ -1,3 +1,5 @@
+> **ARCHIVED — historical snapshot (2026-07-07).** For current Graph 5 state use [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md) and live checklist output [`data/processed/verification_report.md`](../data/processed/verification_report.md). The body below is unchanged audit history.
+
 > **Audit snapshot:** 2026-07-07 · Read-only pipeline audit (no code or data changes during audit).
 >
 > **Post-audit updates:** Commit [`40a71aa`](https://github.com/bratadeepsarkar123/CS661/commit/40a71aa) (*Fix NIRF institute ID collisions with name-first matching*) landed after this audit. It updates `nirf_utils.py`, `03a_enrich_institution_master.py`, `08_join_nirf_funding.py`, `08b_join_nirf_patents.py`, and re-exports dashboard bundles. That work addresses P0/P1 NIRF matching and partial funding attribution fixes described below. Re-run verification and re-audit funding coverage after that pipeline completes. The body below is preserved as the historical audit record.
