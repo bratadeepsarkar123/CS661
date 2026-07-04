@@ -2,13 +2,34 @@
 """Shared NIRF matching helpers for india_network scripts."""
 from __future__ import annotations
 
+import json
 import re
+from datetime import datetime, timezone
 from difflib import SequenceMatcher
 from pathlib import Path
 
 import pandas as pd
 
 from config import DATA_DIR, RAW_DIR
+
+NIRF_RANKING_CATEGORIES = [
+    "Overall",
+    "University",
+    "College",
+    "Research",
+    "Engineering",
+    "Management",
+    "Pharmacy",
+    "Medical",
+    "Dental",
+    "Law",
+    "Architecture",
+    "Agriculture",
+    "Innovation",
+]
+
+NIRF_SUPPLEMENT_PATH = RAW_DIR / "nirf_rankings_supplement.csv"
+NIRF_SCRAPE_GAPS_PATH = DATA_DIR / "logs" / "nirf_scrape_gaps.json"
 
 NIRF_YEAR = 2024
 NIRF_PDF_BASE = f"https://www.nirfindia.org/nirfpdfcdn/{NIRF_YEAR}/pdf"
@@ -275,6 +296,121 @@ def load_nirf_rankings() -> pd.DataFrame:
     if not path.exists():
         return pd.DataFrame()
     return pd.read_csv(path)
+
+
+def load_nirf_all() -> pd.DataFrame:
+    """Load canonical rankings CSV merged with optional supplement rows."""
+    base = load_nirf_rankings()
+    if NIRF_SUPPLEMENT_PATH.exists():
+        supp = pd.read_csv(NIRF_SUPPLEMENT_PATH)
+        required = {
+            "institute_id",
+            "institute_name",
+            "city",
+            "state",
+            "score",
+            "rank",
+            "ranking_category",
+            "nirf_year",
+        }
+        missing = required - set(supp.columns)
+        if missing:
+            raise ValueError(f"{NIRF_SUPPLEMENT_PATH} missing columns: {sorted(missing)}")
+        if not supp.empty:
+            base = pd.concat([base, supp], ignore_index=True)
+    if base.empty:
+        return base
+    base = base.drop_duplicates(
+        subset=["institute_id", "ranking_category", "nirf_year"], keep="first"
+    )
+    base["name_norm"] = base["institute_name"].map(norm_name)
+    return base
+
+
+def build_nirf_scrape_gaps_report(
+    scraped_df: pd.DataFrame,
+    *,
+    website_ids_by_category: dict[str, set[str]] | None = None,
+    master: pd.DataFrame | None = None,
+    year: int = NIRF_YEAR,
+    source: str = "01b_scrape_nirf_rankings",
+) -> dict:
+    """Compare scraped CSV rows against live NIRF page IDs and master coverage."""
+    category_counts: dict[str, dict[str, int]] = {}
+    missing_from_csv: list[dict[str, str]] = []
+
+    if website_ids_by_category:
+        for cat, web_ids in website_ids_by_category.items():
+            if scraped_df.empty:
+                csv_ids: set[str] = set()
+            else:
+                csv_ids = set(
+                    scraped_df.loc[
+                        scraped_df["ranking_category"] == cat, "institute_id"
+                    ].astype(str)
+                )
+            category_counts[cat] = {"website": len(web_ids), "csv": len(csv_ids)}
+            for iid in sorted(web_ids - csv_ids):
+                missing_from_csv.append({"institute_id": iid, "ranking_category": cat})
+
+    master_institutes_without_nirf_match: list[str] = []
+    master_nirf_matched = 0
+    master_total = 0
+    if master is not None and not master.empty:
+        master_total = len(master)
+        if "nirf_institute_id" in master.columns:
+            master_nirf_matched = int(master["nirf_institute_id"].notna().sum())
+            master_institutes_without_nirf_match = (
+                master.loc[master["nirf_institute_id"].isna(), "canonical_name"]
+                .astype(str)
+                .sort_values()
+                .tolist()
+            )
+
+    return {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "source": source,
+        "nirf_year": year,
+        "missing_from_csv": missing_from_csv,
+        "category_counts": category_counts,
+        "master_institutes_without_nirf_match": master_institutes_without_nirf_match,
+        "master_nirf_matched": master_nirf_matched,
+        "master_total": master_total,
+        "csv_rows": len(scraped_df),
+        "csv_unique_institutes": int(scraped_df["institute_id"].nunique())
+        if not scraped_df.empty
+        else 0,
+    }
+
+
+def write_nirf_scrape_gaps(report: dict, path: Path | None = None) -> Path:
+    out = path or NIRF_SCRAPE_GAPS_PATH
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(report, indent=2), encoding="utf-8")
+    return out
+
+
+def update_master_in_scrape_gaps(master: pd.DataFrame, year: int = NIRF_YEAR) -> Path:
+    """Refresh master coverage fields in an existing scrape-gaps report."""
+    existing: dict = {}
+    if NIRF_SCRAPE_GAPS_PATH.exists():
+        existing = json.loads(NIRF_SCRAPE_GAPS_PATH.read_text(encoding="utf-8"))
+    report = build_nirf_scrape_gaps_report(
+        pd.DataFrame(),
+        master=master,
+        year=year,
+        source="03a_enrich_institution_master",
+    )
+    existing.update(
+        {
+            "generated_at": report["generated_at"],
+            "source": report["source"],
+            "master_institutes_without_nirf_match": report["master_institutes_without_nirf_match"],
+            "master_nirf_matched": report["master_nirf_matched"],
+            "master_total": report["master_total"],
+        }
+    )
+    return write_nirf_scrape_gaps(existing)
 
 
 def load_nirf_id_overrides() -> dict[str, str]:
