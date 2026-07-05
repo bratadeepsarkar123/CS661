@@ -2,8 +2,8 @@
 
 Funding joined: 102 / 120
 Patents joined: 57 / 120
-NIRF IDs assigned: 106 / 120
-NIRF match losers: 14
+NIRF IDs assigned: 109 / 120
+NIRF match losers: 11
 
 ## Missing funding
 
@@ -11,16 +11,16 @@ NIRF match losers: 14
 - **SRM Institute of Science and Technology** (Chennai, nan): No sponsored-research table in NIRF PDF
 - **University of Rajasthan** (Jaipur, Rajasthan): Not in NIRF 2024 rankings
 - **Annamalai University** (Chidambaram, Tamil Nadu): No sponsored-research table in NIRF PDF
-- **Pondicherry University** (Puducherry, Puducherry): Not in NIRF 2024 rankings
+- **Pondicherry University** (Puducherry, Puducherry): No sponsored-research table in NIRF PDF
 - **SRM University** (Sonīpat, nan): Not in NIRF 2024 rankings
 - **Guru Nanak Dev University** (Amritsar, nan): Not in NIRF 2024 rankings
 - **Dr. Hari Singh Gour University** (Saugor, Madhya Pradesh): Not in NIRF 2024 rankings
 - **GITAM University** (Visakhapatnam, Andhra Pradesh): No sponsored-research table in NIRF PDF
 - **Indian Association for the Cultivation of Science** (Kolkata, West Bengal): Not in NIRF 2024 rankings
 - **University of Allahabad** (Prayagraj, nan): Not in NIRF 2024 rankings
-- **University of Kalyani** (Kalyani, nan): Not in NIRF 2024 rankings
+- **University of Kalyani** (Kalyani, nan): No sponsored-research table in NIRF PDF
 - **G.S. Science, Arts And Commerce College** (Akola, nan): Not in NIRF 2024 rankings
-- **Presidency University** (Kolkata, nan): Not in NIRF 2024 rankings
+- **Presidency University** (Kolkata, nan): No sponsored-research table in NIRF PDF
 - **GLA University** (Mathura, nan): No sponsored-research table in NIRF PDF
 - **Shivaji University** (Kolhāpur, Maharashtra): Not in NIRF 2024 rankings
 - **Mangalore University** (Mangaluru, Karnataka): Not in NIRF 2024 rankings
@@ -53,7 +53,7 @@ NIRF match losers: 14
 - **Birla Institute of Technology and Science, Pilani**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Madras**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Kasturba Medical College, Manipal**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
-- **Pondicherry University**: Not in NIRF 2024 rankings
+- **Pondicherry University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Osmania University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **SRM University**: Not in NIRF 2024 rankings
 - **University of Mumbai**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
@@ -70,7 +70,7 @@ NIRF match losers: 14
 - **Indian Association for the Cultivation of Science**: Not in NIRF 2024 rankings
 - **Bharati Vidyapeeth Deemed University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Allahabad**: Not in NIRF 2024 rankings
-- **University of Kalyani**: Not in NIRF 2024 rankings
+- **University of Kalyani**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Mysore**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **All India Institute of Medical Sciences Bhopal**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **G.S. Science, Arts And Commerce College**: Not in NIRF 2024 rankings

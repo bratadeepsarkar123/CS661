@@ -52,7 +52,12 @@
         "score": 0.75
       },
       "recommended_action": "manual_review",
-      "notes": "Weak match only (0.769)"
+      "notes": "Weak match only (0.769)",
+      "manual_review_outcome": {
+        "nirf_id_found": "IR-O-U-0369",
+        "override": true,
+        "reason": "NIRF 2024 Overall/University rank-band 101-150 (Puducherry); official ID IR-O-U-0369 from PU NIRF submissions; reject Andhra/Periyar fuzzy matches (different city)"
+      }
     },
     {
       "canonical_name": "SRM University",
@@ -214,7 +219,12 @@
         "score": 0.81
       },
       "recommended_action": "manual_review",
-      "notes": "Weak match only (0.81)"
+      "notes": "Weak match only (0.81)",
+      "manual_review_outcome": {
+        "nirf_id_found": "IR-O-U-0576",
+        "override": true,
+        "reason": "2024 NIRF PDF confirms Kalyani University [IR-O-U-0576]; Kalyani/WB city match; reject University of Kashmir false positive (Srinagar)"
+      }
     },
     {
       "canonical_name": "G.S. Science, Arts And Commerce College",
@@ -268,7 +278,12 @@
         "score": 0.769
       },
       "recommended_action": "manual_review",
-      "notes": "Weak match only (0.769)"
+      "notes": "Weak match only (0.769)",
+      "manual_review_outcome": {
+        "nirf_id_found": "IR-O-U-0580",
+        "override": true,
+        "reason": "2024 NIRF PDF confirms Presidency University [IR-O-U-0580]; Kolkata rank-band 101-150; reject Periyar University IR-O-U-0470 (Salem) and Presidency College Chennai"
+      }
     },
     {
       "canonical_name": "Shivaji University",
@@ -349,7 +364,12 @@
         "score": 0.785
       },
       "recommended_action": "manual_review",
-      "notes": "Weak match only (0.785)"
+      "notes": "Weak match only (0.785)",
+      "manual_review_outcome": {
+        "nirf_id_found": null,
+        "override": false,
+        "reason": "NIRF 2024 University rank-band 151-200 (Coimbatore) confirmed on nirfindia.org but IR-O-U institute ID not verified via PDF; reject Manipal Academy IR-O-U-0234 (Manipal, Karnataka)"
+      }
     },
     {
       "canonical_name": "University of Rajasthan",

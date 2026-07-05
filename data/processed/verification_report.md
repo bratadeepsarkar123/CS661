@@ -1,13 +1,13 @@
 # Module 5 verification checklist
 
-Generated: 2026-07-07T19:23:55.221626+00:00
+Generated: 2026-07-07T19:52:02.189257+00:00
 **20/20 passed**
 
 - [PASS] institution_master rows + geo: 120 rows, 100% with lat/lon
 - [PASS] collaboration_edges weight>=2: 13236 edge rows
 - [PASS] edge endpoints in master (domestic IN institutions): all endpoints in institution_master
-- [PASS] overview size: 32119 bytes
-- [PASS] full size: 393968 bytes (cap 1953 KB)
+- [PASS] overview size: 32092 bytes
+- [PASS] full size: 400878 bytes (cap 1953 KB)
 - [PASS] SCImago static year footnote: SCImago research impact % snapshot (2019 data); static across year slider
 - [PASS] overview payload edge integrity: 0 orphan edges (nodes=45, edges=40)
 - [PASS] full payload edge integrity: 0 orphan edges (nodes=120, edges=300)

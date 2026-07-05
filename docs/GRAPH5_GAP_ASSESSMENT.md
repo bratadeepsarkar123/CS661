@@ -7,6 +7,22 @@
 **Related:** [`GRAPH5_PIPELINE_AUDIT.md`](GRAPH5_PIPELINE_AUDIT.md) (read-only pre-fix audit)  
 **Post-fix commits:** `927f6fd` (five loser overrides: Saveetha/KIIT/SASTRA/IMS/GITAM); `d2e915d` / `f15e208` (SRM/Thapar/GLA + funding token join); builds on `40a71aa` and `2dd626d`.
 
+
+
+## Funding temporal scope (year slider)
+
+**User expectation:** Moving the collaboration year slider (2015-2024) should change sponsored-research funding.
+
+**Actual behavior (current pipeline):** Funding is a **static NIRF snapshot** joined in `09_export_payloads.build_nodes()` from `data/processed/institution_funding.csv`. Year slices from `09b_export_year_slices.py` only filter **collaboration edges** by `year`; they do not re-select funding by calendar year.
+
+**Evidence:**
+- `2015_full.json` through `2023_full.json` share identical `(research_funding_cr, funding_academic_year)` per node.
+- `2024_full.json` differs slightly because `09b` copies `all_years_full.json` over `2024_full.json` (rollup node cap / rounding), not multi-year NIRF history.
+- Raw scrape `data/raw/nirf_research_projects.csv`: `ranking_year` = 2024 only; `academic_year` = 2020-21, 2021-22, 2022-23 (267 rows each).
+- `01d_prepare_nirf_funding.py` keeps the **latest academic year per NIRF institute_id** (typically 2022-23). UI field `funding_academic_year` is **not** tied to the slider year.
+
+**Future (year-aware funding):** Retain long-format funding; map slider year to NIRF academic year or scrape historical NIRF PDF seasons; pass `year` into join/export; footnote when funding year != collaboration year.
+
 ---
 
 ## Level 1 — Severity Assessment
