@@ -25,13 +25,20 @@ from config import (  # noqa: E402
 
 QUALITY_PATH = PROCESSED_DIR / "institution_quality_static.csv"
 FUNDING_PATH = PROCESSED_DIR / "institution_funding.csv"
+FUNDING_BY_YEAR_PATH = PROCESSED_DIR / "institution_funding_by_year.csv"
 PATENTS_PATH = PROCESSED_DIR / "institution_patents.csv"
+PATENTS_BY_YEAR_PATH = PROCESSED_DIR / "institution_patents_by_year.csv"
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 EDGES_PATH = PROCESSED_DIR / "collaboration_edges_full.csv"
 HUBS_PATH = PROCESSED_DIR / "hub_flags.csv"
 TRIADS_PATH = PROCESSED_DIR / "collaboration_triads.parquet"
 DOMESTIC_WORKS_PATH = PROCESSED_DIR / "domestic_works.parquet"
 SCIMAGEO_YEAR = 2019
+from nirf_utils import (  # noqa: E402
+    slider_year_to_funding_academic_year,
+    slider_year_to_patent_calendar_year,
+)
+
 LOSERS_PATH = PROCESSED_DIR / "nirf_match_losers.csv"
 
 # Institutes sharing identical NIRF funding rows (informational — not join bugs).
@@ -98,10 +105,39 @@ def load_funding() -> pd.DataFrame:
     return pd.read_csv(FUNDING_PATH)
 
 
+def load_funding_by_year(slider_year: int | None) -> pd.DataFrame:
+    """Return institution funding rows for the NIRF academic year mapped from slider year."""
+    if not FUNDING_BY_YEAR_PATH.exists():
+        df = load_funding()
+        return df
+    df = pd.read_csv(FUNDING_BY_YEAR_PATH)
+    if df.empty or "academic_year" not in df.columns:
+        return load_funding()
+    target = slider_year_to_funding_academic_year(slider_year)
+    sub = df[df["academic_year"].astype(str) == str(target)].copy()
+    if sub.empty:
+        return load_funding()
+    return sub
+
+
 def load_patents() -> pd.DataFrame:
     if not PATENTS_PATH.exists():
         return pd.DataFrame()
     return pd.read_csv(PATENTS_PATH)
+
+
+def load_patents_by_year(slider_year: int | None) -> pd.DataFrame:
+    if not PATENTS_BY_YEAR_PATH.exists():
+        df = load_patents()
+        return df
+    df = pd.read_csv(PATENTS_BY_YEAR_PATH)
+    if df.empty or "patent_calendar_year" not in df.columns:
+        return load_patents()
+    target = slider_year_to_patent_calendar_year(slider_year)
+    sub = df[df["patent_calendar_year"] == target].copy()
+    if sub.empty:
+        return load_patents()
+    return sub
 
 
 def load_nirf_losers() -> dict[str, str]:
@@ -158,14 +194,21 @@ def build_coverage_meta(nodes: list[dict], losers: dict[str, str]) -> dict:
     }
 
 
-def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame) -> list[dict]:
+def build_nodes(
+    master: pd.DataFrame,
+    hubs: pd.DataFrame,
+    quality: pd.DataFrame,
+    slider_year: int | None = None,
+) -> list[dict]:
     hub_map = hubs.set_index("institution_id")["is_hub"].to_dict() if not hubs.empty else {}
     qmap = quality.set_index("institution_id") if not quality.empty and "institution_id" in quality.columns else None
-    fmap = load_funding()
+    fmap = load_funding_by_year(slider_year)
     fmap = fmap.set_index("institution_id") if not fmap.empty and "institution_id" in fmap.columns else None
-    pmap = load_patents()
+    pmap = load_patents_by_year(slider_year)
     pmap = pmap.set_index("institution_id") if not pmap.empty and "institution_id" in pmap.columns else None
     losers = load_nirf_losers()
+    mapped_funding_year = slider_year_to_funding_academic_year(slider_year)
+    mapped_patent_year = slider_year_to_patent_calendar_year(slider_year)
 
     nodes = []
     for _, r in master.iterrows():
@@ -190,6 +233,10 @@ def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame)
                 sponsored_projects = int(frow["sponsored_projects"])
             if pd.notna(frow.get("funding_academic_year")):
                 funding_year = str(frow["funding_academic_year"])
+            elif pd.notna(frow.get("academic_year")):
+                funding_year = str(frow["academic_year"])
+            elif mapped_funding_year:
+                funding_year = mapped_funding_year
         patents_published = None
         patents_granted = None
         patent_year = None
@@ -229,10 +276,21 @@ def build_nodes(master: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame)
             "sponsored_projects": sponsored_projects,
             "funding_academic_year": funding_year,
             "funding_status": _funding_status(name, funding_cr, r.get("nirf_rank"), match_status),
+            "funding_year_mismatch": (
+                slider_year is not None
+                and funding_cr is not None
+                and (slider_year < 2021 or slider_year >= 2024)
+            ),
             "patents_published": patents_published,
             "patents_granted": patents_granted,
             "patent_calendar_year": patent_year,
             "patent_status": _patent_status(name, prow, match_status),
+            "patent_year_mismatch": (
+                slider_year is not None
+                and patents_published is not None
+                and patent_year is not None
+                and int(patent_year) != int(slider_year)
+            ),
         }
         if dup_cluster:
             node["funding_duplicate_cluster"] = dup_cluster
@@ -336,9 +394,32 @@ def hub_annotations(nodes: list[dict]) -> list[str]:
     return labels[:3]
 
 
+def temporal_metrics_note(slider_year: int | None) -> str:
+    if slider_year is None:
+        return (
+            "All-years rollup for collaboration edges; NIRF funding/patents use latest available "
+            f"academic year ({slider_year_to_funding_academic_year(None)}) and patent year "
+            f"({slider_year_to_patent_calendar_year(None)})."
+        )
+    fy = slider_year_to_funding_academic_year(slider_year)
+    py = slider_year_to_patent_calendar_year(slider_year)
+    parts = [
+        f"Collaboration edges: calendar year {slider_year}.",
+        f"Sponsored research: NIRF academic year {fy} (mapped from slider).",
+        f"Patents: calendar year {py} (mapped from slider).",
+    ]
+    if slider_year < 2021:
+        parts.append("Funding before 2021 uses earliest NIRF academic year (2020-21) — no earlier PDF data.")
+    if slider_year > 2022:
+        parts.append("Patent counts for 2023+ use 2022 — no later Innovation PDF years scraped.")
+    if slider_year > 2023:
+        parts.append("Funding for 2024 uses 2022-23 — no 2023-24 academic year in current scrape.")
+    return " ".join(parts)
+
+
 def export_year(year: int | None, master: pd.DataFrame, edges: pd.DataFrame, hubs: pd.DataFrame, quality: pd.DataFrame) -> None:
     year_edges = edges_for_year(edges, year)
-    nodes = _sort_nodes_for_display(build_nodes(master, hubs, quality))
+    nodes = _sort_nodes_for_display(build_nodes(master, hubs, quality, slider_year=year))
     hub_ids = {n["id"] for n in nodes if n.get("is_hub")}
 
     overview_candidates = [n for n in nodes if n.get("is_hub") or n["total_works"] >= 5000]
@@ -367,6 +448,9 @@ def export_year(year: int | None, master: pd.DataFrame, edges: pd.DataFrame, hub
         "year": year if year is not None else "all",
         "quality_year": SCIMAGEO_YEAR,
         "quality_note": "SCImago research impact % snapshot (2019 data); static across year slider",
+        "funding_academic_year_mapped": slider_year_to_funding_academic_year(year),
+        "patent_calendar_year_mapped": slider_year_to_patent_calendar_year(year),
+        "temporal_metrics_note": temporal_metrics_note(year),
         "coverage": coverage,
         "nodes": [node_for_overview(n) for n in overview_nodes],
         "edges": overview_edges,
@@ -411,14 +495,6 @@ def main() -> None:
     year = None if args.year == 0 else args.year
     print(f"Exporting payloads to {PUBLIC_DIR}")
     export_year(year, master, edges, hubs, quality)
-
-    label = "all_years" if year is None else str(year)
-    if label != "2024":
-        import shutil
-
-        shutil.copy(PUBLIC_DIR / f"{label}_overview.json", PUBLIC_DIR / "2024_overview.json")
-        shutil.copy(PUBLIC_DIR / f"{label}_full.json", PUBLIC_DIR / "2024_full.json")
-        print("Panel copies -> 2024_overview.json, 2024_full.json")
 
 
 if __name__ == "__main__":

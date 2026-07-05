@@ -155,58 +155,55 @@ def _parse_research(df: pd.DataFrame) -> pd.DataFrame:
     # (e.g. BHU Overall IR-O-U-0500 vs Medical IR-D-U-0500 vs IIT-BHU IR-O-U-0701).
     df["name_norm"] = df["institute_name"].map(_norm_name)
     df = df.sort_values(["institute_id", "academic_year"], na_position="first")
-    latest = df.groupby("institute_id", as_index=False).tail(1)[["institute_id", "academic_year", "ranking_year"]]
-    latest_map = latest.set_index("institute_id")
 
     rows: list[dict] = []
     for institute_id, grp in df.groupby("institute_id"):
-        ac_year = (
-            latest_map.loc[institute_id, "academic_year"]
-            if institute_id in latest_map.index
-            else grp["academic_year"].max()
-        )
-        sub = grp[grp["academic_year"] == ac_year] if pd.notna(ac_year) else grp
-        if sub.empty:
-            sub = grp
-
-        inst_name = sub["institute_name"].iloc[0]
+        inst_name = grp["institute_name"].iloc[0]
         inst_ids = str(institute_id)
+        academic_years = sorted(grp["academic_year"].dropna().unique(), key=str)
+        if not academic_years:
+            academic_years = [pd.NA]
 
-        amount_mask = sub["category_norm"].str.contains("amount", na=False) & sub["category_norm"].str.contains(
-            "received|sponsor", na=False
-        )
-        if not amount_mask.any():
-            amount_mask = sub["category_norm"].str.contains("total amount", na=False)
-        project_mask = sub["category_norm"].str.contains("sponsored project", na=False) & ~sub[
-            "category_norm"
-        ].str.contains("amount", na=False)
+        for ac_year in academic_years:
+            sub = grp[grp["academic_year"] == ac_year] if pd.notna(ac_year) else grp
+            if sub.empty:
+                continue
 
-        amount_inr = 0.0
-        if amount_mask.any():
-            amount_rows = sub[amount_mask]
-            vals = []
-            for _, row in amount_rows.iterrows():
-                v = _to_crores(row["value"], row["unit"])
-                if v and v > 0:
-                    vals.append(v)
-            if vals:
-                amount_inr = max(vals)
+            amount_mask = sub["category_norm"].str.contains("amount", na=False) & sub["category_norm"].str.contains(
+                "received|sponsor", na=False
+            )
+            if not amount_mask.any():
+                amount_mask = sub["category_norm"].str.contains("total amount", na=False)
+            project_mask = sub["category_norm"].str.contains("sponsored project", na=False) & ~sub[
+                "category_norm"
+            ].str.contains("amount", na=False)
 
-        project_count = None
-        if project_mask.any():
-            project_count = int(sub[project_mask].iloc[-1]["value"])
+            amount_inr = 0.0
+            if amount_mask.any():
+                amount_rows = sub[amount_mask]
+                vals = []
+                for _, row in amount_rows.iterrows():
+                    v = _to_crores(row["value"], row["unit"])
+                    if v and v > 0:
+                        vals.append(v)
+                if vals:
+                    amount_inr = max(vals)
 
-        rows.append(
-            {
-                "name_norm": _norm_name(inst_name),
-                "institute_name_nirf": inst_name,
-                "nirf_institute_ids": inst_ids,
-                "academic_year": ac_year,
-                "ranking_year": sub["ranking_year"].max(),
-                "research_funding_cr": round(amount_inr, 3) if amount_inr else None,
-                "sponsored_projects": project_count,
-            }
-        )
+            project_count = None
+            if project_mask.any():
+                project_count = int(sub[project_mask].iloc[-1]["value"])
+
+            rows.append(
+                {
+                    "name_norm": _norm_name(inst_name),
+                    "institute_name_nirf": inst_name,
+                    "nirf_institute_ids": inst_ids,
+                    "academic_year": ac_year,
+                    "ranking_year": sub["ranking_year"].max(),
+                    "research_funding_cr": round(amount_inr, 3) if amount_inr else None,
+                    "sponsored_projects": project_count,
+                }
+            )
     return pd.DataFrame(rows)
 
 
@@ -273,8 +270,10 @@ def main() -> None:
 
     out.to_csv(OUT_PATH, index=False)
     matched = out["research_funding_cr"].notna().sum()
-    print(f"\nWrote {len(out):,} institutes -> {OUT_PATH}")
-    print(f"  With research funding amount: {matched}")
+    years = sorted(out["academic_year"].dropna().unique(), key=str)
+    print(f"\nWrote {len(out):,} institute-year rows -> {OUT_PATH}")
+    print(f"  Academic years: {', '.join(str(y) for y in years)}")
+    print(f"  Rows with research funding amount: {matched}")
     print("Next: python scripts/india_network/08_join_nirf_funding.py")
 
 

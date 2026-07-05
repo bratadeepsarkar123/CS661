@@ -2,6 +2,9 @@
   "year": 2023,
   "quality_year": 2019,
   "quality_note": "SCImago research impact % snapshot (2019 data); static across year slider",
+  "funding_academic_year_mapped": "2022-23",
+  "patent_calendar_year_mapped": 2022,
+  "temporal_metrics_note": "Collaboration edges: calendar year 2023. Sponsored research: NIRF academic year 2022-23 (mapped from slider). Patents: calendar year 2022 (mapped from slider). Patent counts for 2023+ use 2022 \u2014 no later Innovation PDF years scraped.",
   "coverage": {
     "nirf_matched": 110,
     "nirf_losers": 10,
@@ -18,7 +21,7 @@
       "University of Rajasthan"
     ],
     "funding_reported": 102,
-    "patents_reported": 49,
+    "patents_reported": 0,
     "institutions_total": 120,
     "patent_ceiling_note": "Innovation PDF only; see data/logs/patent_coverage_gaps.json"
   },
@@ -46,10 +49,12 @@
       "sponsored_projects": 1343,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 165,
-      "patents_granted": 62,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "2dbad614-cedc-4bdc-a02e-8a66054a8bd9",
@@ -74,10 +79,12 @@
       "sponsored_projects": 904,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "4d6717be-0714-4972-b1d4-571c58d9a46f",
@@ -102,10 +109,12 @@
       "sponsored_projects": 444,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "fd56c1b8-3390-4d13-9121-2b061d0b11ac",
@@ -130,10 +139,12 @@
       "sponsored_projects": 146,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 76,
-      "patents_granted": 12,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "672214f6-22a9-4d55-8c6c-5b28a5159516",
@@ -158,10 +169,12 @@
       "sponsored_projects": 648,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 6,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "49837a23-0599-4a35-a43f-15be413cc1a0",
@@ -186,10 +199,12 @@
       "sponsored_projects": 1378,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 228,
-      "patents_granted": 140,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "c7f37aac-de96-454a-bf3d-af0ff418e79e",
@@ -214,10 +229,12 @@
       "sponsored_projects": 385,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 25,
-      "patents_granted": 7,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "93e1f5b3-3c8f-4e18-a29b-afa586e5d865",
@@ -240,12 +257,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "4a1e94cf-f0b6-4560-ab2c-bd58ab8792ac",
@@ -268,12 +287,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "0e011302-5676-4cf1-95b3-f0adc82f6893",
@@ -298,10 +319,12 @@
       "sponsored_projects": 38,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 6,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5f90b565-15b8-4035-ab58-963431c3275d",
@@ -326,10 +349,12 @@
       "sponsored_projects": 421,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 17,
-      "patents_granted": 41,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "282dc4ff-9668-4730-a565-5fc0ae4aa9f3",
@@ -354,10 +379,12 @@
       "sponsored_projects": 144,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "38518a3c-9425-41d0-8068-2e2332a46de1",
@@ -382,10 +409,12 @@
       "sponsored_projects": 71,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "c9e12928-adad-470b-bcc3-a64f958bd34b",
@@ -410,10 +439,12 @@
       "sponsored_projects": 10,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "0e3df575-bd15-41f1-821e-51c48763aa57",
@@ -438,10 +469,12 @@
       "sponsored_projects": 595,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 108,
-      "patents_granted": 88,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "e9cc852d-c229-4457-a316-e8f38255c048",
@@ -466,10 +499,12 @@
       "sponsored_projects": 956,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 41,
-      "patents_granted": 25,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "47b972a6-fdf5-499c-a99f-fd0fedb15993",
@@ -494,10 +529,12 @@
       "sponsored_projects": 3038,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 252,
-      "patents_granted": 7,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "131f1481-eede-4a15-a738-57b4c90b26ad",
@@ -522,10 +559,12 @@
       "sponsored_projects": 193,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "129be347-f8df-4fd2-b553-37ff0fd31af1",
@@ -550,10 +589,12 @@
       "sponsored_projects": 1018,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 52,
-      "patents_granted": 104,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "f755a6a4-7f5e-4286-a36e-f3db5550661d",
@@ -578,10 +619,12 @@
       "sponsored_projects": 188,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 74,
-      "patents_granted": 30,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "6627a151-3a0d-44f3-adf4-d5255e5a4cc9",
@@ -606,10 +649,12 @@
       "sponsored_projects": 140,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "736be13b-21db-4757-bfac-35c77c891892",
@@ -634,10 +679,12 @@
       "sponsored_projects": 93,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "18ae8c5a-a263-4906-9d6a-25bf48ed31e6",
@@ -662,10 +709,12 @@
       "sponsored_projects": 227,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 5,
-      "patents_granted": 5,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "bd7fc63e-4dd7-488f-8022-1332b3642dcf",
@@ -690,10 +739,12 @@
       "sponsored_projects": 22,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "ae9d1da9-8ea6-45ab-ab98-70e36ba8a21b",
@@ -718,10 +769,12 @@
       "sponsored_projects": 1439,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "bb26b384-ecf2-4f86-8b53-dd74d42d8f05",
@@ -746,10 +799,12 @@
       "sponsored_projects": 330,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 25,
-      "patents_granted": 10,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5aa5a4ff-8b68-4a33-87ae-4dce4f3d4a91",
@@ -774,10 +829,12 @@
       "sponsored_projects": 124,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "1067ba73-ff68-46c5-b68e-4bf7cda57988",
@@ -802,10 +859,12 @@
       "sponsored_projects": 1014,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 941,
-      "patents_granted": 65,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "2050b90e-0227-468a-8571-63864a963f7c",
@@ -830,10 +889,12 @@
       "sponsored_projects": 275,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 34,
-      "patents_granted": 23,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5bc14c1f-47f1-4ec9-89ba-e678e7ee486c",
@@ -858,10 +919,12 @@
       "sponsored_projects": 70,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "b539f583-d8d6-437c-9ae4-5807681767b9",
@@ -886,10 +949,12 @@
       "sponsored_projects": 48,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "fef15cf2-3c2a-4059-85a5-f9737b912a4c",
@@ -914,10 +979,12 @@
       "sponsored_projects": 148,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 810,
-      "patents_granted": 24,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "dc14b8e6-72b8-4c26-bec4-815435b7b8b7",
@@ -942,10 +1009,12 @@
       "sponsored_projects": 193,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 25,
-      "patents_granted": 2,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "b49755e6-20af-465e-9c60-82974ede833a",
@@ -970,10 +1039,12 @@
       "sponsored_projects": 458,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "ead97a8a-02d7-4f7b-b0b3-0a56f78257cb",
@@ -998,10 +1069,12 @@
       "sponsored_projects": 0,
       "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
-      "patents_published": 6,
-      "patents_granted": 0,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "92004806-cba2-4966-9ebf-9f31bc5a9597",
@@ -1026,10 +1099,12 @@
       "sponsored_projects": 174,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 13,
-      "patents_granted": 8,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "f03f9fd4-2251-4e13-8c6c-5e3ca946f289",
@@ -1054,10 +1129,12 @@
       "sponsored_projects": 47,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d5b58b79-7727-4cac-b9d6-1735e93b2968",
@@ -1082,10 +1159,12 @@
       "sponsored_projects": 121,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 78,
-      "patents_granted": 69,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "ac8b1844-88b8-465a-9729-6f0ca11190f9",
@@ -1110,10 +1189,12 @@
       "sponsored_projects": 19,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 381,
-      "patents_granted": 193,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "3ccdda45-076a-4fcb-af38-2f4b09aa8ccb",
@@ -1138,10 +1219,12 @@
       "sponsored_projects": 581,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d031820e-53e0-49a4-b0c5-edb3a7724b8a",
@@ -1166,10 +1249,12 @@
       "sponsored_projects": 21,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "0d8fc077-1885-4fe9-a175-49b042facab9",
@@ -1194,10 +1279,12 @@
       "sponsored_projects": 51,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "0d9eda01-0613-4077-b69a-93861219bf67",
@@ -1222,10 +1309,12 @@
       "sponsored_projects": 196,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 26,
-      "patents_granted": 16,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "620c0800-344d-45c2-8c05-b0876f7dac8f",
@@ -1250,10 +1339,12 @@
       "sponsored_projects": 576,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "edf10c4c-ca24-4805-b33c-ddf5428d22ff",
@@ -1278,10 +1369,12 @@
       "sponsored_projects": 82,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 11,
-      "patents_granted": 8,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "6f93f0ad-7358-4fd0-bc47-0a62092ca0ac",
@@ -1306,10 +1399,12 @@
       "sponsored_projects": 166,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 11,
-      "patents_granted": 12,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "6f6f6042-e2c5-451a-a92d-2bc27b8fa5e4",
@@ -1334,10 +1429,12 @@
       "sponsored_projects": 47,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 7,
-      "patents_granted": 7,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d93978d3-2c97-47c6-8d5a-b6472222104c",
@@ -1362,10 +1459,12 @@
       "sponsored_projects": 190,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "80153acc-b176-42b7-b0f1-dd40b152084d",
@@ -1390,10 +1489,12 @@
       "sponsored_projects": 51,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5866f537-6318-4586-bf6d-4433c5b4bbf7",
@@ -1418,10 +1519,12 @@
       "sponsored_projects": 46,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 15,
-      "patents_granted": 15,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "529bfa45-38b5-4fa3-ad24-0cdc1a731124",
@@ -1446,10 +1549,12 @@
       "sponsored_projects": 234,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "e53966df-0e1d-4551-bffd-ab1bde3800e4",
@@ -1474,10 +1579,12 @@
       "sponsored_projects": 104,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 88,
-      "patents_granted": 3,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d8caf76d-8ea5-44f6-939d-e450309d2de1",
@@ -1502,10 +1609,12 @@
       "sponsored_projects": 325,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "48e9b5fb-0b5b-42f0-a98b-cbc31d34b300",
@@ -1530,10 +1639,12 @@
       "sponsored_projects": 151,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "4521b7d6-9c9f-41f9-8061-593ae0c361dc",
@@ -1558,10 +1669,12 @@
       "sponsored_projects": 28,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 704,
-      "patents_granted": 8,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "7553f510-4039-4c36-b5d3-2dd983d9bc70",
@@ -1586,10 +1699,12 @@
       "sponsored_projects": 315,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 28,
-      "patents_granted": 12,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "04e4f2b0-9883-4fb8-9c64-cb5b49d6b361",
@@ -1614,10 +1729,12 @@
       "sponsored_projects": 87,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 63,
-      "patents_granted": 9,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "4dec3aaa-d6ae-4b77-ac09-50d7bdc68bb2",
@@ -1642,10 +1759,12 @@
       "sponsored_projects": 158,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 199,
-      "patents_granted": 78,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "fb160d73-523e-4f2a-8052-11f55f43e268",
@@ -1668,12 +1787,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "0975bc21-a976-44a9-a251-f0e626168e55",
@@ -1698,10 +1819,12 @@
       "sponsored_projects": 62,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "2519526b-e995-469e-ae6f-8385feff245c",
@@ -1724,12 +1847,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
       "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "1a4bb242-813a-46c1-8f5a-8782d5040d19",
@@ -1754,10 +1879,12 @@
       "sponsored_projects": 1,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "90352157-ced6-4e2a-b6ef-515ed6cc5aac",
@@ -1782,10 +1909,12 @@
       "sponsored_projects": 88,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "f520daa7-29f5-4b11-b9a4-9b02860351ec",
@@ -1810,10 +1939,12 @@
       "sponsored_projects": 15,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 23,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "c7c580b5-a5eb-45ec-9dde-854ee5af23c0",
@@ -1838,10 +1969,12 @@
       "sponsored_projects": 44,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 75,
-      "patents_granted": 17,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "52ef5836-d1be-4182-9b45-218b36478268",
@@ -1866,10 +1999,12 @@
       "sponsored_projects": 171,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "1f4b5eaa-ddfb-448c-8805-4c0936e40f61",
@@ -1892,12 +2027,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "c1a7591c-a5be-413d-bcfb-050692c5edef",
@@ -1922,10 +2059,12 @@
       "sponsored_projects": 490,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "74aaf314-5e8c-4cde-9333-83e97345070d",
@@ -1950,10 +2089,12 @@
       "sponsored_projects": 60,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d653d230-8e4e-4388-b50b-790fea6d666f",
@@ -1978,10 +2119,12 @@
       "sponsored_projects": 200,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 18,
-      "patents_granted": 9,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "0d1ac996-32b9-43ac-8e4f-e44cb90c8c1c",
@@ -2006,10 +2149,12 @@
       "sponsored_projects": 110,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 2,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "b45c2598-3515-4da1-9660-75a5ff4428fa",
@@ -2034,10 +2179,12 @@
       "sponsored_projects": 220,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 10,
-      "patents_granted": 2,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5f71086b-ce24-4741-89c7-c8583ab5948c",
@@ -2060,12 +2207,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "d538b33b-7df6-426d-a326-e6336207fb5f",
@@ -2090,10 +2239,12 @@
       "sponsored_projects": 12,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "eee22ec4-aa39-45b3-95e0-7f6250924a00",
@@ -2118,10 +2269,12 @@
       "sponsored_projects": 20,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 43,
-      "patents_granted": 13,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d2ab91c0-a50d-44ef-b03b-6fab30b3d767",
@@ -2146,10 +2299,12 @@
       "sponsored_projects": 289,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "7693ea92-ef4b-486f-96c6-89db3749c43e",
@@ -2174,10 +2329,12 @@
       "sponsored_projects": 0,
       "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "b20ed218-ebd3-4a6b-a2c8-9bef7907b934",
@@ -2202,10 +2359,12 @@
       "sponsored_projects": 480,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "104fe323-87bc-48e9-a752-22b34af999bb",
@@ -2230,10 +2389,12 @@
       "sponsored_projects": 140,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "cb03a5e5-b2f5-4e95-af9f-a170aab03713",
@@ -2256,12 +2417,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "d601a25e-5d3b-4d71-aa65-699b49346b71",
@@ -2286,10 +2449,12 @@
       "sponsored_projects": 237,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "b2d3eebd-0307-42ad-9f36-2a10b73de285",
@@ -2312,12 +2477,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "e1b3f8dc-6b5d-403e-ac6f-b1a3573c4021",
@@ -2340,12 +2507,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "ac895106-caa3-41c5-8959-084d58f9383c",
@@ -2370,10 +2539,12 @@
       "sponsored_projects": 83,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d56d1ee4-862c-4274-8441-c2db9590627d",
@@ -2396,12 +2567,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "f7c6962b-4442-458c-90b7-eec41137a0d9",
@@ -2426,10 +2599,12 @@
       "sponsored_projects": 45,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "e952e5d1-7eb4-40a2-88a2-3dc7118e2255",
@@ -2454,10 +2629,12 @@
       "sponsored_projects": 139,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "8a91aa93-1bba-4381-a03c-d032be364f69",
@@ -2482,10 +2659,12 @@
       "sponsored_projects": 20,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "646437d3-b8bf-4df0-933f-437279dffc88",
@@ -2510,10 +2689,12 @@
       "sponsored_projects": 119,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "a6628147-0d10-4564-bae9-b8be8be7cd21",
@@ -2538,10 +2719,12 @@
       "sponsored_projects": 114,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "9657935b-6b9b-4504-9bec-eb245e65da0f",
@@ -2566,10 +2749,12 @@
       "sponsored_projects": 6,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "8f79bb14-2687-41a1-a556-23a0a56f5210",
@@ -2592,12 +2777,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
-      "patents_published": 9,
-      "patents_granted": 2,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "a216703f-5b10-44cb-8fe0-11f6ff1cd1bd",
@@ -2622,10 +2809,12 @@
       "sponsored_projects": 155,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5cb3587e-a197-4ece-8d45-9f364c87990f",
@@ -2650,10 +2839,12 @@
       "sponsored_projects": 133,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 5,
-      "patents_granted": 0,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc",
@@ -2676,12 +2867,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "4aa00129-4c2f-4e57-9053-cbf0c58dd2c1",
@@ -2706,10 +2899,12 @@
       "sponsored_projects": 84,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "338f6c5e-2956-40cf-80ce-2047521fc9ef",
@@ -2734,10 +2929,12 @@
       "sponsored_projects": 42,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 11,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "8c466cdb-a2a4-4bf0-856f-f28560ed0e3b",
@@ -2762,10 +2959,12 @@
       "sponsored_projects": 299,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "cb1e371e-ffd1-4175-974b-b91e8cbe4ea1",
@@ -2790,10 +2989,12 @@
       "sponsored_projects": 27,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 99,
-      "patents_granted": 17,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "20a76e3b-d397-44ea-a50b-42ad2940af51",
@@ -2818,10 +3019,12 @@
       "sponsored_projects": 2,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "b2210d61-d364-40bd-abfa-2d7b5023d562",
@@ -2844,12 +3047,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "81dfed4d-dcca-4b15-8548-b5b5d98fa6c4",
@@ -2874,10 +3079,12 @@
       "sponsored_projects": 73,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "36d17eae-f23d-4896-8bb8-848c7ba25547",
@@ -2900,12 +3107,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
       "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "149ca745-c80a-4eb3-97bd-36ad7d8e4b2b",
@@ -2930,10 +3139,12 @@
       "sponsored_projects": 29,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5374b462-1d87-4026-a9dd-901a6e394a62",
@@ -2958,10 +3169,12 @@
       "sponsored_projects": 33,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "a281fcbb-f4c9-4634-9e3a-a1aa7b0c9321",
@@ -2984,12 +3197,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
       "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "73f788c8-33d5-4d60-9d7a-bb3fd5221d14",
@@ -3014,10 +3229,12 @@
       "sponsored_projects": 48,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "d51bcfb2-a187-49fa-9ebd-fd12ae98e331",
@@ -3042,10 +3259,12 @@
       "sponsored_projects": 177,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 7,
-      "patents_granted": 2,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "ff60ecf0-39c2-4a17-a941-2b03df4ce12b",
@@ -3070,10 +3289,12 @@
       "sponsored_projects": 63,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "c4ff2815-fe99-4fc1-a6c3-402ac6322a76",
@@ -3098,10 +3319,12 @@
       "sponsored_projects": 262,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 7,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "5bcb34a1-ac72-47e1-9dd5-b295d7e8664f",
@@ -3126,10 +3349,12 @@
       "sponsored_projects": 269,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "aa83bbde-9db5-4ca5-ab64-f2cec6d6f46f",
@@ -3154,10 +3379,12 @@
       "sponsored_projects": 141,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 11,
-      "patents_granted": 6,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "e98e91f3-ef30-41ea-b7e9-c708270266ba",
@@ -3182,10 +3409,12 @@
       "sponsored_projects": 170,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 17,
-      "patents_granted": 11,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "732980be-8d6a-4c03-8a1c-dcd5b939e27f",
@@ -3210,10 +3439,12 @@
       "sponsored_projects": 73,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "f6a0e07c-58dc-463e-8e04-d8d08a9a7342",
@@ -3238,10 +3469,12 @@
       "sponsored_projects": 74,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "7b3d00a5-49ca-420b-a758-0534ef4fedc2",
@@ -3266,10 +3499,12 @@
       "sponsored_projects": 86,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 1,
-      "patents_granted": 1,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "1a5bd65a-cf0d-45e2-8735-5434d64998b8",
@@ -3294,10 +3529,12 @@
       "sponsored_projects": 25,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unavailable"
+      "patent_calendar_year": 2022,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "a2b7b421-2ef8-4071-80e7-dcafdc7c3ecf",
@@ -3320,12 +3557,14 @@
       "research_funding_cr": null,
       "total_expenditure_cr": null,
       "sponsored_projects": null,
-      "funding_academic_year": null,
+      "funding_academic_year": "2022-23",
       "funding_status": "unranked",
+      "funding_year_mismatch": false,
       "patents_published": null,
       "patents_granted": null,
-      "patent_calendar_year": null,
-      "patent_status": "unranked"
+      "patent_calendar_year": 2022,
+      "patent_status": "unranked",
+      "patent_year_mismatch": false
     },
     {
       "id": "62ed1d2c-52ae-4ba2-8c99-95f009b95972",
@@ -3350,10 +3589,12 @@
       "sponsored_projects": 699,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 247,
-      "patents_granted": 192,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     },
     {
       "id": "f557894b-a324-439c-a6a7-f6d2a87a6bed",
@@ -3378,10 +3619,12 @@
       "sponsored_projects": 32,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 2,
-      "patents_granted": 2,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "funding_year_mismatch": false,
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable",
+      "patent_year_mismatch": false
     }
   ],
   "edges": [

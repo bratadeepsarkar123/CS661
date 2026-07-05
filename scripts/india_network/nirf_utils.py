@@ -747,3 +747,44 @@ def _best_row_for_id(hits: pd.DataFrame, category_prefs: list[str]) -> pd.Series
         if not pool.empty:
             return pool.sort_values("rank").iloc[0]
     return hits.sort_values("rank").iloc[0]
+
+
+# Academic years present in NIRF 2024 Overall/Engineering PDF scrape (dataful + 01e).
+FUNDING_ACADEMIC_YEARS: tuple[str, ...] = ("2020-21", "2021-22", "2022-23")
+PATENT_CALENDAR_YEARS: tuple[int, ...] = (2020, 2021, 2022)
+
+
+def slider_year_to_funding_academic_year(slider_year: int | None) -> str:
+    """Map collaboration slider calendar year to best NIRF sponsored-research academic year."""
+    if slider_year is None:
+        return FUNDING_ACADEMIC_YEARS[-1]
+    if slider_year < 2021:
+        return FUNDING_ACADEMIC_YEARS[0]
+    if slider_year == 2021:
+        return "2020-21"
+    if slider_year == 2022:
+        return "2021-22"
+    return FUNDING_ACADEMIC_YEARS[-1]
+
+
+def slider_year_to_patent_calendar_year(slider_year: int | None) -> int:
+    """Map collaboration slider calendar year to best NIRF Innovation patent calendar year."""
+    if slider_year is None:
+        return PATENT_CALENDAR_YEARS[-1]
+    if slider_year < PATENT_CALENDAR_YEARS[0]:
+        return PATENT_CALENDAR_YEARS[0]
+    if slider_year > PATENT_CALENDAR_YEARS[-1]:
+        return PATENT_CALENDAR_YEARS[-1]
+    return int(slider_year)
+
+
+def funding_year_matches_slider(slider_year: int | None, funding_academic_year: str | None) -> bool:
+    if slider_year is None or not funding_academic_year:
+        return True
+    return str(funding_academic_year) == slider_year_to_funding_academic_year(slider_year)
+
+
+def patent_year_matches_slider(slider_year: int | None, patent_calendar_year: int | None) -> bool:
+    if slider_year is None or patent_calendar_year is None:
+        return True
+    return int(patent_calendar_year) == slider_year_to_patent_calendar_year(slider_year)
