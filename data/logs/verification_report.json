@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:11:48.103871+00:00",
+  "generated_at": "2026-07-07T19:23:55.221626+00:00",
   "passed": 20,
   "total": 20,
   "all_pass": true,
@@ -22,12 +22,12 @@
     {
       "name": "overview size",
       "ok": true,
-      "detail": "32188 bytes"
+      "detail": "32119 bytes"
     },
     {
       "name": "full size",
       "ok": true,
-      "detail": "401137 bytes (cap 1953 KB)"
+      "detail": "393968 bytes (cap 1953 KB)"
     },
     {
       "name": "SCImago static year footnote",
@@ -62,7 +62,7 @@
     {
       "name": "NIRF funding coverage",
       "ok": true,
-      "detail": "91 / 120 institutions with research_funding_cr"
+      "detail": "102 / 120 institutions with research_funding_cr"
     },
     {
       "name": "funding ID/name corruption guard",
@@ -77,7 +77,7 @@
     {
       "name": "duplicate funding value clusters",
       "ok": true,
-      "detail": "2 duplicate-value clusters \u2014 19.84 cr [coincidental_rounding]: Panjab University, National Institute of Technology Durgapur; 206.94 cr [bhu_campus_family (shared NIRF IR-O-U-0500)]: Indian Institute of Technology (BHU) Varanasi, Banaras Hindu University, Institute of Medical Sciences"
+      "detail": "no duplicate funding values"
     },
     {
       "name": "positive domestic co-auth test",
@@ -97,7 +97,7 @@
     {
       "name": "NIRF coverage gap report",
       "ok": true,
-      "detail": "funding 91/120, patents 57/120"
+      "detail": "funding 102/120, patents 57/120"
     },
     {
       "name": "AISHE xlsx validation",

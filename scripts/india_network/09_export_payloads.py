@@ -35,13 +35,8 @@ SCIMAGEO_YEAR = 2019
 LOSERS_PATH = PROCESSED_DIR / "nirf_match_losers.csv"
 
 # Institutes sharing identical NIRF funding rows (informational — not join bugs).
-FUNDING_DUPLICATE_CLUSTER_BY_NAME: dict[str, str] = {
-    "Indian Institute of Technology (BHU) Varanasi": "bhu_campus_family",
-    "Banaras Hindu University": "bhu_campus_family",
-    "Institute of Medical Sciences": "bhu_campus_family",
-    "Panjab University": "coincidental_rounding",
-    "National Institute of Technology Durgapur": "coincidental_rounding",
-}
+# BHU campus family resolved by per-institute_id funding rows (01d); Panjab/NIT split at 3dp.
+FUNDING_DUPLICATE_CLUSTER_BY_NAME: dict[str, str] = {}
 
 OVERVIEW_NODE_KEYS = frozenset(
     {

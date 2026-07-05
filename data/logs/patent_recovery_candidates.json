@@ -1,0 +1,2036 @@
+{
+  "generated_from": "_recovery_analysis.py",
+  "total_unavailable": 63,
+  "recoverable_count": 0,
+  "candidates": [
+    {
+      "canonical_name": "Indian Institute of Technology Jodhpur",
+      "nirf_institute_id": "IR-O-U-0395",
+      "reason": "no_innovation_pdf",
+      "city": "Jodhpur",
+      "state": "Rajasthan",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0395",
+          "nirf_name": "Indian Institute of Technology Jodhpur",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0395",
+          "nirf_name": "Indian Institute of Technology Jodhpur",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-E-U-0378",
+          "nirf_name": "Indian Institute of Technology Ropar",
+          "category": "Engineering",
+          "score": 0.919
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0395",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Patna",
+      "nirf_institute_id": "IR-O-U-0064",
+      "reason": "no_innovation_pdf",
+      "city": "Patna",
+      "state": "Bihar",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0064",
+          "nirf_name": "Indian Institute of Technology Patna",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0064",
+          "nirf_name": "Indian Institute of Technology Patna",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-A-U-0072",
+          "nirf_name": "National Institute of Technology Patna",
+          "category": "Architecture",
+          "score": 0.972
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0064",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Bhilai",
+      "nirf_institute_id": "IR-E-U-0946",
+      "reason": "no_innovation_pdf",
+      "city": "Bhilai",
+      "state": "Chhattisgarh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0946",
+          "nirf_name": "Indian Institute of Technology Bhilai",
+          "category": "Engineering",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-E-I-1074",
+          "nirf_name": "Indian Institute of Technology Delhi",
+          "category": "Engineering",
+          "score": 0.904
+        },
+        {
+          "nirf_id": "IR-M-I-1074",
+          "nirf_name": "Indian Institute of Technology Delhi",
+          "category": "Management",
+          "score": 0.904
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0946",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Goa",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Goa",
+      "state": "Goa",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0378",
+          "nirf_name": "Indian Institute of Technology Ropar",
+          "category": "Engineering",
+          "score": 0.943
+        },
+        {
+          "nirf_id": "IR-O-U-0378",
+          "nirf_name": "Indian Institute of Technology Ropar",
+          "category": "Overall",
+          "score": 0.943
+        },
+        {
+          "nirf_id": "IR-R-U-0378",
+          "nirf_name": "Indian Institute of Technology Ropar",
+          "category": "Research",
+          "score": 0.943
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Jammu",
+      "nirf_institute_id": "IR-E-U-0906",
+      "reason": "no_innovation_pdf",
+      "city": "Jammu",
+      "state": "Jammu and Kashmir",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0906",
+          "nirf_name": "Indian Institute of Technology Jammu",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-E-I-1075",
+          "nirf_name": "Indian Institute of Technology Kanpur",
+          "category": "Engineering",
+          "score": 0.904
+        },
+        {
+          "nirf_id": "IR-M-I-1075",
+          "nirf_name": "Indian Institute of Technology Kanpur",
+          "category": "Management",
+          "score": 0.904
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0906",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Indian Institute of Technology Dharwad",
+      "nirf_institute_id": "IR-E-U-0899",
+      "reason": "no_innovation_pdf",
+      "city": "Dharwad",
+      "state": "Karnataka",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0899",
+          "nirf_name": "Indian Institute Of Technology Dharwad",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-A-U-0573",
+          "nirf_name": "Indian Institute of Technology Kharagpur",
+          "category": "Architecture",
+          "score": 0.897
+        },
+        {
+          "nirf_id": "IR-E-U-0573",
+          "nirf_name": "Indian Institute of Technology Kharagpur",
+          "category": "Engineering",
+          "score": 0.897
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0899",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "All India Institute of Medical Sciences",
+      "nirf_institute_id": "IR-D-N-15",
+      "reason": "no_innovation_pdf",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-N-15",
+          "nirf_name": "All India Institute of Medical Sciences Delhi",
+          "category": "Medical",
+          "score": 1.009
+        },
+        {
+          "nirf_id": "IR-O-N-15",
+          "nirf_name": "All India Institute of Medical Sciences Delhi",
+          "category": "Overall",
+          "score": 1.009
+        },
+        {
+          "nirf_id": "IR-R-N-15",
+          "nirf_name": "All India Institute of Medical Sciences Delhi",
+          "category": "Research",
+          "score": 1.009
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-N-15",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Delhi",
+      "nirf_institute_id": "IR-O-U-0120",
+      "reason": "no_innovation_pdf",
+      "city": "New Delhi",
+      "state": "Delhi",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0120",
+          "nirf_name": "University of Delhi",
+          "category": "Overall",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-R-U-0120",
+          "nirf_name": "University of Delhi",
+          "category": "Research",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-O-U-0120",
+          "nirf_name": "University of Delhi",
+          "category": "University",
+          "score": 1.0
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0120",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Post Graduate Institute of Medical Education and Research",
+      "nirf_institute_id": "IR-O-U-0446",
+      "reason": "no_innovation_pdf",
+      "city": "Chandigarh",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-U-0079",
+          "nirf_name": "Post Graduate Institute of Medical Education and Research",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-P-I-1045",
+          "nirf_name": "R. C. Patel Institute of Pharmaceutical Education and Research",
+          "category": "Pharmacy",
+          "score": 0.803
+        },
+        {
+          "nirf_id": "IR-P-C-19613",
+          "nirf_name": "Vishnu Institute of Pharmaceutical Education and Research",
+          "category": "Pharmacy",
+          "score": 0.789
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0446",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Rajasthan",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-P-U-0392",
+          "nirf_name": "Central University of Rajasthan",
+          "category": "Pharmacy",
+          "score": 0.852
+        },
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "Overall",
+          "score": 0.791
+        },
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "University",
+          "score": 0.791
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "Jadavpur University",
+      "nirf_institute_id": "IR-O-U-0575",
+      "reason": "no_innovation_pdf",
+      "city": "Kolkata",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0575",
+          "nirf_name": "Jadavpur University",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0575",
+          "nirf_name": "Jadavpur University",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-P-U-0575",
+          "nirf_name": "Jadavpur University",
+          "category": "Pharmacy",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0575",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Calcutta",
+      "nirf_institute_id": "IR-M-S-8972",
+      "reason": "no_innovation_pdf",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0195",
+          "nirf_name": "University of Jammu",
+          "category": "Overall",
+          "score": 0.78
+        },
+        {
+          "nirf_id": "IR-O-U-0195",
+          "nirf_name": "University of Jammu",
+          "category": "University",
+          "score": 0.78
+        },
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "Overall",
+          "score": 0.762
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-M-S-8972",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Academy of Scientific and Innovative Research",
+      "nirf_institute_id": "IR-R-U-0713",
+      "reason": "no_innovation_pdf",
+      "city": "Ghaziabad",
+      "state": "Uttar Pradesh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-R-U-0713",
+          "nirf_name": "Academy of Scientific and Innovative Research",
+          "category": "Research",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-R-U-0713",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Amrita Vishwa Vidyapeetham",
+      "nirf_institute_id": "IR-O-U-0436",
+      "reason": "no_innovation_pdf",
+      "city": "Coimbatore",
+      "state": "Tamil Nadu",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-N-U-0436",
+          "nirf_name": "Amrita Vishwa Vidyapeetham",
+          "category": "Dental",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-E-U-0436",
+          "nirf_name": "Amrita Vishwa Vidyapeetham",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-M-U-0436",
+          "nirf_name": "Amrita Vishwa Vidyapeetham",
+          "category": "Management",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0436",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Savitribai Phule Pune University",
+      "nirf_institute_id": "IR-O-U-0323",
+      "reason": "no_innovation_pdf",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0323",
+          "nirf_name": "Savitribai Phule Pune University",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0323",
+          "nirf_name": "Savitribai Phule Pune University",
+          "category": "University",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0323",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Tata Institute of Fundamental Research",
+      "nirf_institute_id": "IR-R-U-0330",
+      "reason": "no_innovation_pdf",
+      "city": "Mumbai",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-R-U-0330",
+          "nirf_name": "Tata Institute of Fundamental Research",
+          "category": "Research",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-M-I-1044",
+          "nirf_name": "S. P. Jain Institute of Management and Research",
+          "category": "Management",
+          "score": 0.827
+        },
+        {
+          "nirf_id": "IR-M-C-56616",
+          "nirf_name": "K J Somaiya Institute of Management Studies and Research",
+          "category": "Management",
+          "score": 0.761
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-R-U-0330",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Hyderabad",
+      "nirf_institute_id": "IR-O-U-0042",
+      "reason": "no_innovation_pdf",
+      "city": "Hyderabad",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-R-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Research",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0042",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Christ University",
+      "nirf_institute_id": "IR-O-U-0217",
+      "reason": "no_innovation_pdf",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0217",
+          "nirf_name": "Christ University",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-L-U-0217",
+          "nirf_name": "Christ University",
+          "category": "Law",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-M-U-0217",
+          "nirf_name": "Christ University",
+          "category": "Management",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0217",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Homi Bhabha National Institute",
+      "nirf_institute_id": "IR-O-U-0304",
+      "reason": "no_innovation_pdf",
+      "city": "Mumbai",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0304",
+          "nirf_name": "Homi Bhabha National Institute",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-R-U-0304",
+          "nirf_name": "Homi Bhabha National Institute",
+          "category": "Research",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0304",
+          "nirf_name": "Homi Bhabha National Institute",
+          "category": "University",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0304",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Graphic Era University",
+      "nirf_institute_id": "IR-O-U-0555",
+      "reason": "no_innovation_pdf",
+      "city": "Dehradun",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0555",
+          "nirf_name": "Graphic Era University",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-M-U-0555",
+          "nirf_name": "Graphic Era University",
+          "category": "Management",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0555",
+          "nirf_name": "Graphic Era University",
+          "category": "Overall",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0555",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Indian Statistical Institute",
+      "nirf_institute_id": "IR-O-U-0574",
+      "reason": "no_innovation_pdf",
+      "city": "Kolkata",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0574",
+          "nirf_name": "Indian Statistical Institute, Kolkata",
+          "category": "Overall",
+          "score": 0.955
+        },
+        {
+          "nirf_id": "IR-L-U-0103",
+          "nirf_name": "Indian Law Institute",
+          "category": "Law",
+          "score": 0.75
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0574",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Christian Medical College, Vellore",
+      "nirf_institute_id": "IR-D-C-45654",
+      "reason": "no_innovation_pdf",
+      "city": "Vellore",
+      "state": "Tamil Nadu",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-C-45654",
+          "nirf_name": "Christian Medical College",
+          "category": "Medical",
+          "score": 0.942
+        },
+        {
+          "nirf_id": "IR-D-C-29209",
+          "nirf_name": "Christian Medical College",
+          "category": "Medical",
+          "score": 0.862
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-C-45654",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Birla Institute of Technology and Science, Pilani",
+      "nirf_institute_id": "IR-E-U-0391",
+      "reason": "no_innovation_pdf",
+      "city": "Pil\u0101ni",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0391",
+          "nirf_name": "Birla Institute of Technology and Science, Pilani",
+          "category": "Engineering",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-O-U-0391",
+          "nirf_name": "Birla Institute of Technology and Science, Pilani",
+          "category": "Overall",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-P-U-0391",
+          "nirf_name": "Birla Institute of Technology and Science, Pilani",
+          "category": "Pharmacy",
+          "score": 1.0
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0391",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Madras",
+      "nirf_institute_id": "IR-O-I-1357",
+      "reason": "no_innovation_pdf",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "University",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0196",
+          "nirf_name": "University of Kashmir",
+          "category": "Overall",
+          "score": 0.78
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-I-1357",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Kasturba Medical College, Manipal",
+      "nirf_institute_id": "IR-D-C-7242",
+      "reason": "no_innovation_pdf",
+      "city": "Manipal",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-C-7242",
+          "nirf_name": "Kasturba Medical College, Manipal",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-D-C-7251",
+          "nirf_name": "Kasturba Medical College, Mangalore",
+          "category": "Medical",
+          "score": 0.909
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-C-7242",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Pondicherry University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Puducherry",
+      "state": "Puducherry",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0006",
+          "nirf_name": "Andhra University",
+          "category": "Overall",
+          "score": 0.769
+        },
+        {
+          "nirf_id": "IR-O-U-0006",
+          "nirf_name": "Andhra University",
+          "category": "University",
+          "score": 0.769
+        },
+        {
+          "nirf_id": "IR-O-U-0470",
+          "nirf_name": "Periyar University",
+          "category": "Overall",
+          "score": 0.75
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "Osmania University",
+      "nirf_institute_id": "IR-O-U-0027",
+      "reason": "no_innovation_pdf",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0027",
+          "nirf_name": "Osmania University",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0027",
+          "nirf_name": "Osmania University",
+          "category": "University",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-P-C-19747",
+          "nirf_name": "Anurag University",
+          "category": "Pharmacy",
+          "score": 0.88
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0027",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "SRM University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Son\u012bpat",
+      "state": null,
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-C-19754",
+          "nirf_name": "SR University",
+          "category": "Engineering",
+          "score": 0.963
+        },
+        {
+          "nirf_id": "IR-A-U-0146",
+          "nirf_name": "Nirma University",
+          "category": "Architecture",
+          "score": 0.867
+        },
+        {
+          "nirf_id": "IR-M-U-0146",
+          "nirf_name": "Nirma University",
+          "category": "Management",
+          "score": 0.867
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "University of Mumbai",
+      "nirf_institute_id": "IR-L-U-0886",
+      "reason": "no_innovation_pdf",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0195",
+          "nirf_name": "University of Jammu",
+          "category": "Overall",
+          "score": 0.821
+        },
+        {
+          "nirf_id": "IR-O-U-0195",
+          "nirf_name": "University of Jammu",
+          "category": "University",
+          "score": 0.821
+        },
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "Overall",
+          "score": 0.8
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-L-U-0886",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Siksha O Anusandhan University",
+      "nirf_institute_id": "IR-O-U-0363",
+      "reason": "no_innovation_pdf",
+      "city": "Bhubaneswar",
+      "state": "Orissa",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-N-U-0363",
+          "nirf_name": "Siksha `O` Anusandhan",
+          "category": "Dental",
+          "score": 0.856
+        },
+        {
+          "nirf_id": "IR-E-U-0363",
+          "nirf_name": "Siksha `O` Anusandhan",
+          "category": "Engineering",
+          "score": 0.856
+        },
+        {
+          "nirf_id": "IR-L-U-0363",
+          "nirf_name": "Siksha `O` Anusandhan",
+          "category": "Law",
+          "score": 0.856
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0363",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Institute of Chemical Technology",
+      "nirf_institute_id": "IR-O-U-0308",
+      "reason": "no_innovation_pdf",
+      "city": "Mumbai",
+      "state": "Maharashtra",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0308",
+          "nirf_name": "Institute of Chemical Technology",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0308",
+          "nirf_name": "Institute of Chemical Technology",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-P-U-0308",
+          "nirf_name": "Institute of Chemical Technology",
+          "category": "Pharmacy",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0308",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Guru Nanak Dev University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Amritsar",
+      "state": null,
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_unranked",
+      "evidence": [
+        "Marked unranked in 08b_join_nirf_patents.py"
+      ]
+    },
+    {
+      "canonical_name": "Tamil Nadu Agricultural University",
+      "nirf_institute_id": "IR-O-U-0485",
+      "reason": "no_innovation_pdf",
+      "city": "Coimbatore",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-G-U-0485",
+          "nirf_name": "Tamil Nadu Agricultural University",
+          "category": "Agriculture",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0485",
+          "nirf_name": "Tamil Nadu Agricultural University",
+          "category": "University",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-G-U-0123",
+          "nirf_name": "Anand Agricultural University",
+          "category": "Agriculture",
+          "score": 0.889
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0485",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Bharathidasan University",
+      "nirf_institute_id": "IR-O-U-0448",
+      "reason": "no_innovation_pdf",
+      "city": "Tiruchchirappalli",
+      "state": "Tamil Nadu",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0448",
+          "nirf_name": "Bharathidasan University",
+          "category": "Overall",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-R-U-0448",
+          "nirf_name": "Bharathidasan University",
+          "category": "Research",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-O-U-0448",
+          "nirf_name": "Bharathidasan University",
+          "category": "University",
+          "score": 1.0
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0448",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Dr. Hari Singh Gour University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Saugor",
+      "state": "Madhya Pradesh",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_unranked",
+      "evidence": [
+        "Marked unranked in 08b_join_nirf_patents.py"
+      ]
+    },
+    {
+      "canonical_name": "Sri Venkateswara University",
+      "nirf_institute_id": "IR-O-U-0037",
+      "reason": "no_innovation_pdf",
+      "city": "Tirumala - Tirupati",
+      "state": "Andhra Pradesh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0037",
+          "nirf_name": "Sri Venkateswara University",
+          "category": "University",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-G-U-0039",
+          "nirf_name": "Sri Venkateswara Veterinary University",
+          "category": "Agriculture",
+          "score": 0.831
+        },
+        {
+          "nirf_id": "IR-O-U-0642",
+          "nirf_name": "Shiv Nadar University",
+          "category": "Overall",
+          "score": 0.75
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0037",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "King George's Medical University",
+      "nirf_institute_id": "IR-D-U-0523",
+      "reason": "no_innovation_pdf",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-N-U-0523",
+          "nirf_name": "King George`s Medical University",
+          "category": "Dental",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-D-U-0523",
+          "nirf_name": "King George`s Medical University",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0523",
+          "nirf_name": "King George`s Medical University",
+          "category": "Overall",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-U-0523",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Punjab Agricultural University",
+      "nirf_institute_id": "IR-O-U-0381",
+      "reason": "no_innovation_pdf",
+      "city": "Ludhiana",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-G-U-0381",
+          "nirf_name": "Punjab Agricultural University",
+          "category": "Agriculture",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0381",
+          "nirf_name": "Punjab Agricultural University",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0381",
+          "nirf_name": "Punjab Agricultural University",
+          "category": "University",
+          "score": 1.08
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0381",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Lucknow",
+      "nirf_institute_id": "IR-O-U-0524",
+      "reason": "no_innovation_pdf",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-L-U-0524",
+          "nirf_name": "University of Lucknow",
+          "category": "Law",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0524",
+          "nirf_name": "University of Lucknow",
+          "category": "University",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0120",
+          "nirf_name": "University of Delhi",
+          "category": "Overall",
+          "score": 0.75
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0524",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Indian Association for the Cultivation of Science",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_unranked",
+      "evidence": [
+        "Marked unranked in 08b_join_nirf_patents.py"
+      ]
+    },
+    {
+      "canonical_name": "Bharati Vidyapeeth Deemed University",
+      "nirf_institute_id": "IR-O-I-1361",
+      "reason": "no_innovation_pdf",
+      "city": "Pune",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-I-1361",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Allahabad",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Prayagraj",
+      "state": null,
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Engineering",
+          "score": 0.826
+        },
+        {
+          "nirf_id": "IR-O-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Overall",
+          "score": 0.826
+        },
+        {
+          "nirf_id": "IR-R-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Research",
+          "score": 0.826
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "University of Kalyani",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Kalyani",
+      "state": null,
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0196",
+          "nirf_name": "University of Kashmir",
+          "category": "Overall",
+          "score": 0.81
+        },
+        {
+          "nirf_id": "IR-O-U-0196",
+          "nirf_name": "University of Kashmir",
+          "category": "University",
+          "score": 0.81
+        },
+        {
+          "nirf_id": "IR-O-U-0120",
+          "nirf_name": "University of Delhi",
+          "category": "Overall",
+          "score": 0.8
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "University of Mysore",
+      "nirf_institute_id": "IR-O-U-0235",
+      "reason": "no_innovation_pdf",
+      "city": "Mysuru",
+      "state": "Karnataka",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "Overall",
+          "score": 0.8
+        },
+        {
+          "nirf_id": "IR-O-I-1357",
+          "nirf_name": "University of Madras",
+          "category": "University",
+          "score": 0.8
+        },
+        {
+          "nirf_id": "IR-O-U-0196",
+          "nirf_name": "University of Kashmir",
+          "category": "Overall",
+          "score": 0.78
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0235",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "All India Institute of Medical Sciences Bhopal",
+      "nirf_institute_id": "IR-D-U-0687",
+      "reason": "no_innovation_pdf",
+      "city": "Bhopal",
+      "state": "Madhya Pradesh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-U-0687",
+          "nirf_name": "All India Institute of Medical Sciences Bhopal",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-D-U-0686",
+          "nirf_name": "All India Institute of Medical Sciences Patna",
+          "category": "Medical",
+          "score": 0.923
+        },
+        {
+          "nirf_id": "IR-O-U-0686",
+          "nirf_name": "All India Institute of Medical Sciences Patna",
+          "category": "Overall",
+          "score": 0.923
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-U-0687",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "G.S. Science, Arts And Commerce College",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Akola",
+      "state": null,
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "Indian Institute of Engineering Science and Technology, Shibpur",
+      "nirf_institute_id": "IR-E-U-0584",
+      "reason": "no_innovation_pdf",
+      "city": "Howrah",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-A-U-0584",
+          "nirf_name": "Indian Institute of Engineering Science and Technology, Shibpur",
+          "category": "Architecture",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-E-U-0584",
+          "nirf_name": "Indian Institute of Engineering Science and Technology, Shibpur",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-E-U-0255",
+          "nirf_name": "Indian Institute of Space Science and Technology",
+          "category": "Engineering",
+          "score": 0.8
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0584",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "All India Institute of Medical Sciences Raipur",
+      "nirf_institute_id": "IR-D-U-0690",
+      "reason": "no_innovation_pdf",
+      "city": "Raipur",
+      "state": "Chhattisgarh",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-U-0690",
+          "nirf_name": "All India Institute of Medical Sciences Raipur",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-D-U-0689",
+          "nirf_name": "All India Institute of Medical Sciences Jodhpur",
+          "category": "Medical",
+          "score": 0.925
+        },
+        {
+          "nirf_id": "IR-O-U-0689",
+          "nirf_name": "All India Institute of Medical Sciences Jodhpur",
+          "category": "Overall",
+          "score": 0.925
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-U-0690",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Cochin University of Science and Technology",
+      "nirf_institute_id": "IR-O-U-0253",
+      "reason": "no_innovation_pdf",
+      "city": "Ernakulam",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-M-U-0253",
+          "nirf_name": "Cochin University of Science and Technology",
+          "category": "Management",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-O-U-0253",
+          "nirf_name": "Cochin University of Science and Technology",
+          "category": "Overall",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-O-U-0253",
+          "nirf_name": "Cochin University of Science and Technology",
+          "category": "University",
+          "score": 1.0
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0253",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Jawaharlal Institute of Post Graduate Medical Education and Research",
+      "nirf_institute_id": "IR-O-U-0368",
+      "reason": "no_innovation_pdf",
+      "city": "Puducherry",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-U-0368",
+          "nirf_name": "Jawaharlal Institute of Post Graduate Medical Education and Research",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0368",
+          "nirf_name": "Jawaharlal Institute of Post Graduate Medical Education and Research",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-D-C-16428",
+          "nirf_name": "Institute of Post Graduate Medical Education and Research",
+          "category": "Medical",
+          "score": 0.912
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0368",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Sardar Vallabhbhai National Institute of Technology Surat",
+      "nirf_institute_id": "IR-E-U-0149",
+      "reason": "no_innovation_pdf",
+      "city": "Surat",
+      "state": "Gujarat",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0149",
+          "nirf_name": "Sardar Vallabhbhai National Institute of Technology",
+          "category": "Engineering",
+          "score": 1.024
+        },
+        {
+          "nirf_id": "IR-E-U-0237",
+          "nirf_name": "National Institute of Technology Karnataka, Surathkal",
+          "category": "Engineering",
+          "score": 0.777
+        },
+        {
+          "nirf_id": "IR-O-U-0237",
+          "nirf_name": "National Institute of Technology Karnataka, Surathkal",
+          "category": "Overall",
+          "score": 0.777
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0149",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Central University of Rajasthan",
+      "nirf_institute_id": "IR-P-U-0392",
+      "reason": "no_innovation_pdf",
+      "city": "Ajmer",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-P-U-0392",
+          "nirf_name": "Central University of Rajasthan",
+          "category": "Pharmacy",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-P-U-0372",
+          "nirf_name": "Central University of Punjab",
+          "category": "Pharmacy",
+          "score": 0.814
+        },
+        {
+          "nirf_id": "IR-O-U-0372",
+          "nirf_name": "Central University of Punjab",
+          "category": "University",
+          "score": 0.814
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-P-U-0392",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Government Medical College",
+      "nirf_institute_id": "IR-D-C-48124",
+      "reason": "no_innovation_pdf",
+      "city": "Thiruvananthapuram",
+      "state": "Kerala",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-N-C-48122",
+          "nirf_name": "Government Dental College",
+          "category": "Dental",
+          "score": 0.943
+        },
+        {
+          "nirf_id": "IR-N-C-5910",
+          "nirf_name": "Government Dental College",
+          "category": "Dental",
+          "score": 0.863
+        },
+        {
+          "nirf_id": "IR-C-C-8209",
+          "nirf_name": "Government Victoria College",
+          "category": "College",
+          "score": 0.83
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-C-48124",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "National Institute of Technology Durgapur",
+      "nirf_institute_id": "IR-E-U-0577",
+      "reason": "no_innovation_pdf",
+      "city": "Durgapur",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0577",
+          "nirf_name": "National Institute of Technology Durgapur",
+          "category": "Engineering",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0577",
+          "nirf_name": "National Institute of Technology Durgapur",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-A-U-0092",
+          "nirf_name": "National Institute of Technology Raipur",
+          "category": "Architecture",
+          "score": 0.95
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0577",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "University of Kashmir",
+      "nirf_institute_id": "IR-O-U-0196",
+      "reason": "no_innovation_pdf",
+      "city": "Srinagar",
+      "state": null,
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0196",
+          "nirf_name": "University of Kashmir",
+          "category": "Overall",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0196",
+          "nirf_name": "University of Kashmir",
+          "category": "University",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-O-U-0120",
+          "nirf_name": "University of Delhi",
+          "category": "Overall",
+          "score": 0.8
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0196",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Sri Ramachandra Institute of Higher Education and Research",
+      "nirf_institute_id": "IR-O-I-1486",
+      "reason": "no_innovation_pdf",
+      "city": "Porur",
+      "state": "Tamil Nadu",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-N-I-1486",
+          "nirf_name": "Sri Ramachandra Institute of Higher Education and Research",
+          "category": "Dental",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-D-I-1486",
+          "nirf_name": "Sri Ramachandra Institute of Higher Education and Research",
+          "category": "Medical",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-O-I-1486",
+          "nirf_name": "Sri Ramachandra Institute of Higher Education and Research",
+          "category": "Overall",
+          "score": 1.0
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-I-1486",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Punjabi University",
+      "nirf_institute_id": "IR-P-U-0383",
+      "reason": "no_innovation_pdf",
+      "city": "Pati\u0101la",
+      "state": "Punjab",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-P-U-0383",
+          "nirf_name": "Punjabi University",
+          "category": "Pharmacy",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-N-U-0078",
+          "nirf_name": "Panjab University",
+          "category": "Dental",
+          "score": 0.914
+        },
+        {
+          "nirf_id": "IR-M-U-0078",
+          "nirf_name": "Panjab University",
+          "category": "Management",
+          "score": 0.914
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-P-U-0383",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Shivaji University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Kolh\u0101pur",
+      "state": "Maharashtra",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0642",
+          "nirf_name": "Shiv Nadar University",
+          "category": "Overall",
+          "score": 0.821
+        },
+        {
+          "nirf_id": "IR-O-U-0642",
+          "nirf_name": "Shiv Nadar University",
+          "category": "University",
+          "score": 0.821
+        },
+        {
+          "nirf_id": "IR-P-U-0541",
+          "nirf_name": "Sharda University",
+          "category": "Pharmacy",
+          "score": 0.8
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "Mangalore University",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Mangaluru",
+      "state": "Karnataka",
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0215",
+          "nirf_name": "Bangalore University",
+          "category": "University",
+          "score": 0.95
+        },
+        {
+          "nirf_id": "IR-O-U-0235",
+          "nirf_name": "Mysore University",
+          "category": "Overall",
+          "score": 0.811
+        },
+        {
+          "nirf_id": "IR-O-U-0235",
+          "nirf_name": "Mysore University",
+          "category": "University",
+          "score": 0.811
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "Christian Medical College",
+      "nirf_institute_id": "IR-D-C-29209",
+      "reason": "no_innovation_pdf",
+      "city": "Ludhiana",
+      "state": "Punjab",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-D-C-29209",
+          "nirf_name": "Christian Medical College",
+          "category": "Medical",
+          "score": 1.08
+        },
+        {
+          "nirf_id": "IR-D-C-45654",
+          "nirf_name": "Christian Medical College",
+          "category": "Medical",
+          "score": 1.0
+        },
+        {
+          "nirf_id": "IR-N-C-29150",
+          "nirf_name": "Christian Dental College",
+          "category": "Dental",
+          "score": 0.937
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-D-C-29209",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Jawaharlal Nehru Technological University, Hyderabad",
+      "nirf_institute_id": "IR-E-U-0017",
+      "reason": "no_innovation_pdf",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0017",
+          "nirf_name": "Jawaharlal Nehru Technological University",
+          "category": "Engineering",
+          "score": 0.971
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-E-U-0017",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    },
+    {
+      "canonical_name": "Karpagam Academy of Higher Education",
+      "nirf_institute_id": null,
+      "reason": "no_nirf_id",
+      "city": "Coimbatore",
+      "state": null,
+      "innovation_pdf_http": null,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-O-U-0234",
+          "nirf_name": "Manipal Academy of Higher Education, Manipal",
+          "category": "Overall",
+          "score": 0.785
+        },
+        {
+          "nirf_id": "IR-R-U-0234",
+          "nirf_name": "Manipal Academy of Higher Education, Manipal",
+          "category": "Research",
+          "score": 0.785
+        },
+        {
+          "nirf_id": "IR-O-U-0234",
+          "nirf_name": "Manipal Academy of Higher Education, Manipal",
+          "category": "University",
+          "score": 0.785
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": null,
+      "evidence": []
+    },
+    {
+      "canonical_name": "University of Kerala",
+      "nirf_institute_id": "IR-O-U-0260",
+      "reason": "no_innovation_pdf",
+      "city": "Thiruvananthapuram",
+      "state": "Kerala",
+      "innovation_pdf_http": 404,
+      "in_scraped_csv": false,
+      "alternate_nirf_matches": [
+        {
+          "nirf_id": "IR-E-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Engineering",
+          "score": 0.837
+        },
+        {
+          "nirf_id": "IR-O-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Overall",
+          "score": 0.837
+        },
+        {
+          "nirf_id": "IR-R-U-0042",
+          "nirf_name": "University of Hyderabad",
+          "category": "Research",
+          "score": 0.837
+        }
+      ],
+      "recoverable": false,
+      "recommended_fix": "accept_gap_no_innovation_pdf",
+      "evidence": [
+        "Innovation PDF 404 for IR-O-U-0260",
+        "Patents only in Innovation category PDFs per NIRF schema"
+      ]
+    }
+  ]
+}

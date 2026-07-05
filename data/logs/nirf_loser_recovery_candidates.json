@@ -1,0 +1,382 @@
+{
+  "candidates": [
+    {
+      "canonical_name": "Indian Institute of Technology Goa",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Goa",
+      "state": "Goa",
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-E-U-0378",
+        "nirf_name": "Indian Institute of Technology Ropar",
+        "category": "Engineering",
+        "city": "Rupnagar",
+        "state": "Punjab",
+        "score": 0.943
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-E-U-0378",
+        "nirf_name": "Indian Institute of Technology Ropar",
+        "category": "Engineering",
+        "city": "Rupnagar",
+        "state": "Punjab",
+        "score": 0.943
+      },
+      "recommended_action": "accept_gap",
+      "notes": "IIT Goa not in NIRF 2024 rankings; fuzzy IIT Ropar is misleading"
+    },
+    {
+      "canonical_name": "Pondicherry University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Puducherry",
+      "state": "Puducherry",
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-O-U-0006",
+        "nirf_name": "Andhra University",
+        "category": "Overall",
+        "city": "Visakhapatnam",
+        "state": "Andhra Pradesh",
+        "score": 0.769
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0470",
+        "nirf_name": "Periyar University",
+        "category": "University",
+        "city": "Salem",
+        "state": "Tamil Nadu",
+        "score": 0.75
+      },
+      "recommended_action": "manual_review",
+      "notes": "Weak match only (0.769)"
+    },
+    {
+      "canonical_name": "SRM University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Son\u012bpat",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-E-C-19754",
+        "nirf_name": "SR University",
+        "category": "Engineering",
+        "city": "Warangal",
+        "state": "Telangana",
+        "score": 0.963
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-E-C-19754",
+        "nirf_name": "SR University",
+        "category": "Engineering",
+        "city": "Warangal",
+        "state": "Telangana",
+        "score": 0.963
+      },
+      "recommended_action": "accept_gap",
+      "notes": "SRM University (Sonipat) is not S.R.M. Institute Chennai (IR-O-U-0473); no safe override"
+    },
+    {
+      "canonical_name": "Guru Nanak Dev University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Amritsar",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0376",
+        "nirf_name": "Guru Nanak Dev University",
+        "category": "Overall",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "score": 1.08
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0376",
+        "nirf_name": "Guru Nanak Dev University",
+        "category": "Overall",
+        "city": "Amritsar",
+        "state": "Punjab",
+        "score": 1.08
+      },
+      "recommended_action": "accept_gap",
+      "notes": "Ranked in NIRF 2023 (IR-O-U-0376) but absent from 2024 master CSV"
+    },
+    {
+      "canonical_name": "Dr. Hari Singh Gour University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Saugor",
+      "state": "Madhya Pradesh",
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-P-U-0051",
+        "nirf_name": "Dibrugarh University",
+        "category": "Pharmacy",
+        "city": "Dibrugarh",
+        "state": "Assam",
+        "score": 0.653
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-P-U-0051",
+        "nirf_name": "Dibrugarh University",
+        "category": "Pharmacy",
+        "city": "Dibrugarh",
+        "state": "Assam",
+        "score": 0.653
+      },
+      "recommended_action": "accept_gap",
+      "notes": "No close NIRF 2024 row"
+    },
+    {
+      "canonical_name": "Indian Association for the Cultivation of Science",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "best_nirf_match": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0220",
+        "nirf_name": "Indian Institute of Science",
+        "category": "Overall",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "score": 0.605
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0220",
+        "nirf_name": "Indian Institute of Science",
+        "category": "Overall",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "score": 0.605
+      },
+      "recommended_action": "accept_gap",
+      "notes": "No close NIRF 2024 row"
+    },
+    {
+      "canonical_name": "University of Allahabad",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Prayagraj",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-E-U-0042",
+        "nirf_name": "University of Hyderabad",
+        "category": "Engineering",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "score": 0.826
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-E-U-0042",
+        "nirf_name": "University of Hyderabad",
+        "category": "Engineering",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "score": 0.826
+      },
+      "recommended_action": "accept_gap",
+      "notes": "Prayagraj university not in NIRF 2024; Hyderabad match is false positive"
+    },
+    {
+      "canonical_name": "University of Kalyani",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Kalyani",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-O-U-0196",
+        "nirf_name": "University of Kashmir",
+        "category": "Overall",
+        "city": "Srinagar",
+        "state": "Jammu and Kashmir",
+        "score": 0.81
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0196",
+        "nirf_name": "University of Kashmir",
+        "category": "Overall",
+        "city": "Srinagar",
+        "state": "Jammu and Kashmir",
+        "score": 0.81
+      },
+      "recommended_action": "manual_review",
+      "notes": "Weak match only (0.81)"
+    },
+    {
+      "canonical_name": "G.S. Science, Arts And Commerce College",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Akola",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-C-C-41054",
+        "nirf_name": "Dr. N. G. P. Arts and Science College",
+        "category": "College",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "score": 0.686
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-C-C-41126",
+        "nirf_name": "Sri Krishna Arts and Science College",
+        "category": "College",
+        "city": "Coimbatore",
+        "state": "Tamil Nadu",
+        "score": 0.685
+      },
+      "recommended_action": "accept_gap",
+      "notes": "No close NIRF 2024 row"
+    },
+    {
+      "canonical_name": "Presidency University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Kolkata",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-O-U-0470",
+        "nirf_name": "Periyar University",
+        "category": "Overall",
+        "city": "Salem",
+        "state": "Tamil Nadu",
+        "score": 0.769
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0470",
+        "nirf_name": "Periyar University",
+        "category": "University",
+        "city": "Salem",
+        "state": "Tamil Nadu",
+        "score": 0.769
+      },
+      "recommended_action": "manual_review",
+      "notes": "Weak match only (0.769)"
+    },
+    {
+      "canonical_name": "Shivaji University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Kolh\u0101pur",
+      "state": "Maharashtra",
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-O-U-0642",
+        "nirf_name": "Shiv Nadar University",
+        "category": "Overall",
+        "city": "Gautam Buddha Nagar",
+        "state": "Uttar Pradesh",
+        "score": 0.821
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0642",
+        "nirf_name": "Shiv Nadar University",
+        "category": "Overall",
+        "city": "Gautam Buddha Nagar",
+        "state": "Uttar Pradesh",
+        "score": 0.821
+      },
+      "recommended_action": "accept_gap",
+      "notes": "Do not map to Shiv Nadar University (different entity)"
+    },
+    {
+      "canonical_name": "Mangalore University",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Mangaluru",
+      "state": "Karnataka",
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-O-U-0215",
+        "nirf_name": "Bangalore University",
+        "category": "University",
+        "city": "Bengaluru",
+        "state": "Karnataka",
+        "score": 1.0
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0235",
+        "nirf_name": "Mysore University",
+        "category": "Overall",
+        "city": "Mysuru",
+        "state": "Karnataka",
+        "score": 0.861
+      },
+      "recommended_action": "accept_gap",
+      "notes": "Do not map to Bangalore University (different city/entity)"
+    },
+    {
+      "canonical_name": "Karpagam Academy of Higher Education",
+      "reason": "no_fuzzy_match",
+      "blocked_by": null,
+      "city": "Coimbatore",
+      "state": null,
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-O-U-0234",
+        "nirf_name": "Manipal Academy of Higher Education, Manipal",
+        "category": "Overall",
+        "city": "Manipal",
+        "state": "Karnataka",
+        "score": 0.785
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-O-U-0234",
+        "nirf_name": "Manipal Academy of Higher Education-Manipal",
+        "category": "Overall",
+        "city": "Manipal",
+        "state": "Karnataka",
+        "score": 0.785
+      },
+      "recommended_action": "manual_review",
+      "notes": "Weak match only (0.785)"
+    },
+    {
+      "canonical_name": "University of Rajasthan",
+      "reason": "id_blocked_by_uniqueness",
+      "blocked_by": "Central University of Rajasthan",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "best_nirf_match": {
+        "year": "2024",
+        "nirf_id": "IR-P-U-0392",
+        "nirf_name": "Central University of Rajasthan",
+        "category": "Pharmacy",
+        "city": "Kishangarh",
+        "state": "Rajasthan",
+        "score": 0.902
+      },
+      "best_nirf_match_2023": {
+        "year": "2023",
+        "nirf_id": "IR-P-U-0392",
+        "nirf_name": "Central University of Rajasthan",
+        "category": "Pharmacy",
+        "city": "Kishangarh",
+        "state": "Rajasthan",
+        "score": 0.902
+      },
+      "recommended_action": "accept_gap",
+      "notes": "Distinct from Central University of Rajasthan (IR-P-U-0392 Kishangarh); no 2024 Overall/University row found"
+    }
+  ]
+}
