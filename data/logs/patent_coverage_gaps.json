@@ -3,8 +3,8 @@
   "patents_reported": 49,
   "patents_total": 120,
   "funding_reported": 102,
-  "nirf_matched": 109,
-  "nirf_losers": 11,
+  "nirf_matched": 110,
+  "nirf_losers": 10,
   "unavailable": [
     {
       "canonical_name": "Indian Institute of Technology Jodhpur",
@@ -183,8 +183,8 @@
     },
     {
       "canonical_name": "Guru Nanak Dev University",
-      "nirf_institute_id": null,
-      "reason": "no_nirf_id"
+      "nirf_institute_id": "IR-O-U-0376",
+      "reason": "no_innovation_pdf"
     },
     {
       "canonical_name": "Tamil Nadu Agricultural University",
@@ -363,7 +363,7 @@
     }
   ],
   "by_reason": {
-    "no_nirf_id": 11,
-    "no_innovation_pdf": 60
+    "no_nirf_id": 10,
+    "no_innovation_pdf": 61
   }
 }

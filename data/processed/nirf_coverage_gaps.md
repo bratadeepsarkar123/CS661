@@ -2,8 +2,8 @@
 
 Funding joined: 102 / 120
 Patents joined: 49 / 120
-NIRF IDs assigned: 109 / 120
-NIRF match losers: 11
+NIRF IDs assigned: 110 / 120
+NIRF match losers: 10
 
 ## Missing funding
 
@@ -13,7 +13,7 @@ NIRF match losers: 11
 - **Annamalai University** (Chidambaram, Tamil Nadu): No sponsored-research table in NIRF PDF
 - **Pondicherry University** (Puducherry, Puducherry): No sponsored-research table in NIRF PDF
 - **SRM University** (Sonīpat, nan): Not in NIRF 2024 rankings
-- **Guru Nanak Dev University** (Amritsar, nan): Not in NIRF 2024 rankings
+- **Guru Nanak Dev University** (Amritsar, nan): No sponsored-research table in NIRF PDF
 - **Dr. Hari Singh Gour University** (Saugor, Madhya Pradesh): Not in NIRF 2024 rankings
 - **GITAM University** (Visakhapatnam, Andhra Pradesh): No sponsored-research table in NIRF PDF
 - **Indian Association for the Cultivation of Science** (Kolkata, West Bengal): Not in NIRF 2024 rankings
@@ -63,7 +63,7 @@ NIRF match losers: 11
 - **University of Mumbai**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Siksha O Anusandhan University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Institute of Chemical Technology**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
-- **Guru Nanak Dev University**: Not in NIRF 2024 rankings
+- **Guru Nanak Dev University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Tamil Nadu Agricultural University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Bharathidasan University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Dr. Hari Singh Gour University**: Not in NIRF 2024 rankings

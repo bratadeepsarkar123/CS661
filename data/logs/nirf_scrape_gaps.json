@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:51:25.102899+00:00",
+  "generated_at": "2026-07-07T20:10:12.891304+00:00",
   "source": "03a_enrich_institution_master",
   "nirf_year": 2024,
   "missing_from_csv": [
@@ -101,7 +101,6 @@
   "master_institutes_without_nirf_match": [
     "Dr. Hari Singh Gour University",
     "G.S. Science, Arts And Commerce College",
-    "Guru Nanak Dev University",
     "Indian Association for the Cultivation of Science",
     "Indian Institute of Technology Goa",
     "Karpagam Academy of Higher Education",
@@ -111,7 +110,7 @@
     "University of Allahabad",
     "University of Rajasthan"
   ],
-  "master_nirf_matched": 109,
+  "master_nirf_matched": 110,
   "master_total": 120,
   "csv_rows": 860,
   "csv_unique_institutes": 796

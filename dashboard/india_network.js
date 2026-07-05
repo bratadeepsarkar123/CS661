@@ -111,6 +111,20 @@ const INDIA = (() => {
     return "";
   }
 
+  function fundingStaticNote(net) {
+    const cov = net.meta?.coverage;
+    const fundCount =
+      cov && cov.funding_reported != null
+        ? ` (${cov.funding_reported}/${cov.institutions_total || 120} institutes with NIRF sponsored-research rows)`
+        : "";
+    const sliceYear =
+      net.meta?.year && net.meta.year !== "all" ? String(net.meta.year) : null;
+    const sliderClause = sliceYear
+      ? ` Year slider (${sliceYear}) filters domestic co-publication edges only — sponsored research does not change with the slider.`
+      : " Static across the year slider; the slider controls collaboration edges only.";
+    return `<p class="india-data-note">Sponsored research is a NIRF snapshot from official PDFs (latest academic year in 2024 rankings, typically 2022–23)${fundCount}.${sliderClause}</p>`;
+  }
+
   function ensureLoaded() {
     if (cache.overview && cache.full) return Promise.resolve(cache);
     if (!cache.loadPromise) {
@@ -338,6 +352,7 @@ const INDIA = (() => {
         ${nirfStatusNote(node)}
         ${patentBlock}
         ${tierAvg != null ? `<p class="india-funding-note">${tierLabel(node.tier)} tier avg sponsored research: <strong>₹${tierAvg.toFixed(1)} Cr</strong> (institutions with NIRF submissions only).</p>` : ""}
+        ${fundingStaticNote(net)}
         <p class="india-funding-note">Source: official NIRF PDFs on nirfindia.org (free). Not all HEIs file detailed returns.</p>
       `;
     }
