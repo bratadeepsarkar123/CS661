@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T20:34:44.612517+00:00",
-  "passed": 22,
-  "total": 22,
+  "generated_at": "2026-07-07T21:10:19.081975+00:00",
+  "passed": 23,
+  "total": 23,
   "all_pass": true,
   "checks": [
     {
@@ -22,12 +22,12 @@
     {
       "name": "overview size",
       "ok": true,
-      "detail": "32422 bytes"
+      "detail": "32465 bytes"
     },
     {
       "name": "full size",
       "ok": true,
-      "detail": "403945 bytes (cap 1953 KB)"
+      "detail": "413323 bytes (cap 1953 KB)"
     },
     {
       "name": "SCImago static year footnote",
@@ -62,7 +62,7 @@
     {
       "name": "NIRF funding coverage",
       "ok": true,
-      "detail": "102 / 120 institutions with research_funding_cr"
+      "detail": "104 / 120 institutions with research_funding_cr"
     },
     {
       "name": "funding ID/name corruption guard",
@@ -97,7 +97,12 @@
     {
       "name": "year-aware funding variance (2020 vs 2023 JSON)",
       "ok": true,
-      "detail": "102 institutes with different funding 2020 vs 2023 slices (e.g. Indian Institute of Science: 525.722 vs 534.773 cr)"
+      "detail": "103 institutes with different funding 2020 vs 2023 slices (e.g. Indian Institute of Science: 525.722 vs 534.773 cr)"
+    },
+    {
+      "name": "year-aware NIRF rank variance (2020 vs 2023 JSON)",
+      "ok": true,
+      "detail": "95 institutes with different NIRF rank 2020 vs 2023 slices (e.g. University of Delhi: #18 vs #22)"
     },
     {
       "name": "2024 slice is true calendar year",
@@ -107,7 +112,7 @@
     {
       "name": "NIRF coverage gap report",
       "ok": true,
-      "detail": "funding 102/120, patents 49/120"
+      "detail": "funding 104/120, patents 49/120"
     },
     {
       "name": "AISHE xlsx validation",

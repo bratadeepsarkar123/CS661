@@ -38,7 +38,7 @@ Institute names accept **UUID** (`institution_id`), full canonical names, or sho
 | Edge weight (co-publication count) | `collaboration_edges_full.csv` `weight` | Count of domestic filtered works with both institutes | `edges[].weight` | Yes |
 | Citation weight | `collaboration_edges_full.csv` `citation_weight` | Sum of `cited_by_count` on those works | `edges[].citation_weight` | Yes |
 | Triad++ sidebar | `collaboration_triads.parquet` | 3+ institution papers from `domestic_works` | `triads[focus_id]` | Yes |
-| NIRF rank + category | `institution_master.csv` | `data/raw/nirf_rankings.csv` via `03a_enrich_institution_master.py` | `nodes[].nirf_rank`, `nirf_ranking_category`, `nirf_match_status` | No |
+| NIRF rank + category | `lookup_nirf_rank_for_institute()` in export | `data/raw/nirf_rankings_{year}.csv` via `01h_scrape_historical_nirf.py` | `nodes[].nirf_rank`, `nirf_ranking_category`, `nirf_ranking_season`, `nirf_match_status` | **Yes** — nearest ranking season to slider (2018–2024 on disk) |
 | Research funding (₹ Cr) | `institution_funding_by_year.csv` | `nirf_research_projects.csv` (+ PDF scrape `01e`) via `08_join_nirf_funding.py` | `nodes[].research_funding_cr`, `funding_academic_year`, `sponsored_projects`, `funding_status` | **Yes** — mapped academic year (2020-21 / 2021-22 / 2022-23) |
 | Patents published / granted | `institution_patents_by_year.csv` | `nirf_patents_scraped.csv` via `08b_join_nirf_patents.py` | `nodes[].patents_*`, `patent_calendar_year`, `patent_status` | **Yes** — mapped calendar year (2020 / 2021 / 2022) |
 | SCImago impact % | `institution_quality_static.csv` | `scimago_india.csv` via `07_join_scimago_quality.py` | `nodes[].scimago_pct`, `scimago_year` (2019) | No |
@@ -66,17 +66,19 @@ OpenAlex works cache
 
 `09b_export_year_slices.py` writes per-year files including a **true calendar-year 2024 slice** (`year: 2024`). `all_years_full.json` remains the cumulative rollup. Default panel loads `2024_full.json`.
 
-Funding and patents **change with the slider** within available NIRF years (see mapping table in [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md)). NIRF rank and SCImago remain static.
+Funding, patents, and **NIRF ranks** change with the slider within available seasons (see mapping table in [`GRAPH5_GAP_ASSESSMENT.md`](GRAPH5_GAP_ASSESSMENT.md)). SCImago remains static.
 
-**Worked example — funding varies by slider:**
+**Worked examples — metrics vary by slider:**
 
 | Institute | 2020 slice | 2023 slice |
 |-----------|------------|------------|
-| IIT Kharagpur | ₹102.7 Cr (2020-21) | ₹193.8 Cr (2022-23) |
+| IIT Kharagpur (funding) | ₹102.7 Cr (2020-21) | ₹193.8 Cr (2022-23) |
+| IIT Delhi (NIRF Overall rank) | #4 (2020 season) | #3 (2023 season) |
 
 ```bash
 python scripts/india_network/verify_graph5_display.py --institute "IIT Kharagpur" --field funding --year 2020
-python scripts/india_network/verify_graph5_display.py --institute "IIT Kharagpur" --field funding --year 2023
+python scripts/india_network/verify_graph5_display.py --institute "IIT Delhi" --field nirf_rank --year 2023
+python scripts/india_network/verify_graph5_display.py --institute "IIT Delhi" --field nirf_rank --year 2024
 ```
 
 ---

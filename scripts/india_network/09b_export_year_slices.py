@@ -55,14 +55,22 @@ def main() -> None:
     # Rollup; 2024 slice already exported in loop above (true calendar-year edges).
     _export.export_year(None, master, edges, hubs, quality)
 
+    import importlib
+
+    _nirf = importlib.import_module("nirf_utils")
+    rank_years = _nirf.discover_nirf_ranking_years()
+    fund_years = list(_nirf.FUNDING_ACADEMIC_YEARS)
+    patent_years = list(_nirf.PATENT_CALENDAR_YEARS)
+
     manifest = {
         "year_min": YEAR_MIN,
         "year_max": args.year_max,
         "available_years": available,
         "default_year": 2024 if 2024 in available else (available[-1] if available else "all"),
         "quality_year": 2019,
-        "funding_academic_years": ["2020-21", "2021-22", "2022-23"],
-        "patent_calendar_years": [2020, 2021, 2022],
+        "funding_academic_years": fund_years,
+        "patent_calendar_years": patent_years,
+        "nirf_ranking_seasons": rank_years,
     }
     (PUBLIC_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print(f"Wrote manifest.json ({len(available)} years with edges)")

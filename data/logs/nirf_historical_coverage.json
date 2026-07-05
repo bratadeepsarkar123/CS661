@@ -1,0 +1,37 @@
+{
+  "ranking_seasons": {},
+  "ranking_years_on_disk": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "funding_academic_years": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+  ],
+  "funding_seasons_scraped": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "patent_calendar_years": [
+    2020,
+    2021,
+    2022
+  ],
+  "gaps": {
+    "ranking_2015": "404 on nirfindia.org",
+    "ranking_2016_2018": "legacy ID format; name match at export",
+    "patents_pre_2020": "Innovation PDF only on 2024 CDN",
+    "funding_2023_24": "not in any scraped PDF season yet"
+  }
+}

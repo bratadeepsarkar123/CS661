@@ -1,6 +1,6 @@
 # NIRF data coverage gaps
 
-Funding joined: 102 / 120
+Funding joined: 104 / 120
 Patents joined: 49 / 120
 NIRF IDs assigned: 110 / 120
 NIRF match losers: 10
@@ -11,9 +11,7 @@ NIRF match losers: 10
 - **SRM Institute of Science and Technology** (Chennai, nan): No sponsored-research table in NIRF PDF
 - **University of Rajasthan** (Jaipur, Rajasthan): Not in NIRF 2024 rankings
 - **Annamalai University** (Chidambaram, Tamil Nadu): No sponsored-research table in NIRF PDF
-- **Pondicherry University** (Puducherry, Puducherry): No sponsored-research table in NIRF PDF
 - **SRM University** (Sonīpat, nan): Not in NIRF 2024 rankings
-- **Guru Nanak Dev University** (Amritsar, nan): No sponsored-research table in NIRF PDF
 - **Dr. Hari Singh Gour University** (Saugor, Madhya Pradesh): Not in NIRF 2024 rankings
 - **GITAM University** (Visakhapatnam, Andhra Pradesh): No sponsored-research table in NIRF PDF
 - **Indian Association for the Cultivation of Science** (Kolkata, West Bengal): Not in NIRF 2024 rankings

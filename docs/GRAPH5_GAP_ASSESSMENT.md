@@ -13,36 +13,32 @@
 
 **User expectation:** Moving the collaboration year slider (2015-2024) should change sponsored-research funding.
 
-**Behavior (post 2026-07-08 year-aware export):** Funding and patents are **mapped from the slider year** into available NIRF academic/calendar years. Collaboration edges remain filtered by calendar year.
+**Behavior (post Phase B historical ingest):** Funding, patents, and **NIRF ranks** are mapped from the slider year into available NIRF seasons. Collaboration edges remain filtered by calendar year.
 
 **Mapping (slider calendar year → NIRF metric year):**
 
-| Slider year | Funding academic year | Patents calendar year |
-|-------------|----------------------|------------------------|
-| 2015–2020 | 2020-21 (earliest carry) | 2020 (earliest carry) |
-| 2021 | 2020-21 | 2021 |
-| 2022 | 2021-22 | 2022 |
-| 2023–2024 | 2022-23 (latest) | 2022 (latest) |
+| Slider year | Funding academic year | Patents calendar year | NIRF ranking season |
+|-------------|----------------------|------------------------|----------------------|
+| 2015–2017 | 2017-18 (earliest) | 2020 (earliest) | 2018 (nearest; 2015–2017 not on site) |
+| 2018 | 2018-19 | 2020 | 2018 |
+| 2019 | 2019-20 | 2020 | 2019 |
+| 2020 | 2020-21 | 2020 | 2020 |
+| 2021 | 2020-21 | 2021 | 2021 |
+| 2022 | 2021-22 | 2022 | 2022 |
+| 2023 | 2022-23 | 2022 | 2023 |
+| 2024 | 2022-23 | 2022 | 2024 |
 
 **Evidence:**
-- `01d_prepare_nirf_funding.py` exports **long format** (342 institute×year rows; academic years 2020-21, 2021-22, 2022-23).
-- `01g_prepare_nirf_patents.py` exports per calendar year 2020/2021/2022.
-- `08_join_nirf_funding.py` → `institution_funding_by_year.csv`; `08b_join_nirf_patents.py` → `institution_patents_by_year.csv`.
-- `09_export_payloads.export_year(year)` joins funding/patents for the mapped year.
-- `2024_full.json` is a **true 2024 edge slice** (`year: 2024`), not an all-years rollup copy.
-- Example: IIT Kharagpur — `2020_full.json` ₹102.7 Cr (2020-21) vs `2023_full.json` ₹193.8 Cr (2022-23).
+- Ranking seasons on disk: `nirf_rankings_2018.csv` … `nirf_rankings_2024.csv` (+ supplement).
+- Funding academic years: 2017-18 … 2022-23 from multi-season PDF scrape (`01h`, seasons 2021–2024 CDN).
+- `09_export_payloads.build_nodes()` uses `lookup_nirf_rank_for_institute()` per slider year.
+- Example: IIT Delhi Overall rank **#3** in 2023 slice vs **#4** in 2024 slice.
 
 **Still static (honest gaps):**
-- **NIRF ranks** — 2024 snapshot only (`nirf_rankings.csv` + supplement; `nirf_rankings_2023.csv` exists but not wired).
 - **SCImago** — 2019 snapshot.
-- **Funding before 2020-21** — no historical NIRF PDF seasons scraped.
-- **Patents after 2022** — Innovation PDF scrape has 2020–2022 only.
-- **Funding 2023-24 academic year** — not in current 2024 PDF scrape.
-
-**Future scrape plan (Phase B backlog):**
-1. Ingest `nirf_rankings_2023.csv` (and 2015–2022 if obtained) for per-year rank slices.
-2. Scrape historical NIRF PDF seasons for research projects (2015–2019 academic years) and Innovation patents (2015–2019).
-3. Re-run `01b` per NIRF season to populate `data/raw/nirf_rankings_{year}.csv`.
+- **NIRF ranks 2015–2017** — nirfindia.org 404 / legacy layout (2016–2017 unscrapeable).
+- **Patents before 2020 / after 2022** — Innovation PDF only on 2024 CDN (2020–2022).
+- **Funding 2023-24 academic year** — not in any scraped PDF season.
 
 ---
 

@@ -35,7 +35,10 @@ TRIADS_PATH = PROCESSED_DIR / "collaboration_triads.parquet"
 DOMESTIC_WORKS_PATH = PROCESSED_DIR / "domestic_works.parquet"
 SCIMAGEO_YEAR = 2019
 from nirf_utils import (  # noqa: E402
+    load_nirf_rankings_all_years,
+    lookup_nirf_rank_for_institute,
     slider_year_to_funding_academic_year,
+    slider_year_to_nirf_ranking_year,
     slider_year_to_patent_calendar_year,
 )
 
@@ -209,6 +212,8 @@ def build_nodes(
     losers = load_nirf_losers()
     mapped_funding_year = slider_year_to_funding_academic_year(slider_year)
     mapped_patent_year = slider_year_to_patent_calendar_year(slider_year)
+    mapped_ranking_year = slider_year_to_nirf_ranking_year(slider_year)
+    nirf_all_years = load_nirf_rankings_all_years()
 
     nodes = []
     for _, r in master.iterrows():
@@ -250,6 +255,23 @@ def build_nodes(
         name = r["canonical_name"]
         nirf_id = r.get("nirf_institute_id")
         match_status = _nirf_match_status(name, nirf_id, losers)
+        nirf_rank_val = int(r["nirf_rank"]) if pd.notna(r.get("nirf_rank")) else None
+        nirf_cat_val = str(r["nirf_ranking_category"]) if pd.notna(r.get("nirf_ranking_category")) else None
+        nirf_rank_season = int(r["nirf_year"]) if pd.notna(r.get("nirf_year")) else None
+        if slider_year is not None and match_status == "matched":
+            rank_lookup, cat_lookup, season_lookup = lookup_nirf_rank_for_institute(
+                nirf_institute_id=str(nirf_id) if pd.notna(nirf_id) else None,
+                canonical_name=name,
+                ranking_year=mapped_ranking_year,
+                nirf_all_years=nirf_all_years,
+                inst_type=r.get("inst_type"),
+                city=r.get("city"),
+                state=r.get("state"),
+            )
+            if rank_lookup is not None:
+                nirf_rank_val = rank_lookup
+                nirf_cat_val = cat_lookup
+                nirf_rank_season = season_lookup
         dup_cluster = FUNDING_DUPLICATE_CLUSTER_BY_NAME.get(name)
         node: dict = {
             "id": r["institution_id"],
@@ -266,9 +288,13 @@ def build_nodes(
             "radius": _node_radius(r.get("total_works")),
             "scimago_pct": pct,
             "scimago_year": SCIMAGEO_YEAR if pct is not None else None,
-            "nirf_rank": int(r["nirf_rank"]) if pd.notna(r.get("nirf_rank")) else None,
-            "nirf_ranking_category": (
-                str(r["nirf_ranking_category"]) if pd.notna(r.get("nirf_ranking_category")) else None
+            "nirf_rank": nirf_rank_val,
+            "nirf_ranking_category": nirf_cat_val,
+            "nirf_ranking_season": nirf_rank_season,
+            "nirf_rank_year_mismatch": (
+                slider_year is not None
+                and nirf_rank_season is not None
+                and int(nirf_rank_season) != int(slider_year)
             ),
             "nirf_match_status": match_status,
             "research_funding_cr": funding_cr,
@@ -279,7 +305,8 @@ def build_nodes(
             "funding_year_mismatch": (
                 slider_year is not None
                 and funding_cr is not None
-                and (slider_year < 2021 or slider_year >= 2024)
+                and funding_year is not None
+                and str(funding_year) != mapped_funding_year
             ),
             "patents_published": patents_published,
             "patents_granted": patents_granted,
@@ -397,23 +424,27 @@ def hub_annotations(nodes: list[dict]) -> list[str]:
 def temporal_metrics_note(slider_year: int | None) -> str:
     if slider_year is None:
         return (
-            "All-years rollup for collaboration edges; NIRF funding/patents use latest available "
-            f"academic year ({slider_year_to_funding_academic_year(None)}) and patent year "
-            f"({slider_year_to_patent_calendar_year(None)})."
+            "All-years rollup for collaboration edges; NIRF funding/patents/ranks use latest available "
+            f"seasons (funding {slider_year_to_funding_academic_year(None)}, patents "
+            f"{slider_year_to_patent_calendar_year(None)}, ranks {slider_year_to_nirf_ranking_year(None)})."
         )
     fy = slider_year_to_funding_academic_year(slider_year)
     py = slider_year_to_patent_calendar_year(slider_year)
+    ry = slider_year_to_nirf_ranking_year(slider_year)
     parts = [
         f"Collaboration edges: calendar year {slider_year}.",
-        f"Sponsored research: NIRF academic year {fy} (mapped from slider).",
-        f"Patents: calendar year {py} (mapped from slider).",
+        f"Sponsored research: NIRF academic year {fy}.",
+        f"Patents: calendar year {py}.",
+        f"NIRF rank: {ry} ranking season (nearest available to slider).",
     ]
-    if slider_year < 2021:
-        parts.append("Funding before 2021 uses earliest NIRF academic year (2020-21) — no earlier PDF data.")
+    if slider_year < 2016:
+        parts.append("Rankings before 2016 not published on nirfindia.org (404).")
+    if slider_year < 2017:
+        parts.append("Funding before 2017-18 uses earliest scraped academic year.")
     if slider_year > 2022:
-        parts.append("Patent counts for 2023+ use 2022 — no later Innovation PDF years scraped.")
+        parts.append("Patent counts for 2023+ use 2022 — Innovation PDF only on 2024 CDN.")
     if slider_year > 2023:
-        parts.append("Funding for 2024 uses 2022-23 — no 2023-24 academic year in current scrape.")
+        parts.append("Funding for 2024 uses 2022-23 — no 2023-24 academic year in PDFs.")
     return " ".join(parts)
 
 
@@ -450,6 +481,7 @@ def export_year(year: int | None, master: pd.DataFrame, edges: pd.DataFrame, hub
         "quality_note": "SCImago research impact % snapshot (2019 data); static across year slider",
         "funding_academic_year_mapped": slider_year_to_funding_academic_year(year),
         "patent_calendar_year_mapped": slider_year_to_patent_calendar_year(year),
+        "nirf_ranking_season_mapped": slider_year_to_nirf_ranking_year(year),
         "temporal_metrics_note": temporal_metrics_note(year),
         "coverage": coverage,
         "nodes": [node_for_overview(n) for n in overview_nodes],

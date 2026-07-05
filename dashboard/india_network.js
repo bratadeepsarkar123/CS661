@@ -121,24 +121,25 @@ const INDIA = (() => {
       net.meta?.year && net.meta.year !== "all" ? String(net.meta.year) : null;
     const fundAcad = net.meta?.funding_academic_year_mapped;
     const patentCal = net.meta?.patent_calendar_year_mapped;
+    const rankSeason = net.meta?.nirf_ranking_season_mapped;
     const temporal = net.meta?.temporal_metrics_note;
 
     if (sliceYear && fundAcad) {
-      const mismatch =
-        net.meta?.funding_academic_year_mapped &&
-        sliceYear >= 2021 &&
-        ((sliceYear === "2021" && fundAcad !== "2020-21") ||
-          (sliceYear === "2022" && fundAcad !== "2021-22") ||
-          (Number(sliceYear) >= 2023 && fundAcad !== "2022-23" && Number(sliceYear) <= 2023));
       const patentNote =
         patentCal && Number(sliceYear) !== Number(patentCal) && Number(sliceYear) > 2022
           ? ` Patents shown for calendar year ${patentCal} (latest Innovation PDF year).`
           : "";
+      const rankNote =
+        rankSeason && Number(rankSeason) !== Number(sliceYear)
+          ? ` NIRF rank from ${rankSeason} season (nearest to slider).`
+          : rankSeason
+            ? ` NIRF rank from ${rankSeason} season.`
+            : "";
       const carryNote =
-        Number(sliceYear) < 2021
-          ? " Funding uses earliest available NIRF academic year (2020-21)."
+        Number(sliceYear) < 2017
+          ? " Funding uses earliest available NIRF academic year (2017-18)."
           : "";
-      return `<p class="india-data-note">Sponsored research follows the year slider: NIRF academic year <strong>${fundAcad}</strong> for collaboration year ${sliceYear}${fundCount}.${patentNote}${carryNote}${mismatch ? " NIRF rank remains 2024 snapshot." : ""}</p>`;
+      return `<p class="india-data-note">Metrics follow the year slider for collaboration year ${sliceYear}: funding <strong>${fundAcad}</strong>, patents ${patentCal || "—"},${rankNote}${fundCount}.${patentNote}${carryNote}</p>`;
     }
     if (temporal) {
       return `<p class="india-data-note">${temporal}${fundCount}</p>`;
