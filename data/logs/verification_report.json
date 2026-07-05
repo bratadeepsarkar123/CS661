@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T19:52:02.189257+00:00",
+  "generated_at": "2026-07-07T20:02:47.550736+00:00",
   "passed": 20,
   "total": 20,
   "all_pass": true,
@@ -27,7 +27,7 @@
     {
       "name": "full size",
       "ok": true,
-      "detail": "400878 bytes (cap 1953 KB)"
+      "detail": "400933 bytes (cap 1953 KB)"
     },
     {
       "name": "SCImago static year footnote",
@@ -97,7 +97,7 @@
     {
       "name": "NIRF coverage gap report",
       "ok": true,
-      "detail": "funding 102/120, patents 57/120"
+      "detail": "funding 102/120, patents 49/120"
     },
     {
       "name": "AISHE xlsx validation",

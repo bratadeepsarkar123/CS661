@@ -10,6 +10,12 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR, RAW_DIR  # noqa: E402
+from nirf_utils import (  # noqa: E402
+    funding_row_id_name_valid,
+    load_nirf_id_canonical_names,
+    load_nirf_id_overrides,
+    name_similarity,
+)
 
 OUT_PATH = PROCESSED_DIR / "nirf_patents_by_institute.csv"
 INPUTS = [
@@ -35,8 +41,42 @@ def _load() -> pd.DataFrame:
     )
 
 
+
+def _correct_patent_institute_ids(raw: pd.DataFrame) -> pd.DataFrame:
+    id_to_name = load_nirf_id_canonical_names()
+    if not id_to_name:
+        return raw
+    overrides = load_nirf_id_overrides()
+    df = raw.copy()
+    corrected = 0
+    dropped = 0
+    keep: list[int] = []
+    for idx, row in df.iterrows():
+        iid = str(row["institute_id"]).strip()
+        iname = str(row["institute_name"]).strip()
+        if funding_row_id_name_valid(iid, iname, id_to_name):
+            keep.append(idx)
+            continue
+        fixed_id = overrides.get(iname)
+        if not fixed_id:
+            for canon, oid in overrides.items():
+                if name_similarity(iname, canon) >= 0.95:
+                    fixed_id = oid
+                    break
+        if fixed_id and funding_row_id_name_valid(str(fixed_id), iname, id_to_name):
+            df.at[idx, "institute_id"] = str(fixed_id).strip()
+            corrected += 1
+            keep.append(idx)
+            continue
+        dropped += 1
+    if corrected or dropped:
+        print(f"  Patent ID hygiene: remapped {corrected}, dropped {dropped} mismatched rows")
+    return df.loc[keep].copy()
+
+
 def main() -> None:
     raw = _load()
+    raw = _correct_patent_institute_ids(raw)
     required = {"institute_id", "institute_name", "sub_category", "value"}
     if not required.issubset(raw.columns):
         raise ValueError(f"Patent CSV missing columns. Need {required}, got {list(raw.columns)}")

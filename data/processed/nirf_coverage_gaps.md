@@ -1,7 +1,7 @@
 # NIRF data coverage gaps
 
 Funding joined: 102 / 120
-Patents joined: 57 / 120
+Patents joined: 49 / 120
 NIRF IDs assigned: 109 / 120
 NIRF match losers: 11
 
@@ -37,8 +37,10 @@ NIRF match losers: 11
 - **All India Institute of Medical Sciences**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Delhi**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Post Graduate Institute of Medical Education and Research**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **SRM Institute of Science and Technology**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Rajasthan**: Not in NIRF 2024 rankings
 - **Jadavpur University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **Anna University, Chennai**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Calcutta**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Academy of Scientific and Innovative Research**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Amrita Vishwa Vidyapeetham**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
@@ -52,7 +54,9 @@ NIRF match losers: 11
 - **Christian Medical College, Vellore**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Birla Institute of Technology and Science, Pilani**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Madras**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **Koneru Lakshmaiah Education Foundation**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Kasturba Medical College, Manipal**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **KIIT University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Pondicherry University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Osmania University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **SRM University**: Not in NIRF 2024 rankings
@@ -65,6 +69,7 @@ NIRF match losers: 11
 - **Dr. Hari Singh Gour University**: Not in NIRF 2024 rankings
 - **Sri Venkateswara University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **King George's Medical University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **GITAM University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Punjab Agricultural University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Lucknow**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Indian Association for the Cultivation of Science**: Not in NIRF 2024 rankings
@@ -77,15 +82,18 @@ NIRF match losers: 11
 - **Indian Institute of Engineering Science and Technology, Shibpur**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **All India Institute of Medical Sciences Raipur**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Cochin University of Science and Technology**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **University of Petroleum and Energy Studies**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Jawaharlal Institute of Post Graduate Medical Education and Research**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Sardar Vallabhbhai National Institute of Technology Surat**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Central University of Rajasthan**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Government Medical College**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **National Institute of Technology Durgapur**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
+- **GLA University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **University of Kashmir**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Sri Ramachandra Institute of Higher Education and Research**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Punjabi University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Shivaji University**: Not in NIRF 2024 rankings
+- **SASTRA University**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Mangalore University**: Not in NIRF 2024 rankings
 - **Christian Medical College**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)
 - **Jawaharlal Nehru Technological University, Hyderabad**: No Innovation-category PDF on nirfindia.org (patents only in Innovation PDFs)

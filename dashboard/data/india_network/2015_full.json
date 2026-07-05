@@ -19,7 +19,7 @@
       "University of Rajasthan"
     ],
     "funding_reported": 102,
-    "patents_reported": 57,
+    "patents_reported": 49,
     "institutions_total": 120,
     "patent_ceiling_note": "Innovation PDF only; see data/logs/patent_coverage_gaps.json"
   },
@@ -243,10 +243,10 @@
       "sponsored_projects": null,
       "funding_academic_year": null,
       "funding_status": "unavailable",
-      "patents_published": 126,
-      "patents_granted": 32,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "4a1e94cf-f0b6-4560-ab2c-bd58ab8792ac",
@@ -635,10 +635,10 @@
       "sponsored_projects": 93,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 70,
-      "patents_granted": 37,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "18ae8c5a-a263-4906-9d6a-25bf48ed31e6",
@@ -1447,10 +1447,10 @@
       "sponsored_projects": 234,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 338,
-      "patents_granted": 8,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "e53966df-0e1d-4551-bffd-ab1bde3800e4",
@@ -1531,10 +1531,10 @@
       "sponsored_projects": 151,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 100,
-      "patents_granted": 34,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "4521b7d6-9c9f-41f9-8061-593ae0c361dc",
@@ -2175,10 +2175,10 @@
       "sponsored_projects": 0,
       "funding_academic_year": "2022-23",
       "funding_status": "unavailable",
-      "patents_published": 122,
-      "patents_granted": 4,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "b20ed218-ebd3-4a6b-a2c8-9bef7907b934",
@@ -2483,10 +2483,10 @@
       "sponsored_projects": 20,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 31,
-      "patents_granted": 7,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "646437d3-b8bf-4df0-933f-437279dffc88",
@@ -2679,10 +2679,10 @@
       "sponsored_projects": null,
       "funding_academic_year": null,
       "funding_status": "unavailable",
-      "patents_published": 125,
-      "patents_granted": 10,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "4aa00129-4c2f-4e57-9053-cbf0c58dd2c1",
@@ -2875,10 +2875,10 @@
       "sponsored_projects": 73,
       "funding_academic_year": "2022-23",
       "funding_status": "reported",
-      "patents_published": 11,
-      "patents_granted": 5,
-      "patent_calendar_year": 2022,
-      "patent_status": "reported"
+      "patents_published": null,
+      "patents_granted": null,
+      "patent_calendar_year": null,
+      "patent_status": "unavailable"
     },
     {
       "id": "36d17eae-f23d-4896-8bb8-848c7ba25547",

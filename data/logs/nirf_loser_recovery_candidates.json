@@ -63,7 +63,7 @@
       "canonical_name": "SRM University",
       "reason": "no_fuzzy_match",
       "blocked_by": null,
-      "city": "Son\u012bpat",
+      "city": "Sonīpat",
       "state": null,
       "best_nirf_match": {
         "year": "2024",
@@ -289,7 +289,7 @@
       "canonical_name": "Shivaji University",
       "reason": "no_fuzzy_match",
       "blocked_by": null,
-      "city": "Kolh\u0101pur",
+      "city": "Kolhāpur",
       "state": "Maharashtra",
       "best_nirf_match": {
         "year": "2024",
@@ -364,11 +364,16 @@
         "score": 0.785
       },
       "recommended_action": "manual_review",
-      "notes": "Weak match only (0.785)",
+      "notes": "No PDF-verified institute ID; remain unmatched",
       "manual_review_outcome": {
         "nirf_id_found": null,
         "override": false,
-        "reason": "NIRF 2024 University rank-band 151-200 (Coimbatore) confirmed on nirfindia.org but IR-O-U institute ID not verified via PDF; reject Manipal Academy IR-O-U-0234 (Manipal, Karnataka)"
+        "reason": "NIRF 2024 University rank-band 151-200 (Coimbatore) per prior nirfindia check; IR-O-U-0459 unverified (no row in nirf_rankings*.csv/supplement; PDF HEAD 404). Reject Manipal IR-O-U-0234.",
+        "candidate_ids_checked": [
+          "IR-O-U-0459",
+          "IR-O-U-0234"
+        ],
+        "web_search_date": "2026-07-08"
       }
     },
     {

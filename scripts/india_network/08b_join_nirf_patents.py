@@ -9,7 +9,13 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR  # noqa: E402
-from nirf_utils import FUNDING_NAME_ALIASES, load_nirf_id_overrides, name_similarity, norm_name  # noqa: E402
+from nirf_utils import (  # noqa: E402
+    FUNDING_NAME_ALIASES,
+    funding_campus_compatible,
+    load_nirf_id_overrides,
+    name_similarity,
+    norm_name,
+)
 
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 PATENTS_PATH = PROCESSED_DIR / "nirf_patents_by_institute.csv"
@@ -24,13 +30,37 @@ UNRANKED_NIRF_NAMES = {
 }
 
 
-def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_lookup: dict) -> tuple[pd.Series | None, float, str | None]:
+def _inst_nirf_id(inst: pd.Series, overrides: dict[str, str]) -> str | None:
+    nirf_id = inst.get("nirf_institute_id")
+    if pd.isna(nirf_id):
+        nirf_id = overrides.get(str(inst["canonical_name"]))
+    if pd.isna(nirf_id) or not str(nirf_id).strip():
+        return None
+    return str(nirf_id).strip()
+
+
+def _patent_row_compatible(inst: pd.Series, patent_row: pd.Series, inst_id: str | None) -> bool:
+    patent_id = str(patent_row.get("nirf_institute_id") or "").strip()
+    if inst_id and patent_id and inst_id != patent_id:
+        return False
+    patent_name = str(patent_row.get("institute_name_nirf") or "")
+    city = inst.get("city")
+    return funding_campus_compatible(str(inst["canonical_name"]), patent_name, city)
+
+
+
+def _pick_row(
+    inst: pd.Series,
+    patents: pd.DataFrame,
+    idx: pd.DataFrame,
+    id_lookup: dict,
+    overrides: dict[str, str],
+) -> tuple[pd.Series | None, float, str | None]:
     name = inst["canonical_name"]
     nn = norm_name(FUNDING_NAME_ALIASES.get(name, name))
 
-    nirf_id = inst.get("nirf_institute_id")
-    if pd.isna(nirf_id):
-        nirf_id = load_nirf_id_overrides().get(name)
+    inst_id = _inst_nirf_id(inst, overrides)
+    nirf_id = inst_id
     if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
         row = id_lookup[str(nirf_id)]
         return row, 1.0, str(row.get("nirf_institute_id") or nirf_id)
@@ -38,7 +68,8 @@ def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_look
         row = idx.loc[nn]
         if isinstance(row, pd.DataFrame):
             row = row.iloc[0]
-        return row, 1.0, str(row.get("nirf_institute_id") or nn)
+        if _patent_row_compatible(inst, row, inst_id):
+            return row, 1.0, str(row.get("nirf_institute_id") or nn)
 
     best = None
     best_score = 0.0
@@ -50,9 +81,7 @@ def _pick_row(inst: pd.Series, patents: pd.DataFrame, idx: pd.DataFrame, id_look
             best_score = score
             best = p
     if best is not None and best_score >= 0.78:
-        patent_id = str(best.get("nirf_institute_id") or "")
-        inst_id = inst.get("nirf_institute_id")
-        if pd.notna(inst_id) and patent_id and str(inst_id) != patent_id:
+        if not _patent_row_compatible(inst, best, inst_id):
             return None, 0.0, None
         return best, best_score, str(best.get("nirf_institute_id") or best.get("name_norm"))
     return None, 0.0, None
@@ -115,6 +144,7 @@ def main() -> None:
     patents = pd.read_csv(PATENTS_PATH)
     idx = patents.set_index("name_norm")
     id_lookup = {str(r["nirf_institute_id"]): r for _, r in patents.iterrows()}
+    overrides = load_nirf_id_overrides()
 
     rows = []
     for _, inst in master.iterrows():
@@ -136,7 +166,7 @@ def main() -> None:
             )
             continue
 
-        row, score, source_id = _pick_row(inst, patents, idx, id_lookup)
+        row, score, source_id = _pick_row(inst, patents, idx, id_lookup, overrides)
         if row is not None and pd.notna(row.get("patents_published")):
             status = "reported"
         elif pd.notna(inst.get("nirf_rank")) or pd.notna(inst.get("nirf_institute_id")):
