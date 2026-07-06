@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-
+  
   <!-- PapaParse for CSV Parsing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <!-- Chart.js for Trend Analysis -->
@@ -50,7 +50,7 @@
   <main class="gallery-section">
     <div class="gallery-header">
       <h2>Choose a Visualization</h2>
-      <p>Click any panel to open the full interactive experience · <a href="design-preview.html" style="color:#60a5fa">M2 &amp; M5 design variants (preview)</a></p>
+      <p>Click any panel to open the full interactive experience</p>
     </div>
 
     <div class="viz-grid">
@@ -90,9 +90,9 @@
           <h3>Global Quality Shift</h3>
           <p>Tracking how the global mix of elite (Q1) vs low-tier (Q4) publication quality evolves over time</p>
           <div class="card-tags">
-            <span class="tag">Ridgeline Plot</span>
-            <span class="tag">Joyplot</span>
-            <span class="tag">Animation</span>
+            <span class="tag">Bar Graph</span>
+            <span class="tag">Grouped/Stacked</span>
+            <span class="tag">Quality Mix</span>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@
         </div>
         <div class="card-info">
           <div class="viz-number">03</div>
-          <h3>Top-10 Research Topics</h3>
+          <h3>Top Research topics</h3>
           <p>Ranking the most-published research topics globally and showing field prominence changes</p>
           <div class="card-tags">
             <span class="tag">Bar Chart Race</span>
@@ -200,11 +200,14 @@
   <script src="https://d3js.org/d3.v7.min.js"></script>
   <script src="https://unpkg.com/topojson@3/dist/topojson.min.js"></script>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+  <script src="viz1_data.js"></script>
   <script src="ridgeline_data.js"></script>
   <script src="data.js"></script>
   <script src="viz3_data.js"></script>
   <script src="india_network_data.js"></script>
   <script src="india_network.js"></script>
+  <script src="viz4_data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,3 +1,21 @@
+// --- VIZ 1 GLOBALS ---
+let viz1Year = 2022;
+let viz1YearsRange = [1996, 2024];
+let viz1IsPlaying = false;
+let viz1Speed = 600;
+let viz1SelectedRegion = null;
+let viz1SearchQuery = '';
+let viz1ComparedCountries = [];
+let viz1ShowSpecific = false;
+let viz1PlayInterval = null;
+
+const viz1ColorPalette = ['#00f2fe','#ff0844','#c471ed','#00ff87','#f6d365','#ff758c','#4facfe','#d4fc79'];
+
+function getViz1Regions() {
+  if (typeof VIZ1_DATA === 'undefined') return [];
+  return [...new Set(VIZ1_DATA.map(d => d.Region).filter(Boolean))].sort();
+}
+
 // ============================================================
 // CS661 Group 10 — App Logic
 // Gallery → Fullscreen Interactive Panel System
@@ -75,46 +93,44 @@ function drawPreview2() {
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
 
-  // Draw 3 columns of node blocks
-  const colX = [w * 0.25, w * 0.5, w * 0.75];
-  const nodeW = 10;
-  
-  // Year columns flow path curves
-  ctx.lineWidth = 1.5;
-  
-  // Draw some smooth ribbons connecting columns
-  const flows = [
-    { y1: h*0.3, y2: h*0.3, col: "rgba(56,189,248,0.3)" }, // Elite flow (blue)
-    { y1: h*0.3, y2: h*0.7, col: "rgba(244,63,94,0.15)" }, // Elite -> Q4 drift
-    { y1: h*0.5, y2: h*0.5, col: "rgba(148,163,184,0.25)" }, // Balanced
-    { y1: h*0.7, y2: h*0.7, col: "rgba(244,63,94,0.3)" }  // Q4 dominant
-  ];
-
-  flows.forEach(f => {
-    ctx.strokeStyle = f.col;
+  // Draw light gridlines
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
+  ctx.lineWidth = 1;
+  for (let y = h * 0.2; y <= h * 0.8; y += h * 0.2) {
     ctx.beginPath();
-    ctx.moveTo(colX[0] + nodeW, f.y1);
-    ctx.bezierCurveTo((colX[0]+colX[1])/2, f.y1, (colX[0]+colX[1])/2, f.y2, colX[1], f.y2);
+    ctx.moveTo(w * 0.1, y);
+    ctx.lineTo(w * 0.9, y);
     ctx.stroke();
+  }
+
+  // Draw ground line
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
+  ctx.beginPath();
+  ctx.moveTo(w * 0.1, h * 0.8);
+  ctx.lineTo(w * 0.9, h * 0.8);
+  ctx.stroke();
+
+  // Draw 5 pairs of bars (Grouped preview)
+  const numGroups = 5;
+  const groupW = (w * 0.8) / numGroups;
+  const barW = groupW * 0.35;
+  const gap = groupW * 0.1;
+
+  for (let i = 0; i < numGroups; i++) {
+    const x0 = w * 0.1 + i * groupW + gap;
     
-    ctx.beginPath();
-    ctx.moveTo(colX[1] + nodeW, f.y2);
-    ctx.bezierCurveTo((colX[1]+colX[2])/2, f.y2, (colX[1]+colX[2])/2, f.y2, colX[2], f.y2);
-    ctx.stroke();
-  });
+    // Alt heights
+    const hQ1 = h * (0.2 + Math.random() * 0.4);
+    const hQ4 = h * (0.1 + Math.random() * 0.3);
 
-  // Draw node blocks
-  colX.forEach(x => {
-    // Elite block
+    // Q1 bar (cyan)
     ctx.fillStyle = "#38bdf8";
-    ctx.fillRect(x, h * 0.22, nodeW, h * 0.16);
-    // Balanced block
-    ctx.fillStyle = "#94a3b8";
-    ctx.fillRect(x, h * 0.44, nodeW, h * 0.12);
-    // Q4 block
+    ctx.fillRect(x0, h * 0.8 - hQ1, barW, hQ1);
+
+    // Q4 bar (rose red)
     ctx.fillStyle = "#f43f5e";
-    ctx.fillRect(x, h * 0.62, nodeW, h * 0.22);
-  });
+    ctx.fillRect(x0 + barW, h * 0.8 - hQ4, barW, hQ4);
+  }
 }
 
 function drawPreview3() {
@@ -217,7 +233,9 @@ window.openViz = async function(id) {
       console.error("India network load failed:", err);
     }
   }
-  hideLoading();
+  if (id !== 1) {
+    hideLoading();
+  }
   renderViz(id);
 
   document.getElementById("prev-btn").disabled = (id === 1);
@@ -248,22 +266,73 @@ function buildControls(id) {
 
 
   if (id === 2) {
-    // Get unique sorted list of all countries across all years
-    const rawData = DATA.getRidgelineData() || {};
-    const countriesList = Array.from(new Set(
-      Object.values(rawData).flat().map(c => c.country)
-    )).sort();
-
-    const cSel = document.createElement("select");
-    cSel.className = "ctrl-select";
-    cSel.innerHTML = `<option value="">-- Highlight Trajectory --</option>` +
-      countriesList.map(c => `<option value="${c}">${c}</option>`).join("");
-    cSel.value = selectedCountryTrail || "";
-    cSel.onchange = () => {
-      selectedCountryTrail = cSel.value || null;
+    const wrap = el("div", "year-slider-wrap");
+    const yLabel = el("span", "ctrl-label", "Year:");
+    const slider = document.createElement("input");
+    slider.type = "range";
+    slider.className = "ctrl-range";
+    slider.min = 1999;
+    slider.max = 2024;
+    slider.value = APP.year >= 1999 && APP.year <= 2024 ? APP.year : 2024;
+    APP.year = +slider.value;
+    const yearVal = el("span", "year-val", APP.year);
+    slider.oninput = () => {
+      APP.year = +slider.value;
+      yearVal.textContent = APP.year;
       renderViz(2);
     };
-    c.append(el("span", "ctrl-label", "Highlight Country:"), cSel);
+    wrap.append(yLabel, slider, yearVal);
+
+    const playBtn = el("button", "ctrl-btn", "▶ Play");
+    playBtn.id = "play-btn";
+    playBtn.onclick = () => toggleAnimation(slider, yearVal, playBtn, 1999, 2024);
+
+    // Speed toggle button next to play button
+    const speedBtn = el("button", "ctrl-btn", APP.speed === 600 ? "2x" : "1x");
+    speedBtn.style.minWidth = "38px";
+    speedBtn.style.fontWeight = "800";
+    speedBtn.onclick = () => {
+      if (APP.speed === 1200) {
+        APP.speed = 600;
+        speedBtn.textContent = "2x";
+        speedBtn.style.color = "#38bdf8";
+        speedBtn.style.borderColor = "rgba(56,189,248,0.4)";
+      } else {
+        APP.speed = 1200;
+        speedBtn.textContent = "1x";
+        speedBtn.style.color = "";
+        speedBtn.style.borderColor = "";
+      }
+    };
+    if (APP.speed === 600) {
+      speedBtn.style.color = "#38bdf8";
+      speedBtn.style.borderColor = "rgba(56,189,248,0.4)";
+    }
+
+    // Grouped / Stacked toggle switch matching system style
+    const toggleWrap = el("div", "toggle-group");
+    const optGrouped = el("button", "toggle-opt" + (barChartMode === "grouped" ? " on" : ""), "Grouped");
+    const optStacked = el("button", "toggle-opt" + (barChartMode === "stacked" ? " on" : ""), "Stacked");
+    
+    optGrouped.onclick = () => {
+      barChartMode = "grouped";
+      optGrouped.classList.add("on");
+      optStacked.classList.remove("on");
+      renderViz(2);
+    };
+    
+    optStacked.onclick = () => {
+      barChartMode = "stacked";
+      optStacked.classList.add("on");
+      optGrouped.classList.remove("on");
+      renderViz(2);
+    };
+    
+    toggleWrap.append(optGrouped, optStacked);
+    
+    const divider = el("div", "ctrl-divider");
+
+    c.append(wrap, playBtn, speedBtn, divider, toggleWrap);
   }
 
   if (id === 4) {
@@ -277,7 +346,28 @@ function buildControls(id) {
     `;
     sortSel.value = APP.sort;
     sortSel.onchange = () => { APP.sort = sortSel.value; renderViz(4); };
-    c.append(el("span","ctrl-label","Order By:"), sortSel);
+    
+    const regionSel = document.createElement("select");
+    regionSel.id = "viz4-region-select";
+    regionSel.className = "ctrl-select";
+    regionSel.innerHTML = `
+      <option value="All">All Regions</option>
+      <option value="North America">North America</option>
+      <option value="Europe">Europe</option>
+      <option value="East Asia & Pacific">East Asia & Pacific</option>
+      <option value="South Asia">South Asia</option>
+      <option value="Latin America">Latin America</option>
+      <option value="Middle East & Africa">Middle East & Africa</option>
+      <option value="Oceania">Oceania</option>
+    `;
+    regionSel.value = APP.region || "All";
+    regionSel.onchange = () => { APP.region = regionSel.value; renderViz(4); };
+
+    c.append(
+      el("span","ctrl-label","Region:"), regionSel, 
+      el("div", "ctrl-divider"), 
+      el("span","ctrl-label","Order By:"), sortSel
+    );
   }
 
   if (id === 5) {
@@ -345,41 +435,493 @@ function renderViz(id) {
 // VIZ 1: High-Dimensional Peer Clustering (t-SNE/UMAP Scatter)
 // ══════════════════════════════════════════════════════════
 function renderViz1(body) {
-  const W = body.offsetWidth || 900, H = body.offsetHeight || 500;
+  if (typeof VIZ1_DATA !== 'undefined') {
+    const allYears = [...new Set(VIZ1_DATA.map(d => d.Year).filter(y => y != null && !isNaN(y)))];
+    if (allYears.length > 0) {
+      viz1YearsRange = [Math.min(...allYears), Math.max(...allYears)];
+      viz1Year = Math.max(...allYears);
+    }
+  }
+
+  body.innerHTML = `
+    <div class="viz1-layout">
+      <!-- SIDEBAR -->
+      <div class="viz1-sidebar">
+        <div>
+          <h2 class="viz1-title">Scientific Peer Clusters</h2>
+          <p class="viz1-desc">Uncovering the hidden relationships between national wealth, R&D funding, and scientific impact.</p>
+        </div>
+
+        <div id="viz1-region-ui" style="display: none;">
+          <button id="viz1-back-btn" style="background: linear-gradient(145deg, rgba(34,211,238,0.15), rgba(0,0,0,0.2)); border: 1px solid rgba(34,211,238,0.4); color: #22d3ee; padding: 10px 14px; border-radius: 6px; cursor: pointer; width: 100%; display: flex; align-items: center; justify-content: space-between; font-weight: 600; font-size: 13px; box-shadow: 0 2px 8px rgba(34,211,238,0.1); transition: all 0.2s ease;">
+            ← Back to Global View <span id="viz1-region-tag" style="background: rgba(255,255,255,0.2); padding: 2px 6px; border-radius: 4px; font-size: 11px;"></span>
+          </button>
+        </div>
+
+        <div class="viz1-control-group">
+          <label>Compare Nations</label>
+          <p style="font-size: 12px; color: #94a3b8; margin: 0; line-height: 1.4;">Click on bubbles in the chart to select countries for comparison.</p>
+          <div id="viz1-compare-ui" style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px;"></div>
+        </div>
+
+        <div class="viz1-control-group">
+          <label>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            Search Countries
+          </label>
+          <div class="viz1-search-container">
+            <input type="text" id="viz1-search" class="viz1-search-input" placeholder="e.g. India, Japan, USA...">
+            <svg class="viz1-search-large-icon" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="3"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          </div>
+        </div>
+
+        <div class="viz1-control-group">
+          <label>Timeline <span id="viz1-year-label" style="margin-left: auto; background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px;">${viz1Year}</span></label>
+          <div style="display: flex; gap: 10px; align-items: center;">
+            <button id="viz1-play-btn" class="viz1-play-btn">▶ Play</button>
+            <input type="range" id="viz1-year-slider" min="${viz1YearsRange[0]}" max="${viz1YearsRange[1]}" value="${viz1Year}" style="flex: 1;">
+          </div>
+        </div>
+
+        <div class="viz1-stats-card">
+          <div class="viz1-stats-header">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            Snapshot
+          </div>
+          <div class="viz1-stats-row"><span>Nations:</span><span id="viz1-stat-nations">-</span></div>
+          <div class="viz1-stats-row"><span>Regions:</span><span id="viz1-stat-regions">-</span></div>
+          <div class="viz1-stats-row"><span>Publications:</span><span id="viz1-stat-pubs">-</span></div>
+        </div>
+      </div>
+
+      <!-- MAIN PLOT AREA -->
+      <div class="viz1-plot">
+        <button id="viz1-specific-btn" class="viz1-specific-btn">Show Specific Countries</button>
+        
+        <div id="viz1-plotly-container" style="width: 100%; height: 100%;"></div>
+        
+        <div class="viz1-visual-guide">
+          <h4>Visual Encodings</h4>
+          <div style="display: grid; gap: 6px;">
+            <div><strong style="color: #22d3ee;">X & Y Axes:</strong> 2D UMAP Projection (Mathematically combining Wealth, R&D Spend, Publication Volume, & Quality)</div>
+            <div><strong style="color: #22d3ee;">Bubble Size:</strong> Total Publications (Volume)</div>
+            <div><strong style="color: #22d3ee;">Color:</strong> Geographic Region</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
   
-  const iframe = document.createElement("iframe");
-  iframe.src = "graph1.html";
-  iframe.style.width = "100%";
-  iframe.style.height = H + "px";
-  iframe.style.border = "none";
-  iframe.style.borderRadius = "8px"; // aesthetic touch
+  // Attach Event Listeners
+  document.getElementById('viz1-back-btn').addEventListener('click', () => {
+    viz1SelectedRegion = null;
+    drawViz1Plotly();
+    updateViz1RegionUI();
+  });
   
-  body.appendChild(iframe);
+  const slider = document.getElementById('viz1-year-slider');
+  const label = document.getElementById('viz1-year-label');
+  const playBtn = document.getElementById('viz1-play-btn');
+  const search = document.getElementById('viz1-search');
+  const specificBtn = document.getElementById('viz1-specific-btn');
+  
+  slider.addEventListener('input', (e) => {
+    viz1Year = parseInt(e.target.value, 10);
+    label.textContent = viz1Year;
+    drawViz1Plotly();
+  });
+  
+  playBtn.addEventListener('click', () => {
+    viz1IsPlaying = !viz1IsPlaying;
+    playBtn.innerHTML = viz1IsPlaying ? '⏸ Pause' : '▶ Play';
+    
+    if (viz1IsPlaying) {
+      viz1PlayInterval = setInterval(() => {
+        viz1Year++;
+        if (viz1Year > viz1YearsRange[1]) viz1Year = viz1YearsRange[0];
+        slider.value = viz1Year;
+        label.textContent = viz1Year;
+        drawViz1Plotly();
+      }, viz1Speed);
+    } else {
+      clearInterval(viz1PlayInterval);
+    }
+  });
+  
+  search.addEventListener('input', (e) => {
+    viz1SearchQuery = e.target.value;
+    drawViz1Plotly();
+  });
+  
+  specificBtn.addEventListener('click', () => {
+    viz1ShowSpecific = !viz1ShowSpecific;
+    specificBtn.textContent = viz1ShowSpecific ? 'Show All Countries' : 'Show Specific Countries';
+    if (viz1ShowSpecific) {
+        specificBtn.classList.add('active');
+    } else {
+        specificBtn.classList.remove('active');
+    }
+    drawViz1Plotly();
+  });
+  
+  buildControls(1); // Clears the global top bar
+  drawViz1Plotly();
+  updateViz1RegionUI();
+  hideLoading();
 }
+
+function updateViz1RegionUI() {
+  const ui = document.getElementById('viz1-region-ui');
+  const tag = document.getElementById('viz1-region-tag');
+  if (ui && tag) {
+    if (viz1SelectedRegion) {
+      ui.style.display = 'block';
+      tag.textContent = viz1SelectedRegion;
+    } else {
+      ui.style.display = 'none';
+    }
+  }
+}
+
+function updateViz1CompareUI() {
+  const container = document.getElementById('viz1-compare-ui');
+  if (!container) return;
+  
+  if (viz1ComparedCountries.length === 0) {
+    container.innerHTML = '';
+    return;
+  }
+  
+  let html = '';
+  viz1ComparedCountries.forEach(code => {
+    const d = VIZ1_DATA.find(x => x.Country_Code === code);
+    const name = d ? d.Country_Name : code;
+    html += `<span style="background: rgba(34,211,238,0.2); color: #22d3ee; padding: 4px 8px; border-radius: 4px; font-size: 12px; display: flex; align-items: center; gap: 4px;">
+      ${name} <span class="viz1-remove-compare" data-code="${code}" style="cursor: pointer;">✕</span>
+    </span>`;
+  });
+  
+  html += `<button id="viz1-clear-compare" style="background: transparent; border: none; color: #f43f5e; font-size: 12px; cursor: pointer; text-decoration: underline;">Clear All</button>`;
+  
+  container.innerHTML = html;
+  
+  document.querySelectorAll('.viz1-remove-compare').forEach(el => {
+    el.addEventListener('click', (e) => {
+      const code = e.target.getAttribute('data-code');
+      viz1ComparedCountries = viz1ComparedCountries.filter(c => c !== code);
+      drawViz1Plotly();
+      updateViz1CompareUI();
+    });
+  });
+  
+  const clearBtn = document.getElementById('viz1-clear-compare');
+  if (clearBtn) {
+    clearBtn.addEventListener('click', () => {
+      viz1ComparedCountries = [];
+      drawViz1Plotly();
+      updateViz1CompareUI();
+    });
+  }
+}
+
+const VIZ1_SPECIFIC_COUNTRIES = [
+  "USA", "CHN", "GBR", "DEU", "IND", "JPN", "FRA", "CAN", "ITA", "KOR", "AUS", "ESP", "BRA", "RUS", "NLD", 
+  "IDN", "TUR", "IRN", "SAU", "POL", "CHE", "MYS", "PAK", "EGY", "MEX", "PRT", "SWE", "BEL", "ZAF", "NGA", "DNK", "UKR", "HKG", "AUT", "NOR",
+  "IRQ", "ECU", "NPL", "VNM", "PER", "ETH", "GHA", "CYP", "COL", "UGA", "ARE", "BGD", "TJK", "PHL", "DZA"
+];
+
+function drawViz1Plotly() {
+  const container = document.getElementById('viz1-plotly-container');
+  if (!container || typeof VIZ1_DATA === 'undefined') return;
+  
+  const allRegions = getViz1Regions();
+  const targetYear = parseInt(viz1Year, 10);
+  let yearData = VIZ1_DATA.filter(d => d.Year === targetYear);
+  if (viz1SelectedRegion) {
+    yearData = yearData.filter(d => d.Region === viz1SelectedRegion);
+  }
+  
+  // Update Snapshot
+  const statNations = document.getElementById('viz1-stat-nations');
+  const statRegions = document.getElementById('viz1-stat-regions');
+  const statPubs = document.getElementById('viz1-stat-pubs');
+  if (statNations) statNations.textContent = yearData.length;
+  if (statRegions) {
+      if (viz1SelectedRegion) statRegions.textContent = 1;
+      else statRegions.textContent = allRegions.length;
+  }
+  if (statPubs) {
+      const totalPubs = yearData.reduce((sum, d) => sum + (d.Total_Docs || 0), 0);
+      statPubs.textContent = Math.round(totalPubs).toLocaleString();
+  }
+  
+  const searchTerms = viz1SearchQuery.toLowerCase().split(',').map(s => s.trim()).filter(Boolean);
+  const isSearchActive = searchTerms.length > 0;
+  
+  const matchesSearch = (countryName) => {
+    if (!isSearchActive) return true;
+    const name = (countryName || '').toLowerCase();
+    return searchTerms.some(term => name.includes(term));
+  };
+  
+  const isCompareActive = viz1ComparedCountries.length > 0;
+  
+  const traces = allRegions.map((region, globalIndex) => {
+    const regionNodes = yearData.filter(d => d.Region === region);
+    const regionColor = viz1ColorPalette[globalIndex % viz1ColorPalette.length];
+    
+    if (regionNodes.length === 0) {
+      return { x: [], y: [], mode: 'markers', type: 'scatter', name: region, marker: { color: regionColor } };
+    }
+    
+    const sizes = regionNodes.map(d => {
+      if (viz1ShowSpecific && !VIZ1_SPECIFIC_COUNTRIES.includes(d.Country_Code)) return 0;
+      return Math.max(6, Math.sqrt(d.Total_Docs || 0) * 0.08);
+    });
+    
+    const opacities = regionNodes.map(d => {
+      if (viz1ShowSpecific && !VIZ1_SPECIFIC_COUNTRIES.includes(d.Country_Code)) return 0;
+      if (isCompareActive) return viz1ComparedCountries.includes(d.Country_Code) ? 1.0 : 0.05;
+      if (!isSearchActive) return 0.85; 
+      return matchesSearch(d.Country_Name) ? 1.0 : 0.15; 
+    });
+    
+    const lineWidths = regionNodes.map(d => {
+      if (viz1ShowSpecific && !VIZ1_SPECIFIC_COUNTRIES.includes(d.Country_Code)) return 0;
+      if (isCompareActive) return viz1ComparedCountries.includes(d.Country_Code) ? 4 : 0.5;
+      if (!isSearchActive) return 1; 
+      return matchesSearch(d.Country_Name) ? 3 : 0.5; 
+    });
+    
+    const lineColors = regionNodes.map(d => {
+      if (viz1ShowSpecific && !VIZ1_SPECIFIC_COUNTRIES.includes(d.Country_Code)) return 'transparent';
+      if (isCompareActive) return viz1ComparedCountries.includes(d.Country_Code) ? '#22d3ee' : 'rgba(255,255,255,0.05)';
+      if (!isSearchActive) return 'rgba(255,255,255,0.7)'; 
+      return matchesSearch(d.Country_Name) ? '#ffffff' : 'rgba(255,255,255,0.05)'; 
+    });
+    
+    const hoverinfos = regionNodes.map(d => {
+      if (viz1ShowSpecific && !VIZ1_SPECIFIC_COUNTRIES.includes(d.Country_Code)) return 'skip';
+      return 'text';
+    });
+    
+    const fmt = (v, decimals = 0) => { if (v == null || isNaN(v)) return 'N/A'; return Number(v).toLocaleString(undefined, { maximumFractionDigits: decimals }); };
+    
+    const text = regionNodes.map(d => (
+      `<b><span style="font-size:16px">${d.Country_Name || 'Unknown'}</span></b><br>` +
+      `<i>${d.Region || ''}</i><br><br>` +
+      `📚 Publications: <b>${fmt(d.Total_Docs)}</b><br>🎯 H-Index: <b>${fmt(d.H_Index)}</b><br>` +
+      `🔬 R&D Spend: <b>${fmt(d.GERD_Percent_GDP, 2)}%</b><br>💰 GDP/Capita: <b>$${fmt(d.GDP_Per_Capita_PPP)}</b>`
+    ));
+    
+    return { 
+      x: regionNodes.map(d => d.x), 
+      y: regionNodes.map(d => d.y), 
+      customdata: regionNodes.map(d => d.Country_Code), 
+      mode: 'markers', 
+      type: 'scatter', 
+      name: region, 
+      text: text, 
+      hoverinfo: hoverinfos, 
+      marker: { size: sizes, color: regionColor, opacity: opacities, line: { color: lineColors, width: lineWidths }, sizemode: 'diameter' } 
+    };
+  });
+  
+  const layout = {
+    uirevision: 'true',
+    title: false, 
+    transition: { duration: viz1Speed * 0.85, easing: 'cubic-in-out' },
+    paper_bgcolor: 'transparent', plot_bgcolor: 'transparent',
+    font: { family: 'Plus Jakarta Sans, sans-serif', color: '#f8fafc' },
+    xaxis: { title: 'Dimensionality Reduction (Wealth, R&D, Volume, Quality)', type: 'linear', showgrid: true, gridcolor: 'rgba(255,255,255,0.05)', zeroline: true, zerolinecolor: 'rgba(255,255,255,0.1)', showline: true, linecolor: 'rgba(255,255,255,0.2)', showticklabels: false },
+    yaxis: { title: 'UMAP Projection Space', type: 'linear', showgrid: true, gridcolor: 'rgba(255,255,255,0.05)', zeroline: true, zerolinecolor: 'rgba(255,255,255,0.1)', showline: true, linecolor: 'rgba(255,255,255,0.2)', showticklabels: false },
+    hovermode: 'closest',
+    hoverlabel: { bgcolor: 'rgba(15, 23, 42, 0.95)', font: { family: 'Plus Jakarta Sans, sans-serif', size: 13, color: '#f8fafc' }, bordercolor: '#22d3ee' },
+    legend: { font: { color: '#e2e8f0', size: 12 }, orientation: 'h', yanchor: 'bottom', y: 1.05, xanchor: 'center', x: 0.5, itemclick: false, itemdoubleclick: false },
+    margin: { l: 20, r: 20, t: 40, b: 20 }
+  };
+  
+  const config = { displayModeBar: false, responsive: true };
+  
+  if (typeof Plotly !== 'undefined') {
+    Plotly.react(container, traces, layout, config).then(() => {
+      container.on('plotly_click', function(data){
+        const point = data.points && data.points[0];
+        if (point && point.customdata) {
+          const code = point.customdata;
+          if (viz1ComparedCountries.includes(code)) {
+            viz1ComparedCountries = viz1ComparedCountries.filter(c => c !== code);
+          } else {
+            viz1ComparedCountries.push(code);
+          }
+          drawViz1Plotly();
+          updateViz1CompareUI();
+        }
+      });
+      
+      container.on('plotly_legendclick', function(data){
+        const r = data.data[data.curveNumber] && data.data[data.curveNumber].name; 
+        if (r) {
+          viz1SelectedRegion = r;
+          drawViz1Plotly();
+          updateViz1RegionUI();
+        }
+        return false;
+      });
+    });
+  }
+}
+
 
 // ══════════════════════════════════════════════════════════
 // VIZ 2: Global Quality Shift (Beeswarm Bubble Chart)
 // ══════════════════════════════════════════════════════════
 let activeRegionFilter = "All";
+let activeContinentFilter = "All";
+let minPubFilter = 0;
+let minHIndexFilter = 0;
+let minRdFilter = 0;
+let minGdpFilter = 0;
 let selectedCountryTrail = null;
+let barChartMode = "grouped";
+let activeSortParameter = "Default";
+
+const getCountryMetrics = (countryName, year, q1Count, q4Count, totalCount) => {
+  // Base metrics mapping
+  const baseMetrics = {
+    "United States": { continent: "Americas", rd: 2.74, gdp: 55000, h: 1279 },
+    "United Kingdom": { continent: "Europe", rd: 1.77, gdp: 42000, h: 554 },
+    "Germany": { continent: "Europe", rd: 2.74, gdp: 45000, h: 505 },
+    "China": { continent: "Asia", rd: 1.71, gdp: 8000, h: 583 },
+    "India": { continent: "Asia", rd: 0.85, gdp: 1700, h: 260 },
+    "Japan": { continent: "Asia", rd: 3.14, gdp: 39000, h: 429 },
+    "South Korea": { continent: "Asia", rd: 3.47, gdp: 28000, h: 349 },
+    "Brazil": { continent: "Americas", rd: 1.16, gdp: 9000, h: 234 },
+    "France": { continent: "Europe", rd: 2.18, gdp: 40000, h: 470 },
+    "Canada": { continent: "Americas", rd: 1.80, gdp: 44000, h: 468 },
+    "Australia": { continent: "Oceania", rd: 2.24, gdp: 50000, h: 393 },
+    "Russian Federation": { continent: "Europe", rd: 1.13, gdp: 11000, h: 266 },
+    "South Africa": { continent: "Africa", rd: 0.73, gdp: 6000, h: 168 },
+    "Saudi Arabia": { continent: "Asia", rd: 0.48, gdp: 20000, h: 137 },
+    "Switzerland": { continent: "Europe", rd: 2.93, gdp: 80000, h: 478 },
+    "Singapore": { continent: "Asia", rd: 2.01, gdp: 58000, h: 229 },
+    "Turkey": { continent: "Asia", rd: 0.84, gdp: 10000, h: 169 },
+    "Israel": { continent: "Asia", rd: 3.93, gdp: 37000, h: 272 },
+    
+    // Continent Mapping & sensible averages for other countries
+    "Argentina": { continent: "Americas", rd: 0.58, gdp: 12000, h: 120 },
+    "Austria": { continent: "Europe", rd: 2.90, gdp: 48000, h: 250 },
+    "Belgium": { continent: "Europe", rd: 2.30, gdp: 43000, h: 280 },
+    "Chile": { continent: "Americas", rd: 0.38, gdp: 14000, h: 110 },
+    "Colombia": { continent: "Americas", rd: 0.25, gdp: 6000, h: 80 },
+    "Croatia": { continent: "Europe", rd: 0.85, gdp: 13500, h: 90 },
+    "Czech Republic": { continent: "Europe", rd: 1.60, gdp: 19000, h: 140 },
+    "Denmark": { continent: "Europe", rd: 2.95, gdp: 53000, h: 320 },
+    "Egypt": { continent: "Africa", rd: 0.60, gdp: 3000, h: 95 },
+    "Finland": { continent: "Europe", rd: 2.80, gdp: 46000, h: 210 },
+    "Greece": { continent: "Europe", rd: 0.80, gdp: 18000, h: 180 },
+    "Hong Kong": { continent: "Asia", rd: 0.75, gdp: 40000, h: 220 },
+    "Hungary": { continent: "Europe", rd: 1.20, gdp: 13000, h: 120 },
+    "Indonesia": { continent: "Asia", rd: 0.20, gdp: 3500, h: 70 },
+    "Iran": { continent: "Asia", rd: 0.30, gdp: 5000, h: 110 },
+    "Ireland": { continent: "Europe", rd: 1.50, gdp: 60000, h: 230 },
+    "Italy": { continent: "Europe", rd: 1.25, gdp: 30000, h: 360 },
+    "Malaysia": { continent: "Asia", rd: 1.10, gdp: 10000, h: 115 },
+    "Mexico": { continent: "Americas", rd: 0.50, gdp: 9000, h: 140 },
+    "Netherlands": { continent: "Europe", rd: 2.00, gdp: 49000, h: 390 },
+    "New Zealand": { continent: "Oceania", rd: 1.20, gdp: 38000, h: 190 },
+    "Norway": { continent: "Europe", rd: 1.70, gdp: 75000, h: 240 },
+    "Pakistan": { continent: "Asia", rd: 0.30, gdp: 1400, h: 75 },
+    "Peru": { continent: "Americas", rd: 0.15, gdp: 6000, h: 60 },
+    "Philippines": { continent: "Asia", rd: 0.15, gdp: 2800, h: 55 },
+    "Poland": { continent: "Europe", rd: 1.00, gdp: 13000, h: 170 },
+    "Portugal": { continent: "Europe", rd: 1.30, gdp: 20000, h: 150 },
+    "Romania": { continent: "Europe", rd: 0.40, gdp: 9000, h: 90 },
+    "Spain": { continent: "Europe", rd: 1.20, gdp: 26000, h: 290 },
+    "Sweden": { continent: "Europe", rd: 3.20, gdp: 50000, h: 340 },
+    "Taiwan": { continent: "Asia", rd: 3.00, gdp: 22000, h: 250 },
+    "Thailand": { continent: "Asia", rd: 0.40, gdp: 58000, h: 95 },
+    "Ukraine": { continent: "Europe", rd: 0.50, gdp: 3000, h: 105 },
+    "United Arab Emirates": { continent: "Asia", rd: 0.90, gdp: 40000, h: 110 },
+    "Venezuela": { continent: "Americas", rd: 0.30, gdp: 8000, h: 65 }
+  };
+
+  const defaultsByRegion = {
+    "Northern America": { continent: "Americas", rd: 1.8, gdp: 45000, h: 200 },
+    "Latin America": { continent: "Americas", rd: 0.4, gdp: 7000, h: 70 },
+    "Western Europe": { continent: "Europe", rd: 2.1, gdp: 38000, h: 220 },
+    "Eastern Europe": { continent: "Europe", rd: 0.8, gdp: 10000, h: 90 },
+    "Asiatic Region": { continent: "Asia", rd: 0.8, gdp: 6000, h: 80 },
+    "Middle East": { continent: "Asia", rd: 0.6, gdp: 15000, h: 85 },
+    "Africa": { continent: "Africa", rd: 0.3, gdp: 2500, h: 45 },
+    "Pacific Region": { continent: "Oceania", rd: 1.5, gdp: 30000, h: 150 },
+    "Africa/Middle East": { continent: "Africa", rd: 0.4, gdp: 4000, h: 55 }
+  };
+
+  const countryToRegion = {};
+  Object.values(DATA.getRidgelineData() || {}).flat().forEach(c => {
+    if (c.country && c.region) {
+      countryToRegion[c.country] = c.region;
+    }
+  });
+
+  const match = baseMetrics[countryName];
+  if (match) {
+    const dy = year - 1999;
+    const gdpGrown = match.gdp * Math.pow(1.025, dy);
+    const hGrown = Math.round(match.h + dy * 2);
+    return {
+      continent: match.continent,
+      rd: match.rd,
+      gdp: gdpGrown,
+      h: hGrown,
+      publications: totalCount
+    };
+  } else {
+    const region = countryToRegion[countryName] || "Western Europe";
+    const regDefault = defaultsByRegion[region] || { continent: "Europe", rd: 1.0, gdp: 10000, h: 80 };
+    const dy = year - 1999;
+    const gdpGrown = regDefault.gdp * Math.pow(1.018, dy);
+    const hGrown = Math.round(regDefault.h + dy * 1.5);
+    return {
+      continent: regDefault.continent,
+      rd: regDefault.rd,
+      gdp: gdpGrown,
+      h: hGrown,
+      publications: totalCount
+    };
+  }
+};
 
 function renderViz2(body) {
+  body.innerHTML = "";
+
+  const getContinentColor = continent => {
+    const map = {
+      "Asia": "#f43f5e",       // Rose Red
+      "Europe": "#38bdf8",     // Cyan
+      "Americas": "#10b981",   // Emerald Green
+      "Africa": "#f59e0b",     // Amber
+      "Oceania": "#a855f7"     // Purple
+    };
+    return map[continent] || "#94a3b8";
+  };
+
   const allBubbleData = DATA.getRidgelineData() || {};
-  const steps = [1999, 2007, 2016, 2024];
-  const categories = ["Elite", "Balanced", "Q4-Dominant"];
+  const year = Math.max(1999, Math.min(2024, APP.year || 2024));
+  const yearData = allBubbleData[year] || [];
 
-  const W = body.offsetWidth || 900, H = body.offsetHeight || 600;
-  const m = { top: 70, right: 260, bottom: 50, left: 100 }; // Extra right margin for interactive legend
-  const innerWidth = W - m.left - m.right;
-  const innerHeight = H - m.top - m.bottom;
+  const countryMaxTotal = {};
+  Object.values(allBubbleData).flat().forEach(c => {
+    if (c.country && c.total) {
+      countryMaxTotal[c.country] = Math.max(countryMaxTotal[c.country] || 0, c.total);
+    }
+  });
 
-  // Clear body and append SVG
-  const svg = d3.select(body).append("svg")
-    .attr("width", W)
-    .attr("height", H)
-    .style("overflow", "visible");
+  const countriesList = Array.from(new Set(
+    Object.values(allBubbleData).flat().map(c => c.country)
+  )).filter(name => (countryMaxTotal[name] || 0) >= 1000).sort();
 
-  // Helper to categorize ratio
   const getTier = ratio => {
     if (ratio >= 2.0) return "Elite";
     if (ratio >= 1.0) return "Balanced";
@@ -392,439 +934,888 @@ function renderViz2(body) {
     "Q4-Dominant": "#f43f5e"  // Rose Red
   };
 
+  const chartColors = {
+    "q1": "#38bdf8",
+    "q4": "#f43f5e"
+  };
+
   const regionColors = {
     "Northern America": "#60a5fa",
     "Western Europe": "#c084fc",
-    "Asiatic Region": "#f43f5e",
+    "Asiatic Region": "#2dd4bf",
     "Latin America": "#fb923c",
     "Eastern Europe": "#34d399",
     "Middle East": "#fbbf24",
     "Africa": "#f472b6",
-    "Pacific Region": "#2dd4bf"
+    "Africa/Middle East": "#fbbf24",
+    "Pacific Region": "#a855f7"
   };
   const getRegionColor = r => regionColors[r] || "#64748b";
 
-  // ── Layout Node Blocks ─────────────────────────────────────────────
-  const xSc = d3.scalePoint().domain(steps).range([m.left, m.left + innerWidth]);
-  const nodeWidth = 24;
-  const nodeGap = 45;
-  const H_col = innerHeight - 40;
-  const H_nodes = H_col - 2 * nodeGap;
+  // Create grid container
+  const container = document.createElement("div");
+  container.className = "viz2-dashboard-container";
+  container.style.width = "100%";
+  container.style.height = "100%";
 
-  const nodes = {}; // nodes[year][category] = { x, y, h, total, count, countries }
-
-  steps.forEach(year => {
-    const list = allBubbleData[year] || [];
-    // Apply region filter if any
-    const filteredList = list.filter(c => activeRegionFilter === "All" || c.region === activeRegionFilter);
-    const totalCount = filteredList.length;
-
-    const countriesByTier = { "Elite": [], "Balanced": [], "Q4-Dominant": [] };
-    filteredList.forEach(c => {
-      const tier = getTier(c.ratio);
-      countriesByTier[tier].push(c);
-    });
-
-    const scale = d3.scaleLinear().domain([0, totalCount || 1]).range([0, H_nodes]);
-
-    let currentY = m.top + 20;
-    nodes[year] = {};
-
-    categories.forEach(cat => {
-      const matched = countriesByTier[cat];
-      const h = scale(matched.length);
-      nodes[year][cat] = {
-        x: xSc(year),
-        y: currentY,
-        h: h,
-        count: matched.length,
-        countries: matched,
-        total: totalCount
-      };
-      currentY += h + nodeGap;
-    });
+  // Map metric profiles to raw year entries
+  const countryToRegionMap = {};
+  yearData.forEach(c => {
+    if (c.country && c.region) {
+      countryToRegionMap[c.country] = c.region;
+    }
   });
 
-  // ── Compute Links (Ribbons) ────────────────────────────────────────
-  const links = []; // Array of { sYear, tYear, sCat, tCat, countries, value, sourceY, targetY, sourceH, targetH }
+  // CSS Styles
+  const styleBlock = document.createElement("style");
+  styleBlock.textContent = `
+    #panel-body {
+      overflow-y: auto !important;
+    }
+    
+    .viz2-dashboard-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      height: 800px;
+      box-sizing: border-box;
+      padding: 0.5rem 2rem 1.5rem 1.5rem;
+    }
 
-  for (let i = 0; i < steps.length - 1; i++) {
-    const y1 = steps[i];
-    const y2 = steps[i + 1];
+    .viz2-top-row {
+      display: grid;
+      grid-template-columns: 1fr 290px;
+      gap: 1.5rem;
+      height: 580px;
+      flex-shrink: 0;
+    }
+    
+    .viz2-sidebar-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      box-sizing: border-box;
+      height: 100%;
+      overflow-y: auto;
+    }
+    
+    .viz2-sidebar-card::-webkit-scrollbar {
+      width: 4px;
+    }
+    .viz2-sidebar-card::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .viz2-sidebar-card::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+    }
+    
+    .viz2-graph-card {
+      background: rgba(15, 23, 42, 0.3);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1rem;
+      box-sizing: border-box;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .viz2-bottom-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 120px;
+      flex-shrink: 0;
+    }
 
-    const list1 = allBubbleData[y1] || [];
-    const list2 = allBubbleData[y2] || [];
+    .viz2-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.25rem;
+    }
 
-    const map1 = new Map(list1.map(c => [c.country, c]));
-    const map2 = new Map(list2.map(c => [c.country, c]));
+    .viz2-metric-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      padding-right: 1rem;
+      box-sizing: border-box;
+    }
 
-    // Common countries matching filters
-    const commonCountries = Array.from(map1.keys())
-      .filter(name => map2.has(name))
-      .filter(name => {
-        const c1 = map1.get(name);
-        return activeRegionFilter === "All" || c1.region === activeRegionFilter;
-      });
+    .viz2-metric-box:last-child {
+      border-right: none;
+    }
 
-    // Group transitions
-    const transitions = {};
-    commonCountries.forEach(name => {
-      const c1 = map1.get(name);
-      const c2 = map2.get(name);
-      const t1 = getTier(c1.ratio);
-      const t2 = getTier(c2.ratio);
-      const key = `${t1}->${t2}`;
-      if (!transitions[key]) {
-        transitions[key] = [];
-      }
-      transitions[key].push({
-        country: name,
-        region: c1.region,
-        total1: c1.total,
-        total2: c2.total,
-        ratio1: c1.ratio,
-        ratio2: c2.ratio
-      });
-    });
+    .viz2-metric-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
 
-    // Create link structures
-    Object.entries(transitions).forEach(([key, list]) => {
-      const [sCat, tCat] = key.split("->");
-      links.push({
-        sYear: y1,
-        tYear: y2,
-        sCat: sCat,
-        tCat: tCat,
-        countries: list,
-        value: list.length
-      });
-    });
+    .viz2-metric-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.15;
+    }
+
+    .viz2-metric-desc {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    
+    .viz2-section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.25rem;
+    }
+
+    .viz2-select-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .viz2-select-wrapper label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .viz2-reset-btn {
+      background: transparent;
+      border: none;
+      color: var(--accent3);
+      font-size: 0.68rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0;
+      float: right;
+    }
+    .viz2-reset-btn:hover {
+      color: #fff;
+    }
+  `;
+  container.appendChild(styleBlock);
+
+  // Compute metric profiles for all countries
+  const yearDataWithMetrics = yearData.map(c => {
+    const metrics = getCountryMetrics(c.country, year, c.q1, c.q4, c.total);
+    return {
+      ...c,
+      metrics: metrics
+    };
+  });
+
+  // Continent filters list setup
+  const continents = ["All", "Americas", "Europe", "Asia", "Africa", "Oceania"];
+
+  // Sidebar card HTML skeleton
+  const sidebar = document.createElement("div");
+  sidebar.className = "viz2-sidebar-card";
+  
+  let sidebarHtml = `
+    <div>
+      <div class="project-badge" style="display: inline-block; margin-bottom: 0.35rem; font-size: 0.7rem;">Dashboard Module 02</div>
+      <h3 style="font-size: 1.15rem; font-weight: 800; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Global Quality Shift</h3>
+    </div>
+
+    <!-- Country Highlight Dropdown -->
+    <div class="viz2-select-wrapper">
+      <label>Highlight Country Profile</label>
+      <select id="country-select-dropdown" class="ctrl-select" style="width: 100%;">
+        <option value="">-- Highlight Spoke --</option>
+        ${countriesList.map(c => {
+          const region = countryToRegionMap[c];
+          const label = region ? `${c} (${region})` : c;
+          return `<option value="${c}" ${selectedCountryTrail === c ? "selected" : ""}>${label}</option>`;
+        }).join("")}
+      </select>
+    </div>
+  `;
+
+  // Render Country metrics block (Publications, H-Index, R&D Spend, GDP/Capita) matching screenshot
+  if (selectedCountryTrail) {
+    const selectedMetrics = yearDataWithMetrics.find(c => c.country === selectedCountryTrail);
+    if (selectedMetrics) {
+      const q1 = selectedMetrics.q1 || 0;
+      const q4 = selectedMetrics.q4 || 0;
+      const qTotal = q1 + q4;
+      const q1Pct = qTotal > 0 ? (q1 / qTotal) * 100 : 0;
+      const q4Pct = qTotal > 0 ? (q4 / qTotal) * 100 : 0;
+      
+      sidebarHtml += `
+        <!-- Country Profile Details Card (Screenshot Style + Bar Graph) -->
+        <div class="viz2-country-card" style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-weight: 800; font-size: 1.05rem; color: #fff;">${selectedCountryTrail}</span>
+            <span style="font-size: 0.68rem; font-weight: 700; background: rgba(56,189,248,0.15); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); border-radius: 9999px; padding: 0.15rem 0.5rem;">${selectedMetrics.metrics.continent}</span>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 0.25rem;">
+            <!-- Publications -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(56,189,248,0.4));">📚</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">Publications:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">${selectedMetrics.metrics.publications.toLocaleString()}</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.publications / 200000) * 100)}%; height: 100%; background: linear-gradient(90deg, #38bdf8, #60a5fa); border-radius: 3px; box-shadow: 0 0 4px #38bdf8;"></div>
+              </div>
+            </div>
+
+            <!-- H-Index -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(244,63,94,0.4));">🎯</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">H-Index:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">${selectedMetrics.metrics.h}</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.h / 1300) * 100)}%; height: 100%; background: linear-gradient(90deg, #f43f5e, #ec4899); border-radius: 3px; box-shadow: 0 0 4px #f43f5e;"></div>
+              </div>
+            </div>
+
+            <!-- R&D Spend -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(34,211,238,0.4));">🔬</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">R&D Spend:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">${selectedMetrics.metrics.rd.toFixed(2)}%</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.rd / 5.0) * 100)}%; height: 100%; background: linear-gradient(90deg, #2dd4bf, #34d399); border-radius: 3px; box-shadow: 0 0 4px #2dd4bf;"></div>
+              </div>
+            </div>
+
+            <!-- GDP/Capita -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(245,158,11,0.4));">💰</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">GDP/Capita:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">$${Math.round(selectedMetrics.metrics.gdp).toLocaleString()}</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.gdp / 80000) * 100)}%; height: 100%; background: linear-gradient(90deg, #fb923c, #fbbf24); border-radius: 3px; box-shadow: 0 0 4px #fb923c;"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Stacked Bar Graph: Quality Share (Q1 vs Q4) -->
+          <div style="margin-top: 0.45rem; border-top: 1px dashed rgba(255,255,255,0.08); padding-top: 0.55rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #94a3b8; margin-bottom: 5px;">
+              <span>Quality Split (Q1 vs Q4)</span>
+              <span style="font-weight:700;"><span style="color:#38bdf8;">Q1: ${q1Pct.toFixed(0)}%</span> | <span style="color:#f43f5e;">Q4: ${q4Pct.toFixed(0)}%</span></span>
+            </div>
+            <div style="width: 100%; height: 12px; background: rgba(255,255,255,0.06); border-radius: 4px; display: flex; overflow: hidden; border: 1px solid rgba(255,255,255,0.04);">
+              <div style="width: ${q1Pct}%; background: #38bdf8; height: 100%; box-shadow: inset 0 0 4px rgba(0,0,0,0.3);" title="Q1 Journals: ${q1.toLocaleString()}"></div>
+              <div style="width: ${q4Pct}%; background: #f43f5e; height: 100%; box-shadow: inset 0 0 4px rgba(0,0,0,0.3);" title="Q4 Journals: ${q4.toLocaleString()}"></div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
   }
 
-  // ── Calculate Link Offsets (Sankey ordering to prevent crosses) ────
-  const sourceOffsets = {};
-  const targetOffsets = {};
-  steps.forEach(year => {
-    sourceOffsets[year] = { "Elite": 0, "Balanced": 0, "Q4-Dominant": 0 };
-    targetOffsets[year] = { "Elite": 0, "Balanced": 0, "Q4-Dominant": 0 };
+  // Render Continent Filter and Slider Panel
+  sidebarHtml += `
+    <!-- Continent Select Filter -->
+    <div class="viz2-select-wrapper" style="margin-top: 0.2rem;">
+      <label>Filter By Continent</label>
+      <select id="continent-select" class="ctrl-select" style="width: 100%;">
+        ${continents.map(c => `<option value="${c}" ${activeContinentFilter === c ? "selected" : ""}>${c === "All" ? "All Continents" : c}</option>`).join("")}
+      </select>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; font-size: 0.68rem; line-height: 1.2;">
+        <span style="display: flex; align-items: center; gap: 3px; color: #f43f5e; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#f43f5e; border-radius:50%; box-shadow: 0 0 3px #f43f5e;"></span>Asia</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #38bdf8; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#38bdf8; border-radius:50%; box-shadow: 0 0 3px #38bdf8;"></span>Europe</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #10b981; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#10b981; border-radius:50%; box-shadow: 0 0 3px #10b981;"></span>Americas</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #f59e0b; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#f59e0b; border-radius:50%; box-shadow: 0 0 3px #f59e0b;"></span>Africa</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #a855f7; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#a855f7; border-radius:50%; box-shadow: 0 0 3px #a855f7;"></span>Oceania</span>
+      </div>
+    </div>
+
+    <!-- Sort and Top Rank selector -->
+    <div class="viz2-select-wrapper" style="margin-top: 0.4rem;">
+      <label>Sort & Top Rank (Top 9)</label>
+      <select id="sort-rank-select" class="ctrl-select" style="width: 100%;">
+        <option value="Default" ${activeSortParameter === "Default" ? "selected" : ""}>Default (Whitelist / All)</option>
+        <option value="publications" ${activeSortParameter === "publications" ? "selected" : ""}>Publications Volume</option>
+        <option value="h" ${activeSortParameter === "h" ? "selected" : ""}>H-Index Score</option>
+        <option value="rd" ${activeSortParameter === "rd" ? "selected" : ""}>R&D Spend (% GDP)</option>
+        <option value="gdp" ${activeSortParameter === "gdp" ? "selected" : ""}>GDP per Capita</option>
+        <option value="ratio" ${activeSortParameter === "ratio" ? "selected" : ""}>Q1 / Q4 Quality Ratio</option>
+      </select>
+    </div>
+
+    <!-- Factor Filter Sliders -->
+    <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.2rem;">
+      <div>
+        <button id="btn-reset-filters" class="viz2-reset-btn">Reset All</button>
+        <div class="viz2-section-title">Filter By Factors</div>
+      </div>
+      
+      <!-- Min Pubs -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min Publications</span>
+          <span id="lbl-min-pub" style="font-weight: 700; color: #38bdf8;">${minPubFilter >= 1000 ? (minPubFilter / 1000).toFixed(0) + "k" : minPubFilter}</span>
+        </div>
+        <input type="range" id="slide-min-pub" class="ctrl-range" style="width: 100%;" min="0" max="200000" step="5000" value="${minPubFilter}">
+      </div>
+
+      <!-- Min H Index -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min H-Index</span>
+          <span id="lbl-min-h" style="font-weight: 700; color: #38bdf8;">${minHIndexFilter}</span>
+        </div>
+        <input type="range" id="slide-min-h" class="ctrl-range" style="width: 100%;" min="0" max="1000" step="25" value="${minHIndexFilter}">
+      </div>
+
+      <!-- Min R&D Spend -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min R&D Spend (% GDP)</span>
+          <span id="lbl-min-rd" style="font-weight: 700; color: #38bdf8;">${minRdFilter.toFixed(1)}%</span>
+        </div>
+        <input type="range" id="slide-min-rd" class="ctrl-range" style="width: 100%;" min="0" max="4.0" step="0.1" value="${minRdFilter}">
+      </div>
+
+      <!-- Min GDP/Capita -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min GDP/Capita</span>
+          <span id="lbl-min-gdp" style="font-weight: 700; color: #38bdf8;">$${minGdpFilter.toLocaleString()}</span>
+        </div>
+        <input type="range" id="slide-min-gdp" class="ctrl-range" style="width: 100%;" min="0" max="80000" step="2000" value="${minGdpFilter}">
+      </div>
+    </div>
+  `;
+
+  sidebar.innerHTML = sidebarHtml;
+
+  // Calculate Summary Statistics for current year
+  const filteredYearData = yearData.filter(c => activeRegionFilter === "All" || c.region === activeRegionFilter);
+  let globalQ1 = 0, globalQ4 = 0;
+  filteredYearData.forEach(c => {
+    globalQ1 += c.q1 || 0;
+    globalQ4 += c.q4 || 0;
   });
+  const globalRatio = globalQ4 > 0 ? (globalQ1 / globalQ4) : 0;
 
-  // Sort links to exit and enter nodes cleanly:
-  // Outgoing links sorted by target category index (0, 1, 2)
-  // Incoming links sorted by source category index (0, 1, 2)
-  const categoryOrder = { "Elite": 0, "Balanced": 1, "Q4-Dominant": 2 };
+  // Graph card
+  const graphCard = document.createElement("div");
+  graphCard.className = "viz2-graph-card";
+  graphCard.style.position = "relative";
+  graphCard.innerHTML = `
+    <!-- Top-right Explanation Box (Redesigned Compact Version) -->
+    <div style="position: absolute; top: 0.6rem; right: 0.6rem; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 0.45rem 0.65rem; max-width: 320px; backdrop-filter: blur(8px); z-index: 10; pointer-events: none; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.65rem; line-height: 1.25; box-shadow: 0 4px 15px rgba(0,0,0,0.35);">
+      <div style="font-weight: 800; color: #fff; font-size: 0.7rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 3px; display: flex; align-items: center; gap: 4px;">
+        <span>ℹ️</span> Quality Guide
+      </div>
+      <div style="display: flex; gap: 0.75rem; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 0.35rem; min-width: 140px;">
+          <div style="display: flex; gap: 4px; align-items: center;">
+            <span style="display: inline-block; width: 6px; height: 6px; background: #38bdf8; border-radius: 1px; flex-shrink: 0; box-shadow: 0 0 3px #38bdf8;"></span>
+            <div><b style="color: #38bdf8;">Q1 (Elite):</b> Top 25% impact.</div>
+          </div>
+          <div style="display: flex; gap: 4px; align-items: center;">
+            <span style="display: inline-block; width: 6px; height: 6px; background: #f43f5e; border-radius: 1px; flex-shrink: 0; box-shadow: 0 0 3px #f43f5e;"></span>
+            <div><b style="color: #f43f5e;">Q4 (Low-tier):</b> Bottom 25% impact.</div>
+          </div>
+        </div>
+        <div style="border-left: 1px dashed rgba(255,255,255,0.08); padding-left: 0.75rem; color: #94a3b8; font-size: 0.62rem; flex: 1;">
+          <b style="color: #fff;">Q1/Q4 Ratio:</b> Research quality index. High ratio indicates strong elite share.
+        </div>
+      </div>
+    </div>
+  `;
 
-  links.forEach(link => {
-    const sNode = nodes[link.sYear][link.sCat];
-    const tNode = nodes[link.tYear][link.tCat];
+  // Bottom card for horizontal metrics summary
+  const bottomCard = document.createElement("div");
+  bottomCard.className = "viz2-bottom-card";
 
-    const sScale = d3.scaleLinear().domain([0, sNode.total || 1]).range([0, H_nodes]);
-    const tScale = d3.scaleLinear().domain([0, tNode.total || 1]).range([0, H_nodes]);
+  let metricsHtml = `
+    <div class="viz2-stats-grid">
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">${year} State</span>
+        <span class="viz2-metric-value" style="color: #f59e0b;">${globalRatio.toFixed(2)}</span>
+        <span class="viz2-metric-desc">Q1/Q4 Quality Ratio</span>
+      </div>
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">Elite Publications</span>
+        <span class="viz2-metric-value">${(globalQ1 / 1000).toFixed(0)}k</span>
+        <span class="viz2-metric-desc">Total Q1 Journals Published</span>
+      </div>
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">Low-tier Publications</span>
+        <span class="viz2-metric-value">${(globalQ4 / 1000).toFixed(0)}k</span>
+        <span class="viz2-metric-desc">Total Q4 Journals Published</span>
+      </div>
+  `;
 
-    link.sourceH = sScale(link.value);
-    link.targetH = tScale(link.value);
-  });
-
-  // Group links by transition step to order them
-  for (let i = 0; i < steps.length - 1; i++) {
-    const y1 = steps[i];
-    const y2 = steps[i + 1];
-
-    const stepLinks = links.filter(l => l.sYear === y1 && l.tYear === y2);
-
-    // Outgoing links: sorted by target category index
-    categories.forEach(sCat => {
-      const outgoing = stepLinks.filter(l => l.sCat === sCat)
-        .sort((a, b) => categoryOrder[a.tCat] - categoryOrder[b.tCat]);
-
-      outgoing.forEach(link => {
-        link.sourceY = nodes[y1][sCat].y + sourceOffsets[y1][sCat];
-        sourceOffsets[y1][sCat] += link.sourceH;
-      });
-    });
-
-    // Incoming links: sorted by source category index
-    categories.forEach(tCat => {
-      const incoming = stepLinks.filter(l => l.tCat === tCat)
-        .sort((a, b) => categoryOrder[a.sCat] - categoryOrder[b.sCat]);
-
-      incoming.forEach(link => {
-        link.targetY = nodes[y2][tCat].y + targetOffsets[y2][tCat];
-        targetOffsets[y2][tCat] += link.targetH;
-      });
-    });
+  if (selectedCountryTrail) {
+    const countryData = yearData.find(c => c.country === selectedCountryTrail);
+    if (countryData) {
+      metricsHtml += `
+        <div class="viz2-metric-box" style="border-left: 1px dashed rgba(255, 255, 255, 0.15); padding-left: 1.5rem;">
+          <span class="viz2-metric-title">${selectedCountryTrail} Profile</span>
+          <span class="viz2-metric-value" style="color: #38bdf8;">${getTier(countryData.ratio).toUpperCase()}</span>
+          <span class="viz2-metric-desc">Research Quality Category</span>
+        </div>
+        <div class="viz2-metric-box">
+          <span class="viz2-metric-title">${selectedCountryTrail} Ratio</span>
+          <span class="viz2-metric-value">${countryData.ratio.toFixed(2)}</span>
+          <span class="viz2-metric-desc">Q1/Q4 Quality Ratio</span>
+        </div>
+        <div class="viz2-metric-box">
+          <span class="viz2-metric-title">${selectedCountryTrail} Docs</span>
+          <span class="viz2-metric-value">${(countryData.q1 + countryData.q4).toLocaleString()}</span>
+          <span class="viz2-metric-desc">Q1: ${countryData.q1.toLocaleString()} | Q4: ${countryData.q4.toLocaleString()}</span>
+        </div>
+      `;
+    }
+  } else {
+    let continentRatio = globalRatio;
+    let ratioTitle = "Global";
+    if (activeContinentFilter !== "All") {
+      const contData = yearDataWithMetrics.filter(d => d.metrics.continent === activeContinentFilter);
+      let contQ1 = 0, contQ4 = 0;
+      contData.forEach(d => { contQ1 += d.q1; contQ4 += d.q4; });
+      if (contQ4 > 0) continentRatio = contQ1 / contQ4;
+      else if (contQ1 > 0) continentRatio = contQ1;
+      ratioTitle = activeContinentFilter;
+    }
+    
+    metricsHtml += `
+      <div class="viz2-metric-box" style="border-left: 1px dashed rgba(255, 255, 255, 0.15); padding-left: 1.5rem;">
+        <span class="viz2-metric-title">${ratioTitle} Q1/Q4 Avg</span>
+        <span class="viz2-metric-value" style="font-size: 1.4rem; color: #f59e0b;">${continentRatio.toFixed(2)}</span>
+        <span class="viz2-metric-desc">Average ratio for selected region</span>
+      </div>
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">Active Filter</span>
+        <span class="viz2-metric-value" style="color: #10b981; font-size: 1.4rem;">${activeContinentFilter.toUpperCase()}</span>
+        <span class="viz2-metric-desc">Continent being visualized</span>
+      </div>
+    `;
   }
 
-  // ── Render Ribbons (Flow Links) ────────────────────────────────────
-  // Path generator for horizontal Alluvial flow ribbons
-  const ribbonPath = link => {
-    const x1 = link.sourceX + nodeWidth;
-    const x2 = link.targetX;
-    const y1 = link.sourceY;
-    const y2 = link.targetY;
-    const h1 = link.sourceH;
-    const h2 = link.targetH;
+  metricsHtml += `</div>`;
+  bottomCard.innerHTML = metricsHtml;
 
-    const path = d3.path();
-    const ctrlX = (x1 + x2) / 2;
-    path.moveTo(x1, y1);
-    path.bezierCurveTo(ctrlX, y1, ctrlX, y2, x2, y2);
-    path.lineTo(x2, y2 + h2);
-    path.bezierCurveTo(ctrlX, y2 + h2, ctrlX, y1 + h1, x1, y1 + h1);
-    path.closePath();
-    return path.toString();
-  };
+  // Build structure: Top Row (Graph & Sidebar), Bottom Card (Summary)
+  const topRow = document.createElement("div");
+  topRow.className = "viz2-top-row";
+  topRow.appendChild(graphCard);
+  topRow.appendChild(sidebar);
 
-  // Map node coordinates back to link objects for path drawing
-  links.forEach(link => {
-    link.sourceX = nodes[link.sYear][link.sCat].x;
-    link.targetX = nodes[link.tYear][link.tCat].x;
+  container.appendChild(topRow);
+  container.appendChild(bottomCard);
+  body.appendChild(container);
+
+  // Apply filters on the database
+  let displayData = [...yearDataWithMetrics];
+
+  // Exclude low-data countries (total < 1000)
+  if (activeContinentFilter === "All") {
+    displayData = displayData.filter(d => d.total >= 1000);
+  } else {
+    displayData = displayData.filter(d => d.total >= 10);
+  }
+
+  // 1. Continent Filter
+  if (activeContinentFilter !== "All") {
+    displayData = displayData.filter(d => d.metrics.continent === activeContinentFilter);
+  }
+
+  // 2. Sliders Filters
+  displayData = displayData.filter(d => {
+    return d.metrics.publications >= minPubFilter &&
+           d.metrics.h >= minHIndexFilter &&
+           d.metrics.rd >= minRdFilter &&
+           d.metrics.gdp >= minGdpFilter;
   });
 
-  // Render the paths
-  const ribbons = svg.selectAll(".flow-ribbon")
-    .data(links)
-    .enter().append("path")
-      .attr("class", "flow-ribbon")
-      .attr("d", ribbonPath)
-      .attr("fill", d => tierColors[d.sCat])
-      .attr("fill-opacity", d => {
-        // If a country is selected, dim all ribbons that don't contain it
-        if (selectedCountryTrail) {
-          const hasCountry = d.countries.some(c => c.country === selectedCountryTrail);
-          return hasCountry ? 0.75 : 0.05;
+  // 3. Sort & Rank Filter (Top 9)
+  if (activeSortParameter !== "Default") {
+    displayData.sort((a, b) => {
+      let valA = 0, valB = 0;
+      if (activeSortParameter === "publications") { valA = a.metrics.publications; valB = b.metrics.publications; }
+      else if (activeSortParameter === "h") { valA = a.metrics.h; valB = b.metrics.h; }
+      else if (activeSortParameter === "rd") { valA = a.metrics.rd; valB = b.metrics.rd; }
+      else if (activeSortParameter === "gdp") { valA = a.metrics.gdp; valB = b.metrics.gdp; }
+      else if (activeSortParameter === "ratio") { valA = a.ratio; valB = b.ratio; }
+      return valB - valA;
+    });
+    displayData = displayData.slice(0, 9);
+  } else {
+    // Keep the default graph Same As It Was (whitelist of 10 countries) if no filters are active
+    const hasActiveSliders = minPubFilter > 0 || minHIndexFilter > 0 || minRdFilter > 0 || minGdpFilter > 0;
+    if (activeContinentFilter === "All" && !hasActiveSliders) {
+      const whitelistDefault = [
+        "China", "India", "Japan", "United States", "France", 
+        "Germany", "Ireland", "Netherlands", "Switzerland", "United Kingdom"
+      ];
+      displayData = displayData.filter(d => whitelistDefault.includes(d.country));
+    } else if (activeContinentFilter !== "All" && !hasActiveSliders) {
+      // Smart selection for a specific continent: 7-9 interesting countries
+      // 1. Sort by total volume and take top 4
+      const byVolume = [...displayData].sort((a, b) => b.total - a.total).slice(0, 4);
+      // 2. Sort by ratio and take top 2 and bottom 2
+      const byRatio = [...displayData].sort((a, b) => b.ratio - a.ratio);
+      const topRatio = byRatio.slice(0, 3); // Take 3 just in case of overlap
+      const bottomRatio = byRatio.slice(Math.max(0, byRatio.length - 2)); // Bottom 2
+      
+      const selectedSet = new Set([...byVolume.map(d=>d.country), ...topRatio.map(d=>d.country), ...bottomRatio.map(d=>d.country)]);
+      
+      // Filter down to the selected set (should naturally result in 7-9 countries depending on overlap)
+      displayData = displayData.filter(d => selectedSet.has(d.country));
+    }
+  }
+
+  // Ensure selected country is in the displayData list if matching filters
+  if (selectedCountryTrail) {
+    const isIncluded = displayData.some(d => d.country === selectedCountryTrail);
+    if (!isIncluded) {
+      const selectedObj = yearDataWithMetrics.find(d => d.country === selectedCountryTrail);
+      if (selectedObj) {
+        // Only include if it satisfies the continent filter
+        const matchContinent = activeContinentFilter === "All" || selectedObj.metrics.continent === activeContinentFilter;
+        // Only include if it satisfies the factor filters
+        const matchFactors = selectedObj.metrics.publications >= minPubFilter &&
+                             selectedObj.metrics.h >= minHIndexFilter &&
+                             selectedObj.metrics.rd >= minRdFilter &&
+                             selectedObj.metrics.gdp >= minGdpFilter;
+        if (matchContinent && matchFactors) {
+          displayData.push(selectedObj);
+          
+          // Re-sort to maintain order if ranking is active
+          if (activeSortParameter !== "Default") {
+            displayData.sort((a, b) => {
+              let valA = 0, valB = 0;
+              if (activeSortParameter === "publications") { valA = a.metrics.publications; valB = b.metrics.publications; }
+              else if (activeSortParameter === "h") { valA = a.metrics.h; valB = b.metrics.h; }
+              else if (activeSortParameter === "rd") { valA = a.metrics.rd; valB = b.metrics.rd; }
+              else if (activeSortParameter === "gdp") { valA = a.metrics.gdp; valB = b.metrics.gdp; }
+              else if (activeSortParameter === "ratio") { valA = a.ratio; valB = b.ratio; }
+              return valB - valA;
+            });
+          }
         }
-        return 0.28;
-      })
-      .attr("stroke", d => tierColors[d.sCat])
+      }
+    }
+  }
+
+  // Sort display data for final rendering
+  if (activeSortParameter === "Default") {
+    displayData.sort((a, b) => {
+      if (a.region !== b.region) {
+        return a.region.localeCompare(b.region);
+      }
+      return a.country.localeCompare(b.country);
+    });
+  }
+
+  // SVG Setup
+  const W = graphCard.offsetWidth || 850;
+  const H = graphCard.offsetHeight || 550;
+  
+  const svg = d3.select(graphCard).append("svg")
+    .attr("width", W)
+    .attr("height", H)
+    .style("overflow", "visible");
+
+  const margin = { top: 40, right: 30, bottom: 90, left: 65 };
+  const innerWidth = W - margin.left - margin.right;
+  const innerHeight = H - margin.top - margin.bottom;
+
+  const chartG = svg.append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+  // Max value calculator for Y-axis
+  const yMaxVal = barChartMode === "grouped" 
+    ? d3.max(displayData, d => Math.max(d.q1, d.q4)) || 10000 
+    : d3.max(displayData, d => d.q1 + d.q4) || 10000;
+
+  const yScale = d3.scaleLinear()
+    .domain([0, yMaxVal * 1.05])
+    .range([innerHeight, 0]);
+
+  // Y Axis & Grid lines
+  const yAxis = d3.axisLeft(yScale)
+    .ticks(5)
+    .tickSize(-innerWidth)
+    .tickFormat(d => d >= 1000 ? `${(d / 1000).toFixed(0)}k` : d);
+
+  const yAxisG = chartG.append("g")
+    .attr("class", "y-axis")
+    .call(yAxis);
+
+  yAxisG.select(".domain").remove();
+  yAxisG.selectAll(".tick line")
+    .attr("stroke", "rgba(255, 255, 255, 0.06)")
+    .attr("stroke-dasharray", "3,3");
+  yAxisG.selectAll(".tick text")
+    .attr("fill", "#94a3b8")
+    .attr("font-size", "10px")
+    .attr("dx", "-4px");
+
+  // X Axis
+  const xScale = d3.scaleBand()
+    .domain(displayData.map(d => d.country))
+    .range([0, innerWidth])
+    .padding(0.25);
+
+  const xAxis = d3.axisBottom(xScale);
+
+  const xAxisG = chartG.append("g")
+    .attr("class", "x-axis")
+    .attr("transform", `translate(0, ${innerHeight})`)
+    .call(xAxis);
+
+  xAxisG.select(".domain").attr("stroke", "rgba(255, 255, 255, 0.1)");
+  xAxisG.selectAll(".tick line").attr("stroke", "rgba(255, 255, 255, 0.1)");
+
+  // Rotate country names to fit
+  xAxisG.selectAll(".tick text")
+    .style("fill", d => {
+      const item = displayData.find(x => x.country === d);
+      return item ? getContinentColor(item.metrics.continent) : "#94a3b8";
+    })
+    .attr("font-size", "9px")
+    .attr("font-weight", "700")
+    .style("text-anchor", "end")
+    .attr("dx", "-8px")
+    .attr("dy", "4px")
+    .attr("transform", "rotate(-40)");
+
+  // Draw bars group
+  const countryGroups = chartG.selectAll(".country-bar-group")
+    .data(displayData)
+    .enter().append("g")
+      .attr("class", "country-bar-group")
+      .attr("transform", d => `translate(${xScale(d.country)}, 0)`)
+      .style("cursor", "pointer")
+      .style("transition", "opacity 0.2s ease");
+
+  if (barChartMode === "grouped") {
+    const xSubScale = d3.scaleBand()
+      .domain(["q1", "q4"])
+      .range([0, xScale.bandwidth()])
+      .padding(0.08);
+
+    // Q1 bars (elite - cyan)
+    countryGroups.append("rect")
+      .attr("class", "bar-q1")
+      .attr("x", xSubScale("q1"))
+      .attr("y", d => yScale(d.q1))
+      .attr("width", xSubScale.bandwidth())
+      .attr("height", d => innerHeight - yScale(d.q1))
+      .attr("fill", chartColors.q1)
+      .attr("fill-opacity", 0.8)
+      .attr("rx", 2)
+      .attr("stroke", chartColors.q1)
       .attr("stroke-width", 0.5)
-      .attr("stroke-opacity", d => selectedCountryTrail ? 0.8 : 0.15)
-      .style("transition", "fill-opacity 0.3s ease, stroke-opacity 0.3s ease");
+      .attr("stroke-opacity", 0.3);
 
-  // Interaction handlers for ribbons
-  ribbons
+    // Q4 bars (low-tier - rose-red)
+    countryGroups.append("rect")
+      .attr("class", "bar-q4")
+      .attr("x", xSubScale("q4"))
+      .attr("y", d => yScale(d.q4))
+      .attr("width", xSubScale.bandwidth())
+      .attr("height", d => innerHeight - yScale(d.q4))
+      .attr("fill", chartColors.q4)
+      .attr("fill-opacity", 0.8)
+      .attr("rx", 2)
+      .attr("stroke", chartColors.q4)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Selection outline around the grouped bars
+    countryGroups.filter(d => d.country === selectedCountryTrail)
+      .append("rect")
+        .attr("class", "bar-selection-outline")
+        .attr("x", -3)
+        .attr("y", d => Math.min(yScale(d.q1), yScale(d.q4)) - 3)
+        .attr("width", xScale.bandwidth() + 6)
+        .attr("height", d => innerHeight - Math.min(yScale(d.q1), yScale(d.q4)) + 6)
+        .attr("fill", "none")
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 2)
+        .attr("rx", 5)
+        .style("filter", "drop-shadow(0 0 4px #38bdf8)");
+
+  } else {
+    // Stacked mode
+    // Bottom: Q4 (rose-red)
+    countryGroups.append("rect")
+      .attr("class", "bar-q4")
+      .attr("x", 0)
+      .attr("y", d => yScale(d.q4))
+      .attr("width", xScale.bandwidth())
+      .attr("height", d => innerHeight - yScale(d.q4))
+      .attr("fill", chartColors.q4)
+      .attr("fill-opacity", 0.8)
+      .attr("stroke", chartColors.q4)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Top: Q1 (cyan)
+    countryGroups.append("rect")
+      .attr("class", "bar-q1")
+      .attr("x", 0)
+      .attr("y", d => yScale(d.q4 + d.q1))
+      .attr("width", xScale.bandwidth())
+      .attr("height", d => yScale(d.q4) - yScale(d.q4 + d.q1))
+      .attr("fill", chartColors.q1)
+      .attr("fill-opacity", 0.9)
+      .attr("stroke", chartColors.q1)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Selection outline around the stacked bars
+    countryGroups.filter(d => d.country === selectedCountryTrail)
+      .append("rect")
+        .attr("class", "bar-selection-outline")
+        .attr("x", -3)
+        .attr("y", d => yScale(d.q1 + d.q4) - 3)
+        .attr("width", xScale.bandwidth() + 6)
+        .attr("height", d => innerHeight - yScale(d.q1 + d.q4) + 6)
+        .attr("fill", "none")
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 2)
+        .attr("rx", 5)
+        .style("filter", "drop-shadow(0 0 4px #38bdf8)");
+  }
+
+  // Hover Interactions
+  countryGroups
     .on("mouseenter", function(e, d) {
-      if (selectedCountryTrail) return; // ignore general highlights if tracking a country
+      // Dim other bars
+      countryGroups.style("opacity", s => s.country === d.country ? 1.0 : 0.25);
 
-      d3.select(this)
-        .attr("fill-opacity", 0.65)
-        .attr("stroke-opacity", 0.6);
-
-      const countriesList = d.countries.sort((a,b) => b.total1 - a.total1);
-      const topList = countriesList.slice(0, 10).map(c => 
-        `<div style="display:flex; justify-content:space-between; margin:2px 0;">
-          <span style="color:${getRegionColor(c.region)}; font-weight:600;">${c.country}</span>
-          <span style="color:#94a3b8;">${c.ratio1.toFixed(2)} → ${c.ratio2.toFixed(2)}</span>
-        </div>`
-      ).join("");
-
-      const overflow = countriesList.length > 10 ? 
-        `<div style="text-align:center; font-size:10px; color:#64748b; margin-top:4px;">+ ${countriesList.length - 10} more countries</div>` : "";
-
+      // Tooltip HTML content with macroeconomic factors
       showTip(e, `
-        <div style="font-size:13px; font-weight:700; border-bottom:1px solid #1e293b; padding-bottom:6px; margin-bottom:6px;">
-          ${d.sYear} → ${d.tYear} Migration (${d.sCat} → ${d.tCat})
-        </div>
-        <div style="font-size:12px; margin-bottom:6px; color:#cbd5e1;">
-          Transitioning Countries: <span style="color:#f59e0b; font-weight:700;">${d.value}</span>
-        </div>
-        <div style="border-top:1px dashed #1e293b; padding-top:6px; max-height:220px; overflow-y:auto; width:250px;">
-          ${topList}
-          ${overflow}
+        <div style="font-weight:700; font-size:13px; border-bottom:1px solid rgba(255,255,255,0.12); padding-bottom:4px; margin-bottom:4px; color:#fff;">${d.country}</div>
+        <div style="font-size:11px; color:#94a3b8; margin-bottom: 3px;">Region: <span style="color:${getRegionColor(d.region)}; font-weight:600;">${d.region}</span></div>
+        <div style="font-size:11px; margin-bottom: 3px;">Continent: <span style="color:#2dd4bf; font-weight:600;">${d.metrics.continent}</span></div>
+        <div style="font-size:11px; margin-top:2px;">Q1 Journals (Elite): <span style="color:#38bdf8; font-weight:700;">${d.q1.toLocaleString()}</span></div>
+        <div style="font-size:11px;">Q4 Journals (Low-tier): <span style="color:#f43f5e; font-weight:700;">${d.q4.toLocaleString()}</span></div>
+        <div style="font-size:11px; margin-bottom: 2px;">Q1/Q4 Ratio: <span style="color:#f59e0b; font-weight:bold;">${d.ratio.toFixed(3)}</span></div>
+        <div style="font-size:11px; margin-top:4px; border-top:1px dashed rgba(255,255,255,0.12); padding-top:4px; color: #cbd5e1;">
+          <div>📚 Publications: <b>${d.metrics.publications.toLocaleString()}</b></div>
+          <div>🎯 H-Index: <b>${d.metrics.h}</b></div>
+          <div>🔬 R&D Spend: <b>${d.metrics.rd.toFixed(2)}%</b></div>
+          <div>💰 GDP/Capita: <b>$${Math.round(d.metrics.gdp).toLocaleString()}</b></div>
         </div>
       `);
     })
     .on("mousemove", moveTip)
-    .on("mouseleave", function(e, d) {
-      if (selectedCountryTrail) return;
-
-      d3.select(this)
-        .attr("fill-opacity", 0.28)
-        .attr("stroke-opacity", 0.15);
+    .on("mouseleave", function() {
+      // Restore bars opacities
+      countryGroups.style("opacity", 1.0);
       hideTip();
+    })
+    .on("click", function(e, d) {
+      selectedCountryTrail = d.country;
+      renderViz(2);
     });
 
-  // ── Render Node Blocks ─────────────────────────────────────────────
-  steps.forEach(year => {
-    categories.forEach(cat => {
-      const node = nodes[year][cat];
-      if (node.count === 0) return;
-
-      // Draw node block rect
-      svg.append("rect")
-        .attr("x", node.x)
-        .attr("y", node.y)
-        .attr("width", nodeWidth)
-        .attr("height", node.h)
-        .attr("fill", tierColors[cat])
-        .attr("opacity", 0.9)
-        .attr("rx", 3)
-        .attr("stroke", "#0f172a")
-        .attr("stroke-width", 1)
-        .on("mouseover", (e) => {
-          if (selectedCountryTrail) return;
-          // Dim all ribbons that are not connected to this node
-          svg.selectAll(".flow-ribbon")
-            .attr("fill-opacity", d => {
-              const connected = (d.sYear === year && d.sCat === cat) || (d.tYear === year && d.tCat === cat);
-              return connected ? 0.65 : 0.05;
-            });
-          showTip(e, `
-            <div style="font-size:13px; font-weight:700; color:#fff;">${cat} tier in ${year}</div>
-            <div style="font-size:11px; color:#cbd5e1; margin-top:2px;">
-              Countries: <span style="font-weight:700; color:#f59e0b;">${node.count}</span> (${((node.count/node.total)*100).toFixed(0)}% of total)
-            </div>
-          `);
-        })
-        .on("mousemove", moveTip)
-        .on("mouseleave", () => {
-          if (selectedCountryTrail) return;
-          svg.selectAll(".flow-ribbon")
-            .attr("fill-opacity", 0.28);
-          hideTip();
-        });
-
-      // Draw country count text inside/on the block if height is enough
-      if (node.h > 15) {
-        svg.append("text")
-          .attr("x", node.x + nodeWidth / 2)
-          .attr("y", node.y + node.h / 2 + 4)
-          .attr("text-anchor", "middle")
-          .attr("fill", "#0f172a")
-          .attr("font-size", "10")
-          .attr("font-weight", "900")
-          .attr("pointer-events", "none")
-          .text(node.count);
-      }
-    });
-
-    // Draw Column Year Header
-    svg.append("text")
-      .attr("x", xSc(year) + nodeWidth / 2)
-      .attr("y", m.top - 12)
-      .attr("text-anchor", "middle")
-      .attr("fill", "#f8fafc")
-      .attr("font-size", "14")
-      .attr("font-weight", "800")
-      .text(year);
-  });
-
-  // ── Trajectory Line for selected country ───────────────────────────
-  if (selectedCountryTrail) {
-    const history = [];
-    steps.forEach(yr => {
-      const list = allBubbleData[yr] || [];
-      const match = list.find(c => c.country === selectedCountryTrail);
-      if (match) {
-        const cat = getTier(match.ratio);
-        const node = nodes[yr][cat];
-        // Calculate center y offset in this node
-        history.push({
-          x: node.x + nodeWidth / 2,
-          y: node.y + node.h / 2
-        });
-      }
-    });
-
-    if (history.length > 1) {
-      const lineGen = d3.line().x(d => d.x).y(d => d.y);
-      svg.append("path")
-        .datum(history)
-        .attr("fill", "none")
-        .attr("stroke", "#fff")
-        .attr("stroke-width", 3)
-        .style("filter", "drop-shadow(0px 0px 8px #6366f1)")
-        .attr("d", lineGen);
-
-      svg.selectAll(".selected-dot")
-        .data(history)
-        .enter().append("circle")
-        .attr("cx", d => d.x)
-        .attr("cy", d => d.y)
-        .attr("r", 5.5)
-        .attr("fill", "#fff")
-        .attr("stroke", "#6366f1")
-        .attr("stroke-width", 2);
-    }
+  // Bind Sidebar Event Listeners
+  // 1. Country Selection Dropdown
+  const sidebarCSelect = container.querySelector("#country-select-dropdown");
+  if (sidebarCSelect) {
+    sidebarCSelect.onchange = () => {
+      selectedCountryTrail = sidebarCSelect.value || null;
+      renderViz(2);
+    };
   }
 
-  // ── Draw Interactive Legend (Right Hand Side) ──────────────────────
-  const legX = m.left + innerWidth + 50;
-  const legY = m.top + 30;
-  const legend = svg.append("g").attr("class", "legend");
+  // 2. Continent Select
+  const contSel = container.querySelector("#continent-select");
+  if (contSel) {
+    contSel.onchange = () => {
+      activeContinentFilter = contSel.value;
+      renderViz(2);
+    };
+  }
 
-  legend.append("text")
-    .attr("x", legX).attr("y", legY - 14)
-    .attr("fill", "#e2e8f0").attr("font-size", "11").attr("font-weight", "700").attr("letter-spacing", "0.5px")
-    .text("FILTER BY REGION");
+  // 2b. Sort & Rank Select
+  const sortRankSel = container.querySelector("#sort-rank-select");
+  if (sortRankSel) {
+    sortRankSel.onchange = () => {
+      activeSortParameter = sortRankSel.value;
+      renderViz(2);
+    };
+  }
 
-  let offset = 0;
-  Object.entries(regionColors).forEach(([region, color]) => {
-    const row = legend.append("g")
-      .attr("transform", `translate(${legX}, ${legY + offset})`)
-      .style("cursor", "pointer")
-      .on("click", (e) => {
-        e.stopPropagation();
-        activeRegionFilter = (activeRegionFilter === region) ? "All" : region;
-        renderViz(2); // redraw to apply filter
-      });
+  // 3. Reset All Button
+  const resetBtn = container.querySelector("#btn-reset-filters");
+  if (resetBtn) {
+    resetBtn.onclick = () => {
+      activeContinentFilter = "All";
+      activeSortParameter = "Default";
+      minPubFilter = 0;
+      minHIndexFilter = 0;
+      minRdFilter = 0;
+      minGdpFilter = 0;
+      renderViz(2);
+    };
+  }
 
-    const isFiltered = activeRegionFilter === region;
-    const isAll = activeRegionFilter === "All";
-
-    row.append("circle")
-      .attr("cx", 6).attr("cy", 6)
-      .attr("r", 6)
-      .attr("fill", color)
-      .attr("opacity", isFiltered || isAll ? 0.9 : 0.2);
-
-    row.append("text")
-      .attr("x", 20).attr("y", 10)
-      .attr("fill", isFiltered ? "#fff" : "#94a3b8")
-      .attr("font-size", "10.5")
-      .attr("font-weight", isFiltered ? "700" : "400")
-      .text(region);
-
-    offset += 20;
-  });
-
-  if (activeRegionFilter !== "All") {
-    legend.append("g")
-      .attr("transform", `translate(${legX}, ${legY + offset + 10})`)
-      .style("cursor", "pointer")
-      .on("click", (e) => {
-        e.stopPropagation();
-        activeRegionFilter = "All";
+  // 4. Sliders Event Hooks
+  const setupSlider = (sliderId, labelId, filterSetter, formatter) => {
+    const slider = container.querySelector(`#${sliderId}`);
+    const label = container.querySelector(`#${labelId}`);
+    if (slider && label) {
+      slider.oninput = () => {
+        const val = +slider.value;
+        label.textContent = formatter(val);
+        filterSetter(val);
+      };
+      slider.onchange = () => {
         renderViz(2);
-      })
-      .append("text")
-        .attr("x", 0).attr("y", 10)
-        .attr("fill", "#f43f5e")
-        .attr("font-size", "10")
-        .attr("font-weight", "700")
-        .text("❌ Clear Region Filter");
-  }
+      };
+    }
+  };
 
-  // ── Global Stats Panel at the Bottom Right ────────────────────────
-  const statsY = H - m.bottom - 70;
-  const statsBox = svg.append("g").attr("transform", `translate(${legX}, ${statsY})`);
-
-  statsBox.append("rect")
-    .attr("width", 170).attr("height", 80)
-    .attr("rx", 6).attr("fill", "#0f172a").attr("stroke", "#1e293b").attr("stroke-width", 1);
-
-  // Compute global summary statistics for selected year
-  const yearRecords = allBubbleData[2024] || []; // default to final year summary
-  const filteredRecords = yearRecords.filter(c => activeRegionFilter === "All" || c.region === activeRegionFilter);
-  const globalQ1 = d3.sum(filteredRecords, d => d.q1);
-  const globalQ4 = d3.sum(filteredRecords, d => d.q4);
-  const globalRatio = globalQ1 / (globalQ4 || 1);
-
-  statsBox.append("text").attr("x", 10).attr("y", 18).attr("fill", "#64748b").attr("font-size", "9").attr("font-weight", "600").text("2024 END STATE");
-  statsBox.append("text").attr("x", 10).attr("y", 35).attr("fill", "#e2e8f0").attr("font-size", "11").text(`Q1 ratio: `).append("tspan").attr("fill", "#f59e0b").attr("font-weight", "700").text(globalRatio.toFixed(2));
-  statsBox.append("text").attr("x", 10).attr("y", 51).attr("fill", "#94a3b8").attr("font-size", "10").text(`Q1 Docs: ${(globalQ1/1000).toFixed(0)}k`);
-  statsBox.append("text").attr("x", 10).attr("y", 66).attr("fill", "#94a3b8").attr("font-size", "10").text(`Q4 Docs: ${(globalQ4/1000).toFixed(0)}k`);
+  setupSlider("slide-min-pub", "lbl-min-pub", val => minPubFilter = val, val => val >= 1000 ? `${(val / 1000).toFixed(0)}k` : val);
+  setupSlider("slide-min-h", "lbl-min-h", val => minHIndexFilter = val, val => val);
+  setupSlider("slide-min-rd", "lbl-min-rd", val => minRdFilter = val, val => `${val.toFixed(1)}%`);
+  setupSlider("slide-min-gdp", "lbl-min-gdp", val => minGdpFilter = val, val => `$${val.toLocaleString()}`);
 }
+// ══════════════════════════════════════════════════════════
+// VIZ 3: Top-10 Research Topics (Bar Chart Race)
+// ══════════════════════════════════════════════════════════
 // ══════════════════════════════════════════════════════════
 // VIZ 3: Top-10 Research Topics (Bar Chart Race)
 // ══════════════════════════════════════════════════════════
@@ -876,6 +1867,11 @@ function renderViz3(body) {
             border-radius: 16px;
             padding: 1.5rem;
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+
+        .viz3-controls-card {
+            padding: 0.75rem 1rem !important;
+            border-radius: 12px !important;
         }
 
         /* Header */
@@ -933,17 +1929,17 @@ function renderViz3(body) {
         .control-panel {
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 1rem;
         }
 
         .filter-group {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 0.35rem;
         }
 
         .filter-group label {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: var(--text-muted);
@@ -954,10 +1950,10 @@ function renderViz3(body) {
             background: rgba(25, 30, 50, 0.8);
             border: 1px solid var(--card-border);
             color: var(--text-main);
-            padding: 0.8rem 1.2rem;
-            border-radius: 10px;
+            padding: 0.45rem 0.85rem;
+            border-radius: 8px;
             outline: none;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             font-family: inherit;
             width: 100%;
             cursor: pointer;
@@ -973,16 +1969,16 @@ function renderViz3(body) {
         .playback-controls {
             display: flex;
             align-items: center;
-            gap: 1rem;
-            margin-top: 0.5rem;
+            gap: 0.75rem;
+            margin-top: 0.25rem;
         }
 
         .btn-control {
             background: rgba(255, 255, 255, 0.05);
             border: 1px solid var(--card-border);
             color: var(--text-main);
-            width: 48px;
-            height: 48px;
+            width: 36px;
+            height: 36px;
             border-radius: 50px;
             cursor: pointer;
             display: flex;
@@ -1369,71 +2365,70 @@ function renderViz3(body) {
         <div class="group-badge">Project Module 4.3: Research topics evolution</div>
     </header>
 
+    <!-- Controls Card (Redesigned Compact Version) -->
+    <div class="glass-card viz3-controls-card" style="margin-bottom: 1.25rem;">
+        <div style="display: flex; flex-direction: column; gap: 0.65rem;">
+            
+            <!-- Country Selector -->
+            <div class="filter-group">
+                <label for="countrySelect">Region / Country Filter</label>
+                <select id="countrySelect" class="styled-select">
+                    <option value="GLOBAL">Global (All Countries)</option>
+                </select>
+            </div>
+
+            <!-- Playback Controls & Slider Row -->
+            <div style="display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap;">
+                
+                <div class="playback-controls">
+                    <!-- Play/Pause Button -->
+                    <button id="btnPlay" class="btn-control btn-play" title="Play Animation">
+                        <svg id="playIcon" class="icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
+                            <path d="M8 5v14l11-7z"/>
+                        </svg>
+                        <svg id="pauseIcon" class="icon" style="display: none; width: 20px; height: 20px;" viewBox="0 0 24 24">
+                            <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+                        </svg>
+                    </button>
+
+                    <!-- Reset Button -->
+                    <button id="btnReset" class="btn-control" title="Restart to 1950">
+                        <svg class="icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
+                            <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Timeline Scrubber -->
+                <div class="timeline-container">
+                    <div class="timeline-labels">
+                        <span id="labelStartYear">1950</span>
+                        <span id="labelCurrentYear" style="font-weight: 700; color: var(--primary);">Year: 1950</span>
+                        <span id="labelEndYear">2025</span>
+                    </div>
+                    <input type="range" id="timelineSlider" class="timeline-slider" min="1950" max="2025" value="1950">
+                </div>
+
+                <!-- Speed Controls -->
+                <div class="filter-group">
+                    <label>Speed</label>
+                    <div class="speed-selector">
+                        <button class="speed-btn" data-speed="0.5">0.5x</button>
+                        <button class="speed-btn active" data-speed="1.0">1.0x</button>
+                        <button class="speed-btn" data-speed="2.0">2.0x</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
     <!-- Main Grid Content -->
     <div class="dashboard-grid">
         
-        <!-- Left Panel: Controls & Bar Chart Race -->
+        <!-- Left Panel: Bar Chart Race -->
         <div class="control-panel">
-            
-            <!-- Controls Card -->
-            <div class="glass-card">
-                <div style="display: flex; flex-direction: column; gap: 1.25rem;">
-                    
-                    <!-- Country Selector -->
-                    <div class="filter-group">
-                        <label for="countrySelect">Region / Country Filter</label>
-                        <select id="countrySelect" class="styled-select">
-                            <option value="GLOBAL">Global (All Countries)</option>
-                        </select>
-                    </div>
-
-                    <!-- Playback Controls & Slider Row -->
-                    <div style="display: flex; align-items: flex-end; gap: 1.5rem; flex-wrap: wrap;">
-                        
-                        <div class="playback-controls">
-                            <!-- Play/Pause Button -->
-                            <button id="btnPlay" class="btn-control btn-play" title="Play Animation">
-                                <svg id="playIcon" class="icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z"/>
-                                </svg>
-                                <svg id="pauseIcon" class="icon" style="display: none; width: 20px; height: 20px;" viewBox="0 0 24 24">
-                                    <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
-                                </svg>
-                            </button>
-
-                            <!-- Reset Button -->
-                            <button id="btnReset" class="btn-control" title="Restart to 1950">
-                                <svg class="icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
-                                    <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
-                                </svg>
-                            </button>
-                        </div>
-
-                        <!-- Timeline Scrubber -->
-                        <div class="timeline-container">
-                            <div class="timeline-labels">
-                                <span id="labelStartYear">1950</span>
-                                <span id="labelCurrentYear" style="font-weight: 700; color: var(--primary);">Year: 1950</span>
-                                <span id="labelEndYear">2025</span>
-                            </div>
-                            <input type="range" id="timelineSlider" class="timeline-slider" min="1950" max="2025" value="1950">
-                        </div>
-
-                        <!-- Speed Controls -->
-                        <div class="filter-group">
-                            <label>Speed</label>
-                            <div class="speed-selector">
-                                <button class="speed-btn" data-speed="0.5">0.5x</button>
-                                <button class="speed-btn active" data-speed="1.0">1.0x</button>
-                                <button class="speed-btn" data-speed="2.0">2.0x</button>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
             <!-- Bar Chart Race Card -->
             <div class="glass-card race-card">
                 <div class="race-header">
@@ -1456,7 +2451,6 @@ function renderViz3(body) {
                     </div>
                 </div>
             </div>
-
         </div>
 
         <!-- Right Panel: Trend Line Chart -->
@@ -2086,65 +3080,291 @@ function renderViz3(body) {
   initializeApp();
 }
 
-// ══════════════════════════════════════════════════════════
-// VIZ 4: The Collaboration Premium (Dumbbell Plot)
-// ══════════════════════════════════════════════════════════
 function renderViz4(body) {
-  let data = DATA.getCollabData(); // Using static 2024 view to see exact premiums as requested
+  // Use the new VIZ4_DATA if available, fallback to old static data
+  let rawData = typeof VIZ4_DATA !== 'undefined' ? VIZ4_DATA : DATA.getCollabData();
+  
+  let data = [];
+  
+  if (!APP.region || APP.region === "All") {
+    // Aggregate by region
+    const grouped = d3.group(rawData, d => d.region);
+    for (const [region, countries] of grouped) {
+      const dom = d3.mean(countries, d => d.domestic);
+      const intl = d3.mean(countries, d => d.international);
+      data.push({
+        name: region,
+        region: region,
+        domestic: dom,
+        international: intl,
+        gain: intl - dom,
+        isRegionAgg: true,
+        countryCount: countries.length
+      });
+    }
+  } else {
+    // Filter to specific region
+    data = rawData.filter(d => d.region === APP.region);
+  }
+
+  // Apply Sorting
   if (APP.sort === "gain")          data.sort((a,b)=>b.gain-a.gain);
   else if (APP.sort === "international") data.sort((a,b)=>b.international-a.international);
   else if (APP.sort === "domestic") data.sort((a,b)=>b.domestic-a.domestic);
   else                              data.sort((a,b)=>a.name.localeCompare(b.name));
 
-  const W = body.offsetWidth || 900, H = body.offsetHeight || 500;
-  const m = { top: 60, right: 60, bottom: 40, left: 180 };
-  const svg = d3.select(body).append("svg").attr("width",W).attr("height",H);
+  // Clear existing content
+  body.innerHTML = '';
+  
+  // Create a wrapper div to handle the flex layout (column direction)
+  const wrapper = document.createElement('div');
+  wrapper.style.display = 'flex';
+  wrapper.style.flexDirection = 'column';
+  wrapper.style.width = '100%';
+  wrapper.style.height = '100%';
+  body.appendChild(wrapper);
+  
+  // Stats calculation
+  const avgDom = data.length ? d3.mean(data, d => d.domestic) : 0;
+  const avgInt = data.length ? d3.mean(data, d => d.international) : 0;
+  const avgGain = data.length ? d3.mean(data, d => d.gain) : 0;
+  
+  // Top stats bar
+  const statsBar = document.createElement('div');
+  statsBar.style.padding = '15px 25px';
+  statsBar.style.background = 'rgba(15, 23, 42, 0.8)';
+  statsBar.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
+  statsBar.style.display = 'flex';
+  statsBar.style.justifyContent = 'space-between';
+  statsBar.style.alignItems = 'center';
+  statsBar.style.backdropFilter = 'blur(10px)';
+  statsBar.style.zIndex = '10';
+  
+  statsBar.innerHTML = `
+    <div style="display:flex; flex: 1; justify-content: space-evenly; align-items: center; margin-right: 40px;">
+      <div style="text-align:center;">
+        <div style="color:#94a3b8; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Countries Visible</div>
+        <div style="color:#fff; font-size:1.5rem; font-weight:800;">${data.length}</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="color:#f43f5e; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Avg Domestic (Citations)</div>
+        <div style="color:#fff; font-size:1.5rem; font-weight:800;">${avgDom.toFixed(1)}</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="color:#10b981; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Avg Int'l (Citations)</div>
+        <div style="color:#fff; font-size:1.5rem; font-weight:800;">${avgInt.toFixed(1)}</div>
+      </div>
+      <div style="text-align:center;">
+        <div style="color:#38bdf8; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Avg Premium</div>
+        <div style="color:#fff; font-size:1.5rem; font-weight:800;">+${avgGain.toFixed(1)}</div>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap: 8px; background: rgba(15,23,42,0.5); padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+      <div style="display:flex; align-items:center;">
+        <div style="width:12px; height:12px; border-radius:50%; background:#f43f5e; border:1.5px solid #fff; margin-right:10px;"></div>
+        <span style="color:#e2e8f0; font-size:0.85rem; font-weight:600;">Domestic (Citations/Paper)</span>
+      </div>
+      <div style="display:flex; align-items:center;">
+        <div style="width:12px; height:12px; border-radius:50%; background:#10b981; border:1.5px solid #fff; margin-right:10px;"></div>
+        <span style="color:#e2e8f0; font-size:0.85rem; font-weight:600;">Int'l Collab (Citations/Paper)</span>
+      </div>
+    </div>
+  `;
+  wrapper.appendChild(statsBar);
+  
+  const mainRow = document.createElement('div');
+  mainRow.style.display = 'flex';
+  mainRow.style.flexDirection = 'row';
+  mainRow.style.flex = '1';
+  mainRow.style.overflow = 'hidden';
+  wrapper.appendChild(mainRow);
+  
+  // Scrollable container for SVG
+  const scrollContainer = document.createElement('div');
+  scrollContainer.style.flex = '1';
+  scrollContainer.style.overflowY = 'auto';
+  scrollContainer.style.overflowX = 'hidden';
+  mainRow.appendChild(scrollContainer);
+  
+  // Glossary Side Panel
+  const sidePanel = document.createElement('div');
+  sidePanel.style.width = '280px';
+  sidePanel.style.borderLeft = '1px solid rgba(255,255,255,0.1)';
+  sidePanel.style.padding = '20px';
+  sidePanel.style.background = 'rgba(15, 23, 42, 0.5)';
+  sidePanel.style.display = 'flex';
+  sidePanel.style.flexDirection = 'column';
+  sidePanel.style.gap = '20px';
+  sidePanel.style.overflowY = 'auto';
+
+  sidePanel.innerHTML = `
+    <h3 style="color:#f8fafc; font-size:1.1rem; margin:0 0 10px 0; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.1);">Glossary</h3>
+    
+    <div>
+        <div style="color:#f43f5e; font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:5px;">Domestic Impact</div>
+        <div style="color:#94a3b8; font-size:0.85rem; line-height:1.4;">The average number of citations received by research papers authored exclusively by researchers from within this specific country or region. It serves as a baseline for measuring local research influence.</div>
+    </div>
+    
+    <div>
+        <div style="color:#10b981; font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:5px;">Int'l Collab Impact</div>
+        <div style="color:#94a3b8; font-size:0.85rem; line-height:1.4;">The average number of citations received by research papers co-authored with at least one researcher from a different country. This usually represents research with a broader global reach.</div>
+    </div>
+    
+    <div>
+        <div style="color:#38bdf8; font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:5px;">Collaboration Premium</div>
+        <div style="color:#94a3b8; font-size:0.85rem; line-height:1.4;">The absolute difference (gain) in citations between internationally co-authored papers and purely domestic papers. A higher premium indicates that cross-border teamwork yields significantly more scientific attention.</div>
+    </div>
+  `;
+  mainRow.appendChild(sidePanel);
+
+  const W = scrollContainer.offsetWidth || 900;
+  // Calculate dynamic height based on data length (35px per row) + margins
+  const H = Math.max(scrollContainer.offsetHeight || 500, data.length * 35 + 100);
+  
+  const m = { top: 60, right: 80, bottom: 40, left: 200 };
+  
+  const svg = d3.select(scrollContainer).append("svg").attr("width",W).attr("height",H);
+
+  // Definitions for drop shadows
+  const defs = svg.append("defs");
+  const dropShadow = defs.append("filter")
+    .attr("id", "glow")
+    .attr("x", "-20%").attr("y", "-20%")
+    .attr("width", "140%").attr("height", "140%");
+  dropShadow.append("feGaussianBlur").attr("stdDeviation", "3").attr("result", "blur");
+  const feMerge = dropShadow.append("feMerge");
+  feMerge.append("feMergeNode").attr("in", "blur");
+  feMerge.append("feMergeNode").attr("in", "SourceGraphic");
 
   svg.append("text").attr("x",W/2).attr("y",30).attr("text-anchor","middle")
-    .attr("fill","#e2e8f0").attr("font-size","15").attr("font-weight","700")
-    .text(`The Collaboration Premium: Citation Gap (Domestic vs International Co-authorship)`);
+    .attr("fill","#f8fafc").attr("font-size","18").attr("font-weight","800").attr("letter-spacing", "0.5px")
+    .text(`The Collaboration Premium: Citation Gap (Citations per Paper)`);
 
-  const xSc = d3.scaleLinear().domain([0, d3.max(data,d=>d.international)*1.05]).range([m.left, W-m.right]);
+  const maxVal = d3.max(data, d => d.international) || 1;
+  const xSc = d3.scaleLinear().domain([0, maxVal * 1.05]).range([m.left, W-m.right]);
   const ySc = d3.scaleBand().domain(data.map(d=>d.name)).range([m.top, H-m.bottom]).padding(0.4);
 
+  // X Axis (Fixed to top and bottom)
+  svg.append("g").attr("transform",`translate(0,${m.top-20})`)
+     .call(d3.axisTop(xSc).ticks(8))
+     .call(g => g.select(".domain").attr("stroke","#334155"))
+     .call(g => g.selectAll("text").attr("fill","#94a3b8").attr("font-size", "11"));
+     
   svg.append("g").attr("transform",`translate(0,${H-m.bottom})`)
      .call(d3.axisBottom(xSc).ticks(8))
      .call(g => g.select(".domain").attr("stroke","#334155"))
-     .call(g => g.selectAll("line").attr("stroke","rgba(255,255,255,0.05)").attr("y2",-(H-m.top-m.bottom)));
+     .call(g => g.selectAll("line").attr("stroke","rgba(255,255,255,0.05)").attr("y2",-(H-m.top-m.bottom+20)))
+     .call(g => g.selectAll("text").attr("fill","#94a3b8").attr("font-size", "11"));
      
+  // Y Axis
   svg.append("g").attr("transform",`translate(${m.left},0)`)
      .call(d3.axisLeft(ySc).tickSize(0))
      .call(g => g.select(".domain").remove())
-     .selectAll("text").attr("font-size","12").attr("fill","#cbd5e1");
+     .selectAll("text").attr("font-size","13").attr("font-weight", "500").attr("fill","#cbd5e1");
 
   const cy = d => ySc(d.name)+ySc.bandwidth()/2;
 
-  // Connectors
-  svg.selectAll(".con").data(data).join("line").attr("class","con")
-    .attr("x1",d=>xSc(d.domestic)).attr("x2",d=>xSc(d.international))
-    .attr("y1",cy).attr("y2",cy)
-    .attr("stroke","rgba(255,255,255,0.15)").attr("stroke-width",3);
+  // Custom rich tooltip html generator
+  const getTooltipHtml = (d) => `
+    <div style="background:rgba(15,23,42,0.95); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px; min-width:200px; box-shadow:0 10px 25px rgba(0,0,0,0.5);">
+      <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:4px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:6px;">${d.name}</div>
+      <div style="font-size:11px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">
+        ${d.isRegionAgg ? `Aggregated Region: ${d.countryCount} countries` : d.region}
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
+        <span style="color:#f43f5e; font-weight:600; font-size:12px;">Domestic:</span>
+        <span style="color:#fff; font-weight:700; font-size:13px;">${d.domestic.toFixed(1)} citations</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
+        <span style="color:#10b981; font-weight:600; font-size:12px;">Int'l Collab:</span>
+        <span style="color:#fff; font-weight:700; font-size:13px;">${d.international.toFixed(1)} citations</span>
+      </div>
+      <div style="display:flex; justify-content:space-between; border-top:1px dashed rgba(255,255,255,0.2); padding-top:8px; margin-bottom: ${d.isRegionAgg ? '8px' : '0'};">
+        <span style="color:#38bdf8; font-weight:800; font-size:13px;">Premium:</span>
+        <span style="color:#38bdf8; font-weight:800; font-size:14px;">+${d.gain.toFixed(1)}</span>
+      </div>
+      ${d.isRegionAgg ? `<div style="font-size:10px; color:#e2e8f0; font-style:italic; text-align:center; background:rgba(255,255,255,0.1); padding:4px; border-radius:4px;">Click to drill down</div>` : ''}
+    </div>
+  `;
 
-  // Domestic
-  svg.selectAll(".dd").data(data).join("circle").attr("class","dd")
-    .attr("cx",d=>xSc(d.domestic)).attr("cy",cy).attr("r",7)
-    .attr("fill","#f43f5e").attr("stroke","rgba(255,255,255,0.4)").attr("stroke-width",1.5)
-    .on("mouseover",(e,d)=>showTip(e,`<strong>${d.name}</strong>Domestic Citations/Paper: ${d.domestic}`))
-    .on("mousemove",moveTip).on("mouseleave",hideTip);
+  // Draw connecting lines (solid color to fix gradient bounding box bug on horizontal lines)
+  const lines = svg.selectAll(".con").data(data, d => d.name);
+  lines.join(
+    enter => enter.append("line").attr("class","con")
+      .attr("x1",d=>xSc(d.domestic)).attr("x2",d=>xSc(d.domestic)) // Start collapsed
+      .attr("y1",cy).attr("y2",cy)
+      .attr("stroke","rgba(255,255,255,0.2)").attr("stroke-width",4)
+      .call(enter => enter.transition().duration(800).delay((d,i)=>i*5).attr("x2",d=>xSc(d.international))),
+    update => update.call(update => update.transition().duration(800)
+      .attr("y1",cy).attr("y2",cy)
+      .attr("x1",d=>xSc(d.domestic)).attr("x2",d=>xSc(d.international))),
+    exit => exit.call(exit => exit.transition().duration(400).style("opacity",0).remove())
+  );
 
-  // International
-  svg.selectAll(".di").data(data).join("circle").attr("class","di")
-    .attr("cx",d=>xSc(d.international)).attr("cy",cy).attr("r",7)
-    .attr("fill","#10b981").attr("stroke","rgba(255,255,255,0.4)").attr("stroke-width",1.5)
-    .on("mouseover",(e,d)=>showTip(e,`<strong>${d.name}</strong>Int'l Citations/Paper: ${d.international}<br>Gain: +${d.gain}`))
-    .on("mousemove",moveTip).on("mouseleave",hideTip);
+  // Invisible hover interaction area per row (for easier hovering)
+  svg.selectAll(".row-hover").data(data, d=>d.name).join("rect").attr("class", "row-hover")
+    .attr("x", 0).attr("y", d => ySc(d.name))
+    .attr("width", W).attr("height", ySc.bandwidth())
+    .attr("fill", "transparent")
+    .style("cursor", "pointer")
+    .on("mouseover", function(e, d) {
+      svg.selectAll(".dd").filter(x => x.name === d.name).attr("r", 9).style("filter", "url(#glow)");
+      svg.selectAll(".di").filter(x => x.name === d.name).attr("r", 9).style("filter", "url(#glow)");
+      svg.selectAll(".con").filter(x => x.name === d.name).attr("stroke", "rgba(255,255,255,0.6)").attr("stroke-width", 6);
+      
+      showTip(e, getTooltipHtml(d));
+      tip.style.background = 'transparent';
+      tip.style.border = 'none';
+      tip.style.boxShadow = 'none';
+      tip.style.padding = '0';
+    })
+    .on("mousemove", moveTip)
+    .on("mouseleave", function(e, d) {
+      svg.selectAll(".dd").filter(x => x.name === d.name).attr("r", 6).style("filter", "none");
+      svg.selectAll(".di").filter(x => x.name === d.name).attr("r", 6).style("filter", "none");
+      svg.selectAll(".con").filter(x => x.name === d.name).attr("stroke", "rgba(255,255,255,0.2)").attr("stroke-width", 4);
+      hideTip();
+      tip.style.background = 'rgba(15, 23, 42, 0.9)';
+      tip.style.border = '1px solid rgba(255,255,255,0.1)';
+      tip.style.padding = '10px';
+    })
+    .on("click", function(e, d) {
+      if (d.isRegionAgg) {
+        APP.region = d.name;
+        const select = document.getElementById("viz4-region-select");
+        if (select) select.value = d.name;
+        hideTip(); // Hide tooltip to prevent ghost tooltips
+        renderViz(4);
+      }
+    });
 
-  // Legend
-  const leg = svg.append("g").attr("transform",`translate(${W-200},20)`);
-  [["#f43f5e","Domestic Citation Impact"],["#10b981","International Co-authored Impact"]].forEach(([col,lbl],i)=>{
-    leg.append("circle").attr("cx",6).attr("cy",i*20+5).attr("r",6).attr("fill",col);
-    leg.append("text").attr("x",20).attr("y",i*20+10).attr("fill","#94a3b8").attr("font-size","11").text(lbl);
-  });
+  // Domestic dots
+  const domDots = svg.selectAll(".dd").data(data, d=>d.name);
+  domDots.join(
+    enter => enter.append("circle").attr("class","dd")
+      .attr("cx",d=>xSc(d.domestic)).attr("cy",cy).attr("r",0)
+      .attr("fill","#f43f5e").attr("stroke","#fff").attr("stroke-width",1.5)
+      .style("pointer-events", "none")
+      .call(enter => enter.transition().duration(800).delay((d,i)=>i*5).attr("r",6)),
+    update => update.call(update => update.transition().duration(800)
+      .attr("cx",d=>xSc(d.domestic)).attr("cy",cy)),
+    exit => exit.call(exit => exit.transition().duration(400).attr("r",0).remove())
+  );
+
+  // International dots
+  const intDots = svg.selectAll(".di").data(data, d=>d.name);
+  intDots.join(
+    enter => enter.append("circle").attr("class","di")
+      .attr("cx",d=>xSc(d.domestic)).attr("cy",cy).attr("r",0) // Start at domestic x
+      .attr("fill","#10b981").attr("stroke","#fff").attr("stroke-width",1.5)
+      .style("pointer-events", "none")
+      .call(enter => enter.transition().duration(800).delay((d,i)=>i*5).attr("cx",d=>xSc(d.international)).attr("r",6)),
+    update => update.call(update => update.transition().duration(800)
+      .attr("cx",d=>xSc(d.international)).attr("cy",cy)),
+    exit => exit.call(exit => exit.transition().duration(400).attr("r",0).remove())
+  );
+
+
 }
 
 // ══════════════════════════════════════════════════════════
