@@ -46528,4 +46528,1694 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2010,Quantum Computing,2500,Yemen,YE,1
 2010,Quantum Computing,2500,South Africa,ZA,1
 2010,Quantum Computing,2500,Zimbabwe,ZW,1
+2011,Quantum Computing,2500,Russian Federation,RU,836
+2011,Quantum Computing,2500,China,CN,749
+2011,Quantum Computing,2500,United States of America,US,697
+2011,Quantum Computing,2500,Germany,DE,354
+2011,Quantum Computing,2500,Japan,JP,303
+2011,Quantum Computing,2500,Ukraine,UA,230
+2011,Quantum Computing,2500,Poland,PL,182
+2011,Quantum Computing,2500,France,FR,171
+2011,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,171
+2011,Quantum Computing,2500,India,IN,111
+2011,Quantum Computing,2500,Belarus,BY,68
+2011,Quantum Computing,2500,"Korea, Republic of",KR,64
+2011,Quantum Computing,2500,Brazil,BR,63
+2011,Quantum Computing,2500,Canada,CA,59
+2011,Quantum Computing,2500,Czechia,CZ,52
+2011,Quantum Computing,2500,Italy,IT,49
+2011,Quantum Computing,2500,Australia,AU,44
+2011,Quantum Computing,2500,Romania,RO,40
+2011,Quantum Computing,2500,"Taiwan, Province of China",TW,37
+2011,Quantum Computing,2500,Austria,AT,32
+2011,Quantum Computing,2500,"Iran, Islamic Republic of",IR,32
+2011,Quantum Computing,2500,Netherlands,NL,29
+2011,Quantum Computing,2500,Belgium,BE,25
+2011,Quantum Computing,2500,Slovakia,SK,25
+2011,Quantum Computing,2500,Bulgaria,BG,23
+2011,Quantum Computing,2500,Denmark,DK,23
+2011,Quantum Computing,2500,Tajikistan,TJ,22
+2011,Quantum Computing,2500,Turkey,TR,22
+2011,Quantum Computing,2500,Mexico,MX,21
+2011,Quantum Computing,2500,Spain,ES,19
+2011,Quantum Computing,2500,Egypt,EG,18
+2011,Quantum Computing,2500,Hong Kong,HK,17
+2011,Quantum Computing,2500,Malaysia,MY,17
+2011,Quantum Computing,2500,Serbia,RS,16
+2011,Quantum Computing,2500,Sweden,SE,16
+2011,Quantum Computing,2500,Finland,FI,15
+2011,Quantum Computing,2500,Iraq,IQ,15
+2011,Quantum Computing,2500,Slovenia,SI,15
+2011,Quantum Computing,2500,Croatia,HR,14
+2011,Quantum Computing,2500,Switzerland,CH,13
+2011,Quantum Computing,2500,Colombia,CO,13
+2011,Quantum Computing,2500,Lithuania,LT,12
+2011,Quantum Computing,2500,Latvia,LV,12
+2011,Quantum Computing,2500,Portugal,PT,12
+2011,Quantum Computing,2500,Uzbekistan,UZ,12
+2011,Quantum Computing,2500,Azerbaijan,AZ,11
+2011,Quantum Computing,2500,Algeria,DZ,10
+2011,Quantum Computing,2500,Hungary,HU,10
+2011,Quantum Computing,2500,Indonesia,ID,10
+2011,Quantum Computing,2500,Norway,NO,10
+2011,Quantum Computing,2500,Greece,GR,9
+2011,Quantum Computing,2500,Thailand,TH,9
+2011,Quantum Computing,2500,South Africa,ZA,9
+2011,Quantum Computing,2500,Zimbabwe,ZW,9
+2011,Quantum Computing,2500,Argentina,AR,8
+2011,Quantum Computing,2500,Ecuador,EC,8
+2011,Quantum Computing,2500,Israel,IL,8
+2011,Quantum Computing,2500,Nepal,NP,8
+2011,Quantum Computing,2500,Singapore,SG,8
+2011,Quantum Computing,2500,Kazakhstan,KZ,7
+2011,Quantum Computing,2500,Pakistan,PK,7
+2011,Quantum Computing,2500,Saudi Arabia,SA,7
+2011,Quantum Computing,2500,Bangladesh,BD,6
+2011,Quantum Computing,2500,Viet Nam,VN,6
+2011,Quantum Computing,2500,Armenia,AM,5
+2011,Quantum Computing,2500,Mozambique,MZ,5
+2011,Quantum Computing,2500,Nigeria,NG,5
+2011,Quantum Computing,2500,Tunisia,TN,5
+2011,Quantum Computing,2500,United Arab Emirates,AE,4
+2011,Quantum Computing,2500,Georgia,GE,4
+2011,Quantum Computing,2500,Ireland,IE,4
+2011,Quantum Computing,2500,Luxembourg,LU,4
+2011,Quantum Computing,2500,New Zealand,NZ,4
+2011,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2011,Quantum Computing,2500,Estonia,EE,3
+2011,Quantum Computing,2500,Morocco,MA,3
+2011,Quantum Computing,2500,Mongolia,MN,3
+2011,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,3
+2011,Quantum Computing,2500,Cyprus,CY,2
+2011,Quantum Computing,2500,Jordan,JO,2
+2011,Quantum Computing,2500,Cambodia,KH,2
+2011,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,2
+2011,Quantum Computing,2500,"Moldova, Republic of",MD,2
+2011,Quantum Computing,2500,"Palestine, State of",PS,2
+2011,Quantum Computing,2500,"Tanzania, United Republic of",TZ,2
+2011,Quantum Computing,2500,Kosovo,XK,2
+2011,Quantum Computing,2500,Yemen,YE,2
+2011,Quantum Computing,2500,"Bolivia, Plurinational State of",BO,1
+2011,Quantum Computing,2500,Chile,CL,1
+2011,Quantum Computing,2500,Cuba,CU,1
+2011,Quantum Computing,2500,Ghana,GH,1
+2011,Quantum Computing,2500,Iceland,IS,1
+2011,Quantum Computing,2500,Kenya,KE,1
+2011,Quantum Computing,2500,Sri Lanka,LK,1
+2011,Quantum Computing,2500,Libya,LY,1
+2011,Quantum Computing,2500,North Macedonia,MK,1
+2011,Quantum Computing,2500,Mali,ML,1
+2011,Quantum Computing,2500,Nicaragua,NI,1
+2011,Quantum Computing,2500,Oman,OM,1
+2011,Quantum Computing,2500,Panama,PA,1
+2011,Quantum Computing,2500,Peru,PE,1
+2011,Quantum Computing,2500,Philippines,PH,1
+2011,Quantum Computing,2500,Qatar,QA,1
+2012,Quantum Computing,2500,Russian Federation,RU,869
+2012,Quantum Computing,2500,United States of America,US,659
+2012,Quantum Computing,2500,China,CN,607
+2012,Quantum Computing,2500,Japan,JP,318
+2012,Quantum Computing,2500,Germany,DE,282
+2012,Quantum Computing,2500,Ukraine,UA,255
+2012,Quantum Computing,2500,Poland,PL,193
+2012,Quantum Computing,2500,France,FR,180
+2012,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,132
+2012,Quantum Computing,2500,India,IN,124
+2012,Quantum Computing,2500,Australia,AU,72
+2012,Quantum Computing,2500,"Korea, Republic of",KR,71
+2012,Quantum Computing,2500,Canada,CA,70
+2012,Quantum Computing,2500,Brazil,BR,67
+2012,Quantum Computing,2500,Belarus,BY,67
+2012,Quantum Computing,2500,Czechia,CZ,62
+2012,Quantum Computing,2500,Italy,IT,48
+2012,Quantum Computing,2500,Belgium,BE,43
+2012,Quantum Computing,2500,Austria,AT,39
+2012,Quantum Computing,2500,Romania,RO,39
+2012,Quantum Computing,2500,Switzerland,CH,38
+2012,Quantum Computing,2500,Malaysia,MY,36
+2012,Quantum Computing,2500,Slovakia,SK,33
+2012,Quantum Computing,2500,"Iran, Islamic Republic of",IR,31
+2012,Quantum Computing,2500,Netherlands,NL,29
+2012,Quantum Computing,2500,"Taiwan, Province of China",TW,29
+2012,Quantum Computing,2500,Serbia,RS,27
+2012,Quantum Computing,2500,Spain,ES,26
+2012,Quantum Computing,2500,Tajikistan,TJ,25
+2012,Quantum Computing,2500,Mexico,MX,23
+2012,Quantum Computing,2500,Denmark,DK,22
+2012,Quantum Computing,2500,Sweden,SE,22
+2012,Quantum Computing,2500,Kazakhstan,KZ,21
+2012,Quantum Computing,2500,Norway,NO,21
+2012,Quantum Computing,2500,Bulgaria,BG,19
+2012,Quantum Computing,2500,Hungary,HU,19
+2012,Quantum Computing,2500,Turkey,TR,18
+2012,Quantum Computing,2500,Portugal,PT,16
+2012,Quantum Computing,2500,Egypt,EG,15
+2012,Quantum Computing,2500,Croatia,HR,14
+2012,Quantum Computing,2500,Israel,IL,13
+2012,Quantum Computing,2500,Azerbaijan,AZ,12
+2012,Quantum Computing,2500,Ecuador,EC,12
+2012,Quantum Computing,2500,Greece,GR,12
+2012,Quantum Computing,2500,Lithuania,LT,12
+2012,Quantum Computing,2500,Latvia,LV,12
+2012,Quantum Computing,2500,Hong Kong,HK,11
+2012,Quantum Computing,2500,South Africa,ZA,11
+2012,Quantum Computing,2500,Argentina,AR,10
+2012,Quantum Computing,2500,Iraq,IQ,9
+2012,Quantum Computing,2500,Slovenia,SI,9
+2012,Quantum Computing,2500,Zimbabwe,ZW,9
+2012,Quantum Computing,2500,Finland,FI,8
+2012,Quantum Computing,2500,Nigeria,NG,8
+2012,Quantum Computing,2500,Colombia,CO,7
+2012,Quantum Computing,2500,Algeria,DZ,7
+2012,Quantum Computing,2500,Estonia,EE,7
+2012,Quantum Computing,2500,Nepal,NP,7
+2012,Quantum Computing,2500,Uzbekistan,UZ,7
+2012,Quantum Computing,2500,Chile,CL,6
+2012,Quantum Computing,2500,Georgia,GE,6
+2012,Quantum Computing,2500,Indonesia,ID,6
+2012,Quantum Computing,2500,Ireland,IE,6
+2012,Quantum Computing,2500,Pakistan,PK,6
+2012,Quantum Computing,2500,Saudi Arabia,SA,6
+2012,Quantum Computing,2500,Singapore,SG,6
+2012,Quantum Computing,2500,"Moldova, Republic of",MD,5
+2012,Quantum Computing,2500,Viet Nam,VN,5
+2012,Quantum Computing,2500,Morocco,MA,4
+2012,Quantum Computing,2500,New Zealand,NZ,4
+2012,Quantum Computing,2500,Thailand,TH,4
+2012,Quantum Computing,2500,Cuba,CU,3
+2012,Quantum Computing,2500,Mongolia,MN,3
+2012,Quantum Computing,2500,Qatar,QA,3
+2012,Quantum Computing,2500,United Arab Emirates,AE,2
+2012,Quantum Computing,2500,Armenia,AM,2
+2012,Quantum Computing,2500,Bosnia and Herzegovina,BA,2
+2012,Quantum Computing,2500,Bangladesh,BD,2
+2012,Quantum Computing,2500,"Bolivia, Plurinational State of",BO,2
+2012,Quantum Computing,2500,Ethiopia,ET,2
+2012,Quantum Computing,2500,Luxembourg,LU,2
+2012,Quantum Computing,2500,Mozambique,MZ,2
+2012,Quantum Computing,2500,Puerto Rico,PR,2
+2012,Quantum Computing,2500,"Palestine, State of",PS,2
+2012,Quantum Computing,2500,Tunisia,TN,2
+2012,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,2
+2012,Quantum Computing,2500,Kosovo,XK,2
+2012,Quantum Computing,2500,Albania,AL,1
+2012,Quantum Computing,2500,Burkina Faso,BF,1
+2012,Quantum Computing,2500,"Congo, Democratic Republic of the",CD,1
+2012,Quantum Computing,2500,Ghana,GH,1
+2012,Quantum Computing,2500,Iceland,IS,1
+2012,Quantum Computing,2500,Kenya,KE,1
+2012,Quantum Computing,2500,Cambodia,KH,1
+2012,Quantum Computing,2500,Libya,LY,1
+2012,Quantum Computing,2500,Montenegro,ME,1
+2012,Quantum Computing,2500,Peru,PE,1
+2012,Quantum Computing,2500,El Salvador,SV,1
+2012,Quantum Computing,2500,"Virgin Islands, British",VG,1
+2012,Quantum Computing,2500,Yemen,YE,1
+2013,Quantum Computing,2500,Russian Federation,RU,932
+2013,Quantum Computing,2500,United States of America,US,733
+2013,Quantum Computing,2500,China,CN,581
+2013,Quantum Computing,2500,Poland,PL,280
+2013,Quantum Computing,2500,Ukraine,UA,266
+2013,Quantum Computing,2500,Japan,JP,259
+2013,Quantum Computing,2500,Germany,DE,258
+2013,Quantum Computing,2500,France,FR,215
+2013,Quantum Computing,2500,India,IN,140
+2013,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,111
+2013,Quantum Computing,2500,"Korea, Republic of",KR,88
+2013,Quantum Computing,2500,Belarus,BY,79
+2013,Quantum Computing,2500,Canada,CA,73
+2013,Quantum Computing,2500,Australia,AU,65
+2013,Quantum Computing,2500,Brazil,BR,65
+2013,Quantum Computing,2500,Czechia,CZ,61
+2013,Quantum Computing,2500,Slovakia,SK,54
+2013,Quantum Computing,2500,Italy,IT,49
+2013,Quantum Computing,2500,Romania,RO,42
+2013,Quantum Computing,2500,Spain,ES,38
+2013,Quantum Computing,2500,"Iran, Islamic Republic of",IR,35
+2013,Quantum Computing,2500,Belgium,BE,34
+2013,Quantum Computing,2500,Kazakhstan,KZ,34
+2013,Quantum Computing,2500,Netherlands,NL,31
+2013,Quantum Computing,2500,Switzerland,CH,30
+2013,Quantum Computing,2500,Denmark,DK,30
+2013,Quantum Computing,2500,Mexico,MX,26
+2013,Quantum Computing,2500,Sweden,SE,26
+2013,Quantum Computing,2500,"Taiwan, Province of China",TW,26
+2013,Quantum Computing,2500,Turkey,TR,24
+2013,Quantum Computing,2500,Finland,FI,23
+2013,Quantum Computing,2500,Portugal,PT,23
+2013,Quantum Computing,2500,Azerbaijan,AZ,20
+2013,Quantum Computing,2500,Malaysia,MY,20
+2013,Quantum Computing,2500,Austria,AT,19
+2013,Quantum Computing,2500,Iraq,IQ,18
+2013,Quantum Computing,2500,Slovenia,SI,18
+2013,Quantum Computing,2500,Zimbabwe,ZW,18
+2013,Quantum Computing,2500,Colombia,CO,17
+2013,Quantum Computing,2500,Egypt,EG,16
+2013,Quantum Computing,2500,Hungary,HU,16
+2013,Quantum Computing,2500,Indonesia,ID,15
+2013,Quantum Computing,2500,Israel,IL,15
+2013,Quantum Computing,2500,Croatia,HR,14
+2013,Quantum Computing,2500,Algeria,DZ,13
+2013,Quantum Computing,2500,Latvia,LV,13
+2013,Quantum Computing,2500,Tajikistan,TJ,13
+2013,Quantum Computing,2500,Serbia,RS,12
+2013,Quantum Computing,2500,Argentina,AR,11
+2013,Quantum Computing,2500,Greece,GR,11
+2013,Quantum Computing,2500,Lithuania,LT,11
+2013,Quantum Computing,2500,Morocco,MA,11
+2013,Quantum Computing,2500,Saudi Arabia,SA,11
+2013,Quantum Computing,2500,Pakistan,PK,10
+2013,Quantum Computing,2500,New Zealand,NZ,9
+2013,Quantum Computing,2500,Ecuador,EC,8
+2013,Quantum Computing,2500,Norway,NO,8
+2013,Quantum Computing,2500,Bulgaria,BG,7
+2013,Quantum Computing,2500,Viet Nam,VN,7
+2013,Quantum Computing,2500,Nigeria,NG,6
+2013,Quantum Computing,2500,Singapore,SG,6
+2013,Quantum Computing,2500,Uzbekistan,UZ,6
+2013,Quantum Computing,2500,Armenia,AM,5
+2013,Quantum Computing,2500,Chile,CL,5
+2013,Quantum Computing,2500,Hong Kong,HK,5
+2013,Quantum Computing,2500,Luxembourg,LU,5
+2013,Quantum Computing,2500,"Moldova, Republic of",MD,5
+2013,Quantum Computing,2500,Tunisia,TN,5
+2013,Quantum Computing,2500,Ireland,IE,4
+2013,Quantum Computing,2500,Syrian Arab Republic,SY,4
+2013,Quantum Computing,2500,South Africa,ZA,4
+2013,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2013,Quantum Computing,2500,Georgia,GE,3
+2013,Quantum Computing,2500,Sri Lanka,LK,3
+2013,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,3
+2013,Quantum Computing,2500,Yemen,YE,3
+2013,Quantum Computing,2500,United Arab Emirates,AE,2
+2013,Quantum Computing,2500,Bangladesh,BD,2
+2013,Quantum Computing,2500,Benin,BJ,2
+2013,Quantum Computing,2500,Cuba,CU,2
+2013,Quantum Computing,2500,Cyprus,CY,2
+2013,Quantum Computing,2500,Estonia,EE,2
+2013,Quantum Computing,2500,Mongolia,MN,2
+2013,Quantum Computing,2500,Mozambique,MZ,2
+2013,Quantum Computing,2500,Peru,PE,2
+2013,Quantum Computing,2500,Puerto Rico,PR,2
+2013,Quantum Computing,2500,Albania,AL,1
+2013,Quantum Computing,2500,Jordan,JO,1
+2013,Quantum Computing,2500,Kuwait,KW,1
+2013,Quantum Computing,2500,Lebanon,LB,1
+2013,Quantum Computing,2500,Liberia,LR,1
+2013,Quantum Computing,2500,Libya,LY,1
+2013,Quantum Computing,2500,North Macedonia,MK,1
+2013,Quantum Computing,2500,Niger,NE,1
+2013,Quantum Computing,2500,Nepal,NP,1
+2013,Quantum Computing,2500,Qatar,QA,1
+2013,Quantum Computing,2500,Senegal,SN,1
+2013,Quantum Computing,2500,Thailand,TH,1
+2013,Quantum Computing,2500,Uganda,UG,1
+2013,Quantum Computing,2500,Uruguay,UY,1
+2013,Quantum Computing,2500,"Virgin Islands, British",VG,1
+2013,Quantum Computing,2500,Kosovo,XK,1
+2014,Quantum Computing,2500,Russian Federation,RU,1296
+2014,Quantum Computing,2500,United States of America,US,604
+2014,Quantum Computing,2500,China,CN,524
+2014,Quantum Computing,2500,Ukraine,UA,301
+2014,Quantum Computing,2500,Poland,PL,282
+2014,Quantum Computing,2500,Japan,JP,279
+2014,Quantum Computing,2500,Germany,DE,244
+2014,Quantum Computing,2500,France,FR,195
+2014,Quantum Computing,2500,India,IN,140
+2014,Quantum Computing,2500,Belarus,BY,125
+2014,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,124
+2014,Quantum Computing,2500,Brazil,BR,88
+2014,Quantum Computing,2500,Czechia,CZ,87
+2014,Quantum Computing,2500,"Korea, Republic of",KR,82
+2014,Quantum Computing,2500,Slovakia,SK,82
+2014,Quantum Computing,2500,Canada,CA,80
+2014,Quantum Computing,2500,Australia,AU,62
+2014,Quantum Computing,2500,Italy,IT,48
+2014,Quantum Computing,2500,Romania,RO,44
+2014,Quantum Computing,2500,Spain,ES,38
+2014,Quantum Computing,2500,Austria,AT,37
+2014,Quantum Computing,2500,Mexico,MX,37
+2014,Quantum Computing,2500,Bulgaria,BG,35
+2014,Quantum Computing,2500,Belgium,BE,32
+2014,Quantum Computing,2500,"Iran, Islamic Republic of",IR,30
+2014,Quantum Computing,2500,Kazakhstan,KZ,30
+2014,Quantum Computing,2500,Malaysia,MY,30
+2014,Quantum Computing,2500,Turkey,TR,30
+2014,Quantum Computing,2500,Serbia,RS,28
+2014,Quantum Computing,2500,Denmark,DK,24
+2014,Quantum Computing,2500,Iraq,IQ,22
+2014,Quantum Computing,2500,Norway,NO,22
+2014,Quantum Computing,2500,Algeria,DZ,21
+2014,Quantum Computing,2500,Finland,FI,21
+2014,Quantum Computing,2500,Zimbabwe,ZW,21
+2014,Quantum Computing,2500,"Taiwan, Province of China",TW,20
+2014,Quantum Computing,2500,Ecuador,EC,18
+2014,Quantum Computing,2500,Tajikistan,TJ,18
+2014,Quantum Computing,2500,Switzerland,CH,17
+2014,Quantum Computing,2500,Saudi Arabia,SA,17
+2014,Quantum Computing,2500,Sweden,SE,17
+2014,Quantum Computing,2500,Colombia,CO,16
+2014,Quantum Computing,2500,Egypt,EG,16
+2014,Quantum Computing,2500,Lithuania,LT,16
+2014,Quantum Computing,2500,Netherlands,NL,14
+2014,Quantum Computing,2500,Azerbaijan,AZ,13
+2014,Quantum Computing,2500,Nigeria,NG,13
+2014,Quantum Computing,2500,Greece,GR,12
+2014,Quantum Computing,2500,Portugal,PT,12
+2014,Quantum Computing,2500,Hungary,HU,11
+2014,Quantum Computing,2500,Indonesia,ID,11
+2014,Quantum Computing,2500,Nepal,NP,11
+2014,Quantum Computing,2500,South Africa,ZA,11
+2014,Quantum Computing,2500,Croatia,HR,10
+2014,Quantum Computing,2500,Morocco,MA,10
+2014,Quantum Computing,2500,Latvia,LV,9
+2014,Quantum Computing,2500,Slovenia,SI,9
+2014,Quantum Computing,2500,Singapore,SG,8
+2014,Quantum Computing,2500,Hong Kong,HK,7
+2014,Quantum Computing,2500,Mozambique,MZ,7
+2014,Quantum Computing,2500,Peru,PE,7
+2014,Quantum Computing,2500,Pakistan,PK,7
+2014,Quantum Computing,2500,Uzbekistan,UZ,7
+2014,Quantum Computing,2500,Argentina,AR,6
+2014,Quantum Computing,2500,Tunisia,TN,6
+2014,Quantum Computing,2500,Israel,IL,5
+2014,Quantum Computing,2500,Jordan,JO,5
+2014,Quantum Computing,2500,Qatar,QA,5
+2014,Quantum Computing,2500,Armenia,AM,4
+2014,Quantum Computing,2500,Chile,CL,4
+2014,Quantum Computing,2500,Cuba,CU,4
+2014,Quantum Computing,2500,Ireland,IE,4
+2014,Quantum Computing,2500,Luxembourg,LU,4
+2014,Quantum Computing,2500,"Moldova, Republic of",MD,4
+2014,Quantum Computing,2500,Mongolia,MN,4
+2014,Quantum Computing,2500,Viet Nam,VN,4
+2014,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2014,Quantum Computing,2500,Bangladesh,BD,3
+2014,Quantum Computing,2500,Estonia,EE,3
+2014,Quantum Computing,2500,Montenegro,ME,3
+2014,Quantum Computing,2500,Oman,OM,3
+2014,Quantum Computing,2500,Thailand,TH,3
+2014,Quantum Computing,2500,Kosovo,XK,3
+2014,Quantum Computing,2500,Iceland,IS,2
+2014,Quantum Computing,2500,Lebanon,LB,2
+2014,Quantum Computing,2500,North Macedonia,MK,2
+2014,Quantum Computing,2500,Malta,MT,2
+2014,Quantum Computing,2500,"Virgin Islands, British",VG,2
+2014,Quantum Computing,2500,Angola,AO,1
+2014,Quantum Computing,2500,Burkina Faso,BF,1
+2014,Quantum Computing,2500,"Bolivia, Plurinational State of",BO,1
+2014,Quantum Computing,2500,Cyprus,CY,1
+2014,Quantum Computing,2500,Dominican Republic,DO,1
+2014,Quantum Computing,2500,Georgia,GE,1
+2014,Quantum Computing,2500,Ghana,GH,1
+2014,Quantum Computing,2500,Honduras,HN,1
+2014,Quantum Computing,2500,Kenya,KE,1
+2014,Quantum Computing,2500,Sri Lanka,LK,1
+2014,Quantum Computing,2500,Libya,LY,1
+2014,Quantum Computing,2500,Nicaragua,NI,1
+2014,Quantum Computing,2500,Philippines,PH,1
+2014,Quantum Computing,2500,Puerto Rico,PR,1
+2014,Quantum Computing,2500,Uruguay,UY,1
+2014,Quantum Computing,2500,Yemen,YE,1
+2015,Quantum Computing,2500,Russian Federation,RU,1438
+2015,Quantum Computing,2500,United States of America,US,654
+2015,Quantum Computing,2500,China,CN,473
+2015,Quantum Computing,2500,Poland,PL,350
+2015,Quantum Computing,2500,Ukraine,UA,325
+2015,Quantum Computing,2500,Japan,JP,276
+2015,Quantum Computing,2500,Germany,DE,246
+2015,Quantum Computing,2500,Belarus,BY,224
+2015,Quantum Computing,2500,France,FR,181
+2015,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,126
+2015,Quantum Computing,2500,Czechia,CZ,115
+2015,Quantum Computing,2500,Brazil,BR,113
+2015,Quantum Computing,2500,India,IN,103
+2015,Quantum Computing,2500,Canada,CA,76
+2015,Quantum Computing,2500,"Korea, Republic of",KR,73
+2015,Quantum Computing,2500,Romania,RO,66
+2015,Quantum Computing,2500,Australia,AU,60
+2015,Quantum Computing,2500,"Iran, Islamic Republic of",IR,51
+2015,Quantum Computing,2500,Slovakia,SK,49
+2015,Quantum Computing,2500,Italy,IT,44
+2015,Quantum Computing,2500,Belgium,BE,36
+2015,Quantum Computing,2500,Spain,ES,35
+2015,Quantum Computing,2500,Mexico,MX,34
+2015,Quantum Computing,2500,Turkey,TR,34
+2015,Quantum Computing,2500,Switzerland,CH,32
+2015,Quantum Computing,2500,Sweden,SE,32
+2015,Quantum Computing,2500,Denmark,DK,31
+2015,Quantum Computing,2500,Austria,AT,30
+2015,Quantum Computing,2500,Serbia,RS,29
+2015,Quantum Computing,2500,Iraq,IQ,27
+2015,Quantum Computing,2500,"Taiwan, Province of China",TW,27
+2015,Quantum Computing,2500,Malaysia,MY,26
+2015,Quantum Computing,2500,Kazakhstan,KZ,25
+2015,Quantum Computing,2500,Egypt,EG,21
+2015,Quantum Computing,2500,Azerbaijan,AZ,19
+2015,Quantum Computing,2500,Algeria,DZ,19
+2015,Quantum Computing,2500,Netherlands,NL,19
+2015,Quantum Computing,2500,Nigeria,NG,17
+2015,Quantum Computing,2500,Tajikistan,TJ,17
+2015,Quantum Computing,2500,Latvia,LV,16
+2015,Quantum Computing,2500,Norway,NO,16
+2015,Quantum Computing,2500,Finland,FI,15
+2015,Quantum Computing,2500,Indonesia,ID,15
+2015,Quantum Computing,2500,Lithuania,LT,15
+2015,Quantum Computing,2500,Bulgaria,BG,14
+2015,Quantum Computing,2500,Argentina,AR,13
+2015,Quantum Computing,2500,Hungary,HU,13
+2015,Quantum Computing,2500,Portugal,PT,13
+2015,Quantum Computing,2500,Saudi Arabia,SA,13
+2015,Quantum Computing,2500,Slovenia,SI,13
+2015,Quantum Computing,2500,Colombia,CO,12
+2015,Quantum Computing,2500,Singapore,SG,12
+2015,Quantum Computing,2500,Croatia,HR,11
+2015,Quantum Computing,2500,Greece,GR,10
+2015,Quantum Computing,2500,South Africa,ZA,10
+2015,Quantum Computing,2500,Viet Nam,VN,9
+2015,Quantum Computing,2500,Georgia,GE,8
+2015,Quantum Computing,2500,Israel,IL,8
+2015,Quantum Computing,2500,Pakistan,PK,8
+2015,Quantum Computing,2500,Zimbabwe,ZW,8
+2015,Quantum Computing,2500,Nepal,NP,7
+2015,Quantum Computing,2500,Tunisia,TN,7
+2015,Quantum Computing,2500,Uzbekistan,UZ,7
+2015,Quantum Computing,2500,Bangladesh,BD,6
+2015,Quantum Computing,2500,Ecuador,EC,6
+2015,Quantum Computing,2500,Hong Kong,HK,6
+2015,Quantum Computing,2500,Morocco,MA,6
+2015,Quantum Computing,2500,Mongolia,MN,6
+2015,Quantum Computing,2500,Ireland,IE,5
+2015,Quantum Computing,2500,Luxembourg,LU,5
+2015,Quantum Computing,2500,Thailand,TH,5
+2015,Quantum Computing,2500,Ethiopia,ET,4
+2015,Quantum Computing,2500,"Moldova, Republic of",MD,4
+2015,Quantum Computing,2500,Myanmar,MM,4
+2015,Quantum Computing,2500,Philippines,PH,4
+2015,Quantum Computing,2500,Qatar,QA,4
+2015,Quantum Computing,2500,Chile,CL,3
+2015,Quantum Computing,2500,Cuba,CU,3
+2015,Quantum Computing,2500,Jordan,JO,3
+2015,Quantum Computing,2500,Libya,LY,3
+2015,Quantum Computing,2500,Armenia,AM,2
+2015,Quantum Computing,2500,Costa Rica,CR,2
+2015,Quantum Computing,2500,Ghana,GH,2
+2015,Quantum Computing,2500,Lebanon,LB,2
+2015,Quantum Computing,2500,Sri Lanka,LK,2
+2015,Quantum Computing,2500,Peru,PE,2
+2015,Quantum Computing,2500,South Sudan,SS,2
+2015,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,2
+2015,Quantum Computing,2500,Kosovo,XK,2
+2015,Quantum Computing,2500,Yemen,YE,2
+2015,Quantum Computing,2500,Angola,AO,1
+2015,Quantum Computing,2500,Bosnia and Herzegovina,BA,1
+2015,Quantum Computing,2500,Benin,BJ,1
+2015,Quantum Computing,2500,Cameroon,CM,1
+2015,Quantum Computing,2500,Cyprus,CY,1
+2015,Quantum Computing,2500,Estonia,EE,1
+2015,Quantum Computing,2500,Kyrgyzstan,KG,1
+2015,Quantum Computing,2500,Kuwait,KW,1
+2015,Quantum Computing,2500,Montenegro,ME,1
+2015,Quantum Computing,2500,North Macedonia,MK,1
+2015,Quantum Computing,2500,Malta,MT,1
+2015,Quantum Computing,2500,Mozambique,MZ,1
+2015,Quantum Computing,2500,New Zealand,NZ,1
+2015,Quantum Computing,2500,Oman,OM,1
+2015,Quantum Computing,2500,Panama,PA,1
+2015,Quantum Computing,2500,Puerto Rico,PR,1
+2015,Quantum Computing,2500,Suriname,SR,1
+2015,Quantum Computing,2500,Uruguay,UY,1
+2016,Quantum Computing,2500,Russian Federation,RU,1852
+2016,Quantum Computing,2500,United States of America,US,683
+2016,Quantum Computing,2500,China,CN,404
+2016,Quantum Computing,2500,Germany,DE,401
+2016,Quantum Computing,2500,Ukraine,UA,338
+2016,Quantum Computing,2500,Poland,PL,316
+2016,Quantum Computing,2500,Japan,JP,295
+2016,Quantum Computing,2500,France,FR,282
+2016,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,219
+2016,Quantum Computing,2500,Belarus,BY,215
+2016,Quantum Computing,2500,Czechia,CZ,185
+2016,Quantum Computing,2500,India,IN,148
+2016,Quantum Computing,2500,"Korea, Republic of",KR,110
+2016,Quantum Computing,2500,Brazil,BR,105
+2016,Quantum Computing,2500,Netherlands,NL,102
+2016,Quantum Computing,2500,Turkey,TR,96
+2016,Quantum Computing,2500,Australia,AU,93
+2016,Quantum Computing,2500,Ireland,IE,85
+2016,Quantum Computing,2500,Italy,IT,74
+2016,Quantum Computing,2500,Romania,RO,74
+2016,Quantum Computing,2500,Slovakia,SK,74
+2016,Quantum Computing,2500,Sweden,SE,61
+2016,Quantum Computing,2500,Canada,CA,55
+2016,Quantum Computing,2500,Austria,AT,48
+2016,Quantum Computing,2500,Spain,ES,47
+2016,Quantum Computing,2500,"Iran, Islamic Republic of",IR,47
+2016,Quantum Computing,2500,Argentina,AR,41
+2016,Quantum Computing,2500,South Africa,ZA,41
+2016,Quantum Computing,2500,Belgium,BE,39
+2016,Quantum Computing,2500,Malaysia,MY,34
+2016,Quantum Computing,2500,Denmark,DK,32
+2016,Quantum Computing,2500,Switzerland,CH,28
+2016,Quantum Computing,2500,"Taiwan, Province of China",TW,26
+2016,Quantum Computing,2500,Hungary,HU,24
+2016,Quantum Computing,2500,Kazakhstan,KZ,24
+2016,Quantum Computing,2500,Norway,NO,24
+2016,Quantum Computing,2500,Serbia,RS,23
+2016,Quantum Computing,2500,Algeria,DZ,22
+2016,Quantum Computing,2500,Bulgaria,BG,21
+2016,Quantum Computing,2500,Indonesia,ID,20
+2016,Quantum Computing,2500,Greece,GR,18
+2016,Quantum Computing,2500,Mexico,MX,18
+2016,Quantum Computing,2500,Azerbaijan,AZ,17
+2016,Quantum Computing,2500,Egypt,EG,17
+2016,Quantum Computing,2500,Finland,FI,17
+2016,Quantum Computing,2500,Iraq,IQ,17
+2016,Quantum Computing,2500,Saudi Arabia,SA,16
+2016,Quantum Computing,2500,Latvia,LV,15
+2016,Quantum Computing,2500,Lithuania,LT,14
+2016,Quantum Computing,2500,Pakistan,PK,14
+2016,Quantum Computing,2500,Portugal,PT,14
+2016,Quantum Computing,2500,Tunisia,TN,13
+2016,Quantum Computing,2500,Israel,IL,12
+2016,Quantum Computing,2500,Morocco,MA,12
+2016,Quantum Computing,2500,Tajikistan,TJ,12
+2016,Quantum Computing,2500,Nigeria,NG,10
+2016,Quantum Computing,2500,Viet Nam,VN,9
+2016,Quantum Computing,2500,Colombia,CO,8
+2016,Quantum Computing,2500,Croatia,HR,8
+2016,Quantum Computing,2500,Chile,CL,7
+2016,Quantum Computing,2500,Georgia,GE,7
+2016,Quantum Computing,2500,Qatar,QA,7
+2016,Quantum Computing,2500,Estonia,EE,6
+2016,Quantum Computing,2500,Hong Kong,HK,6
+2016,Quantum Computing,2500,Thailand,TH,6
+2016,Quantum Computing,2500,Uzbekistan,UZ,6
+2016,Quantum Computing,2500,Bangladesh,BD,5
+2016,Quantum Computing,2500,Mongolia,MN,5
+2016,Quantum Computing,2500,Singapore,SG,5
+2016,Quantum Computing,2500,United Arab Emirates,AE,4
+2016,Quantum Computing,2500,Armenia,AM,4
+2016,Quantum Computing,2500,Cuba,CU,4
+2016,Quantum Computing,2500,Nepal,NP,4
+2016,Quantum Computing,2500,Zimbabwe,ZW,4
+2016,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2016,Quantum Computing,2500,Ethiopia,ET,3
+2016,Quantum Computing,2500,New Zealand,NZ,3
+2016,Quantum Computing,2500,Puerto Rico,PR,3
+2016,Quantum Computing,2500,Slovenia,SI,3
+2016,Quantum Computing,2500,Costa Rica,CR,2
+2016,Quantum Computing,2500,Lebanon,LB,2
+2016,Quantum Computing,2500,Sri Lanka,LK,2
+2016,Quantum Computing,2500,Luxembourg,LU,2
+2016,Quantum Computing,2500,Peru,PE,2
+2016,Quantum Computing,2500,Syrian Arab Republic,SY,2
+2016,Quantum Computing,2500,Yemen,YE,2
+2016,Quantum Computing,2500,Benin,BJ,1
+2016,Quantum Computing,2500,Botswana,BW,1
+2016,Quantum Computing,2500,Cameroon,CM,1
+2016,Quantum Computing,2500,Ghana,GH,1
+2016,Quantum Computing,2500,Jordan,JO,1
+2016,Quantum Computing,2500,Kenya,KE,1
+2016,Quantum Computing,2500,Cambodia,KH,1
+2016,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,1
+2016,Quantum Computing,2500,Kuwait,KW,1
+2016,Quantum Computing,2500,Liechtenstein,LI,1
+2016,Quantum Computing,2500,"Moldova, Republic of",MD,1
+2016,Quantum Computing,2500,Montenegro,ME,1
+2016,Quantum Computing,2500,Myanmar,MM,1
+2016,Quantum Computing,2500,Mauritania,MR,1
+2016,Quantum Computing,2500,Mozambique,MZ,1
+2016,Quantum Computing,2500,Oman,OM,1
+2016,Quantum Computing,2500,Philippines,PH,1
+2016,Quantum Computing,2500,South Sudan,SS,1
+2016,Quantum Computing,2500,Sao Tome and Principe,ST,1
+2016,Quantum Computing,2500,Kosovo,XK,1
+2017,Quantum Computing,2500,Russian Federation,RU,1832
+2017,Quantum Computing,2500,United States of America,US,689
+2017,Quantum Computing,2500,China,CN,405
+2017,Quantum Computing,2500,Ukraine,UA,370
+2017,Quantum Computing,2500,Japan,JP,281
+2017,Quantum Computing,2500,Poland,PL,269
+2017,Quantum Computing,2500,France,FR,226
+2017,Quantum Computing,2500,Germany,DE,217
+2017,Quantum Computing,2500,Belarus,BY,216
+2017,Quantum Computing,2500,Brazil,BR,159
+2017,Quantum Computing,2500,India,IN,153
+2017,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,135
+2017,Quantum Computing,2500,Czechia,CZ,105
+2017,Quantum Computing,2500,"Korea, Republic of",KR,68
+2017,Quantum Computing,2500,Turkey,TR,62
+2017,Quantum Computing,2500,Slovakia,SK,61
+2017,Quantum Computing,2500,Romania,RO,59
+2017,Quantum Computing,2500,Australia,AU,56
+2017,Quantum Computing,2500,Canada,CA,56
+2017,Quantum Computing,2500,"Iran, Islamic Republic of",IR,54
+2017,Quantum Computing,2500,Italy,IT,52
+2017,Quantum Computing,2500,Austria,AT,47
+2017,Quantum Computing,2500,Kazakhstan,KZ,47
+2017,Quantum Computing,2500,Belgium,BE,43
+2017,Quantum Computing,2500,Spain,ES,42
+2017,Quantum Computing,2500,Sweden,SE,39
+2017,Quantum Computing,2500,Portugal,PT,33
+2017,Quantum Computing,2500,Switzerland,CH,29
+2017,Quantum Computing,2500,Denmark,DK,28
+2017,Quantum Computing,2500,Hungary,HU,28
+2017,Quantum Computing,2500,Malaysia,MY,28
+2017,Quantum Computing,2500,Serbia,RS,28
+2017,Quantum Computing,2500,"Taiwan, Province of China",TW,28
+2017,Quantum Computing,2500,Bulgaria,BG,26
+2017,Quantum Computing,2500,Netherlands,NL,23
+2017,Quantum Computing,2500,Indonesia,ID,22
+2017,Quantum Computing,2500,Algeria,DZ,20
+2017,Quantum Computing,2500,Finland,FI,20
+2017,Quantum Computing,2500,Iraq,IQ,19
+2017,Quantum Computing,2500,Azerbaijan,AZ,18
+2017,Quantum Computing,2500,Colombia,CO,18
+2017,Quantum Computing,2500,Greece,GR,18
+2017,Quantum Computing,2500,Egypt,EG,17
+2017,Quantum Computing,2500,Mexico,MX,17
+2017,Quantum Computing,2500,Lithuania,LT,16
+2017,Quantum Computing,2500,Nigeria,NG,15
+2017,Quantum Computing,2500,Latvia,LV,12
+2017,Quantum Computing,2500,Saudi Arabia,SA,12
+2017,Quantum Computing,2500,Singapore,SG,12
+2017,Quantum Computing,2500,Slovenia,SI,12
+2017,Quantum Computing,2500,Croatia,HR,11
+2017,Quantum Computing,2500,Morocco,MA,11
+2017,Quantum Computing,2500,Israel,IL,10
+2017,Quantum Computing,2500,Pakistan,PK,10
+2017,Quantum Computing,2500,Uzbekistan,UZ,10
+2017,Quantum Computing,2500,South Africa,ZA,10
+2017,Quantum Computing,2500,Ethiopia,ET,9
+2017,Quantum Computing,2500,Norway,NO,9
+2017,Quantum Computing,2500,Armenia,AM,8
+2017,Quantum Computing,2500,Chile,CL,7
+2017,Quantum Computing,2500,Luxembourg,LU,7
+2017,Quantum Computing,2500,Tajikistan,TJ,7
+2017,Quantum Computing,2500,Tunisia,TN,7
+2017,Quantum Computing,2500,Viet Nam,VN,7
+2017,Quantum Computing,2500,Ireland,IE,6
+2017,Quantum Computing,2500,"Moldova, Republic of",MD,5
+2017,Quantum Computing,2500,New Zealand,NZ,5
+2017,Quantum Computing,2500,Kosovo,XK,5
+2017,Quantum Computing,2500,Bangladesh,BD,4
+2017,Quantum Computing,2500,Jordan,JO,4
+2017,Quantum Computing,2500,Kenya,KE,4
+2017,Quantum Computing,2500,Mozambique,MZ,4
+2017,Quantum Computing,2500,Nepal,NP,4
+2017,Quantum Computing,2500,Qatar,QA,4
+2017,Quantum Computing,2500,Thailand,TH,4
+2017,Quantum Computing,2500,Uganda,UG,4
+2017,Quantum Computing,2500,Argentina,AR,3
+2017,Quantum Computing,2500,Georgia,GE,3
+2017,Quantum Computing,2500,Hong Kong,HK,3
+2017,Quantum Computing,2500,Kuwait,KW,3
+2017,Quantum Computing,2500,Peru,PE,3
+2017,Quantum Computing,2500,Puerto Rico,PR,3
+2017,Quantum Computing,2500,Sudan,SD,3
+2017,Quantum Computing,2500,Zimbabwe,ZW,3
+2017,Quantum Computing,2500,Albania,AL,2
+2017,Quantum Computing,2500,Bosnia and Herzegovina,BA,2
+2017,Quantum Computing,2500,Cuba,CU,2
+2017,Quantum Computing,2500,Estonia,EE,2
+2017,Quantum Computing,2500,Lebanon,LB,2
+2017,Quantum Computing,2500,Sri Lanka,LK,2
+2017,Quantum Computing,2500,North Macedonia,MK,2
+2017,Quantum Computing,2500,Myanmar,MM,2
+2017,Quantum Computing,2500,United Arab Emirates,AE,1
+2017,Quantum Computing,2500,Côte d'Ivoire,CI,1
+2017,Quantum Computing,2500,Cyprus,CY,1
+2017,Quantum Computing,2500,Guatemala,GT,1
+2017,Quantum Computing,2500,Honduras,HN,1
+2017,Quantum Computing,2500,Mongolia,MN,1
+2017,Quantum Computing,2500,Malta,MT,1
+2017,Quantum Computing,2500,Niger,NE,1
+2017,Quantum Computing,2500,Oman,OM,1
+2017,Quantum Computing,2500,Philippines,PH,1
+2017,Quantum Computing,2500,South Sudan,SS,1
+2017,Quantum Computing,2500,Uruguay,UY,1
+2017,Quantum Computing,2500,Yemen,YE,1
+2018,Quantum Computing,2500,Russian Federation,RU,2155
+2018,Quantum Computing,2500,United States of America,US,692
+2018,Quantum Computing,2500,Ukraine,UA,462
+2018,Quantum Computing,2500,China,CN,383
+2018,Quantum Computing,2500,Japan,JP,280
+2018,Quantum Computing,2500,Poland,PL,280
+2018,Quantum Computing,2500,Germany,DE,243
+2018,Quantum Computing,2500,France,FR,239
+2018,Quantum Computing,2500,India,IN,190
+2018,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,136
+2018,Quantum Computing,2500,Brazil,BR,124
+2018,Quantum Computing,2500,Belarus,BY,106
+2018,Quantum Computing,2500,Czechia,CZ,95
+2018,Quantum Computing,2500,Romania,RO,81
+2018,Quantum Computing,2500,Slovakia,SK,74
+2018,Quantum Computing,2500,"Korea, Republic of",KR,73
+2018,Quantum Computing,2500,Australia,AU,65
+2018,Quantum Computing,2500,Canada,CA,62
+2018,Quantum Computing,2500,"Iran, Islamic Republic of",IR,59
+2018,Quantum Computing,2500,Kazakhstan,KZ,59
+2018,Quantum Computing,2500,Turkey,TR,49
+2018,Quantum Computing,2500,Italy,IT,47
+2018,Quantum Computing,2500,Spain,ES,40
+2018,Quantum Computing,2500,Malaysia,MY,37
+2018,Quantum Computing,2500,"Taiwan, Province of China",TW,35
+2018,Quantum Computing,2500,Austria,AT,34
+2018,Quantum Computing,2500,Bulgaria,BG,34
+2018,Quantum Computing,2500,Iraq,IQ,33
+2018,Quantum Computing,2500,Sweden,SE,30
+2018,Quantum Computing,2500,Azerbaijan,AZ,29
+2018,Quantum Computing,2500,Switzerland,CH,29
+2018,Quantum Computing,2500,Indonesia,ID,29
+2018,Quantum Computing,2500,Belgium,BE,27
+2018,Quantum Computing,2500,Mexico,MX,27
+2018,Quantum Computing,2500,Denmark,DK,23
+2018,Quantum Computing,2500,Egypt,EG,23
+2018,Quantum Computing,2500,Serbia,RS,22
+2018,Quantum Computing,2500,Hungary,HU,21
+2018,Quantum Computing,2500,Netherlands,NL,21
+2018,Quantum Computing,2500,Finland,FI,20
+2018,Quantum Computing,2500,Algeria,DZ,18
+2018,Quantum Computing,2500,Nigeria,NG,18
+2018,Quantum Computing,2500,Saudi Arabia,SA,18
+2018,Quantum Computing,2500,Greece,GR,16
+2018,Quantum Computing,2500,Viet Nam,VN,16
+2018,Quantum Computing,2500,Norway,NO,15
+2018,Quantum Computing,2500,Pakistan,PK,15
+2018,Quantum Computing,2500,Uzbekistan,UZ,15
+2018,Quantum Computing,2500,Israel,IL,14
+2018,Quantum Computing,2500,South Africa,ZA,14
+2018,Quantum Computing,2500,Bangladesh,BD,13
+2018,Quantum Computing,2500,Croatia,HR,13
+2018,Quantum Computing,2500,Latvia,LV,13
+2018,Quantum Computing,2500,Slovenia,SI,13
+2018,Quantum Computing,2500,Colombia,CO,12
+2018,Quantum Computing,2500,Portugal,PT,12
+2018,Quantum Computing,2500,Lithuania,LT,10
+2018,Quantum Computing,2500,Tajikistan,TJ,10
+2018,Quantum Computing,2500,Morocco,MA,9
+2018,Quantum Computing,2500,Thailand,TH,9
+2018,Quantum Computing,2500,Chile,CL,8
+2018,Quantum Computing,2500,Hong Kong,HK,8
+2018,Quantum Computing,2500,Argentina,AR,7
+2018,Quantum Computing,2500,Nepal,NP,7
+2018,Quantum Computing,2500,Singapore,SG,7
+2018,Quantum Computing,2500,Yemen,YE,7
+2018,Quantum Computing,2500,Armenia,AM,6
+2018,Quantum Computing,2500,Georgia,GE,6
+2018,Quantum Computing,2500,Ireland,IE,6
+2018,Quantum Computing,2500,Tunisia,TN,6
+2018,Quantum Computing,2500,Luxembourg,LU,5
+2018,Quantum Computing,2500,Ecuador,EC,4
+2018,Quantum Computing,2500,Kenya,KE,4
+2018,Quantum Computing,2500,New Zealand,NZ,4
+2018,Quantum Computing,2500,United Arab Emirates,AE,3
+2018,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2018,Quantum Computing,2500,Ethiopia,ET,3
+2018,Quantum Computing,2500,Jordan,JO,3
+2018,Quantum Computing,2500,"Moldova, Republic of",MD,3
+2018,Quantum Computing,2500,Mozambique,MZ,3
+2018,Quantum Computing,2500,Peru,PE,3
+2018,Quantum Computing,2500,Zambia,ZM,3
+2018,Quantum Computing,2500,Zimbabwe,ZW,3
+2018,Quantum Computing,2500,Estonia,EE,2
+2018,Quantum Computing,2500,Lebanon,LB,2
+2018,Quantum Computing,2500,North Macedonia,MK,2
+2018,Quantum Computing,2500,Puerto Rico,PR,2
+2018,Quantum Computing,2500,"Palestine, State of",PS,2
+2018,Quantum Computing,2500,Syrian Arab Republic,SY,2
+2018,Quantum Computing,2500,Togo,TG,2
+2018,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,2
+2018,Quantum Computing,2500,"Virgin Islands, British",VG,2
+2018,Quantum Computing,2500,Albania,AL,1
+2018,Quantum Computing,2500,Barbados,BB,1
+2018,Quantum Computing,2500,Burkina Faso,BF,1
+2018,Quantum Computing,2500,Botswana,BW,1
+2018,Quantum Computing,2500,Cuba,CU,1
+2018,Quantum Computing,2500,Cyprus,CY,1
+2018,Quantum Computing,2500,Ghana,GH,1
+2018,Quantum Computing,2500,Guadeloupe,GP,1
+2018,Quantum Computing,2500,Iceland,IS,1
+2018,Quantum Computing,2500,Cambodia,KH,1
+2018,Quantum Computing,2500,Kuwait,KW,1
+2018,Quantum Computing,2500,Cayman Islands,KY,1
+2018,Quantum Computing,2500,Lao People's Democratic Republic,LA,1
+2018,Quantum Computing,2500,Montenegro,ME,1
+2018,Quantum Computing,2500,Myanmar,MM,1
+2018,Quantum Computing,2500,Mongolia,MN,1
+2018,Quantum Computing,2500,Nicaragua,NI,1
+2018,Quantum Computing,2500,Panama,PA,1
+2018,Quantum Computing,2500,Philippines,PH,1
+2018,Quantum Computing,2500,Paraguay,PY,1
+2018,Quantum Computing,2500,Sudan,SD,1
+2018,Quantum Computing,2500,Senegal,SN,1
+2018,Quantum Computing,2500,South Sudan,SS,1
+2018,Quantum Computing,2500,Kosovo,XK,1
+2019,Quantum Computing,2500,Russian Federation,RU,2838
+2019,Quantum Computing,2500,United States of America,US,731
+2019,Quantum Computing,2500,Ukraine,UA,589
+2019,Quantum Computing,2500,China,CN,450
+2019,Quantum Computing,2500,Japan,JP,399
+2019,Quantum Computing,2500,Poland,PL,277
+2019,Quantum Computing,2500,Germany,DE,267
+2019,Quantum Computing,2500,France,FR,261
+2019,Quantum Computing,2500,India,IN,201
+2019,Quantum Computing,2500,Belarus,BY,158
+2019,Quantum Computing,2500,Switzerland,CH,153
+2019,Quantum Computing,2500,Czechia,CZ,149
+2019,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,132
+2019,Quantum Computing,2500,Brazil,BR,106
+2019,Quantum Computing,2500,Romania,RO,94
+2019,Quantum Computing,2500,Slovakia,SK,73
+2019,Quantum Computing,2500,Canada,CA,69
+2019,Quantum Computing,2500,Italy,IT,67
+2019,Quantum Computing,2500,Turkey,TR,65
+2019,Quantum Computing,2500,Kazakhstan,KZ,63
+2019,Quantum Computing,2500,"Iran, Islamic Republic of",IR,58
+2019,Quantum Computing,2500,"Korea, Republic of",KR,53
+2019,Quantum Computing,2500,Spain,ES,48
+2019,Quantum Computing,2500,Azerbaijan,AZ,43
+2019,Quantum Computing,2500,Bulgaria,BG,40
+2019,Quantum Computing,2500,Australia,AU,39
+2019,Quantum Computing,2500,Netherlands,NL,39
+2019,Quantum Computing,2500,Austria,AT,38
+2019,Quantum Computing,2500,Indonesia,ID,38
+2019,Quantum Computing,2500,Belgium,BE,35
+2019,Quantum Computing,2500,Serbia,RS,33
+2019,Quantum Computing,2500,Denmark,DK,31
+2019,Quantum Computing,2500,Iraq,IQ,31
+2019,Quantum Computing,2500,Uzbekistan,UZ,31
+2019,Quantum Computing,2500,Egypt,EG,29
+2019,Quantum Computing,2500,Malaysia,MY,26
+2019,Quantum Computing,2500,Hungary,HU,24
+2019,Quantum Computing,2500,Sweden,SE,22
+2019,Quantum Computing,2500,Portugal,PT,21
+2019,Quantum Computing,2500,Viet Nam,VN,21
+2019,Quantum Computing,2500,Nigeria,NG,20
+2019,Quantum Computing,2500,Norway,NO,20
+2019,Quantum Computing,2500,Algeria,DZ,19
+2019,Quantum Computing,2500,Latvia,LV,19
+2019,Quantum Computing,2500,Tajikistan,TJ,19
+2019,Quantum Computing,2500,"Taiwan, Province of China",TW,18
+2019,Quantum Computing,2500,Lithuania,LT,17
+2019,Quantum Computing,2500,Mexico,MX,17
+2019,Quantum Computing,2500,Greece,GR,15
+2019,Quantum Computing,2500,Saudi Arabia,SA,14
+2019,Quantum Computing,2500,Thailand,TH,14
+2019,Quantum Computing,2500,South Africa,ZA,14
+2019,Quantum Computing,2500,Zimbabwe,ZW,14
+2019,Quantum Computing,2500,Israel,IL,13
+2019,Quantum Computing,2500,Singapore,SG,13
+2019,Quantum Computing,2500,Slovenia,SI,13
+2019,Quantum Computing,2500,Pakistan,PK,12
+2019,Quantum Computing,2500,Tunisia,TN,12
+2019,Quantum Computing,2500,Colombia,CO,11
+2019,Quantum Computing,2500,Morocco,MA,11
+2019,Quantum Computing,2500,Bangladesh,BD,10
+2019,Quantum Computing,2500,Georgia,GE,10
+2019,Quantum Computing,2500,United Arab Emirates,AE,9
+2019,Quantum Computing,2500,Bosnia and Herzegovina,BA,9
+2019,Quantum Computing,2500,Finland,FI,9
+2019,Quantum Computing,2500,Hong Kong,HK,9
+2019,Quantum Computing,2500,Croatia,HR,9
+2019,Quantum Computing,2500,Argentina,AR,8
+2019,Quantum Computing,2500,Kyrgyzstan,KG,7
+2019,Quantum Computing,2500,Yemen,YE,7
+2019,Quantum Computing,2500,Armenia,AM,6
+2019,Quantum Computing,2500,Chile,CL,6
+2019,Quantum Computing,2500,Ghana,GH,6
+2019,Quantum Computing,2500,Jordan,JO,6
+2019,Quantum Computing,2500,Lebanon,LB,6
+2019,Quantum Computing,2500,Mongolia,MN,6
+2019,Quantum Computing,2500,Estonia,EE,5
+2019,Quantum Computing,2500,Ireland,IE,5
+2019,Quantum Computing,2500,Philippines,PH,5
+2019,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,5
+2019,Quantum Computing,2500,Ethiopia,ET,4
+2019,Quantum Computing,2500,Iceland,IS,4
+2019,Quantum Computing,2500,"Moldova, Republic of",MD,4
+2019,Quantum Computing,2500,Montenegro,ME,4
+2019,Quantum Computing,2500,Mozambique,MZ,4
+2019,Quantum Computing,2500,Puerto Rico,PR,4
+2019,Quantum Computing,2500,Cameroon,CM,3
+2019,Quantum Computing,2500,Cuba,CU,3
+2019,Quantum Computing,2500,Ecuador,EC,3
+2019,Quantum Computing,2500,Kenya,KE,3
+2019,Quantum Computing,2500,Paraguay,PY,3
+2019,Quantum Computing,2500,Albania,AL,2
+2019,Quantum Computing,2500,Benin,BJ,2
+2019,Quantum Computing,2500,Brunei Darussalam,BN,2
+2019,Quantum Computing,2500,Côte d'Ivoire,CI,2
+2019,Quantum Computing,2500,Cambodia,KH,2
+2019,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,2
+2019,Quantum Computing,2500,Sri Lanka,LK,2
+2019,Quantum Computing,2500,Luxembourg,LU,2
+2019,Quantum Computing,2500,New Zealand,NZ,2
+2019,Quantum Computing,2500,Peru,PE,2
+2019,Quantum Computing,2500,Qatar,QA,2
+2019,Quantum Computing,2500,"Congo, Democratic Republic of the",CD,1
+2019,Quantum Computing,2500,Cabo Verde,CV,1
+2019,Quantum Computing,2500,Cyprus,CY,1
+2019,Quantum Computing,2500,Dominican Republic,DO,1
+2019,Quantum Computing,2500,Jamaica,JM,1
+2019,Quantum Computing,2500,Kuwait,KW,1
+2019,Quantum Computing,2500,North Macedonia,MK,1
+2019,Quantum Computing,2500,Mali,ML,1
+2019,Quantum Computing,2500,Namibia,NA,1
+2019,Quantum Computing,2500,Nicaragua,NI,1
+2019,Quantum Computing,2500,Nepal,NP,1
+2019,Quantum Computing,2500,Réunion,RE,1
+2019,Quantum Computing,2500,Sudan,SD,1
+2019,Quantum Computing,2500,South Sudan,SS,1
+2019,Quantum Computing,2500,Togo,TG,1
+2019,Quantum Computing,2500,Turkmenistan,TM,1
+2019,Quantum Computing,2500,"Tanzania, United Republic of",TZ,1
+2019,Quantum Computing,2500,Kosovo,XK,1
+2020,Quantum Computing,2500,Russian Federation,RU,3053
+2020,Quantum Computing,2500,United States of America,US,1291
+2020,Quantum Computing,2500,Ukraine,UA,672
+2020,Quantum Computing,2500,China,CN,403
+2020,Quantum Computing,2500,Poland,PL,245
+2020,Quantum Computing,2500,India,IN,237
+2020,Quantum Computing,2500,Japan,JP,218
+2020,Quantum Computing,2500,Germany,DE,186
+2020,Quantum Computing,2500,France,FR,172
+2020,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,157
+2020,Quantum Computing,2500,Belarus,BY,141
+2020,Quantum Computing,2500,Brazil,BR,123
+2020,Quantum Computing,2500,Czechia,CZ,115
+2020,Quantum Computing,2500,Kazakhstan,KZ,90
+2020,Quantum Computing,2500,Slovakia,SK,72
+2020,Quantum Computing,2500,Uzbekistan,UZ,71
+2020,Quantum Computing,2500,Canada,CA,66
+2020,Quantum Computing,2500,Romania,RO,63
+2020,Quantum Computing,2500,Italy,IT,62
+2020,Quantum Computing,2500,Azerbaijan,AZ,55
+2020,Quantum Computing,2500,"Iran, Islamic Republic of",IR,54
+2020,Quantum Computing,2500,Iraq,IQ,48
+2020,Quantum Computing,2500,Saudi Arabia,SA,41
+2020,Quantum Computing,2500,Turkey,TR,40
+2020,Quantum Computing,2500,Spain,ES,39
+2020,Quantum Computing,2500,"Korea, Republic of",KR,37
+2020,Quantum Computing,2500,Austria,AT,36
+2020,Quantum Computing,2500,Australia,AU,36
+2020,Quantum Computing,2500,Egypt,EG,32
+2020,Quantum Computing,2500,Indonesia,ID,32
+2020,Quantum Computing,2500,Viet Nam,VN,32
+2020,Quantum Computing,2500,Malaysia,MY,31
+2020,Quantum Computing,2500,Serbia,RS,29
+2020,Quantum Computing,2500,Tajikistan,TJ,29
+2020,Quantum Computing,2500,Switzerland,CH,25
+2020,Quantum Computing,2500,Portugal,PT,25
+2020,Quantum Computing,2500,Netherlands,NL,22
+2020,Quantum Computing,2500,Bulgaria,BG,21
+2020,Quantum Computing,2500,Belgium,BE,20
+2020,Quantum Computing,2500,Nigeria,NG,20
+2020,Quantum Computing,2500,"Taiwan, Province of China",TW,20
+2020,Quantum Computing,2500,Mexico,MX,19
+2020,Quantum Computing,2500,Lithuania,LT,18
+2020,Quantum Computing,2500,South Africa,ZA,18
+2020,Quantum Computing,2500,Denmark,DK,17
+2020,Quantum Computing,2500,Hungary,HU,17
+2020,Quantum Computing,2500,Latvia,LV,17
+2020,Quantum Computing,2500,Norway,NO,17
+2020,Quantum Computing,2500,Singapore,SG,17
+2020,Quantum Computing,2500,Slovenia,SI,17
+2020,Quantum Computing,2500,Pakistan,PK,16
+2020,Quantum Computing,2500,Sweden,SE,16
+2020,Quantum Computing,2500,Nepal,NP,15
+2020,Quantum Computing,2500,Algeria,DZ,14
+2020,Quantum Computing,2500,Zimbabwe,ZW,14
+2020,Quantum Computing,2500,Greece,GR,13
+2020,Quantum Computing,2500,Morocco,MA,12
+2020,Quantum Computing,2500,Israel,IL,11
+2020,Quantum Computing,2500,Colombia,CO,10
+2020,Quantum Computing,2500,Finland,FI,10
+2020,Quantum Computing,2500,Thailand,TH,10
+2020,Quantum Computing,2500,Armenia,AM,9
+2020,Quantum Computing,2500,Bangladesh,BD,7
+2020,Quantum Computing,2500,Ethiopia,ET,7
+2020,Quantum Computing,2500,Georgia,GE,7
+2020,Quantum Computing,2500,Tunisia,TN,7
+2020,Quantum Computing,2500,United Arab Emirates,AE,6
+2020,Quantum Computing,2500,Croatia,HR,6
+2020,Quantum Computing,2500,"Moldova, Republic of",MD,6
+2020,Quantum Computing,2500,New Zealand,NZ,6
+2020,Quantum Computing,2500,Estonia,EE,5
+2020,Quantum Computing,2500,Peru,PE,5
+2020,Quantum Computing,2500,Argentina,AR,4
+2020,Quantum Computing,2500,Chile,CL,4
+2020,Quantum Computing,2500,Hong Kong,HK,4
+2020,Quantum Computing,2500,Kyrgyzstan,KG,4
+2020,Quantum Computing,2500,Puerto Rico,PR,4
+2020,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2020,Quantum Computing,2500,Cuba,CU,3
+2020,Quantum Computing,2500,Ghana,GH,3
+2020,Quantum Computing,2500,Ireland,IE,3
+2020,Quantum Computing,2500,Lebanon,LB,3
+2020,Quantum Computing,2500,Luxembourg,LU,3
+2020,Quantum Computing,2500,Libya,LY,3
+2020,Quantum Computing,2500,Nicaragua,NI,3
+2020,Quantum Computing,2500,Qatar,QA,3
+2020,Quantum Computing,2500,Senegal,SN,3
+2020,Quantum Computing,2500,Yemen,YE,3
+2020,Quantum Computing,2500,Albania,AL,2
+2020,Quantum Computing,2500,Angola,AO,2
+2020,Quantum Computing,2500,Cyprus,CY,2
+2020,Quantum Computing,2500,Ecuador,EC,2
+2020,Quantum Computing,2500,Jordan,JO,2
+2020,Quantum Computing,2500,Kuwait,KW,2
+2020,Quantum Computing,2500,Sri Lanka,LK,2
+2020,Quantum Computing,2500,Mongolia,MN,2
+2020,Quantum Computing,2500,"Palestine, State of",PS,2
+2020,Quantum Computing,2500,Syrian Arab Republic,SY,2
+2020,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,2
+2020,Quantum Computing,2500,Kosovo,XK,2
+2020,Quantum Computing,2500,Bahrain,BH,1
+2020,Quantum Computing,2500,Burundi,BI,1
+2020,Quantum Computing,2500,Brunei Darussalam,BN,1
+2020,Quantum Computing,2500,"Bolivia, Plurinational State of",BO,1
+2020,Quantum Computing,2500,Botswana,BW,1
+2020,Quantum Computing,2500,"Congo, Democratic Republic of the",CD,1
+2020,Quantum Computing,2500,Costa Rica,CR,1
+2020,Quantum Computing,2500,Iceland,IS,1
+2020,Quantum Computing,2500,Kenya,KE,1
+2020,Quantum Computing,2500,Cambodia,KH,1
+2020,Quantum Computing,2500,Montenegro,ME,1
+2020,Quantum Computing,2500,Myanmar,MM,1
+2020,Quantum Computing,2500,Mauritius,MU,1
+2020,Quantum Computing,2500,Oman,OM,1
+2020,Quantum Computing,2500,Papua New Guinea,PG,1
+2020,Quantum Computing,2500,Philippines,PH,1
+2020,Quantum Computing,2500,South Sudan,SS,1
+2020,Quantum Computing,2500,Turkmenistan,TM,1
+2020,Quantum Computing,2500,"Tanzania, United Republic of",TZ,1
+2020,Quantum Computing,2500,Uganda,UG,1
+2021,Quantum Computing,2500,Russian Federation,RU,3136
+2021,Quantum Computing,2500,Ukraine,UA,716
+2021,Quantum Computing,2500,United States of America,US,602
+2021,Quantum Computing,2500,China,CN,398
+2021,Quantum Computing,2500,India,IN,265
+2021,Quantum Computing,2500,Poland,PL,201
+2021,Quantum Computing,2500,Germany,DE,183
+2021,Quantum Computing,2500,Japan,JP,181
+2021,Quantum Computing,2500,Uzbekistan,UZ,180
+2021,Quantum Computing,2500,Belarus,BY,142
+2021,Quantum Computing,2500,France,FR,141
+2021,Quantum Computing,2500,Kazakhstan,KZ,127
+2021,Quantum Computing,2500,Italy,IT,119
+2021,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,98
+2021,Quantum Computing,2500,Czechia,CZ,91
+2021,Quantum Computing,2500,Slovakia,SK,71
+2021,Quantum Computing,2500,Brazil,BR,68
+2021,Quantum Computing,2500,Romania,RO,65
+2021,Quantum Computing,2500,Canada,CA,64
+2021,Quantum Computing,2500,"Korea, Republic of",KR,54
+2021,Quantum Computing,2500,Turkey,TR,52
+2021,Quantum Computing,2500,Azerbaijan,AZ,49
+2021,Quantum Computing,2500,"Iran, Islamic Republic of",IR,48
+2021,Quantum Computing,2500,Australia,AU,44
+2021,Quantum Computing,2500,Spain,ES,43
+2021,Quantum Computing,2500,Bulgaria,BG,39
+2021,Quantum Computing,2500,Iraq,IQ,38
+2021,Quantum Computing,2500,Austria,AT,35
+2021,Quantum Computing,2500,Malaysia,MY,34
+2021,Quantum Computing,2500,Nigeria,NG,34
+2021,Quantum Computing,2500,"Taiwan, Province of China",TW,32
+2021,Quantum Computing,2500,Belgium,BE,31
+2021,Quantum Computing,2500,Indonesia,ID,30
+2021,Quantum Computing,2500,Hungary,HU,29
+2021,Quantum Computing,2500,Egypt,EG,28
+2021,Quantum Computing,2500,Netherlands,NL,28
+2021,Quantum Computing,2500,Switzerland,CH,26
+2021,Quantum Computing,2500,Viet Nam,VN,25
+2021,Quantum Computing,2500,Greece,GR,24
+2021,Quantum Computing,2500,Norway,NO,22
+2021,Quantum Computing,2500,Pakistan,PK,22
+2021,Quantum Computing,2500,Portugal,PT,22
+2021,Quantum Computing,2500,Sweden,SE,22
+2021,Quantum Computing,2500,Nepal,NP,21
+2021,Quantum Computing,2500,Tajikistan,TJ,21
+2021,Quantum Computing,2500,Finland,FI,18
+2021,Quantum Computing,2500,Saudi Arabia,SA,17
+2021,Quantum Computing,2500,Mexico,MX,16
+2021,Quantum Computing,2500,South Africa,ZA,16
+2021,Quantum Computing,2500,Lithuania,LT,14
+2021,Quantum Computing,2500,Morocco,MA,14
+2021,Quantum Computing,2500,Kyrgyzstan,KG,13
+2021,Quantum Computing,2500,Latvia,LV,13
+2021,Quantum Computing,2500,Singapore,SG,13
+2021,Quantum Computing,2500,Tunisia,TN,13
+2021,Quantum Computing,2500,Denmark,DK,12
+2021,Quantum Computing,2500,Serbia,RS,12
+2021,Quantum Computing,2500,Slovenia,SI,12
+2021,Quantum Computing,2500,Armenia,AM,11
+2021,Quantum Computing,2500,Algeria,DZ,11
+2021,Quantum Computing,2500,Georgia,GE,10
+2021,Quantum Computing,2500,Hong Kong,HK,10
+2021,Quantum Computing,2500,Bangladesh,BD,9
+2021,Quantum Computing,2500,Croatia,HR,9
+2021,Quantum Computing,2500,Luxembourg,LU,9
+2021,Quantum Computing,2500,"Moldova, Republic of",MD,8
+2021,Quantum Computing,2500,Colombia,CO,7
+2021,Quantum Computing,2500,Ethiopia,ET,7
+2021,Quantum Computing,2500,Ireland,IE,7
+2021,Quantum Computing,2500,Israel,IL,7
+2021,Quantum Computing,2500,Thailand,TH,7
+2021,Quantum Computing,2500,Zimbabwe,ZW,7
+2021,Quantum Computing,2500,Bosnia and Herzegovina,BA,6
+2021,Quantum Computing,2500,Jordan,JO,6
+2021,Quantum Computing,2500,New Zealand,NZ,6
+2021,Quantum Computing,2500,Qatar,QA,6
+2021,Quantum Computing,2500,United Arab Emirates,AE,5
+2021,Quantum Computing,2500,Estonia,EE,5
+2021,Quantum Computing,2500,Kenya,KE,5
+2021,Quantum Computing,2500,Mongolia,MN,5
+2021,Quantum Computing,2500,Chile,CL,4
+2021,Quantum Computing,2500,Ecuador,EC,4
+2021,Quantum Computing,2500,Peru,PE,4
+2021,Quantum Computing,2500,Burkina Faso,BF,3
+2021,Quantum Computing,2500,Cameroon,CM,3
+2021,Quantum Computing,2500,Cuba,CU,3
+2021,Quantum Computing,2500,Cyprus,CY,2
+2021,Quantum Computing,2500,Ghana,GH,2
+2021,Quantum Computing,2500,Cambodia,KH,2
+2021,Quantum Computing,2500,Lebanon,LB,2
+2021,Quantum Computing,2500,Montenegro,ME,2
+2021,Quantum Computing,2500,North Macedonia,MK,2
+2021,Quantum Computing,2500,Mozambique,MZ,2
+2021,Quantum Computing,2500,Philippines,PH,2
+2021,Quantum Computing,2500,Sudan,SD,2
+2021,Quantum Computing,2500,Togo,TG,2
+2021,Quantum Computing,2500,Yemen,YE,2
+2021,Quantum Computing,2500,Argentina,AR,1
+2021,Quantum Computing,2500,Côte d'Ivoire,CI,1
+2021,Quantum Computing,2500,Iceland,IS,1
+2021,Quantum Computing,2500,Jamaica,JM,1
+2021,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,1
+2021,Quantum Computing,2500,Kuwait,KW,1
+2021,Quantum Computing,2500,Sri Lanka,LK,1
+2021,Quantum Computing,2500,Libya,LY,1
+2021,Quantum Computing,2500,Mauritania,MR,1
+2021,Quantum Computing,2500,Mauritius,MU,1
+2021,Quantum Computing,2500,Malawi,MW,1
+2021,Quantum Computing,2500,Puerto Rico,PR,1
+2021,Quantum Computing,2500,"Palestine, State of",PS,1
+2021,Quantum Computing,2500,Senegal,SN,1
+2021,Quantum Computing,2500,Suriname,SR,1
+2021,Quantum Computing,2500,Syrian Arab Republic,SY,1
+2021,Quantum Computing,2500,Turkmenistan,TM,1
+2021,Quantum Computing,2500,"Tanzania, United Republic of",TZ,1
+2021,Quantum Computing,2500,Uruguay,UY,1
+2021,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,1
+2021,Quantum Computing,2500,Kosovo,XK,1
+2022,Quantum Computing,2500,Russian Federation,RU,2764
+2022,Quantum Computing,2500,United States of America,US,2177
+2022,Quantum Computing,2500,Ukraine,UA,667
+2022,Quantum Computing,2500,China,CN,658
+2022,Quantum Computing,2500,Poland,PL,217
+2022,Quantum Computing,2500,India,IN,213
+2022,Quantum Computing,2500,France,FR,195
+2022,Quantum Computing,2500,Germany,DE,174
+2022,Quantum Computing,2500,Japan,JP,138
+2022,Quantum Computing,2500,Kazakhstan,KZ,135
+2022,Quantum Computing,2500,Belarus,BY,134
+2022,Quantum Computing,2500,Uzbekistan,UZ,126
+2022,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,106
+2022,Quantum Computing,2500,Australia,AU,91
+2022,Quantum Computing,2500,Brazil,BR,80
+2022,Quantum Computing,2500,Czechia,CZ,78
+2022,Quantum Computing,2500,"Korea, Republic of",KR,73
+2022,Quantum Computing,2500,Italy,IT,72
+2022,Quantum Computing,2500,Turkey,TR,72
+2022,Quantum Computing,2500,Romania,RO,71
+2022,Quantum Computing,2500,Azerbaijan,AZ,52
+2022,Quantum Computing,2500,Spain,ES,52
+2022,Quantum Computing,2500,Slovakia,SK,51
+2022,Quantum Computing,2500,"Iran, Islamic Republic of",IR,50
+2022,Quantum Computing,2500,Egypt,EG,48
+2022,Quantum Computing,2500,Canada,CA,45
+2022,Quantum Computing,2500,Malaysia,MY,43
+2022,Quantum Computing,2500,Iraq,IQ,42
+2022,Quantum Computing,2500,Bulgaria,BG,38
+2022,Quantum Computing,2500,Indonesia,ID,34
+2022,Quantum Computing,2500,Portugal,PT,33
+2022,Quantum Computing,2500,Tajikistan,TJ,31
+2022,Quantum Computing,2500,Austria,AT,30
+2022,Quantum Computing,2500,"Taiwan, Province of China",TW,30
+2022,Quantum Computing,2500,Pakistan,PK,26
+2022,Quantum Computing,2500,Belgium,BE,25
+2022,Quantum Computing,2500,Mexico,MX,23
+2022,Quantum Computing,2500,Nigeria,NG,23
+2022,Quantum Computing,2500,Saudi Arabia,SA,22
+2022,Quantum Computing,2500,Serbia,RS,21
+2022,Quantum Computing,2500,Hong Kong,HK,20
+2022,Quantum Computing,2500,Hungary,HU,20
+2022,Quantum Computing,2500,Sweden,SE,20
+2022,Quantum Computing,2500,Singapore,SG,20
+2022,Quantum Computing,2500,Norway,NO,19
+2022,Quantum Computing,2500,Switzerland,CH,18
+2022,Quantum Computing,2500,Thailand,TH,17
+2022,Quantum Computing,2500,Viet Nam,VN,17
+2022,Quantum Computing,2500,Zimbabwe,ZW,17
+2022,Quantum Computing,2500,Algeria,DZ,16
+2022,Quantum Computing,2500,Denmark,DK,15
+2022,Quantum Computing,2500,Netherlands,NL,15
+2022,Quantum Computing,2500,South Africa,ZA,15
+2022,Quantum Computing,2500,Georgia,GE,14
+2022,Quantum Computing,2500,Croatia,HR,14
+2022,Quantum Computing,2500,Latvia,LV,14
+2022,Quantum Computing,2500,Armenia,AM,13
+2022,Quantum Computing,2500,Bangladesh,BD,12
+2022,Quantum Computing,2500,Greece,GR,11
+2022,Quantum Computing,2500,Colombia,CO,9
+2022,Quantum Computing,2500,Israel,IL,9
+2022,Quantum Computing,2500,Slovenia,SI,9
+2022,Quantum Computing,2500,Yemen,YE,9
+2022,Quantum Computing,2500,Finland,FI,8
+2022,Quantum Computing,2500,Argentina,AR,7
+2022,Quantum Computing,2500,Ireland,IE,7
+2022,Quantum Computing,2500,Tunisia,TN,7
+2022,Quantum Computing,2500,Libya,LY,6
+2022,Quantum Computing,2500,Morocco,MA,6
+2022,Quantum Computing,2500,New Zealand,NZ,6
+2022,Quantum Computing,2500,Estonia,EE,5
+2022,Quantum Computing,2500,Jordan,JO,5
+2022,Quantum Computing,2500,Nicaragua,NI,5
+2022,Quantum Computing,2500,Kyrgyzstan,KG,4
+2022,Quantum Computing,2500,Lebanon,LB,4
+2022,Quantum Computing,2500,Lithuania,LT,4
+2022,Quantum Computing,2500,Nepal,NP,4
+2022,Quantum Computing,2500,Burkina Faso,BF,3
+2022,Quantum Computing,2500,Ethiopia,ET,3
+2022,Quantum Computing,2500,"Moldova, Republic of",MD,3
+2022,Quantum Computing,2500,Mongolia,MN,3
+2022,Quantum Computing,2500,Puerto Rico,PR,3
+2022,Quantum Computing,2500,United Arab Emirates,AE,2
+2022,Quantum Computing,2500,Albania,AL,2
+2022,Quantum Computing,2500,Bosnia and Herzegovina,BA,2
+2022,Quantum Computing,2500,Ecuador,EC,2
+2022,Quantum Computing,2500,Kuwait,KW,2
+2022,Quantum Computing,2500,Sri Lanka,LK,2
+2022,Quantum Computing,2500,Macao,MO,2
+2022,Quantum Computing,2500,Qatar,QA,2
+2022,Quantum Computing,2500,Uruguay,UY,2
+2022,Quantum Computing,2500,Angola,AO,1
+2022,Quantum Computing,2500,Benin,BJ,1
+2022,Quantum Computing,2500,Botswana,BW,1
+2022,Quantum Computing,2500,Cyprus,CY,1
+2022,Quantum Computing,2500,Ghana,GH,1
+2022,Quantum Computing,2500,Iceland,IS,1
+2022,Quantum Computing,2500,Liechtenstein,LI,1
+2022,Quantum Computing,2500,Montenegro,ME,1
+2022,Quantum Computing,2500,North Macedonia,MK,1
+2022,Quantum Computing,2500,Myanmar,MM,1
+2022,Quantum Computing,2500,Namibia,NA,1
+2022,Quantum Computing,2500,Panama,PA,1
+2022,Quantum Computing,2500,Peru,PE,1
+2022,Quantum Computing,2500,Philippines,PH,1
+2022,Quantum Computing,2500,Senegal,SN,1
+2022,Quantum Computing,2500,Somalia,SO,1
+2022,Quantum Computing,2500,Chad,TD,1
+2022,Quantum Computing,2500,Togo,TG,1
+2022,Quantum Computing,2500,"Virgin Islands, British",VG,1
+2023,Quantum Computing,2500,Russian Federation,RU,2207
+2023,Quantum Computing,2500,United States of America,US,1088
+2023,Quantum Computing,2500,China,CN,709
+2023,Quantum Computing,2500,Ukraine,UA,632
+2023,Quantum Computing,2500,India,IN,285
+2023,Quantum Computing,2500,France,FR,203
+2023,Quantum Computing,2500,Poland,PL,202
+2023,Quantum Computing,2500,Uzbekistan,UZ,202
+2023,Quantum Computing,2500,Germany,DE,190
+2023,Quantum Computing,2500,Japan,JP,154
+2023,Quantum Computing,2500,Belarus,BY,122
+2023,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,101
+2023,Quantum Computing,2500,Turkey,TR,97
+2023,Quantum Computing,2500,Brazil,BR,96
+2023,Quantum Computing,2500,Kazakhstan,KZ,95
+2023,Quantum Computing,2500,"Korea, Republic of",KR,78
+2023,Quantum Computing,2500,Indonesia,ID,76
+2023,Quantum Computing,2500,Canada,CA,74
+2023,Quantum Computing,2500,Italy,IT,74
+2023,Quantum Computing,2500,Australia,AU,73
+2023,Quantum Computing,2500,Czechia,CZ,72
+2023,Quantum Computing,2500,Azerbaijan,AZ,68
+2023,Quantum Computing,2500,Iraq,IQ,66
+2023,Quantum Computing,2500,Slovakia,SK,64
+2023,Quantum Computing,2500,Romania,RO,63
+2023,Quantum Computing,2500,Egypt,EG,60
+2023,Quantum Computing,2500,Malaysia,MY,47
+2023,Quantum Computing,2500,Spain,ES,45
+2023,Quantum Computing,2500,"Iran, Islamic Republic of",IR,43
+2023,Quantum Computing,2500,Bulgaria,BG,41
+2023,Quantum Computing,2500,Austria,AT,39
+2023,Quantum Computing,2500,Mexico,MX,39
+2023,Quantum Computing,2500,Hungary,HU,38
+2023,Quantum Computing,2500,Belgium,BE,35
+2023,Quantum Computing,2500,Tajikistan,TJ,33
+2023,Quantum Computing,2500,Netherlands,NL,32
+2023,Quantum Computing,2500,Nigeria,NG,31
+2023,Quantum Computing,2500,Saudi Arabia,SA,31
+2023,Quantum Computing,2500,Switzerland,CH,29
+2023,Quantum Computing,2500,Portugal,PT,29
+2023,Quantum Computing,2500,"Taiwan, Province of China",TW,26
+2023,Quantum Computing,2500,Serbia,RS,22
+2023,Quantum Computing,2500,Sweden,SE,21
+2023,Quantum Computing,2500,Denmark,DK,20
+2023,Quantum Computing,2500,Algeria,DZ,20
+2023,Quantum Computing,2500,Greece,GR,19
+2023,Quantum Computing,2500,Ireland,IE,17
+2023,Quantum Computing,2500,Viet Nam,VN,17
+2023,Quantum Computing,2500,South Africa,ZA,17
+2023,Quantum Computing,2500,Israel,IL,16
+2023,Quantum Computing,2500,Lithuania,LT,16
+2023,Quantum Computing,2500,Pakistan,PK,16
+2023,Quantum Computing,2500,Nepal,NP,15
+2023,Quantum Computing,2500,Thailand,TH,15
+2023,Quantum Computing,2500,Bangladesh,BD,13
+2023,Quantum Computing,2500,Finland,FI,13
+2023,Quantum Computing,2500,Armenia,AM,12
+2023,Quantum Computing,2500,Norway,NO,12
+2023,Quantum Computing,2500,Slovenia,SI,12
+2023,Quantum Computing,2500,Morocco,MA,11
+2023,Quantum Computing,2500,Bosnia and Herzegovina,BA,10
+2023,Quantum Computing,2500,Ethiopia,ET,10
+2023,Quantum Computing,2500,Hong Kong,HK,10
+2023,Quantum Computing,2500,Singapore,SG,10
+2023,Quantum Computing,2500,Yemen,YE,10
+2023,Quantum Computing,2500,Zimbabwe,ZW,10
+2023,Quantum Computing,2500,Georgia,GE,9
+2023,Quantum Computing,2500,Croatia,HR,9
+2023,Quantum Computing,2500,United Arab Emirates,AE,8
+2023,Quantum Computing,2500,Colombia,CO,7
+2023,Quantum Computing,2500,Lebanon,LB,7
+2023,Quantum Computing,2500,Latvia,LV,7
+2023,Quantum Computing,2500,Mongolia,MN,7
+2023,Quantum Computing,2500,Nicaragua,NI,7
+2023,Quantum Computing,2500,Argentina,AR,6
+2023,Quantum Computing,2500,Chile,CL,6
+2023,Quantum Computing,2500,Jordan,JO,6
+2023,Quantum Computing,2500,Philippines,PH,6
+2023,Quantum Computing,2500,Libya,LY,5
+2023,Quantum Computing,2500,Peru,PE,5
+2023,Quantum Computing,2500,Macao,MO,4
+2023,Quantum Computing,2500,New Zealand,NZ,4
+2023,Quantum Computing,2500,Qatar,QA,4
+2023,Quantum Computing,2500,Tunisia,TN,4
+2023,Quantum Computing,2500,Cameroon,CM,3
+2023,Quantum Computing,2500,Estonia,EE,3
+2023,Quantum Computing,2500,Kyrgyzstan,KG,3
+2023,Quantum Computing,2500,Kuwait,KW,3
+2023,Quantum Computing,2500,Oman,OM,3
+2023,Quantum Computing,2500,Brunei Darussalam,BN,2
+2023,Quantum Computing,2500,Cyprus,CY,2
+2023,Quantum Computing,2500,Cambodia,KH,2
+2023,Quantum Computing,2500,"Moldova, Republic of",MD,2
+2023,Quantum Computing,2500,North Macedonia,MK,2
+2023,Quantum Computing,2500,Myanmar,MM,2
+2023,Quantum Computing,2500,Puerto Rico,PR,2
+2023,Quantum Computing,2500,South Sudan,SS,2
+2023,Quantum Computing,2500,Syrian Arab Republic,SY,2
+2023,Quantum Computing,2500,"Tanzania, United Republic of",TZ,2
+2023,Quantum Computing,2500,Zambia,ZM,2
+2023,Quantum Computing,2500,Burkina Faso,BF,1
+2023,Quantum Computing,2500,Bahrain,BH,1
+2023,Quantum Computing,2500,Benin,BJ,1
+2023,Quantum Computing,2500,Central African Republic,CF,1
+2023,Quantum Computing,2500,Côte d'Ivoire,CI,1
+2023,Quantum Computing,2500,Ecuador,EC,1
+2023,Quantum Computing,2500,Kenya,KE,1
+2023,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,1
+2023,Quantum Computing,2500,Montenegro,ME,1
+2023,Quantum Computing,2500,"Palestine, State of",PS,1
+2023,Quantum Computing,2500,Togo,TG,1
+2023,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,1
+2023,Quantum Computing,2500,Kosovo,XK,1
+2024,Quantum Computing,2500,China,CN,1749
+2024,Quantum Computing,2500,Russian Federation,RU,1516
+2024,Quantum Computing,2500,United States of America,US,798
+2024,Quantum Computing,2500,India,IN,475
+2024,Quantum Computing,2500,Ukraine,UA,472
+2024,Quantum Computing,2500,Germany,DE,298
+2024,Quantum Computing,2500,Japan,JP,296
+2024,Quantum Computing,2500,France,FR,271
+2024,Quantum Computing,2500,Poland,PL,252
+2024,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,188
+2024,Quantum Computing,2500,Indonesia,ID,161
+2024,Quantum Computing,2500,Turkey,TR,154
+2024,Quantum Computing,2500,Uzbekistan,UZ,146
+2024,Quantum Computing,2500,"Korea, Republic of",KR,136
+2024,Quantum Computing,2500,Italy,IT,129
+2024,Quantum Computing,2500,Brazil,BR,120
+2024,Quantum Computing,2500,Kazakhstan,KZ,118
+2024,Quantum Computing,2500,Australia,AU,108
+2024,Quantum Computing,2500,Czechia,CZ,96
+2024,Quantum Computing,2500,Spain,ES,94
+2024,Quantum Computing,2500,"Iran, Islamic Republic of",IR,92
+2024,Quantum Computing,2500,Canada,CA,90
+2024,Quantum Computing,2500,Iraq,IQ,90
+2024,Quantum Computing,2500,Belarus,BY,82
+2024,Quantum Computing,2500,Malaysia,MY,70
+2024,Quantum Computing,2500,Romania,RO,69
+2024,Quantum Computing,2500,Slovakia,SK,64
+2024,Quantum Computing,2500,Egypt,EG,59
+2024,Quantum Computing,2500,Saudi Arabia,SA,57
+2024,Quantum Computing,2500,Sweden,SE,52
+2024,Quantum Computing,2500,Portugal,PT,48
+2024,Quantum Computing,2500,"Taiwan, Province of China",TW,48
+2024,Quantum Computing,2500,Azerbaijan,AZ,45
+2024,Quantum Computing,2500,Bulgaria,BG,45
+2024,Quantum Computing,2500,Netherlands,NL,44
+2024,Quantum Computing,2500,Austria,AT,42
+2024,Quantum Computing,2500,Mexico,MX,42
+2024,Quantum Computing,2500,Singapore,SG,42
+2024,Quantum Computing,2500,Thailand,TH,41
+2024,Quantum Computing,2500,Algeria,DZ,38
+2024,Quantum Computing,2500,Viet Nam,VN,37
+2024,Quantum Computing,2500,South Africa,ZA,36
+2024,Quantum Computing,2500,Hungary,HU,34
+2024,Quantum Computing,2500,Belgium,BE,32
+2024,Quantum Computing,2500,Norway,NO,30
+2024,Quantum Computing,2500,Switzerland,CH,29
+2024,Quantum Computing,2500,Nigeria,NG,29
+2024,Quantum Computing,2500,Pakistan,PK,27
+2024,Quantum Computing,2500,Bangladesh,BD,26
+2024,Quantum Computing,2500,Denmark,DK,26
+2024,Quantum Computing,2500,Nepal,NP,23
+2024,Quantum Computing,2500,Slovenia,SI,22
+2024,Quantum Computing,2500,Greece,GR,21
+2024,Quantum Computing,2500,United Arab Emirates,AE,20
+2024,Quantum Computing,2500,Hong Kong,HK,20
+2024,Quantum Computing,2500,Serbia,RS,19
+2024,Quantum Computing,2500,Finland,FI,17
+2024,Quantum Computing,2500,Lithuania,LT,17
+2024,Quantum Computing,2500,Ireland,IE,15
+2024,Quantum Computing,2500,Tajikistan,TJ,15
+2024,Quantum Computing,2500,Tunisia,TN,15
+2024,Quantum Computing,2500,Jordan,JO,14
+2024,Quantum Computing,2500,Latvia,LV,14
+2024,Quantum Computing,2500,Israel,IL,13
+2024,Quantum Computing,2500,Argentina,AR,12
+2024,Quantum Computing,2500,Luxembourg,LU,11
+2024,Quantum Computing,2500,Georgia,GE,10
+2024,Quantum Computing,2500,Croatia,HR,10
+2024,Quantum Computing,2500,Morocco,MA,10
+2024,Quantum Computing,2500,Armenia,AM,9
+2024,Quantum Computing,2500,Colombia,CO,9
+2024,Quantum Computing,2500,Ethiopia,ET,9
+2024,Quantum Computing,2500,Yemen,YE,9
+2024,Quantum Computing,2500,Ecuador,EC,8
+2024,Quantum Computing,2500,Philippines,PH,7
+2024,Quantum Computing,2500,Syrian Arab Republic,SY,7
+2024,Quantum Computing,2500,Mongolia,MN,6
+2024,Quantum Computing,2500,Burkina Faso,BF,5
+2024,Quantum Computing,2500,Chile,CL,5
+2024,Quantum Computing,2500,Cyprus,CY,5
+2024,Quantum Computing,2500,"Moldova, Republic of",MD,5
+2024,Quantum Computing,2500,New Zealand,NZ,5
+2024,Quantum Computing,2500,Cameroon,CM,4
+2024,Quantum Computing,2500,Libya,LY,4
+2024,Quantum Computing,2500,Mozambique,MZ,4
+2024,Quantum Computing,2500,Qatar,QA,4
+2024,Quantum Computing,2500,Kosovo,XK,4
+2024,Quantum Computing,2500,Zimbabwe,ZW,4
+2024,Quantum Computing,2500,Bosnia and Herzegovina,BA,3
+2024,Quantum Computing,2500,Iceland,IS,3
+2024,Quantum Computing,2500,Kenya,KE,3
+2024,Quantum Computing,2500,Montenegro,ME,3
+2024,Quantum Computing,2500,Macao,MO,3
+2024,Quantum Computing,2500,Oman,OM,3
+2024,Quantum Computing,2500,Peru,PE,3
+2024,Quantum Computing,2500,Puerto Rico,PR,3
+2024,Quantum Computing,2500,Angola,AO,2
+2024,Quantum Computing,2500,Brunei Darussalam,BN,2
+2024,Quantum Computing,2500,Côte d'Ivoire,CI,2
+2024,Quantum Computing,2500,Estonia,EE,2
+2024,Quantum Computing,2500,Kyrgyzstan,KG,2
+2024,Quantum Computing,2500,Cambodia,KH,2
+2024,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,2
+2024,Quantum Computing,2500,Lebanon,LB,2
+2024,Quantum Computing,2500,Sri Lanka,LK,2
+2024,Quantum Computing,2500,North Macedonia,MK,2
+2024,Quantum Computing,2500,Papua New Guinea,PG,2
+2024,Quantum Computing,2500,Senegal,SN,2
+2024,Quantum Computing,2500,South Sudan,SS,2
+2024,Quantum Computing,2500,Uruguay,UY,2
+2024,Quantum Computing,2500,Antigua and Barbuda,AG,1
+2024,Quantum Computing,2500,Bahrain,BH,1
+2024,Quantum Computing,2500,Botswana,BW,1
+2024,Quantum Computing,2500,Costa Rica,CR,1
+2024,Quantum Computing,2500,Cuba,CU,1
+2024,Quantum Computing,2500,Curaçao,CW,1
+2024,Quantum Computing,2500,Eritrea,ER,1
+2024,Quantum Computing,2500,Ghana,GH,1
+2024,Quantum Computing,2500,Guatemala,GT,1
+2024,Quantum Computing,2500,Kuwait,KW,1
+2024,Quantum Computing,2500,Madagascar,MG,1
+2024,Quantum Computing,2500,Myanmar,MM,1
+2024,Quantum Computing,2500,Malta,MT,1
+2024,Quantum Computing,2500,Malawi,MW,1
+2024,Quantum Computing,2500,"Palestine, State of",PS,1
+2024,Quantum Computing,2500,Sierra Leone,SL,1
+2024,Quantum Computing,2500,Togo,TG,1
+2024,Quantum Computing,2500,"Tanzania, United Republic of",TZ,1
+2024,Quantum Computing,2500,Uganda,UG,1
+2025,Quantum Computing,2500,China,CN,2006
+2025,Quantum Computing,2500,Russian Federation,RU,1100
+2025,Quantum Computing,2500,United States of America,US,881
+2025,Quantum Computing,2500,India,IN,470
+2025,Quantum Computing,2500,Ukraine,UA,377
+2025,Quantum Computing,2500,Germany,DE,322
+2025,Quantum Computing,2500,Japan,JP,311
+2025,Quantum Computing,2500,United Kingdom of Great Britain and Northern Ireland,GB,209
+2025,Quantum Computing,2500,Poland,PL,200
+2025,Quantum Computing,2500,France,FR,179
+2025,Quantum Computing,2500,Turkey,TR,162
+2025,Quantum Computing,2500,Brazil,BR,161
+2025,Quantum Computing,2500,Australia,AU,141
+2025,Quantum Computing,2500,"Korea, Republic of",KR,131
+2025,Quantum Computing,2500,Czechia,CZ,128
+2025,Quantum Computing,2500,Italy,IT,122
+2025,Quantum Computing,2500,"Iran, Islamic Republic of",IR,111
+2025,Quantum Computing,2500,Spain,ES,103
+2025,Quantum Computing,2500,Iraq,IQ,103
+2025,Quantum Computing,2500,Canada,CA,95
+2025,Quantum Computing,2500,Indonesia,ID,90
+2025,Quantum Computing,2500,Malaysia,MY,88
+2025,Quantum Computing,2500,Uzbekistan,UZ,88
+2025,Quantum Computing,2500,Kazakhstan,KZ,76
+2025,Quantum Computing,2500,Belarus,BY,73
+2025,Quantum Computing,2500,Saudi Arabia,SA,69
+2025,Quantum Computing,2500,Austria,AT,62
+2025,Quantum Computing,2500,Romania,RO,61
+2025,Quantum Computing,2500,"Taiwan, Province of China",TW,57
+2025,Quantum Computing,2500,Egypt,EG,52
+2025,Quantum Computing,2500,Mexico,MX,49
+2025,Quantum Computing,2500,Netherlands,NL,49
+2025,Quantum Computing,2500,Nigeria,NG,48
+2025,Quantum Computing,2500,Viet Nam,VN,47
+2025,Quantum Computing,2500,Azerbaijan,AZ,46
+2025,Quantum Computing,2500,Slovakia,SK,45
+2025,Quantum Computing,2500,Portugal,PT,42
+2025,Quantum Computing,2500,Finland,FI,41
+2025,Quantum Computing,2500,Bangladesh,BD,35
+2025,Quantum Computing,2500,Switzerland,CH,35
+2025,Quantum Computing,2500,Sweden,SE,35
+2025,Quantum Computing,2500,Hong Kong,HK,34
+2025,Quantum Computing,2500,Belgium,BE,32
+2025,Quantum Computing,2500,Algeria,DZ,32
+2025,Quantum Computing,2500,Singapore,SG,31
+2025,Quantum Computing,2500,South Africa,ZA,31
+2025,Quantum Computing,2500,Bulgaria,BG,29
+2025,Quantum Computing,2500,Norway,NO,29
+2025,Quantum Computing,2500,Greece,GR,26
+2025,Quantum Computing,2500,Hungary,HU,26
+2025,Quantum Computing,2500,Pakistan,PK,26
+2025,Quantum Computing,2500,Serbia,RS,26
+2025,Quantum Computing,2500,United Arab Emirates,AE,23
+2025,Quantum Computing,2500,Thailand,TH,23
+2025,Quantum Computing,2500,Morocco,MA,22
+2025,Quantum Computing,2500,Nepal,NP,22
+2025,Quantum Computing,2500,Lithuania,LT,21
+2025,Quantum Computing,2500,Slovenia,SI,20
+2025,Quantum Computing,2500,Ethiopia,ET,19
+2025,Quantum Computing,2500,Croatia,HR,18
+2025,Quantum Computing,2500,Israel,IL,18
+2025,Quantum Computing,2500,Zimbabwe,ZW,16
+2025,Quantum Computing,2500,Georgia,GE,15
+2025,Quantum Computing,2500,New Zealand,NZ,14
+2025,Quantum Computing,2500,Tajikistan,TJ,14
+2025,Quantum Computing,2500,Denmark,DK,13
+2025,Quantum Computing,2500,Tunisia,TN,13
+2025,Quantum Computing,2500,Ireland,IE,12
+2025,Quantum Computing,2500,Ecuador,EC,11
+2025,Quantum Computing,2500,Argentina,AR,10
+2025,Quantum Computing,2500,Latvia,LV,10
+2025,Quantum Computing,2500,Luxembourg,LU,9
+2025,Quantum Computing,2500,Philippines,PH,9
+2025,Quantum Computing,2500,Bosnia and Herzegovina,BA,8
+2025,Quantum Computing,2500,Jordan,JO,8
+2025,Quantum Computing,2500,Chile,CL,7
+2025,Quantum Computing,2500,Kyrgyzstan,KG,6
+2025,Quantum Computing,2500,Mongolia,MN,6
+2025,Quantum Computing,2500,Oman,OM,6
+2025,Quantum Computing,2500,"Venezuela, Bolivarian Republic of",VE,6
+2025,Quantum Computing,2500,Yemen,YE,6
+2025,Quantum Computing,2500,Colombia,CO,5
+2025,Quantum Computing,2500,Sri Lanka,LK,5
+2025,Quantum Computing,2500,North Macedonia,MK,5
+2025,Quantum Computing,2500,Peru,PE,5
+2025,Quantum Computing,2500,Qatar,QA,5
+2025,Quantum Computing,2500,Burkina Faso,BF,4
+2025,Quantum Computing,2500,Cyprus,CY,4
+2025,Quantum Computing,2500,Estonia,EE,4
+2025,Quantum Computing,2500,Iceland,IS,4
+2025,Quantum Computing,2500,"Moldova, Republic of",MD,4
+2025,Quantum Computing,2500,Montenegro,ME,4
+2025,Quantum Computing,2500,Namibia,NA,4
+2025,Quantum Computing,2500,Kosovo,XK,4
+2025,Quantum Computing,2500,Costa Rica,CR,3
+2025,Quantum Computing,2500,Kenya,KE,3
+2025,Quantum Computing,2500,Kuwait,KW,3
+2025,Quantum Computing,2500,Malta,MT,3
+2025,Quantum Computing,2500,Mozambique,MZ,3
+2025,Quantum Computing,2500,Senegal,SN,3
+2025,Quantum Computing,2500,Syrian Arab Republic,SY,3
+2025,Quantum Computing,2500,Armenia,AM,2
+2025,Quantum Computing,2500,Bahrain,BH,2
+2025,Quantum Computing,2500,"Bolivia, Plurinational State of",BO,2
+2025,Quantum Computing,2500,Cameroon,CM,2
+2025,Quantum Computing,2500,Lao People's Democratic Republic,LA,2
+2025,Quantum Computing,2500,Lebanon,LB,2
+2025,Quantum Computing,2500,Maldives,MV,2
+2025,Quantum Computing,2500,Papua New Guinea,PG,2
+2025,Quantum Computing,2500,Paraguay,PY,2
+2025,Quantum Computing,2500,Rwanda,RW,2
+2025,Quantum Computing,2500,Uganda,UG,2
+2025,Quantum Computing,2500,"Congo, Democratic Republic of the",CD,1
+2025,Quantum Computing,2500,Côte d'Ivoire,CI,1
+2025,Quantum Computing,2500,Eritrea,ER,1
+2025,Quantum Computing,2500,Grenada,GD,1
+2025,Quantum Computing,2500,Ghana,GH,1
+2025,Quantum Computing,2500,Guatemala,GT,1
+2025,Quantum Computing,2500,Saint Kitts and Nevis,KN,1
+2025,Quantum Computing,2500,"Korea, Democratic People's Republic of",KP,1
+2025,Quantum Computing,2500,Libya,LY,1
+2025,Quantum Computing,2500,Myanmar,MM,1
+2025,Quantum Computing,2500,Macao,MO,1
+2025,Quantum Computing,2500,Martinique,MQ,1
+2025,Quantum Computing,2500,Mauritius,MU,1
+2025,Quantum Computing,2500,Malawi,MW,1
+2025,Quantum Computing,2500,Panama,PA,1
+2025,Quantum Computing,2500,French Polynesia,PF,1
+2025,Quantum Computing,2500,Puerto Rico,PR,1
+2025,Quantum Computing,2500,Sudan,SD,1
+2025,Quantum Computing,2500,South Sudan,SS,1
+2025,Quantum Computing,2500,Chad,TD,1
+2025,Quantum Computing,2500,Togo,TG,1
+2025,Quantum Computing,2500,Turkmenistan,TM,1
+2025,Quantum Computing,2500,"Tanzania, United Republic of",TZ,1
+2025,Quantum Computing,2500,Holy See,VA,1
 `;
