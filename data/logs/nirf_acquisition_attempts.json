@@ -1,0 +1,738 @@
+[
+  {
+    "key": "Marathon start|run_acquisition_marathon.py|only=all",
+    "timestamp": "2026-07-07T21:31:26Z",
+    "method": "Marathon start",
+    "source": "run_acquisition_marathon.py",
+    "script": "run_acquisition_marathon.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "only=all",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "Live nirfindia.org ranking probe|nirfindia.org/Rankings/{2015..2025}/OverallRanking.html|{\"2015\": 404, \"2016\": 404, \"2017\": 404, \"2018\": 404, \"2019\": 404, \"2020\": 404, \"2021\": 404, \"2022\": 404, \"2023\": 404, \"2024\": 404, \"2025\": 404}",
+    "timestamp": "2026-07-07T21:31:42Z",
+    "method": "Live nirfindia.org ranking probe",
+    "source": "nirfindia.org/Rankings/{2015..2025}/OverallRanking.html",
+    "script": "scrape_nirf_press.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "{\"2015\": 404, \"2016\": 404, \"2017\": 404, \"2018\": 404, \"2019\": 404, \"2020\": 404, \"2021\": 404, \"2022\": 404, \"2023\": 404, \"2024\": 404, \"2025\": 404}",
+    "why_failed": "404 years: [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]",
+    "next_retry_hint": "Wayback for 2016-2017; live for 2018+"
+  },
+  {
+    "key": "NIRF press / discovery|https://www.nirfindia.org/|pdfs=0, ranking_links=10",
+    "timestamp": "2026-07-07T21:31:44Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.nirfindia.org/",
+    "script": "scrape_nirf_press.py",
+    "status": "success",
+    "rows_recovered": 10,
+    "detail": "pdfs=0, ranking_links=10",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://www.nirfindia.org/Rankings/|pdfs=0, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:45Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.nirfindia.org/Rankings/",
+    "script": "scrape_nirf_press.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "pdfs=0, ranking_links=0",
+    "why_failed": "fetch failed",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://www.nirfindia.org/News/|pdfs=0, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:47Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.nirfindia.org/News/",
+    "script": "scrape_nirf_press.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "pdfs=0, ranking_links=0",
+    "why_failed": "fetch failed",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://www.nirfindia.org/PressRelease/|pdfs=0, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:49Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.nirfindia.org/PressRelease/",
+    "script": "scrape_nirf_press.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "pdfs=0, ranking_links=0",
+    "why_failed": "fetch failed",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://www.nirfindia.org/sitemap.xml|pdfs=347, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:50Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.nirfindia.org/sitemap.xml",
+    "script": "scrape_nirf_press.py",
+    "status": "success",
+    "rows_recovered": 347,
+    "detail": "pdfs=347, ranking_links=0",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://www.nirfindia.org/robots.txt|pdfs=0, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:52Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.nirfindia.org/robots.txt",
+    "script": "scrape_nirf_press.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "pdfs=0, ranking_links=0",
+    "why_failed": "fetch failed",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://www.education.gov.in/en/nirf|pdfs=0, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:53Z",
+    "method": "NIRF press / discovery",
+    "source": "https://www.education.gov.in/en/nirf",
+    "script": "scrape_nirf_press.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "pdfs=0, ranking_links=0",
+    "why_failed": "fetch failed",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "NIRF press / discovery|https://pib.gov.in/Search.aspx?Search=NIRF|pdfs=0, ranking_links=0",
+    "timestamp": "2026-07-07T21:31:56Z",
+    "method": "NIRF press / discovery",
+    "source": "https://pib.gov.in/Search.aspx?Search=NIRF",
+    "script": "scrape_nirf_press.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "pdfs=0, ranking_links=0",
+    "why_failed": "fetch failed",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "Wayback Machine|nirfindia.org/Rankings/2016/|",
+    "timestamp": "2026-07-07T21:35:56Z",
+    "method": "Wayback Machine",
+    "source": "nirfindia.org/Rankings/2016/",
+    "script": "wayback_nirf_rankings.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "",
+    "why_failed": "Overall: no CDX snapshots; University: no CDX snapshots; College: no CDX snapshots; Research: no CDX snapshots; Engineering: no CDX snapshots; Management: no CDX snapshots; Pharmacy: no CDX snapshots; Medical: no CDX snapshots; Dental: no CDX snapshots; Law: no CDX snapshots; Architecture: no CDX snapshots; Agriculture: no CDX snapshots; Innovation: no CDX snapshots",
+    "next_retry_hint": "Try Internet Archive bulk search or alternate snapshot dates"
+  },
+  {
+    "key": "Wayback Machine|nirfindia.org/Rankings/2017/|",
+    "timestamp": "2026-07-07T21:39:20Z",
+    "method": "Wayback Machine",
+    "source": "nirfindia.org/Rankings/2017/",
+    "script": "wayback_nirf_rankings.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "",
+    "why_failed": "Overall: snapshots exist but parse=0; University: snapshots exist but parse=0; College: snapshots exist but parse=0; Research: no CDX snapshots; Engineering: no CDX snapshots; Management: snapshots exist but parse=0; Pharmacy: no CDX snapshots; Medical: no CDX snapshots; Dental: no CDX snapshots; Law: no CDX snapshots; Architecture: no CDX snapshots; Agriculture: no CDX snapshots; Innovation: no CDX snapshots",
+    "next_retry_hint": "Try Internet Archive bulk search or alternate snapshot dates"
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2015/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2015/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2015
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2016/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2016/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2016
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2017/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2017/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2017
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2018/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2018/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2018
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2019/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2019/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2019
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2020/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2020/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2020
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2021/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2021/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2021
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2022/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2022/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2022
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2023/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2023/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2023
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2024/pdf/|{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2024/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "{\"Innovation\": 0, \"Overall\": 0, \"Engineering\": 0}",
+    "why_failed": "No PDFs >500B for sample IDs",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2024
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn aggregate|summary -> cdn_probe_summary.json",
+    "timestamp": "2026-07-07T21:47:47Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn aggregate",
+    "script": "probe_nirf_cdn.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "summary -> cdn_probe_summary.json",
+    "why_failed": "",
+    "next_retry_hint": "",
+    "extra": {
+      "by_season": {
+        "2015": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2016": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2017": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2018": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2019": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2020": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2021": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2022": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2023": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        },
+        "2024": {
+          "Innovation": 0,
+          "Overall": 0,
+          "Engineering": 0
+        }
+      }
+    }
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=NIRF|0 CKAN packages",
+    "timestamp": "2026-07-07T21:47:50Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=NIRF",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=National Institutional Ranking Framework|0 CKAN packages",
+    "timestamp": "2026-07-07T21:47:52Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=National Institutional Ranking Framework",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=MHRD university|0 CKAN packages",
+    "timestamp": "2026-07-07T21:47:54Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=MHRD university",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=Ministry of Education higher education|0 CKAN packages",
+    "timestamp": "2026-07-07T21:47:55Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=Ministry of Education higher education",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=R&D expenditure university|0 CKAN packages",
+    "timestamp": "2026-07-07T21:47:57Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=R&D expenditure university",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=patents granted university India|0 CKAN packages",
+    "timestamp": "2026-07-07T21:47:59Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=patents granted university India",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=UGC research projects|0 CKAN packages",
+    "timestamp": "2026-07-07T21:48:01Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=UGC research projects",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in?q=AISHE|0 CKAN packages",
+    "timestamp": "2026-07-07T21:48:03Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in?q=AISHE",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "0 CKAN packages",
+    "why_failed": "No packages in CKAN search",
+    "next_retry_hint": "Try manual portal browse; RTI for institute-level funding"
+  },
+  {
+    "key": "data.gov.in search|data.gov.in aggregate|index -> datagov_search_index.json, bytes_downloaded=0",
+    "timestamp": "2026-07-07T21:48:03Z",
+    "method": "data.gov.in search",
+    "source": "data.gov.in aggregate",
+    "script": "probe_data_gov.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "index -> datagov_search_index.json, bytes_downloaded=0",
+    "why_failed": "All queries returned 0",
+    "next_retry_hint": "Metadata saved for manual review; no institute-level NIRF CSV found automatically"
+  },
+  {
+    "key": "Common Crawl index|index.commoncrawl.org/nirfindia.org/nirfpdfcdn|sample URL hits=0; see common_crawl_nirf.json",
+    "timestamp": "2026-07-07T21:48:11Z",
+    "method": "Common Crawl index",
+    "source": "index.commoncrawl.org/nirfindia.org/nirfpdfcdn",
+    "script": "run_acquisition_marathon.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "sample URL hits=0; see common_crawl_nirf.json",
+    "why_failed": "No indexed nirfpdfcdn URLs in recent collections (or API limit)",
+    "next_retry_hint": "Download CC index for full URL list; cross-check CDN probe"
+  },
+  {
+    "key": "Third-party mirror|https://www.shiksha.com/university/ranking|",
+    "timestamp": "2026-07-07T21:48:11Z",
+    "method": "Third-party mirror",
+    "source": "https://www.shiksha.com/university/ranking",
+    "script": "run_acquisition_marathon.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "",
+    "why_failed": "Aggregator; institute ID mapping unreliable; legal/attribution unclear for ingestion",
+    "next_retry_hint": "Manual spot-check only; do not ingest without IR-* ID crosswalk"
+  },
+  {
+    "key": "Third-party mirror|https://www.careers360.com/university/ranking|",
+    "timestamp": "2026-07-07T21:48:11Z",
+    "method": "Third-party mirror",
+    "source": "https://www.careers360.com/university/ranking",
+    "script": "run_acquisition_marathon.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "",
+    "why_failed": "Category/year coverage incomplete; no IR-* IDs",
+    "next_retry_hint": "Manual spot-check only; do not ingest without IR-* ID crosswalk"
+  },
+  {
+    "key": "Third-party mirror|https://dataful.in/datasets/19320/|",
+    "timestamp": "2026-07-07T21:48:11Z",
+    "method": "Third-party mirror",
+    "source": "https://dataful.in/datasets/19320/",
+    "script": "run_acquisition_marathon.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "",
+    "why_failed": "Used by 01_download_sources; IDs unreliable for funding join",
+    "next_retry_hint": "Manual spot-check only; do not ingest without IR-* ID crosswalk"
+  },
+  {
+    "key": "Funding cross-ref on disk|data/raw/nirf_research_projects*.csv|academic_years=['2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23']",
+    "timestamp": "2026-07-07T21:48:12Z",
+    "method": "Funding cross-ref on disk",
+    "source": "data/raw/nirf_research_projects*.csv",
+    "script": "run_acquisition_marathon.py",
+    "status": "fail",
+    "rows_recovered": 6,
+    "detail": "academic_years=['2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23']",
+    "why_failed": "2023-24 academic year absent from all scraped PDF seasons",
+    "next_retry_hint": "Probe 2025 ranking season PDFs when published; re-run 01e on new CDN"
+  },
+  {
+    "key": "Internet Archive bulk search|archive.org?q=collection:web AND nirfindia.org AND Rankings AND 2016|[]",
+    "timestamp": "2026-07-07T21:48:15Z",
+    "method": "Internet Archive bulk search",
+    "source": "archive.org?q=collection:web AND nirfindia.org AND Rankings AND 2016",
+    "script": "run_acquisition_marathon.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "[]",
+    "why_failed": "No IA items matching 2016 ranking query",
+    "next_retry_hint": "Use wayback CDX per-category URLs (primary path)"
+  },
+  {
+    "key": "Wayback Machine|nirfindia.org/Rankings/2017/|Overall: 100 rows @ 20240607174459; University: 100 rows @ 20240609015617; College: 100 rows @ 20240609024321; Research: no CDX snapshots; Engineering: 100 rows @ 20240607161705; Management: 50 rows @ 20240608045951; Pharmacy: 50 rows @ 20240609083810; Medical: no CDX snapshots; Dental: no CDX snapshots; Law: no CDX snapshots; Architecture: no CDX snapshots; Agriculture: no CDX snapshots; Innovation: no CDX snapshots",
+    "timestamp": "2026-07-07T21:52:34Z",
+    "method": "Wayback Machine",
+    "source": "nirfindia.org/Rankings/2017/",
+    "script": "wayback_nirf_rankings.py",
+    "status": "success",
+    "rows_recovered": 500,
+    "detail": "Overall: 100 rows @ 20240607174459; University: 100 rows @ 20240609015617; College: 100 rows @ 20240609024321; Research: no CDX snapshots; Engineering: 100 rows @ 20240607161705; Management: 50 rows @ 20240608045951; Pharmacy: 50 rows @ 20240609083810; Medical: no CDX snapshots; Dental: no CDX snapshots; Law: no CDX snapshots; Architecture: no CDX snapshots; Agriculture: no CDX snapshots; Innovation: no CDX snapshots",
+    "why_failed": "",
+    "next_retry_hint": "",
+    "extra": {
+      "categories": {
+        "Overall": 100,
+        "University": 100,
+        "College": 100,
+        "Engineering": 100,
+        "Management": 50,
+        "Pharmacy": 50
+      }
+    }
+  },
+  {
+    "key": "Marathon start|run_acquisition_marathon.py|only=integrate",
+    "timestamp": "2026-07-07T21:58:48Z",
+    "method": "Marathon start",
+    "source": "run_acquisition_marathon.py",
+    "script": "run_acquisition_marathon.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "only=integrate",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2019/pdf/|{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 7}",
+    "timestamp": "2026-07-07T21:59:06Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2019/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "success",
+    "rows_recovered": 20,
+    "detail": "{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 7}",
+    "why_failed": "",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2019
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2020/pdf/|{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 7}",
+    "timestamp": "2026-07-07T21:59:06Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2020/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "success",
+    "rows_recovered": 20,
+    "detail": "{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 7}",
+    "why_failed": "",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2020
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2021/pdf/|{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 9}",
+    "timestamp": "2026-07-07T21:59:06Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2021/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "success",
+    "rows_recovered": 22,
+    "detail": "{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 9}",
+    "why_failed": "",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2021
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2022/pdf/|{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 7}",
+    "timestamp": "2026-07-07T21:59:06Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2022/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "success",
+    "rows_recovered": 20,
+    "detail": "{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 7}",
+    "why_failed": "",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2022
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2023/pdf/|{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 8}",
+    "timestamp": "2026-07-07T21:59:06Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2023/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "success",
+    "rows_recovered": 21,
+    "detail": "{\"Innovation\": 0, \"Overall\": 13, \"Engineering\": 8}",
+    "why_failed": "",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2023
+    }
+  },
+  {
+    "key": "PDF CDN probe|nirfpdfcdn/2024/pdf/|{\"Innovation\": 5, \"Overall\": 11, \"Engineering\": 8}",
+    "timestamp": "2026-07-07T21:59:06Z",
+    "method": "PDF CDN probe",
+    "source": "nirfpdfcdn/2024/pdf/",
+    "script": "probe_nirf_cdn.py",
+    "status": "success",
+    "rows_recovered": 24,
+    "detail": "{\"Innovation\": 5, \"Overall\": 11, \"Engineering\": 8}",
+    "why_failed": "",
+    "next_retry_hint": "Expand sample IDs; GET full Innovation PDF for patent year columns",
+    "extra": {
+      "season": 2024
+    }
+  },
+  {
+    "key": "Legacy PDF CDN|nirfpdfcdn/2016/IR16-*.pdf|urls_found=0 probed=0 ok=0",
+    "timestamp": "2026-07-07T21:59:07Z",
+    "method": "Legacy PDF CDN",
+    "source": "nirfpdfcdn/2016/IR16-*.pdf",
+    "script": "probe_legacy_cdn.py",
+    "status": "fail",
+    "rows_recovered": 0,
+    "detail": "urls_found=0 probed=0 ok=0",
+    "why_failed": "Legacy flat PDF path 404 or not in wayback HTML",
+    "next_retry_hint": "Parse funding tables from legacy PDFs if Overall contains sponsored research"
+  },
+  {
+    "key": "Legacy PDF CDN|nirfpdfcdn/2017/IR17-*.pdf|urls_found=438 probed=40 ok=40",
+    "timestamp": "2026-07-07T22:00:03Z",
+    "method": "Legacy PDF CDN",
+    "source": "nirfpdfcdn/2017/IR17-*.pdf",
+    "script": "probe_legacy_cdn.py",
+    "status": "success",
+    "rows_recovered": 40,
+    "detail": "urls_found=438 probed=40 ok=40",
+    "why_failed": "",
+    "next_retry_hint": "Parse funding tables from legacy PDFs if Overall contains sponsored research"
+  },
+  {
+    "key": "Pipeline integration|scripts/india_network pipeline|[\"new_ranking_years=[2017]\", \"ran 03a_enrich_institution_master.py rc=0\", \"ran 09_export_payloads.py rc=0\", \"ran 09b_export_year_slices.py rc=0\", \"ran 01d_prepare_nirf_funding.py rc=0\", \"ran 08_join_nirf_funding.py rc=0\", \"ran 08b_join_nirf_patents.py rc=0\", \"ran 10_verification_checklist.py rc=0\"]",
+    "timestamp": "2026-07-07T22:00:30Z",
+    "method": "Pipeline integration",
+    "source": "scripts/india_network pipeline",
+    "script": "run_acquisition_marathon.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "[\"new_ranking_years=[2017]\", \"ran 03a_enrich_institution_master.py rc=0\", \"ran 09_export_payloads.py rc=0\", \"ran 09b_export_year_slices.py rc=0\", \"ran 01d_prepare_nirf_funding.py rc=0\", \"ran 08_join_nirf_funding.py rc=0\", \"ran 08b_join_nirf_patents.py rc=0\", \"ran 10_verification_checklist.py rc=0\"]",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "Pipeline integration|scripts/india_network pipeline|[\"ran 01d_prepare_nirf_funding.py rc=0\", \"ran 08_join_nirf_funding.py rc=0\", \"ran 08b_join_nirf_patents.py rc=0\", \"ran 10_verification_checklist.py rc=0\"]",
+    "timestamp": "2026-07-07T22:05:05Z",
+    "method": "Pipeline integration",
+    "source": "scripts/india_network pipeline",
+    "script": "run_acquisition_marathon.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "[\"ran 01d_prepare_nirf_funding.py rc=0\", \"ran 08_join_nirf_funding.py rc=0\", \"ran 08b_join_nirf_patents.py rc=0\", \"ran 10_verification_checklist.py rc=0\"]",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "Live nirfindia.org|nirfindia.org/Rankings/2016/|Overall: live 100 rows; University: live 100 rows; College: live 100 rows; Engineering: live 100 rows; Management: live 50 rows; Pharmacy: live 50 rows",
+    "timestamp": "2026-07-07T22:09:31Z",
+    "method": "Live nirfindia.org",
+    "source": "nirfindia.org/Rankings/2016/",
+    "script": "wayback_nirf_rankings.py",
+    "status": "success",
+    "rows_recovered": 500,
+    "detail": "Overall: live 100 rows; University: live 100 rows; College: live 100 rows; Engineering: live 100 rows; Management: live 50 rows; Pharmacy: live 50 rows",
+    "why_failed": "",
+    "next_retry_hint": ""
+  },
+  {
+    "key": "Pipeline integration|scripts/india_network pipeline|[\"new_ranking_years=[2016]\", \"ran 03a_enrich_institution_master.py rc=0\", \"ran 09_export_payloads.py rc=0\", \"ran 09b_export_year_slices.py rc=0\", \"ran 01d_prepare_nirf_funding.py rc=0\", \"ran 08_join_nirf_funding.py rc=0\", \"ran 08b_join_nirf_patents.py rc=0\", \"ran 10_verification_checklist.py rc=0\"]",
+    "timestamp": "2026-07-07T22:11:55Z",
+    "method": "Pipeline integration",
+    "source": "scripts/india_network pipeline",
+    "script": "run_acquisition_marathon.py",
+    "status": "partial",
+    "rows_recovered": 0,
+    "detail": "[\"new_ranking_years=[2016]\", \"ran 03a_enrich_institution_master.py rc=0\", \"ran 09_export_payloads.py rc=0\", \"ran 09b_export_year_slices.py rc=0\", \"ran 01d_prepare_nirf_funding.py rc=0\", \"ran 08_join_nirf_funding.py rc=0\", \"ran 08b_join_nirf_patents.py rc=0\", \"ran 10_verification_checklist.py rc=0\"]",
+    "why_failed": "",
+    "next_retry_hint": ""
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Shiksha NIRF rank lists",
+    "url": "https://www.shiksha.com/university/ranking",
+    "status": "reference_only",
+    "reason": "Aggregator; institute ID mapping unreliable; legal/attribution unclear for ingestion"
+  },
+  {
+    "name": "Careers360 NIRF archives",
+    "url": "https://www.careers360.com/university/ranking",
+    "status": "reference_only",
+    "reason": "Category/year coverage incomplete; no IR-* IDs"
+  },
+  {
+    "name": "Dataful.in NIRF datasets",
+    "url": "https://dataful.in/datasets/19320/",
+    "status": "already_in_pipeline",
+    "reason": "Used by 01_download_sources; IDs unreliable for funding join"
+  }
+]

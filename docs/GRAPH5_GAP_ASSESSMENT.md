@@ -19,7 +19,9 @@
 
 | Slider year | Funding academic year | Patents calendar year | NIRF ranking season |
 |-------------|----------------------|------------------------|----------------------|
-| 2015–2017 | 2017-18 (earliest) | 2020 (earliest) | 2018 (nearest; 2015–2017 not on site) |
+| 2015 | 2017-18 (earliest) | 2020 (earliest) | **2016** (nearest; 2015 not published) |
+| 2016 | 2017-18 | 2020 | **2016** |
+| 2017 | 2017-18 | 2020 | **2017** |
 | 2018 | 2018-19 | 2020 | 2018 |
 | 2019 | 2019-20 | 2020 | 2019 |
 | 2020 | 2020-21 | 2020 | 2020 |
@@ -29,16 +31,18 @@
 | 2024 | 2022-23 | 2022 | 2024 |
 
 **Evidence:**
-- Ranking seasons on disk: `nirf_rankings_2018.csv` … `nirf_rankings_2024.csv` (+ supplement).
+- Ranking seasons on disk: `nirf_rankings_2016.csv` … `nirf_rankings_2024.csv` (+ supplement). **2016–2017 recovered 2026-07-08** via live scrape + Wayback (`acquisition/wayback_nirf_rankings.py`).
 - Funding academic years: 2017-18 … 2022-23 from multi-season PDF scrape (`01h`, seasons 2021–2024 CDN).
 - `09_export_payloads.build_nodes()` uses `lookup_nirf_rank_for_institute()` per slider year.
 - Example: IIT Delhi Overall rank **#3** in 2023 slice vs **#4** in 2024 slice.
 
 **Still static (honest gaps):**
 - **SCImago** — 2019 snapshot.
-- **NIRF ranks 2015–2017** — nirfindia.org 404 / legacy layout (2016–2017 unscrapeable).
-- **Patents before 2020 / after 2022** — Innovation PDF only on 2024 CDN (2020–2022).
+- **NIRF ranks 2015** — not published (404 live + no Wayback CDX).
+- **NIRF ranks 2016–2017** — **recovered** (500 rows/season); legacy `IR17-*` IDs matched by name at export.
+- **Patents before 2020 / after 2022** — Innovation PDF only on **2024** CDN (`/pdf/Innovation/`); seasons 2019–2023 have Overall/Engineering only.
 - **Funding 2023-24 academic year** — not in any scraped PDF season.
+- **Funding before 2017-18** — legacy flat CDN (`nirfpdfcdn/2017/IR17-*.pdf`) PDFs exist but do not expose modern sponsored-research tables; not ingested.
 
 ---
 

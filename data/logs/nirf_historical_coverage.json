@@ -1,6 +1,18 @@
 {
-  "ranking_seasons": {},
+  "ranking_seasons": {
+    "2016": 500,
+    "2017": 500,
+    "2018": 541,
+    "2019": 710,
+    "2020": 761,
+    "2021": 845,
+    "2022": 902,
+    "2023": 840,
+    "2024": 860
+  },
   "ranking_years_on_disk": [
+    2016,
+    2017,
     2018,
     2019,
     2020,
@@ -29,9 +41,10 @@
     2022
   ],
   "gaps": {
-    "ranking_2015": "404 on nirfindia.org",
-    "ranking_2016_2018": "legacy ID format; name match at export",
-    "patents_pre_2020": "Innovation PDF only on 2024 CDN",
+    "ranking_2015": "404 on nirfindia.org; Wayback attempted",
+    "ranking_2016_2017": "recovered — 500 rows/season via live+Wayback (IR17-* IDs, name match at export)",
+    "patents_pre_2020": "Innovation PDF only on 2024 CDN (probed all seasons)",
     "funding_2023_24": "not in any scraped PDF season yet"
-  }
+  },
+  "last_acquisition_run": "2026-07-07T22:11:55Z"
 }
