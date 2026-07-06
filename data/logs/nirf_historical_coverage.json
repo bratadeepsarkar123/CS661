@@ -41,10 +41,10 @@
     2022
   ],
   "gaps": {
-    "ranking_2015": "404 on nirfindia.org; Wayback attempted",
-    "ranking_2016_2017": "recovered — 500 rows/season via live+Wayback (IR17-* IDs, name match at export)",
+    "ranking_2015": "404 on nirfindia.org; Wayback attempted; not published",
+    "ranking_2016_2017": "recovered \u2014 500 rows/season (live+Wayback)",
     "patents_pre_2020": "Innovation PDF only on 2024 CDN (probed all seasons)",
     "funding_2023_24": "not in any scraped PDF season yet"
   },
-  "last_acquisition_run": "2026-07-07T22:11:55Z"
+  "last_acquisition_run": "2026-07-07T22:34:37Z"
 }

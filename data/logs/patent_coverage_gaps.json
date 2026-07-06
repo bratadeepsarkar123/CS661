@@ -1,6 +1,6 @@
 {
   "generated_from": "report_nirf_gaps.py",
-  "patents_reported": 49,
+  "patents_reported": 55,
   "patents_total": 120,
   "funding_reported": 104,
   "nirf_matched": 110,
@@ -49,11 +49,6 @@
     {
       "canonical_name": "Post Graduate Institute of Medical Education and Research",
       "nirf_institute_id": "IR-O-U-0446",
-      "reason": "no_innovation_pdf"
-    },
-    {
-      "canonical_name": "SRM Institute of Science and Technology",
-      "nirf_institute_id": "IR-O-U-0473",
       "reason": "no_innovation_pdf"
     },
     {
@@ -147,11 +142,6 @@
       "reason": "no_innovation_pdf"
     },
     {
-      "canonical_name": "KIIT University",
-      "nirf_institute_id": "IR-O-U-0356",
-      "reason": "no_innovation_pdf"
-    },
-    {
       "canonical_name": "Pondicherry University",
       "nirf_institute_id": "IR-O-U-0369",
       "reason": "no_innovation_pdf"
@@ -209,11 +199,6 @@
     {
       "canonical_name": "King George's Medical University",
       "nirf_institute_id": "IR-D-U-0523",
-      "reason": "no_innovation_pdf"
-    },
-    {
-      "canonical_name": "GITAM University",
-      "nirf_institute_id": "IR-P-U-0011",
       "reason": "no_innovation_pdf"
     },
     {
@@ -277,11 +262,6 @@
       "reason": "no_innovation_pdf"
     },
     {
-      "canonical_name": "University of Petroleum and Energy Studies",
-      "nirf_institute_id": "IR-O-U-0564",
-      "reason": "no_innovation_pdf"
-    },
-    {
       "canonical_name": "Jawaharlal Institute of Post Graduate Medical Education and Research",
       "nirf_institute_id": "IR-O-U-0368",
       "reason": "no_innovation_pdf"
@@ -307,11 +287,6 @@
       "reason": "no_innovation_pdf"
     },
     {
-      "canonical_name": "GLA University",
-      "nirf_institute_id": "IR-P-U-0513",
-      "reason": "no_innovation_pdf"
-    },
-    {
       "canonical_name": "University of Kashmir",
       "nirf_institute_id": "IR-O-U-0196",
       "reason": "no_innovation_pdf"
@@ -330,11 +305,6 @@
       "canonical_name": "Shivaji University",
       "nirf_institute_id": null,
       "reason": "no_nirf_id"
-    },
-    {
-      "canonical_name": "SASTRA University",
-      "nirf_institute_id": "IR-O-U-0476",
-      "reason": "no_innovation_pdf"
     },
     {
       "canonical_name": "Mangalore University",
@@ -364,6 +334,6 @@
   ],
   "by_reason": {
     "no_nirf_id": 10,
-    "no_innovation_pdf": 61
+    "no_innovation_pdf": 55
   }
 }

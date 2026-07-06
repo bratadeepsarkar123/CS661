@@ -236,12 +236,13 @@ def build_nodes(
                 expenditure_cr = float(frow["total_expenditure_cr"])
             if pd.notna(frow.get("sponsored_projects")):
                 sponsored_projects = int(frow["sponsored_projects"])
-            if pd.notna(frow.get("funding_academic_year")):
-                funding_year = str(frow["funding_academic_year"])
-            elif pd.notna(frow.get("academic_year")):
-                funding_year = str(frow["academic_year"])
-            elif mapped_funding_year:
-                funding_year = mapped_funding_year
+            if funding_cr is not None or sponsored_projects is not None:
+                if pd.notna(frow.get("funding_academic_year")):
+                    funding_year = str(frow["funding_academic_year"])
+                elif pd.notna(frow.get("academic_year")):
+                    funding_year = str(frow["academic_year"])
+                elif mapped_funding_year:
+                    funding_year = mapped_funding_year
         patents_published = None
         patents_granted = None
         patent_year = None

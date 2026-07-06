@@ -131,7 +131,7 @@ def _dedupe_patent_collisions(out: pd.DataFrame, patents: pd.DataFrame) -> pd.Da
         "patent_calendar_year",
         "nirf_patent_source_id",
     ]
-    for source_id, group in out[has].groupby("nirf_patent_source_id", dropna=False):
+    for (source_id, year), group in out[has].groupby(["nirf_patent_source_id", "patent_calendar_year"], dropna=False):
         if len(group) <= 1:
             continue
         patent_name = patent_names.get(str(source_id), "")

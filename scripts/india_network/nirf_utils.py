@@ -548,8 +548,12 @@ def funding_row_id_name_valid(
     canonical = id_to_name.get(str(institute_id).strip())
     if not canonical:
         return True
-    score = name_similarity(institute_name, canonical)
+    if norm_name(institute_name) == norm_name(canonical):
+        return True
     alias = FUNDING_NAME_ALIASES.get(str(institute_name).strip())
+    if alias and norm_name(alias) == norm_name(canonical):
+        return True
+    score = name_similarity(institute_name, canonical)
     if alias:
         score = max(score, name_similarity(alias, canonical))
     if score < threshold and score < 0.72:

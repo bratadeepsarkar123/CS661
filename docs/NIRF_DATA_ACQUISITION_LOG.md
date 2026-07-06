@@ -100,3 +100,16 @@ python scripts/india_network/acquisition/run_acquisition_marathon.py --integrate
 
 **Machine-readable log:** `data/logs/nirf_acquisition_attempts.json`  
 **Coverage:** `data/logs/nirf_historical_coverage.json`
+| 2026-07-07T22:14:15Z | Live nirfindia.org ranking probe | nirfindia.org/Rankings/{2015..2025}/OverallRanking.html | scrape_nirf_press.py | 10 | partial | 404 years: [2015] | Wayback for 2016-2017; live for 2018+ |
+| 2026-07-07T22:14:26Z | Wayback Machine | nirfindia.org/Rankings/2016/ | wayback_nirf_rankings.py | 500 | success | — | — |
+| 2026-07-07T22:14:26Z | Wayback Machine | nirfindia.org/Rankings/2017/ | wayback_nirf_rankings.py | 500 | success | — | — |
+| 2026-07-07T22:18:58Z | PDF CDN probe | nirfpdfcdn/2019/pdf/ | probe_nirf_cdn.py | 26 | success | — | Expand sample IDs; GET full Innovation PDF for patent year columns |
+| 2026-07-07T22:18:58Z | PDF CDN probe | nirfpdfcdn/2020/pdf/ | probe_nirf_cdn.py | 23 | success | — | Expand sample IDs; GET full Innovation PDF for patent year columns |
+| 2026-07-07T22:18:58Z | PDF CDN probe | nirfpdfcdn/2021/pdf/ | probe_nirf_cdn.py | 25 | success | — | Expand sample IDs; GET full Innovation PDF for patent year columns |
+| 2026-07-07T22:18:58Z | PDF CDN probe | nirfpdfcdn/2022/pdf/ | probe_nirf_cdn.py | 23 | success | — | Expand sample IDs; GET full Innovation PDF for patent year columns |
+| 2026-07-07T22:18:58Z | PDF CDN probe | nirfpdfcdn/2023/pdf/ | probe_nirf_cdn.py | 24 | success | — | Expand sample IDs; GET full Innovation PDF for patent year columns |
+| 2026-07-07T22:18:58Z | PDF CDN probe | nirfpdfcdn/2024/pdf/ | probe_nirf_cdn.py | 32 | success | — | Expand sample IDs; GET full Innovation PDF for patent year columns |
+| 2026-07-07T22:18:58Z | Legacy PDF CDN | nirfpdfcdn/2016/IR16-*.pdf | probe_legacy_cdn.py | 0 | fail | Legacy flat PDF path 404 or not in wayback HTML | Parse funding tables from legacy PDFs if Overall contains sponsored research |
+| 2026-07-07T22:18:59Z | Legacy PDF CDN | nirfpdfcdn/2017/IR17-*.pdf | probe_legacy_cdn.py | 40 | success | — | Parse funding tables from legacy PDFs if Overall contains sponsored research |
+| 2026-07-07T22:33:40Z | Legacy PDF CDN | nirfpdfcdn/2016/IR16-*.pdf | probe_legacy_cdn.py | 0 | fail | Legacy flat PDF path 404 or not in wayback HTML | Parse funding tables from legacy PDFs if Overall contains sponsored research |
+| 2026-07-07T22:33:40Z | Legacy PDF CDN | nirfpdfcdn/2017/IR17-*.pdf | probe_legacy_cdn.py | 40 | success | — | Parse funding tables from legacy PDFs if Overall contains sponsored research |

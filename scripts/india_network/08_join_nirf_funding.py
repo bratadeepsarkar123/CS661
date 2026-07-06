@@ -177,6 +177,7 @@ def main() -> None:
                     "research_funding_cr": row["research_funding_cr"] if row is not None else pd.NA,
                     "sponsored_projects": row["sponsored_projects"] if row is not None else pd.NA,
                     "total_expenditure_cr": row.get("total_expenditure_cr", pd.NA) if row is not None else pd.NA,
+                    "funding_academic_year": row["academic_year"] if row is not None else pd.NA,
                     "match_score": match_score if row is not None else pd.NA,
                 }
             )
