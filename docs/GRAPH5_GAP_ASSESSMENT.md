@@ -28,7 +28,7 @@
 | IIT Dharwad absent from `01b` NIRF scrape (`nirf_rankings.csv`) despite NIRF 2024 Engineering participation | **P0** | No algorithmic match possible without override/supplemental row | ID assignment blocked at source | 1 | Yes |
 | `dashboard/data/india_network/` drift from `public/india_network/` after export | **P1** | UI bundle stale until manual copy | Dashboard shows old fields (no `nirf_ranking_category`) | All 120 nodes | Yes — fixes invisible in UI |
 | Duplicate funding values across unrelated institutes | **P1** | Same ₹ cr shown for distinct universities | Possible join/source duplication | 6 clusters (12 institutes) | No — suspicious but not corrupt |
-| 22 NIRF match losers (no ID after uniqueness pass) | **P1** | Missing NIRF rank in panel | Silent loss of metadata | 22 | No — documented limitation |
+| 22 NIRF match losers (no ID after uniqueness pass) | **P1** | Missing NIRF rank in panel | Silent loss of metadata | 14 | No — documented limitation |
 | `hierarchy-app/dist/india_network/` partial/stale fork | **P2** | Submodule app shows old 2024 slice only | Fork drift | N/A | No |
 | Triad map lines drift when zoomed out | **P0** (fixed) | Dashed triad endpoints 33–133 km off at zoom 4–6 | Visual misread of collaboration geography | All triad++ users | Yes — fixed `d1ac9d8` |
 | Stale `nirf_coverage_gaps.md` / old verification claims (116/120 funding) | **P2** | Maintainer confusion | Documentation drift | N/A | No |
@@ -40,7 +40,7 @@
 | Check | Status (post-fix) |
 |-------|-------------------|
 | Funding duplicates (same ₹, different institutes) | **2 clusters** (informational check passes) — see duplicate table below |
-| NIRF match losers | **19 unmatched** (SRM, Thapar, GLA fixed in f15e208) — IIT Goa, SRM, Saveetha, KIIT, etc. |
+| NIRF match losers | **14 unmatched** (Saveetha/KIIT/SASTRA/IMS/GITAM fixed post-f15e208) — IIT Goa, SRM Sonipat, Pondicherry, etc. |
 | Dashboard ↔ public JSON drift | **Fixed** — `09b` now syncs to `dashboard/data/india_network/` |
 | `hierarchy-app` fork | **Stale** — only 3 files under `hierarchy-app/public/india_network/` |
 | Edge/orphan integrity | **PASS** — 0 orphan edges in overview/full payloads |
@@ -61,9 +61,9 @@
 | 15.65 | IIT Mandi, IIT ISM Dhanbad | Scrape/join overlap |
 | 0.62 | University of Rajasthan, Central Univ. Rajasthan | Entity confusion |
 
-#### NIRF unmatched institutes (19)
+#### NIRF unmatched institutes (14)
 
-IIT Goa; Saveetha University; Institute of Medical Sciences; KIIT University; Pondicherry University; SRM University; Guru Nanak Dev University; Dr. Hari Singh Gour University; GITAM University; IACS Kolkata; University of Allahabad; University of Kalyani; G.S. Science Arts And Commerce College; Presidency University; Shivaji University; SASTRA University; Mangalore University; Karpagam Academy of Higher Education; University of Rajasthan (id_blocked_by_uniqueness vs Central University of Rajasthan).
+IIT Goa; Pondicherry University; SRM University (Sonipat — distinct from SRM Chennai); Guru Nanak Dev University; Dr. Hari Singh Gour University; Indian Association for the Cultivation of Science; University of Allahabad; University of Kalyani; G.S. Science Arts And Commerce College; Presidency University; Shivaji University; Mangalore University; Karpagam Academy of Higher Education; University of Rajasthan (id_blocked_by_uniqueness vs Central University of Rajasthan — no distinct NIRF row in 2024).
 
 **Why:** `assign_nirf_matches()` enforces one NIRF ID per institute. Losers include (a) institutes not in NIRF 2024 rankings (IIT Goa), (b) fuzzy-match blocked because a higher-scoring peer claimed the ID (SRM vs IIT Madras), (c) name variants not meeting threshold.
 
@@ -145,12 +145,12 @@ IIT Goa; Saveetha University; Institute of Medical Sciences; KIIT University; Po
 
 | Metric | Before | After |
 |--------|--------|-------|
-| NIRF ID assigned | 97/120 | **101/120** (post SRM/Thapar/GLA) |
+| NIRF ID assigned | 97/120 | **106/120** (post Saveetha/KIIT/SASTRA/IMS/GITAM overrides) |
 | IIT Dharwad NIRF | None | **IR-E-U-0899, Engineering #93** |
 | IIT Dharwad funding | 79.77 cr (corrupt) / null | **12.24 cr (PDF scrape)** |
 | Mislabeled "Overall" ranks in UI | ~40 | **0** (category field exported) |
 | Patent reported | 42/120 | **51/120** |
-| Funding reported | 83/120 | **89/120** (post f15e208) |
+| Funding reported | 83/120 | **91/120** (post new overrides + 01d merge) |
 | `2024_full.json` size | 543,708 B | **395,396 B** |
 | Verification | 16/17 | **18/18 PASS** (Phase 2: +duplicate funding check) |
 | Orphan edges | 0 | 0 |
@@ -281,7 +281,7 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding 84/120; major IIT fund
 | Session summary markdown | **Done** | `docs/MULTITASK_SESSION_SUMMARY.md` |
 | Remove 08_join debug instrumentation | **Done** | post-f15e208 cleanup |
 
-| Review 22 losers for valid overrides | **Partial** | SRM/GLA/Thapar shipped; 19 remain | [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) — 5 overrides recommended |
+| Review 22 losers for valid overrides | **Partial** | SRM/GLA/Thapar + Saveetha/KIIT/SASTRA/IMS/GITAM shipped; **14 remain** | [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) |
 | Duplicate funding cluster root cause | **Traced** | 3 join bugs; see trace doc |
 | `01b` scrape gap diff | **Done** | `01b_scrape_nirf_rankings.py`, `nirf_utils.py`, `nirf_scrape_gaps.json` |
 | `hierarchy-app` dedup | **N/A in git** | hierarchy-app/ untracked; canonical: dashboard/data/india_network/ |
