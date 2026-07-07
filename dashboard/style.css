@@ -4,19 +4,19 @@
    ============================================================ */
 
 :root {
-  --bg: #06090f;
-  --bg2: #0d1117;
+  --bg: #080c14;
+  --bg2: #0e1420;
   --surface: rgba(255,255,255,0.04);
   --surface-hover: rgba(255,255,255,0.07);
   --border: rgba(255,255,255,0.08);
-  --border-accent: rgba(99,102,241,0.4);
-  --accent: #6366f1;
-  --accent2: #a855f7;
-  --accent3: #22d3ee;
+  --border-accent: rgba(194,135,61,0.4);
+  --accent: #c2873d;
+  --accent2: #0d9488;
+  --accent3: #e2a855;
   --success: #10b981;
   --warning: #f59e0b;
   --danger: #ef4444;
-  --text: #f1f5f9;
+  --text: #f0ebe3;
   --text-muted: #94a3b8;
   --text-dim: #475569;
   --font-h: 'Outfit', sans-serif;
@@ -54,8 +54,8 @@ body {
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(99,102,241,0.15) 0%, transparent 70%),
-              radial-gradient(ellipse 50% 40% at 80% 80%, rgba(168,85,247,0.1) 0%, transparent 60%),
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(194,135,61,0.15) 0%, transparent 70%),
+              radial-gradient(ellipse 50% 40% at 80% 80%, rgba(13,148,136,0.1) 0%, transparent 60%),
               var(--bg);
 }
 
@@ -131,7 +131,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #818cf8, #c084fc, #67e8f9);
+  background: linear-gradient(135deg, #d4a055, #0d9488, #e2a855);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -153,9 +153,9 @@ body {
 }
 
 .ds-badge {
-  background: rgba(99,102,241,0.1);
-  border: 1px solid rgba(99,102,241,0.3);
-  color: #a5b4fc;
+  background: rgba(194,135,61,0.1);
+  border: 1px solid rgba(194,135,61,0.3);
+  color: #e8c98a;
   border-radius: 9999px;
   padding: 0.3rem 0.85rem;
   font-size: 0.72rem;
@@ -237,7 +237,7 @@ body {
 .viz-card:hover {
   transform: translateY(-6px);
   border-color: var(--border-accent);
-  box-shadow: 0 20px 60px rgba(99,102,241,0.12), 0 0 0 1px rgba(99,102,241,0.15);
+  box-shadow: 0 20px 60px rgba(194,135,61,0.12), 0 0 0 1px rgba(194,135,61,0.15);
 }
 
 .card-preview {
@@ -260,7 +260,7 @@ body {
 .card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(99,102,241,0.4), rgba(168,85,247,0.4));
+  background: linear-gradient(135deg, rgba(194,135,61,0.4), rgba(13,148,136,0.4));
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,7 +349,7 @@ body {
   position: fixed;
   inset: 0;
   z-index: 900;
-  background: rgba(6,9,15,0.92);
+  background: rgba(8,12,20,0.92);
   backdrop-filter: blur(12px);
   display: none;
   align-items: center;
@@ -371,7 +371,7 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 50%;
-  border: 3px solid rgba(99,102,241,0.2);
+  border: 3px solid rgba(194,135,61,0.2);
   border-top-color: var(--accent);
   animation: spin 0.8s linear infinite;
 }
@@ -439,7 +439,7 @@ body {
 .back-btn:hover {
   border-color: var(--border-accent);
   color: var(--text);
-  background: rgba(99,102,241,0.1);
+  background: rgba(194,135,61,0.1);
 }
 
 .panel-title-area {
@@ -456,7 +456,7 @@ body {
   color: var(--accent);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  border: 1px solid rgba(99,102,241,0.3);
+  border: 1px solid rgba(194,135,61,0.3);
   border-radius: 4px;
   padding: 0.2rem 0.5rem;
 }
@@ -514,13 +514,13 @@ body {
 
 .ctrl-select:focus, .ctrl-input:focus {
   border-color: var(--accent);
-  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.25);
+  box-shadow: 0 0 0 3px rgba(194, 135, 61, 0.25);
 }
 
 /* Ensure select options are readable in dark mode across all browsers */
 select option {
-  background-color: #0d1117 !important;
-  color: #f1f5f9 !important;
+  background-color: #0e1420 !important;
+  color: #f0ebe3 !important;
 }
 .ctrl-btn {
   background: var(--accent);
@@ -573,7 +573,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb {
   background: var(--accent);
   border-radius: 50%;
   border: 2px solid white;
-  box-shadow: 0 0 8px rgba(99,102,241,0.5);
+  box-shadow: 0 0 8px rgba(194,135,61,0.5);
   cursor: pointer;
   transition: transform 0.15s;
 }
@@ -805,7 +805,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .d3-tooltip.visible { opacity: 1; }
-.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #c7d2fe; }
+.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #e8d4b8; }
 
 /* ──────────────────────────────────────────────
    AXIS / CHART ELEMENT STYLES
@@ -832,11 +832,11 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 /* ──────────────────────────────────────────────
    PREVIEW CANVAS FILLS
    ────────────────────────────────────────────── */
-#preview-1 { background: linear-gradient(135deg, #0d1117 0%, rgba(99,102,241,0.08) 100%); }
-#preview-2 { background: linear-gradient(135deg, #0d1117 0%, rgba(168,85,247,0.08) 100%); }
-#preview-3 { background: linear-gradient(135deg, #0d1117 0%, rgba(34,211,238,0.08) 100%); }
-#preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
-#preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
+#preview-1 { background: linear-gradient(135deg, #0e1420 0%, rgba(194,135,61,0.08) 100%); }
+#preview-2 { background: linear-gradient(135deg, #0e1420 0%, rgba(13,148,136,0.08) 100%); }
+#preview-3 { background: linear-gradient(135deg, #0e1420 0%, rgba(226,168,85,0.08) 100%); }
+#preview-4 { background: linear-gradient(135deg, #0e1420 0%, rgba(16,185,129,0.08) 100%); }
+#preview-5 { background: linear-gradient(135deg, #0e1420 0%, rgba(245,158,11,0.08) 100%); }
 
 /* ──────────────────────────────────────────────
    RESPONSIVE
@@ -959,8 +959,8 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .india-tab.active {
-  background: rgba(99,102,241,0.2);
-  border-color: rgba(99,102,241,0.5);
+  background: rgba(194,135,61,0.2);
+  border-color: rgba(194,135,61,0.5);
   color: #e2e8f0;
 }
 
@@ -973,7 +973,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   color: var(--text-muted);
 }
 
-.inst-stat-row strong { color: #f1f5f9; }
+.inst-stat-row strong { color: #f0ebe3; }
 
 .india-partner-list {
   list-style: none;
@@ -990,7 +990,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   color: #94a3b8;
 }
 
-.india-partner-list strong { color: #22d3ee; }
+.india-partner-list strong { color: #e2a855; }
 
 .india-funding-note {
   font-size: 0.82rem;
@@ -1048,7 +1048,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 
 
 .d3-tooltip.visible { opacity: 1; }
-.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #c7d2fe; }
+.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #e8d4b8; }
 
 /* ──────────────────────────────────────────────
    AXIS / CHART ELEMENT STYLES
@@ -1068,11 +1068,11 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 /* ──────────────────────────────────────────────
    PREVIEW CANVAS FILLS
    ────────────────────────────────────────────── */
-#preview-1 { background: linear-gradient(135deg, #0d1117 0%, rgba(99,102,241,0.08) 100%); }
-#preview-2 { background: linear-gradient(135deg, #0d1117 0%, rgba(168,85,247,0.08) 100%); }
-#preview-3 { background: linear-gradient(135deg, #0d1117 0%, rgba(34,211,238,0.08) 100%); }
-#preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
-#preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
+#preview-1 { background: linear-gradient(135deg, #0e1420 0%, rgba(194,135,61,0.08) 100%); }
+#preview-2 { background: linear-gradient(135deg, #0e1420 0%, rgba(13,148,136,0.08) 100%); }
+#preview-3 { background: linear-gradient(135deg, #0e1420 0%, rgba(226,168,85,0.08) 100%); }
+#preview-4 { background: linear-gradient(135deg, #0e1420 0%, rgba(16,185,129,0.08) 100%); }
+#preview-5 { background: linear-gradient(135deg, #0e1420 0%, rgba(245,158,11,0.08) 100%); }
 
 
 /* ── Module 5: Leaflet map + right detail panel ── */
@@ -1137,7 +1137,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   font-size: 0.78rem;
   color: #94a3b8;
   line-height: 1.5;
-  border-left: 3px solid rgba(99, 102, 241, 0.45);
+  border-left: 3px solid rgba(194, 135, 61, 0.45);
   padding-left: 0.65rem;
 }
 
@@ -1162,7 +1162,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 
 .india-preview-badge {
   font-size: 0.72rem;
-  color: #22d3ee;
+  color: #e2a855;
   margin: 0 0 0.5rem;
 }
 
@@ -1230,7 +1230,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(15, 23, 42, 0.92);
   backdrop-filter: blur(10px);
-  color: #f1f5f9;
+  color: #f0ebe3;
   font-family: var(--font-b);
   font-size: 0.9rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
@@ -1238,7 +1238,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .india-search-input:focus {
-  border-color: rgba(99, 102, 241, 0.6);
+  border-color: rgba(194, 135, 61, 0.6);
 }
 
 .india-search-results {
@@ -1274,7 +1274,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .india-search-hit:hover {
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(194, 135, 61, 0.15);
 }
 
 .india-search-empty {
@@ -1394,19 +1394,19 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 
 .india-partner-hit:hover,
 .india-triad-hit:hover {
-  background: rgba(99, 102, 241, 0.12);
+  background: rgba(194, 135, 61, 0.12);
   color: #e2e8f0;
 }
 
 .india-partner-row.is-active .india-partner-hit,
 .india-triad-row.is-active .india-triad-hit {
-  background: rgba(34, 211, 238, 0.12);
-  color: #f1f5f9;
+  background: rgba(226, 168, 85, 0.12);
+  color: #f0ebe3;
 }
 
 .india-partner-hit strong,
 .india-triad-hit strong {
-  color: #22d3ee;
+  color: #e2a855;
   font-weight: 700;
 }
 
@@ -1480,7 +1480,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .india-cluster-picker button:hover {
-  background: rgba(99, 102, 241, 0.15);
+  background: rgba(194, 135, 61, 0.15);
 }
 
 .india-leaflet-tip {
@@ -1554,8 +1554,8 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .india-tab.active {
-  background: rgba(99,102,241,0.2);
-  border-color: rgba(99,102,241,0.5);
+  background: rgba(194,135,61,0.2);
+  border-color: rgba(194,135,61,0.5);
   color: #e2e8f0;
 }
 
@@ -1568,7 +1568,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   color: var(--text-muted);
 }
 
-.inst-stat-row strong { color: #f1f5f9; }
+.inst-stat-row strong { color: #f0ebe3; }
 
 .india-partner-list {
   list-style: none;
@@ -1584,7 +1584,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   color: #94a3b8;
 }
 
-.india-partner-list strong { color: #22d3ee; }
+.india-partner-list strong { color: #e2a855; }
 
 .india-funding-note {
   font-size: 0.82rem;
@@ -1642,7 +1642,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 
 
 .d3-tooltip.visible { opacity: 1; }
-.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #c7d2fe; }
+.d3-tooltip strong { display: block; font-size: 13px; margin-bottom: 4px; color: #e8d4b8; }
 
 /* ──────────────────────────────────────────────
    AXIS / CHART ELEMENT STYLES
@@ -1662,11 +1662,11 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 /* ──────────────────────────────────────────────
    PREVIEW CANVAS FILLS
    ────────────────────────────────────────────── */
-#preview-1 { background: linear-gradient(135deg, #0d1117 0%, rgba(99,102,241,0.08) 100%); }
-#preview-2 { background: linear-gradient(135deg, #0d1117 0%, rgba(168,85,247,0.08) 100%); }
-#preview-3 { background: linear-gradient(135deg, #0d1117 0%, rgba(34,211,238,0.08) 100%); }
-#preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
-#preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
+#preview-1 { background: linear-gradient(135deg, #0e1420 0%, rgba(194,135,61,0.08) 100%); }
+#preview-2 { background: linear-gradient(135deg, #0e1420 0%, rgba(13,148,136,0.08) 100%); }
+#preview-3 { background: linear-gradient(135deg, #0e1420 0%, rgba(226,168,85,0.08) 100%); }
+#preview-4 { background: linear-gradient(135deg, #0e1420 0%, rgba(16,185,129,0.08) 100%); }
+#preview-5 { background: linear-gradient(135deg, #0e1420 0%, rgba(245,158,11,0.08) 100%); }
 
 
 /* --- VIZ 1 LAYOUT CSS --- */
@@ -1696,7 +1696,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 .viz1-title {
   margin: 0;
   font-size: 22px;
-  background: linear-gradient(90deg, #00f2fe, #4facfe);
+  background: linear-gradient(90deg, #e2a855, #0d9488);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 700;
@@ -1757,9 +1757,9 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .viz1-play-btn {
-  background: rgba(34,211,238,0.1);
-  color: #22d3ee;
-  border: 1px solid rgba(34,211,238,0.2);
+  background: rgba(226,168,85,0.1);
+  color: #e2a855;
+  border: 1px solid rgba(226,168,85,0.2);
   padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
@@ -1771,7 +1771,7 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .viz1-play-btn:hover {
-  background: rgba(34,211,238,0.2);
+  background: rgba(226,168,85,0.2);
 }
 
 .viz1-stats-card {
@@ -1827,9 +1827,9 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 }
 
 .viz1-specific-btn.active {
-  background: #22d3ee;
+  background: #e2a855;
   color: #0f172a;
-  box-shadow: 0 0 12px rgba(34, 211, 238, 0.4);
+  box-shadow: 0 0 12px rgba(226, 168, 85, 0.4);
 }
 
 .viz1-visual-guide {
