@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T18:24:47.352536+00:00",
+  "generated_at": "2026-07-07T18:29:29.713907+00:00",
   "passed": 18,
   "total": 18,
   "all_pass": true,
@@ -22,12 +22,12 @@
     {
       "name": "overview size",
       "ok": true,
-      "detail": "31368 bytes"
+      "detail": "31371 bytes"
     },
     {
       "name": "full size",
       "ok": true,
-      "detail": "395404 bytes (cap 1953 KB)"
+      "detail": "395430 bytes (cap 1953 KB)"
     },
     {
       "name": "SCImago static year footnote",
@@ -62,7 +62,7 @@
     {
       "name": "NIRF funding coverage",
       "ok": true,
-      "detail": "87 / 120 institutions with research_funding_cr"
+      "detail": "89 / 120 institutions with research_funding_cr"
     },
     {
       "name": "funding ID/name corruption guard",

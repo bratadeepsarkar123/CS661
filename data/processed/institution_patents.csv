@@ -33,7 +33,7 @@ c7f37aac-de96-454a-bf3d-af0ff418e79e,Manipal Academy of Higher Education,25,7,69
 93e1f5b3-3c8f-4e18-a29b-afa586e5d865,SRM Institute of Science and Technology,126,32,383,70,2022,1.0,IR-O-U-0473,reported
 4a1e94cf-f0b6-4560-ab2c-bd58ab8792ac,University of Rajasthan,,,,,,,,unavailable
 6627a151-3a0d-44f3-adf4-d5255e5a4cc9,Jadavpur University,,,,,,,,unavailable
-0e011302-5676-4cf1-95b3-f0adc82f6893,Institute of Medical Sciences,,,,,,,,unavailable
+0e011302-5676-4cf1-95b3-f0adc82f6893,Institute of Medical Sciences,,,,,,1.0,,unavailable
 736be13b-21db-4757-bfac-35c77c891892,"Anna University, Chennai",,,,,,1.0,,unavailable
 18ae8c5a-a263-4906-9d6a-25bf48ed31e6,Aligarh Muslim University,5,5,24,26,2022,1.0,IR-O-U-0496,reported
 bd7fc63e-4dd7-488f-8022-1332b3642dcf,University of Calcutta,,,,,,,,unavailable
@@ -73,7 +73,7 @@ fb160d73-523e-4f2a-8052-11f55f43e268,Pondicherry University,,,,,,,,unavailable
 1a4bb242-813a-46c1-8f5a-8782d5040d19,University of Mumbai,,,,,,,,unavailable
 90352157-ced6-4e2a-b6ef-515ed6cc5aac,Siksha O Anusandhan University,,,,,,,,unavailable
 f520daa7-29f5-4b11-b9a4-9b02860351ec,Delhi Technological University,23,4,53,7,2022,1.0,IR-O-U-0098,reported
-c7c580b5-a5eb-45ec-9dde-854ee5af23c0,Thapar Institute of Engineering & Technology,75,17,130,74,2022,1.0,IR-O-I-1480,reported
+c7c580b5-a5eb-45ec-9dde-854ee5af23c0,Thapar Institute of Engineering & Technology,,,,,,,,unavailable
 52ef5836-d1be-4182-9b45-218b36478268,Institute of Chemical Technology,,,,,,,,unavailable
 1f4b5eaa-ddfb-448c-8805-4c0936e40f61,Guru Nanak Dev University,,,,,,,,unranked
 c1a7591c-a5be-413d-bcfb-050692c5edef,Tamil Nadu Agricultural University,,,,,,,,unavailable
@@ -106,7 +106,7 @@ c9e12928-adad-470b-bcc3-a64f958bd34b,Central University of Rajasthan,,,,,,,,unav
 9657935b-6b9b-4504-9bec-eb245e65da0f,Government Medical College,,,,,,,,unavailable
 a216703f-5b10-44cb-8fe0-11f6ff1cd1bd,National Institute of Technology Durgapur,,,,,,,,unavailable
 5cb3587e-a197-4ece-8d45-9f364c87990f,Jamia Hamdard,5,0,14,4,2022,1.0,IR-O-U-0107,reported
-4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc,GLA University,,,,,,0.8275862068965517,,unavailable
+4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc,GLA University,,,,,,,,unavailable
 4aa00129-4c2f-4e57-9053-cbf0c58dd2c1,University of Kashmir,,,,,,,,unavailable
 338f6c5e-2956-40cf-80ce-2047521fc9ef,"Birla Institute of Technology, Mesra",11,4,22,11,2022,1.0,IR-E-U-0202,reported
 8c466cdb-a2a4-4bf0-856f-f28560ed0e3b,Sri Ramachandra Institute of Higher Education and Research,,,,,,,,unavailable
