@@ -3,8 +3,8 @@
   "patents_reported": 57,
   "patents_total": 120,
   "funding_reported": 102,
-  "nirf_matched": 106,
-  "nirf_losers": 14,
+  "nirf_matched": 109,
+  "nirf_losers": 11,
   "unavailable": [
     {
       "canonical_name": "Indian Institute of Technology Jodhpur",
@@ -133,8 +133,8 @@
     },
     {
       "canonical_name": "Pondicherry University",
-      "nirf_institute_id": null,
-      "reason": "no_nirf_id"
+      "nirf_institute_id": "IR-O-U-0369",
+      "reason": "no_innovation_pdf"
     },
     {
       "canonical_name": "Osmania University",
@@ -218,8 +218,8 @@
     },
     {
       "canonical_name": "University of Kalyani",
-      "nirf_institute_id": null,
-      "reason": "no_nirf_id"
+      "nirf_institute_id": "IR-O-U-0576",
+      "reason": "no_innovation_pdf"
     },
     {
       "canonical_name": "University of Mysore",
@@ -323,7 +323,7 @@
     }
   ],
   "by_reason": {
-    "no_nirf_id": 13,
-    "no_innovation_pdf": 50
+    "no_nirf_id": 11,
+    "no_innovation_pdf": 52
   }
 }
