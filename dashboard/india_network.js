@@ -632,32 +632,12 @@ const INDIA = (() => {
       return `${e.kind || "hub"}|${a}|${b}`;
     }
 
-    function triadOffsetPx() {
-      const z = map.getZoom();
-      if (z <= 6) return 14;
-      if (z <= 8) return 9;
-      if (z <= 10) return 5;
-      return 2;
-    }
-
-    function edgePathLatLngs(a, b, kind) {
-      const p1 = map.latLngToContainerPoint([a.lat, a.lon]);
-      const p2 = map.latLngToContainerPoint([b.lat, b.lon]);
-      let ox = 0;
-      let oy = 0;
-      if (kind === "triad") {
-        const dx = p2.x - p1.x;
-        const dy = p2.y - p1.y;
-        const len = Math.hypot(dx, dy) || 1;
-        const off = triadOffsetPx();
-        ox = (-dy / len) * off;
-        oy = (dx / len) * off;
-      }
-      const ll1 = map.containerPointToLatLng(L.point(p1.x + ox, p1.y + oy));
-      const ll2 = map.containerPointToLatLng(L.point(p2.x + ox, p2.y + oy));
+    function edgePathLatLngs(a, b) {
+      // Bind polylines to institution lat/lon (same as hub/star edges). Pixel-space
+      // offsets converted via containerPointToLatLng drift tens of km when zoomed out.
       return [
-        [ll1.lat, ll1.lng],
-        [ll2.lat, ll2.lng],
+        [a.lat, a.lon],
+        [b.lat, b.lon],
       ];
     }
 
