@@ -11,7 +11,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import DATA_DIR, PROCESSED_DIR, RAW_DIR  # noqa: E402
-from nirf_utils import assign_nirf_matches  # noqa: E402
+from nirf_utils import assign_nirf_matches, load_nirf_all, update_master_in_scrape_gaps  # noqa: E402
 
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 LOSERS_PATH = PROCESSED_DIR / "nirf_match_losers.csv"
@@ -49,14 +49,6 @@ def load_nirf_best() -> pd.DataFrame:
     overall = overall.sort_values(["institute_id", "rank"]).drop_duplicates("institute_id", keep="first")
     overall["name_norm"] = overall["institute_name"].map(_norm)
     return overall
-
-
-def load_nirf_all() -> pd.DataFrame:
-    if not NIRF_PATH.exists():
-        return pd.DataFrame()
-    nirf = pd.read_csv(NIRF_PATH)
-    nirf["name_norm"] = nirf["institute_name"].map(_norm)
-    return nirf
 
 
 def fill_geo_from_sources(master: pd.DataFrame, geo: pd.DataFrame, oa: pd.DataFrame) -> pd.DataFrame:
@@ -117,6 +109,9 @@ def main() -> None:
         print(f"  NIRF match losers: {len(losers)} -> {LOSERS_PATH}")
     elif LOSERS_PATH.exists():
         LOSERS_PATH.unlink()
+
+    gaps_path = update_master_in_scrape_gaps(master)
+    print(f"  NIRF scrape gaps (master) -> {gaps_path}")
 
     after_missing = master["latitude"].isna().sum()
     nirf_matched = master["nirf_institute_id"].notna().sum()
