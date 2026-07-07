@@ -393,8 +393,12 @@ def best_nirf_match(
 def assign_nirf_matches(
     master: pd.DataFrame,
     nirf_all: pd.DataFrame,
-) -> pd.DataFrame:
-    """Assign NIRF ids/ranks with one-id-per-institute uniqueness."""
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Assign NIRF ids/ranks with one-id-per-institute uniqueness.
+
+    Returns (master, losers_df) where losers_df lists institutes that could not
+    claim an ID (blocked by uniqueness, missing override row, or no fuzzy match).
+    """
     master = master.copy()
     for col in ["nirf_institute_id", "nirf_rank", "nirf_score", "nirf_year", "nirf_ranking_category"]:
         if col not in master.columns:
@@ -404,7 +408,9 @@ def assign_nirf_matches(
 
     overrides = load_nirf_id_overrides()
     claimed_ids: set[str] = set()
+    id_to_name: dict[str, str] = {}
     candidates: list[tuple[int, pd.Series, float]] = []
+    losers: list[dict[str, object]] = []
 
     for idx, row in master.iterrows():
         name = row["canonical_name"]
@@ -412,12 +418,33 @@ def assign_nirf_matches(
             iid = overrides[name]
             hits = nirf_all[nirf_all["institute_id"] == iid]
             if hits.empty:
+                losers.append(
+                    {
+                        "canonical_name": name,
+                        "reason": "override_id_missing_in_rankings",
+                        "best_nirf_id": iid,
+                        "best_nirf_name": "",
+                        "match_score": "",
+                        "blocked_by": "",
+                    }
+                )
                 continue
             if iid in claimed_ids:
+                losers.append(
+                    {
+                        "canonical_name": name,
+                        "reason": "override_id_already_claimed",
+                        "best_nirf_id": iid,
+                        "best_nirf_name": hits.iloc[0].get("institute_name", ""),
+                        "match_score": "",
+                        "blocked_by": id_to_name.get(iid, ""),
+                    }
+                )
                 continue
             prefs = category_preferences(name, inst_type=row.get("inst_type"))
             best = _best_row_for_id(hits, prefs)
             claimed_ids.add(iid)
+            id_to_name[iid] = name
             master.at[idx, "nirf_institute_id"] = best["institute_id"]
             master.at[idx, "nirf_rank"] = int(best["rank"])
             master.at[idx, "nirf_score"] = float(best["score"])
@@ -434,20 +461,44 @@ def assign_nirf_matches(
         )
         if match is not None:
             candidates.append((idx, match, score))
+        else:
+            losers.append(
+                {
+                    "canonical_name": name,
+                    "reason": "no_fuzzy_match",
+                    "best_nirf_id": "",
+                    "best_nirf_name": "",
+                    "match_score": round(score, 3),
+                    "blocked_by": "",
+                }
+            )
 
     candidates.sort(key=lambda item: item[2], reverse=True)
-    for idx, match, _score in candidates:
+    for idx, match, score in candidates:
         iid = str(match["institute_id"])
         if iid in claimed_ids:
+            row = master.loc[idx]
+            losers.append(
+                {
+                    "canonical_name": row["canonical_name"],
+                    "reason": "id_blocked_by_uniqueness",
+                    "best_nirf_id": iid,
+                    "best_nirf_name": match.get("institute_name", ""),
+                    "match_score": round(score, 3),
+                    "blocked_by": id_to_name.get(iid, ""),
+                }
+            )
             continue
         claimed_ids.add(iid)
+        id_to_name[iid] = str(master.at[idx, "canonical_name"])
         master.at[idx, "nirf_institute_id"] = match["institute_id"]
         master.at[idx, "nirf_rank"] = int(match["rank"])
         master.at[idx, "nirf_score"] = float(match["score"])
         master.at[idx, "nirf_year"] = int(match["nirf_year"])
         master.at[idx, "nirf_ranking_category"] = str(match["ranking_category"])
 
-    return master
+    losers_df = pd.DataFrame(losers)
+    return master, losers_df
 
 
 def _best_row_for_id(hits: pd.DataFrame, category_prefs: list[str]) -> pd.Series:

@@ -179,6 +179,28 @@ def _major_iit_funding_check(funding: pd.DataFrame) -> tuple[bool, str]:
     return ok, "all major IITs funded" if ok else f"missing funding: {', '.join(missing)}"
 
 
+def _duplicate_funding_check(funding: pd.DataFrame) -> tuple[bool, str]:
+    """Flag unrelated institutes sharing identical funding amounts (P2 audit signal)."""
+    if funding.empty or "research_funding_cr" not in funding.columns:
+        return True, "no funding data"
+    funded = funding[funding["research_funding_cr"].notna()].copy()
+    if funded.empty:
+        return True, "no funded rows"
+    clusters: list[str] = []
+    for amount, group in funded.groupby("research_funding_cr"):
+        if len(group) < 2:
+            continue
+        names = group["canonical_name"].astype(str).tolist()
+        if len(names) >= 2:
+            clusters.append(f"{amount} cr: {len(names)} institutes ({names[0][:30]}…, {names[1][:30]}…)")
+    # Informational — duplicate clusters are P2, not a hard fail
+    ok = len(clusters) <= 8
+    detail = f"{len(clusters)} duplicate-value clusters" if clusters else "no duplicate funding values"
+    if clusters:
+        detail += " — " + "; ".join(clusters[:4])
+    return ok, detail
+
+
 def main() -> None:
     results: list[dict] = []
     master_path = PROCESSED_DIR / "institution_master.csv"
@@ -304,6 +326,8 @@ def main() -> None:
         results.append(check("funding ID/name corruption guard", ok_suspect, det_suspect))
         ok_major, det_major = _major_iit_funding_check(fund)
         results.append(check("major IIT funding present", ok_major, det_major))
+        ok_dup, det_dup = _duplicate_funding_check(fund)
+        results.append(check("duplicate funding value clusters", ok_dup, det_dup))
     else:
         results.append(check("NIRF funding coverage", False, "institution_funding.csv missing"))
 

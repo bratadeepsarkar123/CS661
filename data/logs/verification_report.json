@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T17:22:39.661857+00:00",
-  "passed": 17,
-  "total": 17,
+  "generated_at": "2026-07-07T17:37:18.040821+00:00",
+  "passed": 18,
+  "total": 18,
   "all_pass": true,
   "checks": [
     {
@@ -73,6 +73,11 @@
       "name": "major IIT funding present",
       "ok": true,
       "detail": "all major IITs funded"
+    },
+    {
+      "name": "duplicate funding value clusters",
+      "ok": true,
+      "detail": "6 duplicate-value clusters \u2014 0.62 cr: 2 institutes (University of Rajasthan\u2026, Central University of Rajastha\u2026); 12.24 cr: 2 institutes (Indian Institute of Technology\u2026, Indian Institute of Technology\u2026); 18.53 cr: 2 institutes (Christian Medical College, Vel\u2026, Christian Medical College\u2026); 19.84 cr: 2 institutes (Panjab University\u2026, National Institute of Technolo\u2026)"
     },
     {
       "name": "positive domestic co-auth test",
