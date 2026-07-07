@@ -161,6 +161,11 @@ NIRF_ID_OVERRIDES: dict[str, str] = {
     "SRM Institute of Science and Technology": "IR-O-U-0473",
     "Thapar Institute of Engineering & Technology": "IR-E-I-1480",
     "GLA University": "IR-P-U-0513",
+    "Saveetha University": "IR-O-I-1441",
+    "KIIT University": "IR-O-U-0356",
+    "SASTRA University": "IR-O-U-0476",
+    "Institute of Medical Sciences": "IR-D-U-0500",
+    "GITAM University": "IR-P-U-0011",
 }
 
 # canonical_name -> preferred NIRF institute_name substring for funding join
@@ -177,6 +182,10 @@ FUNDING_NAME_ALIASES: dict[str, str] = {
     "Thapar Institute of Engineering & Technology": "Thapar Institute of Engineering and Technology (Deemed-to-be-university)",
     "GLA University": "G. L. A. University",
     "SRM Institute of Science and Technology": "S.R.M. Institute of Science and Technology",
+    "Saveetha University": "Saveetha Institute of Medical and Technical Sciences",
+    "KIIT University": "Kalinga Institute of Industrial Technology",
+    "SASTRA University": "Shanmugha Arts Science Technology and Research Academy",
+    "GITAM University": "Gandhi Institute of Technology and Management",
 }
 
 MATCH_THRESHOLD = 0.78

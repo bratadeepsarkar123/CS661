@@ -14,7 +14,7 @@ ff60ecf0-39c2-4a17-a941-2b03df4ce12b,Indian Institute of Technology Patna,44.25,
 aa83bbde-9db5-4ca5-ab64-f2cec6d6f46f,Indian Institute of Technology Ropar,55.29,141,,2022-23,1.0
 92004806-cba2-4966-9ebf-9f31bc5a9597,Indian Institute of Technology Indore,33.03,174,,2022-23,1.0
 e98e91f3-ef30-41ea-b7e9-c708270266ba,Indian Institute of Technology Mandi,15.65,170,,2022-23,1.0
-5f90b565-15b8-4035-ab58-963431c3275d,Indian Institute of Technology (BHU) Varanasi,206.94,648,,2022-23,1.0
+5f90b565-15b8-4035-ab58-963431c3275d,Indian Institute of Technology (BHU) Varanasi,206.94,38,,2022-23,1.0
 f557894b-a324-439c-a6a7-f6d2a87a6bed,Indian Institute of Technology Palakkad,8.68,32,,2022-23,1.0
 7b3d00a5-49ca-420b-a758-0534ef4fedc2,Indian Institute of Technology Tirupati,9.57,86,,2022-23,1.0
 6f93f0ad-7358-4fd0-bc47-0a62092ca0ac,Indian Institute of Technology (ISM) Dhanbad,30.54,166,,2022-23,1.0
@@ -26,14 +26,14 @@ f6a0e07c-58dc-463e-8e04-d8d08a9a7342,Indian Institute of Technology Jammu,8.15,7
 2dbad614-cedc-4bdc-a02e-8a66054a8bd9,All India Institute of Medical Sciences,197.08,904,,2022-23,1.0
 4d6717be-0714-4972-b1d4-571c58d9a46f,University of Delhi,49.11,444,,2022-23,1.0
 fd56c1b8-3390-4d13-9121-2b061d0b11ac,Vellore Institute of Technology University,13.91,146,,2022-23,0.95
-672214f6-22a9-4d55-8c6c-5b28a5159516,Banaras Hindu University,206.94,648,,2022-23,1.0
-47b972a6-fdf5-499c-a99f-fd0fedb15993,Saveetha University,,,,,
+672214f6-22a9-4d55-8c6c-5b28a5159516,Banaras Hindu University,206.94,38,,2022-23,1.0
+47b972a6-fdf5-499c-a99f-fd0fedb15993,Saveetha University,28.31,3038,,2022-23,1.0
 131f1481-eede-4a15-a738-57b4c90b26ad,Post Graduate Institute of Medical Education and Research,,,,,
 c7f37aac-de96-454a-bf3d-af0ff418e79e,Manipal Academy of Higher Education,35.01,385,,2022-23,1.0
-93e1f5b3-3c8f-4e18-a29b-afa586e5d865,SRM Institute of Science and Technology,28.24,391,,2022-23,1.0
+93e1f5b3-3c8f-4e18-a29b-afa586e5d865,SRM Institute of Science and Technology,,,,,
 4a1e94cf-f0b6-4560-ab2c-bd58ab8792ac,University of Rajasthan,,,,,
 6627a151-3a0d-44f3-adf4-d5255e5a4cc9,Jadavpur University,36.59,140,,2022-23,1.0
-0e011302-5676-4cf1-95b3-f0adc82f6893,Institute of Medical Sciences,206.94,648,,2022-23,1.0
+0e011302-5676-4cf1-95b3-f0adc82f6893,Institute of Medical Sciences,206.94,38,,2022-23,1.0
 736be13b-21db-4757-bfac-35c77c891892,"Anna University, Chennai",,,,,
 18ae8c5a-a263-4906-9d6a-25bf48ed31e6,Aligarh Muslim University,75.13,227,,2022-23,1.0
 bd7fc63e-4dd7-488f-8022-1332b3642dcf,University of Calcutta,,,,,
@@ -63,7 +63,7 @@ d93978d3-2c97-47c6-8d5a-b6472222104c,"Birla Institute of Technology and Science,
 529bfa45-38b5-4fa3-ad24-0cdc1a731124,Koneru Lakshmaiah Education Foundation,,,,,
 e53966df-0e1d-4551-bffd-ab1bde3800e4,Symbiosis International University,,,,,
 d8caf76d-8ea5-44f6-939d-e450309d2de1,"Kasturba Medical College, Manipal",94.35,325,,2022-23,1.0
-48e9b5fb-0b5b-42f0-a98b-cbc31d34b300,KIIT University,,,,,
+48e9b5fb-0b5b-42f0-a98b-cbc31d34b300,KIIT University,20.41,151,,2022-23,1.0
 4521b7d6-9c9f-41f9-8061-593ae0c361dc,Jain University,,,,,
 04e4f2b0-9883-4fb8-9c64-cb5b49d6b361,Andhra University,50.33,87,,2022-23,1.0
 4dec3aaa-d6ae-4b77-ac09-50d7bdc68bb2,Sathyabama Institute of Science and Technology,22.57,158,,2022-23,1.0
@@ -85,7 +85,7 @@ b45c2598-3515-4da1-9660-75a5ff4428fa,National Institute of Technology Warangal,1
 d538b33b-7df6-426d-a326-e6336207fb5f,Sri Venkateswara University,11.49,12,,2022-23,1.0
 eee22ec4-aa39-45b3-95e0-7f6250924a00,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,0.91,20,,2022-23,1.0
 d2ab91c0-a50d-44ef-b03b-6fab30b3d767,King George's Medical University,21.4,289,,2022-23,1.0
-7693ea92-ef4b-486f-96c6-89db3749c43e,GITAM University,,,,,
+7693ea92-ef4b-486f-96c6-89db3749c43e,GITAM University,,0,,2022-23,1.0
 b20ed218-ebd3-4a6b-a2c8-9bef7907b934,Punjab Agricultural University,127.31,480,,2022-23,1.0
 104fe323-87bc-48e9-a752-22b34af999bb,University of Lucknow,13.54,140,,2022-23,1.0
 cb03a5e5-b2f5-4e95-af9f-a170aab03713,Indian Association for the Cultivation of Science,,,,,
@@ -106,14 +106,14 @@ c9e12928-adad-470b-bcc3-a64f958bd34b,Central University of Rajasthan,0.62,10,,20
 9657935b-6b9b-4504-9bec-eb245e65da0f,Government Medical College,0.32,6,,2022-23,1.0
 a216703f-5b10-44cb-8fe0-11f6ff1cd1bd,National Institute of Technology Durgapur,19.84,155,,2022-23,1.0
 5cb3587e-a197-4ece-8d45-9f364c87990f,Jamia Hamdard,22.48,133,,2022-23,1.0
-4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc,GLA University,,0,,2022-23,1.0
+4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc,GLA University,,,,,
 4aa00129-4c2f-4e57-9053-cbf0c58dd2c1,University of Kashmir,13.25,84,,2022-23,1.0
 338f6c5e-2956-40cf-80ce-2047521fc9ef,"Birla Institute of Technology, Mesra",6.74,42,,2022-23,1.0
 8c466cdb-a2a4-4bf0-856f-f28560ed0e3b,Sri Ramachandra Institute of Higher Education and Research,58.27,299,,2022-23,1.0
 cb1e371e-ffd1-4175-974b-b91e8cbe4ea1,Galgotias University,0.41,27,,2022-23,1.0
 20a76e3b-d397-44ea-a50b-42ad2940af51,Punjabi University,0.17,2,,2022-23,1.0
 b2210d61-d364-40bd-abfa-2d7b5023d562,Shivaji University,,,,,
-81dfed4d-dcca-4b15-8548-b5b5d98fa6c4,SASTRA University,,,,,
+81dfed4d-dcca-4b15-8548-b5b5d98fa6c4,SASTRA University,53.97,73,,2022-23,1.0
 36d17eae-f23d-4896-8bb8-848c7ba25547,Mangalore University,,,,,
 149ca745-c80a-4eb3-97bd-36ad7d8e4b2b,Christian Medical College,133.72,576,,2022-23,1.0
 5374b462-1d87-4026-a9dd-901a6e394a62,"Jawaharlal Nehru Technological University, Hyderabad",28.45,33,,2022-23,1.0
