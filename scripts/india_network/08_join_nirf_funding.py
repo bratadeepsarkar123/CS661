@@ -2,9 +2,7 @@
 """Join NIRF funding totals to institution_master.csv."""
 from __future__ import annotations
 
-import json
 import sys
-import time
 from pathlib import Path
 
 import pandas as pd
@@ -23,39 +21,8 @@ from nirf_utils import (  # noqa: E402
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 FUNDING_PATH = PROCESSED_DIR / "nirf_funding_by_institute.csv"
 OUT_PATH = PROCESSED_DIR / "institution_funding.csv"
-DEBUG_LOG = Path(__file__).resolve().parents[2] / "debug-e78b43.log"
 FUZZY_MIN = 0.88
 
-_WATCH = frozenset(
-    {
-        "Indian Institute of Science",
-        "Indian Institute of Technology (BHU) Varanasi",
-        "Indian Institute of Technology (ISM) Dhanbad",
-        "Institute of Medical Sciences",
-        "All India Institute of Medical Sciences",
-    }
-)
-
-
-def _debug_log(message: str, data: dict) -> None:
-    # #region agent log
-    try:
-        line = json.dumps(
-            {
-                "sessionId": "e78b43",
-                "hypothesisId": "H-fix",
-                "location": "08_join_nirf_funding.py",
-                "message": message,
-                "data": data,
-                "timestamp": int(time.time() * 1000),
-                "runId": "post-fix",
-            }
-        )
-        with DEBUG_LOG.open("a", encoding="utf-8") as f:
-            f.write(line + "\n")
-    except OSError:
-        pass
-    # #endregion
 
 
 def _funding_name_score(inst: pd.Series, funding_row: pd.Series, alias: str | None = None) -> float:
@@ -152,16 +119,6 @@ def main() -> None:
     for _, inst in master.iterrows():
         name = inst["canonical_name"]
         row, match_score = _pick_funding_row(inst, funding, funding_idx, id_lookup)
-        if name in _WATCH:
-            _debug_log(
-                "funding_pick",
-                {
-                    "canonical_name": name,
-                    "matched_to": str(row.get("institute_name_nirf", "")) if row is not None else None,
-                    "amount_cr": float(row["research_funding_cr"]) if row is not None and pd.notna(row.get("research_funding_cr")) else None,
-                    "match_score": float(match_score) if match_score else None,
-                },
-            )
         rows.append(
             {
                 "institution_id": inst["institution_id"],
