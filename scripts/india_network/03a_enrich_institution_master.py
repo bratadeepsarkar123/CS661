@@ -14,6 +14,7 @@ from config import DATA_DIR, PROCESSED_DIR, RAW_DIR  # noqa: E402
 from nirf_utils import assign_nirf_matches  # noqa: E402
 
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
+LOSERS_PATH = PROCESSED_DIR / "nirf_match_losers.csv"
 GEO_PATH = RAW_DIR / "india_higher_education.csv"
 NIRF_PATH = RAW_DIR / "nirf_rankings.csv"
 OPENALEX_PATH = PROCESSED_DIR / "openalex_institutions.parquet"
@@ -91,9 +92,9 @@ def fill_geo_from_sources(master: pd.DataFrame, geo: pd.DataFrame, oa: pd.DataFr
     return master
 
 
-def join_nirf(master: pd.DataFrame, nirf_all: pd.DataFrame) -> pd.DataFrame:
+def join_nirf(master: pd.DataFrame, nirf_all: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
     if nirf_all.empty:
-        return master
+        return master, pd.DataFrame()
     return assign_nirf_matches(master, nirf_all)
 
 
@@ -108,9 +109,15 @@ def main() -> None:
 
     before_missing = master["latitude"].isna().sum()
     master = fill_geo_from_sources(master, geo, oa)
-    master = join_nirf(master, nirf_all)
+    master, losers = join_nirf(master, nirf_all)
 
     master.to_csv(MASTER_PATH, index=False)
+    if not losers.empty:
+        losers.to_csv(LOSERS_PATH, index=False)
+        print(f"  NIRF match losers: {len(losers)} -> {LOSERS_PATH}")
+    elif LOSERS_PATH.exists():
+        LOSERS_PATH.unlink()
+
     after_missing = master["latitude"].isna().sum()
     nirf_matched = master["nirf_institute_id"].notna().sum()
     print(f"Updated -> {MASTER_PATH}")

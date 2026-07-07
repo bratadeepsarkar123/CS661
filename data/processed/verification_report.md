@@ -1,7 +1,7 @@
 # Module 5 verification checklist
 
-Generated: 2026-07-07T17:22:39.661857+00:00
-**17/17 passed**
+Generated: 2026-07-07T17:37:18.040821+00:00
+**18/18 passed**
 
 - [PASS] institution_master rows + geo: 120 rows, 100% with lat/lon
 - [PASS] collaboration_edges weight>=2: 13236 edge rows
@@ -17,6 +17,7 @@ Generated: 2026-07-07T17:22:39.661857+00:00
 - [PASS] NIRF funding coverage: 84 / 120 institutions with research_funding_cr
 - [PASS] funding ID/name corruption guard: no suspect funding
 - [PASS] major IIT funding present: all major IITs funded
+- [PASS] duplicate funding value clusters: 6 duplicate-value clusters — 0.62 cr: 2 institutes (University of Rajasthan…, Central University of Rajastha…); 12.24 cr: 2 institutes (Indian Institute of Technology…, Indian Institute of Technology…); 18.53 cr: 2 institutes (Christian Medical College, Vel…, Christian Medical College…); 19.84 cr: 2 institutes (Panjab University…, National Institute of Technolo…)
 - [PASS] positive domestic co-auth test: IIT Kanpur ↔ IIT Delhi edge weight=234 in collaboration_edges_full.csv
 - [PASS] negative foreign co-auth test: foreign co-auth work W3044674088 correctly excluded from domestic_works
 - [PASS] temporal edge variance (2015 vs 2022): 2015 weight sum=7184, 2022 weight sum=20139
