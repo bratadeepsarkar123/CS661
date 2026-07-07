@@ -9,11 +9,18 @@ The built bundle fetches `/india_network/2024_overview.json` (see `dist/assets/*
 ## Sync command (PowerShell, from repo root)
 
 ```powershell
-New-Item -ItemType Directory -Force -Path hierarchy-app/public/india_network | Out-Null
-Copy-Item -Recurse -Force dashboard/data/india_network/* hierarchy-app/public/india_network/
+.\scripts\sync_hierarchy_app.ps1
 ```
 
-After sync, rebuild if needed: `cd hierarchy-app; npm run build` (copies `public/` into `dist/`).
+Or manually:
+
+```powershell
+New-Item -ItemType Directory -Force -Path hierarchy-app/public/india_network | Out-Null
+Copy-Item -Recurse -Force dashboard/data/india_network/* hierarchy-app/public/india_network/
+Copy-Item -Recurse -Force dashboard/data/india_network/* hierarchy-app/dist/india_network/
+```
+
+After sync, run `npm run build` in `hierarchy-app/` only if `package.json` is present.
 
 **Note:** `hierarchy-app/dist/india_network/` may contain stale slices (e.g. 2026-06-30) if not rebuilt — prefer sync + build over editing `dist/` by hand.
 

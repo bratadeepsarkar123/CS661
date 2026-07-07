@@ -46,7 +46,7 @@ def main() -> None:
         ("nirf_expenditure", "nirf_expenditure.csv", "https://dataful.in/datasets/19317/", True),
         ("nirf_patents", "nirf_patents.csv", SOURCE_URLS["nirf_patents"], True),
         ("scimago_india", "scimago_india.csv", SOURCE_URLS["scimago_india"], False),
-        ("aishe_universities", "aishe_universities.xlsx", SOURCE_URLS["aishe_universities"], False),
+        ("aishe_universities", "aishe_universities.xlsx", SOURCE_URLS["aishe_universities"], True),
     ]
     for key, filename, page_url, optional in manual:
         dest = RAW_DIR / filename
@@ -58,6 +58,8 @@ def main() -> None:
                 print("    Patent counts optional for v1.")
             elif key == "nirf_expenditure":
                 print("    Free CSV at URL — improves Funding tab expenditure row.")
+            elif key == "aishe_universities":
+                print("    AISHE directory optional — run validate_aishe.py if present.")
         else:
             print(f"  MISSING: {filename}")
             print(f"    Download from: {page_url}")
