@@ -358,6 +358,8 @@ Legacy incorrect rule (do not implement): ~~every authorship has `countries == [
 
 ### 4.3 `institution_metrics` (yearly — time-varying only)
 
+> **Implementation note (2026-07-08):** There is no standalone `07_build_institution_metrics.py`. Yearly `total_works`, `domestic_collab_works`, and citation rollups are computed at export time in `09_export_payloads.py` from `domestic_works.parquet` + `institution_master.csv`. The schema below remains the logical model.
+
 ```text
 institution_id, year
 total_works             all published works by institution (year-filtered; OpenAlex `.works_count` / yearly rollup)
@@ -388,6 +390,8 @@ scimago_year            label: "2019" — display as footnote in UI
 > **Why static:** SCImago's free CSV export provides a single snapshot (approximately 2019 data). There is no year-by-year institution CSV available for free. These fields do NOT change when the year slider moves. In JSON payloads and tooltips, always display as `"Q1%: 67 (2019 data)"` with the `scimago_year` label for graphical integrity.
 
 ### 4.4 `tier_aggregates` (for default UI strip)
+
+> **Implementation note (2026-07-08):** There is no standalone `08_compute_tier_aggregates.py`. Tier summaries in JSON payloads (`tier_panels` / `tier_summary`) are computed inline in `09_export_payloads.py`. NIRF funding joins use `08_join_nirf_funding.py` instead.
 
 ```text
 tier, year
@@ -489,10 +493,9 @@ Step 4: Export scripts apply is_hub as a DISPLAY FILTER only
 | 1.1b | **Deduplicate works on `work_id`** — same paper fetched via multiple institutions must count once only | `data/processed/domestic_works.parquet` (unique on `work_id`) |
 | 1.2 | Build `collaboration_edges_full.csv` (all pairs, weight >= 2, all years) | domestic pairs |
 | 1.2b | Compute hub flags from full edge graph (see §5 build order) | `hub_flags.csv` |
-| 1.3 | Join SCImago → `institution_quality_static` table | static quality snapshot |
-| 1.4 | Compute `institution_metrics` (yearly: total_works, citations) | `institution_metrics.csv` |
-| 1.5 | Compute `tier_aggregates` | CSV |
-| 1.6 | Export two JSON payloads per year (overview + full) | `public/india_network/{year}_overview.json`, `{year}_full.json` |
+| 1.3 | Join SCImago → `institution_quality_static` table | `07_join_scimago_quality.py` → `institution_quality_static.csv` |
+| 1.4 | Join NIRF funding + patents | `08_join_nirf_funding.py`, `08b_join_nirf_patents.py` |
+| 1.5 | Export two JSON payloads per year (overview + full); **yearly metrics and tier summaries computed inline** in export (no separate metrics script) | `09_export_payloads.py`, `09b_export_year_slices.py` → `public/india_network/{year}_overview.json`, `{year}_full.json` |
 
 > **Deduplication (Step 1.1b) is mandatory:** When fetching works per institution, the same `work_id` will appear in multiple institution batches (e.g., a paper co-authored by IIT Kanpur and IIT Delhi is fetched twice). Before building edges, run `df.drop_duplicates(subset='work_id')`. Without this, edge weights (co-publication counts) will be inflated by the number of co-authoring institutions fetched.
 
@@ -548,9 +551,12 @@ CS661/
 │   ├── 04_feasibility_domestic_edges.py
 │   ├── 05_fetch_openalex_works.py
 │   ├── 06_build_domestic_edges.py
-│   ├── 07_build_institution_metrics.py
-│   ├── 08_compute_tier_aggregates.py
-│   └── 09_export_payloads.py
+│   ├── 07_join_scimago_quality.py          # was planned as 07_build_institution_metrics.py (deprecated name)
+│   ├── 08_join_nirf_funding.py             # was planned as 08_compute_tier_aggregates.py (deprecated name)
+│   ├── 08b_join_nirf_patents.py
+│   ├── 09_export_payloads.py               # institution_metrics + tier_aggregates computed here at export time
+│   ├── 09b_export_year_slices.py
+│   └── 10_verification_checklist.py
 ├── public/india_network/
 │   └── {year}_overview.json / {year}_full.json
 └── hierarchy-app/
