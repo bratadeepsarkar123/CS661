@@ -136,6 +136,7 @@ NIRF_ID_OVERRIDES: dict[str, str] = {
     "All India Institute of Medical Sciences Raipur": "IR-D-U-0690",
     "Post Graduate Institute of Medical Education and Research": "IR-O-U-0446",
     "Jawaharlal Institute of Post Graduate Medical Education and Research": "IR-O-U-0368",
+    "Indian Institute of Technology Dharwad": "IR-E-U-0899",
 }
 
 # canonical_name -> preferred NIRF institute_name substring for funding join
@@ -395,7 +396,7 @@ def assign_nirf_matches(
 ) -> pd.DataFrame:
     """Assign NIRF ids/ranks with one-id-per-institute uniqueness."""
     master = master.copy()
-    for col in ["nirf_institute_id", "nirf_rank", "nirf_score", "nirf_year"]:
+    for col in ["nirf_institute_id", "nirf_rank", "nirf_score", "nirf_year", "nirf_ranking_category"]:
         if col not in master.columns:
             master[col] = pd.NA
         else:
@@ -414,12 +415,14 @@ def assign_nirf_matches(
                 continue
             if iid in claimed_ids:
                 continue
-            best = hits.sort_values("rank").iloc[0]
+            prefs = category_preferences(name, inst_type=row.get("inst_type"))
+            best = _best_row_for_id(hits, prefs)
             claimed_ids.add(iid)
             master.at[idx, "nirf_institute_id"] = best["institute_id"]
             master.at[idx, "nirf_rank"] = int(best["rank"])
             master.at[idx, "nirf_score"] = float(best["score"])
             master.at[idx, "nirf_year"] = int(best["nirf_year"])
+            master.at[idx, "nirf_ranking_category"] = str(best["ranking_category"])
             continue
 
         match, score = best_nirf_match(
@@ -442,5 +445,15 @@ def assign_nirf_matches(
         master.at[idx, "nirf_rank"] = int(match["rank"])
         master.at[idx, "nirf_score"] = float(match["score"])
         master.at[idx, "nirf_year"] = int(match["nirf_year"])
+        master.at[idx, "nirf_ranking_category"] = str(match["ranking_category"])
 
     return master
+
+
+def _best_row_for_id(hits: pd.DataFrame, category_prefs: list[str]) -> pd.Series:
+    """Pick the ranking row for an institute_id using category preference order."""
+    for cat in category_prefs:
+        pool = hits[hits["ranking_category"] == cat]
+        if not pool.empty:
+            return pool.sort_values("rank").iloc[0]
+    return hits.sort_values("rank").iloc[0]

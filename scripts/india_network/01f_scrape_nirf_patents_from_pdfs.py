@@ -115,6 +115,12 @@ def build_targets(master: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def _load_existing_scraped() -> pd.DataFrame:
+    if OUT_PATH.exists():
+        return pd.read_csv(OUT_PATH)
+    return pd.DataFrame()
+
+
 def main() -> None:
     import argparse
 
@@ -125,16 +131,25 @@ def main() -> None:
 
     master = pd.read_csv(PROCESSED_DIR / "institution_master.csv")
     targets = build_targets(master)
+    existing = _load_existing_scraped()
+    already_ok: set[str] = set()
+    if not existing.empty and "institute_id" in existing.columns:
+        already_ok = set(existing["institute_id"].astype(str).str.strip())
+
     if args.limit > 0:
         targets = targets.head(args.limit)
 
-    all_rows: list[dict] = []
-    ok = 0
+    all_rows: list[dict] = list(existing.to_dict("records")) if not existing.empty else []
+    ok = len(already_ok)
     miss = 0
+    skip = 0
 
     for _, row in targets.iterrows():
         iid = str(row["nirf_institute_id"]).strip()
         name = row["canonical_name"]
+        if iid in already_ok:
+            skip += 1
+            continue
         url = innovation_pdf_url(iid)
         try:
             resp = SESSION.get(url, timeout=45)
@@ -177,7 +192,7 @@ def main() -> None:
     df.to_csv(ALIAS_PATH, index=False)
     print(f"\nWrote {len(df):,} rows -> {OUT_PATH}")
     print(f"Also -> {ALIAS_PATH}")
-    print(f"Institutes with patents: {ok} | missed: {miss}")
+    print(f"Institutes with patents: {ok} | skipped (cached): {skip} | missed: {miss}")
 
 
 if __name__ == "__main__":

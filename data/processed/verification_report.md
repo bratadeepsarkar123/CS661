@@ -1,20 +1,20 @@
 # Module 5 verification checklist
 
-Generated: 2026-07-07T17:08:48.325315+00:00
-**16/17 passed**
+Generated: 2026-07-07T17:22:39.661857+00:00
+**17/17 passed**
 
 - [PASS] institution_master rows + geo: 120 rows, 100% with lat/lon
 - [PASS] collaboration_edges weight>=2: 13236 edge rows
 - [PASS] edge endpoints in master (domestic IN institutions): all endpoints in institution_master
-- [PASS] overview size: 29435 bytes
-- [FAIL] full size: 4103363 bytes
+- [PASS] overview size: 31368 bytes
+- [PASS] full size: 395396 bytes (cap 1953 KB)
 - [PASS] SCImago static year footnote: SCImago research impact % snapshot (2019 data); static across year slider
 - [PASS] overview payload edge integrity: 0 orphan edges (nodes=45, edges=40)
 - [PASS] full payload edge integrity: 0 orphan edges (nodes=120, edges=300)
 - [PASS] year slice manifest: 10 years listed in manifest.json
 - [PASS] campus coordinate stacks: max stack=1, out_of_india=0
 - [PASS] domestic_works.parquet non-empty: 108705 rows, 1252 KB
-- [PASS] NIRF funding coverage: 83 / 120 institutions with research_funding_cr
+- [PASS] NIRF funding coverage: 84 / 120 institutions with research_funding_cr
 - [PASS] funding ID/name corruption guard: no suspect funding
 - [PASS] major IIT funding present: all major IITs funded
 - [PASS] positive domestic co-auth test: IIT Kanpur ↔ IIT Delhi edge weight=234 in collaboration_edges_full.csv

@@ -85,6 +85,11 @@ const INDIA = (() => {
     return TIER_LABELS[tier] || tier;
   }
 
+  function nirfRankLabel(node) {
+    const cat = node && node.nirf_ranking_category;
+    return cat ? `NIRF rank (${cat})` : "NIRF rank";
+  }
+
   function ensureLoaded() {
     if (cache.overview && cache.full) return Promise.resolve(cache);
     if (!cache.loadPromise) {
@@ -306,7 +311,7 @@ const INDIA = (() => {
         <span class="inst-tier" style="background:${col}33;color:${col}">${tierLabel(node.tier)}</span>
         ${tabs}
         ${fundingBlock}
-        <div class="inst-stat-row"><span>NIRF rank (Overall)</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
+        <div class="inst-stat-row"><span>${nirfRankLabel(node)}</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
         ${patentBlock}
         ${tierAvg != null ? `<p class="india-funding-note">${tierLabel(node.tier)} tier avg sponsored research: <strong>₹${tierAvg.toFixed(1)} Cr</strong> (institutions with NIRF submissions only).</p>` : ""}
         <p class="india-funding-note">Source: official NIRF PDFs on nirfindia.org (free). Not all HEIs file detailed returns.</p>
@@ -359,7 +364,7 @@ const INDIA = (() => {
       <span class="inst-tier" style="background:${col}33;color:${col}">${tierLabel(node.tier)}</span>
       ${tabs}
       ${focusNote}
-      <div class="inst-stat-row"><span>NIRF rank (Overall)</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
+      <div class="inst-stat-row"><span>${nirfRankLabel(node)}</span><strong>${node.nirf_rank != null ? "#" + node.nirf_rank : "—"}</strong></div>
       <div class="inst-stat-row"><span>OpenAlex works (2015–24)</span><strong>${(node.total_works || 0).toLocaleString()}</strong></div>
       <div class="inst-stat-row"><span>SCImago impact (${node.scimago_year || "—"})</span><strong>${node.scimago_pct != null ? node.scimago_pct + "%" : "—"}</strong></div>
       <div class="inst-stat-row"><span>Domestic co-pubs (year slice)</span><strong>${collabTotal || "—"}</strong></div>
