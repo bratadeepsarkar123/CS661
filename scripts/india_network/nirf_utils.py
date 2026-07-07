@@ -289,6 +289,43 @@ def load_nirf_id_overrides() -> dict[str, str]:
     return overrides
 
 
+def load_nirf_id_canonical_names(*, prefer_category: str = "Overall") -> dict[str, str]:
+    """Map NIRF institute_id -> canonical institute_name from rankings."""
+    df = load_nirf_rankings()
+    if df.empty:
+        return {}
+    out: dict[str, str] = {}
+    for iid, grp in df.groupby("institute_id"):
+        iid = str(iid).strip()
+        preferred = grp[grp["ranking_category"] == prefer_category]
+        row = preferred.sort_values("rank").iloc[0] if not preferred.empty else grp.sort_values("rank").iloc[0]
+        out[iid] = str(row["institute_name"]).strip()
+    return out
+
+
+def funding_row_id_name_valid(
+    institute_id: str,
+    institute_name: str,
+    id_to_name: dict[str, str],
+    *,
+    threshold: float = 0.88,
+) -> bool:
+    """True when row name aligns with the institute_id's NIRF canonical name."""
+    canonical = id_to_name.get(str(institute_id).strip())
+    if not canonical:
+        return True
+    score = name_similarity(institute_name, canonical)
+    if score < threshold:
+        return False
+    canon_tokens = extract_distinguishing_tokens(canonical)
+    if canon_tokens and not _token_overlap(canon_tokens, institute_name):
+        return False
+    row_tokens = extract_distinguishing_tokens(institute_name)
+    if row_tokens and not _token_overlap(row_tokens, canonical):
+        return False
+    return True
+
+
 def load_nirf_categories() -> dict[str, list[str]]:
     """institute_id -> ranking categories (best first)."""
     df = load_nirf_rankings()

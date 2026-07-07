@@ -21,7 +21,9 @@ from config import OPENALEX_USER_AGENT, PROCESSED_DIR, RAW_DIR  # noqa: E402
 from nirf_utils import (  # noqa: E402
     NIRF_YEAR,
     candidate_pdf_urls,
+    funding_row_id_name_valid,
     load_nirf_categories,
+    load_nirf_id_canonical_names,
     load_nirf_id_overrides,
 )
 
@@ -131,6 +133,25 @@ def build_scrape_targets(master: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(rows)
 
 
+def _valid_funding_ids(path: Path) -> set[str]:
+    """Institute IDs with at least one row whose name matches NIRF rankings."""
+    if not path.exists():
+        return set()
+    df = pd.read_csv(path)
+    if "institute_id" not in df.columns or "institute_name" not in df.columns:
+        return set()
+    id_to_name = load_nirf_id_canonical_names()
+    valid: set[str] = set()
+    for iid, grp in df.groupby("institute_id"):
+        iid = str(iid).strip()
+        if any(
+            funding_row_id_name_valid(iid, str(row["institute_name"]), id_to_name)
+            for _, row in grp.iterrows()
+        ):
+            valid.add(iid)
+    return valid
+
+
 def main() -> None:
     import argparse
 
@@ -143,10 +164,9 @@ def main() -> None:
     master = pd.read_csv(PROCESSED_DIR / "institution_master.csv")
     targets = build_scrape_targets(master)
     if args.only_missing and ALIAS_PATH.exists():
-        existing = pd.read_csv(ALIAS_PATH)
-        have = set(existing["institute_id"].astype(str))
+        have = _valid_funding_ids(ALIAS_PATH)
         targets = targets[~targets["nirf_institute_id"].isin(have)]
-        print(f"Only missing: {len(targets)} institutes to scrape")
+        print(f"Only missing (no valid funding row): {len(targets)} institutes to scrape")
     if args.limit > 0:
         targets = targets.head(args.limit)
 
@@ -198,12 +218,41 @@ def main() -> None:
     new_df = pd.DataFrame(all_rows)
     if args.only_missing and ALIAS_PATH.exists():
         old = pd.read_csv(ALIAS_PATH)
+        id_to_name = load_nirf_id_canonical_names()
+        old = old[
+            old.apply(
+                lambda row: funding_row_id_name_valid(
+                    str(row["institute_id"]),
+                    str(row["institute_name"]),
+                    id_to_name,
+                ),
+                axis=1,
+            )
+        ]
+        scraped_ids = set(new_df["institute_id"].astype(str))
+        old = old[~old["institute_id"].astype(str).isin(scraped_ids)]
         df = pd.concat([old, new_df], ignore_index=True)
         df = df.drop_duplicates(
             subset=["institute_id", "academic_year", "category", "value"], keep="last"
         )
     else:
         df = new_df
+
+    id_to_name = load_nirf_id_canonical_names()
+    before = len(df)
+    df = df[
+        df.apply(
+            lambda row: funding_row_id_name_valid(
+                str(row["institute_id"]),
+                str(row["institute_name"]),
+                id_to_name,
+            ),
+            axis=1,
+        )
+    ]
+    dropped = before - len(df)
+    if dropped:
+        print(f"  Dropped {dropped:,} invalid institute_id/name rows from output")
 
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     df.to_csv(OUT_PATH, index=False)
