@@ -9,11 +9,31 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR  # noqa: E402
-from nirf_utils import FUNDING_NAME_ALIASES, best_nirf_match, load_nirf_id_overrides, name_similarity, norm_name  # noqa: E402
+from nirf_utils import FUNDING_NAME_ALIASES, extract_distinguishing_tokens, load_nirf_id_overrides, name_similarity, norm_name  # noqa: E402
 
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 FUNDING_PATH = PROCESSED_DIR / "nirf_funding_by_institute.csv"
 OUT_PATH = PROCESSED_DIR / "institution_funding.csv"
+
+
+def _funding_name_score(inst: pd.Series, funding_row: pd.Series, alias: str | None = None) -> float:
+    name = inst["canonical_name"]
+    target = str(funding_row.get("institute_name_nirf", ""))
+    score = name_similarity(name, target)
+    if alias:
+        score = max(score, name_similarity(alias, target))
+
+    canon_tokens = extract_distinguishing_tokens(name)
+    if canon_tokens:
+        target_tokens = set(norm_name(target).split())
+        if not (canon_tokens & target_tokens):
+            return 0.0
+
+    if inst.get("city") and target:
+        city = str(inst["city"]).lower()
+        if city and city in target.lower():
+            score += 0.05
+    return score
 
 
 def _pick_funding_row(
@@ -28,14 +48,7 @@ def _pick_funding_row(
     if alias:
         nn = norm_name(alias)
 
-    nirf_id = inst.get("nirf_institute_id")
-    if pd.isna(nirf_id):
-        overrides = load_nirf_id_overrides()
-        nirf_id = overrides.get(name)
-
-    if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
-        return id_lookup[str(nirf_id)], 1.0
-
+    # Name match is authoritative — funding CSV institute_ids are often wrong category copies.
     if nn in funding_idx.index:
         row = funding_idx.loc[nn]
         if isinstance(row, pd.DataFrame):
@@ -45,15 +58,24 @@ def _pick_funding_row(
     best = None
     best_score = 0.0
     for _, f in funding.iterrows():
-        score = name_similarity(name, f["institute_name_nirf"])
-        if alias:
-            score = max(score, name_similarity(alias, f["institute_name_nirf"]))
-        if inst.get("city") and pd.notna(f.get("institute_name_nirf")):
-            if str(inst["city"]).lower() in str(f["institute_name_nirf"]).lower():
-                score += 0.05
+        score = _funding_name_score(inst, f, alias=alias)
         if score > best_score:
             best_score = score
             best = f
+    if best is not None and best_score >= 0.88:
+        return best, best_score
+
+    # ID fallback only when the funding row name also aligns (guards recycled NIRF ids in source data).
+    nirf_id = inst.get("nirf_institute_id")
+    if pd.isna(nirf_id):
+        overrides = load_nirf_id_overrides()
+        nirf_id = overrides.get(name)
+
+    if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
+        row = id_lookup[str(nirf_id)]
+        if _funding_name_score(inst, row, alias=alias) >= 0.88:
+            return row, 0.95
+
     if best is not None and best_score >= 0.78:
         return best, best_score
     return None, 0.0

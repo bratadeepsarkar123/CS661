@@ -11,7 +11,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import DATA_DIR, PROCESSED_DIR, RAW_DIR  # noqa: E402
-from nirf_utils import best_nirf_match, load_nirf_id_overrides  # noqa: E402
+from nirf_utils import assign_nirf_matches  # noqa: E402
 
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 GEO_PATH = RAW_DIR / "india_higher_education.csv"
@@ -91,41 +91,10 @@ def fill_geo_from_sources(master: pd.DataFrame, geo: pd.DataFrame, oa: pd.DataFr
     return master
 
 
-def join_nirf(master: pd.DataFrame, nirf: pd.DataFrame, nirf_all: pd.DataFrame) -> pd.DataFrame:
-    master = master.copy()
-    for col in ["nirf_institute_id", "nirf_rank", "nirf_score", "nirf_year"]:
-        if col not in master.columns:
-            master[col] = pd.NA
-
-    if nirf.empty:
+def join_nirf(master: pd.DataFrame, nirf_all: pd.DataFrame) -> pd.DataFrame:
+    if nirf_all.empty:
         return master
-
-    overrides = load_nirf_id_overrides()
-    for idx, row in master.iterrows():
-        name = row["canonical_name"]
-        if name in overrides:
-            iid = overrides[name]
-            hits = nirf_all[nirf_all["institute_id"] == iid]
-            if not hits.empty:
-                best = hits.sort_values("rank").iloc[0]
-                master.at[idx, "nirf_institute_id"] = best["institute_id"]
-                master.at[idx, "nirf_rank"] = int(best["rank"])
-                master.at[idx, "nirf_score"] = float(best["score"])
-                master.at[idx, "nirf_year"] = int(best["nirf_year"])
-                continue
-
-        best, best_score = best_nirf_match(
-            name,
-            city=row.get("city"),
-            state=row.get("state"),
-            nirf=nirf,
-        )
-        if best is not None and best_score >= 0.72:
-            master.at[idx, "nirf_institute_id"] = best["institute_id"]
-            master.at[idx, "nirf_rank"] = int(best["rank"])
-            master.at[idx, "nirf_score"] = float(best["score"])
-            master.at[idx, "nirf_year"] = int(best["nirf_year"])
-    return master
+    return assign_nirf_matches(master, nirf_all)
 
 
 def main() -> None:
@@ -134,13 +103,12 @@ def main() -> None:
 
     master = pd.read_csv(MASTER_PATH)
     geo = load_geo_lookup()
-    nirf = load_nirf_best()
     nirf_all = load_nirf_all()
     oa = pd.read_parquet(OPENALEX_PATH) if OPENALEX_PATH.exists() else pd.DataFrame()
 
     before_missing = master["latitude"].isna().sum()
     master = fill_geo_from_sources(master, geo, oa)
-    master = join_nirf(master, nirf, nirf_all)
+    master = join_nirf(master, nirf_all)
 
     master.to_csv(MASTER_PATH, index=False)
     after_missing = master["latitude"].isna().sum()
