@@ -25,8 +25,10 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR, RAW_DIR  # noqa: E402
+from nirf_utils import funding_row_id_name_valid, load_nirf_id_canonical_names  # noqa: E402
 
 OUT_PATH = PROCESSED_DIR / "nirf_funding_by_institute.csv"
+REJECTED_PATH = PROCESSED_DIR.parent / "logs" / "nirf_funding_rejected.csv"
 
 RESEARCH_INPUTS = [
     RAW_DIR / "nirf_research_projects.csv",
@@ -94,6 +96,27 @@ def _to_crores(value: float, unit: str) -> float:
     return float(value)
 
 
+def _filter_id_name_mismatches(df: pd.DataFrame) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Reject rows where institute_id maps to a different NIRF canonical name."""
+    id_to_name = load_nirf_id_canonical_names()
+    if not id_to_name:
+        return df, pd.DataFrame()
+
+    valid_mask = df.apply(
+        lambda row: funding_row_id_name_valid(
+            row["institute_id"],
+            row["institute_name"],
+            id_to_name,
+        ),
+        axis=1,
+    )
+    rejected = df[~valid_mask].copy()
+    if not rejected.empty:
+        rejected["expected_name"] = rejected["institute_id"].map(id_to_name)
+    kept = df[valid_mask].copy()
+    return kept, rejected
+
+
 def _parse_research(df: pd.DataFrame) -> pd.DataFrame:
     df = _normalize_cols(df)
     required = {"institute_id", "institute_name", "category", "value"}
@@ -102,6 +125,23 @@ def _parse_research(df: pd.DataFrame) -> pd.DataFrame:
 
     df["institute_id"] = df["institute_id"].astype(str).str.strip()
     df["institute_name"] = df["institute_name"].astype(str).str.strip()
+    df, rejected = _filter_id_name_mismatches(df)
+    if not rejected.empty:
+        REJECTED_PATH.parent.mkdir(parents=True, exist_ok=True)
+        rejected.to_csv(REJECTED_PATH, index=False)
+        bad_ids = sorted(rejected["institute_id"].unique())
+        print(
+            f"  Rejected {len(rejected):,} rows with institute_id/name mismatch "
+            f"({len(bad_ids)} ids) -> {REJECTED_PATH.name}"
+        )
+        for iid in bad_ids[:8]:
+            sample = rejected[rejected["institute_id"] == iid].iloc[0]
+            print(
+                f"    {iid}: row={sample['institute_name']!r} "
+                f"expected={sample.get('expected_name', '?')!r}"
+            )
+        if len(bad_ids) > 8:
+            print(f"    ... and {len(bad_ids) - 8} more ids")
     df["category_norm"] = df["category"].astype(str).str.strip().str.lower()
     df["value"] = pd.to_numeric(df["value"], errors="coerce")
     df["unit"] = df.get("unit", pd.Series([""] * len(df))).astype(str)
