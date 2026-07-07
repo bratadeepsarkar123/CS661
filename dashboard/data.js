@@ -168,31 +168,7 @@ const DATA = (() => {
 
   // 2. Ridgeline Data for Viz 2 (Q1 vs Q4 global density)
   function getRidgelineData() {
-    // Generate density curves for years 2010 to 2025
-    const years = d3.range(2010, 2026);
-    const data = [];
-    years.forEach(year => {
-      const dy = year - 2010;
-      // Over time, Q1 (elite) shifts right and widens, Q4 (low tier) shifts right and gets 'flooded' (very tall)
-      const q1Mean = 40 + dy * 1.5;
-      const q1Spread = 15 + dy * 0.5;
-      
-      const q4Mean = 20 + dy * 2.0;
-      const q4Spread = 10;
-      
-      // Generate bell curve points across X (quality proxy index 0-100)
-      const points = [];
-      for(let x = 0; x <= 100; x += 2) {
-        // Q1 curve
-        const q1Val = 0.8 * Math.exp(-Math.pow(x - q1Mean, 2) / (2 * Math.pow(q1Spread, 2)));
-        // Q4 curve (the "Q4 flood" grows in magnitude over time)
-        const q4Mag = 0.5 + dy * 0.08;
-        const q4Val = q4Mag * Math.exp(-Math.pow(x - q4Mean, 2) / (2 * Math.pow(q4Spread, 2)));
-        points.push({ x, q1Val, q4Val });
-      }
-      data.push({ year, points });
-    });
-    return data;
+    return typeof REAL_RIDGELINE_DATA !== 'undefined' ? REAL_RIDGELINE_DATA : [];
   }
 
   // 3. Research topics for Viz 3
