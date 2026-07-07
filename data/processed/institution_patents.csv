@@ -19,7 +19,7 @@ f557894b-a324-439c-a6a7-f6d2a87a6bed,Indian Institute of Technology Palakkad,2,2
 7b3d00a5-49ca-420b-a758-0534ef4fedc2,Indian Institute of Technology Tirupati,1,1,4,2,2022,1.0,IR-E-U-0844,reported
 6f93f0ad-7358-4fd0-bc47-0a62092ca0ac,Indian Institute of Technology (ISM) Dhanbad,11,12,19,22,2022,1.0,IR-O-U-0205,reported
 732980be-8d6a-4c03-8a1c-dcd5b939e27f,Indian Institute of Technology Bhilai,,,,,,,,unavailable
-a2b7b421-2ef8-4071-80e7-dcafdc7c3ecf,Indian Institute of Technology Goa,,,,,,0.9428571428571428,,unavailable
+a2b7b421-2ef8-4071-80e7-dcafdc7c3ecf,Indian Institute of Technology Goa,,,,,,,,unavailable
 f6a0e07c-58dc-463e-8e04-d8d08a9a7342,Indian Institute of Technology Jammu,,,,,,,,unavailable
 1a5bd65a-cf0d-45e2-8735-5434d64998b8,Indian Institute of Technology Dharwad,,,,,,,,unavailable
 6fb57ff7-f044-4eb9-b7d6-bebdef022df4,Indian Institute of Science,165,62,245,129,2022,1.0,IR-O-U-0220,reported
@@ -27,14 +27,14 @@ f6a0e07c-58dc-463e-8e04-d8d08a9a7342,Indian Institute of Technology Jammu,,,,,,,
 4d6717be-0714-4972-b1d4-571c58d9a46f,University of Delhi,,,,,,,,unavailable
 fd56c1b8-3390-4d13-9121-2b061d0b11ac,Vellore Institute of Technology University,76,12,333,39,2022,1.0,IR-E-U-0490,reported
 672214f6-22a9-4d55-8c6c-5b28a5159516,Banaras Hindu University,6,4,16,9,2022,1.0,IR-O-U-0500,reported
-47b972a6-fdf5-499c-a99f-fd0fedb15993,Saveetha University,252,7,455,22,2022,1.0,IR-O-I-1441,reported
+47b972a6-fdf5-499c-a99f-fd0fedb15993,Saveetha University,252,7,666,105,2022,1.0,IR-O-I-1441,reported
 131f1481-eede-4a15-a738-57b4c90b26ad,Post Graduate Institute of Medical Education and Research,,,,,,,,unavailable
 c7f37aac-de96-454a-bf3d-af0ff418e79e,Manipal Academy of Higher Education,25,7,69,14,2022,1.0,IR-O-U-0234,reported
-93e1f5b3-3c8f-4e18-a29b-afa586e5d865,SRM Institute of Science and Technology,126,32,383,70,2022,1.0,IR-O-U-0473,reported
+93e1f5b3-3c8f-4e18-a29b-afa586e5d865,SRM Institute of Science and Technology,,,,,,,,unavailable
 4a1e94cf-f0b6-4560-ab2c-bd58ab8792ac,University of Rajasthan,,,,,,,,unavailable
 6627a151-3a0d-44f3-adf4-d5255e5a4cc9,Jadavpur University,,,,,,,,unavailable
 0e011302-5676-4cf1-95b3-f0adc82f6893,Institute of Medical Sciences,6,4,16,9,2022,1.0,IR-D-U-0500,reported
-736be13b-21db-4757-bfac-35c77c891892,"Anna University, Chennai",70,37,211,83,2022,1.0,IR-O-U-0439,reported
+736be13b-21db-4757-bfac-35c77c891892,"Anna University, Chennai",,,,,,,,unavailable
 18ae8c5a-a263-4906-9d6a-25bf48ed31e6,Aligarh Muslim University,5,5,24,26,2022,1.0,IR-O-U-0496,reported
 bd7fc63e-4dd7-488f-8022-1332b3642dcf,University of Calcutta,,,,,,,,unavailable
 ae9d1da9-8ea6-45ab-ab98-70e36ba8a21b,Academy of Scientific and Innovative Research,,,,,,,,unavailable
@@ -60,16 +60,16 @@ edf10c4c-ca24-4805-b33c-ddf5428d22ff,National Institute of Technology Rourkela,1
 d93978d3-2c97-47c6-8d5a-b6472222104c,"Birla Institute of Technology and Science, Pilani",,,,,,,,unavailable
 80153acc-b176-42b7-b0f1-dd40b152084d,University of Madras,,,,,,,,unavailable
 5866f537-6318-4586-bf6d-4433c5b4bbf7,National Institute of Technology Tiruchirappalli,15,15,31,29,2022,1.0,IR-E-U-0467,reported
-529bfa45-38b5-4fa3-ad24-0cdc1a731124,Koneru Lakshmaiah Education Foundation,338,8,600,12,2022,1.0,IR-O-U-0020,reported
+529bfa45-38b5-4fa3-ad24-0cdc1a731124,Koneru Lakshmaiah Education Foundation,,,,,,,,unavailable
 e53966df-0e1d-4551-bffd-ab1bde3800e4,Symbiosis International University,88,3,161,5,2022,1.0,IR-O-U-0329,reported
 d8caf76d-8ea5-44f6-939d-e450309d2de1,"Kasturba Medical College, Manipal",,,,,,,,unavailable
-48e9b5fb-0b5b-42f0-a98b-cbc31d34b300,KIIT University,100,34,210,97,2022,1.0,IR-O-U-0356,reported
+48e9b5fb-0b5b-42f0-a98b-cbc31d34b300,KIIT University,,,,,,,,unavailable
 4521b7d6-9c9f-41f9-8061-593ae0c361dc,Jain University,704,8,785,18,2022,1.0,IR-O-U-0223,reported
 04e4f2b0-9883-4fb8-9c64-cb5b49d6b361,Andhra University,63,9,127,18,2022,1.0,IR-O-U-0006,reported
 4dec3aaa-d6ae-4b77-ac09-50d7bdc68bb2,Sathyabama Institute of Science and Technology,199,78,393,115,2022,1.0,IR-O-U-0474,reported
 fb160d73-523e-4f2a-8052-11f55f43e268,Pondicherry University,,,,,,,,unavailable
 0975bc21-a976-44a9-a251-f0e626168e55,Osmania University,,,,,,,,unavailable
-2519526b-e995-469e-ae6f-8385feff245c,SRM University,,,,,,0.8387096774193549,,unavailable
+2519526b-e995-469e-ae6f-8385feff245c,SRM University,,,,,,0.8,,unavailable
 1a4bb242-813a-46c1-8f5a-8782d5040d19,University of Mumbai,,,,,,,,unavailable
 90352157-ced6-4e2a-b6ef-515ed6cc5aac,Siksha O Anusandhan University,,,,,,,,unavailable
 f520daa7-29f5-4b11-b9a4-9b02860351ec,Delhi Technological University,23,4,53,7,2022,1.0,IR-O-U-0098,reported
@@ -85,7 +85,7 @@ b45c2598-3515-4da1-9660-75a5ff4428fa,National Institute of Technology Warangal,1
 d538b33b-7df6-426d-a326-e6336207fb5f,Sri Venkateswara University,,,,,,,,unavailable
 eee22ec4-aa39-45b3-95e0-7f6250924a00,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,43,13,102,25,2022,1.0,IR-O-U-0489,reported
 d2ab91c0-a50d-44ef-b03b-6fab30b3d767,King George's Medical University,,,,,,,,unavailable
-7693ea92-ef4b-486f-96c6-89db3749c43e,GITAM University,122,4,226,22,2022,1.0,IR-P-U-0011,reported
+7693ea92-ef4b-486f-96c6-89db3749c43e,GITAM University,,,,,,,,unavailable
 b20ed218-ebd3-4a6b-a2c8-9bef7907b934,Punjab Agricultural University,,,,,,,,unavailable
 104fe323-87bc-48e9-a752-22b34af999bb,University of Lucknow,,,,,,,,unavailable
 cb03a5e5-b2f5-4e95-af9f-a170aab03713,Indian Association for the Cultivation of Science,,,,,,,,unranked
@@ -98,22 +98,22 @@ d56d1ee4-862c-4274-8441-c2db9590627d,"G.S. Science, Arts And Commerce College",,
 f7c6962b-4442-458c-90b7-eec41137a0d9,"Indian Institute of Engineering Science and Technology, Shibpur",,,,,,,,unavailable
 38518a3c-9425-41d0-8068-2e2332a46de1,All India Institute of Medical Sciences Raipur,,,,,,,,unavailable
 e952e5d1-7eb4-40a2-88a2-3dc7118e2255,Cochin University of Science and Technology,,,,,,,,unavailable
-8a91aa93-1bba-4381-a03c-d032be364f69,University of Petroleum and Energy Studies,31,7,122,15,2022,1.0,IR-O-U-0564,reported
+8a91aa93-1bba-4381-a03c-d032be364f69,University of Petroleum and Energy Studies,,,,,,,,unavailable
 646437d3-b8bf-4df0-933f-437279dffc88,Jawaharlal Institute of Post Graduate Medical Education and Research,,,,,,,,unavailable
 a6628147-0d10-4564-bae9-b8be8be7cd21,Sardar Vallabhbhai National Institute of Technology Surat,,,,,,,,unavailable
 c9e12928-adad-470b-bcc3-a64f958bd34b,Central University of Rajasthan,,,,,,,,unavailable
-8f79bb14-2687-41a1-a556-23a0a56f5210,Presidency University,9,2,17,5,2022,1.0,IR-O-U-0470,reported
+8f79bb14-2687-41a1-a556-23a0a56f5210,Presidency University,9,2,17,5,2022,1.0,IR-O-U-0580,reported
 9657935b-6b9b-4504-9bec-eb245e65da0f,Government Medical College,,,,,,,,unavailable
 a216703f-5b10-44cb-8fe0-11f6ff1cd1bd,National Institute of Technology Durgapur,,,,,,,,unavailable
 5cb3587e-a197-4ece-8d45-9f364c87990f,Jamia Hamdard,5,0,14,4,2022,1.0,IR-O-U-0107,reported
-4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc,GLA University,125,10,346,30,2022,1.0,IR-P-U-0513,reported
+4aeb5e4d-7ee0-4ca2-a8ed-10cf13445ffc,GLA University,,,,,,,,unavailable
 4aa00129-4c2f-4e57-9053-cbf0c58dd2c1,University of Kashmir,,,,,,,,unavailable
 338f6c5e-2956-40cf-80ce-2047521fc9ef,"Birla Institute of Technology, Mesra",11,4,22,11,2022,1.0,IR-E-U-0202,reported
 8c466cdb-a2a4-4bf0-856f-f28560ed0e3b,Sri Ramachandra Institute of Higher Education and Research,,,,,,,,unavailable
 cb1e371e-ffd1-4175-974b-b91e8cbe4ea1,Galgotias University,99,17,237,59,2022,1.0,IR-M-U-0643,reported
 20a76e3b-d397-44ea-a50b-42ad2940af51,Punjabi University,,,,,,,,unavailable
-b2210d61-d364-40bd-abfa-2d7b5023d562,Shivaji University,,,,,,0.7878787878787878,,unavailable
-81dfed4d-dcca-4b15-8548-b5b5d98fa6c4,SASTRA University,11,5,24,15,2022,1.0,IR-O-U-0476,reported
+b2210d61-d364-40bd-abfa-2d7b5023d562,Shivaji University,,,,,,,,unavailable
+81dfed4d-dcca-4b15-8548-b5b5d98fa6c4,SASTRA University,,,,,,,,unavailable
 36d17eae-f23d-4896-8bb8-848c7ba25547,Mangalore University,,,,,,0.7804878048780488,,unavailable
 149ca745-c80a-4eb3-97bd-36ad7d8e4b2b,Christian Medical College,,,,,,,,unavailable
 5374b462-1d87-4026-a9dd-901a6e394a62,"Jawaharlal Nehru Technological University, Hyderabad",,,,,,,,unavailable

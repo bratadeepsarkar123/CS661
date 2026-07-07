@@ -517,7 +517,7 @@ def load_nirf_id_overrides() -> dict[str, str]:
 
 def load_nirf_id_canonical_names(*, prefer_category: str = "Overall") -> dict[str, str]:
     """Map NIRF institute_id -> canonical institute_name from rankings."""
-    df = load_nirf_rankings()
+    df = load_nirf_all()
     if df.empty:
         return {}
     out: dict[str, str] = {}

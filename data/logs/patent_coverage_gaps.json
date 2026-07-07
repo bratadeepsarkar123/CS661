@@ -1,6 +1,6 @@
 {
   "generated_from": "report_nirf_gaps.py",
-  "patents_reported": 57,
+  "patents_reported": 49,
   "patents_total": 120,
   "funding_reported": 102,
   "nirf_matched": 109,
@@ -52,6 +52,11 @@
       "reason": "no_innovation_pdf"
     },
     {
+      "canonical_name": "SRM Institute of Science and Technology",
+      "nirf_institute_id": "IR-O-U-0473",
+      "reason": "no_innovation_pdf"
+    },
+    {
       "canonical_name": "University of Rajasthan",
       "nirf_institute_id": null,
       "reason": "no_nirf_id"
@@ -59,6 +64,11 @@
     {
       "canonical_name": "Jadavpur University",
       "nirf_institute_id": "IR-O-U-0575",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "Anna University, Chennai",
+      "nirf_institute_id": "IR-O-U-0439",
       "reason": "no_innovation_pdf"
     },
     {
@@ -127,8 +137,18 @@
       "reason": "no_innovation_pdf"
     },
     {
+      "canonical_name": "Koneru Lakshmaiah Education Foundation",
+      "nirf_institute_id": "IR-O-U-0020",
+      "reason": "no_innovation_pdf"
+    },
+    {
       "canonical_name": "Kasturba Medical College, Manipal",
       "nirf_institute_id": "IR-D-C-7242",
+      "reason": "no_innovation_pdf"
+    },
+    {
+      "canonical_name": "KIIT University",
+      "nirf_institute_id": "IR-O-U-0356",
       "reason": "no_innovation_pdf"
     },
     {
@@ -192,6 +212,11 @@
       "reason": "no_innovation_pdf"
     },
     {
+      "canonical_name": "GITAM University",
+      "nirf_institute_id": "IR-P-U-0011",
+      "reason": "no_innovation_pdf"
+    },
+    {
       "canonical_name": "Punjab Agricultural University",
       "nirf_institute_id": "IR-O-U-0381",
       "reason": "no_innovation_pdf"
@@ -252,6 +277,11 @@
       "reason": "no_innovation_pdf"
     },
     {
+      "canonical_name": "University of Petroleum and Energy Studies",
+      "nirf_institute_id": "IR-O-U-0564",
+      "reason": "no_innovation_pdf"
+    },
+    {
       "canonical_name": "Jawaharlal Institute of Post Graduate Medical Education and Research",
       "nirf_institute_id": "IR-O-U-0368",
       "reason": "no_innovation_pdf"
@@ -277,6 +307,11 @@
       "reason": "no_innovation_pdf"
     },
     {
+      "canonical_name": "GLA University",
+      "nirf_institute_id": "IR-P-U-0513",
+      "reason": "no_innovation_pdf"
+    },
+    {
       "canonical_name": "University of Kashmir",
       "nirf_institute_id": "IR-O-U-0196",
       "reason": "no_innovation_pdf"
@@ -295,6 +330,11 @@
       "canonical_name": "Shivaji University",
       "nirf_institute_id": null,
       "reason": "no_nirf_id"
+    },
+    {
+      "canonical_name": "SASTRA University",
+      "nirf_institute_id": "IR-O-U-0476",
+      "reason": "no_innovation_pdf"
     },
     {
       "canonical_name": "Mangalore University",
@@ -324,6 +364,6 @@
   ],
   "by_reason": {
     "no_nirf_id": 11,
-    "no_innovation_pdf": 52
+    "no_innovation_pdf": 60
   }
 }
