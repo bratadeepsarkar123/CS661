@@ -151,22 +151,26 @@ def _parse_research(df: pd.DataFrame) -> pd.DataFrame:
     if "ranking_year" not in df.columns:
         df["ranking_year"] = pd.NA
 
-    # Latest academic year per institute name (IDs differ by NIRF category)
+    # Group by NIRF institute_id — same display name can map to different category rows
+    # (e.g. BHU Overall IR-O-U-0500 vs Medical IR-D-U-0500 vs IIT-BHU IR-O-U-0701).
     df["name_norm"] = df["institute_name"].map(_norm_name)
-    df = df.sort_values(["name_norm", "academic_year"], na_position="first")
-    latest = df.groupby("name_norm", as_index=False).tail(1)[["name_norm", "academic_year", "ranking_year"]]
-    latest_map = latest.set_index("name_norm")
+    df = df.sort_values(["institute_id", "academic_year"], na_position="first")
+    latest = df.groupby("institute_id", as_index=False).tail(1)[["institute_id", "academic_year", "ranking_year"]]
+    latest_map = latest.set_index("institute_id")
 
     rows: list[dict] = []
-    for name_norm, grp in df.groupby("name_norm"):
-        # Prefer rows from latest academic year when present
-        ac_year = latest_map.loc[name_norm, "academic_year"] if name_norm in latest_map.index else grp["academic_year"].max()
+    for institute_id, grp in df.groupby("institute_id"):
+        ac_year = (
+            latest_map.loc[institute_id, "academic_year"]
+            if institute_id in latest_map.index
+            else grp["academic_year"].max()
+        )
         sub = grp[grp["academic_year"] == ac_year] if pd.notna(ac_year) else grp
         if sub.empty:
             sub = grp
 
         inst_name = sub["institute_name"].iloc[0]
-        inst_ids = "|".join(sorted(sub["institute_id"].unique()))
+        inst_ids = str(institute_id)
 
         amount_mask = sub["category_norm"].str.contains("amount", na=False) & sub["category_norm"].str.contains(
             "received|sponsor", na=False
@@ -194,12 +198,12 @@ def _parse_research(df: pd.DataFrame) -> pd.DataFrame:
 
         rows.append(
             {
-                "name_norm": name_norm,
+                "name_norm": _norm_name(inst_name),
                 "institute_name_nirf": inst_name,
                 "nirf_institute_ids": inst_ids,
                 "academic_year": ac_year,
                 "ranking_year": sub["ranking_year"].max(),
-                "research_funding_cr": round(amount_inr, 2) if amount_inr else None,
+                "research_funding_cr": round(amount_inr, 3) if amount_inr else None,
                 "sponsored_projects": project_count,
             }
         )

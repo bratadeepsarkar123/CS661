@@ -1,6 +1,6 @@
 # NIRF data coverage gaps
 
-Funding joined: 91 / 120
+Funding joined: 102 / 120
 Patents joined: 57 / 120
 NIRF IDs assigned: 106 / 120
 NIRF match losers: 14
@@ -8,34 +8,23 @@ NIRF match losers: 14
 ## Missing funding
 
 - **Indian Institute of Technology Goa** (Goa, Goa): Not in NIRF 2024 rankings
-- **Post Graduate Institute of Medical Education and Research** (Chandigarh, nan): No sponsored-research table in NIRF PDF
 - **SRM Institute of Science and Technology** (Chennai, nan): No sponsored-research table in NIRF PDF
 - **University of Rajasthan** (Jaipur, Rajasthan): Not in NIRF 2024 rankings
-- **Anna University, Chennai** (Chennai, Tamil Nadu): No sponsored-research table in NIRF PDF
-- **University of Calcutta** (Kolkata, West Bengal): No sponsored-research table in NIRF PDF
 - **Annamalai University** (Chidambaram, Tamil Nadu): No sponsored-research table in NIRF PDF
-- **Christian Medical College, Vellore** (Vellore, Tamil Nadu): No sponsored-research table in NIRF PDF
-- **Koneru Lakshmaiah Education Foundation** (Vijayawada, nan): No sponsored-research table in NIRF PDF
-- **Symbiosis International University** (Pune, Maharashtra): No sponsored-research table in NIRF PDF
-- **Jain University** (Bengaluru, nan): No sponsored-research table in NIRF PDF
 - **Pondicherry University** (Puducherry, Puducherry): Not in NIRF 2024 rankings
 - **SRM University** (Sonīpat, nan): Not in NIRF 2024 rankings
-- **University of Mumbai** (Mumbai, Maharashtra): No sponsored-research table in NIRF PDF
-- **Siksha O Anusandhan University** (Bhubaneswar, Orissa): No sponsored-research table in NIRF PDF
 - **Guru Nanak Dev University** (Amritsar, nan): Not in NIRF 2024 rankings
 - **Dr. Hari Singh Gour University** (Saugor, Madhya Pradesh): Not in NIRF 2024 rankings
 - **GITAM University** (Visakhapatnam, Andhra Pradesh): No sponsored-research table in NIRF PDF
 - **Indian Association for the Cultivation of Science** (Kolkata, West Bengal): Not in NIRF 2024 rankings
 - **University of Allahabad** (Prayagraj, nan): Not in NIRF 2024 rankings
 - **University of Kalyani** (Kalyani, nan): Not in NIRF 2024 rankings
-- **University of Mysore** (Mysuru, Karnataka): No sponsored-research table in NIRF PDF
 - **G.S. Science, Arts And Commerce College** (Akola, nan): Not in NIRF 2024 rankings
 - **Presidency University** (Kolkata, nan): Not in NIRF 2024 rankings
 - **GLA University** (Mathura, nan): No sponsored-research table in NIRF PDF
 - **Shivaji University** (Kolhāpur, Maharashtra): Not in NIRF 2024 rankings
 - **Mangalore University** (Mangaluru, Karnataka): Not in NIRF 2024 rankings
 - **Karpagam Academy of Higher Education** (Coimbatore, nan): Not in NIRF 2024 rankings
-- **University of Kerala** (Thiruvananthapuram, Kerala): No sponsored-research table in NIRF PDF
 
 ## Missing patents
 

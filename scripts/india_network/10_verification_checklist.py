@@ -186,16 +186,7 @@ def _duplicate_funding_check(funding: pd.DataFrame) -> tuple[bool, str]:
     funded = funding[funding["research_funding_cr"].notna()].copy()
     if funded.empty:
         return True, "no funded rows"
-    cluster_labels = {
-        frozenset(
-            {
-                "Indian Institute of Technology (BHU) Varanasi",
-                "Banaras Hindu University",
-                "Institute of Medical Sciences",
-            }
-        ): "bhu_campus_family (shared NIRF IR-O-U-0500)",
-        frozenset({"Panjab University", "National Institute of Technology Durgapur"}): "coincidental_rounding",
-    }
+    cluster_labels: dict[frozenset[str], str] = {}
     clusters: list[str] = []
     for amount, group in funded.groupby("research_funding_cr"):
         if len(group) < 2:

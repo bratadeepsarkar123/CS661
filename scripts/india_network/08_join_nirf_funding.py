@@ -60,27 +60,34 @@ def _pick_funding_row(
     if alias:
         nn = norm_name(alias)
 
-    # Name match is authoritative — funding CSV institute_ids are often wrong category copies.
-    if nn in funding_idx.index:
-        row = funding_idx.loc[nn]
-        if isinstance(row, pd.DataFrame):
-            row = row.iloc[0]
-        target = str(row.get("institute_name_nirf", ""))
-        if funding_campus_compatible(name, target, city=inst.get("city")):
-            return row, 1.0
-
-    # ID match before fuzzy — use institute's NIRF id when funding row exists for that id.
     nirf_id = inst.get("nirf_institute_id")
     if pd.isna(nirf_id):
         overrides = load_nirf_id_overrides()
         nirf_id = overrides.get(name)
 
+    # ID match first — same display name can map to multiple NIRF category rows.
     if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
         row = id_lookup[str(nirf_id)]
         target = str(row.get("institute_name_nirf", ""))
-        score = _funding_name_score(inst, row, alias=alias)
-        if score >= FUZZY_MIN and funding_campus_compatible(name, target, city=inst.get("city")):
+        if funding_campus_compatible(name, target, city=inst.get("city")):
+            score = _funding_name_score(inst, row, alias=alias)
             return row, max(score, 0.95)
+
+    # Name match when unambiguous (single row per normalized name).
+    if nn in funding_idx.index:
+        row = funding_idx.loc[nn]
+        if isinstance(row, pd.DataFrame):
+            if pd.notna(nirf_id):
+                matched = row[row["nirf_institute_ids"].astype(str).str.contains(str(nirf_id), regex=False)]
+                if not matched.empty:
+                    row = matched.iloc[0]
+                else:
+                    row = row.iloc[0]
+            else:
+                row = row.iloc[0]
+        target = str(row.get("institute_name_nirf", ""))
+        if funding_campus_compatible(name, target, city=inst.get("city")):
+            return row, 1.0
 
     best = None
     best_score = 0.0
