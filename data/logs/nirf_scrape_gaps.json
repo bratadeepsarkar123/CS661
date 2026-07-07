@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-07-07T17:44:29.068264+00:00",
+  "source": "03a_enrich_institution_master",
+  "nirf_year": 2024,
+  "missing_from_csv": [
+    {
+      "institute_id": "IR-I-I-1074",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-I-1075",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0013",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0184",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0220",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0306",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0439",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0456",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0560",
+      "ranking_category": "Innovation"
+    },
+    {
+      "institute_id": "IR-I-U-0573",
+      "ranking_category": "Innovation"
+    }
+  ],
+  "category_counts": {
+    "Overall": {
+      "website": 100,
+      "csv": 100
+    },
+    "University": {
+      "website": 100,
+      "csv": 100
+    },
+    "College": {
+      "website": 100,
+      "csv": 100
+    },
+    "Research": {
+      "website": 50,
+      "csv": 50
+    },
+    "Engineering": {
+      "website": 100,
+      "csv": 100
+    },
+    "Management": {
+      "website": 100,
+      "csv": 100
+    },
+    "Pharmacy": {
+      "website": 100,
+      "csv": 100
+    },
+    "Medical": {
+      "website": 50,
+      "csv": 50
+    },
+    "Dental": {
+      "website": 40,
+      "csv": 40
+    },
+    "Law": {
+      "website": 40,
+      "csv": 40
+    },
+    "Architecture": {
+      "website": 40,
+      "csv": 40
+    },
+    "Agriculture": {
+      "website": 40,
+      "csv": 40
+    },
+    "Innovation": {
+      "website": 10,
+      "csv": 0
+    }
+  },
+  "master_institutes_without_nirf_match": [
+    "Dr. Hari Singh Gour University",
+    "G.S. Science, Arts And Commerce College",
+    "GITAM University",
+    "GLA University",
+    "Guru Nanak Dev University",
+    "Indian Association for the Cultivation of Science",
+    "Indian Institute of Technology Goa",
+    "Institute of Medical Sciences",
+    "KIIT University",
+    "Karpagam Academy of Higher Education",
+    "Mangalore University",
+    "Pondicherry University",
+    "Presidency University",
+    "SASTRA University",
+    "SRM Institute of Science and Technology",
+    "SRM University",
+    "Saveetha University",
+    "Shivaji University",
+    "Thapar Institute of Engineering & Technology",
+    "University of Allahabad",
+    "University of Kalyani",
+    "University of Rajasthan"
+  ],
+  "master_nirf_matched": 98,
+  "master_total": 120,
+  "csv_rows": 860,
+  "csv_unique_institutes": 796
+}

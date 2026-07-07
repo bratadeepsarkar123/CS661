@@ -249,10 +249,10 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding 84/120; major IIT fund
 
 **Severity:** P1 — systemic risk (Dharwad was missing until supplemental row added).
 
-**Core fix design:**
-1. After `01b_scrape_nirf_rankings.py`, diff institute count per category vs NIRF website
-2. Log missing IDs to `data/logs/nirf_scrape_gaps.json`
-3. Supplemental rows in `data/raw/nirf_rankings_supplement.csv` merged in `load_nirf_all()`
+**Implementation (Phase 2b):**
+1. ✅ After `01b_scrape_nirf_rankings.py`, diff institute count per category vs NIRF website
+2. ✅ Log missing IDs to `data/logs/nirf_scrape_gaps.json`
+3. ✅ Supplemental rows in `data/raw/nirf_rankings_supplement.csv` merged in `load_nirf_all()` (`03a`)
 
 ### P2-5 — `hierarchy-app` fork drift
 
@@ -280,7 +280,7 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding 84/120; major IIT fund
 | Duplicate funding detector | **Done** | `10_verification_checklist.py` |
 | Session summary markdown | **Done** | `docs/MULTITASK_SESSION_SUMMARY.md` |
 | Review 22 losers for valid overrides | Pending | manual review of `nirf_match_losers.csv` |
-| `01b` scrape gap diff | Pending | `01b_scrape_nirf_rankings.py` |
+| `01b` scrape gap diff | **Done** | `01b_scrape_nirf_rankings.py`, `nirf_utils.py`, `nirf_scrape_gaps.json` |
 | `hierarchy-app` dedup | Pending | remove stale fork |
 | Update `nirf_coverage_gaps.md` | Pending | `data/processed/` |
 
