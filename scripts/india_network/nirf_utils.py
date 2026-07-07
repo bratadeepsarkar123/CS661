@@ -167,6 +167,10 @@ FUNDING_NAME_ALIASES: dict[str, str] = {
     "Bharati Vidyapeeth Deemed University": "Bharati Vidyapeeth",
     "Koneru Lakshmaiah Education Foundation": "Koneru Lakshmaiah Education Foundation",
     "University of Petroleum and Energy Studies": "UPES",
+    "Indian Institute of Technology (BHU) Varanasi": "Banaras Hindu University",
+    "Institute of Medical Sciences": "Banaras Hindu University",
+    "Indian Institute of Science": "Indian Institute of Science, Bengaluru",
+    "Indian Institute of Technology (ISM) Dhanbad": "Indian Institute of Technology (Indian School of Mines) Dhanbad",
 }
 
 MATCH_THRESHOLD = 0.78
@@ -195,6 +199,55 @@ def extract_distinguishing_tokens(canonical_name: str) -> set[str]:
     norm = norm_name(canonical_name)
     tokens = {t for t in norm.split() if len(t) > 2 and t not in NAME_STOP_TOKENS}
     return tokens
+
+
+def funding_campus_compatible(
+    inst_name: str,
+    funding_name: str,
+    city: str | None = None,
+) -> bool:
+    """Reject cross-institute fuzzy funding matches (IISc→AIIMS, IIT campus swaps)."""
+    cn = norm_name(inst_name)
+    fn = norm_name(funding_name)
+    city_n = norm_name(city) if city and not pd.isna(city) else ""
+
+    if name_similarity(inst_name, funding_name) >= 0.95:
+        return True
+
+    if cn == "indian institute of science":
+        if "medical" in fn:
+            return False
+        return "bengaluru" in fn or "bangalore" in fn or cn in fn or "iisc" in fn
+
+    if cn == "institute of medical sciences":
+        if "all india institute" in fn and "varanasi" not in fn and "banaras" not in fn:
+            return False
+        if city_n and city_n in fn:
+            return True
+        return "banaras" in fn or "varanasi" in fn
+
+    if "indian institute of technology" in cn:
+        cross = [
+            ("dhanbad", "dharwad"),
+            ("dharwad", "dhanbad"),
+            ("varanasi", "bhilai"),
+            ("bhilai", "varanasi"),
+        ]
+        for a, b in cross:
+            if (a in cn or a == city_n) and b in fn:
+                return False
+        if city_n:
+            city_parts = {t for t in city_n.split() if len(t) > 2}
+            if city_parts & set(fn.split()):
+                return True
+            if "banaras" in fn and ("bhu" in cn or "varanasi" in cn or city_n == "varanasi"):
+                return True
+            if "delhi" in cn and "delhi" in fn:
+                return True
+            if "madras" in cn and ("madras" in fn or city_n == "chennai"):
+                return True
+            return False
+    return True
 
 
 def _token_overlap(canonical_tokens: set[str], nirf_name: str, city: str | None = None) -> bool:
@@ -452,14 +505,27 @@ def funding_row_id_name_valid(
     if not canonical:
         return True
     score = name_similarity(institute_name, canonical)
-    if score < threshold:
+    alias = FUNDING_NAME_ALIASES.get(str(institute_name).strip())
+    if alias:
+        score = max(score, name_similarity(alias, canonical))
+    if score < threshold and score < 0.72:
         return False
+    if score < threshold and score >= 0.72:
+        # Master short names (e.g. "Indian Institute of Science") vs NIRF PDF labels
+        if not funding_campus_compatible(institute_name, canonical):
+            return False
     canon_tokens = extract_distinguishing_tokens(canonical)
     if canon_tokens and not _token_overlap(canon_tokens, institute_name):
-        return False
+        if alias and _token_overlap(canon_tokens, alias):
+            pass
+        else:
+            return False
     row_tokens = extract_distinguishing_tokens(institute_name)
     if row_tokens and not _token_overlap(row_tokens, canonical):
-        return False
+        if alias and _token_overlap(row_tokens, alias):
+            pass
+        else:
+            return False
     return True
 
 
