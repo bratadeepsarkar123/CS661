@@ -32,7 +32,11 @@ NIRF_SUPPLEMENT_PATH = RAW_DIR / "nirf_rankings_supplement.csv"
 NIRF_SCRAPE_GAPS_PATH = DATA_DIR / "logs" / "nirf_scrape_gaps.json"
 
 NIRF_YEAR = 2024
-NIRF_PDF_BASE = f"https://www.nirfindia.org/nirfpdfcdn/{NIRF_YEAR}/pdf"
+
+
+def nirf_pdf_base(season: int | None = None) -> str:
+    """CDN base for NIRF institute PDFs (ranking season year)."""
+    return f"https://www.nirfindia.org/nirfpdfcdn/{season or NIRF_YEAR}/pdf"
 
 CATEGORY_LETTER = {
     "Overall": "O",
@@ -361,24 +365,27 @@ def pdf_institute_id(institute_id: str, category: str) -> str:
     return "-".join(parts)
 
 
-def candidate_pdf_urls(institute_id: str, categories: list[str]) -> list[tuple[str, str]]:
+def candidate_pdf_urls(
+    institute_id: str, categories: list[str], *, season: int | None = None
+) -> list[tuple[str, str]]:
+    base = nirf_pdf_base(season)
     seen: set[str] = set()
     out: list[tuple[str, str]] = []
     for cat in categories:
         for pid in (pdf_institute_id(institute_id, cat), institute_id):
-            url = f"{NIRF_PDF_BASE}/{cat}/{pid}.pdf"
+            url = f"{base}/{cat}/{pid}.pdf"
             if url not in seen:
                 seen.add(url)
                 out.append((cat, url))
-    overall_url = f"{NIRF_PDF_BASE}/Overall/{institute_id}.pdf"
+    overall_url = f"{base}/Overall/{institute_id}.pdf"
     if overall_url not in seen:
         out.append(("Overall", overall_url))
     return out
 
 
-def innovation_pdf_url(institute_id: str) -> str:
+def innovation_pdf_url(institute_id: str, *, season: int | None = None) -> str:
     inv_id = pdf_institute_id(institute_id, "Innovation")
-    return f"{NIRF_PDF_BASE}/Innovation/{inv_id}.pdf"
+    return f"{nirf_pdf_base(season)}/Innovation/{inv_id}.pdf"
 
 
 def load_nirf_rankings() -> pd.DataFrame:
@@ -749,21 +756,164 @@ def _best_row_for_id(hits: pd.DataFrame, category_prefs: list[str]) -> pd.Series
     return hits.sort_values("rank").iloc[0]
 
 
-# Academic years present in NIRF 2024 Overall/Engineering PDF scrape (dataful + 01e).
-FUNDING_ACADEMIC_YEARS: tuple[str, ...] = ("2020-21", "2021-22", "2022-23")
+# Academic years from merged NIRF PDF seasons (2021–2024 CDN) + Dataful scrape.
+FUNDING_ACADEMIC_YEARS: tuple[str, ...] = (
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23",
+)
 PATENT_CALENDAR_YEARS: tuple[int, ...] = (2020, 2021, 2022)
+
+
+def discover_nirf_ranking_years(raw_dir: Path | None = None) -> list[int]:
+    """Ranking seasons available as data/raw/nirf_rankings_{year}.csv."""
+    root = raw_dir or RAW_DIR
+    years: list[int] = []
+    for path in sorted(root.glob("nirf_rankings_*.csv")):
+        stem = path.stem.replace("nirf_rankings_", "")
+        if stem.isdigit():
+            years.append(int(stem))
+    if not years and (root / "nirf_rankings.csv").exists():
+        try:
+            yr = int(pd.read_csv(root / "nirf_rankings.csv", usecols=["nirf_year"])["nirf_year"].iloc[0])
+            years.append(yr)
+        except (ValueError, KeyError, IndexError):
+            pass
+    return sorted(set(years))
+
+
+def load_nirf_rankings_for_year(year: int, raw_dir: Path | None = None) -> pd.DataFrame:
+    """Load one NIRF ranking season CSV (year file or canonical fallback)."""
+    root = raw_dir or RAW_DIR
+    year_path = root / f"nirf_rankings_{year}.csv"
+    path = year_path if year_path.exists() else root / "nirf_rankings.csv"
+    if not path.exists():
+        return pd.DataFrame()
+    df = pd.read_csv(path)
+    if "nirf_year" not in df.columns:
+        df["nirf_year"] = year
+    else:
+        df["nirf_year"] = df["nirf_year"].fillna(year).astype(int)
+    df["name_norm"] = df["institute_name"].map(norm_name)
+    return df
+
+
+def load_nirf_rankings_all_years(raw_dir: Path | None = None) -> pd.DataFrame:
+    """Concat all per-season ranking CSVs plus supplement rows."""
+    root = raw_dir or RAW_DIR
+    years = discover_nirf_ranking_years(root)
+    frames: list[pd.DataFrame] = []
+    for yr in years:
+        part = load_nirf_rankings_for_year(yr, root)
+        if not part.empty:
+            frames.append(part)
+    if not frames:
+        base = load_nirf_all()
+        return base
+    combined = pd.concat(frames, ignore_index=True)
+    if NIRF_SUPPLEMENT_PATH.exists():
+        supp = pd.read_csv(NIRF_SUPPLEMENT_PATH)
+        if not supp.empty:
+            supp["name_norm"] = supp["institute_name"].map(norm_name)
+            combined = pd.concat([combined, supp], ignore_index=True)
+    combined = combined.drop_duplicates(
+        subset=["institute_id", "ranking_category", "nirf_year"], keep="first"
+    )
+    combined["name_norm"] = combined["institute_name"].map(norm_name)
+    return combined
+
+
+def nearest_nirf_ranking_year(slider_year: int | None, available: list[int] | None = None) -> int:
+    """Pick closest NIRF ranking season for a collaboration slider year."""
+    avail = available or discover_nirf_ranking_years()
+    if not avail:
+        return NIRF_YEAR
+    if slider_year is None:
+        return avail[-1]
+    return min(avail, key=lambda y: (abs(y - slider_year), -y))
+
+
+def slider_year_to_nirf_ranking_year(slider_year: int | None) -> int:
+    return nearest_nirf_ranking_year(slider_year)
+
+
+def lookup_nirf_rank_for_institute(
+    *,
+    nirf_institute_id: str | None,
+    canonical_name: str,
+    ranking_year: int,
+    nirf_all_years: pd.DataFrame | None = None,
+    inst_type: str | None = None,
+    city: str | None = None,
+    state: str | None = None,
+) -> tuple[int | None, str | None, int | None]:
+    """Return (rank, ranking_category, nirf_ranking_season) for one institute and season."""
+    pool = nirf_all_years if nirf_all_years is not None else load_nirf_rankings_all_years()
+    if pool.empty:
+        return None, None, None
+    season = pool[pool["nirf_year"] == ranking_year]
+    if season.empty:
+        ranking_year = nearest_nirf_ranking_year(ranking_year, sorted(pool["nirf_year"].unique()))
+        season = pool[pool["nirf_year"] == ranking_year]
+    if season.empty:
+        return None, None, None
+
+    prefs = category_preferences(canonical_name, inst_type=inst_type)
+    if nirf_institute_id and pd.notna(nirf_institute_id):
+        hits = season[season["institute_id"] == str(nirf_institute_id).strip()]
+        if hits.empty:
+            hits = season[season["institute_id"].str.endswith(str(nirf_institute_id).split("-")[-1], na=False)]
+        if not hits.empty:
+            row = _best_row_for_id(hits, prefs)
+            return int(row["rank"]), str(row["ranking_category"]), int(row["nirf_year"])
+
+    best_row: pd.Series | None = None
+    best_score = 0.0
+    best_pref = 99
+    threshold = _threshold_for(canonical_name)
+    for cat in prefs:
+        cat_pool = season[season["ranking_category"] == cat]
+        if cat_pool.empty:
+            continue
+        pref_rank = prefs.index(cat)
+        for _, row in cat_pool.iterrows():
+            score = score_nirf_row_match(canonical_name, row, city=city, state=state)
+            if score < threshold:
+                continue
+            if score > best_score or (score == best_score and pref_rank < best_pref):
+                best_score = score
+                best_row = row
+                best_pref = pref_rank
+    if best_row is None:
+        return None, None, int(ranking_year)
+    return int(best_row["rank"]), str(best_row["ranking_category"]), int(best_row["nirf_year"])
 
 
 def slider_year_to_funding_academic_year(slider_year: int | None) -> str:
     """Map collaboration slider calendar year to best NIRF sponsored-research academic year."""
     if slider_year is None:
         return FUNDING_ACADEMIC_YEARS[-1]
-    if slider_year < 2021:
+    mapping = {
+        2015: "2017-18",
+        2016: "2017-18",
+        2017: "2017-18",
+        2018: "2018-19",
+        2019: "2019-20",
+        2020: "2020-21",
+        2021: "2020-21",
+        2022: "2021-22",
+        2023: "2022-23",
+        2024: "2022-23",
+    }
+    if slider_year in mapping:
+        return mapping[slider_year]
+    if slider_year < 2017:
         return FUNDING_ACADEMIC_YEARS[0]
-    if slider_year == 2021:
-        return "2020-21"
-    if slider_year == 2022:
-        return "2021-22"
+    if slider_year > 2024:
+        return FUNDING_ACADEMIC_YEARS[-1]
     return FUNDING_ACADEMIC_YEARS[-1]
 
 

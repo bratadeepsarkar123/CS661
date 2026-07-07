@@ -1,0 +1,542 @@
+institute_id,institute_name,city,state,score,rank,ranking_category,nirf_year
+IR-5-A-OEMAL-U-0573,Indian Institute of Technology Kharagpur,,,69.71,1,Architecture,2018
+IR-4-A-OEMA-U-0560,Indian Institute of Technology Roorkee,,,71.11,2,Architecture,2018
+IR-3-A-OEA-U-0116,School of Planning and Architecture New Delhi,,,67.29,3,Architecture,2018
+IR-3-A-EMA-C-43708,College of Engineering Trivandrum,,,59.74,4,Architecture,2018
+IR-1-A-A-U-0626,School of Planning and Architecture Bhopal,,,77.27,5,Architecture,2018
+IR-4-A-OEMA-U-0439,Anna University,,,55.25,6,Architecture,2018
+IR-3-A-OEA-C-17029,JNAFAU School of Planning and Architecture,,,69.21,7,Architecture,2018
+IR-5-A-OEMAL-U-0108,Jamia Millia Islamia,,,52.07,8,Architecture,2018
+IR-3-A-OEA-U-0189,National Institute of Technology Hamirpur,,,48.36,9,Architecture,2018
+IR-1-A-A-C-46330,"Faculty of Architecture, Manipal Academy of Higher Education",,,59.09,10,Architecture,2018
+IR-2-C-OC-C-6355,Miranda House,,,77.7,1,College,2018
+IR-2-C-OC-C-22470,St. Stephen`s College,,,79.35,2,College,2018
+IR-1-C-C-C-6377,Hindu College,,,74.76,4,College,2018
+IR-1-C-C-C-43921,Presidency College,,,81.82,5,College,2018
+IR-1-C-C-C-44006,Loyola College,,,67.45,6,College,2018
+IR-1-C-C-C-6419,Shri Ram College of Commerce,,,72.17,7,College,2018
+IR-2-C-OC-C-6415,Lady Shri Ram College for Women,,,71.62,8,College,2018
+IR-1-C-C-C-11926,Ramakrishna Mission Vidyamandira,,,84.98,9,College,2018
+IR-1-C-C-C-43965,Madras Christian College,,,74.43,10,College,2018
+IR-1-C-C-C-41124,PSG College of Arts and Science,,,61.65,11,College,2018
+IR-1-C-C-C-27608,Lady Irwin College,,,81.2,12,College,2018
+IR-1-C-C-C-6361,Deen Dayal Upadhyaya College,,,76.83,13,College,2018
+IR-1-C-C-C-22462,Atma Ram Sanatan Dharm College,,,78.43,14,College,2018
+IR-2-C-OC-C-6429,Gargi College,,,77.1,15,College,2018
+IR-1-C-C-C-41046,PSGR Krishnammal College for Women,,,66.63,16,College,2018
+IR-2-C-OC-C-11881,St. Xavier`s College,,,56.16,17,College,2018
+IR-1-C-C-C-43671,University College,,,75.58,18,College,2018
+IR-2-C-OC-I-1385,Fergusson College,,,57.87,19,College,2018
+IR-1-C-C-C-6385,Kirori Mal College,,,72.98,20,College,2018
+IR-1-C-C-C-6425,Hans Raj College,,,70.78,21,College,2018
+IR-2-C-OC-C-43946,Women`s Christian College,,,71.06,22,College,2018
+IR-2-C-OC-C-6353,Sri Guru Tegh Bahadur Khalsa College,,,79.93,23,College,2018
+IR-2-C-OC-C-6369,Sri Venkateswara College,,,71.94,24,College,2018
+IR-2-C-OC-C-6432,Dyal Singh College,,,77.39,25,College,2018
+IR-2-C-OC-C-6431,Ramanujan College,,,73.21,26,College,2018
+IR-1-C-C-C-6380,Acharya Narendra Dev College,,,82.74,27,College,2018
+IR-1-C-C-C-35860,St. Joseph`s College,,,62.67,28,College,2018
+IR-1-C-C-I-1317,Rama Krishna Mission Vivekananda Centenary College,,,67.37,29,College,2018
+IR-1-C-C-C-43931,Stella Maris College for Women,,,60.82,30,College,2018
+IR-1-C-C-C-11986,Loreto College,,,56.56,31,College,2018
+IR-2-C-OC-C-6412,Maharaja Agrasen College,,,79.54,32,College,2018
+IR-1-C-C-C-41035,Government Arts College,,,75.11,33,College,2018
+IR-2-C-OC-I-1323,St. Joseph`s College,,,71.75,34,College,2018
+IR-1-C-C-C-26356,Silver Jubilee Degree College,,,74.11,35,College,2018
+IR-1-C-C-C-43767,Mar Ivanios College,,,62.95,36,College,2018
+IR-2-C-OC-C-41189,Scott Christian College,,,76.22,37,College,2018
+IR-1-C-C-C-43902,Ethiraj College for Women,,,60.16,38,College,2018
+IR-1-C-C-I-1293,Sri Ramakrishna Mission Vidyalaya College of Arts & Science,,,66.73,39,College,2018
+IR-1-C-C-C-42814,Ramakrishna Mission Residential College,,,74.91,40,College,2018
+IR-1-C-C-C-11708,Sacred Heart College,,,72.93,41,College,2018
+IR-1-C-C-C-35787,Holy Cross College,,,65.07,42,College,2018
+IR-1-C-C-C-11691,Rajagiri College of Social Sciences,,,77.06,43,College,2018
+IR-1-C-C-C-36513,Thiagarajar College,,,61.85,44,College,2018
+IR-1-C-C-C-43738,T. K. M. College of Arts and Science,,,57.11,45,College,2018
+IR-1-C-C-C-11831,S. B. College,,,69.89,46,College,2018
+IR-1-C-C-C-36579,Ayya Nadar Janaki Ammal College,,,63.84,47,College,2018
+IR-1-C-C-C-16178,P. D. Patel Institute of Applied Sciences,,,67.55,48,College,2018
+IR-1-C-C-C-43964,Madras School of Social Work,,,69.13,49,College,2018
+IR-1-C-C-C-6420,Jesus & Mary College,,,63.93,50,College,2018
+IR-1-C-C-C-36502,Virudhunagar Hindu Nadars Senthikumara Nadar College,,,63.77,51,College,2018
+IR-1-C-C-C-6365,Indraprastha College for Women,,,64.89,52,College,2018
+IR-1-C-C-C-6426,Shaheed Rajguru College of Applied Sciences for Women,,,64.11,53,College,2018
+IR-1-C-C-C-41173,St. Xavier`s College,,,66.82,54,College,2018
+IR-1-C-C-C-20830,St. Joseph`s College of Commerce,,,57.07,55,College,2018
+IR-1-C-C-C-25376,Andhra Loyola College,,,60.02,56,College,2018
+IR-1-C-C-C-41068,Vellalar College for Women,,,63.67,57,College,2018
+IR-1-C-C-C-36575,Sri Meenakshi Government College for Women,,,68.88,58,College,2018
+IR-2-C-OC-C-6366,Shivaji College,,,71.92,59,College,2018
+IR-1-C-C-C-20872,St. Josephs Arts & Science College,,,60.82,60,College,2018
+IR-2-C-OC-C-6357,Shyam Lal College,,,63.41,61,College,2018
+IR-1-C-C-C-35416,Rajiv Gandhi Institute of Information Technology and Biotechnology,,,66.83,62,College,2018
+IR-1-C-C-C-8213,Christ College,,,66.08,63,College,2018
+IR-1-C-C-C-41126,Sri Krishna Arts and Science College,,,56.69,64,College,2018
+IR-1-C-C-C-36529,Fatima College,,,62.0,65,College,2018
+IR-2-C-OC-C-5855,St. Xavier`s College,,,49.04,65,College,2018
+IR-1-C-C-C-41106,Kongunadu Arts & Science College,,,58.85,67,College,2018
+IR-1-C-C-C-29312,Govt. Post-Graduate College for Girls,,,59.15,68,College,2018
+IR-1-C-C-C-11557,Kuriakose Gregorios College,,,64.08,69,College,2018
+IR-1-C-C-C-41184,Women`s Christian College,,,69.85,70,College,2018
+IR-1-C-C-C-41110,Government Arts College,,,65.09,71,College,2018
+IR-1-C-C-C-41096,CMS College of Science and Commerce,,,59.08,72,College,2018
+IR-1-C-C-C-6397,College of Vocational Studies,,,59.09,73,College,2018
+IR-1-C-C-C-35878,National College,,,63.83,74,College,2018
+IR-2-C-OC-C-33555,St. Xavier`s College,,,51.56,74,College,2018
+IR-1-C-C-C-11582,St. Teresa`s College,,,56.79,76,College,2018
+IR-1-C-C-N-6,Queen Mary`s College,,,68.04,77,College,2018
+IR-1-C-C-C-8008,Vimala College,,,63.94,77,College,2018
+IR-1-C-C-C-8169,St. Thomas College,,,65.64,79,College,2018
+IR-1-C-C-C-22466,Lakshmi Bai College,,,62.66,80,College,2018
+IR-1-C-C-C-36578,Lady Doak College,,,57.85,81,College,2018
+IR-1-C-C-I-1373,Goswami Ganesh Dutta Sanatan Dharma College,,,48.3,82,College,2018
+IR-1-C-C-C-35832,Jamal Mohamed College,,,58.23,83,College,2018
+IR-2-C-OC-C-11833,Marian College,,,64.74,84,College,2018
+IR-1-C-C-C-36487,V. V. Vanniaperumal College for Women,,,62.76,85,College,2018
+IR-1-C-C-C-6391,Maitreyi College,,,59.67,86,College,2018
+IR-1-C-C-C-43783,Nirmalagiri College,,,60.92,87,College,2018
+IR-1-C-C-C-43760,Mahatma Gandhi College,,,71.42,88,College,2018
+IR-1-C-C-C-41104,Kongu Arts & Science College,,,48.94,89,College,2018
+IR-1-C-C-C-36547,The American College,,,63.95,90,College,2018
+IR-1-C-C-C-41054,Dr. N. G. P. Arts and Science College,,,58.81,91,College,2018
+IR-1-C-C-C-43711,Bishop Moore College,,,59.11,92,College,2018
+IR-1-C-C-C-41434,Bharati Vidyapeeth`s College of Fine Arts,,,63.82,93,College,2018
+IR-1-C-C-C-16897,St. Aloysius College,,,52.93,94,College,2018
+IR-1-C-C-C-43911,Anna Adarsh College for Women,,,59.24,95,College,2018
+IR-1-C-C-C-9562,Mahendra Arts & Science College,,,50.3,96,College,2018
+IR-1-C-C-C-8106,St. Joseph's College,,,61.33,97,College,2018
+IR-1-C-C-C-41134,Rathinam College of Arts and Science,,,52.95,98,College,2018
+IR-1-C-C-C-6401,Shaheed Bhagat Singh College (Evening),,,64.4,99,College,2018
+IR-2-C-OC-C-6381,Keshav Mahavidyalya,,,69.09,100,College,2018
+IR-2-E-OE-U-0456,Indian Institute of Technology Madras,,,93.83,1,Engineering,2018
+IR-3-E-OEM-U-0306,Indian Institute of Technology Bombay,,,89.61,2,Engineering,2018
+IR-3-E-OEM-I-1074,Indian Institute of Technology Delhi,,,80.83,3,Engineering,2018
+IR-5-E-OEMAL-U-0573,Indian Institute of Technology Kharagpur,,,73.73,4,Engineering,2018
+IR-3-E-OEM-I-1075,Indian Institute of Technology Kanpur,,,78.51,5,Engineering,2018
+IR-4-E-OEMA-U-0560,Indian Institute of Technology Roorkee,,,72.8,6,Engineering,2018
+IR-2-E-OE-U-0053,Indian Institute of Technology Guwahati,,,86.29,7,Engineering,2018
+IR-4-E-OEMA-U-0439,Anna University,,,64.6,8,Engineering,2018
+IR-2-E-OE-U-0013,Indian Institute of Technology Hyderabad,,,80.63,9,Engineering,2018
+IR-3-E-OEP-U-0308,Institute of Chemical Technology,,,70.22,10,Engineering,2018
+IR-2-E-OE-U-0467,National Institute of Technology Tiruchirappalli,,,66.49,11,Engineering,2018
+IR-2-E-OE-U-0575,Jadavpur University,,,58.26,12,Engineering,2018
+IR-2-E-OE-U-0205,Indian Institute of Technology (Indian School of Mines) Dhanbad,,,64.7,13,Engineering,2018
+IR-2-E-OE-U-0273,Indian Institute of Technology Indore,,,81.42,14,Engineering,2018
+IR-2-E-OE-U-0357,National Institute of Technology Rourkela,,,61.82,15,Engineering,2018
+IR-3-E-OEM-U-0490,Vellore Institute of Technology,,,54.64,16,Engineering,2018
+IR-3-E-OEP-U-0391,Birla Institute of Technology & Science,,,68.55,17,Engineering,2018
+IR-2-E-OE-U-0355,Indian Institute of Technology Bhubaneswar,,,81.45,18,Engineering,2018
+IR-1-E-E-U-0701,Indian Institute of Technology (Banaras Hindu University) Varanasi,,,64.43,19,Engineering,2018
+IR-2-E-EM-I-1480,Thapar Institute of Engineering and Technology,,,69.77,20,Engineering,2018
+IR-2-E-OE-U-0237,National Institute of Technology Surathkal,,,60.34,21,Engineering,2018
+IR-2-E-OE-U-0378,Indian Institute of Technology Ropar,,,77.84,22,Engineering,2018
+IR-2-E-OE-U-0255,Indian Institute of Space Science and Technology,,,78.87,23,Engineering,2018
+IR-2-E-OE-U-0064,Indian Institute of Technology Patna,,,74.43,24,Engineering,2018
+IR-2-E-OE-U-0025,National Institute of Technology Warangal,,,67.25,25,Engineering,2018
+IR-5-E-OEMAP-U-0202,Birla Institute of Technology,,,71.22,26,Engineering,2018
+IR-2-E-OE-U-0139,Indian Institute of Technology Gandhinagar,,,74.18,27,Engineering,2018
+IR-3-E-OEM-C-37013,PSG College of Technology,,,69.82,29,Engineering,2018
+IR-1-E-E-U-0334,Visvesvaraya National Institute of Technology,,,63.78,31,Engineering,2018
+IR-5-E-OEMAL-U-0108,Jamia Millia Islamia,,,57.41,32,Engineering,2018
+IR-4-E-OEML-U-0476,Shanmugha Arts Science Technology & Research Academy,,,61.27,33,Engineering,2018
+IR-6-E-OEMALP-U-0497,Amity University,,,67.99,34,Engineering,2018
+IR-7-E-OEMALDC-U-0496,Aligarh Muslim University,,,70.21,35,Engineering,2018
+IR-1-E-E-C-16604,Sri Sivasubramaniya Nadar College of Engineering,,,69.98,36,Engineering,2018
+IR-4-E-OEMA-U-0474,Sathyabama Institute of Science and Technology,,,56.33,37,Engineering,2018
+IR-1-E-E-U-0014,International Institute of Information Technology,,,49.08,38,Engineering,2018
+IR-1-E-E-C-7252,Manipal Institute of Technology,,,68.57,39,Engineering,2018
+IR-3-E-OEA-C-26794,Thiagarajar College of Engineering,,,62.34,39,Engineering,2018
+IR-2-E-OE-U-0098,Delhi Technological University,,,54.83,41,Engineering,2018
+IR-1-E-E-U-0017,Jawaharlal Nehru Technological University,,,72.7,42,Engineering,2018
+IR-1-E-E-U-0172,National Institute of Technology Kurukshetra,,,59.2,43,Engineering,2018
+IR-3-E-OEM-S-8931,National Institute of Industrial Engineering,,,79.15,44,Engineering,2018
+IR-1-E-E-C-41593,College of Engineering,,,60.44,45,Engineering,2018
+IR-5-E-OEMDP-U-0473,SRM Institute of Science and Technology,,,58.66,46,Engineering,2018
+IR-2-E-OE-U-0577,National Institute of Technology Durgapur,,,52.84,47,Engineering,2018
+IR-1-E-E-U-0530,Motilal Nehru National Institute of Technology,,,52.93,48,Engineering,2018
+IR-2-E-EM-U-0020,Koneru Lakshmaiah Education Foundation University,,,70.42,49,Engineering,2018
+IR-1-E-E-U-0263,National Institute of Technology Calicut,,,55.17,50,Engineering,2018
+IR-5-E-OEMLD-U-0356,Kalinga Institute of Industrial Technology,,,58.23,51,Engineering,2018
+IR-2-E-OE-U-0410,Malaviya National Institute of Technology,,,55.37,52,Engineering,2018
+IR-1-E-E-C-6581,Pondicherry Engineering College,,,62.07,53,Engineering,2018
+IR-1-E-E-U-0395,Indian Institute of Technology Jodhpur,,,67.83,54,Engineering,2018
+IR-1-E-E-U-0284,Maulana Azad National Institute of Technology,,,56.88,55,Engineering,2018
+IR-1-E-E-U-0221,International Institute of Information Technology Bangalore,,,58.67,56,Engineering,2018
+IR-1-E-E-U-0055,National Institute of Technology Silchar,,,61.32,57,Engineering,2018
+IR-1-E-E-C-1269,R. V. College of Engineering,,,66.43,58,Engineering,2018
+IR-6-E-OEMLDP-U-0078,Panjab University,,,43.7,59,Engineering,2018
+IR-1-E-E-C-1331,M. S. Ramaiah Institute of Technology,,,64.56,60,Engineering,2018
+IR-1-E-E-U-0149,Sardar Vallabhbhai National Institute of Technology,,,52.57,61,Engineering,2018
+IR-2-E-OE-C-36969,Coimbatore Institute of Technology,,,62.94,62,Engineering,2018
+IR-1-E-E-U-0297,Defence Institute of Advanced Technology,,,70.99,63,Engineering,2018
+IR-3-E-OEA-U-0189,National Institute of Technology Hamirpur,,,54.67,64,Engineering,2018
+IR-1-E-E-C-24004,AU College of Engineering,,,64.07,65,Engineering,2018
+IR-1-E-E-U-0105,Indraprastha Institute of Information Technology Delhi,,,47.47,66,Engineering,2018
+IR-1-E-E-C-1262,B. M. S. College of Engineering,,,64.05,67,Engineering,2018
+IR-1-E-E-C-37065,Kongu Engineering College,,,59.46,68,Engineering,2018
+IR-2-E-OE-U-0507,Dayalbagh Educational Institute,,,63.33,69,Engineering,2018
+IR-2-E-OE-U-0522,Jaypee Institute of Information Technology,,,48.0,70,Engineering,2018
+IR-2-E-OE-U-0037,Sri Venkateswara University,,,48.87,71,Engineering,2018
+IR-3-E-OEM-U-0460,Karunya Institute of Technology and Sciences,,,53.24,72,Engineering,2018
+IR-1-E-E-U-0080,PEC University of Technology,,,50.81,73,Engineering,2018
+IR-1-E-E-U-0374,Dr. B. R. Ambedkar National Institute of Technology,,,55.33,74,Engineering,2018
+IR-3-E-EMA-C-43708,College of Engineering Trivandrum,,,54.94,75,Engineering,2018
+IR-2-E-OE-C-36984,Bannari Amman Institute of Technology,,,58.36,76,Engineering,2018
+IR-2-E-OE-U-0489,Vel Tech Rangarajan Dr. Sagunthala R & D Institute of Science and Technology,,,52.36,77,Engineering,2018
+IR-1-E-E-C-1297,Siddaganga Institute of Technology,,,64.23,78,Engineering,2018
+IR-4-E-OEMA-U-0445,B. S. Abdur Rahman Institute of Science and Technology,,,63.79,79,Engineering,2018
+IR-1-E-E-C-27616,University College of Engineering,,,58.19,80,Engineering,2018
+IR-1-E-E-U-0092,National Institute of Technology Raipur,,,53.28,81,Engineering,2018
+IR-3-E-OEM-C-36926,Kumaraguru College of Technology,,,57.39,82,Engineering,2018
+IR-1-E-E-C-41309,Bharati Vidyapeeth Deemed University College of Engineering,,,52.34,83,Engineering,2018
+IR-2-E-OE-U-0186,Jaypee University of Information Technology,,,45.26,84,Engineering,2018
+IR-5-E-OEMAL-U-0099,Guru Gobind Singh Indraprastha University,,,42.73,85,Engineering,2018
+IR-2-E-OE-C-24163,Sagi Ramakrishnam Raju Engineering College,,,61.09,85,Engineering,2018
+IR-3-E-OEM-U-0733,PES University,,,51.56,87,Engineering,2018
+IR-1-E-E-C-42054,Army Institute of Technology,,,54.67,88,Engineering,2018
+IR-1-E-E-C-30045,C. V. Raman College of Engineering,,,54.87,89,Engineering,2018
+IR-1-E-E-U-0516,Indian Institute of Information Technology Allahabad,,,39.58,90,Engineering,2018
+IR-1-E-E-U-0286,"Pandit Dwarka Prasad Mishra Indian Institute of Information Technology, Design and Manufacturing (IIITDM) Jabalpur",,,41.04,91,Engineering,2018
+IR-1-E-E-U-0493,National Institute of Technology Agartala,,,54.42,92,Engineering,2018
+IR-1-E-E-C-36975,Government College of Technology,,,50.86,93,Engineering,2018
+IR-4-E-OEMA-U-0201,Shri Mata Vaishno Devi University,,,65.02,94,Engineering,2018
+IR-1-E-E-C-33641,Veermata Jijabai Technological Institute,,,49.39,95,Engineering,2018
+IR-4-E-OEMA-U-0458,Kalasalingam Academy of Research and Higher Education,,,59.06,96,Engineering,2018
+IR-2-E-EP-C-18154,University College of Engingeering,,,56.04,97,Engineering,2018
+IR-2-E-OE-U-0619,National Institute of Technology Meghalaya,,,63.62,98,Engineering,2018
+IR-1-E-E-C-1371,New Horizon College of Engineering,,,57.0,99,Engineering,2018
+IR-1-E-E-C-1352,NITTE Meenakshi Institute of Technology,,,57.24,100,Engineering,2018
+IR-1-L-L-U-0238,National Law School of India University,,,87.46,1,Law,2018
+IR-1-L-L-U-0111,National Law University,,,93.31,2,Law,2018
+IR-1-L-L-N-18,Nalsar University of Law,,,78.13,3,Law,2018
+IR-5-L-OEMAL-U-0573,Indian Institute of Technology Kharagpur,,,74.73,4,Law,2018
+IR-1-L-L-U-0414,National Law University Jodhpur,,,73.54,5,Law,2018
+IR-5-L-OEMAL-U-0108,Jamia Millia Islamia,,,57.42,6,Law,2018
+IR-1-L-L-U-0585,The West Bengal National University of Juridicial Sciences,,,64.96,7,Law,2018
+IR-1-L-L-U-0511,"Dr. Ram Manohar Lohiya National Law University, Lucknow",,,66.47,8,Law,2018
+IR-1-L-L-C-19328,Symbiosis Law School,,,52.24,9,Law,2018
+IR-1-L-L-C-23907,Dr. B. R. Ambedkar College of Law,,,75.75,10,Law,2018
+IR-1-M-M-S-8890,Indian Institute of Management Ahmedabad,,,90.82,1,Management,2018
+IR-1-M-M-S-8903,Indian Institute of Management Bangalore,,,84.71,2,Management,2018
+IR-1-M-M-S-8972,Indian Institute of Management Calcutta,,,90.68,3,Management,2018
+IR-1-M-M-S-8959,Indian Institute of Management Lucknow,,,83.98,4,Management,2018
+IR-3-M-OEM-U-0306,Indian Institute of Technology Bombay,,,66.85,5,Management,2018
+IR-1-M-M-S-8909,Indian Institute of Management Kozhikode,,,81.02,6,Management,2018
+IR-5-M-OEMAL-U-0573,Indian Institute of Technology Kharagpur,,,59.83,7,Management,2018
+IR-3-M-OEM-I-1074,Indian Institute of Technology Delhi,,,57.83,8,Management,2018
+IR-4-M-OEMA-U-0560,Indian Institute of Technology Roorkee,,,54.66,9,Management,2018
+IR-1-M-M-S-132,Xavier Labour Relations Institute,,,86.06,10,Management,2018
+IR-1-M-M-S-8918,Indian Institute of Management Indore,,,68.97,11,Management,2018
+IR-1-M-M-I-1170,Management Development Institute,,,77.67,12,Management,2018
+IR-2-M-OM-S-8942,Indian Institute of Management Udaipur,,,80.24,13,Management,2018
+IR-3-M-OEM-S-8931,National Institute of Industrial Engineering,,,75.28,14,Management,2018
+IR-1-M-M-S-8948,Indian Institute of Management Tiruchirappalli,,,75.65,15,Management,2018
+IR-1-M-M-N-16,Great Lakes Institute of Management,,,82.19,16,Management,2018
+IR-3-M-OEM-I-1075,Indian Institute of Technology Kanpur,,,72.68,17,Management,2018
+IR-1-M-M-C-19343,Symbiosis Institute of Business Management,,,72.37,18,Management,2018
+IR-1-M-M-I-1044,S. P. Jain Institute of Management & Research,,,68.5,19,Management,2018
+IR-1-M-M-S-8967,Indian Institute of Management Kashipur,,,75.51,20,Management,2018
+IR-1-M-M-S-8868,Indian Institute of Management Raipur,,,57.68,21,Management,2018
+IR-2-M-OM-U-0012,ICFAI Foundation for Higher Education,,,66.42,22,Management,2018
+IR-1-M-M-U-0102,Indian Institute of Foreign Trade,,,65.86,23,Management,2018
+IR-6-M-OEMAPC-N-10,SVKM`s Narsee Monjee Institute of Management Studies,,,70.34,24,Management,2018
+IR-1-M-M-I-1064,International Management Institute New Delhi,,,71.92,25,Management,2018
+IR-1-M-M-S-8937,Rajiv Gandhi Indian Institute of Management,,,77.31,26,Management,2018
+IR-1-M-M-S-8895,Indian Institute of Management Rohtak,,,53.21,27,Management,2018
+IR-4-M-OEMA-U-0439,Anna University,,,48.6,28,Management,2018
+IR-3-M-OEM-U-0490,Vellore Institute of Technology,,,53.73,29,Management,2018
+IR-5-M-OEMLD-U-0356,Kalinga Institute of Industrial Technology,,,70.84,30,Management,2018
+IR-1-M-M-S-394,Institute of Management Technology,,,58.38,31,Management,2018
+IR-1-M-M-S-331,Loyola Institute of Business Administration,,,69.39,32,Management,2018
+IR-3-M-OEM-C-37013,PSG College of Technology,,,59.62,33,Management,2018
+IR-1-M-M-I-1238,Institute for Financial Management and Research,,,70.87,34,Management,2018
+IR-5-M-OEMAL-U-0108,Jamia Millia Islamia,,,62.14,34,Management,2018
+IR-2-M-OM-U-0715,Xavier University,,,59.11,36,Management,2018
+IR-1-M-M-I-1066,Fore School of Management,,,72.01,37,Management,2018
+IR-4-M-MAPC-U-0379,Lovely Professional University,,,61.13,38,Management,2018
+IR-3-M-OMD-U-0500,Banaras Hindu University,,,65.9,39,Management,2018
+IR-1-M-M-S-8904,Indian Institute of Management Ranchi,,,55.34,40,Management,2018
+IR-1-M-M-I-1058,Indian Institute of Forest Management,,,71.38,41,Management,2018
+IR-6-M-OEMLDP-U-0078,Panjab University,,,57.4,42,Management,2018
+IR-1-M-M-S-92,Institute of Rural Management Anand,,,66.66,43,Management,2018
+IR-5-M-OEMAP-U-0202,Birla Institute of Technology,,,58.86,44,Management,2018
+IR-1-M-M-S-354,Birla Institute of Management Technology,,,60.08,45,Management,2018
+IR-2-M-EM-U-0020,Koneru Lakshmaiah Education Foundation University,,,69.87,46,Management,2018
+IR-2-M-OM-C-32873,Lal Bahadur Shastri Institute of Management,,,67.63,47,Management,2018
+IR-6-M-OEMALP-U-0497,Amity University,,,62.2,48,Management,2018
+IR-7-M-OEMALDC-U-0496,Aligarh Muslim University,,,59.39,49,Management,2018
+IR-1-M-M-C-35429,Institute of Management and Entrepreneurship Development,,,66.16,50,Management,2018
+IR-1-D-D-N-15,All India Institute of Medical Sciences New Delhi,,,94.85,1,Medical,2018
+IR-1-D-D-U-0079,Post Graduate Institute of Medical Education and Research,,,82.52,2,Medical,2018
+IR-1-D-D-C-45654,Christian Medical College,,,76.49,3,Medical,2018
+IR-1-D-D-C-7242,Kasturba Medical College,,,68.55,4,Medical,2018
+IR-1-D-D-U-0523,King George`s Medical University,,,76.68,5,Medical,2018
+IR-1-D-D-U-0368,Jawaharlal Institute of Post Graduate Medical Education & Research,,,72.15,6,Medical,2018
+IR-3-D-OMD-U-0500,Banaras Hindu University,,,71.25,7,Medical,2018
+IR-1-D-D-U-0106,Institute of Liver and Biliary Sciences,,,84.95,8,Medical,2018
+IR-7-D-OEMALDC-U-0496,Aligarh Muslim University,,,68.78,9,Medical,2018
+IR-3-D-ODP-I-1486,Sri Ramachandra Medical College and Research Institute,,,72.2,10,Medical,2018
+IR-5-D-OEMDP-U-0107,Jamia Hamdard,,,66.32,11,Medical,2018
+IR-2-D-OD-C-40345,M. S. Ramaiah Medical College,,,75.67,12,Medical,2018
+IR-1-D-D-C-32922,Vardhman Mahavir Medical College & Safdarjung Hospital,,,70.58,13,Medical,2018
+IR-1-D-D-C-29255,Dayanand Medical College,,,80.43,14,Medical,2018
+IR-3-D-ODP-I-1409,University College of Medical Sciences,,,66.48,15,Medical,2018
+IR-1-D-D-C-7251,Kasturba Medical College,,,65.76,16,Medical,2018
+IR-6-D-OEMLDP-U-0078,Panjab University,,,60.24,17,Medical,2018
+IR-2-D-OD-I-1110,Dr. D. Y. Patil Vidyapeeth,,,70.62,18,Medical,2018
+IR-2-D-OD-U-0363,Siksha `O` Anusandhan,,,73.53,19,Medical,2018
+IR-5-D-OEMLD-U-0356,Kalinga Institute of Industrial Technology,,,68.03,20,Medical,2018
+IR-1-D-D-C-45515,PSG Institute of Medical Sciences & Research,,,72.91,21,Medical,2018
+IR-5-D-OEMDP-U-0473,SRM Institute of Science and Technology,,,66.64,22,Medical,2018
+IR-1-D-D-C-47762,Mahatma Gandhi Medical College and Research Institute,,,67.93,23,Medical,2018
+IR-6-D-OEMDPC-U-0443,Annamalai University,,,62.89,24,Medical,2018
+IR-1-D-D-C-24503,Jawaharlal Nehru Medical College,,,67.5,25,Medical,2018
+IR-1-O-O-U-0220,Indian Institute of Science,,,84.54,1,Overall,2018
+IR-2-O-OE-U-0456,Indian Institute of Technology Madras,,,82.49,2,Overall,2018
+IR-3-O-OEM-U-0306,Indian Institute of Technology Bombay,,,81.34,3,Overall,2018
+IR-3-O-OEM-I-1074,Indian Institute of Technology Delhi,,,73.38,4,Overall,2018
+IR-5-O-OEMAL-U-0573,Indian Institute of Technology Kharagpur,,,67.96,5,Overall,2018
+IR-1-O-O-U-0109,Jawaharlal Nehru University,,,74.71,6,Overall,2018
+IR-3-O-OEM-I-1075,Indian Institute of Technology Kanpur,,,71.71,7,Overall,2018
+IR-4-O-OEMA-U-0560,Indian Institute of Technology Roorkee,,,65.88,8,Overall,2018
+IR-3-O-OMD-U-0500,Banaras Hindu University,,,65.15,9,Overall,2018
+IR-4-O-OEMA-U-0439,Anna University,,,57.31,10,Overall,2018
+IR-1-O-O-U-0042,University of Hyderabad,,,74.36,11,Overall,2018
+IR-2-O-OE-U-0053,Indian Institute of Technology Guwahati,,,79.25,12,Overall,2018
+IR-2-O-OE-U-0575,Jadavpur University,,,57.08,13,Overall,2018
+IR-1-O-O-U-0120,University of Delhi,,,52.52,14,Overall,2018
+IR-1-O-O-U-0436,Amrita Vishwa Vidyapeetham,,,74.05,15,Overall,2018
+IR-1-O-O-U-0323,Savitribai Phule Pune University,,,70.7,16,Overall,2018
+IR-7-O-OEMALDC-U-0496,Aligarh Muslim University,,,70.28,17,Overall,2018
+IR-1-O-O-U-0234,Manipal Academy of Higher Education,,,76.05,18,Overall,2018
+IR-5-O-OEMAL-U-0108,Jamia Millia Islamia,,,72.33,19,Overall,2018
+IR-1-O-C-U-0447,Bharathiar University,,,65.54,20,Overall,2018
+IR-1-O-O-U-0570,Calcutta University,,,45.47,21,Overall,2018
+IR-2-O-OE-U-0013,Indian Institute of Technology Hyderabad,,,71.72,22,Overall,2018
+IR-1-O-D-U-0523,King George`s Medical University,,,83.08,23,Overall,2018
+IR-3-O-OEM-U-0490,Vellore Institute of Technology,,,50.3,24,Overall,2018
+IR-1-O-O-U-0572,Indian Institute of Science Education & Research Kolkata,,,70.87,25,Overall,2018
+IR-3-O-OEP-U-0391,Birla Institute of Technology & Science,,,61.02,26,Overall,2018
+IR-2-O-OE-U-0205,Indian Institute of Technology (Indian School of Mines) Dhanbad,,,54.46,27,Overall,2018
+IR-1-O-E-U-0701,Indian Institute of Technology (Banaras Hindu University) Varanasi,,,57.85,28,Overall,2018
+IR-1-O-O-I-1357,University of Madras,,,66.06,29,Overall,2018
+IR-3-O-OEP-U-0308,Institute of Chemical Technology,,,53.82,30,Overall,2018
+IR-2-O-OE-U-0467,National Institute of Technology Tiruchirappalli,,,57.09,31,Overall,2018
+IR-1-O-O-U-0305,Indian Institute of Science Education & Research Pune,,,66.57,32,Overall,2018
+IR-6-O-OEMLDP-U-0078,Panjab University,,,52.59,33,Overall,2018
+IR-1-O-M-S-8972,Indian Institute of Management Calcutta,,,82.44,34,Overall,2018
+IR-1-O-O-U-0446,Bharath Institute of Higher Education & Research,,,70.22,35,Overall,2018
+IR-6-O-OEMALP-U-0006,Andhra University,,,65.98,36,Overall,2018
+IR-5-O-OEMDP-U-0107,Jamia Hamdard,,,67.67,37,Overall,2018
+IR-2-O-OD-U-0363,Siksha `O` Anusandhan,,,74.34,38,Overall,2018
+IR-2-O-OE-U-0139,Indian Institute of Technology Gandhinagar,,,73.72,39,Overall,2018
+IR-1-O-O-U-0485,Tamil Nadu Agricultural University,,,78.6,40,Overall,2018
+IR-1-O-O-U-0304,Homi Bhabha National Institute,,,84.14,41,Overall,2018
+IR-2-O-OE-U-0357,National Institute of Technology Rourkela,,,55.85,42,Overall,2018
+IR-1-O-C-U-0435,Alagappa University,,,65.74,43,Overall,2018
+IR-2-O-OE-U-0584,"Indian Institute of Engineering Science and Technology, Shibpur",,,60.01,44,Overall,2018
+IR-1-O-O-U-0027,Osmania University,,,55.09,45,Overall,2018
+IR-1-O-O-U-0056,Tezpur University,,,66.61,46,Overall,2018
+IR-1-O-O-U-0260,Kerala University,,,65.16,47,Overall,2018
+IR-1-O-O-U-0589,Visva Bharati,,,63.49,48,Overall,2018
+IR-1-O-O-U-0331,Tata Institute of Social Sciences,,,68.98,49,Overall,2018
+IR-2-O-EM-I-1480,Thapar Institute of Engineering and Technology,,,58.24,50,Overall,2018
+IR-2-O-OE-U-0355,Indian Institute of Technology Bhubaneswar,,,70.95,51,Overall,2018
+IR-1-O-O-U-0554,G. B. Pant Universtiy of Agriculture and Technology,,,72.14,52,Overall,2018
+IR-1-O-O-U-0262,Mahatma Gandhi University,,,64.21,52,Overall,2018
+IR-4-O-OEML-U-0476,Shanmugha Arts Science Technology & Research Academy,,,53.44,54,Overall,2018
+IR-1-O-O-U-0377,Indian Institute of Science Education & Research Mohali,,,63.32,55,Overall,2018
+IR-1-O-O-U-0272,Indian Institute of Science Education & Research Bhopal,,,61.55,56,Overall,2018
+IR-2-O-OE-U-0237,National Institute of Technology Surathkal,,,52.66,57,Overall,2018
+IR-1-O-O-U-0254,Indian Institute of Science Education & Research Thiruvananthapuram,,,69.8,58,Overall,2018
+IR-2-O-OP-U-0222,JSS Academy of Higher Education and Research,,,69.0,59,Overall,2018
+IR-1-O-O-U-0381,Punjab Agricultural University,,,80.46,60,Overall,2018
+IR-1-O-O-U-0052,Gauhati University,,,64.91,61,Overall,2018
+IR-3-O-ODP-I-1486,Sri Ramachandra Medical College and Research Institute,,,76.9,62,Overall,2018
+IR-5-O-OEMDP-U-0473,SRM Institute of Science and Technology,,,56.87,63,Overall,2018
+IR-3-O-OEM-C-37013,PSG College of Technology,,,62.6,64,Overall,2018
+IR-5-O-OEMLD-U-0356,Kalinga Institute of Industrial Technology,,,57.32,65,Overall,2018
+IR-5-O-OEMAP-U-0202,Birla Institute of Technology,,,57.73,66,Overall,2018
+IR-1-O-O-U-0329,Symbiosis International,,,69.88,67,Overall,2018
+IR-4-O-OEMA-U-0474,Sathyabama Institute of Science and Technology,,,52.38,68,Overall,2018
+IR-2-O-OE-U-0064,Indian Institute of Technology Patna,,,67.81,69,Overall,2018
+IR-2-O-OD-I-1441,Saveetha Institute of Medical and Technical Sciences,,,65.4,70,Overall,2018
+IR-1-O-O-U-0196,University of Kashmir,,,62.39,71,Overall,2018
+IR-1-O-O-U-0642,Shiv Nadar University,,,69.21,72,Overall,2018
+IR-1-O-E-C-16604,Sri Sivasubramaniya Nadar College of Engineering,,,62.51,73,Overall,2018
+IR-2-O-OE-U-0037,Sri Venkateswara University,,,60.43,74,Overall,2018
+IR-1-O-D-C-45515,PSG Institute of Medical Sciences & Research,,,82.71,75,Overall,2018
+IR-1-O-O-U-0159,Chaudhary Charan Singh Haryana Agricultural University,,,78.3,76,Overall,2018
+IR-3-O-OML-U-0195,University of Jammu,,,65.22,77,Overall,2018
+IR-2-O-OE-U-0025,National Institute of Technology Warangal,,,56.18,78,Overall,2018
+IR-2-O-OD-I-1110,Dr. D. Y. Patil Vidyapeeth,,,76.37,79,Overall,2018
+IR-6-O-OEMALP-U-0497,Amity University,,,48.75,80,Overall,2018
+IR-1-O-O-U-0463,Madurai Kamraj University,,,61.57,81,Overall,2018
+IR-6-O-OEMAPC-N-10,SVKM`s Narsee Monjee Institute of Management Studies,,,65.29,82,Overall,2018
+IR-2-O-EM-U-0020,Koneru Lakshmaiah Education Foundation University,,,65.81,83,Overall,2018
+IR-1-O-O-U-0225,KLE Academy of Higher Education and Research,,,74.67,84,Overall,2018
+IR-1-O-O-U-0246,University of Agricultural Sciences,,,73.71,85,Overall,2018
+IR-1-O-O-U-0376,Guru Nanak Dev University,,,44.09,86,Overall,2018
+IR-3-O-OEM-U-0369,Pondicherry University,,,46.64,86,Overall,2018
+IR-1-O-O-U-0341,North Eastern Hill University,,,64.85,88,Overall,2018
+IR-1-O-D-U-0036,Sri Venkateswara Institute of Medical Sciences,,,77.09,89,Overall,2018
+IR-2-O-OE-U-0507,Dayalbagh Educational Institute,,,64.14,90,Overall,2018
+IR-4-O-OEMP-U-0389,Banasthali Vidyapith,,,47.08,91,Overall,2018
+IR-1-O-O-U-0487,Tamil Nadu Veterinary & Animal Sciences University,,,74.76,92,Overall,2018
+IR-1-O-O-I-1361,Bharati Vidyapeeth,,,58.92,93,Overall,2018
+IR-1-O-O-U-0448,Bharathidasan University,,,57.01,94,Overall,2018
+IR-3-O-OEA-C-26794,Thiagarajar College of Engineering,,,57.09,95,Overall,2018
+IR-1-O-E-C-41593,College of Engineering,,,55.86,96,Overall,2018
+IR-1-O-D-C-47762,Mahatma Gandhi Medical College and Research Institute,,,72.43,97,Overall,2018
+IR-1-O-O-U-0121,Goa University,,,59.83,98,Overall,2018
+IR-1-O-O-U-0253,Cochin University of Science and Technology,,,47.72,99,Overall,2018
+IR-2-O-OE-U-0098,Delhi Technological University,,,47.77,100,Overall,2018
+IR-1-P-P-U-0380,National Institute of Pharmaceutical Education and Research Mohali,,,76.32,1,Pharmacy,2018
+IR-5-P-OEMDP-U-0107,Jamia Hamdard,,,69.51,2,Pharmacy,2018
+IR-6-P-OEMLDP-U-0078,Panjab University,,,72.85,3,Pharmacy,2018
+IR-3-P-OEP-U-0308,Institute of Chemical Technology,,,77.9,4,Pharmacy,2018
+IR-3-P-OEP-U-0391,Birla Institute of Technology & Science,,,76.45,5,Pharmacy,2018
+IR-1-P-P-I-1077,National Institute of Pharmaceutical Education and Research Hyderabad,,,80.14,6,Pharmacy,2018
+IR-1-P-P-C-7249,Manipal College of Pharmaceutical Sciences,,,77.25,7,Pharmacy,2018
+IR-1-P-P-C-33873,Bombay College of Pharmacy,,,71.07,8,Pharmacy,2018
+IR-6-P-OEMAPC-N-10,SVKM`s Narsee Monjee Institute of Management Studies,,,75.46,9,Pharmacy,2018
+IR-1-P-P-C-35007,JSS College of Pharmacy,,,66.54,10,Pharmacy,2018
+IR-1-P-P-C-35430,Poona College of Pharmacy,,,66.89,11,Pharmacy,2018
+IR-6-P-OEMADP-U-0143,Maharaja Sayajirao University of Baroda,,,65.18,12,Pharmacy,2018
+IR-5-P-OEMAP-U-0202,Birla Institute of Technology,,,70.04,13,Pharmacy,2018
+IR-1-P-P-N-14,National Institute of Pharmaceutical Education and Research Ahmedabad,,,86.56,14,Pharmacy,2018
+IR-1-P-P-C-35006,JSS College of Pharmacy,,,65.42,15,Pharmacy,2018
+IR-2-P-OP-U-0383,Punjabi University,,,59.83,16,Pharmacy,2018
+IR-1-P-P-C-10398,I. S. F. College of Pharmacy,,,46.55,17,Pharmacy,2018
+IR-1-P-P-C-436,"Institute of Pharmacy, Nirma University",,,60.87,18,Pharmacy,2018
+IR-1-P-P-C-6370,Delhi Institute of Pharmaceutical Sciences & Research,,,60.5,19,Pharmacy,2018
+IR-6-P-OEMDPC-U-0443,Annamalai University,,,65.79,20,Pharmacy,2018
+IR-3-P-ODP-I-1486,Sri Ramachandra Medical College and Research Institute,,,66.65,21,Pharmacy,2018
+IR-1-P-P-C-24505,KLE College of Pharmacy,,,65.38,22,Pharmacy,2018
+IR-1-P-P-C-409,L. M. College of Pharmacy,,,66.2,24,Pharmacy,2018
+IR-1-P-P-C-19322,N. G. S. M. Institute of Pharmaceutical Sciences,,,61.09,25,Pharmacy,2018
+IR-4-P-MAPC-U-0379,Lovely Professional University,,,61.52,26,Pharmacy,2018
+IR-5-P-OEMDP-U-0473,SRM Institute of Science and Technology,,,42.05,27,Pharmacy,2018
+IR-1-P-P-I-1450,"AU College of Pharmaceutical Sciences, Andhra University",,,57.0,28,Pharmacy,2018
+IR-1-P-P-I-1244,"Department of Pharmaceutical Sciences, Dibrugarh University",,,58.98,29,Pharmacy,2018
+IR-4-P-OEMP-U-0190,Shoolini University of Biotechnology and Management Sciences,,,63.86,30,Pharmacy,2018
+IR-1-P-P-C-45540,PSG College of Pharmacy,,,49.31,31,Pharmacy,2018
+IR-1-P-P-C-33877,SVKM`s Dr. Bhanuben Nanavati College of Pharmacy,,,57.12,32,Pharmacy,2018
+IR-6-P-OEMALP-U-0497,Amity University,,,54.02,33,Pharmacy,2018
+IR-1-P-P-C-34531,Y. B. Chavan College of Pharmacy,,,60.96,34,Pharmacy,2018
+IR-5-P-OEMLP-U-0085,Guru Ghasidas Vishwavidyalaya,,,69.88,35,Pharmacy,2018
+IR-6-P-OEMADP-U-0519,Integral University,,,57.53,36,Pharmacy,2018
+IR-1-P-P-C-30858,Goa College of Pharmacy,,,67.63,37,Pharmacy,2018
+IR-1-P-P-C-30768,"College of Pharmacy, Pt. B. D. Sharma, PGIMS",,,53.79,38,Pharmacy,2018
+IR-1-P-P-C-26907,Raghavendra Institute of Pharmaceuatical Education & Research,,,63.68,39,Pharmacy,2018
+IR-1-P-P-I-1045,R. C. Patel Institute of Pharmaceutical Education & Research,,,58.86,40,Pharmacy,2018
+IR-1-P-P-I-1243,"College of Pharmacy, Madras Medical College",,,57.63,41,Pharmacy,2018
+IR-1-P-P-C-33814,Bharati Vidyapeeth`s College of Pharmacy,,,64.96,42,Pharmacy,2018
+IR-4-P-OEMP-U-0491,VELS Institute of Science Technology & Advanced Studies,,,61.01,43,Pharmacy,2018
+IR-1-P-P-C-18900,Smt. Kishoritai Bhoyar College of Pharmacy,,,64.2,44,Pharmacy,2018
+IR-5-P-OEMLP-U-0270,Devi Ahilya Vishwavidyalaya,,,55.12,45,Pharmacy,2018
+IR-1-P-P-C-33635,Principal K.M. Kundanani College of Pharmacy,,,56.43,46,Pharmacy,2018
+IR-2-P-OP-U-0162,Guru Jambheshwar University of Science and Technology,,,62.48,47,Pharmacy,2018
+IR-2-P-OP-U-0093,Pt. Ravishankar Shukla University,,,45.61,48,Pharmacy,2018
+IR-1-P-P-I-1335,Dr. D. Y. Patil Institute of Pharmaceutical Sciences and Research,,,56.67,49,Pharmacy,2018
+IR-4-P-OEMP-U-0373,Chitkara University,,,55.57,50,Pharmacy,2018
+IR-1-O-O-U-0220,Indian Institute of Science,,,84.54,1,University,2018
+IR-1-O-O-U-0109,Jawaharlal Nehru University,,,74.71,2,University,2018
+IR-3-O-OMD-U-0500,Banaras Hindu University,,,65.15,3,University,2018
+IR-4-O-OEMA-U-0439,Anna University,,,57.31,4,University,2018
+IR-1-O-O-U-0042,University of Hyderabad,,,74.36,5,University,2018
+IR-2-O-OE-U-0575,Jadavpur University,,,57.08,6,University,2018
+IR-1-O-O-U-0120,University of Delhi,,,52.52,7,University,2018
+IR-1-O-O-U-0436,Amrita Vishwa Vidyapeetham,,,74.05,8,University,2018
+IR-1-O-O-U-0323,Savitribai Phule Pune University,,,70.7,9,University,2018
+IR-7-O-OEMALDC-U-0496,Aligarh Muslim University,,,70.28,10,University,2018
+IR-1-O-O-U-0234,Manipal Academy of Higher Education,,,76.05,11,University,2018
+IR-5-O-OEMAL-U-0108,Jamia Millia Islamia,,,72.33,12,University,2018
+IR-1-O-C-U-0447,Bharathiar University,,,65.54,13,University,2018
+IR-1-O-O-U-0570,Calcutta University,,,45.47,14,University,2018
+IR-1-O-D-U-0523,King George`s Medical University,,,83.08,15,University,2018
+IR-3-O-OEM-U-0490,Vellore Institute of Technology,,,50.3,16,University,2018
+IR-3-O-OEP-U-0391,Birla Institute of Technology & Science,,,61.02,17,University,2018
+IR-1-O-O-I-1357,University of Madras,,,66.06,18,University,2018
+IR-3-O-OEP-U-0308,Institute of Chemical Technology,,,53.82,19,University,2018
+IR-6-O-OEMLDP-U-0078,Panjab University,,,52.59,20,University,2018
+IR-1-O-O-U-0446,Bharath Institute of Higher Education & Research,,,70.22,21,University,2018
+IR-6-O-OEMALP-U-0006,Andhra University,,,65.98,22,University,2018
+IR-5-O-OEMDP-U-0107,Jamia Hamdard,,,67.67,23,University,2018
+IR-2-O-OD-U-0363,Siksha `O` Anusandhan,,,74.34,24,University,2018
+IR-1-O-O-U-0485,Tamil Nadu Agricultural University,,,78.6,25,University,2018
+IR-1-O-O-U-0304,Homi Bhabha National Institute,,,84.14,26,University,2018
+IR-1-O-C-U-0435,Alagappa University,,,65.74,27,University,2018
+IR-1-O-O-U-0027,Osmania University,,,55.09,28,University,2018
+IR-1-O-O-U-0056,Tezpur University,,,66.61,29,University,2018
+IR-1-O-O-U-0260,Kerala University,,,65.16,30,University,2018
+IR-1-O-O-U-0589,Visva Bharati,,,63.49,31,University,2018
+IR-1-O-O-U-0331,Tata Institute of Social Sciences,,,68.98,32,University,2018
+IR-2-O-EM-I-1480,Thapar Institute of Engineering and Technology,,,58.24,33,University,2018
+IR-1-O-O-U-0554,G. B. Pant Universtiy of Agriculture and Technology,,,72.14,34,University,2018
+IR-1-O-O-U-0262,Mahatma Gandhi University,,,64.21,34,University,2018
+IR-4-O-OEML-U-0476,Shanmugha Arts Science Technology & Research Academy,,,53.44,36,University,2018
+IR-2-O-OP-U-0222,JSS Academy of Higher Education and Research,,,69.0,37,University,2018
+IR-1-O-O-U-0381,Punjab Agricultural University,,,80.46,38,University,2018
+IR-1-O-O-U-0052,Gauhati University,,,64.91,39,University,2018
+IR-3-O-ODP-I-1486,Sri Ramachandra Medical College and Research Institute,,,76.9,40,University,2018
+IR-5-O-OEMDP-U-0473,SRM Institute of Science and Technology,,,56.87,41,University,2018
+IR-5-O-OEMLD-U-0356,Kalinga Institute of Industrial Technology,,,57.32,42,University,2018
+IR-5-O-OEMAP-U-0202,Birla Institute of Technology,,,57.73,43,University,2018
+IR-1-O-O-U-0329,Symbiosis International,,,69.88,44,University,2018
+IR-4-O-OEMA-U-0474,Sathyabama Institute of Science and Technology,,,52.38,45,University,2018
+IR-2-O-OD-I-1441,Saveetha Institute of Medical and Technical Sciences,,,65.4,46,University,2018
+IR-1-O-O-U-0196,University of Kashmir,,,62.39,47,University,2018
+IR-1-O-O-U-0642,Shiv Nadar University,,,69.21,48,University,2018
+IR-2-O-OE-U-0037,Sri Venkateswara University,,,60.43,49,University,2018
+IR-1-O-O-U-0159,Chaudhary Charan Singh Haryana Agricultural University,,,78.3,50,University,2018
+IR-3-O-OML-U-0195,University of Jammu,,,65.22,51,University,2018
+IR-2-O-OD-I-1110,Dr. D. Y. Patil Vidyapeeth,,,76.37,52,University,2018
+IR-6-O-OEMALP-U-0497,Amity University,,,48.75,53,University,2018
+IR-1-O-O-U-0463,Madurai Kamraj University,,,61.57,54,University,2018
+IR-6-O-OEMAPC-N-10,SVKM`s Narsee Monjee Institute of Management Studies,,,65.29,55,University,2018
+IR-2-O-EM-U-0020,Koneru Lakshmaiah Education Foundation University,,,65.81,56,University,2018
+IR-1-O-O-U-0225,KLE Academy of Higher Education and Research,,,74.67,57,University,2018
+IR-1-O-O-U-0246,University of Agricultural Sciences,,,73.71,58,University,2018
+IR-1-O-O-U-0376,Guru Nanak Dev University,,,44.09,59,University,2018
+IR-3-O-OEM-U-0369,Pondicherry University,,,46.64,59,University,2018
+IR-1-O-O-U-0341,North Eastern Hill University,,,64.85,61,University,2018
+IR-1-O-D-U-0036,Sri Venkateswara Institute of Medical Sciences,,,77.09,62,University,2018
+IR-2-O-OE-U-0507,Dayalbagh Educational Institute,,,64.14,63,University,2018
+IR-4-O-OEMP-U-0389,Banasthali Vidyapith,,,47.08,64,University,2018
+IR-1-O-O-U-0487,Tamil Nadu Veterinary & Animal Sciences University,,,74.76,65,University,2018
+IR-1-O-O-I-1361,Bharati Vidyapeeth,,,58.92,66,University,2018
+IR-1-O-O-U-0448,Bharathidasan University,,,57.01,67,University,2018
+IR-1-O-O-U-0121,Goa University,,,59.83,68,University,2018
+IR-1-O-O-U-0253,Cochin University of Science and Technology,,,47.72,69,University,2018
+IR-2-O-OE-U-0098,Delhi Technological University,,,47.77,70,University,2018
+IR-1-O-O-U-0181,Dr. Y. S. Parmar University of Horticulture and Forestry,,,70.9,71,University,2018
+IR-1-O-D-U-0370,Sri Balaji Vidyapeeth Mahatma Gandhi Medical College Campus,,,70.72,72,University,2018
+IR-1-O-O-U-0251,Calicut University,,,56.36,73,University,2018
+IR-5-O-OEMAL-U-0099,Guru Gobind Singh Indraprastha University,,,53.28,74,University,2018
+IR-1-O-O-U-0568,Bidhan Chandra Krishi Vishwavidyalaya,,,72.48,75,University,2018
+IR-1-O-O-I-1280,Maharshi Dayanand University,,,48.82,76,University,2018
+IR-1-O-O-U-0239,NITTE,,,67.62,77,University,2018
+IR-1-O-O-U-0232,Kuvempu University,,,60.06,78,University,2018
+IR-1-O-O-U-0453,The Gandhigram Rural Institute,,,52.93,79,University,2018
+IR-5-O-OEMLP-U-0164,Kurukshetra University,,,52.32,80,University,2018
+IR-1-O-O-U-0345,Mizoram University,,,62.55,81,University,2018
+IR-1-O-O-U-0784,Professor Jayashankar Telangana State Agricultural University,,,73.68,82,University,2018
+IR-1-O-O-U-0123,Anand Agricultural University,,,69.56,83,University,2018
+IR-1-O-O-U-0051,Dibrugarh University,,,62.45,84,University,2018
+IR-1-O-O-U-0011,Gandhi Institute of Technology and Management,,,50.07,85,University,2018
+IR-1-O-O-U-0576,Kalyani University,,,40.42,86,University,2018
+IR-1-O-O-U-0050,Assam University,,,58.62,87,University,2018
+IR-2-O-OD-U-0465,Meenakshi Academy of Higher Education and Research,,,70.09,88,University,2018
+IR-3-O-OEM-U-0460,Karunya Institute of Technology and Sciences,,,48.66,89,University,2018
+IR-1-O-O-U-0470,Periyar University,,,52.03,90,University,2018
+IR-1-O-O-U-0360,Orissa University of Agriculture & Technology,,,65.34,91,University,2018
+IR-1-O-O-U-0035,Sri Sathya Sai Institute of Higher Learning,,,58.9,92,University,2018
+IR-2-O-OD-U-0250,Yenepoya,,,72.52,92,University,2018
+IR-1-O-O-U-0146,Nirma University,,,53.65,94,University,2018
+IR-1-O-O-U-0347,Nagaland University,,,68.12,95,University,2018
+IR-1-O-O-U-0569,The University of Burdwan,,,51.36,96,University,2018
+IR-1-O-D-U-0294,D. Y. Patil Educational Society,,,67.68,97,University,2018
+IR-1-O-E-U-0014,International Institute of Information Technology,,,44.31,98,University,2018
+IR-3-O-OEM-U-0733,PES University,,,54.21,99,University,2018
+IR-2-O-OE-U-0522,Jaypee Institute of Information Technology,,,43.19,100,University,2018

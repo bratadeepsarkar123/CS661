@@ -20,7 +20,13 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR, PROJECT_ROOT, RAW_DIR  # noqa: E402
-from nirf_utils import load_nirf_all, name_similarity, slider_year_to_funding_academic_year  # noqa: E402
+from nirf_utils import (  # noqa: E402
+    load_nirf_rankings_all_years,
+    lookup_nirf_rank_for_institute,
+    name_similarity,
+    slider_year_to_funding_academic_year,
+    slider_year_to_nirf_ranking_year,
+)
 
 # Reuse spot-check helpers for raw NIRF tracing.
 from run_random_spot_check import (  # noqa: E402
@@ -320,7 +326,7 @@ def load_context() -> dict[str, Any]:
     if not patents_raw_path.exists():
         patents_raw_path = RAW_DIR / "nirf_patents_by_institute.csv"
     ctx["patents_raw"] = pd.read_csv(patents_raw_path) if patents_raw_path.exists() else pd.DataFrame()
-    ctx["nirf_all"] = load_nirf_all()
+    ctx["nirf_all"] = load_nirf_rankings_all_years()
     return ctx
 
 
@@ -424,7 +430,31 @@ def raw_scalar_trace(
     nirf_id = master_row.get("nirf_institute_id")
     category = master_row.get("nirf_ranking_category")
     if scalar in ("nirf_rank", "nirf_ranking_category"):
-        raw_rank, ref = _raw_rank_row(ctx["nirf_all"], nirf_id, category)
+        ranking_year = processed.get("nirf_ranking_season") or slider_year_to_nirf_ranking_year(
+            processed.get("slider_year")
+        )
+        season_df = ctx["nirf_all"]
+        if ranking_year and not season_df.empty:
+            season_df = season_df[season_df["nirf_year"] == int(ranking_year)]
+        raw_rank, ref = _raw_rank_row(season_df if not season_df.empty else ctx["nirf_all"], nirf_id, category)
+        if raw_rank is None and ranking_year:
+            rank_val, cat_val, _ = lookup_nirf_rank_for_institute(
+                nirf_institute_id=str(nirf_id) if pd.notna(nirf_id) else None,
+                canonical_name=str(master_row["canonical_name"]),
+                ranking_year=int(ranking_year),
+                nirf_all_years=ctx["nirf_all"],
+                inst_type=master_row.get("inst_type"),
+                city=master_row.get("city"),
+                state=master_row.get("state"),
+            )
+            if rank_val is not None:
+                raw_rank = {
+                    "rank": rank_val,
+                    "ranking_category": cat_val,
+                    "institute_id": str(nirf_id) if pd.notna(nirf_id) else "",
+                    "nirf_year": int(ranking_year),
+                }
+                ref = f"nirf_rankings_{ranking_year}.csv (name/ID lookup)"
         if scalar == "nirf_rank":
             return (raw_rank["rank"] if raw_rank else None, ref)
         return (raw_rank["ranking_category"] if raw_rank else None, ref)

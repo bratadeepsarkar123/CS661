@@ -376,6 +376,24 @@ def main() -> None:
             if sample:
                 det += f" (e.g. {sample[0]}: {sample[1]} vs {sample[2]} cr)"
             results.append(check("year-aware funding variance (2020 vs 2023 JSON)", ok_var, det))
+
+            rank_diff = 0
+            rank_sample = None
+            for iid, node23 in n2023.items():
+                node20 = n2020.get(iid)
+                if not node20:
+                    continue
+                r20, r23 = node20.get("nirf_rank"), node23.get("nirf_rank")
+                if r20 is not None and r23 is not None and r20 != r23:
+                    rank_diff += 1
+                    if rank_sample is None:
+                        rank_sample = (node20.get("name"), r20, r23)
+            ok_rank = rank_diff >= 3
+            rank_det = f"{rank_diff} institutes with different NIRF rank 2020 vs 2023 slices"
+            if rank_sample:
+                rank_det += f" (e.g. {rank_sample[0]}: #{rank_sample[1]} vs #{rank_sample[2]})"
+            results.append(check("year-aware NIRF rank variance (2020 vs 2023 JSON)", ok_rank, rank_det))
+
             py2024 = json.loads((dash_data / "2024_full.json").read_text(encoding="utf-8"))
             results.append(
                 check(
