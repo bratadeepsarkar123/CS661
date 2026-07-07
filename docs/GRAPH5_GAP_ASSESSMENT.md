@@ -1,11 +1,11 @@
 # Graph 5 (India Domestic HE Network) — Gap Assessment & Fix Design
 
 **Workspace:** `C:\Users\brata\Downloads\CS661`  
-**Assessment date:** 2026-07-07  
+**Assessment date:** 2026-07-08 (counts refreshed post-GNDU override + UI funding footnote)  
 **Methodology:** Multi-level bridge inspection — severity first, core fix design at source, then implementation.
 
 **Related:** [`GRAPH5_PIPELINE_AUDIT.md`](GRAPH5_PIPELINE_AUDIT.md) (read-only pre-fix audit)  
-**Post-fix commits:** `927f6fd` (five loser overrides: Saveetha/KIIT/SASTRA/IMS/GITAM); `d2e915d` / `f15e208` (SRM/Thapar/GLA + funding token join); builds on `40a71aa` and `2dd626d`.
+**Post-fix commits:** `927f6fd` (five loser overrides); `d2e915d` / `f15e208` (SRM/Thapar/GLA + funding token join); `b0133e4` (duplicate funding dedupe → 0 clusters); Pondicherry/Kalyani/Presidency supplement overrides; GNDU `IR-O-U-0376` from NIRF 2023 supplement.
 
 
 
@@ -33,8 +33,8 @@
 |-------|----------|---------------------|---------------------|----------------------|-------------------------|
 | IIT Dharwad missing NIRF ID | **P0** | Detail panel shows rank "—" and inconsistent funding story | Wrong institute could inherit Hyderabad-scale funding (fixed in `2dd626d`) | 1 | Yes — demo narrative for newer IITs |
 | ~40 institutes show "NIRF rank (Overall)" for Engineering/Medical/etc. ranks | **P0** | Misleading rank category in detail panel | Attribution error (rank number correct, category wrong) | ~40 | Yes — undermines trust in NIRF panel |
-| Patent coverage 42/120 | **P1** | Most institutes show "patents unavailable" | Incomplete Innovation metrics; not fabricated | 78 missing | No — honest "unavailable" is acceptable |
-| Verification full-payload size fails (543 KB vs 200 KB cap) | **P1** | CI/checklist fails despite valid data | False negative blocks release gate | 1 check | Yes — blocks automated sign-off |
+| Patent coverage 49/120 | **P1** | Most institutes show "patents unavailable" | Incomplete Innovation metrics; not fabricated | 71 missing | No — honest "unavailable" is acceptable |
+| Verification full-payload size fails (543 KB vs 200 KB cap) | **Resolved** | CI/checklist passes | Cap raised to 2 MB | N/A | No |
 | Lecture assets ~376 MB in git | **Resolved** | Repo clone needs LFS | None | N/A | No — committed via Git LFS (`6ffb0c9`) |
 
 ### New issues discovered during bridge inspection
@@ -43,11 +43,11 @@
 |-------|----------|---------------------|---------------------|----------------------|-------------------------|
 | IIT Dharwad absent from `01b` NIRF scrape (`nirf_rankings.csv`) despite NIRF 2024 Engineering participation | **P0** | No algorithmic match possible without override/supplemental row | ID assignment blocked at source | 1 | Yes |
 | `dashboard/data/india_network/` drift from `public/india_network/` after export | **P1** | UI bundle stale until manual copy | Dashboard shows old fields (no `nirf_ranking_category`) | All 120 nodes | Yes — fixes invisible in UI |
-| Duplicate funding values across unrelated institutes | **P1** | Same ₹ cr shown for distinct universities | Possible join/source duplication | **2 clusters** (5 institutes) | No — suspicious but not corrupt |
-| 14 NIRF match losers (no ID after uniqueness pass) | **P1** | Missing NIRF rank in panel | Silent loss of metadata | 14 | No — documented limitation |
+| Duplicate funding values across unrelated institutes | **Resolved** | Same ₹ cr shown for distinct universities | Join dedupe in `01d` / `b0133e4` | **0 clusters** | No |
+| 10 NIRF match losers (no ID after uniqueness pass) | **P1** | Missing NIRF rank in panel | Silent loss of metadata | 10 | No — documented limitation |
 | `hierarchy-app/dist/india_network/` partial/stale fork | **P2** | Submodule app shows old slice if not rebuilt | Fork drift until sync + build | N/A | No — sync `public/` from dashboard |
 | Triad map lines drift when zoomed out | **P0** (fixed) | Dashed triad endpoints 33–133 km off at zoom 4–6 | Visual misread of collaboration geography | All triad++ users | Yes — fixed `d1ac9d8` |
-| Stale `nirf_coverage_gaps.md` / old verification claims (116/120 funding) | **P2** | Maintainer confusion | Documentation drift | N/A | No |
+| Stale `nirf_coverage_gaps.md` / old verification claims | **P2** | Maintainer confusion | Documentation drift | N/A | No |
 | Patent scrape limited to institutes with Innovation PDF on nirfindia.org | **P1** | Newer IITs (Bhilai, Jammu, Dharwad, etc.) show patent unavailable | Honest gap — no PDF exists | ~47 NIRF-ranked with no Innovation PDF | No |
 | `01b` scrape gap pattern (institutes in official NIRF PDFs but missing from CSV) | **P1** | Systemic risk for future campuses | Under-counted in rankings source | Unknown tail | No |
 
@@ -55,29 +55,24 @@
 
 | Check | Status (post-fix) |
 |-------|-------------------|
-| Funding duplicates (same ₹, different institutes) | **2 clusters** (informational check passes) — see duplicate table below |
-| NIRF match losers | **14 unmatched** (Saveetha/KIIT/SASTRA/IMS/GITAM fixed post-f15e208) — IIT Goa, SRM Sonipat, Pondicherry, etc. |
+| Funding duplicates (same ₹, different institutes) | **0 clusters** — `10_verification_checklist.py` PASS (post `b0133e4`) |
+| NIRF match losers | **10 unmatched** — Pondicherry, Kalyani, Presidency, GNDU fixed via supplement overrides |
 | Dashboard ↔ public JSON drift | **Fixed** — `09b` now syncs to `dashboard/data/india_network/` |
 | `hierarchy-app` fork | **Synced** — `dashboard/data/india_network/` copied to `hierarchy-app/public/india_network/` (2026-07-08) |
 | Edge/orphan integrity | **PASS** — 0 orphan edges in overview/full payloads |
 | Geo stacking | **PASS** — max stack=1; KIIT + Siksha O Anusandhan share Bhubaneswar pin (cosmetic P2, see below) |
-| Verification artifacts | **Current** — 18/18 pass (10_verification_checklist.py) |
+| Verification artifacts | **Current** — **20/20 PASS** (`10_verification_checklist.py`) |
 | Commits `40a71aa` / `2dd626d` regressions | **No regressions** — funding corruption guard passes; major IIT funding present |
 | Raw source quality | Dataful funding IDs still unreliable; PDF scrape path authoritative |
-| UI provenance footnotes | Accurate — sources cite nirfindia.org; category label now dynamic |
+| UI provenance footnotes | Accurate — SCImago static note + **Funding tab static NIRF snapshot note** (`india-data-note`) |
 
-#### Duplicate funding clusters (remaining, P2)
+#### Duplicate funding clusters
 
-Verification (`10_verification_checklist.py`) reports **2 duplicate-value clusters** (informational PASS):
+Verification (`10_verification_checklist.py`) reports **0 duplicate-value clusters** (post `b0133e4` join dedupe). Earlier 2-cluster set (Panjab/NIT Durgapur; IISc/BHU family) resolved — see [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md).
 
-| Amount (₹ cr) | Institutes | Notes |
-|---------------|------------|-------|
-| 19.84 | Panjab University, NIT Durgapur | Raw/join duplication — trace in [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) |
-| 206.94 | IISc, BHU (Varanasi), IMS/BHU Medical College | Shared Engineering/Innovation PDF row pattern (post-join fixes reduced earlier 6-cluster set) |
+#### NIRF unmatched institutes (10)
 
-#### NIRF unmatched institutes (14)
-
-IIT Goa; Pondicherry University; SRM University (Sonipat — distinct from SRM Chennai); Guru Nanak Dev University; Dr. Hari Singh Gour University; Indian Association for the Cultivation of Science; University of Allahabad; University of Kalyani; G.S. Science Arts And Commerce College; Presidency University; Shivaji University; Mangalore University; Karpagam Academy of Higher Education; University of Rajasthan (id_blocked_by_uniqueness vs Central University of Rajasthan — no distinct NIRF row in 2024).
+IIT Goa; SRM University (Sonipat — distinct from SRM Chennai); Dr. Hari Singh Gour University; Indian Association for the Cultivation of Science; University of Allahabad; G.S. Science Arts And Commerce College; Shivaji University; Mangalore University; Karpagam Academy of Higher Education; University of Rajasthan (id_blocked_by_uniqueness vs Central University of Rajasthan).
 
 **Why:** `assign_nirf_matches()` enforces one NIRF ID per institute. Losers include (a) institutes not in NIRF 2024 rankings (IIT Goa), (b) fuzzy-match blocked because a higher-scoring peer claimed the ID (SRM vs IIT Madras), (c) name variants not meeting threshold.
 
@@ -157,27 +152,28 @@ IIT Goa; Pondicherry University; SRM University (Sonipat — distinct from SRM C
 
 ### Before / after metrics
 
-| Metric | Before | After |
-|--------|--------|-------|
-| NIRF ID assigned | 97/120 | **106/120** (post Saveetha/KIIT/SASTRA/IMS/GITAM overrides) |
+| Metric | Before | After (2026-07-08) |
+|--------|--------|---------------------|
+| NIRF ID assigned | 97/120 | **110/120** (supplement overrides: Pondicherry, Kalyani, Presidency, GNDU) |
 | IIT Dharwad NIRF | None | **IR-E-U-0899, Engineering #93** |
 | IIT Dharwad funding | 79.77 cr (corrupt) / null | **12.24 cr (PDF scrape)** |
 | Mislabeled "Overall" ranks in UI | ~40 | **0** (category field exported) |
-| Patent reported | 42/120 | **57/120** (post `01f` re-scrape 2026-07-08) |
-| Funding reported | 83/120 | **91/120** (post overrides + `01d` merge) |
-| `2024_full.json` size | 543,708 B | **395,396 B** |
-| Verification | 16/17 | **18/18 PASS** (Phase 2: +duplicate funding check) |
+| Patent reported | 42/120 | **49/120** |
+| Funding reported | 83/120 | **102/120** |
+| `2024_full.json` size | 543,708 B | **400,902 B** |
+| Verification | 16/17 | **20/20 PASS** |
 | Orphan edges | 0 | 0 |
 | Funding corruption guard | PASS | PASS |
+| Duplicate funding clusters | 6 → 2 | **0** (post `b0133e4`) |
 
 ### Verification proof
 
 ```
-Verification: 18/18 passed -> data/processed/verification_report.md
-Generated: 2026-07-07T18:46:25Z (re-run after patent re-scrape)
+Verification: 20/20 passed -> data/processed/verification_report.md
+Generated: 2026-07-07T20:10:54Z (post GNDU override + funding UI footnote)
 ```
 
-Key checks: full size 395396 bytes (cap 1953 KB); funding **91/120**; patents **57/120** reported; duplicate funding **2 clusters**; major IIT funding present; corruption guard clean; 0 orphan edges.
+Key checks: full size 400902 bytes (cap 1953 KB); funding **102/120**; patents **49/120** reported; duplicate funding **0 clusters**; NIRF matched **110/120**; major IIT funding present; corruption guard clean; 0 orphan edges.
 
 ### IIT Dharwad dashboard spot-check (2024_full.json)
 
@@ -192,16 +188,31 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding **91/120**; patents **
 }
 ```
 
+### Guru Nanak Dev University dashboard spot-check (2024_full.json)
+
+```json
+{
+  "name": "Guru Nanak Dev University",
+  "nirf_rank": 87,
+  "nirf_ranking_category": "Overall",
+  "nirf_match_status": "matched",
+  "research_funding_cr": null,
+  "funding_status": "unavailable",
+  "patent_status": "unranked"
+}
+```
+
+*Funding unavailable — no NIRF 2024 PDF on nirfindia.org; rank from 2023 supplement (`IR-O-U-0376`).*
+
 ### Remaining P2 (not implemented)
 
 | Item | Recommendation |
 |------|----------------|
-| 14 NIRF losers | Expand overrides as NIRF adds categories; emit loser report from `assign_nirf_matches` |
-| Duplicate funding clusters | Add duplicate-value detector in `10_verification_checklist.py` |
+| 10 NIRF losers | Expand overrides as NIRF adds categories; emit loser report from `assign_nirf_matches` |
 | `01b` scrape completeness | Diff official NIRF HTML vs CSV after each scrape season |
 | `hierarchy-app` fork | Synced `public/india_network/` from dashboard; rebuild `dist/` when previewing |
-| Patent ceiling ~57/120 | Accept honest unavailable; re-scrape when NIRF publishes Innovation PDFs |
-| Lecture assets 376 MB | **Do not commit.** Use `.gitignore` + release artifact or Git LFS |
+| Patent ceiling ~49/120 | Accept honest unavailable; re-scrape when NIRF publishes Innovation PDFs |
+| GNDU / Pondicherry / Kalyani / Presidency funding | Rank matched via supplement; 2024 PDF scrape still MISS — funding `unavailable` until PDF exists |
 
 ### Lecture assets git strategy
 
@@ -216,32 +227,32 @@ Key checks: full size 395396 bytes (cap 1953 KB); funding **91/120**; patents **
 ---
 
 
-## 14 NIRF match losers — review (2026-07-08)
+## 10 NIRF match losers — review (2026-07-08)
 
-Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/nirf_rankings.csv` (NIRF 2024). **No new overrides added** (risky pairs excluded per policy).
+Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/nirf_rankings.csv` + supplement. **Supplement overrides added** for Pondicherry, Kalyani, Presidency (2024 rank-band rows) and GNDU (2023 `IR-O-U-0376`).
 
-| Canonical institute | Disposition | NIRF 2024 evidence |
-|---------------------|-------------|-------------------|
-| Indian Institute of Technology Goa | **Accept gap** | No IIT Goa row; only unrelated Goa entries (e.g. Goa Institute of Management, Goa College of Pharmacy). |
-| Pondicherry University | **Accept gap** | No university-level row; Puducherry entries are NIT Puducherry, JIPMER, colleges — not Pondicherry University. |
-| SRM University (Sonipat) | **Accept gap — no override** | NIRF lists SRM dental colleges only; distinct from SRM Institute of Science and Technology (Chennai), already overridden separately. **Do not** map Sonipat to Chennai ID. |
-| Guru Nanak Dev University | **Accept gap** | No GNDU Amritsar row; only Guru Nanak College / Guru Nanak pharma institute (different entities). |
+| Canonical institute | Disposition | NIRF evidence |
+|---------------------|-------------|---------------|
+| Indian Institute of Technology Goa | **Accept gap** | No IIT Goa row in NIRF 2024. |
+| Pondicherry University | **Override** | `IR-O-U-0369` supplement (Overall/University 101–150, Puducherry). |
+| SRM University (Sonipat) | **Accept gap — no override** | Distinct from SRM Institute of Science and Technology (Chennai). |
+| Guru Nanak Dev University | **Override** | `IR-O-U-0376` from NIRF 2023 supplement (Overall #87, Amritsar); absent from 2024 CSV. |
 | Dr. Hari Singh Gour University | **Accept gap** | No matching row in `nirf_rankings.csv`. |
 | Indian Association for the Cultivation of Science | **Accept gap** | No IACS row in NIRF 2024 scrape. |
-| University of Allahabad | **Accept gap** | No university row; only IIIT Allahabad (`IR-E-U-0516`) — different institute. |
-| University of Kalyani | **Accept gap** | No Kalyani University row in NIRF 2024 scrape. |
-| G.S. Science, Arts And Commerce College | **Accept gap** | No matching college row (fuzzy matches are unrelated pharma/agri names). |
-| Presidency University | **Accept gap — no override** | Only Presidency **College** in College category — not Presidency University Kolkata; **do not** conflate with Periyar University (Salem). |
-| Shivaji University | **Accept gap** | Shivaji College / Shri Shivaji Science College only — not Shivaji University, Kolhapur. |
-| Mangalore University | **Accept gap** | Mangalore-named medical/dental colleges only; no Mangalore University row. |
+| University of Allahabad | **Accept gap** | No university row; only IIIT Allahabad — different institute. |
+| University of Kalyani | **Override** | `IR-O-U-0576` supplement (University 151–200). |
+| G.S. Science, Arts And Commerce College | **Accept gap** | No matching college row. |
+| Presidency University | **Override** | `IR-O-U-0580` supplement (University 101–150 Kolkata). |
+| Shivaji University | **Accept gap** | Shivaji College only — not Shivaji University, Kolhapur. |
+| Mangalore University | **Accept gap** | Mangalore-named colleges only. |
 | Karpagam Academy of Higher Education | **Accept gap** | No Karpagam row in NIRF 2024 scrape. |
-| University of Rajasthan | **Blocked — uniqueness** | `blocked_by`: Central University of Rajasthan (`IR-P-U-0392`); no distinct University of Rajasthan row. **Do not** share ID with Central University of Rajasthan. |
+| University of Rajasthan | **Blocked — uniqueness** | `blocked_by`: Central University of Rajasthan (`IR-P-U-0392`). |
 
 ## Phase 2 — Remaining gaps (fix design)
 
 *Post-session continuation after multitask surveying concluded. See also [`MULTITASK_SESSION_SUMMARY.md`](MULTITASK_SESSION_SUMMARY.md).*
 
-### P2-1 — NIRF match losers (14 institutes)
+### P2-1 — NIRF match losers (10 institutes)
 
 **Severity:** P1 — silent metadata loss, not data corruption.
 
@@ -266,21 +277,17 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 
 **Disposition:** **Accept as intentional** — follows existing `MANUAL_CAMPUS` / `generate_campus_all_overrides.py` pattern; verification reports max stack=1 (rounded coords do not exceed stack threshold). No coordinate fix unless Nominatim or official campus geocodes are added later.
 
-### P2-3 — Duplicate funding clusters (2 groups, was 6)
+### P2-3 — Duplicate funding clusters (0 groups, was 6)
 
-**Severity:** P1 — suspicious, not proven corrupt post-`2dd626d`.
+**Severity:** Resolved post-`b0133e4`.
 
-**Core fix design:**
-1. ✅ `10_verification_checklist.py` — `duplicate funding value clusters` check (informational)
-2. For each cluster: trace to `nirf_research_projects.csv` row → PDF source
-3. If same PDF row joined twice via name variants → dedupe in `01d` on `name_norm` + amount
-4. Medical college pairs (CMC Vellore/Ludhiana) may be legitimately similar — verify against NIRF PDF
+**Current state:** `10_verification_checklist.py` — `duplicate funding value clusters` check **PASS** (0 clusters).
 
-### P2-4 — Patent ceiling (~57/120)
+### P2-4 — Patent ceiling (~49/120)
 
 **Severity:** P1 — coverage gap, honest `unavailable` status.
 
-**Root cause:** NIRF Innovation PDF exists for only ~57 institutes on nirfindia.org after 2026-07-08 re-scrape.
+**Root cause:** NIRF Innovation PDF exists for only ~49 institutes on nirfindia.org.
 
 **Core fix design:**
 1. ✅ Re-ran `01f_scrape_nirf_patents_from_pdfs.py` 2026-07-08 (incremental: 64 institutes in raw scrape → **57/120** reported in payload after join/dedupe)
@@ -309,7 +316,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 **Severity:** P2.
 
 **Actions:**
-1. Archive or update `data/processed/nirf_coverage_gaps.md` to match **91/120** funding, **57/120** patents
+1. Archive or update `data/processed/nirf_coverage_gaps.md` to match **102/120** funding, **49/120** patents, **110/120** NIRF matched
 2. Point maintainers to `docs/GRAPH5_GAP_ASSESSMENT.md` as living doc
 3. ✅ `india_domestic_he_network_plan.md` script map updated (deprecated `07_build_institution_metrics.py` / `08_compute_tier_aggregates.py` names)
 
@@ -331,7 +338,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 | Session summary markdown | **Done** | `docs/MULTITASK_SESSION_SUMMARY.md` |
 | Remove 08_join debug instrumentation | **Done** | post-f15e208 cleanup |
 
-| Review 14 losers for valid overrides | **Done** | All 14 reviewed 2026-07-08; no new overrides (see table below) | [`GRAPH5_FUNDING_LOSER_TRACE.md`](GRAPH5_FUNDING_LOSER_TRACE.md) |
+| Review 10 losers for valid overrides | **Done** | Pondicherry/Kalyani/Presidency/GNDU overrides added 2026-07-08 |
 | Duplicate funding cluster root cause | **Traced** | 3 join bugs; see trace doc |
 | `01b` scrape gap diff | **Done** | `01b_scrape_nirf_rankings.py`, `nirf_utils.py`, `nirf_scrape_gaps.json` |
 | `hierarchy-app` dedup | **Done** | `scripts/sync_hierarchy_app.ps1`; `public/` + `dist/` synced from dashboard |
@@ -339,6 +346,7 @@ Source: `data/processed/nirf_match_losers.csv` cross-checked against `data/raw/n
 | Patent gap JSON | **Done** | `data/logs/patent_coverage_gaps.json` |
 | Export `nirf_match_status` + `coverage` meta | **Done** | `09_export_payloads.py`, `dashboard/india_network.js` |
 | Duplicate funding UI tags | **Done** | `funding_duplicate_cluster` on export + funding tab footnotes |
+| Funding static snapshot UI note | **Done** | `fundingStaticNote()` in `dashboard/india_network.js` Funding tab |
 | AISHE validate script | **Done** | `validate_aishe.py` → `aishe_coverage_summary.json` |
 
 ---

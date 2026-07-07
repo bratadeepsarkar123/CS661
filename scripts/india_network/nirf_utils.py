@@ -169,6 +169,7 @@ NIRF_ID_OVERRIDES: dict[str, str] = {
     "Pondicherry University": "IR-O-U-0369",
     "University of Kalyani": "IR-O-U-0576",
     "Presidency University": "IR-O-U-0580",
+    "Guru Nanak Dev University": "IR-O-U-0376",
 }
 
 # canonical_name -> preferred NIRF institute_name substring for funding join
