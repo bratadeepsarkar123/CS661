@@ -67,6 +67,12 @@ def main() -> None:
     (PUBLIC_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print(f"Wrote manifest.json ({len(available)} years with edges)")
 
+    dash_dir = Path(__file__).resolve().parents[2] / "dashboard" / "data" / "india_network"
+    dash_dir.mkdir(parents=True, exist_ok=True)
+    for path in PUBLIC_DIR.glob("*.json"):
+        shutil.copy(path, dash_dir / path.name)
+    print(f"Synced {len(list(PUBLIC_DIR.glob('*.json')))} JSON files -> {dash_dir}")
+
 
 if __name__ == "__main__":
     main()
