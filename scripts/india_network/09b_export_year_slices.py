@@ -52,17 +52,17 @@ def main() -> None:
         _export.export_year(year, master, edges, hubs, quality)
         available.append(year)
 
-    # Rollup + panel defaults
+    # Rollup; 2024 slice already exported in loop above (true calendar-year edges).
     _export.export_year(None, master, edges, hubs, quality)
-    shutil.copy(PUBLIC_DIR / "all_years_overview.json", PUBLIC_DIR / "2024_overview.json")
-    shutil.copy(PUBLIC_DIR / "all_years_full.json", PUBLIC_DIR / "2024_full.json")
 
     manifest = {
         "year_min": YEAR_MIN,
         "year_max": args.year_max,
         "available_years": available,
-        "default_year": available[-1] if available else "all",
+        "default_year": 2024 if 2024 in available else (available[-1] if available else "all"),
         "quality_year": 2019,
+        "funding_academic_years": ["2020-21", "2021-22", "2022-23"],
+        "patent_calendar_years": [2020, 2021, 2022],
     }
     (PUBLIC_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     print(f"Wrote manifest.json ({len(available)} years with edges)")

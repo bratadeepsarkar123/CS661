@@ -10,6 +10,7 @@ import pandas as pd
 sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR  # noqa: E402
 from nirf_utils import (  # noqa: E402
+    FUNDING_ACADEMIC_YEARS,
     FUNDING_NAME_ALIASES,
     extract_distinguishing_tokens,
     funding_campus_compatible,
@@ -21,6 +22,7 @@ from nirf_utils import (  # noqa: E402
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 FUNDING_PATH = PROCESSED_DIR / "nirf_funding_by_institute.csv"
 OUT_PATH = PROCESSED_DIR / "institution_funding.csv"
+OUT_BY_YEAR_PATH = PROCESSED_DIR / "institution_funding_by_year.csv"
 FUZZY_MIN = 0.88
 
 
@@ -53,6 +55,7 @@ def _pick_funding_row(
     funding: pd.DataFrame,
     funding_idx: pd.DataFrame,
     id_lookup: dict[str, pd.Series],
+    academic_year: str | None = None,
 ) -> tuple[pd.Series | None, float]:
     name = inst["canonical_name"]
     nn = norm_name(name)
@@ -68,6 +71,13 @@ def _pick_funding_row(
     # ID match first — same display name can map to multiple NIRF category rows.
     if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
         row = id_lookup[str(nirf_id)]
+        if academic_year is not None and "academic_year" in row.index:
+            year_rows = funding[
+                (funding["nirf_institute_ids"].astype(str) == str(nirf_id))
+                & (funding["academic_year"].astype(str) == str(academic_year))
+            ]
+            if not year_rows.empty:
+                row = year_rows.iloc[0]
         target = str(row.get("institute_name_nirf", ""))
         if funding_campus_compatible(name, target, city=inst.get("city")):
             score = _funding_name_score(inst, row, alias=alias)
@@ -77,7 +87,11 @@ def _pick_funding_row(
     if nn in funding_idx.index:
         row = funding_idx.loc[nn]
         if isinstance(row, pd.DataFrame):
-            if pd.notna(nirf_id):
+            if academic_year is not None and "academic_year" in row.columns:
+                year_rows = row[row["academic_year"].astype(str) == str(academic_year)]
+                if not year_rows.empty:
+                    row = year_rows.iloc[0]
+            elif pd.notna(nirf_id):
                 matched = row[row["nirf_institute_ids"].astype(str).str.contains(str(nirf_id), regex=False)]
                 if not matched.empty:
                     row = matched.iloc[0]
@@ -115,17 +129,26 @@ def main() -> None:
     funding_idx = funding.set_index("name_norm")
 
     id_lookup: dict[str, pd.Series] = {}
-    for _, f in funding.iterrows():
+    for _, f in funding.sort_values("academic_year", na_position="first").iterrows():
         ids = str(f.get("nirf_institute_ids", "")).split("|")
         for iid in ids:
             iid = iid.strip()
             if iid:
                 id_lookup[iid] = f
 
+    academic_years = list(FUNDING_ACADEMIC_YEARS)
+    present = sorted(funding["academic_year"].dropna().unique(), key=str) if "academic_year" in funding.columns else []
+    if present:
+        academic_years = [str(y) for y in present]
+
+    latest_year = academic_years[-1] if academic_years else None
+
     rows = []
     for _, inst in master.iterrows():
         name = inst["canonical_name"]
-        row, match_score = _pick_funding_row(inst, funding, funding_idx, id_lookup)
+        row, match_score = _pick_funding_row(
+            inst, funding, funding_idx, id_lookup, academic_year=latest_year
+        )
         rows.append(
             {
                 "institution_id": inst["institution_id"],
@@ -140,9 +163,29 @@ def main() -> None:
 
     out = pd.DataFrame(rows)
     out.to_csv(OUT_PATH, index=False)
+
+    by_year_rows = []
+    for ac_year in academic_years:
+        for _, inst in master.iterrows():
+            name = inst["canonical_name"]
+            row, match_score = _pick_funding_row(inst, funding, funding_idx, id_lookup, academic_year=ac_year)
+            by_year_rows.append(
+                {
+                    "institution_id": inst["institution_id"],
+                    "canonical_name": name,
+                    "academic_year": ac_year,
+                    "research_funding_cr": row["research_funding_cr"] if row is not None else pd.NA,
+                    "sponsored_projects": row["sponsored_projects"] if row is not None else pd.NA,
+                    "total_expenditure_cr": row.get("total_expenditure_cr", pd.NA) if row is not None else pd.NA,
+                    "match_score": match_score if row is not None else pd.NA,
+                }
+            )
+    by_year = pd.DataFrame(by_year_rows)
+    by_year.to_csv(OUT_BY_YEAR_PATH, index=False)
     has_funding = out["research_funding_cr"].notna().sum()
     print(f"Wrote {OUT_PATH}")
-    print(f"  Master rows with NIRF funding: {has_funding} / {len(out)}")
+    print(f"Wrote {OUT_BY_YEAR_PATH} ({len(by_year):,} rows, years={academic_years})")
+    print(f"  Master rows with NIRF funding (latest {latest_year}): {has_funding} / {len(out)}")
 
 
 if __name__ == "__main__":

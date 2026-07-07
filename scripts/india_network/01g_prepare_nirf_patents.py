@@ -91,28 +91,32 @@ def main() -> None:
     rows = []
     for (iid, name_norm), grp in raw.groupby(["institute_id", "name_norm"]):
         inst_name = grp["institute_name"].iloc[0]
-        latest_year = grp["calendar_year"].max()
-        sub = grp[grp["calendar_year"] == latest_year] if pd.notna(latest_year) else grp
+        cal_years = sorted(grp["calendar_year"].dropna().unique())
+        if not cal_years:
+            cal_years = [pd.NA]
+        pub_3yr = int(grp[grp["sub_category_norm"].str.contains("published", na=False)]["value"].sum())
+        grant_3yr = int(grp[grp["sub_category_norm"].str.contains("granted", na=False)]["value"].sum())
 
-        pub = sub[sub["sub_category_norm"].str.contains("published", na=False)]["value"]
-        grant = sub[sub["sub_category_norm"].str.contains("granted", na=False)]["value"]
+        for cal_year in cal_years:
+            sub = grp[grp["calendar_year"] == cal_year] if pd.notna(cal_year) else grp
+            if sub.empty:
+                continue
 
-        rows.append(
-            {
-                "name_norm": name_norm,
-                "institute_name_nirf": inst_name,
-                "nirf_institute_id": iid,
-                "patent_calendar_year": latest_year,
-                "patents_published": int(pub.iloc[-1]) if len(pub) else pd.NA,
-                "patents_granted": int(grant.iloc[-1]) if len(grant) else pd.NA,
-                "patents_published_3yr": int(
-                    grp[grp["sub_category_norm"].str.contains("published", na=False)]["value"].sum()
-                ),
-                "patents_granted_3yr": int(
-                    grp[grp["sub_category_norm"].str.contains("granted", na=False)]["value"].sum()
-                ),
-            }
-        )
+            pub = sub[sub["sub_category_norm"].str.contains("published", na=False)]["value"]
+            grant = sub[sub["sub_category_norm"].str.contains("granted", na=False)]["value"]
+
+            rows.append(
+                {
+                    "name_norm": name_norm,
+                    "institute_name_nirf": inst_name,
+                    "nirf_institute_id": iid,
+                    "patent_calendar_year": cal_year,
+                    "patents_published": int(pub.iloc[-1]) if len(pub) else pd.NA,
+                    "patents_granted": int(grant.iloc[-1]) if len(grant) else pd.NA,
+                    "patents_published_3yr": pub_3yr,
+                    "patents_granted_3yr": grant_3yr,
+                }
+            )
 
     out = pd.DataFrame(rows)
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)

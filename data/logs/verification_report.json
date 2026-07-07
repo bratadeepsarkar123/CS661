@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-07-07T20:10:54.540617+00:00",
-  "passed": 20,
-  "total": 20,
+  "generated_at": "2026-07-07T20:34:44.612517+00:00",
+  "passed": 22,
+  "total": 22,
   "all_pass": true,
   "checks": [
     {
@@ -22,12 +22,12 @@
     {
       "name": "overview size",
       "ok": true,
-      "detail": "32056 bytes"
+      "detail": "32422 bytes"
     },
     {
       "name": "full size",
       "ok": true,
-      "detail": "400902 bytes (cap 1953 KB)"
+      "detail": "403945 bytes (cap 1953 KB)"
     },
     {
       "name": "SCImago static year footnote",
@@ -93,6 +93,16 @@
       "name": "temporal edge variance (2015 vs 2022)",
       "ok": true,
       "detail": "2015 weight sum=7184, 2022 weight sum=20139"
+    },
+    {
+      "name": "year-aware funding variance (2020 vs 2023 JSON)",
+      "ok": true,
+      "detail": "102 institutes with different funding 2020 vs 2023 slices (e.g. Indian Institute of Science: 525.722 vs 534.773 cr)"
+    },
+    {
+      "name": "2024 slice is true calendar year",
+      "ok": true,
+      "detail": "2024_full.json year field=2024"
     },
     {
       "name": "NIRF coverage gap report",

@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from config import PROCESSED_DIR  # noqa: E402
 from nirf_utils import (  # noqa: E402
     FUNDING_NAME_ALIASES,
+    PATENT_CALENDAR_YEARS,
     funding_campus_compatible,
     load_nirf_id_overrides,
     name_similarity,
@@ -20,6 +21,7 @@ from nirf_utils import (  # noqa: E402
 MASTER_PATH = PROCESSED_DIR / "institution_master.csv"
 PATENTS_PATH = PROCESSED_DIR / "nirf_patents_by_institute.csv"
 OUT_PATH = PROCESSED_DIR / "institution_patents.csv"
+OUT_BY_YEAR_PATH = PROCESSED_DIR / "institution_patents_by_year.csv"
 
 # Institutions not in NIRF 2024 — no official Innovation PDF exists.
 UNRANKED_NIRF_NAMES = {
@@ -55,6 +57,7 @@ def _pick_row(
     idx: pd.DataFrame,
     id_lookup: dict,
     overrides: dict[str, str],
+    calendar_year: int | None = None,
 ) -> tuple[pd.Series | None, float, str | None]:
     name = inst["canonical_name"]
     nn = norm_name(FUNDING_NAME_ALIASES.get(name, name))
@@ -63,11 +66,25 @@ def _pick_row(
     nirf_id = inst_id
     if pd.notna(nirf_id) and str(nirf_id) in id_lookup:
         row = id_lookup[str(nirf_id)]
+        if calendar_year is not None:
+            year_rows = patents[
+                (patents["nirf_institute_id"].astype(str) == str(nirf_id))
+                & (patents["patent_calendar_year"] == calendar_year)
+            ]
+            if not year_rows.empty:
+                row = year_rows.iloc[0]
         return row, 1.0, str(row.get("nirf_institute_id") or nirf_id)
     if nn in idx.index:
         row = idx.loc[nn]
         if isinstance(row, pd.DataFrame):
-            row = row.iloc[0]
+            if calendar_year is not None and "patent_calendar_year" in row.columns:
+                year_rows = row[row["patent_calendar_year"] == calendar_year]
+                if not year_rows.empty:
+                    row = year_rows.iloc[0]
+                else:
+                    row = row.iloc[0]
+            else:
+                row = row.iloc[0]
         if _patent_row_compatible(inst, row, inst_id):
             return row, 1.0, str(row.get("nirf_institute_id") or nn)
 
@@ -134,6 +151,53 @@ def _dedupe_patent_collisions(out: pd.DataFrame, patents: pd.DataFrame) -> pd.Da
     return out
 
 
+def _append_patent_row(
+    inst: pd.Series,
+    row: pd.Series | None,
+    score: float,
+    source_id: str | None,
+    *,
+    calendar_year: int | None = None,
+) -> dict:
+    name = inst["canonical_name"]
+    if name in UNRANKED_NIRF_NAMES:
+        return {
+            "institution_id": inst["institution_id"],
+            "canonical_name": name,
+            "patents_published": pd.NA,
+            "patents_granted": pd.NA,
+            "patents_published_3yr": pd.NA,
+            "patents_granted_3yr": pd.NA,
+            "patent_calendar_year": calendar_year if calendar_year is not None else pd.NA,
+            "match_score": pd.NA,
+            "nirf_patent_source_id": pd.NA,
+            "patent_status": "unranked",
+        }
+
+    if row is not None and pd.notna(row.get("patents_published")):
+        status = "reported"
+    elif pd.notna(inst.get("nirf_rank")) or pd.notna(inst.get("nirf_institute_id")):
+        status = "unavailable"
+    else:
+        status = "unavailable"
+    return {
+        "institution_id": inst["institution_id"],
+        "canonical_name": name,
+        "patents_published": row["patents_published"] if row is not None else pd.NA,
+        "patents_granted": row["patents_granted"] if row is not None else pd.NA,
+        "patents_published_3yr": row.get("patents_published_3yr", pd.NA) if row is not None else pd.NA,
+        "patents_granted_3yr": row.get("patents_granted_3yr", pd.NA) if row is not None else pd.NA,
+        "patent_calendar_year": (
+            calendar_year
+            if calendar_year is not None
+            else (row.get("patent_calendar_year", pd.NA) if row is not None else pd.NA)
+        ),
+        "match_score": score if row is not None else pd.NA,
+        "nirf_patent_source_id": source_id if source_id else pd.NA,
+        "patent_status": status if row is not None else status,
+    }
+
+
 def main() -> None:
     if not MASTER_PATH.exists():
         raise FileNotFoundError(f"Missing {MASTER_PATH}")
@@ -143,61 +207,43 @@ def main() -> None:
     master = pd.read_csv(MASTER_PATH)
     patents = pd.read_csv(PATENTS_PATH)
     idx = patents.set_index("name_norm")
-    id_lookup = {str(r["nirf_institute_id"]): r for _, r in patents.iterrows()}
+    id_lookup = {}
+    for _, r in patents.sort_values("patent_calendar_year", na_position="first").iterrows():
+        id_lookup[str(r["nirf_institute_id"])] = r
     overrides = load_nirf_id_overrides()
+
+    calendar_years = list(PATENT_CALENDAR_YEARS)
+    present = sorted(patents["patent_calendar_year"].dropna().unique())
+    if len(present):
+        calendar_years = [int(y) for y in present]
+    latest_year = calendar_years[-1] if calendar_years else None
 
     rows = []
     for _, inst in master.iterrows():
-        name = inst["canonical_name"]
-        if name in UNRANKED_NIRF_NAMES:
-            rows.append(
-                {
-                    "institution_id": inst["institution_id"],
-                    "canonical_name": name,
-                    "patents_published": pd.NA,
-                    "patents_granted": pd.NA,
-                    "patents_published_3yr": pd.NA,
-                    "patents_granted_3yr": pd.NA,
-                    "patent_calendar_year": pd.NA,
-                    "match_score": pd.NA,
-                    "nirf_patent_source_id": pd.NA,
-                    "patent_status": "unranked",
-                }
-            )
-            continue
-
-        row, score, source_id = _pick_row(inst, patents, idx, id_lookup, overrides)
-        if row is not None and pd.notna(row.get("patents_published")):
-            status = "reported"
-        elif pd.notna(inst.get("nirf_rank")) or pd.notna(inst.get("nirf_institute_id")):
-            status = "unavailable"
-        else:
-            status = "unavailable"
-        rows.append(
-            {
-                "institution_id": inst["institution_id"],
-                "canonical_name": name,
-                "patents_published": row["patents_published"] if row is not None else pd.NA,
-                "patents_granted": row["patents_granted"] if row is not None else pd.NA,
-                "patents_published_3yr": row.get("patents_published_3yr", pd.NA) if row is not None else pd.NA,
-                "patents_granted_3yr": row.get("patents_granted_3yr", pd.NA) if row is not None else pd.NA,
-                "patent_calendar_year": row.get("patent_calendar_year", pd.NA) if row is not None else pd.NA,
-                "match_score": score if row is not None else pd.NA,
-                "nirf_patent_source_id": source_id if source_id else pd.NA,
-                "patent_status": status if row is not None else status,
-            }
-        )
+        row, score, source_id = _pick_row(inst, patents, idx, id_lookup, overrides, calendar_year=latest_year)
+        rows.append(_append_patent_row(inst, row, score, source_id, calendar_year=latest_year))
 
     out = pd.DataFrame(rows)
     out = _dedupe_patent_collisions(out, patents)
-    # Losers in a collision have nulled source ids; treat as unavailable in the UI.
     stale_dup = out["patent_status"].eq("duplicate_resolved") & out["nirf_patent_source_id"].isna()
     out.loc[stale_dup, "patent_status"] = "unavailable"
     out.to_csv(OUT_PATH, index=False)
+
+    by_year_rows = []
+    for cal_year in calendar_years:
+        for _, inst in master.iterrows():
+            row, score, source_id = _pick_row(inst, patents, idx, id_lookup, overrides, calendar_year=cal_year)
+            by_year_rows.append(_append_patent_row(inst, row, score, source_id, calendar_year=cal_year))
+    by_year = pd.DataFrame(by_year_rows)
+    by_year = _dedupe_patent_collisions(by_year, patents)
+    stale_dup_by = by_year["patent_status"].eq("duplicate_resolved") & by_year["nirf_patent_source_id"].isna()
+    by_year.loc[stale_dup_by, "patent_status"] = "unavailable"
+    by_year.to_csv(OUT_BY_YEAR_PATH, index=False)
     has = out["patents_published"].notna().sum()
     dup = (out["patent_status"] == "duplicate_resolved").sum()
     print(f"Wrote {OUT_PATH}")
-    print(f"  Master rows with NIRF patents: {has} / {len(out)}")
+    print(f"Wrote {OUT_BY_YEAR_PATH} ({len(by_year):,} rows, years={calendar_years})")
+    print(f"  Master rows with NIRF patents (latest {latest_year}): {has} / {len(out)}")
     if dup:
         print(f"  Duplicate-resolved (nulled): {dup}")
 

@@ -353,6 +353,40 @@ def main() -> None:
             )
         )
 
+    dash_data = Path(__file__).resolve().parents[2] / "dashboard" / "data" / "india_network"
+    y2020 = dash_data / "2020_full.json"
+    y2023 = dash_data / "2023_full.json"
+    if y2020.exists() and y2023.exists():
+        try:
+            n2020 = {n["id"]: n for n in json.loads(y2020.read_text(encoding="utf-8")).get("nodes", [])}
+            n2023 = {n["id"]: n for n in json.loads(y2023.read_text(encoding="utf-8")).get("nodes", [])}
+            diff_count = 0
+            sample = None
+            for iid, node20 in n2020.items():
+                node23 = n2023.get(iid)
+                if not node23:
+                    continue
+                f20, f23 = node20.get("research_funding_cr"), node23.get("research_funding_cr")
+                if f20 is not None and f23 is not None and f20 != f23:
+                    diff_count += 1
+                    if sample is None:
+                        sample = (node20.get("name"), f20, f23)
+            ok_var = diff_count >= 5
+            det = f"{diff_count} institutes with different funding 2020 vs 2023 slices"
+            if sample:
+                det += f" (e.g. {sample[0]}: {sample[1]} vs {sample[2]} cr)"
+            results.append(check("year-aware funding variance (2020 vs 2023 JSON)", ok_var, det))
+            py2024 = json.loads((dash_data / "2024_full.json").read_text(encoding="utf-8"))
+            results.append(
+                check(
+                    "2024 slice is true calendar year",
+                    py2024.get("year") == 2024,
+                    f"2024_full.json year field={py2024.get('year')!r}",
+                )
+            )
+        except (json.JSONDecodeError, OSError) as exc:
+            results.append(check("year-aware funding variance (2020 vs 2023 JSON)", False, str(exc)))
+
     try:
         from report_nirf_gaps import run_report  # noqa: WPS433
 

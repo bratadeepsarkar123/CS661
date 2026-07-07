@@ -119,10 +119,50 @@ const INDIA = (() => {
         : "";
     const sliceYear =
       net.meta?.year && net.meta.year !== "all" ? String(net.meta.year) : null;
-    const sliderClause = sliceYear
-      ? ` Year slider (${sliceYear}) filters domestic co-publication edges only — sponsored research does not change with the slider.`
-      : " Static across the year slider; the slider controls collaboration edges only.";
-    return `<p class="india-data-note">Sponsored research is a NIRF snapshot from official PDFs (latest academic year in 2024 rankings, typically 2022–23)${fundCount}.${sliderClause}</p>`;
+    const fundAcad = net.meta?.funding_academic_year_mapped;
+    const patentCal = net.meta?.patent_calendar_year_mapped;
+    const temporal = net.meta?.temporal_metrics_note;
+
+    if (sliceYear && fundAcad) {
+      const mismatch =
+        net.meta?.funding_academic_year_mapped &&
+        sliceYear >= 2021 &&
+        ((sliceYear === "2021" && fundAcad !== "2020-21") ||
+          (sliceYear === "2022" && fundAcad !== "2021-22") ||
+          (Number(sliceYear) >= 2023 && fundAcad !== "2022-23" && Number(sliceYear) <= 2023));
+      const patentNote =
+        patentCal && Number(sliceYear) !== Number(patentCal) && Number(sliceYear) > 2022
+          ? ` Patents shown for calendar year ${patentCal} (latest Innovation PDF year).`
+          : "";
+      const carryNote =
+        Number(sliceYear) < 2021
+          ? " Funding uses earliest available NIRF academic year (2020-21)."
+          : "";
+      return `<p class="india-data-note">Sponsored research follows the year slider: NIRF academic year <strong>${fundAcad}</strong> for collaboration year ${sliceYear}${fundCount}.${patentNote}${carryNote}${mismatch ? " NIRF rank remains 2024 snapshot." : ""}</p>`;
+    }
+    if (temporal) {
+      return `<p class="india-data-note">${temporal}${fundCount}</p>`;
+    }
+    return `<p class="india-data-note">Sponsored research is a NIRF snapshot from official PDFs (latest academic year, typically 2022–23)${fundCount}. Static across the year slider; the slider controls collaboration edges only.</p>`;
+  }
+
+  function metricYearMismatchNote(node, net) {
+    const sliceYear =
+      net.meta?.year && net.meta.year !== "all" ? Number(net.meta.year) : null;
+    if (!sliceYear) return "";
+    const notes = [];
+    if (node.funding_year_mismatch) {
+      notes.push(
+        `Funding academic year (${node.funding_academic_year || "—"}) is mapped from slider ${sliceYear}, not a direct calendar match.`
+      );
+    }
+    if (node.patent_year_mismatch) {
+      notes.push(
+        `Patent calendar year (${node.patent_calendar_year || "—"}) differs from collaboration year ${sliceYear} — latest scraped Innovation PDF year used.`
+      );
+    }
+    if (!notes.length) return "";
+    return `<p class="india-data-note">${notes.join(" ")}</p>`;
   }
 
   function ensureLoaded() {
@@ -352,6 +392,7 @@ const INDIA = (() => {
         ${nirfStatusNote(node)}
         ${patentBlock}
         ${tierAvg != null ? `<p class="india-funding-note">${tierLabel(node.tier)} tier avg sponsored research: <strong>₹${tierAvg.toFixed(1)} Cr</strong> (institutions with NIRF submissions only).</p>` : ""}
+        ${metricYearMismatchNote(node, net)}
         ${fundingStaticNote(net)}
         <p class="india-funding-note">Source: official NIRF PDFs on nirfindia.org (free). Not all HEIs file detailed returns.</p>
       `;

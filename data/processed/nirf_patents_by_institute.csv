@@ -1,57 +1,169 @@
 name_norm,institute_name_nirf,nirf_institute_id,patent_calendar_year,patents_published,patents_granted,patents_published_3yr,patents_granted_3yr
+institute of medical sciences,Institute of Medical Sciences,IR-D-U-0500,2020,9,2,16,9
+institute of medical sciences,Institute of Medical Sciences,IR-D-U-0500,2021,1,3,16,9
 institute of medical sciences,Institute of Medical Sciences,IR-D-U-0500,2022,6,4,16,9
+thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-E-I-1480,2020,18,17,130,74
+thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-E-I-1480,2021,37,40,130,74
 thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-E-I-1480,2022,75,17,130,74
+national institute of technology warangal,National Institute of Technology Warangal,IR-E-U-0025,2020,7,8,27,27
+national institute of technology warangal,National Institute of Technology Warangal,IR-E-U-0025,2021,10,17,27,27
 national institute of technology warangal,National Institute of Technology Warangal,IR-E-U-0025,2022,10,2,27,27
+birla institute of technology mesra,"Birla Institute of Technology, Mesra",IR-E-U-0202,2020,0,5,22,11
+birla institute of technology mesra,"Birla Institute of Technology, Mesra",IR-E-U-0202,2021,11,2,22,11
 birla institute of technology mesra,"Birla Institute of Technology, Mesra",IR-E-U-0202,2022,11,4,22,11
+national institute of technology karnataka,National Institute of Technology Karnataka,IR-E-U-0237,2020,11,8,44,24
+national institute of technology karnataka,National Institute of Technology Karnataka,IR-E-U-0237,2021,15,7,44,24
 national institute of technology karnataka,National Institute of Technology Karnataka,IR-E-U-0237,2022,18,9,44,24
+indian institute of technology bhubaneswar,Indian Institute of Technology Bhubaneswar,IR-E-U-0355,2020,3,0,14,4
+indian institute of technology bhubaneswar,Indian Institute of Technology Bhubaneswar,IR-E-U-0355,2021,4,2,14,4
 indian institute of technology bhubaneswar,Indian Institute of Technology Bhubaneswar,IR-E-U-0355,2022,7,2,14,4
+national institute of technology rourkela,National Institute of Technology Rourkela,IR-E-U-0357,2020,17,4,37,17
+national institute of technology rourkela,National Institute of Technology Rourkela,IR-E-U-0357,2021,9,5,37,17
 national institute of technology rourkela,National Institute of Technology Rourkela,IR-E-U-0357,2022,11,8,37,17
+malaviya national institute of technology jaipur,Malaviya National Institute of Technology Jaipur,IR-E-U-0410,2020,4,0,15,13
+malaviya national institute of technology jaipur,Malaviya National Institute of Technology Jaipur,IR-E-U-0410,2021,4,6,15,13
 malaviya national institute of technology jaipur,Malaviya National Institute of Technology Jaipur,IR-E-U-0410,2022,7,7,15,13
+national institute of technology tiruchirappalli,National Institute of Technology Tiruchirappalli,IR-E-U-0467,2020,4,3,31,29
+national institute of technology tiruchirappalli,National Institute of Technology Tiruchirappalli,IR-E-U-0467,2021,12,11,31,29
 national institute of technology tiruchirappalli,National Institute of Technology Tiruchirappalli,IR-E-U-0467,2022,15,15,31,29
+vellore institute of technology university,Vellore Institute of Technology University,IR-E-U-0490,2020,140,9,333,39
+vellore institute of technology university,Vellore Institute of Technology University,IR-E-U-0490,2021,117,18,333,39
 vellore institute of technology university,Vellore Institute of Technology University,IR-E-U-0490,2022,76,12,333,39
+indian institute of technology tirupati,Indian Institute of Technology Tirupati,IR-E-U-0844,2020,0,1,4,2
+indian institute of technology tirupati,Indian Institute of Technology Tirupati,IR-E-U-0844,2021,3,0,4,2
 indian institute of technology tirupati,Indian Institute of Technology Tirupati,IR-E-U-0844,2022,1,1,4,2
+indian institute of technology palakkad,Indian Institute of Technology Palakkad,IR-E-U-0878,2020,0,0,4,3
+indian institute of technology palakkad,Indian Institute of Technology Palakkad,IR-E-U-0878,2021,2,1,4,3
 indian institute of technology palakkad,Indian Institute of Technology Palakkad,IR-E-U-0878,2022,2,2,4,3
+galgotias university,Galgotias University,IR-M-U-0643,2020,78,14,237,59
+galgotias university,Galgotias University,IR-M-U-0643,2021,60,28,237,59
 galgotias university,Galgotias University,IR-M-U-0643,2022,99,17,237,59
+indian institute of technology delhi,Indian Institute of Technology Delhi,IR-O-I-1074,2020,97,56,359,221
+indian institute of technology delhi,Indian Institute of Technology Delhi,IR-O-I-1074,2021,154,77,359,221
 indian institute of technology delhi,Indian Institute of Technology Delhi,IR-O-I-1074,2022,108,88,359,221
+indian institute of technology kanpur,Indian Institute of Technology Kanpur,IR-O-I-1075,2020,47,56,141,214
+indian institute of technology kanpur,Indian Institute of Technology Kanpur,IR-O-I-1075,2021,42,54,141,214
 indian institute of technology kanpur,Indian Institute of Technology Kanpur,IR-O-I-1075,2022,52,104,141,214
+saveetha university,Saveetha University,IR-O-I-1441,2020,41,2,666,105
+saveetha university,Saveetha University,IR-O-I-1441,2021,162,13,666,105
 saveetha university,Saveetha University,IR-O-I-1441,2022,252,7,666,105
+thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-O-I-1480,2020,18,17,130,74
+thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-O-I-1480,2021,37,40,130,74
 thapar institute of engineering technology,Thapar Institute of Engineering & Technology,IR-O-I-1480,2022,75,17,130,74
+andhra university,Andhra University,IR-O-U-0006,2020,16,2,127,18
+andhra university,Andhra University,IR-O-U-0006,2021,48,7,127,18
 andhra university,Andhra University,IR-O-U-0006,2022,63,9,127,18
+indian institute of technology hyderabad,Indian Institute of Technology Hyderabad,IR-O-U-0013,2020,22,5,83,20
+indian institute of technology hyderabad,Indian Institute of Technology Hyderabad,IR-O-U-0013,2021,33,3,83,20
 indian institute of technology hyderabad,Indian Institute of Technology Hyderabad,IR-O-U-0013,2022,28,12,83,20
+national institute of technology warangal,National Institute of Technology Warangal,IR-O-U-0025,2020,7,8,27,27
+national institute of technology warangal,National Institute of Technology Warangal,IR-O-U-0025,2021,10,17,27,27
 national institute of technology warangal,National Institute of Technology Warangal,IR-O-U-0025,2022,10,2,27,27
+indian institute of technology guwahati,Indian Institute of Technology Guwahati,IR-O-U-0053,2020,35,4,106,30
+indian institute of technology guwahati,Indian Institute of Technology Guwahati,IR-O-U-0053,2021,46,16,106,30
 indian institute of technology guwahati,Indian Institute of Technology Guwahati,IR-O-U-0053,2022,25,10,106,30
+panjab university,Panjab University,IR-O-U-0078,2020,18,14,83,56
+panjab university,Panjab University,IR-O-U-0078,2021,31,19,83,56
 panjab university,Panjab University,IR-O-U-0078,2022,34,23,83,56
+delhi technological university,Delhi Technological University,IR-O-U-0098,2020,13,1,53,7
+delhi technological university,Delhi Technological University,IR-O-U-0098,2021,17,2,53,7
 delhi technological university,Delhi Technological University,IR-O-U-0098,2022,23,4,53,7
+jamia hamdard,Jamia Hamdard,IR-O-U-0107,2020,4,3,14,4
+jamia hamdard,Jamia Hamdard,IR-O-U-0107,2021,5,1,14,4
 jamia hamdard,Jamia Hamdard,IR-O-U-0107,2022,5,0,14,4
+jamia millia islamia,Jamia Millia Islamia,IR-O-U-0108,2020,40,11,101,39
+jamia millia islamia,Jamia Millia Islamia,IR-O-U-0108,2021,35,12,101,39
 jamia millia islamia,Jamia Millia Islamia,IR-O-U-0108,2022,26,16,101,39
+jawaharlal nehru university,Jawaharlal Nehru University,IR-O-U-0109,2020,3,4,44,7
+jawaharlal nehru university,Jawaharlal Nehru University,IR-O-U-0109,2021,16,1,44,7
 jawaharlal nehru university,Jawaharlal Nehru University,IR-O-U-0109,2022,25,2,44,7
+indian institute of technology gandhinagar,Indian Institute of Technology Gandhinagar,IR-O-U-0139,2020,5,1,23,8
+indian institute of technology gandhinagar,Indian Institute of Technology Gandhinagar,IR-O-U-0139,2021,11,3,23,8
 indian institute of technology gandhinagar,Indian Institute of Technology Gandhinagar,IR-O-U-0139,2022,7,4,23,8
+indian institute of technology mandi,Indian Institute of Technology Mandi,IR-O-U-0184,2020,9,4,40,21
+indian institute of technology mandi,Indian Institute of Technology Mandi,IR-O-U-0184,2021,14,6,40,21
 indian institute of technology mandi,Indian Institute of Technology Mandi,IR-O-U-0184,2022,17,11,40,21
+indian institute of technology ism dhanbad,Indian Institute of Technology (ISM) Dhanbad,IR-O-U-0205,2020,5,3,19,22
+indian institute of technology ism dhanbad,Indian Institute of Technology (ISM) Dhanbad,IR-O-U-0205,2021,3,7,19,22
 indian institute of technology ism dhanbad,Indian Institute of Technology (ISM) Dhanbad,IR-O-U-0205,2022,11,12,19,22
+indian institute of science,Indian Institute of Science,IR-O-U-0220,2020,30,29,245,129
+indian institute of science,Indian Institute of Science,IR-O-U-0220,2021,50,38,245,129
 indian institute of science,Indian Institute of Science,IR-O-U-0220,2022,165,62,245,129
+jain university,Jain University,IR-O-U-0223,2020,11,1,785,18
+jain university,Jain University,IR-O-U-0223,2021,70,9,785,18
 jain university,Jain University,IR-O-U-0223,2022,704,8,785,18
+manipal academy of higher education,Manipal Academy of Higher Education,IR-O-U-0234,2020,22,3,69,14
+manipal academy of higher education,Manipal Academy of Higher Education,IR-O-U-0234,2021,22,4,69,14
 manipal academy of higher education,Manipal Academy of Higher Education,IR-O-U-0234,2022,25,7,69,14
+national institute of technology karnataka,National Institute of Technology Karnataka,IR-O-U-0237,2020,11,8,44,24
+national institute of technology karnataka,National Institute of Technology Karnataka,IR-O-U-0237,2021,15,7,44,24
 national institute of technology karnataka,National Institute of Technology Karnataka,IR-O-U-0237,2022,18,9,44,24
+indian institute of technology indore,Indian Institute of Technology Indore,IR-O-U-0273,2020,7,1,31,19
+indian institute of technology indore,Indian Institute of Technology Indore,IR-O-U-0273,2021,11,10,31,19
 indian institute of technology indore,Indian Institute of Technology Indore,IR-O-U-0273,2022,13,8,31,19
+indian institute of technology bombay,Indian Institute of Technology Bombay,IR-O-U-0306,2020,129,101,499,357
+indian institute of technology bombay,Indian Institute of Technology Bombay,IR-O-U-0306,2021,142,116,499,357
 indian institute of technology bombay,Indian Institute of Technology Bombay,IR-O-U-0306,2022,228,140,499,357
+symbiosis international university,Symbiosis International University,IR-O-U-0329,2020,20,1,161,5
+symbiosis international university,Symbiosis International University,IR-O-U-0329,2021,53,1,161,5
 symbiosis international university,Symbiosis International University,IR-O-U-0329,2022,88,3,161,5
+national institute of technology rourkela,National Institute of Technology Rourkela,IR-O-U-0357,2020,17,4,37,17
+national institute of technology rourkela,National Institute of Technology Rourkela,IR-O-U-0357,2021,9,5,37,17
 national institute of technology rourkela,National Institute of Technology Rourkela,IR-O-U-0357,2022,11,8,37,17
+chitkara university,Chitkara University,IR-O-U-0373,2020,50,19,540,293
+chitkara university,Chitkara University,IR-O-U-0373,2021,109,81,540,293
 chitkara university,Chitkara University,IR-O-U-0373,2022,381,193,540,293
+indian institute of technology ropar,Indian Institute of Technology Ropar,IR-O-U-0378,2020,18,2,41,13
+indian institute of technology ropar,Indian Institute of Technology Ropar,IR-O-U-0378,2021,12,5,41,13
 indian institute of technology ropar,Indian Institute of Technology Ropar,IR-O-U-0378,2022,11,6,41,13
+lovely professional university,Lovely Professional University,IR-O-U-0379,2020,610,20,2089,160
+lovely professional university,Lovely Professional University,IR-O-U-0379,2021,538,75,2089,160
 lovely professional university,Lovely Professional University,IR-O-U-0379,2022,941,65,2089,160
+malaviya national institute of technology jaipur,Malaviya National Institute of Technology Jaipur,IR-O-U-0410,2020,4,0,15,13
+malaviya national institute of technology jaipur,Malaviya National Institute of Technology Jaipur,IR-O-U-0410,2021,4,6,15,13
 malaviya national institute of technology jaipur,Malaviya National Institute of Technology Jaipur,IR-O-U-0410,2022,7,7,15,13
+bharathiar university,Bharathiar University,IR-O-U-0447,2020,1,2,5,9
+bharathiar university,Bharathiar University,IR-O-U-0447,2021,2,3,5,9
 bharathiar university,Bharathiar University,IR-O-U-0447,2022,2,4,5,9
+indian institute of technology madras,Indian Institute of Technology Madras,IR-O-U-0456,2020,243,123,687,459
+indian institute of technology madras,Indian Institute of Technology Madras,IR-O-U-0456,2021,197,144,687,459
 indian institute of technology madras,Indian Institute of Technology Madras,IR-O-U-0456,2022,247,192,687,459
+national institute of technology tiruchirappalli,National Institute of Technology Tiruchirappalli,IR-O-U-0467,2020,4,3,31,29
+national institute of technology tiruchirappalli,National Institute of Technology Tiruchirappalli,IR-O-U-0467,2021,12,11,31,29
 national institute of technology tiruchirappalli,National Institute of Technology Tiruchirappalli,IR-O-U-0467,2022,15,15,31,29
+sathyabama institute of science and technology,Sathyabama Institute of Science and Technology,IR-O-U-0474,2020,94,13,393,115
+sathyabama institute of science and technology,Sathyabama Institute of Science and Technology,IR-O-U-0474,2021,100,24,393,115
 sathyabama institute of science and technology,Sathyabama Institute of Science and Technology,IR-O-U-0474,2022,199,78,393,115
+vel tech rangarajan dr sagunthala r d institute of science and technology,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,IR-O-U-0489,2020,5,5,102,25
+vel tech rangarajan dr sagunthala r d institute of science and technology,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,IR-O-U-0489,2021,54,7,102,25
 vel tech rangarajan dr sagunthala r d institute of science and technology,Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology,IR-O-U-0489,2022,43,13,102,25
+vellore institute of technology university,Vellore Institute of Technology University,IR-O-U-0490,2020,140,9,333,39
+vellore institute of technology university,Vellore Institute of Technology University,IR-O-U-0490,2021,117,18,333,39
 vellore institute of technology university,Vellore Institute of Technology University,IR-O-U-0490,2022,76,12,333,39
+aligarh muslim university,Aligarh Muslim University,IR-O-U-0496,2020,14,5,24,26
+aligarh muslim university,Aligarh Muslim University,IR-O-U-0496,2021,5,16,24,26
 aligarh muslim university,Aligarh Muslim University,IR-O-U-0496,2022,5,5,24,26
+amity university,Amity University,IR-O-U-0497,2020,79,28,262,149
+amity university,Amity University,IR-O-U-0497,2021,105,52,262,149
 amity university,Amity University,IR-O-U-0497,2022,78,69,262,149
+banaras hindu university,Banaras Hindu University,IR-O-U-0500,2020,9,2,16,9
+banaras hindu university,Banaras Hindu University,IR-O-U-0500,2021,1,3,16,9
 banaras hindu university,Banaras Hindu University,IR-O-U-0500,2022,6,4,16,9
+indian institute of technology roorkee,Indian Institute of Technology Roorkee,IR-O-U-0560,2020,30,5,208,46
+indian institute of technology roorkee,Indian Institute of Technology Roorkee,IR-O-U-0560,2021,104,11,208,46
 indian institute of technology roorkee,Indian Institute of Technology Roorkee,IR-O-U-0560,2022,74,30,208,46
+indian institute of technology kharagpur,Indian Institute of Technology Kharagpur,IR-O-U-0573,2020,73,20,174,62
+indian institute of technology kharagpur,Indian Institute of Technology Kharagpur,IR-O-U-0573,2021,60,17,174,62
 indian institute of technology kharagpur,Indian Institute of Technology Kharagpur,IR-O-U-0573,2022,41,25,174,62
+presidency university,Presidency University,IR-O-U-0580,2020,3,2,17,5
+presidency university,Presidency University,IR-O-U-0580,2021,5,1,17,5
 presidency university,Presidency University,IR-O-U-0580,2022,9,2,17,5
+indian institute of technology bhu varanasi,Indian Institute of Technology (BHU) Varanasi,IR-O-U-0701,2020,42,0,129,43
+indian institute of technology bhu varanasi,Indian Institute of Technology (BHU) Varanasi,IR-O-U-0701,2021,70,2,129,43
 indian institute of technology bhu varanasi,Indian Institute of Technology (BHU) Varanasi,IR-O-U-0701,2022,17,41,129,43
+chandigarh university,Chandigarh University,IR-O-U-0747,2020,476,22,1524,91
+chandigarh university,Chandigarh University,IR-O-U-0747,2021,238,45,1524,91
 chandigarh university,Chandigarh University,IR-O-U-0747,2022,810,24,1524,91
+annamalai university,Annamalai University,IR-P-U-0443,2020,0,0,6,0
+annamalai university,Annamalai University,IR-P-U-0443,2021,0,0,6,0
 annamalai university,Annamalai University,IR-P-U-0443,2022,6,0,6,0
