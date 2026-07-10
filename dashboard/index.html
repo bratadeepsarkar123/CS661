@@ -28,6 +28,7 @@
           CS661 · Group 10 · Visual Analytics
         </div>
       </div>
+      <p class="hero-eyebrow">Does money buy scientific excellence?</p>
       <h1 class="hero-title">
         The Global Knowledge<br>
         <span class="gradient-text">&amp; Wealth Paradox</span>
@@ -49,7 +50,7 @@
   <!-- VISUALIZATION GALLERY -->
   <main class="gallery-section">
     <div class="gallery-header">
-      <h2>Choose a Visualization</h2>
+      <h2><span class="section-num">§</span> Choose a Visualization</h2>
       <p>Click any panel to open the full interactive experience</p>
     </div>
 
@@ -68,6 +69,7 @@
           <div class="viz-number">01</div>
           <h3>High-Dimensional Peer Clustering</h3>
           <p>Revealing scientific peer groups based on macroeconomic and academic indicators</p>
+          <p class="card-insight">⟶ US & China cluster apart despite similar spend profiles</p>
           <div class="card-tags">
             <span class="tag">t-SNE / UMAP</span>
             <span class="tag">2D Scatter Plot</span>
@@ -89,6 +91,7 @@
           <div class="viz-number">02</div>
           <h3>Global Quality Shift</h3>
           <p>Tracking how the global mix of elite (Q1) vs low-tier (Q4) publication quality evolves over time</p>
+          <p class="card-insight">⟶ Parity shifted to a Q4 volume spike after 2018</p>
           <div class="card-tags">
             <span class="tag">Bar Graph</span>
             <span class="tag">Grouped/Stacked</span>
@@ -110,6 +113,7 @@
           <div class="viz-number">03</div>
           <h3>Top Research topics</h3>
           <p>Ranking the most-published research topics globally and showing field prominence changes</p>
+          <p class="card-insight">⟶ Machine Learning surged to #1 starting in 2019</p>
           <div class="card-tags">
             <span class="tag">Bar Chart Race</span>
             <span class="tag">Dynamic Sorting</span>
@@ -130,6 +134,7 @@
           <div class="viz-number">04</div>
           <h3>The Collaboration Premium</h3>
           <p>Quantifying the citation gap between purely domestic papers and internationally co-authored research</p>
+          <p class="card-insight">⟶ Collaboration premium yields up to 4x citation gains</p>
           <div class="card-tags">
             <span class="tag">Dumbbell Plot</span>
             <span class="tag">Citation Gain</span>
@@ -151,6 +156,7 @@
           <div class="viz-number">05</div>
           <h3>India Domestic Higher Education Network</h3>
           <p>Mapping India's domestic collaboration landscape and differences between elite and state-affiliated institutions</p>
+          <p class="card-insight">⟶ Premier institutes act as central hubs, isolating state tier</p>
           <div class="card-tags">
             <span class="tag">Geospatial Node-Link</span>
             <span class="tag">Network</span>
@@ -173,14 +179,16 @@
   <!-- FULLSCREEN VIZ PANEL -->
   <div class="viz-panel" id="viz-panel">
     <div class="panel-header">
-      <button class="back-btn" onclick="closeViz()">
-        ← Back to Dashboard
-      </button>
-      <div class="panel-title-area">
-        <span class="panel-viz-num" id="panel-num">01</span>
-        <h2 class="panel-title" id="panel-title">Visualization Title</h2>
+      <div class="panel-header-top">
+        <button class="back-btn" onclick="closeViz()">
+          ← Back to Dashboard
+        </button>
+        <div class="panel-title-area">
+          <span class="panel-viz-num" id="panel-num">01</span>
+          <h2 class="panel-title" id="panel-title">Visualization Title</h2>
+        </div>
       </div>
-      <div class="panel-controls" id="panel-controls">
+      <div class="panel-header-controls" id="panel-controls">
         <!-- Populated dynamically per viz -->
       </div>
     </div>
