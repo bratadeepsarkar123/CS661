@@ -488,28 +488,54 @@ The true power of this module lies in its sorting mechanics. Users can dynamical
 The plot definitively proves the existence of the Collaboration Premium; almost universally, the connecting lines stretch to the right (indicating a positive gain). However, the magnitude of the gain exposes severe structural dependencies. Established nations show a relatively modest premium, meaning their domestic science is already highly respected. Conversely, emerging economies exhibit massive connecting lines. This visualizes a critical reality: to achieve elite, globally recognized citation metrics, researchers in developing nations are heavily reliant on attaching their names to foreign partnerships.
 
 \subsection{Module 5: Micro-Analysis of the Indian Ecosystem}
-\subsubsection{Design Rationale}
+
+\subsubsection{Design Rationale and Alignment}
 To ground the global paradox in reality, we zoomed in on India---a nation undergoing explosive academic expansion but suffering from immense internal inequality. We aimed to map the physical and collaborative infrastructure of India's higher education system to highlight the disparity between elite central institutes and state-affiliated colleges.
 
+\textbf{Proposal vs. Implementation Alignment:} The initial project proposal (Section 4.6) specified the use of "Hierarchical Treemaps or Zoomable Sunburst Diagrams" for this module. However, after extensive data exploration, we concluded that the core analytical structure of India's domestic research collaboration is relational, not strictly hierarchical. It consists of co-authorship links between institutions spread across geography. A treemap encodes containment, which cannot naturally represent pairwise collaboration intensity or the geographic clustering of hubs. Therefore, we pivoted to a \textbf{geospatial node-link network}. This layout directly encodes physical position, collaboration links, and research volume, making it the analytically correct choice for mapping the hub-versus-periphery topology of India's knowledge economy.
+
 \subsubsection{Technical Implementation}
-This module required complex geospatial rendering. We utilized D3's `geoMercator` projection to translate raw GeoJSON polygon coordinates of India's borders into SVG paths. Overlaid on this map is a Force-Directed Node-Link graph. 
-Nodes (representing institutions) are pinned to their actual geographic longitude and latitude. Edges (representing co-publications between institutes) are drawn between them. We heavily customized the D3 `d3.forceSimulation` to prevent nodes from overlapping excessively while still maintaining their general geographic accuracy.
+This module processes an immense amount of localized data, merging OpenAlex bibliometric API endpoints (for co-authorship edges and publication volumes), SCImago for citation quality, and scraped NIRF and DST datasets for exact domestic research funding (in INR Crores) and patent counts. 
+
+The visualization utilizes D3's \texttt{geoMercator} projection to translate GeoJSON coordinates of India into SVG paths, overlaying a custom \texttt{d3.forceSimulation} Node-Link graph. To prevent cognitive overload, the module employs a two-level architectural design:
+\begin{itemize}
+    \item \textbf{Overview Grid (Level A)}: Displays only a sparse representation of major hubs (nodes with high degree centrality) and hub-to-hub edges to keep the browser payload light ($<40$ KB).
+    \item \textbf{Fullscreen Detail (Level B)}: Upon clicking the panel, the module expands to reveal the full network (up to 120 institutions and hundreds of edges) and invokes a Focus + Context interaction model.
+\end{itemize}
 
 \subsubsection{Visual Encodings}
+To avoid "chartjunk" and adhere to strict data-ink ratios, the visual encodings were limited to four precise channels:
 \begin{itemize}
-    \item \textbf{Geography (X, Y)}: Nodes are positioned on the map corresponding to their physical campus locations.
-    \item \textbf{Size (Radius)}: Scaled to represent the total research output or total domestic funding received by the institution.
-    \item \textbf{Color}: A strict binary color coding: vivid gold for "Premier" institutes (IITs, IISc, AIIMS) and a muted, translucent blue for "State \& Affiliated" colleges.
-    \item \textbf{Edges (Thickness)}: The stroke width of the connecting lines represents the volume of joint publications between two institutions.
+    \item \textbf{Geography (X, Y)}: Nodes are pinned to the map corresponding to their exact campus latitude and longitude coordinates.
+    \item \textbf{Size (Area)}: The area (via square-root scaling) of each node is strictly proportional to the institution's total publication volume (\texttt{total\_works}). 
+    \item \textbf{Color}: A binary categorical mapping to differentiate tiers: a bold blue (\#3b82f6) for "Premier / Elite" institutes (IITs, IISc, major NITs) and a distinct purple (\#a855f7) for "State \& Affiliated" universities. 
+    \item \textbf{Edges (Thickness)}: The stroke width of the connecting lines represents the exact volume of domestic co-authored publications between two institutions, forming visible "collaboration corridors."
 \end{itemize}
 
 \subsubsection{Interactive Capabilities}
-Users can interact with a timeline slider to watch the network grow over time. A comprehensive filter panel allows users to toggle visibility based on institution tier (e.g., hiding all state colleges to view only the premier network). Clicking on any specific node triggers a detailed, glassmorphism-styled sidebar card displaying the institution's precise NIRF ranking, funding allocations, and Q1 publication percentage.
+The module features a deep level of interactivity. Clicking on a specific node triggers a "fisheye-style" focus effect, highlighting the ego-network (direct collaborators) of that institution while dimming the rest of the map. Simultaneously, a glassmorphism-styled detail card opens, containing tabs for \textbf{Funding} (displaying specific NIRF R\&D funding allocations and sponsored projects) and \textbf{Publications} (displaying SCImago Q1 percentage, h-index, and total works). A global timeline slider allows users to observe the growth of these collaboration corridors from 2015 to the present.
+
+\subsubsection{Dashboard Screenshots}
+\begin{figure}[H]
+    \centering
+    % TODO: Insert screenshot showing the Overview Grid thumbnail for Module 5
+    \includegraphics[width=0.95\textwidth]{module5_overview.png}
+    \caption{Module 5 Overview: A sparse geographic representation highlighting primary research hubs in India, optimized for grid-level rendering.}
+    \label{fig:mod5_overview}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % TODO: Insert screenshot showing the Fullscreen Focus+Context interaction
+    \includegraphics[width=0.95\textwidth]{module5_fullscreen_focus.png}
+    \caption{Fullscreen Mode: Selecting a premier node triggers an ego-network highlight and reveals exact funding and publication metrics (e.g., IIT Kanpur) in the detail card.}
+    \label{fig:mod5_fullscreen}
+\end{figure}
 
 \subsubsection{Extracted Insights}
-The resulting map is visually striking and deeply concerning from a policy perspective. The visualization immediately reveals highly centralized "hub corridors" localized entirely around the National Capital Region (NCR), Bengaluru, Mumbai, and Chennai. 
+The geospatial network map is visually striking and deeply concerning from a policy perspective. The visualization immediately reveals highly centralized "hub corridors" localized almost entirely around the National Capital Region (NCR), Bengaluru, Mumbai, and Chennai. 
 
-The color and size encodings highlight profound asymmetry. The premier nodes (gold) absolutely dominate the canvas in both size and edge connectivity, acting as massive gravitational centers. They capture a vastly disproportionate share of national R\&D funding and produce the overwhelming majority of India's Q1 publications. In contrast, the state-affiliated colleges exist as a fragmented, isolated periphery. This module visually proves that India's domestic knowledge economy is heavily siloed, highlighting an urgent need for policies designed to bridge the collaborative gap between elite central campuses and the broader state infrastructures.
+The color and size encodings highlight a profound structural asymmetry. The premier nodes (blue) absolutely dominate the canvas in both size and edge connectivity, acting as massive gravitational centers. They capture a vastly disproportionate share of national R\&D funding (frequently exceeding hundreds of Crores, as verified by NIRF data integration) and produce the overwhelming majority of India's Q1 publications. In contrast, the state-affiliated colleges (purple) exist as a fragmented, isolated periphery. While India possesses over 40,000 affiliated colleges, this vast network lacks the integration required to register significant collaborative impact. This module visually proves that India's domestic knowledge economy is heavily siloed, highlighting an urgent need for policies designed to bridge the collaborative gap between elite central campuses and the broader state infrastructures.
 
 \newpage
 \section{UI/UX Design System and Architecture}
