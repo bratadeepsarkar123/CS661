@@ -1,0 +1,639 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{booktabs}
+\usepackage{listings}
+% \usepackage{listings-css}
+\usepackage{listings}
+
+\usepackage{listings}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{listings}
+\usepackage{longtable}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\title{\vspace{-2cm}\textbf{\huge The Global Knowledge \& Wealth Paradox}\\[0.5cm]
+\Large A Comprehensive Visual Analytics Study on the Economics of Academic Research}
+\author{
+\textbf{Group 10} \\ 
+Bratadeep Sarkar (240285) \and Amgoth Rahul (240108) \\
+Nikhil Patel (240696) \and Prakhar Patel (240767) \\
+Abhinav Bhardwaj (240030) \and Saksham Agrahari (240911) \\
+Aditya Chittora (240054)
+}
+\date{\vspace{0.5cm} \textbf{CS661 - Big Data Visual Analytics} \\ Indian Institute of Technology Kanpur \\ June 23, 2026}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{CS661 Comprehensive Project Report}
+\rhead{Group 10}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\setstretch{1.2}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{plain}
+
+\begin{abstract}
+\noindent Academic research drives human innovation and economic prosperity, yet the global scientific landscape is characterized by deep systemic disparities. While funding is overwhelmingly concentrated in wealthy nations, different countries extract highly variable scientific value from their investments. This project introduces a comprehensive, web-based visual analytics platform designed to decode the global academic ecosystem. Moving far beyond static charts, we present a complex narrative exploring how nations translate wealth into research excellence, how global quality standards are polarizing, and how domestic inequalities---specifically within India's higher education network---shape the future of scientific output. This extensive report details the end-to-end lifecycle of the project, including the rigorous data acquisition methodologies from the World Bank, UNESCO, and OECD, the Python-based data harmonization pipelines, the bespoke React and D3.js frontend architecture, and an exhaustive technical analysis of the five interactive visual modules developed to unearth the hidden economics of global research.
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{The Paradox of Scientific Wealth}
+It is a commonly accepted truth that academic research requires vast amounts of capital. From maintaining state-of-the-art laboratories to funding global collaborative networks and supercomputing clusters, financial backing is the undisputed lifeblood of scientific innovation. However, a deeper, multi-dimensional look into the global research landscape over the past half-century reveals a striking and counterintuitive paradox: while sheer wealth certainly enables research, it is absolutely not the sole determinant of scientific excellence or global citation impact.
+
+Some nations manage to achieve remarkable global citation impacts on relatively modest, highly optimized budgets, punching far above their economic weight class. Conversely, other nations spend incredibly heavily---pouring billions of dollars into Research and Development (R\&D) infrastructure---yet consistently fail to break into the elite, top-quartile (Q1) academic tiers. This disconnect between financial input (wealth) and scientific output (knowledge prestige) constitutes what we term "The Global Knowledge \& Wealth Paradox."
+
+\subsection{Project Motivation and Objectives}
+To unravel this complex paradox, our team set out to construct a highly sophisticated, comprehensive visual analytics dashboard. Traditional, static reporting methods---such as basic bar charts in Excel or localized queries in standardized Business Intelligence tools like PowerBI or Tableau---fail to capture the interconnected, temporal, and high-dimensional nature of global academia. We required a system capable of linking national macroeconomic variables to bibliometric publication records and granular institutional funding data over decades.
+
+The core objectives of this project were explicitly defined as follows:
+\begin{enumerate}
+    \item \textbf{Data Synthesis}: To aggregate, clean, and seamlessly merge highly disparate, massive datasets from global economic authorities (World Bank, OECD, UNESCO) and bibliometric databases (OpenAlex, SCImago).
+    \item \textbf{Bespoke Visualization}: To build a bespoke, web-based visual analytics platform from scratch using modern web technologies (React.js, D3.js), avoiding off-the-shelf software to allow for maximum customizability, custom animations, and complex data bindings.
+    \item \textbf{Narrative Storytelling}: To ensure that the resulting dashboard does not merely serve as a data repository, but rather tells a cohesive, interactive story. Users should be able to actively explore the conversion of financial resources into scientific prestige, witnessing the temporal shifts in global power dynamics.
+    \item \textbf{Localized Micro-Analysis}: To zoom in from the global macrocosm to a localized microcosm, dedicating a significant analytical lens to India. By mapping India's domestic network of premier institutes against state-affiliated colleges, we aim to understand the structural asymmetries within a rapidly developing nation.
+\end{enumerate}
+
+\subsection{Target Audience}
+The intended users of this visual analytics system include academic policymakers, university administrators, governmental funding agencies, and bibliometric researchers. By providing an intuitive, deeply interactive interface that masks the complexity of the underlying multidimensional data, stakeholders can extract actionable insights regarding R\&D allocation efficiency, the value of international collaboration, and the structural health of their domestic education networks.
+
+\newpage
+\section{Domain Research and Data Acquisition}
+The foundation of any robust visual analytics system lies in the quality, breadth, and integrity of its underlying data. Exploring the economics of global research necessitated the acquisition of data across two entirely distinct domains: macroeconomic indicators (R\&D spending, GDP) and bibliometric indicators (publication volume, citation impact, subject categories).
+
+\subsection{Macroeconomic Data: Sourcing R\&D Spending}
+Acquiring accurate, historically deep, and globally representative data on national Research and Development spending is notoriously difficult due to varying reporting standards across nations. To overcome this, we implemented a tripartite data sourcing strategy, merging datasets from the World Bank, UNESCO, and the OECD to achieve maximum geographical and temporal coverage.
+
+\subsubsection{The World Bank API}
+The World Bank API served as our primary, foundational source for broad global coverage. The API aggregates data from the UNESCO Institute for Statistics (UIS) and provides the indicator \texttt{GB.XPD.RSDV.GD.ZS}, which represents R\&D expenditure as a percentage of Gross Domestic Product (GDP).
+\begin{itemize}
+    \item \textbf{Coverage}: Approximately 170 countries.
+    \item \textbf{Temporal Depth}: 1996 to 2023.
+    \item \textbf{Advantage}: Easiest bulk extraction via standard REST endpoints, providing the widest net for developing nations.
+\end{itemize}
+
+\subsubsection{UNESCO UIS Bulk Data}
+While the World Bank provides top-level aggregates, we required deeper sector-level breakdowns to understand exactly *where* the money was flowing (e.g., government research vs. higher education vs. business enterprise). We utilized the UNESCO UIS Bulk Data Download Service (BDDS), specifically the "Science, Technology and Innovation" dataset.
+\begin{itemize}
+    \item \textbf{Key Indicators Extracted}: \texttt{GERD\_HERD} (Higher Education R\&D), \texttt{GERD\_BERD} (Business Enterprise R\&D), and \texttt{GERD\_GOVERD} (Government R\&D).
+    \item \textbf{Advantage}: Crucial for differentiating between nations whose research is primarily state-funded versus corporately driven.
+\end{itemize}
+
+\subsubsection{OECD Main Science and Technology Indicators (MSTI)}
+For the wealthiest and most developed nations, the OECD MSTI dataset provides the gold standard in data fidelity. We accessed this via the OECD SDMX API.
+\begin{itemize}
+    \item \textbf{Coverage}: 38 OECD member states and approximately 15 partner economies (including China and India).
+    \item \textbf{Temporal Depth}: Dating back to 1981, providing the longest historical context.
+    \item \textbf{Advantage}: Provides absolute USD values and highly standardized Purchasing Power Parity (PPP) conversions, which were critical for our normalization pipeline.
+\end{itemize}
+
+\subsection{Bibliometric Data: Sourcing Academic Output}
+To measure the "knowledge" side of the paradox, we turned to two primary sources for bibliometric metadata.
+
+\subsubsection{OpenAlex API}
+OpenAlex is a fully open catalog of the global research system. We queried the OpenAlex API to extract massive amounts of metadata regarding individual institutions, their publication counts, and their primary research concepts. This allowed us to build the chronological dataset necessary for tracking the rise and fall of specific scientific disciplines over time (e.g., Artificial Intelligence, Genomics).
+
+\subsubsection{SCImago Journal \& Country Rank (SJR)}
+To evaluate the *quality* and *prestige* of the research being produced, we utilized the SCImago dataset, which is powered by Scopus data. SCImago categorizes publication venues into quartiles (Q1, Q2, Q3, Q4), with Q1 representing the top 25\% most prestigious journals in a given field. Extracting the percentage of a nation's output that lands in Q1 journals became the primary metric for defining "Elite" status in our visual analytics models.
+
+\subsection{Localized Data: The Indian Ecosystem}
+For the localized micro-analysis of India (Module 5), we required highly specific, domestic datasets that are not represented in global aggregates.
+\begin{itemize}
+    \item \textbf{National Institutional Ranking Framework (NIRF)}: We scraped NIRF reports to gather verified data on faculty counts, domestic funding allocations, and exact publication outputs for Indian institutions.
+    \item \textbf{Geospatial Data (GeoJSON)}: To plot the institutional network, we acquired high-resolution GeoJSON boundary files of India, allowing us to accurately map latitude and longitude coordinates to state and national borders in D3.js.
+\end{itemize}
+
+\newpage
+\section{Data Preprocessing and System Architecture}
+Raw data downloaded from APIs is rarely in a format suitable for high-performance visual analytics. Furthermore, rendering complex D3.js visualizations in a browser requires the data to be highly optimized and structured correctly to prevent memory leaks and UI thread blocking. 
+
+\subsection{The Python Data Harmonization Pipeline}
+We utilized Python, specifically the \texttt{pandas} and \texttt{numpy} libraries, to execute a rigorous Extract, Transform, Load (ETL) pipeline.
+
+\subsubsection{Merging the R\&D Datasets}
+As outlined in our sourcing strategy, we had three overlapping R\&D datasets (World Bank, UNESCO, OECD). The Python script was engineered to execute a hierarchical merge on the \texttt{country\_iso3} and \texttt{year} keys. The logic prioritized the highly granular OECD data where available, falling back to UNESCO, and finally using World Bank data to patch any remaining holes for developing nations.
+
+\subsubsection{Purchasing Power Parity (PPP) Normalization}
+A critical requirement for analyzing global wealth is ensuring fair comparisons. Comparing the raw USD R\&D spend of the United States to India provides a heavily skewed picture due to massive differences in the cost of living and researcher salaries. Our Python pipeline normalized all financial metrics using historical Purchasing Power Parity (PPP) conversion rates. This allowed us to calculate a standardized metric: "Effective R\&D Spend per Publication," which served as a proxy for financial efficiency.
+
+\subsubsection{JSON Payload Generation}
+A major challenge in web-based visual analytics is data transport. Loading massive, multi-megabyte CSV files directly into the browser and parsing them asynchronously via \texttt{d3.csv()} can cause significant load-time delays and jarring user experiences. To optimize this, we developed Python bundling scripts (e.g., \texttt{bundle\_data.py}) that converted the cleaned Pandas DataFrames and raw GeoJSON files into highly optimized, minified JavaScript files.
+
+\begin{lstlisting}[language=Python, caption=Snippet from bundle\_data.py demonstrating the conversion of GeoJSON to executable JS objects.]
+import os
+import re
+
+out_js = "const INDIA_NETWORK_DATA = {};\n"
+data_dir = 'temp_repo/CS661-master/dashboard/data/india_network'
+
+for f in os.listdir(data_dir):
+    if f.endswith(".json") or f.endswith(".geojson"):
+        with open(os.path.join(data_dir, f), "r", encoding="utf-8") as file:
+            content = file.read()
+            # Clean anomalous NaN values generated during Pandas export
+            content = re.sub(r':\s*NaN', ': null', content)
+            out_js += f'INDIA_NETWORK_DATA["{f}"] = {content};\n'
+
+with open("india_network_data.js", "w", encoding="utf-8") as file:
+    file.write(out_js)
+\end{lstlisting}
+
+By generating files like \texttt{india\_network\_data.js}, we ensured that the data was immediately available in the browser's global scope upon script execution, completely eliminating asynchronous fetching delays and dramatically improving the dashboard's time-to-interactive metric.
+
+\subsection{Frontend Architecture}
+To build the interactive dashboard, we eschewed restrictive drag-and-drop tools like Tableau in favor of a fully custom, code-driven architecture. 
+
+\subsubsection{React.js and Vite Environment}
+The application is wrapped in a React.js framework, bootstrapped via Vite for lightning-fast Hot Module Replacement (HMR) during development. React handles the overarching application state, managing which visual module is currently active, handling the global filter dropdowns, and orchestrating the rendering lifecycle.
+
+\subsubsection{D3.js Visualization Engine}
+The core visual heavy lifting is performed by D3.js (Data-Driven Documents). D3 allows us to bind arbitrary data to the Document Object Model (DOM), applying data-driven transformations to standard HTML and SVG elements. Because we needed to implement highly bespoke chart types---such as physical force-directed networks and custom Sankey flows---D3 provided the necessary low-level control over the math, physics simulations, and SVG path generation that higher-level libraries (like Chart.js or Plotly) abstract away.
+
+\newpage
+\section{Deep Dive: Visual Analytics Modules}
+The core of our project is the five interactive visualization modules. Each was designed to tackle a specific facet of the overarching paradox. In this section, we provide an exhaustive breakdown of the design rationale, technical implementation, visual encodings, interactive features, and extracted insights for each module.
+
+\subsection{Module 1: High-Dimensional Peer Clustering}
+\subsubsection{Design Rationale}
+Traditionally, comparative global analysis relies on geographic proximity (e.g., comparing South American countries to one another). However, in the context of academic economics, geography is largely irrelevant. A nation's true peers are dictated by its economic capacity and academic priorities. We designed Module 1 to visualize these "invisible alliances" by grouping countries based on their statistical similarity across high-dimensional metrics (R\&D spend, GDP, publication volume, citation impact).
+
+\subsubsection{Technical Implementation}
+To visualize high-dimensional data in a standard 2D Cartesian plane, we required dimensionality reduction algorithms. We pre-calculated t-Distributed Stochastic Neighbor Embedding (t-SNE) and Uniform Manifold Approximation and Projection (UMAP) coordinates for each country in our Python backend. These coordinates were then passed to the D3.js frontend. The frontend renders a standard SVG scatter plot, mapping the abstract t-SNE X and Y coordinates to the screen dimensions.
+
+\subsubsection{Visual Encodings}
+\begin{itemize}
+    \item \textbf{Position (X, Y)}: Abstract coordinates representing the mathematical similarity between countries. Nations closer together on the canvas share highly similar academic and economic profiles.
+    \item \textbf{Size (Radius)}: The radius of each circular node is logarithmically scaled to represent the total publication volume of the country.
+    \item \textbf{Color}: Nodes are categorically colored based on geographic region (e.g., Europe, Asia, Africa), allowing users to immediately see if geographic regions remain clustered together in this abstract statistical space.
+\end{itemize}
+
+\subsubsection{Interactive Capabilities}
+The module features robust brushing and linking. Users can click and drag over a cluster of nodes to select a subset of "peer" countries. Upon selection, a secondary panel updates in real-time to display the aggregated statistics (average R\&D spend, total Q1 publications) for that specific cluster. Hovering over individual nodes triggers a tooltip detailing the exact metrics and the country's name, providing immediate context to the abstract projection.
+
+\subsubsection{Extracted Insights}
+The visualization reveals that geographic borders are poor indicators of scientific behavior. We observe that wealthy European and North American nations tightly converge into an "Elite" profile cluster, characterized by high efficiency and high impact. Conversely, emerging powerhouses like China and India do not cluster with their Asian geographic neighbors; instead, they exist on distinct, rapid trajectories across the canvas, highlighting their unique models of massive volume scaling coupled with rapidly improving citation impacts.
+
+
+
+
+% ═══════════════════════════════════════════════════════════════════════
+% MODULE 3: Temporal Dynamics and Momentum of Scientific Disciplines
+% ═══════════════════════════════════════════════════════════════════════
+\subsection{Module 3: Temporal Dynamics and Momentum of Scientific Disciplines}
+
+% ─────────────────────────────────────────────
+\subsubsection{Task Overview}
+% ─────────────────────────────────────────────
+This module addresses one of the most compelling and historically rich questions in academic
+research: \textit{How do the dominant frontiers of human scientific inquiry shift over time?}
+The prominence of research fields is not static---it is continuously reshaped by technological
+breakthroughs, global crises, economic incentives, and paradigm shifts in methodology. To
+expose these dynamics, this module visualizes the cumulative publication output of seven
+major scientific disciplines across a \textbf{75-year timeline (1950--2025)}, sourced from
+the OpenAlex bibliometric database using concept-level identifiers.
+
+The core visualization is a custom-built, animated \textbf{Bar Chart Race}---a genre of dynamic
+ranking chart that transitions the relative positions and sizes of bars over time to simulate
+a ``race'' between competing categories. In this context, each bar represents a scientific
+field, and its length at any given frame corresponds to the total number of academic papers
+published up to that year. This is coupled with a \textbf{Synchronized Cumulative Line
+Chart} rendered on the right panel using Chart.js, which provides historical context by
+plotting the continuous publication trajectory of all fields from 1950 to 2025 simultaneously.
+Together, this dual-view dashboard enables users to perceive both the instantaneous ranking
+dynamics and the broader longitudinal trends within a single, cohesive interface.
+
+% ─────────────────────────────────────────────
+\subsubsection{Information Represented}
+% ─────────────────────────────────────────────
+The seven scientific disciplines tracked in this module were selected to represent the full
+spectrum of modern research priorities---from classical natural sciences to cutting-edge
+computational fields. Each discipline is mapped to its corresponding OpenAlex Concept ID:
+
+\begin{table}[H]
+\centering
+\caption{Scientific Disciplines Tracked in Module 3 and Their Visual Encoding}
+\begin{tabular}{lllp{4.5cm}}
+\toprule
+\textbf{Discipline} & \textbf{Concept ID} & \textbf{Color Gradient} & \textbf{Represents} \\
+\midrule
+AI \& Machine Learning    & C1702 & Red $\rightarrow$ Orange   & Deep learning, neural networks, NLP \\
+CRISPR \& Genomics        & C1308 & Cyan $\rightarrow$ Blue    & Gene editing, sequencing, genomics \\
+Infectious Diseases       & C2725 & Pink $\rightarrow$ Red     & Epidemiology, virology, pandemics \\
+Data Science \& Big Data  & C1703 & Purple $\rightarrow$ Pink  & Statistical ML, data pipelines \\
+Renewable Energy          & C2105 & Green $\rightarrow$ Lime   & Solar, wind, sustainable systems \\
+Robotics \& Automation    & C2207 & Yellow $\rightarrow$ Red   & Industrial automation, mechatronics \\
+Quantum Computing         & C2500 & Cyan $\rightarrow$ Blue    & Qubit systems, quantum algorithms \\
+\bottomrule
+\end{tabular}
+\label{tab:viz3_topics}
+\end{table}
+
+The visual encodings employed in this module are as follows:
+
+\begin{itemize}
+    \item \textbf{Horizontal Bar Length (X-axis):} Directly encodes the \textit{cumulative
+    publication count} of each topic up to the currently animated year. The maximum bar
+    width is dynamically scaled to the highest-ranking topic in every frame, ensuring the
+    chart never becomes stale or monotonous.
+
+    \item \textbf{Vertical Position (Y-axis / Rank):} Encodes the \textit{relative global
+    rank} of a scientific field at any given year. The field with the highest cumulative
+    publications occupies the topmost row. When a field overtakes another, their
+    Y-coordinates animate smoothly via a \texttt{CSS cubic-bezier} transition
+    (\texttt{transition: top 0.5s cubic-bezier(0.25, 0.8, 0.25, 1)}), creating a
+    physically intuitive ``floatup'' effect.
+
+    \item \textbf{Color-Coded Gradient Bars:} Each discipline is assigned a unique
+    \textit{linear gradient} defined as a CSS custom property (e.g.,
+    \texttt{--g-ai: linear-gradient(90deg, \#ff2a5f 0\%, \#ff7e40 100\%)}). This
+    consistent color identity allows users to track any individual field's trajectory
+    without relying on textual labels alone.
+
+    \item \textbf{Inline Publication Count Label:} A numeric value display on the right
+    end of each bar shows the formatted publication count (e.g., \texttt{1.2M}),
+    updated at each animation frame.
+
+    \item \textbf{Synchronized Line Chart (Right Panel):} All seven disciplines are
+    rendered as overlapping line series on a shared time-axis. The line colors match
+    the bar gradients, allowing seamless cognitive cross-referencing between the race
+    and the trend panels. Tooltips on hover show exact counts per year.
+
+    \item \textbf{Watermark Year:} A semi-transparent large year numeral is rendered
+    behind the bars as a visual anchor, reinforcing the temporal context.
+
+    \item \textbf{Background Grid Lines:} Faint vertical grid lines at 25\%, 50\%,
+    75\%, and 100\% of the bar-container width act as volume reference guides.
+\end{itemize}
+
+% ─────────────────────────────────────────────
+\subsubsection{Visualization of the Dashboard}
+% ─────────────────────────────────────────────
+The figure below presents a representative screenshot of the Module 3 dashboard at year
+2023, illustrating the Bar Chart Race (left) and the Cumulative Publication Trend (right).
+
+\begin{center}
+    \textbf{\large Graph 3: Top Research Topics --- Animated Bar Chart Race with Cumulative Trend (1950--2025)}
+\end{center}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{viz3_momentum.png}
+    \caption{Module 3 Interactive Dashboard: The animated Bar Chart Race (left panel) ranks
+    7 scientific disciplines by cumulative publication volume, while the Cumulative Publication
+    Trend line chart (right panel) plots their full trajectories from 1950 to 2025.
+    Data Source: OpenAlex bibliometric database (Concept IDs C1702, C1308, C2725, C1703,
+    C2105, C2207, C2500).}
+    \label{fig:viz3_momentum}
+\end{figure}
+
+% ─────────────────────────────────────────────
+\subsubsection{Observed Trends}
+% ─────────────────────────────────────────────
+Running the animation across the full 75-year timeline reveals four structurally distinct
+historical phases in global research output:
+
+\begin{itemize}
+    \item \textbf{The Classical Dominance Era (1950--1985):} In the early decades of the
+    timeline, the race is dominated by \textit{Infectious Diseases} and \textit{Renewable
+    Energy}, reflecting the post-war prioritization of public health and emerging energy
+    independence movements. Growth across all fields is slow and approximately linear,
+    indicating a constrained global academic output rate.
+
+    \item \textbf{The Computational Inflection Point (1986--2000):} The emergence of
+    affordable personal computing and the internet triggers the first significant rank
+    reshuffling. \textit{Data Science \& Big Data} and \textit{AI \& Machine Learning}
+    begin an accelerating climb, overtaking Renewable Energy and approaching Infectious
+    Diseases. This transition is visually captured by the first dramatic vertical swap
+    animations in the Bar Chart Race.
+
+    \item \textbf{The Deep Learning Revolution (2001--2015):} The release of landmark
+    papers on deep neural networks, the ImageNet dataset, and GPU-accelerated training
+    causes an explosive, non-linear surge in AI-related publications. On the trend chart,
+    the AI line transitions from a gentle slope into a steep exponential trajectory,
+    separating visually from all other fields. By 2012, AI \& Machine Learning claims
+    the top rank globally---a position it does not relinquish.
+
+    \item \textbf{The Crisis and Data Science Era (2016--2025):} By 2020, the
+    \textit{Infectious Diseases} bar undergoes its most violent positive spike,
+    visually representing the COVID-19 pandemic's extraordinary mobilization of global
+    research resources. Simultaneously, \textit{Quantum Computing} begins its ascent
+    from the bottom tier, reflecting growing nation-state investment in post-classical
+    computing infrastructure.
+\end{itemize}
+
+% ─────────────────────────────────────────────
+\subsubsection{Inference and Insights}
+% ─────────────────────────────────────────────
+The visual analytics system allows us to derive the following domain-specific, data-driven
+inferences:
+
+\begin{itemize}
+    \item \textbf{Science Reflects Society:} The animation provides definitive visual
+    evidence that global publication output is not determined by academic inertia alone.
+    It reacts, often within 1--2 years, to the dominant anxieties and opportunities of
+    each era. The HIV/AIDS epidemic of the 1980s, the rise of digital infrastructure in
+    the 1990s, and the COVID-19 pandemic in 2020 are all clearly identifiable as
+    inflection points without any additional annotation.
+
+    \item \textbf{The Winner-Take-All Concentration of Research Capital:} The exponential
+    gap between AI \& Machine Learning and all other fields by 2025 is not merely a
+    volume metric---it signals a systemic concentration of research funding, talent, and
+    institutional prestige towards a single domain. This raises a critical long-term risk:
+    \textit{if fields like Renewable Energy or Infectious Disease preparedness are
+    chronically underfunded relative to AI, civilizational vulnerabilities may deepen}.
+
+    \item \textbf{Publication Velocity as a Leading Indicator:} The rate-of-change of
+    bar-length in the animation (i.e., the year-on-year publication increment) functions
+    as a \textit{leading indicator} of a field's trajectory. Fields that show accelerating
+    velocity---even from a low baseline---are candidates for future top-rank positions.
+    Quantum Computing's gradually steepening slope from 2018 onwards suggests it may
+    enter the top-3 by 2030.
+
+    \item \textbf{Structural Lag in Pandemic Research:} The COVID-19 spike in Infectious
+    Diseases peaks in 2021--2022 and then declines sharply through 2023--2024, confirming
+    that emergency research surges are temporary mobilizations rather than permanent
+    structural shifts in academic priority.
+\end{itemize}
+
+% ─────────────────────────────────────────────
+\subsubsection{Real-World Implications}
+% ─────────────────────────────────────────────
+The insights extracted from this module carry direct, actionable utility for multiple
+stakeholder categories:
+
+\begin{itemize}
+    \item \textbf{Government Funding Agencies (e.g., DST, NSF, UKRI):} The temporal
+    trajectory data can serve as an empirical basis for \textit{proactive} R\&D portfolio
+    rebalancing. If Quantum Computing shows accelerating publication velocity from 2018,
+    this is the window for early strategic investment---before international competitors
+    establish dominant positions. Inversely, the sustained under-investment in Renewable
+    Energy despite its critical global importance demands policy correction.
+
+    \item \textbf{University Leadership and Academic Planning Committees:} Universities
+    can use the rank-transition data to identify which departments are growing in global
+    relevance and dynamically adjust faculty hiring, laboratory infrastructure, and
+    graduate program capacity accordingly. Departments aligned with top-trajectory fields
+    will attract more international collaborations and elite students.
+
+    \item \textbf{Global Health Emergency Response Systems:} The visualization
+    quantitatively confirms the phenomenon of ``crisis-reactive research surges.'' This
+    implies that emergency preparedness systems should include \textit{pre-positioned
+    publication networks}---existing research consortia that can rapidly absorb and
+    disseminate new findings when pandemics emerge, reducing the delay between outbreak
+    and published evidence.
+
+    \item \textbf{Individual Researchers and PhD Students:} By observing the velocity and
+    rank trajectories of specific fields at specific points in time, early-career
+    researchers can make more informed decisions about which domains to specialize in---
+    balancing personal interest against the structural momentum and long-term funding
+    landscape of each discipline.
+\end{itemize}
+
+\subsection{Module 4: The Collaboration Premium}
+
+\subsubsection{Design Rationale}
+A critical aspect of the global paradox is the role of cross-border collaboration. We hypothesized that isolation restricts scientific impact, and that international partnerships yield a measurable "premium." To quantify this, we needed a visualization that explicitly compared domestic performance against international performance for every single country.
+
+\subsubsection{Technical Implementation}
+We utilized a Dumbbell Plot (also known as a connected dot plot). The D3 implementation requires rendering two distinct \texttt{<circle>} elements per country on a shared horizontal axis, connected by a \texttt{<line>} element. The data payload calculates the average field-weighted citation impact (FWCI) for papers with purely domestic authors versus papers featuring at least one international co-author.
+
+Let $C^{\text{dom}}_c$ be the average citation impact of purely domestic papers for country $c$, and $C^{\text{int}}_c$ be the average citation impact of internationally co-authored papers. The collaboration premium $G_c$ is calculated as the directional difference:
+\begin{equation}
+G_c = C^{\text{int}}_c - C^{\text{dom}}_c
+\end{equation}
+
+This metric explicitly measures the academic gain a nation receives by choosing to collaborate globally rather than conducting isolated research.
+
+\subsubsection{Visual Encodings}
+\begin{itemize}
+    \item \textbf{Left Node (Red)}: The citation impact of purely domestic research ($C^{\text{dom}}_c$).
+    \item \textbf{Right Node (Blue/Cyan)}: The citation impact of internationally collaborative research ($C^{\text{int}}_c$).
+    \item \textbf{Connecting Line (Length)}: The physical length of the line explicitly encodes the absolute "gain" ($G_c$) achieved by collaborating globally.
+    \item \textbf{Y-Axis}: Categorical listing of countries.
+\end{itemize}
+
+\subsubsection{Interactive Capabilities}
+The true power of this module lies in its sorting mechanics. Users can dynamically click table headers to sort the entire plot. Sorting by "Domestic Impact" brings established powerhouses (like the USA and UK) to the top (see Figure \ref{fig:mod4_domestic}). However, sorting by "Citation Gain" radically reorders the canvas, pulling emerging and developing nations to the apex (see Figure \ref{fig:mod4_gain}). Hovering over any dumbbell isolates it and provides exact numerical breakdowns, allowing for precise localized analysis.
+
+\subsubsection{Dashboard Screenshots}
+
+\begin{figure}[H]
+    \centering
+    % TODO: Insert screenshot of the visualization sorted by Domestic Impact
+     \includegraphics[width=0.95\textwidth]{module4_domestic_sort.png}
+    
+    \caption{Dumbbell Plot sorted by Domestic Impact. Established powerhouses generally appear at the top with relatively shorter connecting lines.}
+    \label{fig:mod4_domestic}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % TODO: Insert screenshot of the visualization sorted by Citation Gain
+    \includegraphics[width=0.95\textwidth]{module4_gain_sort.png}
+    
+    \caption{Dumbbell Plot sorted by Citation Gain. Emerging economies rise to the apex, characterized by massive connecting lines indicating high reliance on international collaboration.}
+    \label{fig:mod4_gain}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    % TODO: Insert screenshot showing the hover tooltip state
+     \includegraphics[width=0.95\textwidth]{module4_hover.png}
+     % Visual placeholder box
+    \caption{Hover interaction isolating a specific country's dumbbell, providing an exact numerical breakdown of domestic vs. international FWCI.}
+    \label{fig:mod4_hover}
+\end{figure}
+
+\subsubsection{Extracted Insights}
+The plot definitively proves the existence of the Collaboration Premium; almost universally, the connecting lines stretch to the right (indicating a positive gain). However, the magnitude of the gain exposes severe structural dependencies. Established nations show a relatively modest premium, meaning their domestic science is already highly respected. Conversely, emerging economies exhibit massive connecting lines. This visualizes a critical reality: to achieve elite, globally recognized citation metrics, researchers in developing nations are heavily reliant on attaching their names to foreign partnerships.
+
+\subsection{Module 5: Micro-Analysis of the Indian Ecosystem}
+\subsubsection{Design Rationale}
+To ground the global paradox in reality, we zoomed in on India---a nation undergoing explosive academic expansion but suffering from immense internal inequality. We aimed to map the physical and collaborative infrastructure of India's higher education system to highlight the disparity between elite central institutes and state-affiliated colleges.
+
+\subsubsection{Technical Implementation}
+This module required complex geospatial rendering. We utilized D3's `geoMercator` projection to translate raw GeoJSON polygon coordinates of India's borders into SVG paths. Overlaid on this map is a Force-Directed Node-Link graph. 
+Nodes (representing institutions) are pinned to their actual geographic longitude and latitude. Edges (representing co-publications between institutes) are drawn between them. We heavily customized the D3 `d3.forceSimulation` to prevent nodes from overlapping excessively while still maintaining their general geographic accuracy.
+
+\subsubsection{Visual Encodings}
+\begin{itemize}
+    \item \textbf{Geography (X, Y)}: Nodes are positioned on the map corresponding to their physical campus locations.
+    \item \textbf{Size (Radius)}: Scaled to represent the total research output or total domestic funding received by the institution.
+    \item \textbf{Color}: A strict binary color coding: vivid gold for "Premier" institutes (IITs, IISc, AIIMS) and a muted, translucent blue for "State \& Affiliated" colleges.
+    \item \textbf{Edges (Thickness)}: The stroke width of the connecting lines represents the volume of joint publications between two institutions.
+\end{itemize}
+
+\subsubsection{Interactive Capabilities}
+Users can interact with a timeline slider to watch the network grow over time. A comprehensive filter panel allows users to toggle visibility based on institution tier (e.g., hiding all state colleges to view only the premier network). Clicking on any specific node triggers a detailed, glassmorphism-styled sidebar card displaying the institution's precise NIRF ranking, funding allocations, and Q1 publication percentage.
+
+\subsubsection{Extracted Insights}
+The resulting map is visually striking and deeply concerning from a policy perspective. The visualization immediately reveals highly centralized "hub corridors" localized entirely around the National Capital Region (NCR), Bengaluru, Mumbai, and Chennai. 
+
+The color and size encodings highlight profound asymmetry. The premier nodes (gold) absolutely dominate the canvas in both size and edge connectivity, acting as massive gravitational centers. They capture a vastly disproportionate share of national R\&D funding and produce the overwhelming majority of India's Q1 publications. In contrast, the state-affiliated colleges exist as a fragmented, isolated periphery. This module visually proves that India's domestic knowledge economy is heavily siloed, highlighting an urgent need for policies designed to bridge the collaborative gap between elite central campuses and the broader state infrastructures.
+
+\newpage
+\section{UI/UX Design System and Architecture}
+A critical requirement of the project was to create an elegant, engaging user experience that encourages exploration. We eschewed standard, sterile dashboard templates in favor of a modern, "Glassmorphism" aesthetic.
+
+\subsection{The Glassmorphism Aesthetic}
+The entire application operates in a dark-mode environment. This serves a functional purpose: plotting highly colorful, complex SVG visualizations (like overlapping alluvial flows or dense scatter plots) against a pure white background often causes visual fatigue and reduces contrast. By using a deep, dark slate background (\texttt{\#0b0f19}), the brightly colored data elements naturally "pop" and draw the user's eye.
+
+We implemented Glassmorphism---a UI trend characterized by translucent, frosted-glass panels floating over the background. This was achieved using advanced CSS properties:
+\begin{lstlisting}[language=CSS, caption=CSS snippet demonstrating the Glassmorphism card implementation.]
+.glass-card {
+    background: rgba(17, 22, 39, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    padding: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+\end{lstlisting}
+This design choice ensures that the UI controls (sliders, dropdowns, legends) feel integrated into the environment rather than acting as hard, distracting boundaries.
+
+\subsection{Responsive CSS Grid Layout}
+The dashboard utilizes CSS Grid (\texttt{display: grid}) to maintain a consistent structure across varying monitor resolutions. The layout is generally split into a left control panel (housing filters and playbacks) and a massive right canvas area dedicated entirely to the D3 visualizations. Media queries ensure that on smaller screens, the grid gracefully collapses into a single-column flexbox layout, prioritizing the visualization canvas.
+
+\newpage
+\section{Challenges, Limitations, and Future Work}
+\subsection{Data Sparsity and Imputation Limitations}
+The most significant challenge encountered was the sparsity of historical macroeconomic data for developing nations. While the World Bank and OECD provide excellent coverage post-2000, data from the 1980s and early 1990s is riddled with missing values. Our Python pipeline utilized basic forward and backward filling imputation strategies to close small gaps, but prolonged missing periods had to be dropped entirely to prevent visualizing hallucinated data.
+
+\subsection{Client-Side Performance Constraints}
+Rendering thousands of SVG DOM nodes simultaneously (as seen in the India Network map and the High-Dimensional scatter plot) places immense strain on the browser's rendering engine. During development, we encountered significant UI freezing when attempting to animate transitions for over 5,000 nodes simultaneously. 
+
+To mitigate this limitation, we implemented data-throttling and aggregated minor nodes into overarching clusters before handing the payload to D3. Future iterations of this project should explore migrating from SVG-based rendering to HTML5 \texttt{<canvas>} or WebGL via libraries like Three.js, which can comfortably handle hundreds of thousands of concurrent nodes via GPU acceleration.
+
+\subsection{Future Work}
+Looking forward, we aim to implement the following features:
+\begin{itemize}
+    \item \textbf{Live API Integration}: Currently, the dataset is static and bundled at build-time. We plan to integrate live WebSockets pointing to the OpenAlex API to allow real-time tracking of emerging scientific disciplines.
+    \item \textbf{Client-Side ML Execution}: By integrating libraries like TensorFlow.js, we could allow users to adjust the hyperparameters of the t-SNE/UMAP clustering algorithms in real-time, watching the peer groups dynamically reshuffle based on user-defined metrics.
+\end{itemize}
+
+\newpage
+\section{Conclusion}
+The "Global Knowledge \& Wealth Paradox" represents one of the most critical structural issues in the modern global economy. Through the exhaustive integration of data engineering, bespoke UI design, and complex D3.js visualization algorithms, our platform successfully transforms massive, abstract arrays of academic and financial metrics into a tangible, deeply interactive narrative.
+
+We have conclusively visualized that while financial wealth heavily dictates baseline research capacity, a nation's true scientific prestige is ultimately defined by its structural efficiency, its willingness to engage in international collaboration, and the equitability of its domestic infrastructure. 
+
+From the stark polarization revealed in the Global Quality Shift alluvial flow, to the rapid, reactive momentum of fields like AI in the Bar Chart Race, and finally to the isolated hub-corridors exposed in the Indian geospatial network, this visual analytics tool serves as a powerful, necessary lens. It provides stakeholders with the clarity required to understand the past, interrogate the present, and strategically fund the future of global knowledge creation.
+
+\newpage
+\section{Team Contributions}
+The successful delivery of this comprehensive, full-stack visual analytics platform required meticulous coordination and specialized skill sets across our 7-member team. The project was divided into four core operational verticals, with responsibilities distributed as follows:
+
+\begin{longtable}{|p{0.3\textwidth}|p{0.65\textwidth}|}
+\caption{Detailed Breakdown of Team Contributions} \\
+\toprule
+\textbf{Team Members} & \textbf{Specific Responsibilities and Contributions} \\
+\midrule
+\endfirsthead
+
+\multicolumn{2}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Team Members} & \textbf{Specific Responsibilities and Contributions} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{2}{r}{{Continued on next page}} \\
+\bottomrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\textbf{Bratadeep Sarkar} (240285) \newline \textbf{Amgoth Rahul} (240108) & \textbf{Data Engineering \& ETL Architecture}: 
+\begin{itemize}
+    \item Sourced raw APIs from World Bank, OECD, and UNESCO.
+    \item Authored the Python scripts (\texttt{bundle\_data.py}) to clean, merge, and impute missing values.
+    \item Executed all Purchasing Power Parity (PPP) financial normalizations.
+    \item Handled the generation of optimized JSON payloads for the frontend.
+\end{itemize} \\
+\midrule
+
+\textbf{Nikhil Patel} (240696) \newline \textbf{Prakhar Patel} (240767) & \textbf{D3.js Visualization Engine}: 
+\begin{itemize}
+    \item Engineered the complex mathematical logic for the bespoke D3 charts.
+    \item Built the Alluvial Flow (Sankey) path generators for Module 2.
+    \item Implemented the Force-Directed geographic graph for the India Network (Module 5).
+    \item Programmed the recursive animation loops for the Bar Chart Race (Module 3).
+\end{itemize} \\
+\midrule
+
+\textbf{Abhinav Bhardwaj} (240030) \newline \textbf{Saksham Agrahari} (240911) & \textbf{Frontend Application \& UI/UX}: 
+\begin{itemize}
+    \item Architected the React.js and Vite framework.
+    \item Designed and implemented the complete "Glassmorphism" CSS architecture.
+    \item Ensured full responsive grid layouts across varied monitor resolutions.
+    \item Built the interactive tooltip overlays and detailed side-panel cards.
+\end{itemize} \\
+\midrule
+
+\textbf{Aditya Chittora} (240054) \newline \textbf{Nikhil Patel} (240696) & \textbf{Interaction \& State Management}: 
+\begin{itemize}
+    \item Developed the complex bridging logic between React state and D3 lifecycles.
+    \item Implemented the global dropdown filters, timeline scrubbers, and playback controls.
+    \item Ensured real-time cross-filtering across multiple visual elements on the canvas without UI blocking.
+\end{itemize} \\
+
+\end{longtable}
+
+\newpage
+\section{References}
+\begin{enumerate}
+    \item \textbf{World Bank Open Data}. "Research and development expenditure (\% of GDP)." The World Bank Group. \url{https://data.worldbank.org/indicator/GB.XPD.RSDV.GD.ZS}
+    \item \textbf{UNESCO Institute for Statistics (UIS)}. "Science, Technology and Innovation Bulk Data." \url{https://uis.unesco.org/bdds}
+    \item \textbf{OECD Main Science and Technology Indicators (MSTI)}. Organisation for Economic Co-operation and Development. \url{https://stats.oecd.org/DownloadFiles.aspx?DatasetCode=MSTI_PUB}
+    \item \textbf{OpenAlex API Documentation}. OurResearch. \url{https://docs.openalex.org/}
+    \item \textbf{SCImago Journal \& Country Rank}. Scopus Data. \url{https://www.scimagojr.com/}
+    \item \textbf{National Institutional Ranking Framework (NIRF)}. Ministry of Education, Government of India. \url{https://www.nirfindia.org/}
+    \item \textbf{Bostock, M., Ogievetsky, V., \& Heer, J.} (2011). "D3: Data-Driven Documents." \textit{IEEE Transactions on Visualization and Computer Graphics}, 17(12), 2301-2309.
+    \item \textbf{van der Maaten, L., \& Hinton, G.} (2008). "Visualizing Data using t-SNE." \textit{Journal of Machine Learning Research}, 9, 2579-2605.
+\end{enumerate}
+
+\end{document}
+
