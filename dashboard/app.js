@@ -76,8 +76,8 @@ function drawPreview1() {
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
   const bubbles = [
-    {x:0.3,y:0.3,r:15,col:"rgba(168,85,247,0.7)"},{x:0.4,y:0.25,r:25,col:"rgba(168,85,247,0.7)"},
-    {x:0.7,y:0.6,r:20,col:"rgba(34,211,238,0.6)"},{x:0.6,y:0.7,r:18,col:"rgba(34,211,238,0.6)"},
+    {x:0.3,y:0.3,r:15,col:"rgba(13,148,136,0.7)"},{x:0.4,y:0.25,r:25,col:"rgba(13,148,136,0.7)"},
+    {x:0.7,y:0.6,r:20,col:"rgba(226,168,85,0.6)"},{x:0.6,y:0.7,r:18,col:"rgba(226,168,85,0.6)"},
     {x:0.8,y:0.3,r:12,col:"rgba(251,113,133,0.6)"},{x:0.2,y:0.8,r:30,col:"rgba(251,191,36,0.6)"}
   ];
   bubbles.forEach(b => {
@@ -123,12 +123,12 @@ function drawPreview2() {
     const hQ1 = h * (0.2 + Math.random() * 0.4);
     const hQ4 = h * (0.1 + Math.random() * 0.3);
 
-    // Q1 bar (cyan)
-    ctx.fillStyle = "#38bdf8";
+    // Q1 bar (teal)
+    ctx.fillStyle = "#0d9488";
     ctx.fillRect(x0, h * 0.8 - hQ1, barW, hQ1);
 
-    // Q4 bar (rose red)
-    ctx.fillStyle = "#f43f5e";
+    // Q4 bar (amber)
+    ctx.fillStyle = "#c2873d";
     ctx.fillRect(x0 + barW, h * 0.8 - hQ4, barW, hQ4);
   }
 }
@@ -139,7 +139,7 @@ function drawPreview3() {
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
   const bars = [0.8,0.6,0.5,0.4];
-  const colors = ["#6366f1","#22d3ee","#f59e0b","#f43f5e"];
+  const colors = ["#c2873d","#e2a855","#f59e0b","#f43f5e"];
   bars.forEach((bw, i) => {
     const bh = 15, by = 20 + i * 25;
     ctx.fillStyle = colors[i];
@@ -153,7 +153,7 @@ function drawPreview4() {
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
   for(let i=0; i<4; i++) {
-    const y = 30 + i*25;
+    const y = Math.round(h * (0.20 + i * 0.22));
     const x1 = w*0.2 + Math.random()*w*0.2;
     const x2 = w*0.6 + Math.random()*w*0.2;
     ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 2;
@@ -191,7 +191,7 @@ function spawnParticles() {
     const p = document.createElement("div");
     p.className = "particle";
     const size = 2 + Math.random() * 4;
-    const col = ["#6366f1","#a855f7","#22d3ee","#34d399"][Math.floor(Math.random()*4)];
+    const col = ["#c2873d","#0d9488","#e2a855","#10b981"][Math.floor(Math.random()*4)];
     Object.assign(p.style, {
       width: size + "px", height: size + "px",
       left: (Math.random() * 100) + "%",
