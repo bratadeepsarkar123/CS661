@@ -2156,3 +2156,213 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   margin: 0 0 8px 0;
   font-size: 13px;
 }
+
+
+/* ============================================================
+   HUMAN DESIGN SYSTEM PASS — OVERRIDES
+   ============================================================ */
+
+/* 1. Hero Eyebrow Styling */
+.hero-eyebrow {
+  font-size: 0.85rem;
+  color: var(--accent3);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: -0.25rem;
+  opacity: 0.9;
+  text-shadow: 0 0 12px rgba(34, 211, 238, 0.3);
+}
+
+/* 2. Gallery Header & Section symbol */
+.section-num {
+  color: var(--accent3);
+  margin-right: 0.5rem;
+  font-weight: 300;
+}
+
+/* 3. Card Alternate Heights for Curated Grid */
+#card-1 .card-preview { height: 180px; }
+#card-2 .card-preview { height: 215px; }
+#card-3 .card-preview { height: 195px; }
+#card-4 .card-preview { height: 180px; }
+#card-5 .card-preview { height: 260px; }
+
+/* 4. Card Info & Insights */
+.card-info {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - var(--preview-height, 180px));
+}
+
+#card-1 .card-info { --preview-height: 180px; }
+#card-2 .card-info { --preview-height: 215px; }
+#card-3 .card-info { --preview-height: 195px; }
+#card-4 .card-info { --preview-height: 180px; }
+#card-5 .card-info { --preview-height: 260px; }
+
+.card-insight {
+  font-size: 0.74rem;
+  color: #a5b4fc; /* Indigo tint */
+  border-left: 2px solid var(--accent);
+  padding-left: 0.6rem;
+  margin: 0.5rem 0 1rem 0;
+  font-style: italic;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* 5. Custom Card Hover micro-interactions */
+.viz-card {
+  transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+              border-color 0.35s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border-bottom: 2px solid transparent !important;
+}
+
+.viz-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(99,102,241,0.3) !important;
+  border-bottom-color: var(--accent) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+              0 0 0 1px rgba(99,102,241,0.25);
+}
+
+/* 6. Card Overlay improvements */
+.card-overlay {
+  background: linear-gradient(to top, rgba(6, 9, 15, 0.95) 0%, rgba(99, 102, 241, 0.1) 100%) !important;
+  align-items: flex-end !important;
+  justify-content: flex-start !important;
+  padding: 1.25rem !important;
+}
+
+.card-overlay span {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #f1f5f9;
+  text-transform: uppercase;
+}
+
+.overlay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  background: var(--accent);
+  color: white;
+  box-shadow: 0 0 16px rgba(99,102,241,0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.viz-card:hover .overlay-icon {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+/* 7. Restructured Two-Zone Panel Header */
+.viz-panel .panel-header {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  padding: 0 !important;
+  gap: 0 !important;
+  background: rgba(10, 15, 28, 0.96) !important;
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.panel-header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.panel-header-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 2rem;
+  background: rgba(0, 0, 0, 0.25) !important;
+  width: 100%;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(255,255,255,0.02);
+}
+
+/* Controls Styling */
+.panel-header-controls .ctrl-label {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.panel-header-controls .ctrl-select, 
+.panel-header-controls .ctrl-input {
+  padding: 0.35rem 0.75rem;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.78rem;
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.panel-header-controls .ctrl-select:hover,
+.panel-header-controls .ctrl-input:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+.panel-header-controls .ctrl-select:focus,
+.panel-header-controls .ctrl-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+/* Year slider spacing inside controls */
+.panel-header-controls .year-slider-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel-header-controls input[type="range"].ctrl-range {
+  width: 140px;
+}
+
+/* Secondary & Back Button styling refinements */
+.back-btn {
+  padding: 0.45rem 1rem;
+  font-size: 0.78rem;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.back-btn:hover {
+  background: rgba(99,102,241,0.12);
+  border-color: rgba(99,102,241,0.4);
+}
+
+/* Double divider fix */
+.panel-header-controls .ctrl-divider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255,255,255,0.08);
+  margin: 0 0.25rem;
+}
