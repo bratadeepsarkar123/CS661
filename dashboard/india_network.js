@@ -112,58 +112,23 @@ const INDIA = (() => {
   }
 
   function fundingStaticNote(net) {
-    const cov = net.meta?.coverage;
-    const fundCount =
-      cov && cov.funding_reported != null
-        ? ` (${cov.funding_reported}/${cov.institutions_total || 120} institutes with NIRF sponsored-research rows)`
-        : "";
-    const sliceYear =
-      net.meta?.year && net.meta.year !== "all" ? String(net.meta.year) : null;
-    const fundAcad = net.meta?.funding_academic_year_mapped;
-    const patentCal = net.meta?.patent_calendar_year_mapped;
-    const rankSeason = net.meta?.nirf_ranking_season_mapped;
-    const temporal = net.meta?.temporal_metrics_note;
-
-    if (sliceYear && fundAcad) {
-      const patentNote =
-        patentCal && Number(sliceYear) !== Number(patentCal) && Number(sliceYear) > 2022
-          ? ` Patents shown for calendar year ${patentCal} (latest Innovation PDF year).`
-          : "";
-      const rankNote =
-        rankSeason && Number(rankSeason) !== Number(sliceYear)
-          ? ` NIRF rank from ${rankSeason} season (nearest to slider).`
-          : rankSeason
-            ? ` NIRF rank from ${rankSeason} season.`
-            : "";
-      const carryNote =
-        Number(sliceYear) < 2017
-          ? " Funding uses earliest available NIRF academic year (2017-18)."
-          : "";
-      return `<p class="india-data-note">Metrics follow the year slider for collaboration year ${sliceYear}: funding <strong>${fundAcad}</strong>, patents ${patentCal || "—"},${rankNote}${fundCount}.${patentNote}${carryNote}</p>`;
-    }
-    if (temporal) {
-      return `<p class="india-data-note">${temporal}${fundCount}</p>`;
-    }
-    return `<p class="india-data-note">Sponsored research is a NIRF snapshot from official PDFs (latest academic year, typically 2022–23)${fundCount}. Static across the year slider; the slider controls collaboration edges only.</p>`;
+    // Replaced by separate line in metricYearMismatchNote
+    return "";
   }
 
   function metricYearMismatchNote(node, net) {
     const sliceYear =
       net.meta?.year && net.meta.year !== "all" ? Number(net.meta.year) : null;
     if (!sliceYear) return "";
-    const notes = [];
-    if (node.funding_year_mismatch) {
-      notes.push(
-        `Funding academic year (${node.funding_academic_year || "—"}) is mapped from slider ${sliceYear}, not a direct calendar match.`
-      );
-    }
+    let html = "";
     if (node.patent_year_mismatch) {
-      notes.push(
-        `Patent calendar year (${node.patent_calendar_year || "—"}) differs from collaboration year ${sliceYear} — latest scraped Innovation PDF year used.`
-      );
+      html += `<p class="india-data-note">Patent calendar year (${node.patent_calendar_year || "—"}) differs from collaboration year ${sliceYear}.</p>`;
     }
-    if (!notes.length) return "";
-    return `<p class="india-data-note">${notes.join(" ")}</p>`;
+    if (node.funding_year_mismatch || (net.meta?.funding_academic_year_mapped && !net.meta.funding_academic_year_mapped.includes(String(sliceYear)))) {
+      const fundYear = node.funding_academic_year || net.meta?.funding_academic_year_mapped || "—";
+      html += `<p class="india-data-note">Funding data from another year (${fundYear}) is being used.</p>`;
+    }
+    return html;
   }
 
   function ensureLoaded() {
@@ -369,16 +334,14 @@ const INDIA = (() => {
       const dupNote = fundingDuplicateNote(node);
 
       let patentBlock = "";
-      if (patentStatus === "unranked") {
-        patentBlock = `<p class="india-data-note">Patents: not ranked in NIRF 2024.</p>`;
+      if (patentStatus === "unranked" || patentStatus === "unavailable" || node.patents_published == null) {
+        patentBlock = `<p class="india-data-note">Number of years for which patent data is available: 0</p>`;
       } else if (patentStatus === "duplicate_resolved") {
         patentBlock = `<p class="india-data-note">Patent counts withheld — duplicate source row resolved (see pipeline audit).</p>`;
-      } else if (patentStatus === "unavailable" || node.patents_published == null) {
-        patentBlock = `<p class="india-data-note">Patents: no Innovation-category NIRF PDF on nirfindia.org for this institute.</p>`;
       } else {
+        const totalPatents = (node.patents_published || 0) + (node.patents_granted || 0);
         patentBlock = `
-        <div class="inst-stat-row"><span>Patents published (${node.patent_calendar_year || "—"})</span><strong>${node.patents_published}</strong></div>
-        <div class="inst-stat-row"><span>Patents granted</span><strong>${node.patents_granted != null ? node.patents_granted : "—"}</strong></div>`;
+        <div class="inst-stat-row"><span>Total patents published & granted (${node.patent_calendar_year || "—"})</span><strong>${totalPatents}</strong></div>`;
       }
 
       return `

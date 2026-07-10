@@ -75,40 +75,15 @@ function drawPreview1() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-  
-  // Draw subtle grid lines
-  ctx.strokeStyle = "rgba(255,255,255,0.03)";
-  ctx.lineWidth = 1;
-  for (let x = w * 0.15; x < w; x += w * 0.15) {
-    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
-  }
-  for (let y = h * 0.2; y < h; y += h * 0.2) {
-    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
-  }
-
-  // Draw axis stubs
-  ctx.strokeStyle = "rgba(255,255,255,0.1)";
-  ctx.lineWidth = 1.5;
-  ctx.beginPath(); ctx.moveTo(w * 0.08, h * 0.9); ctx.lineTo(w * 0.95, h * 0.9); ctx.stroke();
-  ctx.beginPath(); ctx.moveTo(w * 0.08, h * 0.95); ctx.lineTo(w * 0.08, h * 0.05); ctx.stroke();
-
-  // Draw clustered bubbles
   const bubbles = [
-    {x:0.3, y:0.4, r:12, col:"rgba(34,211,238,0.75)"},
-    {x:0.42, y:0.28, r:22, col:"rgba(34,211,238,0.55)"},
-    {x:0.35, y:0.55, r:16, col:"rgba(34,211,238,0.65)"},
-    
-    {x:0.75, y:0.65, r:18, col:"rgba(168,85,247,0.75)"},
-    {x:0.82, y:0.5, r:14, col:"rgba(168,85,247,0.55)"},
-    
-    {x:0.65, y:0.3, r:26, col:"rgba(244,63,94,0.65)"},
-    {x:0.2, y:0.75, r:28, col:"rgba(251,191,36,0.6)"}
+    {x:0.3,y:0.3,r:15,col:"rgba(168,85,247,0.7)"},{x:0.4,y:0.25,r:25,col:"rgba(168,85,247,0.7)"},
+    {x:0.7,y:0.6,r:20,col:"rgba(34,211,238,0.6)"},{x:0.6,y:0.7,r:18,col:"rgba(34,211,238,0.6)"},
+    {x:0.8,y:0.3,r:12,col:"rgba(251,113,133,0.6)"},{x:0.2,y:0.8,r:30,col:"rgba(251,191,36,0.6)"}
   ];
-  
   bubbles.forEach(b => {
     ctx.beginPath(); ctx.arc(b.x*w, b.y*h, b.r, 0, Math.PI*2);
     ctx.fillStyle = b.col; ctx.fill();
-    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 1.2; ctx.stroke();
+    ctx.strokeStyle = "rgba(255,255,255,0.15)"; ctx.lineWidth = 1; ctx.stroke();
   });
 }
 
@@ -118,41 +93,44 @@ function drawPreview2() {
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
 
-  // Draw gridlines
-  ctx.strokeStyle = "rgba(255, 255, 255, 0.03)";
+  // Draw light gridlines
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
   ctx.lineWidth = 1;
-  for (let y = h * 0.25; y < h; y += h * 0.25) {
-    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+  for (let y = h * 0.2; y <= h * 0.8; y += h * 0.2) {
+    ctx.beginPath();
+    ctx.moveTo(w * 0.1, y);
+    ctx.lineTo(w * 0.9, y);
+    ctx.stroke();
   }
 
-  // Draw 3 overlapping joyplot waves
-  const drawJoyWave = (yBase, amp, shift, col1, col2) => {
-    ctx.beginPath();
-    ctx.moveTo(0, yBase);
-    for (let x = 0; x <= w; x++) {
-      const distFromMean = (x - (w * 0.5 + shift)) / (w * 0.22);
-      const yValue = yBase - amp * Math.exp(-0.5 * distFromMean * distFromMean);
-      ctx.lineTo(x, yValue);
-    }
-    ctx.lineTo(w, yBase);
-    ctx.closePath();
+  // Draw ground line
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
+  ctx.beginPath();
+  ctx.moveTo(w * 0.1, h * 0.8);
+  ctx.lineTo(w * 0.9, h * 0.8);
+  ctx.stroke();
 
-    // Create gradient fill
-    const grad = ctx.createLinearGradient(0, yBase - amp, 0, yBase);
-    grad.addColorStop(0, col1);
-    grad.addColorStop(1, col2);
-    ctx.fillStyle = grad;
-    ctx.fill();
+  // Draw 5 pairs of bars (Grouped preview)
+  const numGroups = 5;
+  const groupW = (w * 0.8) / numGroups;
+  const barW = groupW * 0.35;
+  const gap = groupW * 0.1;
 
-    ctx.strokeStyle = "rgba(255,255,255,0.25)";
-    ctx.lineWidth = 1.5;
-    ctx.stroke();
-  };
+  for (let i = 0; i < numGroups; i++) {
+    const x0 = w * 0.1 + i * groupW + gap;
+    
+    // Alt heights
+    const hQ1 = h * (0.2 + Math.random() * 0.4);
+    const hQ4 = h * (0.1 + Math.random() * 0.3);
 
-  // Draw background waves first (bottom to top layout style)
-  drawJoyWave(h * 0.85, h * 0.55, w * 0.1, "rgba(244,63,94,0.45)", "rgba(244,63,94,0.01)");
-  drawJoyWave(h * 0.6, h * 0.45, -w * 0.15, "rgba(56,189,248,0.45)", "rgba(56,189,248,0.01)");
-  drawJoyWave(h * 0.35, h * 0.25, w * 0.05, "rgba(168,85,247,0.45)", "rgba(168,85,247,0.01)");
+    // Q1 bar (cyan)
+    ctx.fillStyle = "#38bdf8";
+    ctx.fillRect(x0, h * 0.8 - hQ1, barW, hQ1);
+
+    // Q4 bar (rose red)
+    ctx.fillStyle = "#f43f5e";
+    ctx.fillRect(x0 + barW, h * 0.8 - hQ4, barW, hQ4);
+  }
 }
 
 function drawPreview3() {
@@ -160,31 +138,12 @@ function drawPreview3() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-
-  const barData = [
-    { label: "#1", width: 0.85, color: "#6366f1" },
-    { label: "#2", width: 0.72, color: "#22d3ee" },
-    { label: "#3", width: 0.58, color: "#f59e0b" },
-    { label: "#4", width: 0.44, color: "#f43f5e" }
-  ];
-
-  barData.forEach((bar, i) => {
-    const barHeight = 16;
-    const y = 30 + i * 36;
-    
-    // Draw bar background track
-    ctx.fillStyle = "rgba(255,255,255,0.03)";
-    ctx.fillRect(40, y, w - 80, barHeight);
-
-    // Draw active bar
-    ctx.fillStyle = bar.color;
-    ctx.fillRect(40, y, bar.width * (w - 80), barHeight);
-
-    // Label
-    ctx.fillStyle = "rgba(255,255,255,0.4)";
-    ctx.font = "bold 9px sans-serif";
-    ctx.textAlign = "right";
-    ctx.fillText(bar.label, 30, y + 12);
+  const bars = [0.8,0.6,0.5,0.4];
+  const colors = ["#6366f1","#22d3ee","#f59e0b","#f43f5e"];
+  bars.forEach((bw, i) => {
+    const bh = 15, by = 20 + i * 25;
+    ctx.fillStyle = colors[i];
+    ctx.fillRect(20, by, bw*(w-40), bh);
   });
 }
 
@@ -193,37 +152,15 @@ function drawPreview4() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-
-  // Draw central parity vertical line
-  ctx.strokeStyle = "rgba(255,255,255,0.05)";
-  ctx.setLineDash([4, 4]);
-  ctx.beginPath(); ctx.moveTo(w * 0.45, 10); ctx.lineTo(w * 0.45, h - 10); ctx.stroke();
-  ctx.setLineDash([]);
-
-  // Dumbbells
-  const dumbbells = [
-    { y: 35, d: w * 0.25, i: w * 0.75, colD: "#f43f5e", colI: "#10b981" },
-    { y: 65, d: w * 0.38, i: w * 0.65, colD: "#f43f5e", colI: "#10b981" },
-    { y: 95, d: w * 0.15, i: w * 0.58, colD: "#f43f5e", colI: "#10b981" },
-    { y: 125, d: w * 0.45, i: w * 0.85, colD: "#f43f5e", colI: "#10b981" }
-  ];
-
-  dumbbells.forEach(db => {
-    // Line connector
-    ctx.strokeStyle = "rgba(255,255,255,0.12)";
-    ctx.lineWidth = 2.5;
-    ctx.beginPath(); ctx.moveTo(db.d, db.y); ctx.lineTo(db.i, db.y); ctx.stroke();
-
-    // Domestic dot (Red/Orange)
-    ctx.fillStyle = db.colD;
-    ctx.beginPath(); ctx.arc(db.d, db.y, 5, 0, Math.PI * 2); ctx.fill();
-    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 1; ctx.stroke();
-
-    // International dot (Green)
-    ctx.fillStyle = db.colI;
-    ctx.beginPath(); ctx.arc(db.i, db.y, 5, 0, Math.PI * 2); ctx.fill();
-    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 1; ctx.stroke();
-  });
+  for(let i=0; i<4; i++) {
+    const y = 30 + i*25;
+    const x1 = w*0.2 + Math.random()*w*0.2;
+    const x2 = w*0.6 + Math.random()*w*0.2;
+    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(x1, y); ctx.lineTo(x2, y); ctx.stroke();
+    ctx.fillStyle = "#f43f5e"; ctx.beginPath(); ctx.arc(x1, y, 4, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = "#10b981"; ctx.beginPath(); ctx.arc(x2, y, 4, 0, Math.PI*2); ctx.fill();
+  }
 }
 
 function drawPreview5() {
@@ -231,47 +168,20 @@ function drawPreview5() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-
-  // Clean India Outline shape
   const outline = [
-    [0.38,0.08],[0.55,0.05],[0.72,0.18],[0.78,0.3],[0.68,0.52],
-    [0.55,0.72],[0.48,0.9],[0.42,0.72],[0.32,0.52],[0.24,0.32],[0.28,0.18],[0.38,0.08]
+    [0.38,0.05],[0.55,0.03],[0.72,0.15],[0.78,0.28],[0.65,0.55],
+    [0.55,0.75],[0.48,0.92],[0.42,0.75],[0.30,0.55],[0.22,0.35],[0.28,0.15],[0.38,0.05]
   ];
   ctx.beginPath();
   outline.forEach(([px,py], i) => i===0 ? ctx.moveTo(px*w, py*h) : ctx.lineTo(px*w, py*h));
   ctx.closePath();
-  ctx.fillStyle = "rgba(245,158,11,0.05)";
+  ctx.fillStyle = "rgba(245,158,11,0.08)";
   ctx.fill();
-  ctx.strokeStyle = "rgba(245,158,11,0.22)";
+  ctx.strokeStyle = "rgba(245,158,11,0.3)";
   ctx.lineWidth = 1.5;
+  ctx.setLineDash([3,3]);
   ctx.stroke();
-
-  // Draw 4 interconnected hub node clusters
-  const hubs = [
-    { x: w * 0.45, y: h * 0.25, r: 8, col: "#3b82f6" }, // Delhi area
-    { x: w * 0.35, y: h * 0.58, r: 9, col: "#3b82f6" }, // Mumbai area
-    { x: w * 0.52, y: h * 0.72, r: 10, col: "#8b5cf6" }, // Bangalore area
-    { x: w * 0.58, y: h * 0.78, r: 8, col: "#8b5cf6" }  // Chennai area
-  ];
-
-  // Draw connection links
-  ctx.strokeStyle = "rgba(255,255,255,0.08)";
-  ctx.lineWidth = 1.5;
-  for(let i = 0; i < hubs.length; i++) {
-    for(let j = i + 1; j < hubs.length; j++) {
-      ctx.beginPath();
-      ctx.moveTo(hubs[i].x, hubs[i].y);
-      ctx.lineTo(hubs[j].x, hubs[j].y);
-      ctx.stroke();
-    }
-  }
-
-  // Draw nodes
-  hubs.forEach(node => {
-    ctx.fillStyle = node.col;
-    ctx.beginPath(); ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2); ctx.fill();
-    ctx.strokeStyle = "rgba(255,255,255,0.3)"; ctx.lineWidth = 1; ctx.stroke();
-  });
+  ctx.setLineDash([]);
 }
 
 // ─── Particle Background ───────────────────────────────────
@@ -403,26 +313,22 @@ function buildControls(id) {
     const toggleWrap = el("div", "toggle-group");
     const optGrouped = el("button", "toggle-opt" + (barChartMode === "grouped" ? " on" : ""), "Grouped");
     const optStacked = el("button", "toggle-opt" + (barChartMode === "stacked" ? " on" : ""), "Stacked");
-    
-    optGrouped.onclick = () => {
-      barChartMode = "grouped";
-      optGrouped.classList.add("on");
-      optStacked.classList.remove("on");
-      renderViz(2);
-    };
-    
-    optStacked.onclick = () => {
-      barChartMode = "stacked";
-      optStacked.classList.add("on");
-      optGrouped.classList.remove("on");
-      renderViz(2);
-    };
-    
+    optGrouped.onclick = () => { barChartMode = "grouped"; optGrouped.classList.add("on"); optStacked.classList.remove("on"); renderViz(2); };
+    optStacked.onclick = () => { barChartMode = "stacked"; optStacked.classList.add("on"); optGrouped.classList.remove("on"); renderViz(2); };
     toggleWrap.append(optGrouped, optStacked);
-    
-    const divider = el("div", "ctrl-divider");
 
-    c.append(wrap, playBtn, speedBtn, divider, toggleWrap);
+    const divider1 = el("div", "ctrl-divider");
+
+    const scaleWrap = el("div", "toggle-group");
+    const optLinear = el("button", "toggle-opt" + (yAxisScaleMode === "linear" ? " on" : ""), "Linear");
+    const optLog = el("button", "toggle-opt" + (yAxisScaleMode === "logarithmic" ? " on" : ""), "Logarithmic");
+    optLinear.onclick = () => { yAxisScaleMode = "linear"; optLinear.classList.add("on"); optLog.classList.remove("on"); renderViz(2); };
+    optLog.onclick = () => { yAxisScaleMode = "logarithmic"; optLog.classList.add("on"); optLinear.classList.remove("on"); renderViz(2); };
+    scaleWrap.append(optLinear, optLog);
+
+    const divider2 = el("div", "ctrl-divider");
+
+    c.append(wrap, playBtn, speedBtn, divider1, toggleWrap, divider2, scaleWrap);
   }
 
   if (id === 4) {
@@ -860,6 +766,19 @@ function drawViz1Plotly() {
       });
     });
   }
+  
+  APP.cleanupFns.push(() => {
+    if (typeof viz1PlayInterval !== 'undefined') {
+      clearInterval(viz1PlayInterval);
+    }
+    const plotContainer = document.getElementById('viz1-plot');
+    if (plotContainer && typeof Plotly !== 'undefined') {
+      try { Plotly.purge(plotContainer); } catch (e) {}
+    }
+    document.body.style.cursor = '';
+    document.body.style.pointerEvents = '';
+    document.body.classList.remove('cursor-crosshair');
+  });
 }
 
 
@@ -874,6 +793,7 @@ let minRdFilter = 0;
 let minGdpFilter = 0;
 let selectedCountryTrail = null;
 let barChartMode = "grouped";
+let yAxisScaleMode = "linear";
 let activeSortParameter = "Default";
 
 const getCountryMetrics = (countryName, year, q1Count, q4Count, totalCount) => {
@@ -1002,15 +922,21 @@ function renderViz2(body) {
   const yearData = allBubbleData[year] || [];
 
   const countryMaxTotal = {};
-  Object.values(allBubbleData).flat().forEach(c => {
-    if (c.country && c.total) {
-      countryMaxTotal[c.country] = Math.max(countryMaxTotal[c.country] || 0, c.total);
+const countriesWithMissingData = new Set();
+Object.values(allBubbleData).flat().forEach(c => {
+    if (c.country) {
+        if (c.total) {
+            countryMaxTotal[c.country] = Math.max(countryMaxTotal[c.country] || 0, c.total);
+        }
+        if (c.q1 === 0) {
+            countriesWithMissingData.add(c.country);
+        }
     }
-  });
+});
 
-  const countriesList = Array.from(new Set(
+const countriesList = Array.from(new Set(
     Object.values(allBubbleData).flat().map(c => c.country)
-  )).filter(name => (countryMaxTotal[name] || 0) >= 1000).sort();
+)).filter(name => (countryMaxTotal[name] || 0) >= 1000 && !countriesWithMissingData.has(name)).sort();
 
   const getTier = ratio => {
     if (ratio >= 2.0) return "Elite";
@@ -1537,9 +1463,9 @@ function renderViz2(body) {
   // Exclude low-data countries (total < 1000)
   if (activeContinentFilter === "All") {
     displayData = displayData.filter(d => d.total >= 1000);
-  } else {
+} else {
     displayData = displayData.filter(d => d.total >= 10);
-  }
+}
 
   // 1. Continent Filter
   if (activeContinentFilter !== "All") {
@@ -1655,15 +1581,18 @@ function renderViz2(body) {
     ? d3.max(displayData, d => Math.max(d.q1, d.q4)) || 10000 
     : d3.max(displayData, d => d.q1 + d.q4) || 10000;
 
-  const yScale = d3.scaleLinear()
-    .domain([0, yMaxVal * 1.05])
-    .range([innerHeight, 0]);
+  const yScale = yAxisScaleMode === "logarithmic"
+    ? d3.scaleLog().domain([1, Math.max(10, yMaxVal * 1.5)]).range([innerHeight, 0]).clamp(true)
+    : d3.scaleLinear().domain([0, yMaxVal * 1.05]).range([innerHeight, 0]);
 
   // Y Axis & Grid lines
   const yAxis = d3.axisLeft(yScale)
     .ticks(5)
     .tickSize(-innerWidth)
-    .tickFormat(d => d >= 1000 ? `${(d / 1000).toFixed(0)}k` : d);
+    .tickFormat(d => {
+        if (yAxisScaleMode === "logarithmic" && Math.log10(d) % 1 !== 0) return "";
+        return d >= 1000 ? `${(d / 1000).toFixed(0)}k` : d;
+    });
 
   const yAxisG = chartG.append("g")
     .attr("class", "y-axis")
@@ -2745,6 +2674,7 @@ function renderViz3(body) {
                         <div class="bar-fill" id="bar-${sanitizeName(topic)}" style="background: ${topicGradients[topic]}; width: 0%;"></div>
                     </div>
                     <div class="value-display" id="val-${sanitizeName(topic)}">0</div>
+                    <div class="flag-display" id="flag-${sanitizeName(topic)}" style="margin-left: 10px; font-size: 1.5em; line-height: 1; display: flex; align-items: center;"></div>
                 `;
                 rowsContainer.appendChild(row);
             });
@@ -2776,7 +2706,10 @@ function renderViz3(body) {
             const datasets = topics.map(topic => {
                 return {
                     label: topic,
-                    data: years.map(y => globalData[y][topic]),
+                    data: years.map(y => {
+                        if (y > currentYear) return null;
+                        return globalData[y][topic] || 0;
+                    }),
                     borderColor: topicColors[topic],
                     backgroundColor: topicColors[topic] + '1A', // transparent fill
                     borderWidth: 2,
@@ -2880,10 +2813,10 @@ function renderViz3(body) {
         function updateDashboard(recalcStats = false) {
             updateTimelineUI();
             updateBarChartRace();
+            updateLineChartData();
             
             if (recalcStats) {
                 calculateAndRenderStats();
-                updateLineChartData();
             }
         }
 
@@ -2939,22 +2872,32 @@ function renderViz3(body) {
 
                     // Update value text
                     valDisp.textContent = item.value.toLocaleString();
+
+                    // Update flag
+                    const flagDisp = container.querySelector(`#flag-${sName}`);
+                    if (flagDisp) {
+                        const topC = getTopCountryInYear(item.name, currentYear);
+                        flagDisp.textContent = getFlagEmoji(topC.code);
+                    }
                 }
             });
         }
 
         function updateLineChartData() {
-            if (!lineChart) return;
+    if (!lineChart) return;
 
-            topics.forEach((topic, idx) => {
-                const dataPoints = years.map(y => {
-                    const dataSrc = (selectedCountry === 'GLOBAL') ? globalData[y] : countryData[selectedCountry][y];
-                    return dataSrc[topic] || 0;
-                });
-                lineChart.data.datasets[idx].data = dataPoints;
-            });
-            lineChart.update();
-        }
+    const visibleYears = years.filter(y => y <= currentYear);
+    lineChart.data.labels = visibleYears;
+
+    topics.forEach((topic, idx) => {
+        const dataPoints = visibleYears.map(y => {
+            const dataSrc = (selectedCountry === 'GLOBAL') ? globalData[y] : countryData[selectedCountry][y];
+            return dataSrc[topic] || 0;
+        });
+        lineChart.data.datasets[idx].data = dataPoints;
+    });
+    lineChart.update();
+}
 
         function calculateAndRenderStats() {
             insightsGrid.innerHTML = '';
@@ -3015,10 +2958,23 @@ function renderViz3(body) {
                 let footerValue = '';
                 
                 if (selectedCountry === 'GLOBAL') {
-                    // For global, show Top Contributing Country in 2025
-                    const topC = getTopCountryInYear(topic, 2025);
-                    footerLabel = 'Top Leader (2025)';
-                    footerValue = topC.code ? `${topC.name} (${(topC.count / val2025 * 100).toFixed(0)}%)` : 'None';
+                    // For global, show Top 5 Contributing Countries in 2025
+                    const top5 = getTop5CountriesInYear(topic, 2025);
+                    footerLabel = 'Top Leaders (2025)';
+                    
+                    let optionsHtml = top5.map((c, i) => {
+                        const pct = val2025 > 0 ? (c.count / val2025 * 100).toFixed(0) : 0;
+                        return `<div style="padding: 2px 0;">${i+1}. ${c.name} (${pct}%)</div>`;
+                    }).join('');
+                    
+                    const summaryText = top5.length > 0 ? `1. ${top5[0].name}` : 'Top 5';
+
+                    footerValue = top5.length > 0 
+                        ? `<details style="cursor: pointer; max-width: 180px; position: relative;">
+                               <summary style="font-size: 0.9em; outline: none; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 2px 5px; user-select: none; display: flex; align-items: center; justify-content: space-between;"><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${summaryText}</span><span style="font-size: 0.7em; margin-left: 6px;">▼</span></summary>
+                               <div style="position: absolute; bottom: 100%; right: 0; background: #0f172a; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 6px; font-size: 0.85em; color: #cbd5e1; margin-bottom: 4px; width: max-content; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">${optionsHtml}</div>
+                           </details>` 
+                        : 'None';
                 } else {
                     // For specific country, show their share of global publications in 2025
                     const global2025Val = globalData[2025][topic] || 0;
@@ -3048,7 +3004,7 @@ function renderViz3(body) {
                         </div>
                         <div class="footer-item">
                             <span class="footer-label">${footerLabel}</span>
-                            <span class="footer-value" title="${footerValue}">${footerValue}</span>
+                            <span class="footer-value">${footerValue}</span>
                         </div>
                     </div>
                 `;
@@ -3072,6 +3028,28 @@ function renderViz3(body) {
             }
 
             return { code: topCode, name: topName, count: maxPubs };
+        }
+
+        function getTop5CountriesInYear(topic, year) {
+            let list = [];
+            for (const code in countryData) {
+                const val = countryData[code][year][topic] || 0;
+                if (val > 0) {
+                    list.push({ code: code, name: countryMap[code] || code, count: val });
+                }
+            }
+            list.sort((a, b) => b.count - a.count);
+            return list.slice(0, 5);
+        }
+
+        function getFlagEmoji(countryCode) {
+            if (!countryCode) return '';
+            if (countryCode.toLowerCase() === 'uk') countryCode = 'GB'; // Handle common edge cases just in case
+            const codePoints = countryCode
+                .toUpperCase()
+                .split('')
+                .map(char => 127397 + char.charCodeAt(0));
+            return String.fromCodePoint(...codePoints);
         }
 
         // Animation Loop logic
