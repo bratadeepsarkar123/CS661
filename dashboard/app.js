@@ -466,9 +466,11 @@ function renderViz1(body) {
             Search Countries
           </label>
           <div class="viz1-search-container">
-            <input type="text" id="viz1-search" class="viz1-search-input" placeholder="e.g. India, Japan, USA...">
+            <input type="text" id="viz1-search" class="viz1-search-input" list="viz1-country-list" placeholder="e.g. India, Japan, USA... (Press Enter to select)" style="flex: 1; min-width: 0; width: auto;">
+            <button type="button" id="viz1-search-btn" style="background: rgba(34,211,238,0.15); border: 1px solid rgba(34,211,238,0.4); color: #22d3ee; padding: 4px 10px; border-radius: 4px; cursor: pointer; font-size: 12px; font-weight: 600; margin-left: 8px; white-space: nowrap; flex-shrink: 0;">Add</button>
             <svg class="viz1-search-large-icon" width="120" height="120" viewBox="0 0 24 24" fill="none" stroke="#22d3ee" stroke-width="3"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </div>
+          <datalist id="viz1-country-list"></datalist>
         </div>
 
         <div class="viz1-control-group">
@@ -508,6 +510,13 @@ function renderViz1(body) {
     </div>
   `;
   
+  // Populate country autocomplete datalist
+  const countryList = document.getElementById('viz1-country-list');
+  if (countryList && typeof VIZ1_DATA !== 'undefined') {
+    const uniqueCountries = [...new Set(VIZ1_DATA.map(d => d.Country_Name).filter(Boolean))].sort();
+    countryList.innerHTML = uniqueCountries.map(name => `<option value="${name}">`).join('');
+  }
+  
   // Attach Event Listeners
   document.getElementById('viz1-back-btn').addEventListener('click', () => {
     viz1SelectedRegion = null;
@@ -519,7 +528,33 @@ function renderViz1(body) {
   const label = document.getElementById('viz1-year-label');
   const playBtn = document.getElementById('viz1-play-btn');
   const search = document.getElementById('viz1-search');
+  const searchBtn = document.getElementById('viz1-search-btn');
   const specificBtn = document.getElementById('viz1-specific-btn');
+  
+  function executeViz1Search() {
+    const query = search.value.trim();
+    if (!query) return;
+    
+    const match = VIZ1_DATA.find(d =>
+      d.Country_Name && d.Country_Name.toLowerCase() === query.toLowerCase()
+    );
+    
+    if (match && !viz1ComparedCountries.includes(match.Country_Code)) {
+      viz1ComparedCountries.push(match.Country_Code);
+    } else if (!match) {
+      search.style.outline = '2px solid #D55E00';
+      search.style.borderRadius = '4px';
+      setTimeout(() => {
+        search.style.outline = '';
+        search.style.borderRadius = '';
+      }, 600);
+    }
+    
+    search.value = '';
+    viz1SearchQuery = '';
+    updateViz1CompareUI();
+    drawViz1Plotly();
+  }
   
   slider.addEventListener('input', (e) => {
     viz1Year = parseInt(e.target.value, 10);
@@ -548,6 +583,17 @@ function renderViz1(body) {
     viz1SearchQuery = e.target.value;
     drawViz1Plotly();
   });
+  
+  search.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      executeViz1Search();
+    }
+  });
+  
+  if (searchBtn) {
+    searchBtn.addEventListener('click', executeViz1Search);
+  }
   
   specificBtn.addEventListener('click', () => {
     viz1ShowSpecific = !viz1ShowSpecific;
