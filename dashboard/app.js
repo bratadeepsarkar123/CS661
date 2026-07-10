@@ -184,9 +184,10 @@ function drawPreview5() {
   ctx.setLineDash([]);
 }
 
-// ─── Particle Background ───────────────────────────────────
+// ─── Particle Background (no-op in editorial layout) ─────
 function spawnParticles() {
   const container = document.getElementById("hero-particles");
+  if (!container) return;
   for (let i = 0; i < 30; i++) {
     const p = document.createElement("div");
     p.className = "particle";
@@ -3649,4 +3650,30 @@ window.addEventListener("resize", () => {
     return;
   }
   if (APP.activeViz) renderViz(APP.activeViz);
+});
+
+// ─── Present Mode (editorial slide walkthrough) ────────────
+function togglePresentMode() {
+  const on = document.body.classList.toggle("present-mode");
+  const btn = document.getElementById("present-mode-btn");
+  if (btn) {
+    btn.setAttribute("aria-pressed", on ? "true" : "false");
+    const label = btn.querySelector(".present-toggle-label");
+    if (label) label.textContent = on ? "Exit Present" : "Present";
+  }
+}
+
+window.togglePresentMode = togglePresentMode;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("present-mode-btn");
+  if (btn) btn.addEventListener("click", togglePresentMode);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "p" && e.key !== "P") return;
+  const tag = e.target?.tagName;
+  if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT" || e.target?.isContentEditable) return;
+  e.preventDefault();
+  togglePresentMode();
 });

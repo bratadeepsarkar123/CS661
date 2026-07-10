@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Global Knowledge & Wealth Paradox | CS661 Group 10</title>
+  <title>The Global Knowledge &amp; Wealth Paradox | CS661 Group 10</title>
   <meta name="description" content="Interactive visual analytics exploring how national wealth converts into scientific excellence across the globe.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  
+
   <!-- PapaParse for CSV Parsing -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <!-- Chart.js for Trend Analysis -->
@@ -18,149 +18,253 @@
 </head>
 <body>
 
-  <!-- HERO HEADER -->
-  <header class="hero-header">
-    <div class="hero-bg-particles" id="hero-particles"></div>
-    <div class="hero-content">
-      <div class="hero-top">
-        <div class="project-badge">
-          <span class="badge-dot"></span>
-          CS661 · Group 10 · Visual Analytics
-        </div>
-      </div>
-      <h1 class="hero-title">
-        The Global Knowledge<br>
-        <span class="gradient-text">&amp; Wealth Paradox</span>
-      </h1>
-      <p class="hero-subtitle">
-        An interactive deep-dive into how national wealth, R&amp;D investment,<br>
-        and institutional density translate into scientific excellence worldwide.
-      </p>
-      <div class="data-source-badges">
-        <span class="ds-badge">World Bank API</span>
-        <span class="ds-badge">UNESCO UIS</span>
-        <span class="ds-badge">SCImago SJR</span>
-        <span class="ds-badge">THE Rankings</span>
-        <span class="ds-badge">NIRF India</span>
-      </div>
+  <button type="button" class="present-toggle" id="present-mode-btn" aria-pressed="false" title="Toggle Present Mode (keyboard: P)">
+    <span class="present-toggle-label">Present</span>
+    <kbd class="present-kbd">P</kbd>
+  </button>
+
+  <!-- EDITORIAL MASTHEAD -->
+  <header class="masthead" id="top">
+    <div class="masthead-rule"></div>
+    <p class="masthead-kicker">CS661 · Group 10 · Visual Analytics · IIT Kanpur</p>
+    <h1 class="masthead-title">The Global Knowledge<br><span class="masthead-accent">&amp; Wealth Paradox</span></h1>
+    <p class="masthead-dek">
+      How national wealth, R&amp;D investment, and institutional density translate into scientific excellence — and where the relationship breaks down.
+    </p>
+    <div class="masthead-meta">
+      <time datetime="2026-07">July 2026</time>
+      <span class="meta-sep" aria-hidden="true">·</span>
+      <span>Five interactive figures</span>
+    </div>
+    <div class="data-source-badges" aria-label="Data sources">
+      <span class="ds-badge">World Bank API</span>
+      <span class="ds-badge">UNESCO UIS</span>
+      <span class="ds-badge">SCImago SJR</span>
+      <span class="ds-badge">THE Rankings</span>
+      <span class="ds-badge">NIRF India</span>
     </div>
   </header>
 
-  <!-- VISUALIZATION GALLERY -->
-  <main class="gallery-section">
-    <div class="gallery-header">
-      <h2>Choose a Visualization</h2>
-      <p>Click any panel to open the full interactive experience</p>
-    </div>
+  <div class="editorial-shell">
+    <nav class="toc-rail" aria-label="Table of contents">
+      <p class="toc-heading">In this article</p>
+      <ol class="toc-list">
+        <li><a href="#lede">Overview</a></li>
+        <li><a href="#figure-1">Figure 1 — Peer clustering</a></li>
+        <li><a href="#figure-2">Figure 2 — Quality shift</a></li>
+        <li><a href="#figure-3">Figure 3 — Research topics</a></li>
+        <li><a href="#figure-4">Figure 4 — Collaboration premium</a></li>
+        <li><a href="#figure-5">Figure 5 — India network</a></li>
+        <li><a href="#methods">Methods</a></li>
+      </ol>
+    </nav>
 
-    <div class="viz-grid">
+    <main class="editorial-article">
+      <section class="article-lede" id="lede">
+        <p class="lede-dropcap">
+          Rich nations do not always lead in citations. Across five linked visualizations, we trace how macroeconomic indicators,
+          publication quality, field dynamics, international co-authorship, and domestic institutional networks reveal a
+          persistent gap between economic power and knowledge output.
+        </p>
+        <p class="article-prose">
+          Each figure below is fully interactive. Click any chart to open the expanded view with filters, year controls,
+          and linked detail panels. Use <strong>Present</strong> mode (<kbd>P</kbd>) for a slide-style walkthrough.
+        </p>
+      </section>
 
-      <!-- VIZ 1: Choropleth + R&D Pipeline -->
-      <div class="viz-card" id="card-1" onclick="openViz(1)">
-        <div class="card-preview">
-          <canvas id="preview-1" class="preview-canvas"></canvas>
-          <div class="card-overlay">
-            <div class="overlay-icon">→</div>
-            <span>Click to Explore</span>
-          </div>
-        </div>
-        <div class="card-info">
-          <div class="viz-number">01</div>
-          <h3>High-Dimensional Peer Clustering</h3>
-          <p>Revealing scientific peer groups based on macroeconomic and academic indicators</p>
-          <div class="card-tags">
-            <span class="tag">t-SNE / UMAP</span>
-            <span class="tag">2D Scatter Plot</span>
-            <span class="tag">Clustering</span>
-          </div>
-        </div>
-      </div>
+      <section class="article-prose-block">
+        <h2 class="section-heading">I. Countries cluster by more than GDP</h2>
+        <p class="article-prose">
+          High-dimensional indicators — R&amp;D spend, researcher density, citation impact — compress into peer groups that
+          do not align neatly with income tiers. The scatter below projects nations into a shared embedding space.
+        </p>
+      </section>
 
-      <!-- VIZ 2: PPP Bubble Plot -->
-      <div class="viz-card" id="card-2" onclick="openViz(2)">
-        <div class="card-preview">
-          <canvas id="preview-2" class="preview-canvas"></canvas>
-          <div class="card-overlay">
-            <div class="overlay-icon">→</div>
-            <span>Click to Explore</span>
+      <figure class="editorial-figure" id="figure-1">
+        <figcaption class="figure-label"><span class="figure-num">Figure 1.</span> High-Dimensional Peer Clustering</figcaption>
+        <div class="viz-card" id="card-1" onclick="openViz(1)">
+          <div class="card-preview">
+            <canvas id="preview-1" class="preview-canvas"></canvas>
+            <div class="card-overlay">
+              <div class="overlay-icon" aria-hidden="true">→</div>
+              <span>Open interactive view</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="viz-number">01</div>
+            <h3>High-Dimensional Peer Clustering</h3>
+            <p>Revealing scientific peer groups based on macroeconomic and academic indicators</p>
+            <div class="card-tags">
+              <span class="tag">t-SNE / UMAP</span>
+              <span class="tag">2D Scatter Plot</span>
+              <span class="tag">Clustering</span>
+            </div>
           </div>
         </div>
-        <div class="card-info">
-          <div class="viz-number">02</div>
-          <h3>Global Quality Shift</h3>
-          <p>Tracking how the global mix of elite (Q1) vs low-tier (Q4) publication quality evolves over time</p>
-          <div class="card-tags">
-            <span class="tag">Bar Graph</span>
-            <span class="tag">Grouped/Stacked</span>
-            <span class="tag">Quality Mix</span>
-          </div>
-        </div>
-      </div>
+        <figcaption class="figure-caption">
+          <em>Figure 1.</em> Two-dimensional projection of national indicators (t-SNE / UMAP). Colour encodes world region.
+          <span class="interactive-badge">Interactive</span>
+        </figcaption>
+      </figure>
 
-      <!-- VIZ 3: Efficiency Outliers Scatter -->
-      <div class="viz-card" id="card-3" onclick="openViz(3)">
-        <div class="card-preview">
-          <canvas id="preview-3" class="preview-canvas"></canvas>
-          <div class="card-overlay">
-            <div class="overlay-icon">→</div>
-            <span>Click to Explore</span>
-          </div>
-        </div>
-        <div class="card-info">
-          <div class="viz-number">03</div>
-          <h3>Top Research topics</h3>
-          <p>Ranking the most-published research topics globally and showing field prominence changes</p>
-          <div class="card-tags">
-            <span class="tag">Bar Chart Race</span>
-            <span class="tag">Dynamic Sorting</span>
-          </div>
-        </div>
-      </div>
+      <section class="article-prose-block">
+        <h2 class="section-heading">II. Publication quality shifted faster than quantity</h2>
+        <p class="article-prose">
+          The global mix of elite (Q1) versus lower-tier (Q4) journals has evolved unevenly. Stacked distributions show
+          how quality composition changed decade by decade.
+        </p>
+      </section>
 
-      <!-- VIZ 4: Bar Chart Race (Topics) -->
-      <div class="viz-card" id="card-4" onclick="openViz(4)">
-        <div class="card-preview">
-          <canvas id="preview-4" class="preview-canvas"></canvas>
-          <div class="card-overlay">
-            <div class="overlay-icon">→</div>
-            <span>Click to Explore</span>
+      <figure class="editorial-figure" id="figure-2">
+        <figcaption class="figure-label"><span class="figure-num">Figure 2.</span> Global Quality Shift</figcaption>
+        <div class="viz-card" id="card-2" onclick="openViz(2)">
+          <div class="card-preview">
+            <canvas id="preview-2" class="preview-canvas"></canvas>
+            <div class="card-overlay">
+              <div class="overlay-icon" aria-hidden="true">→</div>
+              <span>Open interactive view</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="viz-number">02</div>
+            <h3>Global Quality Shift</h3>
+            <p>Tracking how the global mix of elite (Q1) vs low-tier (Q4) publication quality evolves over time</p>
+            <div class="card-tags">
+              <span class="tag">Bar Graph</span>
+              <span class="tag">Grouped/Stacked</span>
+              <span class="tag">Quality Mix</span>
+            </div>
           </div>
         </div>
-        <div class="card-info">
-          <div class="viz-number">04</div>
-          <h3>The Collaboration Premium</h3>
-          <p>Quantifying the citation gap between purely domestic papers and internationally co-authored research</p>
-          <div class="card-tags">
-            <span class="tag">Dumbbell Plot</span>
-            <span class="tag">Citation Gain</span>
-            <span class="tag">Sorting</span>
-          </div>
-        </div>
-      </div>
+        <figcaption class="figure-caption">
+          <em>Figure 2.</em> Q1 vs Q4 publication share over time. Source: SCImago SJR density estimates.
+          <span class="interactive-badge">Interactive</span>
+        </figcaption>
+      </figure>
 
-      <!-- VIZ 5: India Deep Dive Network -->
-      <div class="viz-card featured" id="card-5" onclick="openViz(5)">
-        <div class="card-preview">
-          <canvas id="preview-5" class="preview-canvas"></canvas>
-          <div class="card-overlay">
-            <div class="overlay-icon">→</div>
-            <span>Click to Explore</span>
-          </div>
-        </div>
-        <div class="card-info">
-          <div class="viz-number">05</div>
-          <h3>India Domestic Higher Education Network</h3>
-          <p>Mapping India's domestic collaboration landscape and differences between elite and state-affiliated institutions</p>
-          <div class="card-tags">
-            <span class="tag">Geospatial Node-Link</span>
-            <span class="tag">Network</span>
-            <span class="tag">Tier Comparison</span>
-          </div>
-        </div>
-      </div>
+      <section class="article-prose-block">
+        <h2 class="section-heading">III. Research fields rise and fall like empires</h2>
+        <p class="article-prose">
+          Topic-level publication counts reorder dramatically across decades. The bar chart race surfaces which disciplines
+          dominated each era.
+        </p>
+      </section>
 
-    </div>
-  </main>
+      <figure class="editorial-figure" id="figure-3">
+        <figcaption class="figure-label"><span class="figure-num">Figure 3.</span> Top Research Topics</figcaption>
+        <div class="viz-card" id="card-3" onclick="openViz(3)">
+          <div class="card-preview">
+            <canvas id="preview-3" class="preview-canvas"></canvas>
+            <div class="card-overlay">
+              <div class="overlay-icon" aria-hidden="true">→</div>
+              <span>Open interactive view</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="viz-number">03</div>
+            <h3>Top Research topics</h3>
+            <p>Ranking the most-published research topics globally and showing field prominence changes</p>
+            <div class="card-tags">
+              <span class="tag">Bar Chart Race</span>
+              <span class="tag">Dynamic Sorting</span>
+            </div>
+          </div>
+        </div>
+        <figcaption class="figure-caption">
+          <em>Figure 3.</em> Field-level publication ranks, 1950–2025. Source: OpenAlex.
+          <span class="interactive-badge">Interactive</span>
+        </figcaption>
+      </figure>
+
+      <section class="article-prose-block">
+        <h2 class="section-heading">IV. International ties buy a citation premium</h2>
+        <p class="article-prose">
+          Domestically authored papers systematically underperform internationally co-authored work in median citations.
+          The dumbbell plot quantifies this collaboration gap by region.
+        </p>
+      </section>
+
+      <figure class="editorial-figure" id="figure-4">
+        <figcaption class="figure-label"><span class="figure-num">Figure 4.</span> The Collaboration Premium</figcaption>
+        <div class="viz-card" id="card-4" onclick="openViz(4)">
+          <div class="card-preview">
+            <canvas id="preview-4" class="preview-canvas"></canvas>
+            <div class="card-overlay">
+              <div class="overlay-icon" aria-hidden="true">→</div>
+              <span>Open interactive view</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="viz-number">04</div>
+            <h3>The Collaboration Premium</h3>
+            <p>Quantifying the citation gap between purely domestic papers and internationally co-authored research</p>
+            <div class="card-tags">
+              <span class="tag">Dumbbell Plot</span>
+              <span class="tag">Citation Gain</span>
+              <span class="tag">Sorting</span>
+            </div>
+          </div>
+        </div>
+        <figcaption class="figure-caption">
+          <em>Figure 4.</em> Domestic vs international co-authorship citation medians. Source: OpenAlex citation networks.
+          <span class="interactive-badge">Interactive</span>
+        </figcaption>
+      </figure>
+
+      <section class="article-prose-block">
+        <h2 class="section-heading">V. One country, two research economies</h2>
+        <p class="article-prose">
+          India's domestic higher-education network exposes a split between elite institutes and state-affiliated institutions —
+          collaboration density, funding tiers, and geographic hubs tell a layered story.
+        </p>
+      </section>
+
+      <figure class="editorial-figure editorial-figure--featured" id="figure-5">
+        <figcaption class="figure-label"><span class="figure-num">Figure 5.</span> India Domestic Higher Education Network</figcaption>
+        <div class="viz-card featured" id="card-5" onclick="openViz(5)">
+          <div class="card-preview">
+            <canvas id="preview-5" class="preview-canvas"></canvas>
+            <div class="card-overlay">
+              <div class="overlay-icon" aria-hidden="true">→</div>
+              <span>Open interactive view</span>
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="viz-number">05</div>
+            <h3>India Domestic Higher Education Network</h3>
+            <p>Mapping India's domestic collaboration landscape and differences between elite and state-affiliated institutions</p>
+            <div class="card-tags">
+              <span class="tag">Geospatial Node-Link</span>
+              <span class="tag">Network</span>
+              <span class="tag">Tier Comparison</span>
+            </div>
+          </div>
+        </div>
+        <figcaption class="figure-caption">
+          <em>Figure 5.</em> Domestic collaboration network among Indian HEIs. Sources: NIRF, ROR, SCImago. Tier aggregates use static funding snapshot.
+          <span class="interactive-badge">Interactive</span>
+        </figcaption>
+      </figure>
+
+      <section class="article-methods" id="methods">
+        <h2 class="section-heading">Methods &amp; data lineage</h2>
+        <p class="article-prose">
+          All figures draw on publicly documented APIs and curated institutional registries. ETL pipelines normalize country codes,
+          journal quartiles, and affiliation tiers before rendering. Module 5 tier statistics reflect verification against NIRF
+          published ranks; edge weights below the top-300 threshold are excluded from year-slice views.
+        </p>
+        <aside class="methods-box">
+          <h3>Reproducibility</h3>
+          <ul>
+            <li>World Bank &amp; UNESCO macro indicators (1996–2024)</li>
+            <li>OpenAlex works and citation graphs</li>
+            <li>SCImago SJR quartile assignments</li>
+            <li>NIRF India institutional metadata</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+  </div>
 
   <!-- LOADING SCREEN -->
   <div class="loading-screen" id="loading-screen">
