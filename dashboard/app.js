@@ -75,15 +75,40 @@ function drawPreview1() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
+  
+  // Draw subtle grid lines
+  ctx.strokeStyle = "rgba(255,255,255,0.03)";
+  ctx.lineWidth = 1;
+  for (let x = w * 0.15; x < w; x += w * 0.15) {
+    ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, h); ctx.stroke();
+  }
+  for (let y = h * 0.2; y < h; y += h * 0.2) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+  }
+
+  // Draw axis stubs
+  ctx.strokeStyle = "rgba(255,255,255,0.1)";
+  ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(w * 0.08, h * 0.9); ctx.lineTo(w * 0.95, h * 0.9); ctx.stroke();
+  ctx.beginPath(); ctx.moveTo(w * 0.08, h * 0.95); ctx.lineTo(w * 0.08, h * 0.05); ctx.stroke();
+
+  // Draw clustered bubbles
   const bubbles = [
-    {x:0.3,y:0.3,r:15,col:"rgba(168,85,247,0.7)"},{x:0.4,y:0.25,r:25,col:"rgba(168,85,247,0.7)"},
-    {x:0.7,y:0.6,r:20,col:"rgba(34,211,238,0.6)"},{x:0.6,y:0.7,r:18,col:"rgba(34,211,238,0.6)"},
-    {x:0.8,y:0.3,r:12,col:"rgba(251,113,133,0.6)"},{x:0.2,y:0.8,r:30,col:"rgba(251,191,36,0.6)"}
+    {x:0.3, y:0.4, r:12, col:"rgba(34,211,238,0.75)"},
+    {x:0.42, y:0.28, r:22, col:"rgba(34,211,238,0.55)"},
+    {x:0.35, y:0.55, r:16, col:"rgba(34,211,238,0.65)"},
+    
+    {x:0.75, y:0.65, r:18, col:"rgba(168,85,247,0.75)"},
+    {x:0.82, y:0.5, r:14, col:"rgba(168,85,247,0.55)"},
+    
+    {x:0.65, y:0.3, r:26, col:"rgba(244,63,94,0.65)"},
+    {x:0.2, y:0.75, r:28, col:"rgba(251,191,36,0.6)"}
   ];
+  
   bubbles.forEach(b => {
     ctx.beginPath(); ctx.arc(b.x*w, b.y*h, b.r, 0, Math.PI*2);
     ctx.fillStyle = b.col; ctx.fill();
-    ctx.strokeStyle = "rgba(255,255,255,0.15)"; ctx.lineWidth = 1; ctx.stroke();
+    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 1.2; ctx.stroke();
   });
 }
 
@@ -93,44 +118,41 @@ function drawPreview2() {
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
 
-  // Draw light gridlines
-  ctx.strokeStyle = "rgba(255, 255, 255, 0.05)";
+  // Draw gridlines
+  ctx.strokeStyle = "rgba(255, 255, 255, 0.03)";
   ctx.lineWidth = 1;
-  for (let y = h * 0.2; y <= h * 0.8; y += h * 0.2) {
+  for (let y = h * 0.25; y < h; y += h * 0.25) {
+    ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(w, y); ctx.stroke();
+  }
+
+  // Draw 3 overlapping joyplot waves
+  const drawJoyWave = (yBase, amp, shift, col1, col2) => {
     ctx.beginPath();
-    ctx.moveTo(w * 0.1, y);
-    ctx.lineTo(w * 0.9, y);
+    ctx.moveTo(0, yBase);
+    for (let x = 0; x <= w; x++) {
+      const distFromMean = (x - (w * 0.5 + shift)) / (w * 0.22);
+      const yValue = yBase - amp * Math.exp(-0.5 * distFromMean * distFromMean);
+      ctx.lineTo(x, yValue);
+    }
+    ctx.lineTo(w, yBase);
+    ctx.closePath();
+
+    // Create gradient fill
+    const grad = ctx.createLinearGradient(0, yBase - amp, 0, yBase);
+    grad.addColorStop(0, col1);
+    grad.addColorStop(1, col2);
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    ctx.strokeStyle = "rgba(255,255,255,0.25)";
+    ctx.lineWidth = 1.5;
     ctx.stroke();
-  }
+  };
 
-  // Draw ground line
-  ctx.strokeStyle = "rgba(255, 255, 255, 0.15)";
-  ctx.beginPath();
-  ctx.moveTo(w * 0.1, h * 0.8);
-  ctx.lineTo(w * 0.9, h * 0.8);
-  ctx.stroke();
-
-  // Draw 5 pairs of bars (Grouped preview)
-  const numGroups = 5;
-  const groupW = (w * 0.8) / numGroups;
-  const barW = groupW * 0.35;
-  const gap = groupW * 0.1;
-
-  for (let i = 0; i < numGroups; i++) {
-    const x0 = w * 0.1 + i * groupW + gap;
-    
-    // Alt heights
-    const hQ1 = h * (0.2 + Math.random() * 0.4);
-    const hQ4 = h * (0.1 + Math.random() * 0.3);
-
-    // Q1 bar (cyan)
-    ctx.fillStyle = "#38bdf8";
-    ctx.fillRect(x0, h * 0.8 - hQ1, barW, hQ1);
-
-    // Q4 bar (rose red)
-    ctx.fillStyle = "#f43f5e";
-    ctx.fillRect(x0 + barW, h * 0.8 - hQ4, barW, hQ4);
-  }
+  // Draw background waves first (bottom to top layout style)
+  drawJoyWave(h * 0.85, h * 0.55, w * 0.1, "rgba(244,63,94,0.45)", "rgba(244,63,94,0.01)");
+  drawJoyWave(h * 0.6, h * 0.45, -w * 0.15, "rgba(56,189,248,0.45)", "rgba(56,189,248,0.01)");
+  drawJoyWave(h * 0.35, h * 0.25, w * 0.05, "rgba(168,85,247,0.45)", "rgba(168,85,247,0.01)");
 }
 
 function drawPreview3() {
@@ -138,12 +160,31 @@ function drawPreview3() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-  const bars = [0.8,0.6,0.5,0.4];
-  const colors = ["#6366f1","#22d3ee","#f59e0b","#f43f5e"];
-  bars.forEach((bw, i) => {
-    const bh = 15, by = 20 + i * 25;
-    ctx.fillStyle = colors[i];
-    ctx.fillRect(20, by, bw*(w-40), bh);
+
+  const barData = [
+    { label: "#1", width: 0.85, color: "#6366f1" },
+    { label: "#2", width: 0.72, color: "#22d3ee" },
+    { label: "#3", width: 0.58, color: "#f59e0b" },
+    { label: "#4", width: 0.44, color: "#f43f5e" }
+  ];
+
+  barData.forEach((bar, i) => {
+    const barHeight = 16;
+    const y = 30 + i * 36;
+    
+    // Draw bar background track
+    ctx.fillStyle = "rgba(255,255,255,0.03)";
+    ctx.fillRect(40, y, w - 80, barHeight);
+
+    // Draw active bar
+    ctx.fillStyle = bar.color;
+    ctx.fillRect(40, y, bar.width * (w - 80), barHeight);
+
+    // Label
+    ctx.fillStyle = "rgba(255,255,255,0.4)";
+    ctx.font = "bold 9px sans-serif";
+    ctx.textAlign = "right";
+    ctx.fillText(bar.label, 30, y + 12);
   });
 }
 
@@ -152,15 +193,37 @@ function drawPreview4() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-  for(let i=0; i<4; i++) {
-    const y = 30 + i*25;
-    const x1 = w*0.2 + Math.random()*w*0.2;
-    const x2 = w*0.6 + Math.random()*w*0.2;
-    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.moveTo(x1, y); ctx.lineTo(x2, y); ctx.stroke();
-    ctx.fillStyle = "#f43f5e"; ctx.beginPath(); ctx.arc(x1, y, 4, 0, Math.PI*2); ctx.fill();
-    ctx.fillStyle = "#10b981"; ctx.beginPath(); ctx.arc(x2, y, 4, 0, Math.PI*2); ctx.fill();
-  }
+
+  // Draw central parity vertical line
+  ctx.strokeStyle = "rgba(255,255,255,0.05)";
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath(); ctx.moveTo(w * 0.45, 10); ctx.lineTo(w * 0.45, h - 10); ctx.stroke();
+  ctx.setLineDash([]);
+
+  // Dumbbells
+  const dumbbells = [
+    { y: 35, d: w * 0.25, i: w * 0.75, colD: "#f43f5e", colI: "#10b981" },
+    { y: 65, d: w * 0.38, i: w * 0.65, colD: "#f43f5e", colI: "#10b981" },
+    { y: 95, d: w * 0.15, i: w * 0.58, colD: "#f43f5e", colI: "#10b981" },
+    { y: 125, d: w * 0.45, i: w * 0.85, colD: "#f43f5e", colI: "#10b981" }
+  ];
+
+  dumbbells.forEach(db => {
+    // Line connector
+    ctx.strokeStyle = "rgba(255,255,255,0.12)";
+    ctx.lineWidth = 2.5;
+    ctx.beginPath(); ctx.moveTo(db.d, db.y); ctx.lineTo(db.i, db.y); ctx.stroke();
+
+    // Domestic dot (Red/Orange)
+    ctx.fillStyle = db.colD;
+    ctx.beginPath(); ctx.arc(db.d, db.y, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 1; ctx.stroke();
+
+    // International dot (Green)
+    ctx.fillStyle = db.colI;
+    ctx.beginPath(); ctx.arc(db.i, db.y, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 1; ctx.stroke();
+  });
 }
 
 function drawPreview5() {
@@ -168,20 +231,47 @@ function drawPreview5() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
+
+  // Clean India Outline shape
   const outline = [
-    [0.38,0.05],[0.55,0.03],[0.72,0.15],[0.78,0.28],[0.65,0.55],
-    [0.55,0.75],[0.48,0.92],[0.42,0.75],[0.30,0.55],[0.22,0.35],[0.28,0.15],[0.38,0.05]
+    [0.38,0.08],[0.55,0.05],[0.72,0.18],[0.78,0.3],[0.68,0.52],
+    [0.55,0.72],[0.48,0.9],[0.42,0.72],[0.32,0.52],[0.24,0.32],[0.28,0.18],[0.38,0.08]
   ];
   ctx.beginPath();
   outline.forEach(([px,py], i) => i===0 ? ctx.moveTo(px*w, py*h) : ctx.lineTo(px*w, py*h));
   ctx.closePath();
-  ctx.fillStyle = "rgba(245,158,11,0.08)";
+  ctx.fillStyle = "rgba(245,158,11,0.05)";
   ctx.fill();
-  ctx.strokeStyle = "rgba(245,158,11,0.3)";
+  ctx.strokeStyle = "rgba(245,158,11,0.22)";
   ctx.lineWidth = 1.5;
-  ctx.setLineDash([3,3]);
   ctx.stroke();
-  ctx.setLineDash([]);
+
+  // Draw 4 interconnected hub node clusters
+  const hubs = [
+    { x: w * 0.45, y: h * 0.25, r: 8, col: "#3b82f6" }, // Delhi area
+    { x: w * 0.35, y: h * 0.58, r: 9, col: "#3b82f6" }, // Mumbai area
+    { x: w * 0.52, y: h * 0.72, r: 10, col: "#8b5cf6" }, // Bangalore area
+    { x: w * 0.58, y: h * 0.78, r: 8, col: "#8b5cf6" }  // Chennai area
+  ];
+
+  // Draw connection links
+  ctx.strokeStyle = "rgba(255,255,255,0.08)";
+  ctx.lineWidth = 1.5;
+  for(let i = 0; i < hubs.length; i++) {
+    for(let j = i + 1; j < hubs.length; j++) {
+      ctx.beginPath();
+      ctx.moveTo(hubs[i].x, hubs[i].y);
+      ctx.lineTo(hubs[j].x, hubs[j].y);
+      ctx.stroke();
+    }
+  }
+
+  // Draw nodes
+  hubs.forEach(node => {
+    ctx.fillStyle = node.col;
+    ctx.beginPath(); ctx.arc(node.x, node.y, node.r, 0, Math.PI * 2); ctx.fill();
+    ctx.strokeStyle = "rgba(255,255,255,0.3)"; ctx.lineWidth = 1; ctx.stroke();
+  });
 }
 
 // ─── Particle Background ───────────────────────────────────
