@@ -1,0 +1,137 @@
+=== G1 docs/GDP/GERD provenance ===
+USA 2015: master_docs=436908.38 OA=981331 WB_pubs=436908.38
+         master_GDP=56849.4697923159 rawWB_GDP=56849.4697923159 master_GERD=2.77328 rawWB_GERD=2.77328
+USA 2020: master_docs=457586.9 OA=1427504 WB_pubs=457586.9
+         master_GDP=64401.5074354209 rawWB_GDP=64401.5074354209 master_GERD=3.41788 rawWB_GERD=3.41788
+USA 2022: master_docs=457335.25 OA=1740804 WB_pubs=457335.25
+         master_GDP=77860.9112908848 rawWB_GDP=77860.9112908848 master_GERD=3.48736 rawWB_GERD=3.48736
+USA 2024: master_docs=1211879.0 OA=1211879 WB_pubs=None
+         master_GDP=85809.9003846359 rawWB_GDP=85809.9003846359 master_GERD= rawWB_GERD=
+CHN 2015: master_docs=406733.9 OA=556996 WB_pubs=406733.9
+         master_GDP=13463.3331511105 rawWB_GDP=13463.3331511105 master_GERD=2.01703 rawWB_GERD=2.01703
+CHN 2020: master_docs=672734.7 OA=812828 WB_pubs=672734.7
+         master_GDP=18267.4783455827 rawWB_GDP=18267.4783455827 master_GERD=2.35712 rawWB_GERD=2.35712
+CHN 2022: master_docs=898949.09 OA=1071180 WB_pubs=898949.09
+         master_GDP=23032.1766271143 rawWB_GDP=23032.1766271143 master_GERD=2.4945 rawWB_GERD=2.4945
+CHN 2024: master_docs=1279947.0 OA=1279947 WB_pubs=None
+         master_GDP=27104.8702677463 rawWB_GDP=27104.8702677463 master_GERD= rawWB_GERD=
+IND 2015: master_docs=98300.94 OA=173019 WB_pubs=98300.94
+         master_GDP=5425.03599091046 rawWB_GDP=5425.03599091046 master_GERD=0.6931 rawWB_GERD=0.6931
+IND 2020: master_docs=148409.55 OA=310906 WB_pubs=148409.55
+         master_GDP=6966.27542785911 rawWB_GDP=6966.27542785911 master_GERD=0.64558 rawWB_GERD=0.64558
+IND 2022: master_docs=207390.38 OA=380143 WB_pubs=207390.38
+         master_GDP=9207.12743040145 rawWB_GDP=9207.12743040145 master_GERD= rawWB_GERD=
+IND 2024: master_docs=458805.0 OA=458805 WB_pubs=None
+         master_GDP=11159.9856476091 rawWB_GDP=11159.9856476091 master_GERD= rawWB_GERD=
+GBR 2015: master_docs=101175.14 OA=283784 WB_pubs=101175.14
+         master_GDP=42515.278865824 rawWB_GDP=42515.278865824 master_GERD=2.27566 rawWB_GERD=2.27566
+GBR 2020: master_docs=104648.2 OA=378494 WB_pubs=104648.2
+         master_GDP=48230.0477027461 rawWB_GDP=48230.0477027461 master_GERD=2.93993 rawWB_GERD=2.93993
+GBR 2022: master_docs=105583.93 OA=351116 WB_pubs=105583.93
+         master_GDP=59021.5721805914 rawWB_GDP=59021.5721805914 master_GERD=2.75224 rawWB_GERD=2.75224
+GBR 2024: master_docs=356898.0 OA=356898 WB_pubs=None
+         master_GDP=62009.4907765366 rawWB_GDP=62009.4907765366 master_GERD= rawWB_GERD=
+DEU 2015: master_docs=108479.28 OA=246178 WB_pubs=108479.28
+         master_GDP=48545.400721962 rawWB_GDP=48545.400721962 master_GERD=2.87725 rawWB_GERD=2.87725
+DEU 2020: master_docs=112179.45 OA=306950 WB_pubs=112179.45
+         master_GDP=58685.872699771 rawWB_GDP=58685.872699771 master_GERD=3.0897 rawWB_GERD=3.0897
+DEU 2022: master_docs=113976.3 OA=308688 WB_pubs=113976.3
+         master_GDP=69048.9884036885 rawWB_GDP=69048.9884036885 master_GERD=3.07096 rawWB_GERD=3.07096
+DEU 2024: master_docs=294819.0 OA=294819 WB_pubs=None
+         master_GDP=73551.9347696836 rawWB_GDP=73551.9347696836 master_GERD= rawWB_GERD=
+countries with >1 distinct Q1_Percent: 0 of 93
+USA Q1 set: {'47.97'}
+sjr USA: [{'Country_Code': 'USA', 'Q1_Percent': '47.97', 'Q4_Percent': '6.4', 'Citations_Per_Doc': '4.506', 'H_Index': '53.0', 'Num_Journals': '5016.0'}]
+=== imputed xlsx GERD for checklist 2024 ===
+CHN 2024 imputed GERD=2.392333484093129 docs=1279947 H=39
+DEU 2024 imputed GERD=2.093288465618476 docs=294819 H=36
+GBR 2024 imputed GERD=2.048107687045483 docs=356898 H=48
+IND 2024 imputed GERD=0.8196984894764904 docs=458805 H=27
+USA 2024 imputed GERD=3.178270468424242 docs=1211879 H=53
+
+=== G4 FE vs collaboration_premium ===
+FE n=111 premium countries=20
+overlap=['Australia', 'Brazil', 'Canada', 'China', 'France', 'Germany', 'India', 'Iran', 'Italy', 'Japan', 'Netherlands', 'Poland', 'South Korea', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'United Kingdom', 'United States']
+FE-only count=92
+premium-only=['Russian Federation']
+Australia            mean    FE=16.3/24.3/8.0 SRC=15.012/26.347/11.334 round1=False near=False
+Australia            2022    FE=16.3/24.3/8.0 SRC=9.004/17.633/8.629 round1=False near=False
+Australia            latest  FE=16.3/24.3/8.0 SRC=4.088/8.570/4.482 round1=False near=False
+Brazil               mean    FE=8.6/14.8/6.2 SRC=6.533/15.234/8.701 round1=False near=False
+Brazil               2022    FE=8.6/14.8/6.2 SRC=3.389/8.459/5.070 round1=False near=False
+Brazil               latest  FE=8.6/14.8/6.2 SRC=1.210/3.929/2.719 round1=False near=False
+Canada               mean    FE=15.0/23.1/8.1 SRC=13.865/23.766/9.902 round1=False near=False
+Canada               2022    FE=15.0/23.1/8.1 SRC=7.799/14.712/6.913 round1=False near=False
+Canada               latest  FE=15.0/23.1/8.1 SRC=3.665/7.073/3.408 round1=False near=False
+China                mean    FE=13.0/18.3/5.3 SRC=13.057/26.407/13.350 round1=False near=False
+China                2022    FE=13.0/18.3/5.3 SRC=13.366/19.193/5.827 round1=False near=False
+China                latest  FE=13.0/18.3/5.3 SRC=6.499/9.988/3.489 round1=False near=False
+France               mean    FE=14.4/21.2/6.8 SRC=6.157/19.845/13.688 round1=False near=False
+France               2022    FE=14.4/21.2/6.8 SRC=3.193/11.792/8.599 round1=False near=False
+France               latest  FE=14.4/21.2/6.8 SRC=1.653/6.118/4.465 round1=False near=False
+Germany              mean    FE=15.3/22.6/7.3 SRC=10.787/23.124/12.337 round1=False near=False
+Germany              2022    FE=15.3/22.6/7.3 SRC=5.982/14.143/8.161 round1=False near=False
+Germany              latest  FE=15.3/22.6/7.3 SRC=2.847/7.103/4.256 round1=False near=False
+India                mean    FE=9.5/15.7/6.2 SRC=11.314/20.383/9.069 round1=False near=False
+India                2022    FE=9.5/15.7/6.2 SRC=6.395/14.894/8.499 round1=False near=False
+India                latest  FE=9.5/15.7/6.2 SRC=3.041/7.021/3.980 round1=False near=False
+Iran                 mean    FE=9.5/14.5/5.0 SRC=12.559/23.420/10.861 round1=False near=False
+Iran                 2022    FE=9.5/14.5/5.0 SRC=8.286/17.568/9.282 round1=False near=False
+Iran                 latest  FE=9.5/14.5/5.0 SRC=4.195/8.869/4.674 round1=False near=False
+Italy                mean    FE=13.7/20.4/6.7 SRC=14.604/23.807/9.204 round1=False near=False
+Italy                2022    FE=13.7/20.4/6.7 SRC=8.833/14.684/5.851 round1=False near=False
+Italy                latest  FE=13.7/20.4/6.7 SRC=4.015/7.189/3.174 round1=False near=False
+Japan                mean    FE=12.6/17.2/4.6 SRC=9.750/20.231/10.481 round1=False near=False
+Japan                2022    FE=12.6/17.2/4.6 SRC=5.673/13.273/7.600 round1=False near=False
+Japan                latest  FE=12.6/17.2/4.6 SRC=2.439/6.745/4.306 round1=False near=False
+Netherlands          mean    FE=17.6/25.4/7.8 SRC=16.310/26.285/9.975 round1=False near=False
+Netherlands          2022    FE=17.6/25.4/7.8 SRC=8.862/15.470/6.608 round1=False near=False
+Netherlands          latest  FE=17.6/25.4/7.8 SRC=3.737/7.572/3.835 round1=False near=False
+Poland               mean    FE=9.3/15.0/5.7 SRC=6.521/20.046/13.525 round1=False near=False
+Poland               2022    FE=9.3/15.0/5.7 SRC=6.302/14.199/7.897 round1=False near=False
+Poland               latest  FE=9.3/15.0/5.7 SRC=2.695/7.200/4.505 round1=False near=False
+South Korea          mean    FE=13.4/18.6/5.2 SRC=13.855/23.697/9.843 round1=False near=False
+South Korea          2022    FE=13.4/18.6/5.2 SRC=10.161/17.226/7.065 round1=False near=False
+South Korea          latest  FE=13.4/18.6/5.2 SRC=4.776/9.249/4.473 round1=False near=False
+Spain                mean    FE=12.6/18.8/6.2 SRC=11.404/21.624/10.220 round1=False near=False
+Spain                2022    FE=12.6/18.8/6.2 SRC=6.447/12.480/6.033 round1=False near=False
+Spain                latest  FE=12.6/18.8/6.2 SRC=2.753/6.638/3.885 round1=False near=False
+Sweden               mean    FE=16.8/23.6/6.8 SRC=16.527/26.298/9.772 round1=False near=False
+Sweden               2022    FE=16.8/23.6/6.8 SRC=9.356/16.340/6.984 round1=False near=False
+Sweden               latest  FE=16.8/23.6/6.8 SRC=3.742/8.098/4.356 round1=False near=False
+Switzerland          mean    FE=19.9/28.4/8.5 SRC=14.025/24.956/10.930 round1=False near=False
+Switzerland          2022    FE=19.9/28.4/8.5 SRC=7.304/14.716/7.412 round1=False near=False
+Switzerland          latest  FE=19.9/28.4/8.5 SRC=3.604/7.558/3.954 round1=False near=False
+Turkey               mean    FE=9.9/15.3/5.4 SRC=10.000/19.293/9.293 round1=False near=False
+Turkey               2022    FE=9.9/15.3/5.4 SRC=4.457/12.971/8.514 round1=False near=False
+Turkey               latest  FE=9.9/15.3/5.4 SRC=2.283/6.879/4.596 round1=False near=False
+United Kingdom       mean    FE=16.2/23.8/7.6 SRC=12.548/23.950/11.402 round1=False near=False
+United Kingdom       2022    FE=16.2/23.8/7.6 SRC=7.057/14.657/7.600 round1=False near=False
+United Kingdom       latest  FE=16.2/23.8/7.6 SRC=2.977/7.140/4.163 round1=False near=False
+United States        mean    FE=16.9/24.3/7.4 SRC=13.199/22.533/9.334 round1=False near=False
+United States        2022    FE=16.9/24.3/7.4 SRC=3.932/12.833/8.901 round1=False near=False
+United States        latest  FE=16.9/24.3/7.4 SRC=2.995/6.265/3.270 round1=False near=False
+all *10 integer? True
+gain==intl-dom 111/111
+USA all premium years:
+  2010: dom=21.177 intl=31.795 gain=10.618
+  2011: dom=19.827 intl=30.588 gain=10.761
+  2012: dom=19.34 intl=29.502 gain=10.162
+  2013: dom=18.352 intl=28.417 gain=10.065
+  2014: dom=17.434 intl=28.091 gain=10.657
+  2015: dom=16.609 intl=27.611 gain=11.002
+  2016: dom=16.091 intl=26.385 gain=10.294
+  2017: dom=15.306 intl=25.842 gain=10.536
+  2018: dom=12.911 intl=24.271 gain=11.36
+  2019: dom=11.696 intl=21.612 gain=9.916
+  2020: dom=9.524 intl=19.267 gain=9.743
+  2021: dom=8.232 intl=16.352 gain=8.12
+  2022: dom=3.932 intl=12.833 gain=8.901
+  2023: dom=4.555 intl=9.164 gain=4.609
+  2024: dom=2.995 intl=6.265 gain=3.27
+
+=== G5 top-300 edge filter check ===
+top300 cumulative min weight=88 n_pairs=3155
+IITK-IITI cumulative weight=95 rank=268
+2023: IITK-IITI weight=8 top300_min=15 in_top300=False n_edges=1920
+2024: IITK-IITI weight=6 top300_min=17 in_top300=False n_edges=2085

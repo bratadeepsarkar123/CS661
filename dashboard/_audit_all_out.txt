@@ -1,0 +1,51 @@
+﻿
+python : Traceback (most recent call last):
+At line:1 char:1
++ python "_audit_all_graphs.py" 2>&1 | Out-File -FilePath "_audit_all_o ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+========================================================================
+GRAPH 1 ù VIZ1_DATA
+========================================================================
+rows=6022 bytes=1477531
+keys: ['Country_Code', 'Country_Name', 'GDP_Per_Capita_PPP', 'GERD_Percent_GDP', 'H_Index', 'Region', 'Total_Docs', 'Year', 'x', 'y']
+years=1996..2024 (29) countries=213 names=213
+regions: {'Americas': 1245, 'Asia': 1408, 'Africa': 1545, 'Europe': 1299, 'Oceania': 525}
+nullish: {'Country_Name': 27}
+dup_country_year=0
+incomplete_coverage=23/213
+ incomplete ex: [('AFG', [1996, 1997, 1998, 1999, 2024], 24), ('ASM', [1996, 1997, 1998, 1999, 2000], 21), ('CUW', [1996, 1997, 1998, 1999], 25), ('CYM', [1996, 1997, 1998, 1999, 2000], 18), ('ERI', [2022, 2023, 2024], 26), ('GRL', [2024], 28), ('GUM', [1996, 1997, 1998, 1999, 2000], 21), ('IMN', [2023, 2024], 27)]
+  Total_Docs: min=0 med=200 max=1.28e+06 zeros=82 negs=0
+  H_Index: min=2 med=18 max=111 zeros=0 negs=0
+  GERD_Percent_GDP: min=0.00544 med=0.3702 max=6.346 zeros=0 negs=0
+  GDP_Per_Capita_PPP: min=282.2 med=1.019e+04 max=1.809e+05 zeros=0 negs=0
+among_first_80_codes: static_GERD=30 static_H_Index=79
+  USA (United States): n=29 docs 313392->1211879 GERD 2.450->3.447 H 53->53 xrev=15 doc_spikes=0 flat_docs=False
+  CHN (China): n=29 docs 33621->1279947 GERD 0.560->2.577 H 39->39 xrev=5 doc_spikes=0 flat_docs=False
+  IND (India): n=29 docs 18905->458805 GERD 0.639->0.646 H 27->27 xrev=11 doc_spikes=0 flat_docs=False
+  GBR (United Kingdom): n=29 docs 72332->356898 GERD 1.575->2.676 H 48->48 xrev=19 doc_spikes=1 flat_docs=False
+  DEU (Germany): n=29 docs 64230->294819 GERD 2.137->3.154 H 36->36 xrev=14 doc_spikes=0 flat_docs=False
+  JPN (Japan): n=29 docs 88807->194321 GERD 2.643->3.441 H 37->37 xrev=11 doc_spikes=0 flat_docs=False
+  TWN: MISSING
+  RUS (Russian Federation): n=29 docs 34672->154446 GERD 0.966->0.937 H 8->8 xrev=8 doc_spikes=0 flat_docs=False
+countries_with_flat_Total_Docs_all_years=3/213
+  2022 USA: docs=457335 GDP_PPP=77861 GERD=3.487 H=53 x=-0.31 y=-11.78
+  2022 CHN: docs=898949 GDP_PPP=23032 GERD=2.494 H=39 x=-0.19 y=-7.22
+  2022 IND: docs=207390 GDP_PPP=9207 GERD=0.646 H=27 x=2.44 y=-3.40
+
+========================================================================
+GRAPH 2 ù REAL_RIDGELINE_DATA (reconfirm)
+========================================================================
+rows=2610 keys=['country', 'q1', 'q4', 'ratio', 'region', 'total']
+ratio_capped=172 q1+q4>total=569 q4>total=478
+  File "C:\Users\brata\Downloads\CS661\dashboard\_audit_all_graphs.py", line 520, in <module>
+    main()
+  File "C:\Users\brata\Downloads\CS661\dashboard\_audit_all_graphs.py", line 511, in main
+    audit_viz2()
+  File "C:\Users\brata\Downloads\CS661\dashboard\_audit_all_graphs.py", line 206, in audit_viz2
+    last = max(rows, key=lambda r: r["year"])
+  File "C:\Users\brata\Downloads\CS661\dashboard\_audit_all_graphs.py", line 206, in <lambda>
+    last = max(rows, key=lambda r: r["year"])
+KeyError: 'year'

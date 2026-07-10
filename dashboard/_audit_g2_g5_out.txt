@@ -1,0 +1,140 @@
+﻿
+========================================================================
+GRAPH 2 reconfirm
+========================================================================
+rows=2610 years=1999..2024
+ratio_capped=172 q1+q4>total=569 q4>total=478
+  United States 2024: q1=592632 q4=39992 total=891418 ratio=5.0 true=14.82
+  United Kingdom 2024: q1=619925 q4=19884 total=883968 ratio=5.0 true=31.18
+  China 2024: q1=32547 q4=67119 total=177048 ratio=0.485 true=0.48
+  India 2024: q1=1338 q4=13980 total=51912 ratio=0.096 true=0.10
+  Taiwan 2024: q1=1205 q4=1311 total=4707 ratio=0.919 true=0.92
+
+========================================================================
+GRAPH 3 CSV_DATA
+========================================================================
+rows=48219 years=1950..2025 (76) topics=7 countries=228
+topics: ['AI & Machine Learning', 'CRISPR & Genomics', 'Data Science & Big Data', 'Infectious Diseases', 'Quantum Computing', 'Renewable Energy', 'Robotics & Automation']
+UI topic coverage: {'AI & Machine Learning': True, 'CRISPR & Genomics': True, 'Infectious Diseases': True, 'Data Science & Big Data': True, 'Renewable Energy': True, 'Robotics & Automation': True, 'Quantum Computing': True}
+extra topics in data: []
+years_missing_from_UI_range=[]
+dups=0
+  AI & Machine Learning: 1950:218 -> 2025:227192 modern_drops>30%=0 ex=[]
+  CRISPR & Genomics: 1950:664 -> 2025:85592 modern_drops>30%=0 ex=[]
+  Infectious Diseases: 1950:343 -> 2025:62472 modern_drops>30%=0 ex=[]
+  Data Science & Big Data: 1950:16 -> 2025:22515 modern_drops>30%=0 ex=[]
+  Renewable Energy: 1950:97 -> 2025:82677 modern_drops>30%=0 ex=[]
+  Robotics & Automation: 1950:223 -> 2025:90592 modern_drops>30%=0 ex=[]
+  Quantum Computing: 1950:69 -> 2025:9331 modern_drops>30%=0 ex=[]
+  Infectious 2018: 38426
+  Infectious 2019: 41861
+  Infectious 2020: 97205
+  Infectious 2021: 107742
+  Infectious 2022: 94499
+  Infectious 2023: 76419
+  Infectious 2024: 64463
+
+Top AI 2023:
+  China                                         37681
+  United States of America                      24752
+  India                                         12708
+  Indonesia                                     8356
+  United Kingdom of Great Britain and Northern  7708
+  Germany                                       7464
+  France                                        5867
+  Italy                                         4724
+  Japan                                         4607
+  Canada                                        4463
+  Australia                                     3601
+  Spain                                         3356
+China>USA AI years: first=2006 count=14
+  2023 US=24752 CN=37681
+Quantum subfield_ids={'2500'}
+rows_in_2025=1254
+rows_in_2024=1235
+AI<=1960 rows=366 total_pubs=3907
+
+========================================================================
+GRAPH 4 VIZ4_DATA
+========================================================================
+n=111
+regions {'North America': 3, 'Europe': 34, 'East Asia & Pacific': 16, 'South Asia': 5, 'Latin America': 18, 'Middle East & Africa': 29, 'Oceania': 6}
+gain_mismatch=0 intl<dom=0
+exact_0.1_precision=111/111
+Top premium:
+  Singapore: dom=18.3 intl=27.5 gain=9.2
+  Saudi Arabia: dom=11.2 intl=20.2 gain=9.0
+  Luxembourg: dom=15.3 intl=24.0 gain=8.7
+  Ireland: dom=15.0 intl=23.6 gain=8.6
+  Switzerland: dom=19.9 intl=28.4 gain=8.5
+  New Zealand: dom=14.7 intl=23.0 gain=8.3
+  Canada: dom=15.0 intl=23.1 gain=8.1
+  Australia: dom=16.3 intl=24.3 gain=8.0
+Bottom premium:
+  Guatemala: dom=6.1 intl=10.2 gain=4.1
+  Vanuatu: dom=5.5 intl=9.6 gain=4.1
+  Bolivia: dom=6.4 intl=10.3 gain=3.9
+  Nepal: dom=5.9 intl=9.7 gain=3.8
+  Myanmar: dom=5.0 intl=8.7 gain=3.7
+  spot United States: {'name': 'United States', 'region': 'North America', 'domestic': 16.9, 'international': 24.3, 'gain': 7.4}
+  spot China: {'name': 'China', 'region': 'East Asia & Pacific', 'domestic': 13.0, 'international': 18.3, 'gain': 5.3}
+  spot India: {'name': 'India', 'region': 'South Asia', 'domestic': 9.5, 'international': 15.7, 'gain': 6.2}
+  spot Switzerland: {'name': 'Switzerland', 'region': 'Europe', 'domestic': 19.9, 'international': 28.4, 'gain': 8.5}
+  spot Saudi Arabia: {'name': 'Saudi Arabia', 'region': 'Middle East & Africa', 'domestic': 11.2, 'international': 20.2, 'gain': 9.0}
+  region North America: mean_gain=7.00 n=3
+  region Europe: mean_gain=6.37 n=34
+  region East Asia & Pacific: mean_gain=5.33 n=16
+  region South Asia: mean_gain=4.94 n=5
+  region Latin America: mean_gain=4.93 n=18
+  region Middle East & Africa: mean_gain=5.91 n=29
+  region Oceania: mean_gain=5.80 n=6
+
+========================================================================
+GRAPH 5 india_network JSON
+========================================================================
+manifest: {'year_min': 2015, 'year_max': 2024, 'available_years': [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], 'default_year': 2024, 'quality_year': 2019, 'funding_academic_years': ['2017-18', '2018-19', '2019-20', '2020-21', '2021-22', '2022-23'], 'patent_calendar_years': [2020, 2021, 2022], 'nirf_ranking_seasons': [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024]}
+  2015: nodes=120 edges=300 year_field=2015
+  2016: nodes=120 edges=300 year_field=2016
+  2017: nodes=120 edges=300 year_field=2017
+  2018: nodes=120 edges=300 year_field=2018
+  2019: nodes=120 edges=300 year_field=2019
+  2020: nodes=120 edges=300 year_field=2020
+  2021: nodes=120 edges=300 year_field=2021
+  2022: nodes=120 edges=300 year_field=2022
+  2023: nodes=120 edges=300 year_field=2023
+  2024: nodes=120 edges=300 year_field=2024
+
+node0 keys 2024: ['city', 'color', 'funding_academic_year', 'funding_status', 'funding_year_mismatch', 'id', 'is_hub', 'lat', 'lon', 'name', 'nirf_match_status', 'nirf_rank', 'nirf_rank_year_mismatch', 'nirf_ranking_category', 'nirf_ranking_season', 'openalex_id', 'patent_calendar_year', 'patent_status', 'patent_year_mismatch', 'patents_granted', 'patents_published', 'radius', 'research_funding_cr', 'scimago_pct', 'scimago_year', 'sponsored_projects', 'state', 'tier', 'total_expenditure_cr', 'total_works']
+node0 sample: {'id': '6fb57ff7-f044-4eb9-b7d6-bebdef022df4', 'openalex_id': 'I59270414', 'name': 'Indian Institute of Science', 'tier': 'premier', 'city': 'Bengaluru', 'state': 'Karnataka', 'lat': 13.0222347, 'lon': 77.5671832, 'total_works': 87588, 'is_hub': True, 'color': '#3b82f6', 'radius': 11.838107956932983, 'scimago_pct': 1.63, 'scimago_year': 2019, 'nirf_rank': 2}
+edge0: {'source': '5f90b565-15b8-4035-ab58-963431c3275d', 'target': '672214f6-22a9-4d55-8c6c-5b28a5159516', 'weight': 1198, 'citation_weight': 7091}
+funding 2020 vs 2023: common=104 changed=103 same=1
+nirf/rank 2020 vs 2023: common=110 changed=95
+geo_issues=0 ex=[]
+dangling_edges_2024=0/300
+
+Kanpur-Indore:
+  2015: w=24 a=['129be347-f8df-4fd2-b553-37ff0fd31af1'] b=['92004806-cba2-4966-9ebf-9f31bc5a9597']
+  2020: w=11 a=['129be347-f8df-4fd2-b553-37ff0fd31af1'] b=['92004806-cba2-4966-9ebf-9f31bc5a9597']
+  2023: w=0 a=['129be347-f8df-4fd2-b553-37ff0fd31af1'] b=['92004806-cba2-4966-9ebf-9f31bc5a9597']
+  2024: w=0 a=['129be347-f8df-4fd2-b553-37ff0fd31af1'] b=['92004806-cba2-4966-9ebf-9f31bc5a9597']
+
+2024 overview nodes=45 edges=40
+all_years_full nodes=120 edges=300 year=all
+checking static numeric fields across 2015 vs 2024...
+  STATIC-ish is_hub: 120/120 identical (100%)
+  VARIES nirf_rank: 36/110 identical (33%)
+  VARIES nirf_rank_year_mismatch: 11/120 identical (9%)
+  VARIES nirf_ranking_season: 33/110 identical (30%)
+  VARIES patent_calendar_year: 0/116 identical (0%)
+  STATIC-ish patent_year_mismatch: 120/120 identical (100%)
+  VARIES patents_granted: 5/55 identical (9%)
+  VARIES patents_published: 0/55 identical (0%)
+  STATIC-ish radius: 120/120 identical (100%)
+  VARIES research_funding_cr: 21/104 identical (20%)
+  STATIC-ish scimago_pct: 111/111 identical (100%)
+  STATIC-ish scimago_year: 111/111 identical (100%)
+  VARIES sponsored_projects: 23/106 identical (22%)
+  VARIES state: 0/48 identical (0%)
+  STATIC-ish total_works: 120/120 identical (100%)
+
+DONE
