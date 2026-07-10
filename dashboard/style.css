@@ -1074,18 +1074,6 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 #preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
 #preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
 
-/* ──────────────────────────────────────────────
-   RESPONSIVE
-   ────────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .viz-grid { grid-template-columns: 1fr; }
-  .viz-card.featured { grid-column: span 1; }
-  .split-layout, .india-layout { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
-  .split-pane + .split-pane, .india-sidebar { border-left: none; border-top: 1px solid var(--border); }
-  .panel-header { flex-direction: column; align-items: flex-start; }
-  input[type="range"].ctrl-range { width: 160px; }
-}
-
 
 /* ── Module 5: Leaflet map + right detail panel ── */
 .india-map-layout {
@@ -1495,17 +1483,6 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
   background: rgba(99, 102, 241, 0.15);
 }
 
-@media (max-width: 900px) {
-  .india-map-layout {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr min(40vh, 320px);
-  }
-  .india-detail-panel {
-    border-left: none;
-    border-top: 1px solid var(--border);
-  }
-}
-
 .india-leaflet-tip {
   background: rgba(15, 23, 42, 0.95) !important;
   border: 1px solid rgba(255, 255, 255, 0.15) !important;
@@ -1690,18 +1667,6 @@ input[type="range"].ctrl-range::-webkit-slider-thumb:hover {
 #preview-3 { background: linear-gradient(135deg, #0d1117 0%, rgba(34,211,238,0.08) 100%); }
 #preview-4 { background: linear-gradient(135deg, #0d1117 0%, rgba(16,185,129,0.08) 100%); }
 #preview-5 { background: linear-gradient(135deg, #0d1117 0%, rgba(245,158,11,0.08) 100%); }
-
-/* ──────────────────────────────────────────────
-   RESPONSIVE
-   ────────────────────────────────────────────── */
-@media (max-width: 900px) {
-  .viz-grid { grid-template-columns: 1fr; }
-  .viz-card.featured { grid-column: span 1; }
-  .split-layout, .india-layout { grid-template-columns: 1fr; grid-template-rows: 1fr 1fr; }
-  .split-pane + .split-pane, .india-sidebar { border-left: none; border-top: 1px solid var(--border); }
-  .panel-header { flex-direction: column; align-items: flex-start; }
-  input[type="range"].ctrl-range { width: 160px; }
-}
 
 
 /* --- VIZ 1 LAYOUT CSS --- */
