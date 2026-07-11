@@ -1,0 +1,225 @@
+========================================================================
+INVENTORY — CS661_Dataset
+========================================================================
+collaboration_premium.csv                     19802 bytes
+deep_dive_dataset_imputed.xlsx                18421 bytes
+master_dataset.csv                           920011 bytes
+master_dataset_imputed.xlsx                  952938 bytes
+merge_scimago_kaggle.py                        2034 bytes
+raw_gerd_sectors.csv                         125102 bytes
+raw_oecd_msti.csv                          50565690 bytes
+raw_openalex_docs.csv                         84056 bytes
+raw_wb_publications.csv                      116726 bytes
+raw_worldbank.csv                            695709 bytes
+sjr_country_metrics.csv                        2960 bytes
+master_dataset: rows=7340 countries=259 years=1996..2024
+  fill GDP_Per_Capita_PPP: 6980/7340 (95.1%)
+  fill GERD_Percent_GDP: 3140/7340 (42.8%)
+  fill Total_Docs: 7091/7340 (96.6%)
+  fill H_Index: 2696/7340 (36.7%)
+  fill Q1_Percent: 2696/7340 (36.7%)
+  fill Q4_Percent: 2696/7340 (36.7%)
+
+========================================================================
+GRAPH 1 — VIZ1_DATA vs master / raw_worldbank / sjr
+========================================================================
+Spot-check frontend vs master_dataset.csv:
+  USA 2015: MATCH name='United States' docs=436908.38 H=53.0 GERD=2.77328 GDP=56849.4697923159 | Total_Docs FE=436908.38 OA=981331.0 DIFF=-544423
+  USA 2020: MATCH name='United States' docs=457586.9 H=53.0 GERD=3.41788 GDP=64401.5074354209 | Total_Docs FE=457586.9 OA=1427504.0 DIFF=-969917
+  USA 2022: MATCH name='United States' docs=457335.25 H=53.0 GERD=3.48736 GDP=77860.9112908848 | Total_Docs FE=457335.25 OA=1740804.0 DIFF=-1283469
+  USA 2024: MISMATCH name='United States' docs=1211879.0 H=53.0 GERD=3.44716 GDP=85809.9003846359 DIFFS=['GERD_Percent_GDP: FE=3.44716 MASTER=None']
+  CHN 2015: MATCH name='China' docs=406733.9 H=39.0 GERD=2.01703 GDP=13463.3331511105 | Total_Docs FE=406733.9 OA=556996.0 DIFF=-150262
+  CHN 2020: MATCH name='China' docs=672734.7 H=39.0 GERD=2.35712 GDP=18267.4783455827 | Total_Docs FE=672734.7 OA=812828.0 DIFF=-140093
+  CHN 2022: MATCH name='China' docs=898949.09 H=39.0 GERD=2.4945 GDP=23032.1766271143 | Total_Docs FE=898949.09 OA=1071180.0 DIFF=-172231
+  CHN 2024: MISMATCH name='China' docs=1279947.0 H=39.0 GERD=2.57729 GDP=27104.8702677463 DIFFS=['GERD_Percent_GDP: FE=2.57729 MASTER=None']
+  IND 2015: MATCH name='India' docs=98300.94 H=27.0 GERD=0.6931 GDP=5425.03599091046 | Total_Docs FE=98300.94 OA=173019.0 DIFF=-74718
+  IND 2020: MATCH name='India' docs=148409.55 H=27.0 GERD=0.64558 GDP=6966.27542785911 | Total_Docs FE=148409.55 OA=310906.0 DIFF=-162496
+  IND 2022: MISMATCH name='India' docs=207390.38 H=27.0 GERD=0.64558 GDP=9207.12743040145 DIFFS=['GERD_Percent_GDP: FE=0.64558 MASTER=None'] | Total_Docs FE=207390.38 OA=380143.0 DIFF=-172753
+  IND 2024: MISMATCH name='India' docs=458805.0 H=27.0 GERD=0.64558 GDP=11159.9856476091 DIFFS=['GERD_Percent_GDP: FE=0.64558 MASTER=None']
+  GBR 2015: MATCH name='United Kingdom' docs=101175.14 H=48.0 GERD=2.27566 GDP=42515.278865824 | Total_Docs FE=101175.14 OA=283784.0 DIFF=-182609
+  GBR 2020: MATCH name='United Kingdom' docs=104648.2 H=48.0 GERD=2.93993 GDP=48230.0477027461 | Total_Docs FE=104648.2 OA=378494.0 DIFF=-273846
+  GBR 2022: MATCH name='United Kingdom' docs=105583.93 H=48.0 GERD=2.75224 GDP=59021.5721805914 | Total_Docs FE=105583.93 OA=351116.0 DIFF=-245532
+  GBR 2024: MISMATCH name='United Kingdom' docs=356898.0 H=48.0 GERD=2.67614 GDP=62009.4907765366 DIFFS=['GERD_Percent_GDP: FE=2.67614 MASTER=None']
+  DEU 2015: MATCH name='Germany' docs=108479.28 H=36.0 GERD=2.87725 GDP=48545.400721962 | Total_Docs FE=108479.28 OA=246178.0 DIFF=-137699
+  DEU 2020: MATCH name='Germany' docs=112179.45 H=36.0 GERD=3.0897 GDP=58685.872699771 | Total_Docs FE=112179.45 OA=306950.0 DIFF=-194771
+  DEU 2022: MATCH name='Germany' docs=113976.3 H=36.0 GERD=3.07096 GDP=69048.9884036885 | Total_Docs FE=113976.3 OA=308688.0 DIFF=-194712
+  DEU 2024: MISMATCH name='Germany' docs=294819.0 H=36.0 GERD=3.1539 GDP=73551.9347696836 DIFFS=['GERD_Percent_GDP: FE=3.1539 MASTER=None']
+
+H_Index static vs sjr_country_metrics.csv (yearless):
+  USA: FE unique H=[53.0] n_unique=1 sjr_H=53.0
+  CHN: FE unique H=[39.0] n_unique=1 sjr_H=39.0
+  IND: FE unique H=[27.0] n_unique=1 sjr_H=27.0
+  GBR: FE unique H=[48.0] n_unique=1 sjr_H=48.0
+  DEU: FE unique H=[36.0] n_unique=1 sjr_H=36.0
+
+Frontend null Country_Name rows: 27/6022
+G1 FE vs master spot MATCH=14 MISMATCH=6 MISSING=0
+  absurdity check IRL 2022 H=111.0 docs=9254.27
+  absurdity check USA 2022 H=53.0 docs=457335.25
+
+========================================================================
+GRAPH 2 — REAL_RIDGELINE_DATA vs master Q1/Q4 percents
+========================================================================
+Years in ridgeline: 1999..2024 (26)
+rows=2610 q1+q4>total=569 q4>total=479 ratio~5=223
+Spot-check: ridgeline counts vs master Q1_Percent/Q4_Percent:
+  United States 2015: PARTIAL_units_differ q1=436109 q4=43231 total=699407 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=90.98 MASTER_Q1%=47.97 MASTER_Q4%=6.4
+  China 2015: PARTIAL_units_differ q1=9463 q4=42021 total=115883 ratio=0.225 ratio_ok=True integ=ok FE_q1pct_of_q1q4=18.38 MASTER_Q1%=43.96 MASTER_Q4%=9.34
+  India 2015: PCT_NEAR q1=1531 q4=20237 total=56935 ratio=0.076 ratio_ok=True integ=ok FE_q1pct_of_q1q4=7.03 MASTER_Q1%=5.88 MASTER_Q4%=22.62
+  United Kingdom 2015: PARTIAL_units_differ q1=384841 q4=30338 total=594141 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=92.69 MASTER_Q1%=52.65 MASTER_Q4%=3.56
+  Germany 2015: PARTIAL_units_differ q1=60712 q4=21415 total=165606 ratio=2.835 ratio_ok=True integ=ok FE_q1pct_of_q1q4=73.92 MASTER_Q1%=31.98 MASTER_Q4%=12.81
+  United States 2020: PARTIAL_units_differ q1=508972 q4=36884 total=809296 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=93.24 MASTER_Q1%=47.97 MASTER_Q4%=6.4
+  China 2020: PARTIAL_units_differ q1=12517 q4=43956 total=112288 ratio=0.285 ratio_ok=True integ=ok FE_q1pct_of_q1q4=22.16 MASTER_Q1%=43.96 MASTER_Q4%=9.34
+  India 2020: PCT_NEAR q1=650 q4=16276 total=45348 ratio=0.04 ratio_ok=True integ=ok FE_q1pct_of_q1q4=3.84 MASTER_Q1%=5.88 MASTER_Q4%=22.62
+  United Kingdom 2020: PARTIAL_units_differ q1=489768 q4=53601 total=768408 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=90.14 MASTER_Q1%=52.65 MASTER_Q4%=3.56
+  Germany 2020: PARTIAL_units_differ q1=60387 q4=45971 total=199042 ratio=1.314 ratio_ok=True integ=ok FE_q1pct_of_q1q4=56.78 MASTER_Q1%=31.98 MASTER_Q4%=12.81
+  United States 2022: PARTIAL_units_differ q1=530553 q4=35612 total=834932 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=93.71 MASTER_Q1%=47.97 MASTER_Q4%=6.4
+  China 2022: PARTIAL_units_differ q1=20732 q4=56873 total=141132 ratio=0.365 ratio_ok=True integ=ok FE_q1pct_of_q1q4=26.71 MASTER_Q1%=43.96 MASTER_Q4%=9.34
+  India 2022: PCT_NEAR q1=1606 q4=15095 total=48309 ratio=0.106 ratio_ok=True integ=ok FE_q1pct_of_q1q4=9.62 MASTER_Q1%=5.88 MASTER_Q4%=22.62
+  United Kingdom 2022: PARTIAL_units_differ q1=530160 q4=21070 total=811731 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=96.18 MASTER_Q1%=52.65 MASTER_Q4%=3.56
+  Germany 2022: PARTIAL_units_differ q1=71309 q4=49227 total=212759 ratio=1.449 ratio_ok=True integ=ok FE_q1pct_of_q1q4=59.16 MASTER_Q1%=31.98 MASTER_Q4%=12.81
+  United States 2024: PARTIAL_units_differ q1=592632 q4=39992 total=891418 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=93.68 MASTER_Q1%=47.97 MASTER_Q4%=6.4
+  China 2024: PARTIAL_units_differ q1=32547 q4=67119 total=177048 ratio=0.485 ratio_ok=True integ=ok FE_q1pct_of_q1q4=32.66 MASTER_Q1%=43.96 MASTER_Q4%=9.34
+  India 2024: PCT_NEAR q1=1338 q4=13980 total=51912 ratio=0.096 ratio_ok=True integ=ok FE_q1pct_of_q1q4=8.73 MASTER_Q1%=5.88 MASTER_Q4%=22.62
+  United Kingdom 2024: PARTIAL_units_differ q1=619925 q4=19884 total=883968 ratio=5.0 ratio_ok=True integ=ok FE_q1pct_of_q1q4=96.89 MASTER_Q1%=52.65 MASTER_Q4%=3.56
+  Germany 2024: PARTIAL_units_differ q1=89544 q4=50658 total=228920 ratio=1.768 ratio_ok=True integ=ok FE_q1pct_of_q1q4=63.87 MASTER_Q1%=31.98 MASTER_Q4%=12.81
+  UK vs USA 2020: UK_q1=489768 USA_q1=508972 UK>USA=False
+  UK vs USA 2022: UK_q1=530160 USA_q1=530553 UK>USA=False
+
+========================================================================
+GRAPH 3 — viz3 CSV_DATA (OpenAlex topics)
+========================================================================
+rows=48219 cols=['year', 'topic_name', 'subfield_id', 'country_name', 'country_code', 'publications_count']
+years=1950..2025 n_years=76 topics(7): ['AI & Machine Learning', 'CRISPR & Genomics', 'Data Science & Big Data', 'Infectious Diseases', 'Quantum Computing', 'Renewable Energy', 'Robotics & Automation']
+Quantum rows=4397 subfield_ids={'2500'}
+  NOTE: ASJC 2500 = Materials Science (Scopus); Quantum Physics typically 3101/3107 area
+Spot-check AI & Machine Learning publications:
+  USA 2015: pubs=13186 subfield=1702
+  China 2015: pubs=11475 subfield=1702
+  India 2015: pubs=3791 subfield=1702
+  UK 2015: pubs=4236 subfield=1702
+  Germany 2015: pubs=4082 subfield=1702
+  USA 2020: pubs=27451 subfield=1702
+  China 2020: pubs=21869 subfield=1702
+  India 2020: pubs=8053 subfield=1702
+  UK 2020: pubs=8702 subfield=1702
+  Germany 2020: pubs=6538 subfield=1702
+  USA 2022: pubs=22304 subfield=1702
+  China 2022: pubs=31602 subfield=1702
+  India 2022: pubs=10230 subfield=1702
+  UK 2022: pubs=6540 subfield=1702
+  Germany 2022: pubs=6324 subfield=1702
+Local raw_openalex_docs.csv has only country-year Total_Docs_OA (5771 rows) — NO topic/ASJC breakdown
+G3 status: NO_LOCAL_RAW for topic-country-year series (partner OpenAlex dump needed)
+
+========================================================================
+GRAPH 4 — VIZ4_DATA vs collaboration_premium.csv
+========================================================================
+FE countries=111 keys=['name', 'region', 'domestic', 'international', 'gain']
+premium years=2010..2024 rows=300
+premium country code sample: ['AU', 'BR', 'CA', 'CN', 'FR']
+{'name': 'United States', 'region': 'North America', 'domestic': 16.9, 'international': 24.3, 'gain': 7.4}
+{'name': 'Canada', 'region': 'North America', 'domestic': 15.0, 'international': 23.1, 'gain': 8.1}
+{'name': 'Mexico', 'region': 'North America', 'domestic': 8.9, 'international': 14.4, 'gain': 5.5}
+{'name': 'United Kingdom', 'region': 'Europe', 'domestic': 16.2, 'international': 23.8, 'gain': 7.6}
+{'name': 'Germany', 'region': 'Europe', 'domestic': 15.3, 'international': 22.6, 'gain': 7.3}
+
+========================================================================
+GRAPH 5 — india_network payloads vs processed CSVs
+========================================================================
+manifest keys=['year_min', 'year_max', 'available_years', 'default_year', 'quality_year', 'funding_academic_years', 'patent_calendar_years', 'nirf_ranking_seasons']
+{
+  "year_min": 2015,
+  "year_max": 2024,
+  "available_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "default_year": 2024,
+  "quality_year": 2019,
+  "funding_academic_years": [
+    "2017-18",
+    "2018-19",
+    "2019-20",
+    "2020-21",
+    "2021-22",
+    "2022-23"
+  ],
+  "patent_calendar_years": [
+    2020,
+    2021,
+    2022
+  ],
+  "nirf_ranking_seasons": [
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024
+  ]
+}
+overview type keys=['year', 'quality_year', 'quality_note', 'funding_academic_year_mapped', 'patent_calendar_year_mapped', 'nirf_ranking_season_mapped', 'temporal_metrics_note', 'coverage', 'nodes', 'edges', 'tier_summary', 'annotations']
+overview nodes=45 edges=40
+node0 keys=['radius', 'is_hub', 'tier', 'openalex_id', 'state', 'scimago_pct', 'total_works', 'scimago_year', 'name', 'color', 'id', 'lat', 'nirf_rank', 'nirf_ranking_category', 'city', 'lon']
+node0 sample={'radius': 11.838107956932983, 'is_hub': True, 'tier': 'premier', 'openalex_id': 'I59270414', 'state': 'Karnataka', 'scimago_pct': 1.63, 'total_works': 87588, 'scimago_year': 2019, 'name': 'Indian Institute of Science', 'color': '#3b82f6', 'id': '6fb57ff7-f044-4eb9-b7d6-bebdef022df4', 'lat': 13.0222347}
+edge0={'source': 'c9e12928-adad-470b-bcc3-a64f958bd34b', 'target': '4a1e94cf-f0b6-4560-ab2c-bd58ab8792ac', 'weight': 9267, 'citation_weight': 1719}
+processed candidates found: ['C:\\Users\\brata\\Downloads\\CS661\\CS661 Project\\data\\processed\\institution_master.csv', 'C:\\Users\\brata\\Downloads\\CS661\\CS661 Project\\data\\processed\\collaboration_edges_full.csv', 'C:\\Users\\brata\\Downloads\\CS661\\CS661 Project\\data\\processed\\institution_funding.csv', 'C:\\Users\\brata\\Downloads\\CS661\\CS661 Project\\data\\processed\\institution_patents.csv', 'C:\\Users\\brata\\Downloads\\CS661\\data\\processed\\institution_master.csv']
+  csv: CS661 Project\data\processed\collaboration_edges_full.csv (1410318)
+  csv: CS661 Project\data\processed\institution_funding.csv (11272)
+  csv: CS661 Project\data\processed\institution_master.csv (28089)
+  csv: CS661 Project\data\processed\institution_patents.csv (12816)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\collaboration_edges_full.csv (1410318)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\hub_flags.csv (7127)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\institution_funding.csv (11329)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\institution_master.csv (25830)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\institution_patents.csv (10712)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\institution_quality_static.csv (13138)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\nirf_funding_by_institute.csv (9068)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\processed\nirf_patents_by_institute.csv (4317)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\india_higher_education.csv (81371)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_patents.csv (34612)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_patents_scraped.csv (34612)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_rankings.csv (80200)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_rankings_2023.csv (78394)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_rankings_2024.csv (80200)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_research_projects.csv (101351)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\nirf_research_projects_scraped.csv (101351)
+  csv: data\checkpoints\20260701_084117_marathon_pass_1\data\raw\scimago_india.csv (42329)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\collaboration_edges_full.csv (1410318)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\hub_flags.csv (7127)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\institution_funding.csv (11329)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\institution_master.csv (25830)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\institution_patents.csv (10712)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\institution_quality_static.csv (13138)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\nirf_funding_by_institute.csv (9068)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\processed\nirf_patents_by_institute.csv (4317)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\raw\india_higher_education.csv (81371)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\raw\nirf_patents.csv (34612)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\raw\nirf_patents_scraped.csv (34612)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\raw\nirf_rankings.csv (80200)
+  csv: data\checkpoints\20260701_084648_marathon_pass_0\data\raw\nirf_rankings_2023.csv (78394)
+scimago_years={2019, None} n_with_pct=42
+  2015_overview: nodes=45 edges=25 meta=None
+  2020_overview: nodes=45 edges=35 meta=None
+  2022_overview: nodes=45 edges=40 meta=None
+  2024_overview: nodes=45 edges=40 meta=None
+collaboration_edges_full rows=13236 cols=['inst_a', 'inst_b', 'openalex_a', 'openalex_b', 'year', 'weight', 'citation_weight']
+  edge sample: {'inst_a': '49837a23-0599-4a35-a43f-15be413cc1a0', 'inst_b': '6fb57ff7-f044-4eb9-b7d6-bebdef022df4', 'openalex_a': 'I162827531', 'openalex_b': 'I59270414', 'year': '2016', 'weight': '25', 'citation_weight': '1385'}
+  edge sample: {'inst_a': 'b45c2598-3515-4da1-9660-75a5ff4428fa', 'inst_b': '49837a23-0599-4a35-a43f-15be413cc1a0', 'openalex_a': 'I121750182', 'openalex_b': 'I162827531', 'year': '2020', 'weight': '5', 'citation_weight': '601'}
+  edge sample: {'inst_a': 'b45c2598-3515-4da1-9660-75a5ff4428fa', 'inst_b': '6fb57ff7-f044-4eb9-b7d6-bebdef022df4', 'openalex_a': 'I121750182', 'openalex_b': 'I59270414', 'year': '2020', 'weight': '4', 'citation_weight': '603'}
+institution_master rows=120 cols=['institution_id', 'tier', 'inst_type', 'city', 'state', 'openalex_id', 'ror_id', 'total_works', 'match_confidence', 'is_hub', 'nirf_institute_id', 'nirf_rank', 'nirf_score', 'nirf_year', 'canonical_name', 'latitude', 'longitude', 'geo_source', 'nirf_ranking_category']
+CS661_Dataset: no India/NIRF/OpenAlex institution files — G5 raw lives under scripts pipeline / CS661 Project/data
+
+DONE

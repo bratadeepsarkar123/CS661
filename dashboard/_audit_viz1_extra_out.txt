@@ -1,0 +1,31 @@
+﻿H_Index static countries 211 varying 2
+Top H_Index 2024:
+  Ireland: H=111.0 docs=30101.0
+  Djibouti: H=61.0 docs=92.0
+  Dominica: H=61.0 docs=5.17
+  Denmark: H=61.0 docs=51169.0
+  Nicaragua: H=58.0 docs=1348.0
+  Netherlands: H=58.0 docs=101202.0
+  Rwanda: H=55.5 docs=2957.0
+  Saudi Arabia: H=55.5 docs=84713.0
+  None: H=54.0 docs=0.52
+  Tanzania: H=54.0 docs=7508.0
+  Uganda: H=54.0 docs=7637.0
+  Uruguay: H=53.0 docs=5358.0
+  United States: H=53.0 docs=1211879.0
+  Faroe Islands: H=48.0 docs=214.0
+  Micronesia, Fed. Sts.: H=48.0 docs=3.39
+null names 27 [('BTN', 2024), ('CUB', 2021), ('CUB', 2022), ('CUB', 2023), ('CUB', 2024), ('ERI', 2012), ('ERI', 2013), ('ERI', 2014), ('ERI', 2015), ('ERI', 2016)]
+GERD fully static 68
+
+2024 docs ranking top 10:
+  China: docs=1279947 H=39.0
+  United States: docs=1211879 H=53.0
+  India: docs=458805 H=27.0
+  Indonesia: docs=453276 H=11.0
+  United Kingdom: docs=356898 H=48.0
+  Germany: docs=294819 H=36.0
+  France: docs=251345 H=23.0
+  Brazil: docs=232153 H=24.0
+  Italy: docs=198692 H=13.0
+  Japan: docs=194321 H=37.0
