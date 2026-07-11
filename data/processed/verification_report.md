@@ -1,13 +1,21 @@
 # Module 5 verification checklist
 
-Generated: 2026-07-08T03:51:23.578803+00:00
+Generated: 2026-07-11T21:18:41.700303+00:00
 **23/23 passed**
+
+## Addendum — INI / AIIMS tier fix (2026-07-12)
+
+**Bug:** Graph 5 `premier` vs `state_affiliated` was assigned by OpenAlex `works_count` volume (top 60 + IIT/IISc manual overrides). AIIMS Delhi (81k works) landed in premier; AIIMS Raipur / Bhopal (≈14k works) landed in `state_affiliated` despite being the same national AIIMS family. Viz reads the same `tier` field from master → payload (no separate viz tier).
+
+**Fix:** `scripts/india_network/ini_tier.py` + `03c_patch_ini_premier_tiers.py` force honest-name INI identity (AIIMS, JIPMER, PGIMER, NITs, ISI, HBNI) to `premier`, rebalancing the 60-cap by demoting lowest-works non-INI auto rows. Payloads updated via `03d_propagate_tiers_to_payloads.py` (tier/color/`tier_summary` only). `VIZ5_REGION_BLEND` in `india_network.js` untouched.
+
+**Proof:** All three AIIMS in master are `premier` in `institution_master.csv` and `dashboard/data/india_network/2024_full.json`. Other OpenAlex AIIMS campuses (Bhubaneswar, Jodhpur, …) remain absent from the 120-row master (below volume inclusion) — not invented.
 
 - [PASS] institution_master rows + geo: 120 rows, 100% with lat/lon
 - [PASS] collaboration_edges weight>=2: 13236 edge rows
 - [PASS] edge endpoints in master (domestic IN institutions): all endpoints in institution_master
 - [PASS] overview size: 32466 bytes
-- [PASS] full size: 412790 bytes (cap 1953 KB)
+- [PASS] full size: 412791 bytes (cap 1953 KB)
 - [PASS] SCImago static year footnote: SCImago research impact % snapshot (2019 data); static across year slider
 - [PASS] overview payload edge integrity: 0 orphan edges (nodes=45, edges=40)
 - [PASS] full payload edge integrity: 0 orphan edges (nodes=120, edges=300)
