@@ -36,8 +36,11 @@ const OKABE_ITO = {
   green: '#009E73',
   yellow: '#F0E442',
   black: '#000000',
-  muted: '#94a3b8'
+  muted: '#94a3b8',
+  grey: '#999999'
 };
+// Alias used by G2/G4 bar chrome (same CVD-safe poles)
+const OKABE = OKABE_ITO;
 // Series order alternates cool/warm with large luminance gaps (max categorical separation).
 const viz1ColorPalette = [
   OKABE_ITO.blue,
@@ -142,6 +145,7 @@ const APP = {
   indiaController: null,
   animTimer: null,
   selectedNode: null,      // Viz 5: clicked institution
+  selectedCollab: null,    // Viz 4: pinned country/region row
   cleanupFns: []           // functions to call when closing viz
 };
 
@@ -167,8 +171,8 @@ function hideTip() { tip.classList.remove("visible"); }
 const VIZ_META = {
   1: { title: "High-Dimensional Peer Clustering",             num: "01", credit: "World Bank (GDP, GERD, journal articles) · SCImago Country Rank (H-index; Documents fallback) · UMAP" },
   2: { title: "Global Quality Shift (Q1 vs Q4)",              num: "02", credit: "SCImago Journal Rank · Q1/Q4 by journal publisher country (uncapped ratio)" },
-  3: { title: "Top Research topics",                          num: "03", credit: "OpenAlex concepts 2000–2024 (pre-2000 omitted — AI mega-concept / incomplete backfill)" },
-  4: { title: "The Collaboration Premium",                    num: "04", credit: "OpenAlex · domestic vs international cites · Top 20 countries, 2024" },
+  3: { title: "Top Research topics",                          num: "03", credit: "OpenAlex concepts 1974–2024 (AI = Machine learning C119857082; pre-1974 omitted — incomplete shared coverage)" },
+  4: { title: "The Collaboration Premium",                    num: "04", credit: "OpenAlex · domestic vs international cites · dumbbell · multi-country × 2010–2024" },
   5: { title: "India Domestic Higher Education Network",      num: "05", credit: "NIRF India · ROR · SCImago" }
 };
 
@@ -260,14 +264,18 @@ function drawPreview4() {
   const ctx = c.getContext("2d");
   c.width = c.offsetWidth; c.height = c.offsetHeight;
   const w = c.width, h = c.height;
-  for(let i=0; i<4; i++) {
-    const y = Math.round(h * (0.20 + i * 0.22));
-    const x1 = w*0.2 + Math.random()*w*0.2;
-    const x2 = w*0.6 + Math.random()*w*0.2;
-    ctx.strokeStyle = "rgba(255,255,255,0.2)"; ctx.lineWidth = 2;
+  // Dumbbell preview (domestic orange / intl blue — Okabe-Ito poles)
+  for (let i = 0; i < 4; i++) {
+    const y = Math.round(h * (0.18 + i * 0.2));
+    const x1 = w * (0.18 + Math.random() * 0.15);
+    const x2 = w * (0.45 + Math.random() * 0.35);
+    ctx.strokeStyle = "rgba(148,163,184,0.55)";
+    ctx.lineWidth = 3;
     ctx.beginPath(); ctx.moveTo(x1, y); ctx.lineTo(x2, y); ctx.stroke();
-    ctx.fillStyle = "#E69F00"; ctx.beginPath(); ctx.arc(x1, y, 4, 0, Math.PI*2); ctx.fill();
-    ctx.fillStyle = "#0072B2"; ctx.beginPath(); ctx.arc(x2, y, 4, 0, Math.PI*2); ctx.fill();
+    ctx.fillStyle = OKABE_ITO.orange;
+    ctx.beginPath(); ctx.arc(x1, y, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.fillStyle = OKABE_ITO.blue;
+    ctx.beginPath(); ctx.arc(x2, y, 5, 0, Math.PI * 2); ctx.fill();
   }
 }
 
@@ -440,6 +448,30 @@ function buildControls(id) {
   }
 
   if (id === 4) {
+    const yMin = (typeof VIZ4_META !== "undefined" && VIZ4_META.year_min) ? VIZ4_META.year_min : 2010;
+    const yMax = (typeof VIZ4_META !== "undefined" && VIZ4_META.year_max) ? VIZ4_META.year_max : 2024;
+    if (!(APP.year >= yMin && APP.year <= yMax)) APP.year = yMax;
+
+    const wrap = el("div", "year-slider-wrap");
+    const yLabel = el("span", "ctrl-label", "Year:");
+    const slider = document.createElement("input");
+    slider.type = "range";
+    slider.className = "ctrl-range";
+    slider.min = yMin;
+    slider.max = yMax;
+    slider.value = APP.year;
+    const yearVal = el("span", "year-val", APP.year);
+    slider.oninput = () => {
+      APP.year = +slider.value;
+      yearVal.textContent = APP.year;
+      renderViz(4);
+    };
+    wrap.append(yLabel, slider, yearVal);
+
+    const playBtn = el("button", "ctrl-btn", "▶ Play");
+    playBtn.id = "play-btn";
+    playBtn.onclick = () => toggleAnimation(slider, yearVal, playBtn, yMin, yMax);
+
     const sortSel = document.createElement("select");
     sortSel.className = "ctrl-select";
     sortSel.innerHTML = `
@@ -450,7 +482,7 @@ function buildControls(id) {
     `;
     sortSel.value = APP.sort;
     sortSel.onchange = () => { APP.sort = sortSel.value; renderViz(4); };
-    
+
     const regionSel = document.createElement("select");
     regionSel.id = "viz4-region-select";
     regionSel.className = "ctrl-select";
@@ -467,9 +499,20 @@ function buildControls(id) {
     regionSel.value = APP.region || "All";
     regionSel.onchange = () => { APP.region = regionSel.value; renderViz(4); };
 
+    const backBtn = el("button", "ctrl-btn", "← Regions");
+    backBtn.title = "Clear region drill-down";
+    backBtn.onclick = () => {
+      APP.region = "All";
+      APP.selectedCollab = null;
+      regionSel.value = "All";
+      renderViz(4);
+    };
+
     c.append(
-      el("span","ctrl-label","Region:"), regionSel, 
-      el("div", "ctrl-divider"), 
+      wrap, playBtn,
+      el("div", "ctrl-divider"),
+      el("span","ctrl-label","Region:"), regionSel, backBtn,
+      el("div", "ctrl-divider"),
       el("span","ctrl-label","Order By:"), sortSel
     );
   }
@@ -1743,133 +1786,951 @@ const getCountryMetrics = (countryName, year, q1Count, q4Count, totalCount) => {
 function renderViz2(body) {
   body.innerHTML = "";
 
-  // Container styling
+  const getContinentColor = continent => {
+    // Okabe-Ito poles — avoid red/green pairs
+    const map = {
+      "Asia": OKABE.vermillion,
+      "Europe": OKABE.blue,
+      "Americas": OKABE.green,
+      "Africa": OKABE.orange,
+      "Oceania": OKABE.purple
+    };
+    return map[continent] || OKABE.grey;
+  };
+
+  const allBubbleData = DATA.getRidgelineData() || {};
+  const year = Math.max(1999, Math.min(2024, APP.year || 2024));
+  const yearData = allBubbleData[year] || [];
+
+  const countryMaxTotal = {};
+  Object.values(allBubbleData).flat().forEach(c => {
+    if (c.country && c.total) {
+      countryMaxTotal[c.country] = Math.max(countryMaxTotal[c.country] || 0, c.total);
+    }
+  });
+
+  const countriesList = Array.from(new Set(
+    Object.values(allBubbleData).flat().map(c => c.country)
+  )).filter(name => (countryMaxTotal[name] || 0) >= 1000).sort();
+
+  const getTier = ratio => {
+    // Display tiers use uncapped river ratio; Elite threshold stays 2.0
+    if (ratio >= 2.0) return "Elite";
+    if (ratio >= 1.0) return "Balanced";
+    return "Q4-Dominant";
+  };
+
+  const tierColors = {
+    "Elite": OKABE_ITO.blue,
+    "Balanced": OKABE_ITO.muted,
+    "Q4-Dominant": OKABE_ITO.orange
+  };
+
+  // Binary contrast: Q1 blue ↔ Q4 orange (Okabe-Ito)
+  const chartColors = {
+    "q1": OKABE_ITO.blue,
+    "q4": OKABE_ITO.orange
+  };
+
+  const regionColors = {
+    "Northern America": OKABE.sky,
+    "Western Europe": OKABE.purple,
+    "Asiatic Region": OKABE.green,
+    "Latin America": OKABE.orange,
+    "Eastern Europe": OKABE.blue,
+    "Middle East": OKABE.yellow,
+    "Africa": OKABE.vermillion,
+    "Africa/Middle East": OKABE.orange,
+    "Pacific Region": OKABE.purple
+  };
+  const getRegionColor = r => regionColors[r] || OKABE.grey;
+
+  // Create grid container
   const container = document.createElement("div");
   container.className = "viz2-dashboard-container";
   container.style.width = "100%";
   container.style.height = "100%";
-  container.style.display = "flex";
-  container.style.flexDirection = "column";
-  container.style.padding = "20px";
-  container.style.boxSizing = "border-box";
-  
-  const header = document.createElement("div");
-  header.innerHTML = `
-    <h3 style="color: var(--text); font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem;">The Elite Breakaway vs The Q4 Flood</h3>
-    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; max-width: 800px;">
-      This Ridgeline Plot visualizes the distribution of national publication quality ratios (Q1 / Q4) from 1996 to 2024. 
-      A rightward shift indicates a transition toward elite, high-impact research. A leftward shift indicates a surge in lower-tier (Q4) publications.
-    </p>
+
+  // Map metric profiles to raw year entries
+  const countryToRegionMap = {};
+  yearData.forEach(c => {
+    if (c.country && c.region) {
+      countryToRegionMap[c.country] = c.region;
+    }
+  });
+
+  // CSS Styles
+  const styleBlock = document.createElement("style");
+  styleBlock.textContent = `
+    #panel-body {
+      overflow-y: auto !important;
+    }
+    
+    .viz2-dashboard-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
+      height: 800px;
+      box-sizing: border-box;
+      padding: 0.5rem 2rem 1.5rem 1.5rem;
+    }
+
+    .viz2-top-row {
+      display: grid;
+      grid-template-columns: 1fr 290px;
+      gap: 1.5rem;
+      height: 580px;
+      flex-shrink: 0;
+    }
+    
+    .viz2-sidebar-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+      box-sizing: border-box;
+      height: 100%;
+      overflow-y: auto;
+    }
+    
+    .viz2-sidebar-card::-webkit-scrollbar {
+      width: 4px;
+    }
+    .viz2-sidebar-card::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .viz2-sidebar-card::-webkit-scrollbar-thumb {
+      background: rgba(255,255,255,0.1);
+      border-radius: 2px;
+    }
+    
+    .viz2-graph-card {
+      background: rgba(15, 23, 42, 0.3);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1rem;
+      box-sizing: border-box;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    
+    .viz2-bottom-card {
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+      box-sizing: border-box;
+      width: 100%;
+      min-height: 120px;
+      flex-shrink: 0;
+    }
+
+    .viz2-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .viz2-metric-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.08);
+      padding-right: 1rem;
+      box-sizing: border-box;
+    }
+
+    .viz2-metric-box:last-child {
+      border-right: none;
+    }
+
+    .viz2-metric-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+    }
+
+    .viz2-metric-value {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--text);
+      line-height: 1.15;
+    }
+
+    .viz2-metric-desc {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+    }
+    
+    .viz2-section-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-muted);
+      margin-bottom: 0.35rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 0.25rem;
+    }
+
+    .viz2-select-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .viz2-select-wrapper label {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+
+    .viz2-reset-btn {
+      background: transparent;
+      border: none;
+      color: var(--accent3);
+      font-size: 0.68rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: underline;
+      padding: 0;
+      float: right;
+    }
+    .viz2-reset-btn:hover {
+      color: #fff;
+    }
   `;
-  container.appendChild(header);
+  container.appendChild(styleBlock);
 
-  const graphCard = document.createElement("div");
-  graphCard.className = "viz2-graph-card";
-  graphCard.style.flex = "1";
-  graphCard.style.position = "relative";
-  graphCard.style.background = "rgba(15, 23, 42, 0.4)";
-  graphCard.style.border = "1px solid rgba(255, 255, 255, 0.06)";
-  graphCard.style.borderRadius = "12px";
-  graphCard.style.padding = "1rem";
-  graphCard.id = "ridgeline-svg-container";
-  container.appendChild(graphCard);
+  // Compute metric profiles for all countries
+  const yearDataWithMetrics = yearData.map(c => {
+    const metrics = getCountryMetrics(c.country, year, c.q1, c.q4, c.total);
+    return {
+      ...c,
+      metrics: metrics
+    };
+  });
 
-  body.appendChild(container);
+  // Continent filters list setup
+  const continents = ["All", "Americas", "Europe", "Asia", "Africa", "Oceania"];
 
-  if (typeof RIDGELINE_DENSITY === 'undefined') {
-    graphCard.innerHTML = "<p style='color:red;'>Error: RIDGELINE_DENSITY data not found.</p>";
-    return;
+  // Sidebar card HTML skeleton
+  const sidebar = document.createElement("div");
+  sidebar.className = "viz2-sidebar-card";
+  
+  let sidebarHtml = `
+    <div>
+      <div class="project-badge" style="display: inline-block; margin-bottom: 0.35rem; font-size: 0.7rem;">Dashboard Module 02</div>
+      <h3 style="font-size: 1.15rem; font-weight: 800; background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Global Quality Shift</h3>
+    </div>
+
+    <!-- Country Highlight Dropdown -->
+    <div class="viz2-select-wrapper">
+      <label>Highlight Country Profile</label>
+      <select id="country-select-dropdown" class="ctrl-select" style="width: 100%;">
+        <option value="">-- Highlight Country --</option>
+        ${countriesList.map(c => {
+          const region = countryToRegionMap[c];
+          const label = region ? `${c} (${region})` : c;
+          return `<option value="${c}" ${selectedCountryTrail === c ? "selected" : ""}>${label}</option>`;
+        }).join("")}
+      </select>
+    </div>
+  `;
+
+  // Render Country metrics block (Publications, H-Index, R&D Spend, GDP/Capita) matching screenshot
+  if (selectedCountryTrail) {
+    const selectedMetrics = yearDataWithMetrics.find(c => c.country === selectedCountryTrail);
+    if (selectedMetrics) {
+      const q1 = selectedMetrics.q1 || 0;
+      const q4 = selectedMetrics.q4 || 0;
+      const qTotal = q1 + q4;
+      const q1Pct = qTotal > 0 ? (q1 / qTotal) * 100 : 0;
+      const q4Pct = qTotal > 0 ? (q4 / qTotal) * 100 : 0;
+      
+      sidebarHtml += `
+        <!-- Country Profile Details Card (Screenshot Style + Bar Graph) -->
+        <div class="viz2-country-card" style="background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 1rem; display: flex; flex-direction: column; gap: 0.75rem; margin-top: 0.2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.25);">
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-weight: 800; font-size: 1.05rem; color: #fff;">${selectedCountryTrail}</span>
+            <span style="font-size: 0.68rem; font-weight: 700; background: rgba(56,189,248,0.15); color: #0072B2; border: 1px solid rgba(56,189,248,0.3); border-radius: 9999px; padding: 0.15rem 0.5rem;">${selectedMetrics.metrics.continent}</span>
+          </div>
+          
+          <div style="display: flex; flex-direction: column; gap: 0.65rem; margin-top: 0.25rem;">
+            <!-- Publications -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(56,189,248,0.4));">📚</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">Publications:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">${selectedMetrics.metrics.publications.toLocaleString()}</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.publications / 200000) * 100)}%; height: 100%; background: linear-gradient(90deg, #38bdf8, #60a5fa); border-radius: 3px; box-shadow: 0 0 4px #38bdf8;"></div>
+              </div>
+            </div>
+
+            <!-- H-Index -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(244,63,94,0.4));">🎯</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">H-Index:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">${selectedMetrics.metrics.h}</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.h / 1300) * 100)}%; height: 100%; background: linear-gradient(90deg, #f43f5e, #ec4899); border-radius: 3px; box-shadow: 0 0 4px #f43f5e;"></div>
+              </div>
+            </div>
+
+            <!-- R&D Spend -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(34,211,238,0.4));">🔬</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">R&D Spend:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">${selectedMetrics.metrics.rd.toFixed(2)}%</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.rd / 5.0) * 100)}%; height: 100%; background: linear-gradient(90deg, #2dd4bf, #34d399); border-radius: 3px; box-shadow: 0 0 4px #2dd4bf;"></div>
+              </div>
+            </div>
+
+            <!-- GDP/Capita -->
+            <div style="display: flex; flex-direction: column; gap: 2px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.1rem; width: 20px; text-align: center; filter: drop-shadow(0 0 2px rgba(245,158,11,0.4));">💰</span>
+                <span style="font-size: 0.8rem; color: #94a3b8; flex: 1;">GDP/Capita:</span>
+                <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">$${Math.round(selectedMetrics.metrics.gdp).toLocaleString()}</span>
+              </div>
+              <div style="width: 100%; height: 5px; background: rgba(255,255,255,0.06); border-radius: 3px; overflow: hidden; border: 1px solid rgba(255,255,255,0.02);">
+                <div style="width: ${Math.min(100, (selectedMetrics.metrics.gdp / 80000) * 100)}%; height: 100%; background: linear-gradient(90deg, #fb923c, #fbbf24); border-radius: 3px; box-shadow: 0 0 4px #fb923c;"></div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Stacked Bar Graph: Quality Share (Q1 vs Q4) -->
+          <div style="margin-top: 0.45rem; border-top: 1px dashed rgba(255,255,255,0.08); padding-top: 0.55rem;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.72rem; color: #94a3b8; margin-bottom: 5px;">
+              <span>Quality Split (Q1 vs Q4)</span>
+              <span style="font-weight:700;"><span style="color:#38bdf8;">Q1: ${q1Pct.toFixed(0)}%</span> | <span style="color:#f43f5e;">Q4: ${q4Pct.toFixed(0)}%</span></span>
+            </div>
+            <div style="width: 100%; height: 12px; background: rgba(255,255,255,0.06); border-radius: 4px; display: flex; overflow: hidden; border: 1px solid rgba(255,255,255,0.04);">
+              <div style="width: ${q1Pct}%; background: #0072B2; height: 100%; box-shadow: inset 0 0 4px rgba(0,0,0,0.3);" title="Q1 Journals: ${q1.toLocaleString()}"></div>
+              <div style="width: ${q4Pct}%; background: #E69F00; height: 100%; box-shadow: inset 0 0 4px rgba(0,0,0,0.3);" title="Q4 Journals: ${q4.toLocaleString()}"></div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
   }
 
-  // Draw Ridgeline
-  const width = graphCard.clientWidth - 40;
-  const height = graphCard.clientHeight - 40;
-  const margin = {top: 60, right: 30, bottom: 50, left: 80};
+  // Render Continent Filter and Slider Panel
+  sidebarHtml += `
+    <!-- Continent Select Filter -->
+    <div class="viz2-select-wrapper" style="margin-top: 0.2rem;">
+      <label>Filter By Continent</label>
+      <select id="continent-select" class="ctrl-select" style="width: 100%;">
+        ${continents.map(c => `<option value="${c}" ${activeContinentFilter === c ? "selected" : ""}>${c === "All" ? "All Continents" : c}</option>`).join("")}
+      </select>
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; font-size: 0.68rem; line-height: 1.2;">
+        <span style="display: flex; align-items: center; gap: 3px; color: #E69F00; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#f43f5e; border-radius:50%; box-shadow: 0 0 3px #E69F00;"></span>Asia</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #0072B2; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#38bdf8; border-radius:50%; box-shadow: 0 0 3px #0072B2;"></span>Europe</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #10b981; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#10b981; border-radius:50%; box-shadow: 0 0 3px #10b981;"></span>Americas</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #f59e0b; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#f59e0b; border-radius:50%; box-shadow: 0 0 3px #f59e0b;"></span>Africa</span>
+        <span style="display: flex; align-items: center; gap: 3px; color: #a855f7; font-weight: 700;"><span style="display:inline-block; width:6px; height:6px; background:#a855f7; border-radius:50%; box-shadow: 0 0 3px #a855f7;"></span>Oceania</span>
+      </div>
+    </div>
 
-  const svg = d3.select("#ridgeline-svg-container")
-    .append("svg")
-    .attr("width", width)
-    .attr("height", height)
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+    <!-- Sort and Top Rank selector -->
+    <div class="viz2-select-wrapper" style="margin-top: 0.4rem;">
+      <label>Sort & Top Rank (Top 9)</label>
+      <select id="sort-rank-select" class="ctrl-select" style="width: 100%;">
+        <option value="Default" ${activeSortParameter === "Default" ? "selected" : ""}>Default (Whitelist / All)</option>
+        <option value="publications" ${activeSortParameter === "publications" ? "selected" : ""}>Publications Volume</option>
+        <option value="h" ${activeSortParameter === "h" ? "selected" : ""}>H-Index Score</option>
+        <option value="rd" ${activeSortParameter === "rd" ? "selected" : ""}>R&D Spend (% GDP)</option>
+        <option value="gdp" ${activeSortParameter === "gdp" ? "selected" : ""}>GDP per Capita</option>
+        <option value="ratio" ${activeSortParameter === "ratio" ? "selected" : ""}>Q1 / Q4 Quality Ratio</option>
+      </select>
+    </div>
 
-  const innerWidth = width - margin.left - margin.right;
-  const innerHeight = height - margin.top - margin.bottom;
-
-  // X axis
-  const x = d3.scaleLinear()
-    .domain([-0.2, 5.0])
-    .range([0, innerWidth]);
-
-  svg.append("g")
-    .attr("transform", `translate(0, ${innerHeight})`)
-    .call(d3.axisBottom(x).tickValues([0, 1, 2, 3, 4, 5]).tickFormat(d => d + "x"))
-    .attr("color", "var(--text-muted)")
-    .style("font-family", "Outfit")
-    .style("font-size", "0.8rem");
-    
-  svg.append("text")
-    .attr("text-anchor", "end")
-    .attr("x", innerWidth)
-    .attr("y", innerHeight + 40)
-    .text("Quality Ratio (Q1 / Q4 Documents)")
-    .attr("fill", "var(--text-muted)")
-    .style("font-family", "Outfit")
-    .style("font-size", "0.9rem");
-
-  // Create Y scale for the years
-  const years = RIDGELINE_DENSITY.map(d => d.year);
-  const yName = d3.scaleBand()
-    .domain(years)
-    .range([innerHeight, 0])
-    .paddingInner(1);
-
-  svg.append("g")
-    .call(d3.axisLeft(yName).tickSize(0))
-    .attr("color", "var(--text-muted)")
-    .style("font-family", "Outfit")
-    .style("font-size", "0.85rem")
-    .select(".domain").remove();
-
-  // Create Y scale for the density heights (overlap)
-  const maxDensity = d3.max(RIDGELINE_DENSITY, d => d3.max(d.points, p => p.y));
-  const y = d3.scaleLinear()
-    .domain([0, maxDensity])
-    .range([innerHeight/years.length * 4, 0]); // overlap factor of 4
-
-  // Color scale
-  const color = d3.scaleSequential()
-    .domain([d3.min(years), d3.max(years)])
-    .interpolator(d3.interpolateViridis);
-
-  // Area generator
-  const area = d3.area()
-    .curve(d3.curveBasis)
-    .x(d => x(d.x))
-    .y0(y(0))
-    .y1(d => y(d.y));
-
-  // Add areas
-  const areas = svg.selectAll("areas")
-    .data(RIDGELINE_DENSITY)
-    .enter()
-    .append("path")
-      .attr("transform", d => `translate(0, ${(yName(d.year) - (innerHeight/years.length * 4))})`)
-      .datum(d => d.points)
-      .attr("fill", (d, i) => color(RIDGELINE_DENSITY[i].year))
-      .attr("stroke", "#000")
-      .attr("stroke-width", 1)
-      .attr("opacity", 0.7)
-      .attr("d", area);
+    <!-- Factor Filter Sliders -->
+    <div style="display: flex; flex-direction: column; gap: 0.6rem; margin-top: 0.2rem;">
+      <div>
+        <button id="btn-reset-filters" class="viz2-reset-btn">Reset All</button>
+        <div class="viz2-section-title">Filter By Factors</div>
+      </div>
       
-  areas.on("mouseover", function(event, d) {
-        d3.select(this).attr("opacity", 1).attr("stroke-width", 2);
-      })
-      .on("mouseleave", function(event, d) {
-        d3.select(this).attr("opacity", 0.7).attr("stroke-width", 1);
-      });
-}
+      <!-- Min Pubs -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min Publications</span>
+          <span id="lbl-min-pub" style="font-weight: 700; color: #0072B2;">${minPubFilter >= 1000 ? (minPubFilter / 1000).toFixed(0) + "k" : minPubFilter}</span>
+        </div>
+        <input type="range" id="slide-min-pub" class="ctrl-range" style="width: 100%;" min="0" max="200000" step="5000" value="${minPubFilter}">
+      </div>
 
+      <!-- Min H Index -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min H-Index</span>
+          <span id="lbl-min-h" style="font-weight: 700; color: #0072B2;">${minHIndexFilter}</span>
+        </div>
+        <input type="range" id="slide-min-h" class="ctrl-range" style="width: 100%;" min="0" max="1000" step="25" value="${minHIndexFilter}">
+      </div>
+
+      <!-- Min R&D Spend -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min R&D Spend (% GDP)</span>
+          <span id="lbl-min-rd" style="font-weight: 700; color: #0072B2;">${minRdFilter.toFixed(1)}%</span>
+        </div>
+        <input type="range" id="slide-min-rd" class="ctrl-range" style="width: 100%;" min="0" max="4.0" step="0.1" value="${minRdFilter}">
+      </div>
+
+      <!-- Min GDP/Capita -->
+      <div style="display: flex; flex-direction: column; gap: 2px;">
+        <div style="display: flex; justify-content: space-between; font-size: 0.68rem; color: #94a3b8;">
+          <span>Min GDP/Capita</span>
+          <span id="lbl-min-gdp" style="font-weight: 700; color: #0072B2;">$${minGdpFilter.toLocaleString()}</span>
+        </div>
+        <input type="range" id="slide-min-gdp" class="ctrl-range" style="width: 100%;" min="0" max="80000" step="2000" value="${minGdpFilter}">
+      </div>
+    </div>
+  `;
+
+  sidebar.innerHTML = sidebarHtml;
+
+  // Calculate Summary Statistics for current year
+  const filteredYearData = yearData.filter(c => activeRegionFilter === "All" || c.region === activeRegionFilter);
+  let globalQ1 = 0, globalQ4 = 0;
+  filteredYearData.forEach(c => {
+    globalQ1 += c.q1 || 0;
+    globalQ4 += c.q4 || 0;
+  });
+  const globalRatio = globalQ4 > 0 ? (globalQ1 / globalQ4) : 0;
+
+  // Graph card
+  const graphCard = document.createElement("div");
+  graphCard.className = "viz2-graph-card";
+  graphCard.style.position = "relative";
+  graphCard.innerHTML = `
+    <!-- Quality Guide anchored in top margin void (margin.top=110) — must not overlap bars -->
+    <div id="viz2-quality-guide" style="position: absolute; top: 1.5rem; right: 2.5rem; background: rgba(15, 23, 42, 0.92); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 8px; padding: 0.5rem 0.75rem; max-width: 300px; backdrop-filter: blur(8px); z-index: 10; pointer-events: none; display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.65rem; line-height: 1.3; box-shadow: 0 4px 15px rgba(0,0,0,0.35);">
+      <div style="font-weight: 800; color: #fff; font-size: 0.72rem; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 3px;">
+        Quality Guide · Publisher Country
+      </div>
+      <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+        <div style="display: flex; flex-direction: column; gap: 0.35rem; min-width: 130px;">
+          <div style="display: flex; gap: 5px; align-items: center;">
+            <span style="display: inline-block; width: 8px; height: 8px; background: ${OKABE.blue}; border-radius: 1px; flex-shrink: 0;"></span>
+            <div><b style="color: ${OKABE.sky};">Q1:</b> Top 25% SJR journals</div>
+          </div>
+          <div style="display: flex; gap: 5px; align-items: center;">
+            <span style="display: inline-block; width: 8px; height: 8px; background: ${OKABE.orange}; border-radius: 1px; flex-shrink: 0;"></span>
+            <div><b style="color: ${OKABE.orange};">Q4:</b> Bottom 25% SJR journals</div>
+          </div>
+        </div>
+        <div style="border-left: 1px dashed rgba(255,255,255,0.12); padding-left: 0.75rem; color: #94a3b8; font-size: 0.62rem; flex: 1;">
+          Docs in journals <b style="color:#fff;">published in</b> that country (not author affiliation). Ratio = Q1/Q4 (uncapped).
+        </div>
+      </div>
+    </div>
+  `;
+
+  // Bottom card for horizontal metrics summary
+  const bottomCard = document.createElement("div");
+  bottomCard.className = "viz2-bottom-card";
+
+  let metricsHtml = `
+    <div class="viz2-stats-grid">
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">${year} State</span>
+        <span class="viz2-metric-value" style="color: ${OKABE.orange};">${globalRatio.toFixed(2)}</span>
+        <span class="viz2-metric-desc">Publisher-country Q1/Q4 Ratio</span>
+      </div>
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">Elite (Q1) Docs</span>
+        <span class="viz2-metric-value">${(globalQ1 / 1000).toFixed(0)}k</span>
+        <span class="viz2-metric-desc">Q1 journal docs (publisher country)</span>
+      </div>
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">Low-tier (Q4) Docs</span>
+        <span class="viz2-metric-value">${(globalQ4 / 1000).toFixed(0)}k</span>
+        <span class="viz2-metric-desc">Q4 journal docs (publisher country)</span>
+      </div>
+  `;
+
+  if (selectedCountryTrail) {
+    const countryData = yearData.find(c => c.country === selectedCountryTrail);
+    if (countryData) {
+      metricsHtml += `
+        <div class="viz2-metric-box" style="border-left: 1px dashed rgba(255, 255, 255, 0.15); padding-left: 1.5rem;">
+          <span class="viz2-metric-title">${selectedCountryTrail} Profile</span>
+          <span class="viz2-metric-value" style="color: #0072B2;">${getTier(countryData.ratio).toUpperCase()}</span>
+          <span class="viz2-metric-desc">Research Quality Category</span>
+        </div>
+        <div class="viz2-metric-box">
+          <span class="viz2-metric-title">${selectedCountryTrail} Ratio</span>
+          <span class="viz2-metric-value">${countryData.ratio.toFixed(2)}</span>
+          <span class="viz2-metric-desc">Q1/Q4 Quality Ratio</span>
+        </div>
+        <div class="viz2-metric-box">
+          <span class="viz2-metric-title">${selectedCountryTrail} Docs</span>
+          <span class="viz2-metric-value">${(countryData.q1 + countryData.q4).toLocaleString()}</span>
+          <span class="viz2-metric-desc">Q1: ${countryData.q1.toLocaleString()} | Q4: ${countryData.q4.toLocaleString()}</span>
+        </div>
+      `;
+    }
+  } else {
+    let continentRatio = globalRatio;
+    let ratioTitle = "Global";
+    if (activeContinentFilter !== "All") {
+      const contData = yearDataWithMetrics.filter(d => d.metrics.continent === activeContinentFilter);
+      let contQ1 = 0, contQ4 = 0;
+      contData.forEach(d => { contQ1 += d.q1; contQ4 += d.q4; });
+      if (contQ4 > 0) continentRatio = contQ1 / contQ4;
+      else if (contQ1 > 0) continentRatio = contQ1;
+      ratioTitle = activeContinentFilter;
+    }
+    
+    metricsHtml += `
+      <div class="viz2-metric-box" style="border-left: 1px dashed rgba(255, 255, 255, 0.15); padding-left: 1.5rem;">
+        <span class="viz2-metric-title">${ratioTitle} Q1/Q4 Avg</span>
+        <span class="viz2-metric-value" style="font-size: 1.4rem; color: #f59e0b;">${continentRatio.toFixed(2)}</span>
+        <span class="viz2-metric-desc">Average ratio for selected region</span>
+      </div>
+      <div class="viz2-metric-box">
+        <span class="viz2-metric-title">Active Filter</span>
+        <span class="viz2-metric-value" style="color: #10b981; font-size: 1.4rem;">${activeContinentFilter.toUpperCase()}</span>
+        <span class="viz2-metric-desc">Continent being visualized</span>
+      </div>
+    `;
+  }
+
+  metricsHtml += `</div>`;
+  bottomCard.innerHTML = metricsHtml;
+
+  // Build structure: Top Row (Graph & Sidebar), Bottom Card (Summary)
+  const topRow = document.createElement("div");
+  topRow.className = "viz2-top-row";
+  topRow.appendChild(graphCard);
+  topRow.appendChild(sidebar);
+
+  container.appendChild(topRow);
+  container.appendChild(bottomCard);
+  body.appendChild(container);
+
+  // Apply filters on the database
+  let displayData = [...yearDataWithMetrics];
+
+  // Exclude low-data countries (total < 1000)
+  if (activeContinentFilter === "All") {
+    displayData = displayData.filter(d => d.total >= 1000);
+  } else {
+    displayData = displayData.filter(d => d.total >= 10);
+  }
+
+  // 1. Continent Filter
+  if (activeContinentFilter !== "All") {
+    displayData = displayData.filter(d => d.metrics.continent === activeContinentFilter);
+  }
+
+  // 2. Sliders Filters
+  displayData = displayData.filter(d => {
+    return d.metrics.publications >= minPubFilter &&
+           d.metrics.h >= minHIndexFilter &&
+           d.metrics.rd >= minRdFilter &&
+           d.metrics.gdp >= minGdpFilter;
+  });
+
+  // 3. Sort & Rank Filter (Top 9)
+  if (activeSortParameter !== "Default") {
+    displayData.sort((a, b) => {
+      let valA = 0, valB = 0;
+      if (activeSortParameter === "publications") { valA = a.metrics.publications; valB = b.metrics.publications; }
+      else if (activeSortParameter === "h") { valA = a.metrics.h; valB = b.metrics.h; }
+      else if (activeSortParameter === "rd") { valA = a.metrics.rd; valB = b.metrics.rd; }
+      else if (activeSortParameter === "gdp") { valA = a.metrics.gdp; valB = b.metrics.gdp; }
+      else if (activeSortParameter === "ratio") { valA = a.ratio; valB = b.ratio; }
+      return valB - valA;
+    });
+    displayData = displayData.slice(0, 9);
+  } else {
+    // Keep the default graph Same As It Was (whitelist of 10 countries) if no filters are active
+    const hasActiveSliders = minPubFilter > 0 || minHIndexFilter > 0 || minRdFilter > 0 || minGdpFilter > 0;
+    if (activeContinentFilter === "All" && !hasActiveSliders) {
+      const whitelistDefault = [
+        "China", "India", "Japan", "United States", "France", 
+        "Germany", "Ireland", "Netherlands", "Switzerland", "United Kingdom"
+      ];
+      displayData = displayData.filter(d => whitelistDefault.includes(d.country));
+    } else if (activeContinentFilter !== "All" && !hasActiveSliders) {
+      // Smart selection for a specific continent: 7-9 interesting countries
+      // 1. Sort by total volume and take top 4
+      const byVolume = [...displayData].sort((a, b) => b.total - a.total).slice(0, 4);
+      // 2. Sort by ratio and take top 2 and bottom 2
+      const byRatio = [...displayData].sort((a, b) => b.ratio - a.ratio);
+      const topRatio = byRatio.slice(0, 3); // Take 3 just in case of overlap
+      const bottomRatio = byRatio.slice(Math.max(0, byRatio.length - 2)); // Bottom 2
+      
+      const selectedSet = new Set([...byVolume.map(d=>d.country), ...topRatio.map(d=>d.country), ...bottomRatio.map(d=>d.country)]);
+      
+      // Filter down to the selected set (should naturally result in 7-9 countries depending on overlap)
+      displayData = displayData.filter(d => selectedSet.has(d.country));
+    }
+  }
+
+  // Ensure selected country is in the displayData list if matching filters
+  if (selectedCountryTrail) {
+    const isIncluded = displayData.some(d => d.country === selectedCountryTrail);
+    if (!isIncluded) {
+      const selectedObj = yearDataWithMetrics.find(d => d.country === selectedCountryTrail);
+      if (selectedObj) {
+        // Only include if it satisfies the continent filter
+        const matchContinent = activeContinentFilter === "All" || selectedObj.metrics.continent === activeContinentFilter;
+        // Only include if it satisfies the factor filters
+        const matchFactors = selectedObj.metrics.publications >= minPubFilter &&
+                             selectedObj.metrics.h >= minHIndexFilter &&
+                             selectedObj.metrics.rd >= minRdFilter &&
+                             selectedObj.metrics.gdp >= minGdpFilter;
+        if (matchContinent && matchFactors) {
+          displayData.push(selectedObj);
+          
+          // Re-sort to maintain order if ranking is active
+          if (activeSortParameter !== "Default") {
+            displayData.sort((a, b) => {
+              let valA = 0, valB = 0;
+              if (activeSortParameter === "publications") { valA = a.metrics.publications; valB = b.metrics.publications; }
+              else if (activeSortParameter === "h") { valA = a.metrics.h; valB = b.metrics.h; }
+              else if (activeSortParameter === "rd") { valA = a.metrics.rd; valB = b.metrics.rd; }
+              else if (activeSortParameter === "gdp") { valA = a.metrics.gdp; valB = b.metrics.gdp; }
+              else if (activeSortParameter === "ratio") { valA = a.ratio; valB = b.ratio; }
+              return valB - valA;
+            });
+          }
+        }
+      }
+    }
+  }
+
+  // Sort display data for final rendering
+  if (activeSortParameter === "Default") {
+    displayData.sort((a, b) => {
+      if (a.region !== b.region) {
+        return a.region.localeCompare(b.region);
+      }
+      return a.country.localeCompare(b.country);
+    });
+  }
+
+  // SVG Setup
+  const W = graphCard.offsetWidth || 850;
+  const H = graphCard.offsetHeight || 550;
+  
+  const svg = d3.select(graphCard).append("svg")
+    .attr("width", W)
+    .attr("height", H)
+    .style("overflow", "visible");
+
+  const margin = { top: 110, right: 30, bottom: 90, left: 65 };
+  const innerWidth = W - margin.left - margin.right;
+  const innerHeight = H - margin.top - margin.bottom;
+
+  const chartG = svg.append("g")
+    .attr("transform", `translate(${margin.left}, ${margin.top})`);
+
+  // Max value calculator for Y-axis
+  const yMaxVal = barChartMode === "grouped" 
+    ? d3.max(displayData, d => Math.max(d.q1, d.q4)) || 10000 
+    : d3.max(displayData, d => d.q1 + d.q4) || 10000;
+
+  const useLog = (typeof yAxisScaleMode !== "undefined" && yAxisScaleMode === "logarithmic");
+  const yScale = useLog
+    ? d3.scaleLog().domain([Math.max(1, yMaxVal * 0.001), Math.max(10, yMaxVal * 1.05)]).range([innerHeight, 0]).clamp(true)
+    : d3.scaleLinear().domain([0, yMaxVal * 1.05]).range([innerHeight, 0]);
+  const yVal = (v) => useLog ? Math.max(1, v || 0) : (v || 0);
+
+  // Y Axis & Grid lines
+  const yAxis = d3.axisLeft(yScale)
+    .ticks(5)
+    .tickSize(-innerWidth)
+    .tickFormat(d => d >= 1000 ? `${(d / 1000).toFixed(0)}k` : d);
+
+  const yAxisG = chartG.append("g")
+    .attr("class", "y-axis")
+    .call(yAxis);
+
+  yAxisG.select(".domain").remove();
+  yAxisG.selectAll(".tick line")
+    .attr("stroke", "rgba(255, 255, 255, 0.06)")
+    .attr("stroke-dasharray", "3,3");
+  yAxisG.selectAll(".tick text")
+    .attr("fill", "#94a3b8")
+    .attr("font-size", "10px")
+    .attr("dx", "-4px");
+
+  // X Axis
+  const xScale = d3.scaleBand()
+    .domain(displayData.map(d => d.country))
+    .range([0, innerWidth])
+    .padding(0.25);
+
+  const xAxis = d3.axisBottom(xScale);
+
+  const xAxisG = chartG.append("g")
+    .attr("class", "x-axis")
+    .attr("transform", `translate(0, ${innerHeight})`)
+    .call(xAxis);
+
+  xAxisG.select(".domain").attr("stroke", "rgba(255, 255, 255, 0.1)");
+  xAxisG.selectAll(".tick line").attr("stroke", "rgba(255, 255, 255, 0.1)");
+
+  // Rotate country names to fit
+  xAxisG.selectAll(".tick text")
+    .style("fill", d => {
+      const item = displayData.find(x => x.country === d);
+      return item ? getContinentColor(item.metrics.continent) : "#94a3b8";
+    })
+    .attr("font-size", "9px")
+    .attr("font-weight", "700")
+    .style("text-anchor", "end")
+    .attr("dx", "-8px")
+    .attr("dy", "4px")
+    .attr("transform", "rotate(-40)");
+
+  // Draw bars group
+  const countryGroups = chartG.selectAll(".country-bar-group")
+    .data(displayData)
+    .enter().append("g")
+      .attr("class", "country-bar-group")
+      .attr("transform", d => `translate(${xScale(d.country)}, 0)`)
+      .style("cursor", "pointer")
+      .style("transition", "opacity 0.2s ease");
+
+  if (barChartMode === "grouped") {
+    const xSubScale = d3.scaleBand()
+      .domain(["q1", "q4"])
+      .range([0, xScale.bandwidth()])
+      .padding(0.08);
+
+    // Q1 bars (elite - cyan)
+    countryGroups.append("rect")
+      .attr("class", "bar-q1")
+      .attr("x", xSubScale("q1"))
+      .attr("y", d => yScale(yVal(d.q1)))
+      .attr("width", xSubScale.bandwidth())
+      .attr("height", d => innerHeight - yScale(yVal(d.q1)))
+      .attr("fill", chartColors.q1)
+      .attr("fill-opacity", 0.8)
+      .attr("rx", 2)
+      .attr("stroke", chartColors.q1)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Q4 bars (low-tier - rose-red)
+    countryGroups.append("rect")
+      .attr("class", "bar-q4")
+      .attr("x", xSubScale("q4"))
+      .attr("y", d => yScale(yVal(d.q4)))
+      .attr("width", xSubScale.bandwidth())
+      .attr("height", d => innerHeight - yScale(yVal(d.q4)))
+      .attr("fill", chartColors.q4)
+      .attr("fill-opacity", 0.8)
+      .attr("rx", 2)
+      .attr("stroke", chartColors.q4)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Selection outline around the grouped bars
+    countryGroups.filter(d => d.country === selectedCountryTrail)
+      .append("rect")
+        .attr("class", "bar-selection-outline")
+        .attr("x", -3)
+        .attr("y", d => Math.min(yScale(yVal(d.q1)), yScale(yVal(d.q4))) - 3)
+        .attr("width", xScale.bandwidth() + 6)
+        .attr("height", d => innerHeight - Math.min(yScale(yVal(d.q1)), yScale(yVal(d.q4))) + 6)
+        .attr("fill", "none")
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 2)
+        .attr("rx", 5)
+        .style("filter", "drop-shadow(0 0 4px #0072B2)");
+
+  } else {
+    // Stacked mode
+    // Bottom: Q4 (rose-red)
+    countryGroups.append("rect")
+      .attr("class", "bar-q4")
+      .attr("x", 0)
+      .attr("y", d => yScale(yVal(d.q4)))
+      .attr("width", xScale.bandwidth())
+      .attr("height", d => innerHeight - yScale(yVal(d.q4)))
+      .attr("fill", chartColors.q4)
+      .attr("fill-opacity", 0.8)
+      .attr("stroke", chartColors.q4)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Top: Q1 (cyan)
+    countryGroups.append("rect")
+      .attr("class", "bar-q1")
+      .attr("x", 0)
+      .attr("y", d => yScale(yVal(d.q4 + d.q1)))
+      .attr("width", xScale.bandwidth())
+      .attr("height", d => yScale(yVal(d.q4)) - yScale(yVal(d.q4 + d.q1)))
+      .attr("fill", chartColors.q1)
+      .attr("fill-opacity", 0.9)
+      .attr("stroke", chartColors.q1)
+      .attr("stroke-width", 0.5)
+      .attr("stroke-opacity", 0.3);
+
+    // Selection outline around the stacked bars
+    countryGroups.filter(d => d.country === selectedCountryTrail)
+      .append("rect")
+        .attr("class", "bar-selection-outline")
+        .attr("x", -3)
+        .attr("y", d => yScale(yVal(d.q1 + d.q4)) - 3)
+        .attr("width", xScale.bandwidth() + 6)
+        .attr("height", d => innerHeight - yScale(yVal(d.q1 + d.q4)) + 6)
+        .attr("fill", "none")
+        .attr("stroke", "#ffffff")
+        .attr("stroke-width", 2)
+        .attr("rx", 5)
+        .style("filter", "drop-shadow(0 0 4px #0072B2)");
+  }
+
+  // Hover Interactions
+  countryGroups
+    .on("mouseenter", function(e, d) {
+      // Dim other bars
+      countryGroups.style("opacity", s => s.country === d.country ? 1.0 : 0.25);
+
+      // Tooltip HTML content with macroeconomic factors
+      showTip(e, `
+        <div style="font-weight:700; font-size:13px; border-bottom:1px solid rgba(255,255,255,0.12); padding-bottom:4px; margin-bottom:4px; color:#fff;">${d.country}</div>
+        <div style="font-size:11px; color:#94a3b8; margin-bottom: 3px;">Region: <span style="color:${getRegionColor(d.region)}; font-weight:600;">${d.region}</span></div>
+        <div style="font-size:11px; margin-bottom: 3px;">Continent: <span style="color:#2dd4bf; font-weight:600;">${d.metrics.continent}</span></div>
+        <div style="font-size:11px; margin-top:2px;">Q1 Journals (Elite): <span style="color:${OKABE.sky}; font-weight:700;">${d.q1.toLocaleString()}</span></div>
+        <div style="font-size:11px;">Q4 Journals (Low-tier): <span style="color:${OKABE.orange}; font-weight:700;">${d.q4.toLocaleString()}</span></div>
+        <div style="font-size:11px; margin-bottom: 2px;">Q1/Q4 Ratio (uncapped): <span style="color:${OKABE.yellow}; font-weight:bold;">${d.ratio.toFixed(3)}</span></div>
+        <div style="font-size:10px; color:#94a3b8; margin-bottom:4px;">Publisher country · not author affiliation</div>
+        <div style="font-size:11px; margin-top:4px; border-top:1px dashed rgba(255,255,255,0.12); padding-top:4px; color: #cbd5e1;">
+          <div>📚 Publications: <b>${d.metrics.publications.toLocaleString()}</b></div>
+          <div>🎯 H-Index: <b>${d.metrics.h}</b></div>
+          <div>🔬 R&D Spend: <b>${d.metrics.rd.toFixed(2)}%</b></div>
+          <div>💰 GDP/Capita: <b>$${Math.round(d.metrics.gdp).toLocaleString()}</b></div>
+        </div>
+      `);
+    })
+    .on("mousemove", moveTip)
+    .on("mouseleave", function() {
+      // Restore bars opacities
+      countryGroups.style("opacity", 1.0);
+      hideTip();
+    })
+    .on("click", function(e, d) {
+      selectedCountryTrail = (selectedCountryTrail === d.country) ? null : d.country;
+      renderViz(2);
+    });
+
+  // Bind Sidebar Event Listeners
+  // 1. Country Selection Dropdown
+  const sidebarCSelect = container.querySelector("#country-select-dropdown");
+  if (sidebarCSelect) {
+    sidebarCSelect.onchange = () => {
+      selectedCountryTrail = sidebarCSelect.value || null;
+      renderViz(2);
+    };
+  }
+
+  // Clear country from profile card if present
+  const clearCountryBtn = container.querySelector("#btn-clear-country");
+  if (clearCountryBtn) {
+    clearCountryBtn.onclick = () => {
+      selectedCountryTrail = null;
+      renderViz(2);
+    };
+  }
+
+  // 2. Continent Select
+  const contSel = container.querySelector("#continent-select");
+  if (contSel) {
+    contSel.onchange = () => {
+      activeContinentFilter = contSel.value;
+      renderViz(2);
+    };
+  }
+
+  // 2b. Sort & Rank Select
+  const sortRankSel = container.querySelector("#sort-rank-select");
+  if (sortRankSel) {
+    sortRankSel.onchange = () => {
+      activeSortParameter = sortRankSel.value;
+      renderViz(2);
+    };
+  }
+
+  // 3. Reset All Button
+  const resetBtn = container.querySelector("#btn-reset-filters");
+  if (resetBtn) {
+    resetBtn.onclick = () => {
+      activeContinentFilter = "All";
+      activeSortParameter = "Default";
+      minPubFilter = 0;
+      minHIndexFilter = 0;
+      minRdFilter = 0;
+      minGdpFilter = 0;
+      renderViz(2);
+    };
+  }
+
+  // 4. Sliders Event Hooks
+  const setupSlider = (sliderId, labelId, filterSetter, formatter) => {
+    const slider = container.querySelector(`#${sliderId}`);
+    const label = container.querySelector(`#${labelId}`);
+    if (slider && label) {
+      slider.oninput = () => {
+        const val = +slider.value;
+        label.textContent = formatter(val);
+        filterSetter(val);
+      };
+      slider.onchange = () => {
+        renderViz(2);
+      };
+    }
+  };
+
+  setupSlider("slide-min-pub", "lbl-min-pub", val => minPubFilter = val, val => val >= 1000 ? `${(val / 1000).toFixed(0)}k` : val);
+  setupSlider("slide-min-h", "lbl-min-h", val => minHIndexFilter = val, val => val);
+  setupSlider("slide-min-rd", "lbl-min-rd", val => minRdFilter = val, val => `${val.toFixed(1)}%`);
+  setupSlider("slide-min-gdp", "lbl-min-gdp", val => minGdpFilter = val, val => `$${val.toLocaleString()}`);
+
+  // Nav: Esc clears country highlight (select → details → clear/back)
+  const onViz2Keydown = (e) => {
+    if (e.key !== "Escape") return;
+    if (!selectedCountryTrail) return;
+    selectedCountryTrail = null;
+    hideTip();
+    renderViz(2);
+  };
+  document.addEventListener("keydown", onViz2Keydown);
+  if (APP.cleanupFns) {
+    APP.cleanupFns.push(() => document.removeEventListener("keydown", onViz2Keydown));
+  }
+}
 
 function renderViz3(body) {
   // Clear container
@@ -2425,9 +3286,14 @@ function renderViz3(body) {
             <!-- Country Selector -->
             <div class="filter-group">
                 <label for="countrySelect">Region / Country Filter</label>
-                <select id="countrySelect" class="styled-select">
-                    <option value="GLOBAL">Global (All Countries)</option>
-                </select>
+                <div style="display: flex; gap: 0.5rem; align-items: center;">
+                    <select id="countrySelect" class="styled-select" style="flex: 1;">
+                        <option value="GLOBAL">Global (All Countries)</option>
+                    </select>
+                    <button type="button" id="btnClearFilter" class="btn-control" title="Clear filter (Esc)" style="flex-shrink: 0; padding: 0.45rem 0.75rem; font-size: 0.8rem; font-family: Outfit, sans-serif; color: #cbd5e1;">
+                        Clear
+                    </button>
+                </div>
             </div>
 
             <!-- Playback Controls & Slider Row -->
@@ -2445,7 +3311,7 @@ function renderViz3(body) {
                     </button>
 
                     <!-- Reset Button -->
-                    <button id="btnReset" class="btn-control" title="Restart to 2000">
+                    <button id="btnReset" class="btn-control" title="Restart to start year">
                         <svg class="icon" style="width: 20px; height: 20px;" viewBox="0 0 24 24">
                             <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/>
                         </svg>
@@ -2455,11 +3321,11 @@ function renderViz3(body) {
                 <!-- Timeline Scrubber -->
                 <div class="timeline-container">
                     <div class="timeline-labels">
-                        <span id="labelStartYear">2000</span>
-                        <span id="labelCurrentYear" style="font-weight: 700; color: var(--primary);">Year: 2000</span>
+                        <span id="labelStartYear">1974</span>
+                        <span id="labelCurrentYear" style="font-weight: 700; color: var(--primary);">Year: 1974</span>
                         <span id="labelEndYear">2024</span>
                     </div>
-                    <input type="range" id="timelineSlider" class="timeline-slider" min="2000" max="2024" value="2000">
+                    <input type="range" id="timelineSlider" class="timeline-slider" min="1974" max="2024" value="1974">
                 </div>
 
                 <!-- Speed Controls -->
@@ -2485,13 +3351,13 @@ function renderViz3(body) {
             <!-- Bar Chart Race Card -->
             <div class="glass-card race-card">
                 <div class="race-header">
-                    <h3>Top Research topics</h3>
-                    <div id="yearIndicator" class="year-display">2000</div>
+                    <h3 id="raceTitle">Top Research topics</h3>
+                    <div id="yearIndicator" class="year-display">1974</div>
                 </div>
                 
                 <div class="race-body" id="raceBody">
                     <!-- Watermark -->
-                    <div id="watermarkYear" class="watermark-year">2000</div>
+                    <div id="watermarkYear" class="watermark-year">1974</div>
                     
                     <!-- Background Grid Lines -->
                     <div class="grid-lines-container" id="gridLines">
@@ -2509,16 +3375,23 @@ function renderViz3(body) {
         <!-- Right Panel: Trend Line Chart -->
         <div class="glass-card trend-card">
             <div class="trend-header">
-                <h3>Yearly Publication Trend (2000 – 2024)</h3>
+                <h3>Yearly Publication Trend (1974 – 2024)</h3>
             </div>
             <div class="chart-container">
                 <canvas id="trendChart"></canvas>
             </div>
             <p style="margin: 0.75rem 1rem 1rem; font-size: 0.78rem; line-height: 1.45; color: #94a3b8;">
-              OpenAlex concept counts for 2000–2024 only. Pre-2000 rows are withheld: AI uses a broad L1 concept
-              (<code>C154945302</code>, ~36M works) with retrospective tagging, while Infectious uses a narrow L3 specialty —
-              early-year comparisons were misleading. Absolute levels across topics are not directly comparable.
+              OpenAlex concept counts for 1974–2024 (largest year window where all 7 primary topics have complete coverage).
+              AI &amp; Machine Learning uses <code>C119857082</code> (Machine learning), not the Artificial intelligence mega-concept.
+              Pre-1974 rows stay omitted (CRISPR / Robotics / Quantum lack country-tagged works in some earlier years).
+              Cross-topic absolute levels remain imperfect (ontology depth differs); within-topic trends are the primary reading.
             </p>
+            <div id="covidInfectiousNote" style="display:none;margin:0 1rem 1rem;padding:10px 12px;border-radius:8px;border:1px solid rgba(204,121,167,0.45);background:rgba(204,121,167,0.12);color:#fce7f3;font-size:0.8rem;line-height:1.45;">
+              <strong style="color:#f9a8d4;">COVID-era note (Infectious Diseases):</strong>
+              The 2019→2020 jump in Infectious Disease publications matches live OpenAlex counts under concept
+              <code>C524204448</code> during COVID tagging / pandemic-era indexing — it is a real corpus spike, not a pipeline bug.
+              We do not dampen or rescale those years.
+            </div>
         </div>
 
     </div>
@@ -2529,7 +3402,7 @@ function renderViz3(body) {
             <svg class="icon" style="color: var(--primary); width: 20px; height: 20px;" viewBox="0 0 24 24">
                 <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7zm2.85 11.1l-.85.6V16h-4v-2.3l-.85-.6C7.8 12.16 7 10.63 7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.63-.8 3.16-2.15 4.1z"/>
             </svg>
-            Research Topic Performance Summary
+            <span id="insightsTitleText">Research Topic Performance Summary</span>
         </h2>
         <div class="insights-grid" id="insightsGrid">
             <!-- Will be populated dynamically -->
@@ -2564,7 +3437,7 @@ function renderViz3(body) {
         ];
 
         const topicSubfields = {
-            "AI & Machine Learning": "C154945302",
+            "AI & Machine Learning": "C119857082",
             "CRISPR & Genomics": "C98108389",
             "Infectious Diseases": "C524204448",
             "Data Science & Big Data": "C2522767166",
@@ -2593,22 +3466,31 @@ function renderViz3(body) {
             "Quantum Computing": '#F0E442'
         };
 
-        const years = [];
-        for (let y = 2000; y <= 2024; y++) {
-            years.push(y);
-        }
+        // Derive timeline from tap payload (honest shared window written by _rebuild_viz3_honest.py)
+        const years = (() => {
+          const set = new Set();
+          String(window.CSV_DATA).split("\n").forEach((line) => {
+            const m = line.match(/^(\d{4}),/);
+            if (m) set.add(Number(m[1]));
+          });
+          return [...set].sort((a, b) => a - b);
+        })();
+        if (!years.length) throw new Error("viz3_data.js has no year rows");
         const yearMin = years[0];
         const yearMax = years[years.length - 1];
 
         let globalData = {};  // globalData[year][topic] = sum
         let countryData = {}; // countryData[countryCode][year][topic] = count
         let countryMap = {};  // countryMap[countryCode] = countryName
+        // ISO2 → World Bank-style region (for Graph 3 region filter aggregation)
+        const VIZ3_ISO2_REGION = {"AM":"Asia","AT":"Europe","AU":"Oceania","BD":"Asia","BE":"Europe","BG":"Europe","BR":"Americas","BY":"Europe","CA":"Americas","CH":"Europe","CN":"Asia","CO":"Americas","CZ":"Europe","DE":"Europe","DK":"Europe","EG":"Africa","ES":"Europe","FI":"Europe","FR":"Europe","GB":"Europe","GH":"Africa","GR":"Europe","HK":"Asia","HR":"Europe","HU":"Europe","ID":"Asia","IE":"Europe","IL":"Asia","IN":"Asia","IQ":"Asia","IT":"Europe","JP":"Asia","KE":"Africa","LB":"Asia","LK":"Asia","LV":"Europe","MX":"Americas","MY":"Asia","NG":"Africa","NL":"Europe","NO":"Europe","NZ":"Oceania","PK":"Asia","PL":"Europe","PR":"Americas","PT":"Europe","QA":"Asia","RO":"Europe","RS":"Europe","RU":"Europe","SA":"Asia","SE":"Europe","SG":"Asia","SI":"Europe","SK":"Europe","SM":"Europe","SO":"Africa","SS":"Africa","TH":"Asia","UA":"Europe","UG":"Africa","US":"Americas","ZA":"Africa","AR":"Americas","CM":"Africa","MM":"Asia","NP":"Asia","PH":"Asia","VN":"Asia","ZM":"Africa","AE":"Asia","MA":"Africa","AZ":"Asia","CL":"Americas","EC":"Americas","GE":"Asia","JM":"Americas","KZ":"Asia","NE":"Africa","TN":"Africa","ML":"Africa","PE":"Americas","BN":"Asia","CY":"Asia","EE":"Europe","JO":"Asia","MN":"Asia","MW":"Africa","PA":"Americas","SD":"Africa","UZ":"Asia","SV":"Americas","BH":"Asia","SN":"Africa","DZ":"Africa","FJ":"Oceania","LT":"Europe","LY":"Africa","MV":"Asia","NI":"Americas","PG":"Oceania","ZW":"Africa","ET":"Africa","LU":"Europe","OM":"Asia","CR":"Americas","GT":"Americas","BJ":"Africa","BS":"Americas","CI":"Africa","IS":"Europe","MK":"Europe","TT":"Americas","GY":"Americas","KW":"Asia","BA":"Europe","MT":"Europe","WS":"Oceania","SY":"Asia","BI":"Africa","TJ":"Asia","BZ":"Americas","KH":"Asia","MU":"Africa","PY":"Americas","UY":"Americas","LS":"Africa","YE":"Asia","MZ":"Africa","BW":"Africa","TD":"Africa","DJ":"Africa","DO":"Americas","GM":"Africa","SX":"Americas","TO":"Oceania","AF":"Asia","GW":"Africa","SR":"Americas","AS":"Oceania","BF":"Africa","HT":"Americas","MG":"Africa","TG":"Africa","AG":"Americas","AO":"Africa","VU":"Oceania","MO":"Asia","HN":"Americas","AL":"Europe","SL":"Africa","GL":"Americas","GA":"Africa","GN":"Africa","CG":"Africa","GD":"Americas","TM":"Asia","BM":"Americas","MR":"Africa","NA":"Africa","RW":"Africa","BB":"Americas","LR":"Africa","ME":"Europe","SZ":"Africa","ER":"Africa","ST":"Africa","CV":"Africa","GQ":"Africa","CF":"Africa","BT":"Asia","SC":"Africa","KY":"Americas","FO":"Europe","PW":"Oceania","DM":"Americas","TC":"Americas","AW":"Americas","TL":"Asia","KI":"Oceania","AD":"Europe","SB":"Oceania","TR":"Asia","GU":"Oceania","CU":"Americas","MF":"Americas","NC":"Oceania","LA":"Asia","GP":"Americas","GI":"Europe","VA":"Europe","RE":"Africa","LI":"Europe","PF":"Oceania","JE":"Europe","SJ":"Europe","IM":"Europe","GF":"Americas","CW":"Americas","KG":"Asia","MC":"Europe","MQ":"Americas","NU":"Oceania","LC":"Americas","XK":"Europe","MS":"Americas","KN":"Americas","FK":"Americas","MP":"Oceania","VC":"Americas","YT":"Africa","CK":"Oceania","AX":"Europe"};
 
         // Application State
+        // selectedFilter: 'GLOBAL' | 'REGION:<name>' | ISO2 country code
         let currentYear = yearMin;
         let isPlaying = false;
         let speedMultiplier = 1.0;
-        let selectedCountry = 'GLOBAL';
+        let selectedFilter = 'GLOBAL';
         let playTimeout = null;
         let lineChart = null;
 
@@ -2625,6 +3507,98 @@ function renderViz3(body) {
         const rowsContainer = container.querySelector('#rowsContainer');
         const gridLines = container.querySelector('#gridLines');
         const insightsGrid = container.querySelector('#insightsGrid');
+        const labelStartYear = container.querySelector('#labelStartYear');
+        const labelEndYear = container.querySelector('#labelEndYear');
+        const trendHeader = container.querySelector('.trend-header h3');
+        const raceTitle = container.querySelector('#raceTitle');
+        const insightsTitleText = container.querySelector('#insightsTitleText');
+        const covidInfectiousNote = container.querySelector('#covidInfectiousNote');
+
+        const COVID_NOTE_HTML = `The 2019→2020 jump matches live OpenAlex counts for <code>C524204448</code> during COVID-era tagging / pandemic indexing — a real corpus spike, not a pipeline bug. Numbers are not dampened.`;
+
+        function updateCovidInfectiousNote() {
+            if (!covidInfectiousNote) return;
+            const inCovidYears = currentYear >= 2020 && currentYear <= 2022;
+            // Always show when scrubbing COVID years; also keep visible as a standing Infectious caveat once those years are in view
+            covidInfectiousNote.style.display = inCovidYears ? 'block' : 'none';
+            if (inCovidYears) {
+                covidInfectiousNote.innerHTML = `<strong style="color:#f9a8d4;">COVID-era note (Infectious Diseases · ${currentYear}):</strong> ${COVID_NOTE_HTML}`;
+            }
+        }
+
+        // Keep controls in sync with tap-derived window
+        if (timelineSlider) {
+          timelineSlider.min = String(yearMin);
+          timelineSlider.max = String(yearMax);
+          timelineSlider.value = String(yearMin);
+        }
+        if (labelStartYear) labelStartYear.textContent = String(yearMin);
+        if (labelEndYear) labelEndYear.textContent = String(yearMax);
+        if (labelCurrentYear) labelCurrentYear.textContent = `Year: ${yearMin}`;
+        if (yearIndicator) yearIndicator.textContent = String(yearMin);
+        if (watermarkYear) watermarkYear.textContent = String(yearMin);
+        if (btnReset) btnReset.title = `Restart to ${yearMin}`;
+        if (trendHeader) trendHeader.textContent = `Yearly Publication Trend (${yearMin} – ${yearMax})`;
+
+        function emptyTopicBag() {
+            const o = {};
+            topics.forEach(t => { o[t] = 0; });
+            return o;
+        }
+
+        function parseFilter(value) {
+            if (!value || value === 'GLOBAL') return { type: 'global', label: 'Global' };
+            if (value.startsWith('REGION:')) {
+                const region = value.slice(7);
+                return { type: 'region', region, label: region };
+            }
+            return {
+                type: 'country',
+                code: value,
+                label: countryMap[value] || value
+            };
+        }
+
+        function codesForFilter(filter) {
+            if (filter.type === 'global') return Object.keys(countryData);
+            if (filter.type === 'country') return filter.code && countryData[filter.code] ? [filter.code] : [];
+            return Object.keys(countryData).filter(c => VIZ3_ISO2_REGION[c] === filter.region);
+        }
+
+        function getActiveDataForYear(year) {
+            const filter = parseFilter(selectedFilter);
+            if (filter.type === 'global') return globalData[year] || emptyTopicBag();
+            if (filter.type === 'country') {
+                return (countryData[filter.code] && countryData[filter.code][year]) || emptyTopicBag();
+            }
+            const out = emptyTopicBag();
+            codesForFilter(filter).forEach(code => {
+                const yd = countryData[code] && countryData[code][year];
+                if (!yd) return;
+                topics.forEach(t => { out[t] += yd[t] || 0; });
+            });
+            return out;
+        }
+
+        function updateScopeLabels() {
+            const filter = parseFilter(selectedFilter);
+            const scopeTag = filter.type === 'global' ? 'Global' : filter.label;
+            if (raceTitle) {
+                raceTitle.textContent = filter.type === 'global'
+                    ? 'Top Research topics'
+                    : `Top Research topics — ${scopeTag}`;
+            }
+            if (trendHeader) {
+                trendHeader.textContent = filter.type === 'global'
+                    ? `Yearly Publication Trend (${yearMin} – ${yearMax})`
+                    : `Yearly Publication Trend — ${scopeTag} (${yearMin} – ${yearMax})`;
+            }
+            if (insightsTitleText) {
+                insightsTitleText.textContent = filter.type === 'global'
+                    ? 'Research Topic Performance Summary'
+                    : `${scopeTag} — Research Topic Performance Summary`;
+            }
+        }
 
         // Parse and process CSV
         function initializeApp() {
@@ -2683,19 +3657,36 @@ function renderViz3(body) {
         }
 
         function setupCountryDropdown() {
-            // Sort countries alphabetically
+            countrySelect.innerHTML = '';
+
+            const globalOpt = document.createElement('option');
+            globalOpt.value = 'GLOBAL';
+            globalOpt.textContent = 'Global (All Countries)';
+            countrySelect.appendChild(globalOpt);
+
+            const regionGroup = document.createElement('optgroup');
+            regionGroup.label = 'Regions';
+            ['Africa', 'Americas', 'Asia', 'Europe', 'Oceania'].forEach(region => {
+                const option = document.createElement('option');
+                option.value = 'REGION:' + region;
+                option.textContent = region;
+                regionGroup.appendChild(option);
+            });
+            countrySelect.appendChild(regionGroup);
+
+            const countryGroup = document.createElement('optgroup');
+            countryGroup.label = 'Countries';
             const countryList = Object.keys(countryMap).map(code => {
                 return { code: code, name: countryMap[code] };
             });
             countryList.sort((a, b) => a.name.localeCompare(b.name));
-
-            // Populate select element
             countryList.forEach(c => {
                 const option = document.createElement('option');
                 option.value = c.code;
                 option.textContent = c.name;
-                countrySelect.appendChild(option);
+                countryGroup.appendChild(option);
             });
+            countrySelect.appendChild(countryGroup);
         }
 
         function setupBarChartRows() {
@@ -2853,6 +3844,7 @@ function renderViz3(body) {
 
         // Update Dashboard Elements
         function updateDashboard(recalcStats = false) {
+            updateScopeLabels();
             updateTimelineUI();
             updateBarChartRace();
             updateLineChartData();
@@ -2867,11 +3859,12 @@ function renderViz3(body) {
             labelCurrentYear.textContent = `Year: ${currentYear}`;
             yearIndicator.textContent = currentYear;
             watermarkYear.textContent = currentYear;
+            updateCovidInfectiousNote();
         }
 
         function updateBarChartRace() {
-            // Get data for selected year and country
-            const activeData = (selectedCountry === 'GLOBAL') ? globalData[currentYear] : countryData[selectedCountry][currentYear];
+            const filter = parseFilter(selectedFilter);
+            const activeData = getActiveDataForYear(currentYear);
 
             // Map and sort topics
             const sortedTopics = topics.map(topic => {
@@ -2912,46 +3905,69 @@ function renderViz3(body) {
                     const pct = (item.value / maxValue) * 100;
                     bar.style.width = `${pct}%`;
 
-                    // Update value text
+                    // Update value text (publication count for active filter scope)
                     valDisp.textContent = item.value.toLocaleString();
 
-                    // Update flag
+                    // Flags: GLOBAL = world leader; REGION = leader within region;
+                    // COUNTRY = selected country only (never a foreign world-leader flag).
                     const flagDisp = container.querySelector(`#flag-${sName}`);
                     if (flagDisp) {
-                        const topC = getTopCountryInYear(item.name, currentYear);
-                        flagDisp.textContent = getFlagEmoji(topC.code);
+                        if (filter.type === 'country') {
+                            flagDisp.textContent = getFlagEmoji(filter.code);
+                            flagDisp.title = filter.label;
+                        } else if (filter.type === 'region') {
+                            const topC = getTopCountryInYear(item.name, currentYear, codesForFilter(filter));
+                            flagDisp.textContent = getFlagEmoji(topC.code);
+                            flagDisp.title = topC.code
+                                ? `Leader in ${filter.region}: ${topC.name}`
+                                : '';
+                        } else {
+                            const topC = getTopCountryInYear(item.name, currentYear);
+                            flagDisp.textContent = getFlagEmoji(topC.code);
+                            flagDisp.title = topC.code
+                                ? `World leader: ${topC.name}`
+                                : '';
+                        }
                     }
                 }
             });
         }
 
         function updateLineChartData() {
-    if (!lineChart) return;
+            if (!lineChart) return;
 
-    const visibleYears = years.filter(y => y <= currentYear);
-    lineChart.data.labels = visibleYears;
+            const visibleYears = years.filter(y => y <= currentYear);
+            lineChart.data.labels = visibleYears;
 
-    topics.forEach((topic, idx) => {
-        const dataPoints = visibleYears.map(y => {
-            const dataSrc = (selectedCountry === 'GLOBAL') ? globalData[y] : countryData[selectedCountry][y];
-            return dataSrc[topic] || 0;
-        });
-        lineChart.data.datasets[idx].data = dataPoints;
-    });
-    lineChart.update();
-}
+            topics.forEach((topic, idx) => {
+                const dataPoints = visibleYears.map(y => {
+                    const dataSrc = getActiveDataForYear(y);
+                    return dataSrc[topic] || 0;
+                });
+                lineChart.data.datasets[idx].data = dataPoints;
+            });
+            lineChart.update();
+        }
+
+        function clearCountryRegionFilter() {
+            selectedFilter = 'GLOBAL';
+            if (countrySelect) countrySelect.value = 'GLOBAL';
+            updateDashboard(true);
+        }
 
         function calculateAndRenderStats() {
             insightsGrid.innerHTML = '';
+            const filter = parseFilter(selectedFilter);
+            const scopeCodes = codesForFilter(filter);
 
             topics.forEach(topic => {
-                // 1. Calculate Total Publications
+                // 1. Calculate Total Publications (scoped)
                 let totalPubs = 0;
                 let peakYear = yearMin;
                 let peakPubs = -1;
 
                 years.forEach(y => {
-                    const dataSrc = (selectedCountry === 'GLOBAL') ? globalData[y] : countryData[selectedCountry][y];
+                    const dataSrc = getActiveDataForYear(y);
                     const val = dataSrc[topic] || 0;
                     totalPubs += val;
                     if (val > peakPubs) {
@@ -2966,7 +3982,7 @@ function renderViz3(body) {
                 
                 for (let i = 0; i < years.length; i++) {
                     const y = years[i];
-                    const dataSrc = (selectedCountry === 'GLOBAL') ? globalData[y] : countryData[selectedCountry][y];
+                    const dataSrc = getActiveDataForYear(y);
                     const val = dataSrc[topic] || 0;
                     if (val > 0) {
                         firstActiveYear = y;
@@ -2975,11 +3991,11 @@ function renderViz3(body) {
                     }
                 }
                 if (firstActiveVal === 0) {
-                    const dataSrc = (selectedCountry === 'GLOBAL') ? globalData[yearMin] : countryData[selectedCountry][yearMin];
+                    const dataSrc = getActiveDataForYear(yearMin);
                     firstActiveVal = dataSrc[topic] || 0;
                 }
 
-                const dataEndSrc = (selectedCountry === 'GLOBAL') ? globalData[yearMax] : countryData[selectedCountry][yearMax];
+                const dataEndSrc = getActiveDataForYear(yearMax);
                 const valEnd = dataEndSrc[topic] || 0;
 
                 let growthStr = 'N/A';
@@ -2997,7 +4013,7 @@ function renderViz3(body) {
                 let footerLabel = '';
                 let footerValue = '';
                 
-                if (selectedCountry === 'GLOBAL') {
+                if (filter.type === 'global') {
                     const top5 = getTop5CountriesInYear(topic, yearMax);
                     footerLabel = `Top Leaders (${yearMax})`;
                     
@@ -3014,18 +4030,36 @@ function renderViz3(body) {
                                <div style="position: absolute; bottom: 100%; right: 0; background: #0f172a; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 6px; font-size: 0.85em; color: #cbd5e1; margin-bottom: 4px; width: max-content; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">${optionsHtml}</div>
                            </details>` 
                         : 'None';
+                } else if (filter.type === 'region') {
+                    const top5 = getTop5CountriesInYear(topic, yearMax, scopeCodes);
+                    const regionTotal = valEnd;
+                    footerLabel = `Top in ${filter.region} (${yearMax})`;
+                    let optionsHtml = top5.map((c, i) => {
+                        const pct = regionTotal > 0 ? (c.count / regionTotal * 100).toFixed(0) : 0;
+                        return `<div style="padding: 2px 0;">${i+1}. ${c.name} (${pct}%)</div>`;
+                    }).join('');
+                    const summaryText = top5.length > 0 ? `1. ${top5[0].name}` : 'Top 5';
+                    footerValue = top5.length > 0
+                        ? `<details style="cursor: pointer; max-width: 180px; position: relative;">
+                               <summary style="font-size: 0.9em; outline: none; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 2px 5px; user-select: none; display: flex; align-items: center; justify-content: space-between;"><span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">${summaryText}</span><span style="font-size: 0.7em; margin-left: 6px;">▼</span></summary>
+                               <div style="position: absolute; bottom: 100%; right: 0; background: #0f172a; border: 1px solid rgba(255,255,255,0.2); border-radius: 4px; padding: 6px; font-size: 0.85em; color: #cbd5e1; margin-bottom: 4px; width: max-content; z-index: 10; box-shadow: 0 4px 6px rgba(0,0,0,0.3);">${optionsHtml}</div>
+                           </details>`
+                        : 'None';
                 } else {
                     const globalEndVal = globalData[yearMax][topic] || 0;
                     const countryEndVal = valEnd;
                     const share = globalEndVal > 0 ? (countryEndVal / globalEndVal * 100) : 0;
                     
-                    footerLabel = `Global Share (${yearMax})`;
+                    footerLabel = `World share (${yearMax})`;
                     footerValue = share > 0 ? `${share.toFixed(1)}%` : '0%';
                 }
 
                 // Render Insight Card
                 const card = document.createElement('div');
                 card.className = 'insight-card';
+                const scopeMetricLabel = filter.type === 'global'
+                    ? `Total Pubs (${yearMin}–${yearMax})`
+                    : `${filter.label} Pubs (${yearMin}–${yearMax})`;
                 card.innerHTML = `
                     <div class="card-top">
                         <div class="card-title">${topic}</div>
@@ -3033,7 +4067,7 @@ function renderViz3(body) {
                     </div>
                     <div class="card-metric">
                         <div class="metric-value">${totalPubs.toLocaleString()}</div>
-                        <div class="metric-label">Total Pubs (${yearMin}–${yearMax})</div>
+                        <div class="metric-label">${scopeMetricLabel}</div>
                     </div>
                     <div class="card-footer">
                         <div class="footer-item">
@@ -3045,18 +4079,23 @@ function renderViz3(body) {
                             <span class="footer-value">${footerValue}</span>
                         </div>
                     </div>
+                    ${topic === 'Infectious Diseases' ? `<div style="margin-top:10px;padding:8px 10px;border-radius:6px;border:1px solid rgba(204,121,167,0.4);background:rgba(204,121,167,0.1);font-size:0.72rem;line-height:1.4;color:#fce7f3;">${COVID_NOTE_HTML}</div>` : ''}
                 `;
+                // peakStr reserved for future footer slot; keep computed for consistency checks
+                void peakStr;
                 insightsGrid.appendChild(card);
             });
         }
 
         // Helper to find the top contributing country for a topic in a specific year
-        function getTopCountryInYear(topic, year) {
+        function getTopCountryInYear(topic, year, codeList) {
             let maxPubs = -1;
             let topCode = '';
             let topName = '';
+            const codes = codeList || Object.keys(countryData);
 
-            for (const code in countryData) {
+            for (const code of codes) {
+                if (!countryData[code] || !countryData[code][year]) continue;
                 const val = countryData[code][year][topic] || 0;
                 if (val > maxPubs) {
                     maxPubs = val;
@@ -3068,9 +4107,11 @@ function renderViz3(body) {
             return { code: topCode, name: topName, count: maxPubs };
         }
 
-        function getTop5CountriesInYear(topic, year) {
+        function getTop5CountriesInYear(topic, year, codeList) {
             let list = [];
-            for (const code in countryData) {
+            const codes = codeList || Object.keys(countryData);
+            for (const code of codes) {
+                if (!countryData[code] || !countryData[code][year]) continue;
                 const val = countryData[code][year][topic] || 0;
                 if (val > 0) {
                     list.push({ code: code, name: countryMap[code] || code, count: val });
@@ -3139,7 +4180,7 @@ function renderViz3(body) {
                 }
             });
 
-            // Reset Button
+            // Reset Button (year only — does not clear country/region filter)
             btnReset.addEventListener('click', () => {
                 pausePlayback();
                 currentYear = yearMin;
@@ -3153,16 +4194,41 @@ function renderViz3(body) {
                 updateDashboard(false);
             });
 
-            // Country selection change
+            // Country / region selection change — scopes bars, trend, flags, insights
             countrySelect.addEventListener('change', (e) => {
-                selectedCountry = e.target.value;
-                updateDashboard(true); // recalculate everything on country change
+                selectedFilter = e.target.value;
+                updateDashboard(true);
             });
+
+            const btnClearFilter = container.querySelector('#btnClearFilter');
+            if (btnClearFilter) {
+                btnClearFilter.addEventListener('click', () => {
+                    pausePlayback();
+                    clearCountryRegionFilter();
+                });
+            }
+
+            // Esc clears country/region filter back to Global
+            const onViz3Keydown = (e) => {
+                if (e.key !== 'Escape') return;
+                if (selectedFilter === 'GLOBAL') return;
+                pausePlayback();
+                clearCountryRegionFilter();
+            };
+            document.addEventListener('keydown', onViz3Keydown);
+            // Drop listener when this viz body is replaced (nav away)
+            const observer = new MutationObserver(() => {
+                if (!document.body.contains(container)) {
+                    document.removeEventListener('keydown', onViz3Keydown);
+                    observer.disconnect();
+                }
+            });
+            observer.observe(document.body, { childList: true, subtree: true });
 
             // Speed selector buttons
             const speedBtns = container.querySelectorAll('.speed-btn');
             speedBtns.forEach(btn => {
-                btn.addEventListener('click', (e) => {
+                btn.addEventListener('click', () => {
                     speedBtns.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                     speedMultiplier = parseFloat(btn.dataset.speed);
@@ -3187,13 +4253,25 @@ function renderViz3(body) {
 }
 
 function renderViz4(body) {
-  // Use the new VIZ4_DATA if available, fallback to old static data
-  let rawData = typeof VIZ4_DATA !== 'undefined' ? VIZ4_DATA : DATA.getCollabData();
-  
+  // Core viz = classic dumbbell (domestic vs international). Bars were a mistaken overnight swap — only G2 keeps bars.
+  const yMin = (typeof VIZ4_META !== "undefined" && VIZ4_META.year_min) ? VIZ4_META.year_min : 2010;
+  const yMax = (typeof VIZ4_META !== "undefined" && VIZ4_META.year_max) ? VIZ4_META.year_max : 2024;
+  const nCountries = (typeof VIZ4_META !== "undefined" && VIZ4_META.n_countries) ? VIZ4_META.n_countries : null;
+  const year = (APP.year >= yMin && APP.year <= yMax) ? APP.year : yMax;
+  APP.year = year;
+
+  let rawData = [];
+  if (typeof VIZ4_BY_YEAR !== "undefined" && VIZ4_BY_YEAR[String(year)]) {
+    rawData = VIZ4_BY_YEAR[String(year)];
+  } else if (typeof VIZ4_DATA !== "undefined") {
+    rawData = VIZ4_DATA;
+  } else {
+    rawData = DATA.getCollabData();
+  }
+  const countryN = nCountries || new Set(rawData.map(d => d.name)).size;
+
   let data = [];
-  
   if (!APP.region || APP.region === "All") {
-    // Aggregate by region
     const grouped = d3.group(rawData, d => d.region);
     for (const [region, countries] of grouped) {
       const dom = d3.mean(countries, d => d.domestic);
@@ -3209,133 +4287,98 @@ function renderViz4(body) {
       });
     }
   } else {
-    // Filter to specific region
-    data = rawData.filter(d => d.region === APP.region);
+    data = rawData.filter(d => d.region === APP.region).map(d => ({ ...d, isRegionAgg: false }));
   }
 
-  // Apply Sorting
-  if (APP.sort === "gain")          data.sort((a,b)=>b.gain-a.gain);
+  if (APP.sort === "gain") data.sort((a,b)=>b.gain-a.gain);
   else if (APP.sort === "international") data.sort((a,b)=>b.international-a.international);
   else if (APP.sort === "domestic") data.sort((a,b)=>b.domestic-a.domestic);
-  else                              data.sort((a,b)=>a.name.localeCompare(b.name));
+  else data.sort((a,b)=>a.name.localeCompare(b.name));
 
-  // Clear existing content
-  body.innerHTML = '';
-  
-  // Create a wrapper div to handle the flex layout (column direction)
-  const wrapper = document.createElement('div');
-  wrapper.style.display = 'flex';
-  wrapper.style.flexDirection = 'column';
-  wrapper.style.width = '100%';
-  wrapper.style.height = '100%';
+  body.innerHTML = "";
+  const wrapper = document.createElement("div");
+  wrapper.style.cssText = "display:flex;flex-direction:column;width:100%;height:100%;";
   body.appendChild(wrapper);
-  
-  // Stats calculation
+
   const avgDom = data.length ? d3.mean(data, d => d.domestic) : 0;
   const avgInt = data.length ? d3.mean(data, d => d.international) : 0;
   const avgGain = data.length ? d3.mean(data, d => d.gain) : 0;
-  
-  // Top stats bar
-  const statsBar = document.createElement('div');
-  statsBar.style.padding = '15px 25px';
-  statsBar.style.background = 'rgba(15, 23, 42, 0.8)';
-  statsBar.style.borderBottom = '1px solid rgba(255,255,255,0.1)';
-  statsBar.style.display = 'flex';
-  statsBar.style.justifyContent = 'space-between';
-  statsBar.style.alignItems = 'center';
-  statsBar.style.backdropFilter = 'blur(10px)';
-  statsBar.style.zIndex = '10';
-  
+
+  const statsBar = document.createElement("div");
+  statsBar.style.cssText = "padding:12px 20px;background:rgba(15,23,42,0.8);border-bottom:1px solid rgba(255,255,255,0.1);display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;";
   statsBar.innerHTML = `
-    <div style="display:flex; flex: 1; justify-content: space-evenly; align-items: center; margin-right: 40px;">
-      <div style="text-align:center;">
-        <div style="color:#94a3b8; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Countries Visible</div>
-        <div style="color:#fff; font-size:1.5rem; font-weight:800;">${data.length}</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="color:#E69F00; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Avg Domestic (Citations)</div>
-        <div style="color:#fff; font-size:1.5rem; font-weight:800;">${avgDom.toFixed(1)}</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="color:#0072B2; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Avg Int'l (Citations)</div>
-        <div style="color:#fff; font-size:1.5rem; font-weight:800;">${avgInt.toFixed(1)}</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="color:#56B4E9; font-size:0.8rem; text-transform:uppercase; letter-spacing:1px;">Avg Premium</div>
-        <div style="color:#fff; font-size:1.5rem; font-weight:800;">+${avgGain.toFixed(1)}</div>
-      </div>
+    <div style="display:flex;flex:1;justify-content:space-evenly;gap:12px;flex-wrap:wrap;">
+      <div style="text-align:center;"><div style="color:#94a3b8;font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;">Year</div><div style="color:#fff;font-size:1.35rem;font-weight:800;">${year}</div></div>
+      <div style="text-align:center;"><div style="color:#94a3b8;font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;">Rows</div><div style="color:#fff;font-size:1.35rem;font-weight:800;">${data.length}</div></div>
+      <div style="text-align:center;"><div style="color:${OKABE_ITO.orange};font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;">Avg Domestic</div><div style="color:#fff;font-size:1.35rem;font-weight:800;">${avgDom.toFixed(1)}</div></div>
+      <div style="text-align:center;"><div style="color:${OKABE_ITO.blue};font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;">Avg Int'l</div><div style="color:#fff;font-size:1.35rem;font-weight:800;">${avgInt.toFixed(1)}</div></div>
+      <div style="text-align:center;"><div style="color:${OKABE_ITO.sky};font-size:0.75rem;text-transform:uppercase;letter-spacing:1px;">Avg Premium</div><div style="color:#fff;font-size:1.35rem;font-weight:800;">+${avgGain.toFixed(1)}</div></div>
     </div>
-    <div style="display:flex; flex-direction:column; gap: 8px; background: rgba(15,23,42,0.5); padding: 10px 15px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
-      <div style="display:flex; align-items:center;">
-        <div style="width:12px; height:12px; border-radius:50%; background:#E69F00; border:1.5px solid #fff; margin-right:10px;"></div>
-        <span style="color:#e2e8f0; font-size:0.85rem; font-weight:600;">Domestic (Citations/Paper)</span>
-      </div>
-      <div style="display:flex; align-items:center;">
-        <div style="width:12px; height:12px; border-radius:50%; background:#0072B2; border:1.5px solid #fff; margin-right:10px;"></div>
-        <span style="color:#e2e8f0; font-size:0.85rem; font-weight:600;">Int'l Collab (Citations/Paper)</span>
-      </div>
+    <div style="display:flex;flex-direction:column;gap:6px;background:rgba(15,23,42,0.5);padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.1);">
+      <div style="display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:50%;background:${OKABE_ITO.orange};border:1.5px solid #fff;display:inline-block;"></span><span style="color:#e2e8f0;font-size:0.8rem;font-weight:600;">Domestic cites/paper</span></div>
+      <div style="display:flex;align-items:center;gap:8px;"><span style="width:12px;height:12px;border-radius:50%;background:${OKABE_ITO.blue};border:1.5px solid #fff;display:inline-block;"></span><span style="color:#e2e8f0;font-size:0.8rem;font-weight:600;">Int'l collab cites/paper</span></div>
     </div>
   `;
   wrapper.appendChild(statsBar);
-  
-  const mainRow = document.createElement('div');
-  mainRow.style.display = 'flex';
-  mainRow.style.flexDirection = 'row';
-  mainRow.style.flex = '1';
-  mainRow.style.overflow = 'hidden';
-  wrapper.appendChild(mainRow);
-  
-  // Scrollable container for SVG
-  const scrollContainer = document.createElement('div');
-  scrollContainer.style.flex = '1';
-  scrollContainer.style.overflowY = 'auto';
-  scrollContainer.style.overflowX = 'hidden';
-  mainRow.appendChild(scrollContainer);
-  
-  // Glossary Side Panel
-  const sidePanel = document.createElement('div');
-  sidePanel.style.width = '280px';
-  sidePanel.style.borderLeft = '1px solid rgba(255,255,255,0.1)';
-  sidePanel.style.padding = '20px';
-  sidePanel.style.background = 'rgba(15, 23, 42, 0.5)';
-  sidePanel.style.display = 'flex';
-  sidePanel.style.flexDirection = 'column';
-  sidePanel.style.gap = '20px';
-  sidePanel.style.overflowY = 'auto';
 
+  const mainRow = document.createElement("div");
+  mainRow.style.cssText = "display:flex;flex:1;overflow:hidden;";
+  wrapper.appendChild(mainRow);
+
+  const scrollContainer = document.createElement("div");
+  scrollContainer.style.cssText = "flex:1;overflow-y:auto;overflow-x:hidden;position:relative;";
+  mainRow.appendChild(scrollContainer);
+
+  const sidePanel = document.createElement("div");
+  sidePanel.style.cssText = "width:280px;border-left:1px solid rgba(255,255,255,0.1);padding:20px;background:rgba(15,23,42,0.5);display:flex;flex-direction:column;gap:16px;overflow-y:auto;";
+  const selected = APP.selectedCollab;
   sidePanel.innerHTML = `
-    <h3 style="color:#f8fafc; font-size:1.1rem; margin:0 0 10px 0; padding-bottom:10px; border-bottom:1px solid rgba(255,255,255,0.1);">Glossary</h3>
-    <div style="color:#64748b; font-size:0.75rem; line-height:1.35; margin-bottom:8px;">Sample shown: <b style="color:#cbd5e1;">20 countries, year 2024</b> (not a full world panel).</div>
-    
-    <div>
-        <div style="color:#E69F00; font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:5px;">Domestic Impact</div>
-        <div style="color:#94a3b8; font-size:0.85rem; line-height:1.4;">Mean citations for papers with authors only from this country. Baseline for local research influence.</div>
+    <h3 style="color:#f8fafc;font-size:1.05rem;margin:0;padding-bottom:8px;border-bottom:1px solid rgba(255,255,255,0.1);">Details</h3>
+    <div style="color:#64748b;font-size:0.75rem;line-height:1.35;">Pool: <b style="color:#cbd5e1;">${countryN} countries × ${yMin}–${yMax}</b>. Dumbbell = citation gap. Year slider / region / Esc.</div>
+    <div id="viz4-detail-box" style="color:#94a3b8;font-size:0.85rem;line-height:1.45;">
+      ${selected ? "" : "Click a dumbbell to pin details. Esc or ← Regions clears."}
     </div>
-    
     <div>
-        <div style="color:#0072B2; font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:5px;">Int'l Collab Impact</div>
-        <div style="color:#94a3b8; font-size:0.85rem; line-height:1.4;">Mean citations for papers with at least one co-author from another country.</div>
+      <div style="color:${OKABE_ITO.orange};font-size:0.8rem;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Domestic Impact</div>
+      <div style="color:#94a3b8;font-size:0.82rem;line-height:1.4;">Mean citations for papers with authors only from this country.</div>
     </div>
-    
     <div>
-        <div style="color:#56B4E9; font-size:0.85rem; font-weight:700; text-transform:uppercase; margin-bottom:5px;">Collaboration Premium</div>
-        <div style="color:#94a3b8; font-size:0.85rem; line-height:1.4;">International impact minus domestic impact. Higher = larger citation gain from cross-border co-authorship.</div>
+      <div style="color:${OKABE_ITO.blue};font-size:0.8rem;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Int'l Collab Impact</div>
+      <div style="color:#94a3b8;font-size:0.82rem;line-height:1.4;">Mean citations for papers with ≥1 foreign co-author.</div>
+    </div>
+    <div>
+      <div style="color:${OKABE_ITO.sky};font-size:0.8rem;font-weight:700;text-transform:uppercase;margin-bottom:4px;">Collaboration Premium</div>
+      <div style="color:#94a3b8;font-size:0.82rem;line-height:1.4;">International − domestic (dumbbell length). Higher = larger citation gain from cross-border co-authorship.</div>
     </div>
   `;
   mainRow.appendChild(sidePanel);
 
-  const W = scrollContainer.offsetWidth || 900;
-  // Calculate dynamic height based on data length (35px per row) + margins
-  const H = Math.max(scrollContainer.offsetHeight || 500, data.length * 35 + 100);
-  
-  const m = { top: 60, right: 80, bottom: 40, left: 200 };
-  
-  const svg = d3.select(scrollContainer).append("svg").attr("width",W).attr("height",H);
+  const detailBox = sidePanel.querySelector("#viz4-detail-box");
+  const fillDetail = (d) => {
+    if (!detailBox || !d) return;
+    detailBox.innerHTML = `
+      <div style="font-size:1rem;font-weight:800;color:#fff;margin-bottom:6px;">${d.name}</div>
+      <div style="font-size:0.75rem;color:#94a3b8;margin-bottom:8px;">${d.isRegionAgg ? `Region · ${d.countryCount} countries · ${year}` : `${d.region} · ${year}`}</div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="color:${OKABE_ITO.orange};">Domestic</span><b style="color:#fff;">${d.domestic.toFixed(2)}</b></div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span style="color:${OKABE_ITO.blue};">Int'l</span><b style="color:#fff;">${d.international.toFixed(2)}</b></div>
+      <div style="display:flex;justify-content:space-between;border-top:1px dashed rgba(255,255,255,0.15);padding-top:6px;"><span style="color:${OKABE_ITO.sky};font-weight:700;">Premium</span><b style="color:${OKABE_ITO.sky};">+${d.gain.toFixed(2)}</b></div>
+      ${d.isRegionAgg ? `<div style="margin-top:8px;font-size:0.72rem;color:#cbd5e1;font-style:italic;">Click again to drill into countries</div>` : ""}
+    `;
+  };
+  if (selected) {
+    const match = data.find(d => d.name === selected.name) || selected;
+    fillDetail(match);
+  }
 
-  // Definitions for drop shadows
+  const W = scrollContainer.offsetWidth || 900;
+  const rowH = 35;
+  const m = { top: 60, right: 80, bottom: 40, left: 200 };
+  const H = Math.max(scrollContainer.offsetHeight || 500, data.length * rowH + m.top + m.bottom + 20);
+  const svg = d3.select(scrollContainer).append("svg").attr("width", W).attr("height", H);
+
   const defs = svg.append("defs");
   const dropShadow = defs.append("filter")
-    .attr("id", "glow")
+    .attr("id", "viz4-glow")
     .attr("x", "-20%").attr("y", "-20%")
     .attr("width", "140%").attr("height", "140%");
   dropShadow.append("feGaussianBlur").attr("stdDeviation", "3").attr("result", "blur");
@@ -3343,136 +4386,159 @@ function renderViz4(body) {
   feMerge.append("feMergeNode").attr("in", "blur");
   feMerge.append("feMergeNode").attr("in", "SourceGraphic");
 
-  svg.append("text").attr("x",W/2).attr("y",30).attr("text-anchor","middle")
-    .attr("fill","#f8fafc").attr("font-size","18").attr("font-weight","800").attr("letter-spacing", "0.5px")
-    .text(`The Collaboration Premium: Citation Gap (Top 20 Countries, 2024)`);
+  svg.append("text").attr("x", W/2).attr("y", 28).attr("text-anchor", "middle")
+    .attr("fill", "#f8fafc").attr("font-size", 17).attr("font-weight", 800)
+    .text(`Collaboration Premium — Dumbbell (${year})`);
 
-  const maxVal = d3.max(data, d => d.international) || 1;
-  const xSc = d3.scaleLinear().domain([0, maxVal * 1.05]).range([m.left, W-m.right]);
-  const ySc = d3.scaleBand().domain(data.map(d=>d.name)).range([m.top, H-m.bottom]).padding(0.4);
+  const maxVal = d3.max(data, d => Math.max(d.domestic, d.international)) || 1;
+  const xSc = d3.scaleLinear().domain([0, maxVal * 1.05]).range([m.left, W - m.right]);
+  const ySc = d3.scaleBand().domain(data.map(d => d.name)).range([m.top, H - m.bottom]).padding(0.4);
+  const cy = d => ySc(d.name) + ySc.bandwidth() / 2;
 
-  // X Axis (Fixed to top and bottom)
-  svg.append("g").attr("transform",`translate(0,${m.top-20})`)
-     .call(d3.axisTop(xSc).ticks(8))
-     .call(g => g.select(".domain").attr("stroke","#334155"))
-     .call(g => g.selectAll("text").attr("fill","#94a3b8").attr("font-size", "11"));
-     
-  svg.append("g").attr("transform",`translate(0,${H-m.bottom})`)
-     .call(d3.axisBottom(xSc).ticks(8))
-     .call(g => g.select(".domain").attr("stroke","#334155"))
-     .call(g => g.selectAll("line").attr("stroke","rgba(255,255,255,0.05)").attr("y2",-(H-m.top-m.bottom+20)))
-     .call(g => g.selectAll("text").attr("fill","#94a3b8").attr("font-size", "11"));
-     
-  // Y Axis
-  svg.append("g").attr("transform",`translate(${m.left},0)`)
-     .call(d3.axisLeft(ySc).tickSize(0))
-     .call(g => g.select(".domain").remove())
-     .selectAll("text").attr("font-size","13").attr("font-weight", "500").attr("fill","#cbd5e1");
+  svg.append("g").attr("transform", `translate(0,${m.top - 20})`)
+    .call(d3.axisTop(xSc).ticks(8))
+    .call(g => g.select(".domain").attr("stroke", "#334155"))
+    .call(g => g.selectAll("text").attr("fill", "#94a3b8").attr("font-size", 11));
+  svg.append("g").attr("transform", `translate(0,${H - m.bottom})`)
+    .call(d3.axisBottom(xSc).ticks(8))
+    .call(g => g.select(".domain").attr("stroke", "#334155"))
+    .call(g => g.selectAll("line").attr("stroke", "rgba(255,255,255,0.05)").attr("y2", -(H - m.top - m.bottom + 20)))
+    .call(g => g.selectAll("text").attr("fill", "#94a3b8").attr("font-size", 11));
+  svg.append("g").attr("transform", `translate(${m.left},0)`)
+    .call(d3.axisLeft(ySc).tickSize(0))
+    .call(g => g.select(".domain").remove())
+    .selectAll("text").attr("font-size", 13).attr("font-weight", 500).attr("fill", "#cbd5e1");
 
-  const cy = d => ySc(d.name)+ySc.bandwidth()/2;
-
-  // Custom rich tooltip html generator
-  const getTooltipHtml = (d) => `
-    <div style="background:rgba(15,23,42,0.95); border:1px solid rgba(255,255,255,0.1); border-radius:8px; padding:12px; min-width:200px; box-shadow:0 10px 25px rgba(0,0,0,0.5);">
-      <div style="font-size:14px; font-weight:800; color:#fff; margin-bottom:4px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:6px;">${d.name}</div>
-      <div style="font-size:11px; color:#94a3b8; text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;">
-        ${d.isRegionAgg ? `Aggregated Region: ${d.countryCount} countries` : d.region}
-      </div>
-      <div style="display:flex; justify-content:space-between; margin-bottom:4px;">
-        <span style="color:#E69F00; font-weight:600; font-size:12px;">Domestic:</span>
-        <span style="color:#fff; font-weight:700; font-size:13px;">${d.domestic.toFixed(1)} citations</span>
-      </div>
-      <div style="display:flex; justify-content:space-between; margin-bottom:8px;">
-        <span style="color:#0072B2; font-weight:600; font-size:12px;">Int'l Collab:</span>
-        <span style="color:#fff; font-weight:700; font-size:13px;">${d.international.toFixed(1)} citations</span>
-      </div>
-      <div style="display:flex; justify-content:space-between; border-top:1px dashed rgba(255,255,255,0.2); padding-top:8px; margin-bottom: ${d.isRegionAgg ? '8px' : '0'};">
-        <span style="color:#56B4E9; font-weight:800; font-size:13px;">Premium:</span>
-        <span style="color:#56B4E9; font-weight:800; font-size:14px;">+${d.gain.toFixed(1)}</span>
-      </div>
-      ${d.isRegionAgg ? `<div style="font-size:10px; color:#e2e8f0; font-style:italic; text-align:center; background:rgba(255,255,255,0.1); padding:4px; border-radius:4px;">Click to drill down</div>` : ''}
-    </div>
+  const tipHtml = (d) => `
+    <div style="font-weight:800;margin-bottom:4px;border-bottom:1px solid rgba(255,255,255,0.12);padding-bottom:4px;">${d.name}</div>
+    <div style="font-size:11px;color:#94a3b8;margin-bottom:6px;">${d.isRegionAgg ? d.countryCount + " countries" : d.region} · ${year}</div>
+    <div style="font-size:12px;">Domestic: <b style="color:${OKABE_ITO.orange}">${d.domestic.toFixed(2)}</b></div>
+    <div style="font-size:12px;">Int'l: <b style="color:${OKABE_ITO.blue}">${d.international.toFixed(2)}</b></div>
+    <div style="font-size:12px;">Premium: <b style="color:${OKABE_ITO.sky}">+${d.gain.toFixed(2)}</b></div>
+    <div style="font-size:10px;color:#94a3b8;margin-top:6px;">${d.isRegionAgg ? "Click to drill down" : "Click to pin · Esc clears"}</div>
   `;
 
-  // Draw connecting lines (solid color to fix gradient bounding box bug on horizontal lines)
-  const lines = svg.selectAll(".con").data(data, d => d.name);
-  lines.join(
-    enter => enter.append("line").attr("class","con")
-      .attr("x1",d=>xSc(d.domestic)).attr("x2",d=>xSc(d.domestic)) // Start collapsed
-      .attr("y1",cy).attr("y2",cy)
-      .attr("stroke","rgba(255,255,255,0.2)").attr("stroke-width",4)
-      .call(enter => enter.transition().duration(800).delay((d,i)=>i*5).attr("x2",d=>xSc(d.international))),
-    update => update.call(update => update.transition().duration(800)
-      .attr("y1",cy).attr("y2",cy)
-      .attr("x1",d=>xSc(d.domestic)).attr("x2",d=>xSc(d.international))),
-    exit => exit.call(exit => exit.transition().duration(400).style("opacity",0).remove())
+  // Connector lines (dumbbell shafts)
+  svg.selectAll(".con").data(data, d => d.name).join(
+    enter => enter.append("line").attr("class", "con")
+      .attr("x1", d => xSc(d.domestic)).attr("x2", d => xSc(d.domestic))
+      .attr("y1", cy).attr("y2", cy)
+      .attr("stroke", "rgba(255,255,255,0.25)").attr("stroke-width", 4)
+      .style("pointer-events", "none")
+      .call(enter => enter.transition().duration(700).delay((d,i)=>i*5)
+        .attr("x2", d => xSc(d.international))),
+    update => update.call(update => update.transition().duration(500)
+      .attr("y1", cy).attr("y2", cy)
+      .attr("x1", d => xSc(d.domestic)).attr("x2", d => xSc(d.international))),
+    exit => exit.transition().duration(300).style("opacity", 0).remove()
   );
 
-  // Invisible hover interaction area per row (for easier hovering)
-  svg.selectAll(".row-hover").data(data, d=>d.name).join("rect").attr("class", "row-hover")
+  // Premium labels at the right end
+  svg.selectAll(".viz4-gain").data(data, d => d.name).join("text")
+    .attr("class", "viz4-gain")
+    .attr("x", d => xSc(Math.max(d.domestic, d.international)) + 10)
+    .attr("y", cy)
+    .attr("dy", "0.35em")
+    .attr("fill", OKABE_ITO.sky).attr("font-size", 11).attr("font-weight", 700)
+    .style("pointer-events", "none")
+    .text(d => `+${d.gain.toFixed(1)}`);
+
+  // Selection halo behind dots
+  if (APP.selectedCollab) {
+    const sel = data.find(d => d.name === APP.selectedCollab.name);
+    if (sel) {
+      svg.append("rect")
+        .attr("x", m.left - 8)
+        .attr("y", ySc(sel.name) - 2)
+        .attr("width", W - m.left - m.right + 16)
+        .attr("height", ySc.bandwidth() + 4)
+        .attr("fill", "rgba(255,255,255,0.04)")
+        .attr("stroke", "rgba(255,255,255,0.35)")
+        .attr("stroke-width", 1)
+        .attr("rx", 4)
+        .style("pointer-events", "none");
+    }
+  }
+
+  // Domestic dots (Okabe orange)
+  svg.selectAll(".dd").data(data, d => d.name).join(
+    enter => enter.append("circle").attr("class", "dd")
+      .attr("cx", d => xSc(d.domestic)).attr("cy", cy).attr("r", 0)
+      .attr("fill", OKABE_ITO.orange).attr("stroke", "#fff").attr("stroke-width", 1.5)
+      .style("pointer-events", "none")
+      .call(enter => enter.transition().duration(700).delay((d,i)=>i*5).attr("r", 6)),
+    update => update.transition().duration(500)
+      .attr("cx", d => xSc(d.domestic)).attr("cy", cy).attr("r", 6),
+    exit => exit.transition().duration(300).attr("r", 0).remove()
+  );
+
+  // International dots (Okabe blue)
+  svg.selectAll(".di").data(data, d => d.name).join(
+    enter => enter.append("circle").attr("class", "di")
+      .attr("cx", d => xSc(d.domestic)).attr("cy", cy).attr("r", 0)
+      .attr("fill", OKABE_ITO.blue).attr("stroke", "#fff").attr("stroke-width", 1.5)
+      .style("pointer-events", "none")
+      .call(enter => enter.transition().duration(700).delay((d,i)=>i*5)
+        .attr("cx", d => xSc(d.international)).attr("r", 6)),
+    update => update.transition().duration(500)
+      .attr("cx", d => xSc(d.international)).attr("cy", cy).attr("r", 6),
+    exit => exit.transition().duration(300).attr("r", 0).remove()
+  );
+
+  // Invisible hit targets
+  svg.selectAll(".row-hover").data(data, d => d.name).join("rect")
+    .attr("class", "row-hover")
     .attr("x", 0).attr("y", d => ySc(d.name))
     .attr("width", W).attr("height", ySc.bandwidth())
     .attr("fill", "transparent")
     .style("cursor", "pointer")
-    .on("mouseover", function(e, d) {
-      svg.selectAll(".dd").filter(x => x.name === d.name).attr("r", 9).style("filter", "url(#glow)");
-      svg.selectAll(".di").filter(x => x.name === d.name).attr("r", 9).style("filter", "url(#glow)");
+    .on("mouseenter", function(e, d) {
+      svg.selectAll(".dd").style("opacity", s => s.name === d.name ? 1 : 0.25);
+      svg.selectAll(".di").style("opacity", s => s.name === d.name ? 1 : 0.25);
+      svg.selectAll(".con").style("opacity", s => s.name === d.name ? 1 : 0.15);
+      svg.selectAll(".dd").filter(x => x.name === d.name).attr("r", 9).style("filter", "url(#viz4-glow)");
+      svg.selectAll(".di").filter(x => x.name === d.name).attr("r", 9).style("filter", "url(#viz4-glow)");
       svg.selectAll(".con").filter(x => x.name === d.name).attr("stroke", "rgba(255,255,255,0.6)").attr("stroke-width", 6);
-      
-      showTip(e, getTooltipHtml(d));
-      tip.style.background = 'transparent';
-      tip.style.border = 'none';
-      tip.style.boxShadow = 'none';
-      tip.style.padding = '0';
+      showTip(e, tipHtml(d));
     })
     .on("mousemove", moveTip)
     .on("mouseleave", function(e, d) {
-      svg.selectAll(".dd").filter(x => x.name === d.name).attr("r", 6).style("filter", "none");
-      svg.selectAll(".di").filter(x => x.name === d.name).attr("r", 6).style("filter", "none");
-      svg.selectAll(".con").filter(x => x.name === d.name).attr("stroke", "rgba(255,255,255,0.2)").attr("stroke-width", 4);
+      svg.selectAll(".dd").style("opacity", 1).attr("r", 6).style("filter", "none");
+      svg.selectAll(".di").style("opacity", 1).attr("r", 6).style("filter", "none");
+      svg.selectAll(".con").style("opacity", 1).attr("stroke", "rgba(255,255,255,0.25)").attr("stroke-width", 4);
       hideTip();
-      tip.style.background = 'rgba(15, 23, 42, 0.9)';
-      tip.style.border = '1px solid rgba(255,255,255,0.1)';
-      tip.style.padding = '10px';
     })
     .on("click", function(e, d) {
       if (d.isRegionAgg) {
         APP.region = d.name;
+        APP.selectedCollab = null;
         const select = document.getElementById("viz4-region-select");
         if (select) select.value = d.name;
-        hideTip(); // Hide tooltip to prevent ghost tooltips
+        hideTip();
         renderViz(4);
+        return;
       }
+      APP.selectedCollab = (APP.selectedCollab && APP.selectedCollab.name === d.name) ? null : d;
+      hideTip();
+      renderViz(4);
     });
 
-  // Domestic dots
-  const domDots = svg.selectAll(".dd").data(data, d=>d.name);
-  domDots.join(
-    enter => enter.append("circle").attr("class","dd")
-      .attr("cx",d=>xSc(d.domestic)).attr("cy",cy).attr("r",0)
-      .attr("fill","#E69F00").attr("stroke","#fff").attr("stroke-width",1.5)
-      .style("pointer-events", "none")
-      .call(enter => enter.transition().duration(800).delay((d,i)=>i*5).attr("r",6)),
-    update => update.call(update => update.transition().duration(800)
-      .attr("cx",d=>xSc(d.domestic)).attr("cy",cy)),
-    exit => exit.call(exit => exit.transition().duration(400).attr("r",0).remove())
-  );
-
-  // International dots
-  const intDots = svg.selectAll(".di").data(data, d=>d.name);
-  intDots.join(
-    enter => enter.append("circle").attr("class","di")
-      .attr("cx",d=>xSc(d.domestic)).attr("cy",cy).attr("r",0) // Start at domestic x
-      .attr("fill","#0072B2").attr("stroke","#fff").attr("stroke-width",1.5)
-      .style("pointer-events", "none")
-      .call(enter => enter.transition().duration(800).delay((d,i)=>i*5).attr("cx",d=>xSc(d.international)).attr("r",6)),
-    update => update.call(update => update.transition().duration(800)
-      .attr("cx",d=>xSc(d.international)).attr("cy",cy)),
-    exit => exit.call(exit => exit.transition().duration(400).attr("r",0).remove())
-  );
-
-
+  const onViz4Keydown = (e) => {
+    if (e.key !== "Escape") return;
+    let changed = false;
+    if (APP.selectedCollab) { APP.selectedCollab = null; changed = true; }
+    else if (APP.region && APP.region !== "All") {
+      APP.region = "All";
+      const select = document.getElementById("viz4-region-select");
+      if (select) select.value = "All";
+      changed = true;
+    }
+    if (changed) { hideTip(); renderViz(4); }
+  };
+  document.addEventListener("keydown", onViz4Keydown);
+  if (APP.cleanupFns) APP.cleanupFns.push(() => document.removeEventListener("keydown", onViz4Keydown));
 }
+
 
 // ══════════════════════════════════════════════════════════
 // VIZ 5: India Domestic Higher Education Network (real JSON)

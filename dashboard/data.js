@@ -7,13 +7,13 @@ const DATA = (() => {
 
   // ── Region colour palette ──────────────────────────────────
   const REGIONS = {
-    "North America":       "#6366f1",
-    "Europe":              "#a78bfa",
-    "East Asia & Pacific": "#22d3ee",
-    "South Asia":          "#fb7185",
-    "Latin America":       "#fbbf24",
-    "Middle East & Africa":"#34d399",
-    "Oceania":             "#f472b6"
+    "North America":       "#0072B2",
+    "Europe":              "#56B4E9",
+    "East Asia & Pacific": "#E69F00",
+    "South Asia":          "#D55E00",
+    "Latin America":       "#CC79A7",
+    "Middle East & Africa":"#009E73",
+    "Oceania":             "#F0E442"
   };
 
   // ── Country master list (18 countries) ─────────────────────
