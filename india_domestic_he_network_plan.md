@@ -332,8 +332,16 @@ match_confidence        exact | fuzzy | manual
 
 | Tier | `total_works` threshold | Cap | Rationale |
 |------|----------------------|-----|-----------|
-| `premier` | `total_works >= 50` | Top 60 by `total_works` desc | Research-active elite institutions |
+| `premier` | `total_works >= 50` **or** INI identity / manual override | Top 60 (manual + INI protected, then by works) | Research-active elite **plus** recognized Institutes of National Importance already in the master |
 | `state_affiliated` | `total_works >= 10` | Top 60 by `total_works` desc | Allows state universities that publish modestly to appear on map |
+
+**Premier definition (authoritative):**
+
+1. **Manual overrides** (`data/manual_institution_overrides.csv`) — all IITs, IISc, and listed AIIMS campuses → always `premier`.
+2. **INI identity override** (`scripts/india_network/ini_tier.py`) — honest name match for AIIMS, JIPMER, PGIMER, and NITs already present in the master → force `premier` (`match_confidence=ini_identity`). Does **not** invent campuses missing from the 120-row master.
+3. **Volume fill** — remaining premier slots = highest OpenAlex `works_count` (≥50) among geo-resolved Indian institutions.
+
+`state_affiliated` is therefore **not** a legal “state university” flag; it is the complementary research-volume cohort after premier slots (and INI/manual protection) are filled. Newer AIIMS campuses used to fall here solely because they publish less than older high-volume schools — that was a pipeline bug relative to the elite/central narrative.
 
 Both tiers require resolvable `latitude`/`longitude` (OpenAlex geo OR geo CSV fallback). Total master list capped at **120 institutions** (60 premier + 60 state).
 

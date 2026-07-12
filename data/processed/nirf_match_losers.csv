@@ -1,11 +1,11 @@
 canonical_name,reason,best_nirf_id,best_nirf_name,match_score,blocked_by
-Indian Institute of Technology Goa,no_fuzzy_match,,,0.0,
-SRM University,no_fuzzy_match,,,0.0,
-Dr. Hari Singh Gour University,no_fuzzy_match,,,0.0,
-Indian Association for the Cultivation of Science,no_fuzzy_match,,,0.0,
-University of Allahabad,no_fuzzy_match,,,0.0,
-"G.S. Science, Arts And Commerce College",no_fuzzy_match,,,0.0,
-Shivaji University,no_fuzzy_match,,,0.0,
-Mangalore University,no_fuzzy_match,,,0.0,
-Karpagam Academy of Higher Education,no_fuzzy_match,,,0.0,
-University of Rajasthan,id_blocked_by_uniqueness,IR-P-U-0392,Central University of Rajasthan,0.792,Central University of Rajasthan
+Indian Institute of Technology Goa,override_id_missing_in_rankings,IR-E-U-0907,,,
+University of Rajasthan,override_id_missing_in_rankings,NOT_IN_NIRF,,,
+SRM University,override_id_already_claimed,IR-O-U-0473,S.R.M. Institute of Science and Technology,,SRM Institute of Science and Technology
+Dr. Hari Singh Gour University,override_id_missing_in_rankings,IR17-PHRM-1-22,,,
+Indian Association for the Cultivation of Science,override_id_missing_in_rankings,IR-U-1049,,,
+University of Allahabad,override_id_missing_in_rankings,IR-U-U-0105,,,
+"G.S. Science, Arts And Commerce College",override_id_missing_in_rankings,IR-C-C-42995,,,
+Shivaji University,override_id_missing_in_rankings,IR-U-U-0466,,,
+Mangalore University,override_id_missing_in_rankings,IR-O-U-0233,,,
+Karpagam Academy of Higher Education,override_id_missing_in_rankings,IR17-I-2-18311,,,

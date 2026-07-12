@@ -7,6 +7,12 @@
 **Related:** [`GRAPH5_PIPELINE_AUDIT.md`](GRAPH5_PIPELINE_AUDIT.md) (read-only pre-fix audit)  
 **Post-fix commits:** `927f6fd` (five loser overrides); `d2e915d` / `f15e208` (SRM/Thapar/GLA + funding token join); `b0133e4` (duplicate funding dedupe → 0 clusters); Pondicherry/Kalyani/Presidency supplement overrides; GNDU `IR-O-U-0376` from NIRF 2023 supplement.
 
+### 2026-07-12 — AIIMS / INI tier mislabel
+
+**Finding:** `state_affiliated` is not a legal “state university” flag — it was the leftover volume cohort after top-60 OpenAlex works. AIIMS Delhi → premier; AIIMS Raipur/Bhopal → state_affiliated. Same bug class hit JIPMER and several NITs.
+
+**Fix shipped:** `ini_tier.py` identity override + master patch + JSON tier propagation. See addendum in [`verification_report.md`](../data/processed/verification_report.md). Premier definition updated in `india_domestic_he_network_plan.md` §4.1.
+
 
 
 ## Funding temporal scope (year slider)

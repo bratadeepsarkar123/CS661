@@ -20,6 +20,7 @@ from config import (  # noqa: E402
     STATE_CAP,
     STATE_WORKS_MIN,
 )
+from ini_tier import apply_ini_premier_identity  # noqa: E402
 
 OUT_PATH = PROCESSED_DIR / "institution_master.csv"
 OPENALEX_PATH = PROCESSED_DIR / "openalex_institutions.parquet"
@@ -173,12 +174,16 @@ def add_tier_candidates(
 
 
 def enforce_tier_caps(master: pd.DataFrame) -> pd.DataFrame:
-    """Keep manual overrides; trim auto rows to 60 premier + 60 state."""
+    """Keep manual + INI-identity overrides; trim auto rows to 60 premier + 60 state."""
 
     def trim(tier: str, cap: int) -> pd.DataFrame:
         tier_df = master[master["tier"] == tier].copy()
         rest = master[master["tier"] != tier]
-        tier_df["_prio"] = tier_df["match_confidence"].eq("manual").astype(int)
+        conf = tier_df["match_confidence"].astype(str)
+        # Priority: manual (2) > ini_identity (1) > openalex_auto (0)
+        tier_df["_prio"] = 0
+        tier_df.loc[conf.eq("ini_identity"), "_prio"] = 1
+        tier_df.loc[conf.eq("manual"), "_prio"] = 2
         tier_df = (
             tier_df.sort_values(["_prio", "total_works"], ascending=[False, False])
             .head(cap)
@@ -212,12 +217,19 @@ def main() -> None:
     )
     master = pd.concat([manual_df, extra_df], ignore_index=True)
     master = master.drop_duplicates(subset=["openalex_id"])
+    # Volume fill first, then promote recognized INIs (AIIMS/NIT/JIPMER/…) and
+    # rebalance the 60/60 caps without dropping protected rows.
+    master = apply_ini_premier_identity(master, premier_cap=PREMIER_CAP)
     master = enforce_tier_caps(master)
+    # Second pass keeps INI labels if enforce_tier_caps reshuffled auto rows.
+    master = apply_ini_premier_identity(master, premier_cap=PREMIER_CAP)
 
     master.to_csv(OUT_PATH, index=False)
     print(f"Wrote {len(master)} rows -> {OUT_PATH}")
     print(f"  premier: {(master['tier'] == 'premier').sum()}")
     print(f"  state_affiliated: {(master['tier'] == 'state_affiliated').sum()}")
+    ini_n = int(master["match_confidence"].astype(str).eq("ini_identity").sum())
+    print(f"  ini_identity: {ini_n}")
 
 
 if __name__ == "__main__":

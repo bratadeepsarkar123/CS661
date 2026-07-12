@@ -4,14 +4,20 @@
 // ============================================================
 
 const INDIA = (() => {
+  // Instant revert: set false → old solid indigo regional-cluster fill
+  // (or restore dashboard/india_network.js.bak-pre-region-blend).
+  const VIZ5_REGION_BLEND = true;
+  const CLUSTER_FILL_LEGACY = "rgba(99,102,241,0.35)";
+  const CLUSTER_STROKE_LEGACY = "#56B4E9";
+
   const BASE = "data/india_network/";
   const TIER_LABELS = {
     premier: "Premier",
     state_affiliated: "State & Affiliated",
   };
   const TIER_COLORS = {
-    premier: "#3b82f6",
-    state_affiliated: "#a855f7",
+    premier: "#0072B2",
+    state_affiliated: "#E69F00",
   };
   const INDIA_BOUNDS = L.latLngBounds([6.4, 68.0], [37.8, 97.8]);
   const FOCUS_X_RATIO = 0.36; // center-left of map pane (panel is on the right)
@@ -23,6 +29,82 @@ const INDIA = (() => {
   const ANIM_MS = 520;
   const CLUSTER_MAX_ZOOM = 7;
   const CLUSTER_PIXEL_DIST = 34;
+
+  function parseHexColor(hex) {
+    if (!hex || typeof hex !== "string") return null;
+    const h = hex.replace("#", "").trim();
+    if (h.length === 3) {
+      return {
+        r: parseInt(h[0] + h[0], 16),
+        g: parseInt(h[1] + h[1], 16),
+        b: parseInt(h[2] + h[2], 16),
+      };
+    }
+    if (h.length !== 6) return null;
+    return {
+      r: parseInt(h.slice(0, 2), 16),
+      g: parseInt(h.slice(2, 4), 16),
+      b: parseInt(h.slice(4, 6), 16),
+    };
+  }
+
+  function mixHexColors(hexA, hexB, weightA) {
+    const a = parseHexColor(hexA);
+    const b = parseHexColor(hexB);
+    if (!a || !b) return hexA || hexB || "#64748b";
+    const t = Math.max(0, Math.min(1, weightA));
+    const r = Math.round(a.r * t + b.r * (1 - t));
+    const g = Math.round(a.g * t + b.g * (1 - t));
+    const bch = Math.round(a.b * t + b.b * (1 - t));
+    return (
+      "#" +
+      [r, g, bch]
+        .map((v) => v.toString(16).padStart(2, "0"))
+        .join("")
+    );
+  }
+
+  /** Weighted Premier/State fill for a regional (screen) cluster of institutions. */
+  function regionClusterStyle(nodes) {
+    if (!VIZ5_REGION_BLEND) {
+      return {
+        fillColor: CLUSTER_FILL_LEGACY,
+        color: CLUSTER_STROKE_LEGACY,
+        premier: 0,
+        state: 0,
+        premierFrac: null,
+      };
+    }
+    let premier = 0;
+    let state = 0;
+    (nodes || []).forEach((n) => {
+      if (n.tier === "premier") premier += 1;
+      else if (n.tier === "state_affiliated") state += 1;
+    });
+    const total = premier + state;
+    if (total === 0) {
+      return {
+        fillColor: "#64748b",
+        color: "#94a3b8",
+        premier: 0,
+        state: 0,
+        premierFrac: null,
+      };
+    }
+    const premierFrac = premier / total;
+    const fillColor = mixHexColors(
+      TIER_COLORS.premier,
+      TIER_COLORS.state_affiliated,
+      premierFrac
+    );
+    return {
+      fillColor,
+      color: mixHexColors(fillColor, "#0f172a", 0.75),
+      premier,
+      state,
+      premierFrac,
+    };
+  }
 
   function easeInOutCubic(t) {
     return t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2;
@@ -238,7 +320,7 @@ const INDIA = (() => {
 
   function focusEdgeStyle(kind) {
     if (kind === "triad") {
-      return { color: "#f59e0b", weight: 2, opacity: 0.9, dashArray: "6 4" };
+      return { color: "#E69F00", weight: 2, opacity: 0.9, dashArray: "6 4" };
     }
     return { color: "#94a3b8", weight: 2.5, opacity: 0.92, dashArray: null };
   }
@@ -283,7 +365,11 @@ const INDIA = (() => {
       <p class="india-panel-intro">Overview mode: hub-to-hub domestic co-publication links. Click or hover a node (generous hit area) for details. Pan and scroll to explore.</p>
       <div class="india-tier-strip india-tier-strip-panel">${tierLines}</div>
       <div class="india-lecture-callouts">
-        <p><strong>Encoding</strong> — position = geography; color = tier (2 levels); node size ∝ √(publications).</p>
+        <p><strong>Encoding</strong> — position = geography; ${
+          VIZ5_REGION_BLEND
+            ? "individual node color = tier (Premier / State); zoomed-out regional circles: badge = # institutions, fill = Premier/State mix (not area ∝ count)"
+            : "color = tier (2 levels)"
+        }; node size ∝ √(publications).</p>
         <p><strong>Focus + context</strong> — click an institution: star edges to direct partners on the map; triad++ pairs (3-institution papers) in the sidebar; optional toolbar toggle for top links on map.</p>
         <p><strong>Data note</strong> — ${net.meta.year && net.meta.year !== "all" ? `Showing co-publications for ${net.meta.year}.` : "All-years rollup."} OpenAlex cache complete for 120 institutions; NIRF funding/patents from official PDFs where available.</p>
       </div>
@@ -295,7 +381,7 @@ const INDIA = (() => {
   function buildDetailPanelHtml(node, net, tab, locked, ui = {}) {
     const { highlightPartnerId = null, showTriadsOnMap = false } = ui;
     const { links, collabTotal } = collabStats(node, net);
-    const col = TIER_COLORS[node.tier] || "#3b82f6";
+    const col = TIER_COLORS[node.tier] || "#0072B2";
     const lockLabel = locked ? "" : `<p class="india-preview-badge">Preview — click map node to lock</p>`;
 
     const tabs = `
@@ -462,14 +548,14 @@ const INDIA = (() => {
           ctx.beginPath();
           ctx.moveTo(s._px, s._py);
           ctx.lineTo(t._px, t._py);
-          ctx.strokeStyle = "rgba(168,85,247,0.45)";
+          ctx.strokeStyle = "rgba(204,121,167,0.45)";
           ctx.lineWidth = edgeStrokeWeight(e.weight);
           ctx.stroke();
         });
         hubs.forEach((n) => {
           ctx.beginPath();
           ctx.arc(n._px, n._py, 5, 0, Math.PI * 2);
-          ctx.fillStyle = TIER_COLORS[n.tier] || "#3b82f6";
+          ctx.fillStyle = TIER_COLORS[n.tier] || "#0072B2";
           ctx.fill();
         });
       })
@@ -515,15 +601,26 @@ const INDIA = (() => {
 
     const mapLegend = document.createElement("div");
     mapLegend.className = "india-map-legend";
-    mapLegend.hidden = true;
     mapLegend.innerHTML = `
-      <span class="india-leg-star"><i></i> Direct partner</span>
-      <span class="india-leg-triad"><i></i> Triad++ (top ${TRIAD_MAP_TOP_K})</span>
+      <span class="india-leg-region-blend" ${VIZ5_REGION_BLEND ? "" : "hidden"}>
+        <i class="india-leg-count-badge" aria-hidden="true">n</i>
+        Badge = # institutions
+      </span>
+      <span class="india-leg-region-blend" ${VIZ5_REGION_BLEND ? "" : "hidden"}>
+        <i class="india-leg-blend-swatch" aria-hidden="true"></i>
+        Fill = Premier / State mix
+      </span>
+      <span class="india-leg-tier-premier"><i class="india-leg-dot" style="background:${TIER_COLORS.premier}"></i> Premier</span>
+      <span class="india-leg-tier-state"><i class="india-leg-dot" style="background:${TIER_COLORS.state_affiliated}"></i> State &amp; Affiliated</span>
+      <span class="india-leg-star" hidden><i></i> Direct partner</span>
+      <span class="india-leg-triad" hidden><i></i> Triad++ (top ${TRIAD_MAP_TOP_K})</span>
     `;
 
     const clusterPicker = document.createElement("div");
     clusterPicker.className = "india-cluster-picker";
     clusterPicker.hidden = true;
+    L.DomEvent.disableClickPropagation(clusterPicker);
+    L.DomEvent.disableScrollPropagation(clusterPicker);
 
     const sidePanel = document.createElement("aside");
     sidePanel.className = "india-detail-panel";
@@ -584,9 +681,20 @@ const INDIA = (() => {
         triadBtn.classList.toggle("is-on", showTriadsOnMap);
         triadBtn.textContent = showTriadsOnMap ? `Triad++ map (${TRIAD_MAP_TOP_K})` : "Triad++ map";
       }
-      mapLegend.hidden = !selectedId;
-      if (selectedId) {
-        mapLegend.querySelector(".india-leg-triad").style.display = showTriadsOnMap ? "" : "none";
+      const blendLegs = mapLegend.querySelectorAll(".india-leg-region-blend");
+      const tierP = mapLegend.querySelector(".india-leg-tier-premier");
+      const tierS = mapLegend.querySelector(".india-leg-tier-state");
+      const starLeg = mapLegend.querySelector(".india-leg-star");
+      const triadLeg = mapLegend.querySelector(".india-leg-triad");
+      mapLegend.hidden = false;
+      blendLegs.forEach((el) => {
+        el.hidden = !VIZ5_REGION_BLEND || Boolean(selectedId);
+      });
+      if (tierP) tierP.hidden = Boolean(selectedId);
+      if (tierS) tierS.hidden = Boolean(selectedId);
+      if (starLeg) starLeg.hidden = !selectedId;
+      if (triadLeg) {
+        triadLeg.hidden = !selectedId || !showTriadsOnMap;
       }
     }
 
@@ -813,27 +921,124 @@ const INDIA = (() => {
       return clusters;
     }
 
+    function placeClusterPicker(anchorPt) {
+      const pad = 8;
+      const bottomReserve = 56; // legend / zoom / credit strip
+      const stageW = mapStage.clientWidth;
+      const stageH = mapStage.clientHeight;
+      const availAbove = Math.max(0, anchorPt.y - pad);
+      const availBelow = Math.max(0, stageH - bottomReserve - anchorPt.y - pad);
+      const preferAbove = availAbove >= availBelow && availAbove >= 160;
+      const room = preferAbove ? availAbove : availBelow;
+      const maxPanelH = Math.min(320, Math.max(140, room || Math.max(availAbove, availBelow, 140)));
+
+      clusterPicker.style.maxHeight = `${maxPanelH}px`;
+      clusterPicker.hidden = false;
+
+      const list = clusterPicker.querySelector(".india-cluster-picker-list");
+      if (list) {
+        const head = clusterPicker.querySelector(".india-cluster-picker-head");
+        const headH = head ? head.offsetHeight : 72;
+        list.style.maxHeight = `${Math.max(80, maxPanelH - headH - 4)}px`;
+      }
+
+      const pw = clusterPicker.offsetWidth || 240;
+      const ph = Math.min(clusterPicker.offsetHeight || maxPanelH, maxPanelH);
+
+      let left = anchorPt.x - pw / 2;
+      let top;
+      if (preferAbove && anchorPt.y - ph - 10 >= pad) {
+        top = anchorPt.y - ph - 10;
+      } else if (anchorPt.y + 10 + ph <= stageH - bottomReserve) {
+        top = anchorPt.y + 10;
+      } else {
+        // Fully clamp inside map stage (above credit / legend strip)
+        top = Math.max(pad, Math.min(anchorPt.y - ph / 2, stageH - bottomReserve - ph));
+      }
+
+      if (left + pw > stageW - pad) left = stageW - pw - pad;
+      if (left < pad) left = pad;
+
+      clusterPicker.style.left = `${Math.round(left)}px`;
+      clusterPicker.style.top = `${Math.round(top)}px`;
+    }
+
     function showClusterPicker(clusterNodes, latlng) {
-      clusterPicker.innerHTML = `
-        <div class="india-cluster-picker-head">Select institution</div>
-        <ul>${clusterNodes
+      const sorted = [...clusterNodes].sort((a, b) =>
+        String(a.name || "").localeCompare(String(b.name || ""), undefined, {
+          sensitivity: "base",
+        })
+      );
+
+      const renderList = (filterText) => {
+        const q = String(filterText || "")
+          .trim()
+          .toLowerCase();
+        const filtered = q
+          ? sorted.filter(
+              (n) =>
+                String(n.name || "")
+                  .toLowerCase()
+                  .includes(q) ||
+                String(n.city || "")
+                  .toLowerCase()
+                  .includes(q)
+            )
+          : sorted;
+        const listEl = clusterPicker.querySelector(".india-cluster-picker-list");
+        if (!listEl) return;
+        if (!filtered.length) {
+          listEl.innerHTML = `<li class="india-cluster-picker-empty">No matches</li>`;
+          return;
+        }
+        listEl.innerHTML = filtered
           .map(
             (n) =>
               `<li><button type="button" data-id="${n.id}">${n.name}<span>${n.city || ""}</span></button></li>`
           )
-          .join("")}</ul>`;
-      const pt = map.latLngToContainerPoint(latlng);
-      clusterPicker.style.left = `${Math.min(pt.x, mapStage.clientWidth - 220)}px`;
-      clusterPicker.style.top = `${Math.max(pt.y - 8, 8)}px`;
-      clusterPicker.hidden = false;
-      clusterPicker.querySelectorAll("button").forEach((btn) => {
-        btn.addEventListener("click", (evt) => {
-          L.DomEvent.stopPropagation(evt);
-          const node = net.nodeById.get(btn.dataset.id);
-          if (node) selectNode(node);
-          clusterPicker.hidden = true;
+          .join("");
+        listEl.querySelectorAll("button").forEach((btn) => {
+          btn.addEventListener("click", (evt) => {
+            L.DomEvent.stopPropagation(evt);
+            const node = net.nodeById.get(btn.dataset.id);
+            if (node) selectNode(node);
+            clusterPicker.hidden = true;
+          });
         });
-      });
+      };
+
+      clusterPicker.innerHTML = `
+        <div class="india-cluster-picker-head">
+          <div class="india-cluster-picker-title">Select institution · ${sorted.length}</div>
+          <input type="search" class="india-cluster-picker-search" placeholder="Search college…" autocomplete="off" />
+        </div>
+        <ul class="india-cluster-picker-list"></ul>`;
+
+      renderList("");
+
+      const searchInput = clusterPicker.querySelector(".india-cluster-picker-search");
+      if (searchInput) {
+        searchInput.addEventListener("input", () => {
+          renderList(searchInput.value);
+          placeClusterPicker(map.latLngToContainerPoint(latlng));
+        });
+        searchInput.addEventListener("keydown", (evt) => {
+          L.DomEvent.stopPropagation(evt);
+          if (evt.key === "Escape") {
+            clusterPicker.hidden = true;
+          }
+        });
+        // Focus after placement so layout is stable
+        requestAnimationFrame(() => searchInput.focus());
+      }
+
+      const pt = map.latLngToContainerPoint(latlng);
+      placeClusterPicker(pt);
+    }
+
+    function regionClusterStrokeWeight(count) {
+      // Subtle secondary channel — never dominate geography
+      return Math.min(3.25, 1.35 + Math.log1p(Math.max(0, count)) * 0.45);
     }
 
     function drawEdgesFromList(edges) {
@@ -895,23 +1100,33 @@ const INDIA = (() => {
 
         clusters.forEach((group) => {
           const nodes = group.map((g) => g.node);
+          const count = nodes.length;
           const lat =
             nodes.reduce((s, n) => s + n.lat, 0) / nodes.length;
           const lon =
             nodes.reduce((s, n) => s + n.lon, 0) / nodes.length;
           const maxR = Math.max(...group.map((g) => g.r));
+          const clusterStyle = regionClusterStyle(nodes);
+          const strokeW = regionClusterStrokeWeight(count);
+          // Radius stays geography-friendly (hit target), NOT ∝ college count
           const clusterHit = L.circleMarker([lat, lon], {
             radius: Math.max(MIN_HIT_PX, maxR + 6),
-            fillColor: "rgba(99,102,241,0.35)",
-            color: "#a5b4fc",
-            weight: 2,
-            fillOpacity: 0.55,
+            fillColor: clusterStyle.fillColor,
+            color: clusterStyle.color,
+            weight: strokeW,
+            fillOpacity: VIZ5_REGION_BLEND ? 0.82 : 0.55,
             interactive: true,
           });
-          const label = `${nodes.length} nearby`;
+          const mixNote =
+            VIZ5_REGION_BLEND && clusterStyle.premierFrac != null
+              ? `<br><span class="india-cluster-mix">${clusterStyle.premier} Premier · ${clusterStyle.state} State` +
+                ` (${Math.round(clusterStyle.premierFrac * 100)}% / ${Math.round((1 - clusterStyle.premierFrac) * 100)}%)</span>`
+              : "";
+          const label = `${count} institution${count === 1 ? "" : "s"}`;
           clusterHit.bindTooltip(
-            `<div class="india-cluster-tip"><strong>${label}</strong><br>${nodes
+            `<div class="india-cluster-tip"><strong>${label}</strong>${mixNote}<br>${nodes
               .map((n) => n.name)
+              .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }))
               .join("<br>")}</div>`,
             { direction: "top", sticky: true, className: "india-leaflet-tip india-cluster-hover-tip" }
           );
@@ -920,13 +1135,24 @@ const INDIA = (() => {
             showClusterPicker(nodes, [lat, lon]);
           });
           clusterHit.addTo(hitLayer);
+
+          L.marker([lat, lon], {
+            interactive: false,
+            keyboard: false,
+            icon: L.divIcon({
+              className: "india-region-count",
+              html: `<span class="india-region-count-badge" title="${count} institutions">${count}</span>`,
+              iconSize: [0, 0],
+              iconAnchor: [0, 0],
+            }),
+          }).addTo(labelLayer);
         });
 
         visNodes.forEach((node) => {
           if (clusterMode && clusteredNodeIds.has(node.id)) return;
 
           const r = markerRadius(node);
-          const col = TIER_COLORS[node.tier] || node.color || "#3b82f6";
+          const col = TIER_COLORS[node.tier] || node.color || "#0072B2";
           const isSelected = node.id === selectedId;
 
           const vis = L.circleMarker([node.lat, node.lon], {
