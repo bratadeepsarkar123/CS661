@@ -4,7 +4,7 @@
   --border: #334155;
   --text: #e2e8f0;
   --muted: #94a3b8;
-  --rec: #22c55e;
+  --rec: #0072B2;
 }
 
 * {
@@ -48,7 +48,7 @@ nav.toc {
 }
 
 nav.toc a {
-  color: #60a5fa;
+  color: #56B4E9;
   font-size: 0.85rem;
   text-decoration: none;
 }
@@ -181,10 +181,10 @@ section .lead {
 }
 
 .dot-p {
-  color: #3b82f6;
+  color: #0072B2;
 }
 .dot-s {
-  color: #a855f7;
+  color: #E69F00;
 }
 
 .split-map {
@@ -212,5 +212,5 @@ footer {
 }
 
 footer a {
-  color: #60a5fa;
+  color: #56B4E9;
 }

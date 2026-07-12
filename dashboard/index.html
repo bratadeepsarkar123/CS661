@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=20260712-g1-zoom-compress1">
+  <link rel="stylesheet" href="style.css?v=20260712g24b">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   
   <!-- PapaParse for CSV Parsing -->
@@ -25,7 +25,7 @@
       <div class="hero-top">
         <div class="project-badge">
           <span class="badge-dot"></span>
-          CS661 · Group 10 · Visual Analytics
+          CS661 Â· Group 10 Â· Visual Analytics
         </div>
       </div>
       <h1 class="hero-title">
@@ -59,7 +59,7 @@
         <div class="card-preview">
           <canvas id="preview-1" class="preview-canvas"></canvas>
           <div class="card-overlay">
-            <div class="overlay-icon">→</div>
+            <div class="overlay-icon">â†’</div>
             <span>Click to Explore</span>
           </div>
         </div>
@@ -80,7 +80,7 @@
         <div class="card-preview">
           <canvas id="preview-2" class="preview-canvas"></canvas>
           <div class="card-overlay">
-            <div class="overlay-icon">→</div>
+            <div class="overlay-icon">â†’</div>
             <span>Click to Explore</span>
           </div>
         </div>
@@ -101,7 +101,7 @@
         <div class="card-preview">
           <canvas id="preview-3" class="preview-canvas"></canvas>
           <div class="card-overlay">
-            <div class="overlay-icon">→</div>
+            <div class="overlay-icon">â†’</div>
             <span>Click to Explore</span>
           </div>
         </div>
@@ -116,23 +116,23 @@
         </div>
       </div>
 
-      <!-- VIZ 4: Bar Chart Race (Topics) -->
+      <!-- VIZ 4: Collaboration Premium (Grouped Bars) -->
       <div class="viz-card" id="card-4" onclick="openViz(4)">
         <div class="card-preview">
           <canvas id="preview-4" class="preview-canvas"></canvas>
           <div class="card-overlay">
-            <div class="overlay-icon">→</div>
+            <div class="overlay-icon">â†’</div>
             <span>Click to Explore</span>
           </div>
         </div>
         <div class="card-info">
           <div class="viz-number">04</div>
           <h3>The Collaboration Premium</h3>
-          <p>Quantifying the citation gap between purely domestic papers and internationally co-authored research (20-Country Sample for 2024)</p>
+          <p>Quantifying the citation gap between purely domestic papers and internationally co-authored research (20 countries Ã— 2010â€“2024)</p>
           <div class="card-tags">
-            <span class="tag">Dumbbell Plot</span>
+            <span class="tag">Grouped Bars</span>
             <span class="tag">Citation Gain</span>
-            <span class="tag">Sorting</span>
+            <span class="tag">Year + Region</span>
           </div>
         </div>
       </div>
@@ -142,7 +142,7 @@
         <div class="card-preview">
           <canvas id="preview-5" class="preview-canvas"></canvas>
           <div class="card-overlay">
-            <div class="overlay-icon">→</div>
+            <div class="overlay-icon">â†’</div>
             <span>Click to Explore</span>
           </div>
         </div>
@@ -173,7 +173,7 @@
   <div class="viz-panel" id="viz-panel">
     <div class="panel-header">
       <button class="back-btn" onclick="closeViz()">
-        ← Back to Dashboard
+        â† Back to Dashboard
       </button>
       <div class="panel-title-area">
         <span class="panel-viz-num" id="panel-num">01</span>
@@ -187,10 +187,10 @@
       <!-- Visualization rendered here -->
     </div>
     <div class="panel-footer">
-      <span class="data-credit" id="data-credit">Data: World Bank WDI · OpenAlex · SCImago SJR · NIRF</span>
+      <span class="data-credit" id="data-credit">Data: World Bank WDI Â· OpenAlex Â· SCImago SJR Â· NIRF</span>
       <div class="panel-nav">
-        <button class="nav-btn" id="prev-btn" onclick="navigateViz(-1)">← Prev</button>
-        <button class="nav-btn" id="next-btn" onclick="navigateViz(1)">Next →</button>
+        <button class="nav-btn" id="prev-btn" onclick="navigateViz(-1)">â† Prev</button>
+        <button class="nav-btn" id="next-btn" onclick="navigateViz(1)">Next â†’</button>
       </div>
     </div>
   </div>
@@ -201,14 +201,14 @@
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
   <script src="viz1_data.js?v=20260712-g1-wb-scimago-docs"></script>
-  <script src="ridgeline_data.js"></script>
+  <script src="ridgeline_data.js?v=20260712g24b"></script>
   <script src="ridgeline_density.js"></script>
   <script src="panel_data.js"></script>
   <script src="data.js"></script>
-  <script src="viz3_data.js?v=20260712-g3-honest2000"></script>
+  <script src="viz3_data.js?v=20260712g24b"></script>
   <script src="india_network_data.js"></script>
   <script src="india_network.js?v=20260712-g5-count-picker"></script>
-  <script src="viz4_data.js"></script>
-  <script src="app.js?v=20260712-g3-honest2000"></script>
+  <script src="viz4_data.js?v=20260712g24b"></script>
+  <script src="app.js?v=20260712g24b"></script>
 </body>
 </html>

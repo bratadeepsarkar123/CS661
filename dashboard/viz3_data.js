@@ -1,166 +1,7656 @@
 window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publications_count
-2000,AI & Machine Learning,C154945302,United Arab Emirates,AE,41
-2000,AI & Machine Learning,C154945302,Albania,AL,2
-2000,AI & Machine Learning,C154945302,Armenia,AM,26
-2000,AI & Machine Learning,C154945302,Angola,AO,3
-2000,AI & Machine Learning,C154945302,Argentina,AR,280
-2000,AI & Machine Learning,C154945302,Austria,AT,654
-2000,AI & Machine Learning,C154945302,Australia,AU,2576
-2000,AI & Machine Learning,C154945302,Azerbaijan,AZ,10
-2000,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,4
-2000,AI & Machine Learning,C154945302,Barbados,BB,6
-2000,AI & Machine Learning,C154945302,Bangladesh,BD,40
-2000,AI & Machine Learning,C154945302,Belgium,BE,1156
-2000,AI & Machine Learning,C154945302,Bulgaria,BG,157
-2000,AI & Machine Learning,C154945302,Bahrain,BH,7
-2000,AI & Machine Learning,C154945302,Burundi,BI,12
-2000,AI & Machine Learning,C154945302,Benin,BJ,1
-2000,AI & Machine Learning,C154945302,Bermuda,BM,1
-2000,AI & Machine Learning,C154945302,Brunei Darussalam,BN,3
-2000,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,18
-2000,AI & Machine Learning,C154945302,Brazil,BR,1037
-2000,AI & Machine Learning,C154945302,Botswana,BW,13
-2000,AI & Machine Learning,C154945302,Belarus,BY,108
-2000,AI & Machine Learning,C154945302,Belize,BZ,2
-2000,AI & Machine Learning,C154945302,Canada,CA,3680
-2000,AI & Machine Learning,C154945302,Congo,CG,4
-2000,AI & Machine Learning,C154945302,Switzerland,CH,1220
-2000,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,4
-2000,AI & Machine Learning,C154945302,Chile,CL,129
-2000,AI & Machine Learning,C154945302,Cameroon,CM,14
-2000,AI & Machine Learning,C154945302,China,CN,4423
-2000,AI & Machine Learning,C154945302,Colombia,CO,58
-2000,AI & Machine Learning,C154945302,Costa Rica,CR,16
-2000,AI & Machine Learning,C154945302,Cuba,CU,44
-2000,AI & Machine Learning,C154945302,Curaçao,CW,2
-2000,AI & Machine Learning,C154945302,Cyprus,CY,51
-2000,AI & Machine Learning,C154945302,Czechia,CZ,484
-2000,AI & Machine Learning,C154945302,Germany,DE,6049
-2000,AI & Machine Learning,C154945302,Denmark,DK,552
-2000,AI & Machine Learning,C154945302,Dominican Republic,DO,4
-2000,AI & Machine Learning,C154945302,Algeria,DZ,46
-2000,AI & Machine Learning,C154945302,Ecuador,EC,14
-2000,AI & Machine Learning,C154945302,Estonia,EE,32
-2000,AI & Machine Learning,C154945302,Egypt,EG,231
-2000,AI & Machine Learning,C154945302,Spain,ES,1996
-2000,AI & Machine Learning,C154945302,Ethiopia,ET,26
-2000,AI & Machine Learning,C154945302,Finland,FI,642
-2000,AI & Machine Learning,C154945302,France,FR,4667
-2000,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,8668
-2000,AI & Machine Learning,C154945302,Grenada,GD,1
-2000,AI & Machine Learning,C154945302,Georgia,GE,12
-2000,AI & Machine Learning,C154945302,French Guiana,GF,2
-2000,AI & Machine Learning,C154945302,Ghana,GH,17
-2000,AI & Machine Learning,C154945302,Gibraltar,GI,1
-2000,AI & Machine Learning,C154945302,Greenland,GL,1
-2000,AI & Machine Learning,C154945302,Guinea,GN,3
-2000,AI & Machine Learning,C154945302,Guadeloupe,GP,4
-2000,AI & Machine Learning,C154945302,Greece,GR,675
-2000,AI & Machine Learning,C154945302,Guam,GU,2
-2000,AI & Machine Learning,C154945302,Hong Kong,HK,1030
-2000,AI & Machine Learning,C154945302,Honduras,HN,1
-2000,AI & Machine Learning,C154945302,Croatia,HR,81
-2000,AI & Machine Learning,C154945302,Hungary,HU,390
-2000,AI & Machine Learning,C154945302,Indonesia,ID,64
-2000,AI & Machine Learning,C154945302,Ireland,IE,291
-2000,AI & Machine Learning,C154945302,Israel,IL,1009
-2000,AI & Machine Learning,C154945302,India,IN,1120
-2000,AI & Machine Learning,C154945302,Iraq,IQ,11
-2000,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,170
-2000,AI & Machine Learning,C154945302,Iceland,IS,16
-2000,AI & Machine Learning,C154945302,Italy,IT,3083
-2000,AI & Machine Learning,C154945302,Jamaica,JM,4
-2000,AI & Machine Learning,C154945302,Jordan,JO,42
-2000,AI & Machine Learning,C154945302,Japan,JP,6888
-2000,AI & Machine Learning,C154945302,Kenya,KE,20
-2000,AI & Machine Learning,C154945302,Kyrgyzstan,KG,6
-2000,AI & Machine Learning,C154945302,Cambodia,KH,3
-2000,AI & Machine Learning,C154945302,"Korea, Republic of",KR,1770
-2000,AI & Machine Learning,C154945302,Kuwait,KW,69
-2000,AI & Machine Learning,C154945302,Cayman Islands,KY,3
-2000,AI & Machine Learning,C154945302,Kazakhstan,KZ,9
-2000,AI & Machine Learning,C154945302,Lebanon,LB,31
-2000,AI & Machine Learning,C154945302,Liechtenstein,LI,2
-2000,AI & Machine Learning,C154945302,Sri Lanka,LK,17
-2000,AI & Machine Learning,C154945302,Liberia,LR,4
-2000,AI & Machine Learning,C154945302,Lesotho,LS,1
-2000,AI & Machine Learning,C154945302,Lithuania,LT,82
-2000,AI & Machine Learning,C154945302,Luxembourg,LU,7
-2000,AI & Machine Learning,C154945302,Latvia,LV,48
-2000,AI & Machine Learning,C154945302,Libya,LY,5
-2000,AI & Machine Learning,C154945302,Morocco,MA,85
-2000,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,7
-2000,AI & Machine Learning,C154945302,Montenegro,ME,13
-2000,AI & Machine Learning,C154945302,Madagascar,MG,2
-2000,AI & Machine Learning,C154945302,North Macedonia,MK,18
-2000,AI & Machine Learning,C154945302,Mali,ML,1
-2000,AI & Machine Learning,C154945302,Myanmar,MM,22
-2000,AI & Machine Learning,C154945302,Mongolia,MN,6
-2000,AI & Machine Learning,C154945302,Macao,MO,7
-2000,AI & Machine Learning,C154945302,Montserrat,MS,1
-2000,AI & Machine Learning,C154945302,Malta,MT,8
-2000,AI & Machine Learning,C154945302,Mauritius,MU,8
-2000,AI & Machine Learning,C154945302,Malawi,MW,7
-2000,AI & Machine Learning,C154945302,Mexico,MX,519
-2000,AI & Machine Learning,C154945302,Malaysia,MY,112
-2000,AI & Machine Learning,C154945302,Mozambique,MZ,10
-2000,AI & Machine Learning,C154945302,Niger,NE,9
-2000,AI & Machine Learning,C154945302,Nigeria,NG,31
-2000,AI & Machine Learning,C154945302,Netherlands,NL,2252
-2000,AI & Machine Learning,C154945302,Norway,NO,438
-2000,AI & Machine Learning,C154945302,Nepal,NP,15
-2000,AI & Machine Learning,C154945302,New Zealand,NZ,393
-2000,AI & Machine Learning,C154945302,Oman,OM,23
-2000,AI & Machine Learning,C154945302,Panama,PA,6
-2000,AI & Machine Learning,C154945302,Peru,PE,16
-2000,AI & Machine Learning,C154945302,French Polynesia,PF,2
-2000,AI & Machine Learning,C154945302,Philippines,PH,40
-2000,AI & Machine Learning,C154945302,Pakistan,PK,106
-2000,AI & Machine Learning,C154945302,Poland,PL,971
-2000,AI & Machine Learning,C154945302,Puerto Rico,PR,32
-2000,AI & Machine Learning,C154945302,"Palestine, State of",PS,7
-2000,AI & Machine Learning,C154945302,Portugal,PT,433
-2000,AI & Machine Learning,C154945302,Paraguay,PY,1
-2000,AI & Machine Learning,C154945302,Qatar,QA,11
-2000,AI & Machine Learning,C154945302,Réunion,RE,6
-2000,AI & Machine Learning,C154945302,Romania,RO,215
-2000,AI & Machine Learning,C154945302,Serbia,RS,119
-2000,AI & Machine Learning,C154945302,Russian Federation,RU,1425
-2000,AI & Machine Learning,C154945302,Rwanda,RW,2
-2000,AI & Machine Learning,C154945302,Saudi Arabia,SA,131
-2000,AI & Machine Learning,C154945302,Sudan,SD,4
-2000,AI & Machine Learning,C154945302,Sweden,SE,1206
-2000,AI & Machine Learning,C154945302,Singapore,SG,874
-2000,AI & Machine Learning,C154945302,Slovenia,SI,217
-2000,AI & Machine Learning,C154945302,Slovakia,SK,208
-2000,AI & Machine Learning,C154945302,San Marino,SM,1
-2000,AI & Machine Learning,C154945302,Senegal,SN,7
-2000,AI & Machine Learning,C154945302,South Sudan,SS,31
-2000,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,2
-2000,AI & Machine Learning,C154945302,El Salvador,SV,2
-2000,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,8
-2000,AI & Machine Learning,C154945302,Togo,TG,3
-2000,AI & Machine Learning,C154945302,Thailand,TH,111
-2000,AI & Machine Learning,C154945302,Tajikistan,TJ,20
-2000,AI & Machine Learning,C154945302,Turkmenistan,TM,1
-2000,AI & Machine Learning,C154945302,Tunisia,TN,54
-2000,AI & Machine Learning,C154945302,Turkey,TR,369
-2000,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,3
-2000,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,1812
-2000,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,18
-2000,AI & Machine Learning,C154945302,Ukraine,UA,352
-2000,AI & Machine Learning,C154945302,Uganda,UG,17
-2000,AI & Machine Learning,C154945302,United States of America,US,31717
-2000,AI & Machine Learning,C154945302,Uruguay,UY,18
-2000,AI & Machine Learning,C154945302,Uzbekistan,UZ,12
-2000,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,77
-2000,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,23
-2000,AI & Machine Learning,C154945302,Viet Nam,VN,72
-2000,AI & Machine Learning,C154945302,Kosovo,XK,1
-2000,AI & Machine Learning,C154945302,Yemen,YE,6
-2000,AI & Machine Learning,C154945302,South Africa,ZA,272
-2000,AI & Machine Learning,C154945302,Zambia,ZM,1
-2000,AI & Machine Learning,C154945302,Zimbabwe,ZW,10
+1974,AI & Machine Learning,C119857082,Armenia,AM,1
+1974,AI & Machine Learning,C119857082,Austria,AT,2
+1974,AI & Machine Learning,C119857082,Australia,AU,60
+1974,AI & Machine Learning,C119857082,Bangladesh,BD,1
+1974,AI & Machine Learning,C119857082,Belgium,BE,23
+1974,AI & Machine Learning,C119857082,Bulgaria,BG,9
+1974,AI & Machine Learning,C119857082,Brazil,BR,4
+1974,AI & Machine Learning,C119857082,Belarus,BY,4
+1974,AI & Machine Learning,C119857082,Canada,CA,154
+1974,AI & Machine Learning,C119857082,Switzerland,CH,18
+1974,AI & Machine Learning,C119857082,China,CN,6
+1974,AI & Machine Learning,C119857082,Colombia,CO,1
+1974,AI & Machine Learning,C119857082,Czechia,CZ,5
+1974,AI & Machine Learning,C119857082,Germany,DE,65
+1974,AI & Machine Learning,C119857082,Denmark,DK,13
+1974,AI & Machine Learning,C119857082,Egypt,EG,8
+1974,AI & Machine Learning,C119857082,Spain,ES,1
+1974,AI & Machine Learning,C119857082,Finland,FI,7
+1974,AI & Machine Learning,C119857082,France,FR,37
+1974,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,238
+1974,AI & Machine Learning,C119857082,Ghana,GH,2
+1974,AI & Machine Learning,C119857082,Greece,GR,5
+1974,AI & Machine Learning,C119857082,Hong Kong,HK,4
+1974,AI & Machine Learning,C119857082,Croatia,HR,2
+1974,AI & Machine Learning,C119857082,Hungary,HU,11
+1974,AI & Machine Learning,C119857082,Indonesia,ID,1
+1974,AI & Machine Learning,C119857082,Ireland,IE,3
+1974,AI & Machine Learning,C119857082,Israel,IL,21
+1974,AI & Machine Learning,C119857082,India,IN,70
+1974,AI & Machine Learning,C119857082,Iraq,IQ,1
+1974,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2
+1974,AI & Machine Learning,C119857082,Italy,IT,20
+1974,AI & Machine Learning,C119857082,Japan,JP,89
+1974,AI & Machine Learning,C119857082,Kenya,KE,4
+1974,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2
+1974,AI & Machine Learning,C119857082,Lebanon,LB,2
+1974,AI & Machine Learning,C119857082,Sri Lanka,LK,1
+1974,AI & Machine Learning,C119857082,Latvia,LV,1
+1974,AI & Machine Learning,C119857082,Mexico,MX,4
+1974,AI & Machine Learning,C119857082,Malaysia,MY,3
+1974,AI & Machine Learning,C119857082,Nigeria,NG,1
+1974,AI & Machine Learning,C119857082,Netherlands,NL,22
+1974,AI & Machine Learning,C119857082,Norway,NO,5
+1974,AI & Machine Learning,C119857082,New Zealand,NZ,5
+1974,AI & Machine Learning,C119857082,Pakistan,PK,2
+1974,AI & Machine Learning,C119857082,Poland,PL,11
+1974,AI & Machine Learning,C119857082,Puerto Rico,PR,1
+1974,AI & Machine Learning,C119857082,Portugal,PT,2
+1974,AI & Machine Learning,C119857082,Qatar,QA,2
+1974,AI & Machine Learning,C119857082,Romania,RO,4
+1974,AI & Machine Learning,C119857082,Serbia,RS,3
+1974,AI & Machine Learning,C119857082,Russian Federation,RU,52
+1974,AI & Machine Learning,C119857082,Saudi Arabia,SA,1
+1974,AI & Machine Learning,C119857082,Sweden,SE,13
+1974,AI & Machine Learning,C119857082,Singapore,SG,2
+1974,AI & Machine Learning,C119857082,Slovenia,SI,1
+1974,AI & Machine Learning,C119857082,Slovakia,SK,5
+1974,AI & Machine Learning,C119857082,San Marino,SM,1
+1974,AI & Machine Learning,C119857082,Somalia,SO,1
+1974,AI & Machine Learning,C119857082,South Sudan,SS,1
+1974,AI & Machine Learning,C119857082,Thailand,TH,5
+1974,AI & Machine Learning,C119857082,Turkey,TR,1
+1974,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,5
+1974,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1974,AI & Machine Learning,C119857082,Ukraine,UA,3
+1974,AI & Machine Learning,C119857082,Uganda,UG,1
+1974,AI & Machine Learning,C119857082,United States of America,US,1199
+1974,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,2
+1974,AI & Machine Learning,C119857082,South Africa,ZA,9
+1974,CRISPR & Genomics,C98108389,United States of America,US,1
+1974,Data Science & Big Data,C2522767166,Armenia,AM,1
+1974,Data Science & Big Data,C2522767166,Argentina,AR,1
+1974,Data Science & Big Data,C2522767166,Austria,AT,1
+1974,Data Science & Big Data,C2522767166,Australia,AU,7
+1974,Data Science & Big Data,C2522767166,Belgium,BE,3
+1974,Data Science & Big Data,C2522767166,Canada,CA,28
+1974,Data Science & Big Data,C2522767166,Switzerland,CH,4
+1974,Data Science & Big Data,C2522767166,Cameroon,CM,1
+1974,Data Science & Big Data,C2522767166,China,CN,2
+1974,Data Science & Big Data,C2522767166,Czechia,CZ,1
+1974,Data Science & Big Data,C2522767166,Germany,DE,4
+1974,Data Science & Big Data,C2522767166,Denmark,DK,1
+1974,Data Science & Big Data,C2522767166,Egypt,EG,1
+1974,Data Science & Big Data,C2522767166,France,FR,8
+1974,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,82
+1974,Data Science & Big Data,C2522767166,Greece,GR,1
+1974,Data Science & Big Data,C2522767166,Croatia,HR,1
+1974,Data Science & Big Data,C2522767166,Israel,IL,1
+1974,Data Science & Big Data,C2522767166,India,IN,5
+1974,Data Science & Big Data,C2522767166,Italy,IT,2
+1974,Data Science & Big Data,C2522767166,Japan,JP,7
+1974,Data Science & Big Data,C2522767166,Kenya,KE,1
+1974,Data Science & Big Data,C2522767166,Myanmar,MM,1
+1974,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1974,Data Science & Big Data,C2522767166,Nigeria,NG,2
+1974,Data Science & Big Data,C2522767166,Netherlands,NL,4
+1974,Data Science & Big Data,C2522767166,Norway,NO,1
+1974,Data Science & Big Data,C2522767166,Nepal,NP,2
+1974,Data Science & Big Data,C2522767166,New Zealand,NZ,1
+1974,Data Science & Big Data,C2522767166,Philippines,PH,2
+1974,Data Science & Big Data,C2522767166,Pakistan,PK,2
+1974,Data Science & Big Data,C2522767166,Russian Federation,RU,6
+1974,Data Science & Big Data,C2522767166,Sweden,SE,6
+1974,Data Science & Big Data,C2522767166,Slovenia,SI,4
+1974,Data Science & Big Data,C2522767166,Uganda,UG,1
+1974,Data Science & Big Data,C2522767166,United States of America,US,346
+1974,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1974,Data Science & Big Data,C2522767166,South Africa,ZA,6
+1974,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1974,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1974,Infectious Diseases,C524204448,Australia,AU,5
+1974,Infectious Diseases,C524204448,Belgium,BE,1
+1974,Infectious Diseases,C524204448,Canada,CA,3
+1974,Infectious Diseases,C524204448,Germany,DE,3
+1974,Infectious Diseases,C524204448,Denmark,DK,1
+1974,Infectious Diseases,C524204448,Finland,FI,2
+1974,Infectious Diseases,C524204448,France,FR,1
+1974,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,18
+1974,Infectious Diseases,C524204448,Hungary,HU,2
+1974,Infectious Diseases,C524204448,India,IN,5
+1974,Infectious Diseases,C524204448,Japan,JP,4
+1974,Infectious Diseases,C524204448,Myanmar,MM,1
+1974,Infectious Diseases,C524204448,Netherlands,NL,1
+1974,Infectious Diseases,C524204448,Norway,NO,1
+1974,Infectious Diseases,C524204448,New Zealand,NZ,3
+1974,Infectious Diseases,C524204448,Russian Federation,RU,1
+1974,Infectious Diseases,C524204448,Sweden,SE,3
+1974,Infectious Diseases,C524204448,United States of America,US,60
+1974,Infectious Diseases,C524204448,South Africa,ZA,1
+1974,Quantum Computing,C58053490,Canada,CA,2
+1974,Quantum Computing,C58053490,Switzerland,CH,1
+1974,Quantum Computing,C58053490,Germany,DE,2
+1974,Quantum Computing,C58053490,France,FR,1
+1974,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,1
+1974,Quantum Computing,C58053490,Israel,IL,2
+1974,Quantum Computing,C58053490,Italy,IT,2
+1974,Quantum Computing,C58053490,Morocco,MA,1
+1974,Quantum Computing,C58053490,Poland,PL,2
+1974,Quantum Computing,C58053490,Russian Federation,RU,1
+1974,Quantum Computing,C58053490,Slovakia,SK,1
+1974,Quantum Computing,C58053490,United States of America,US,4
+1974,Renewable Energy,C188573790,Australia,AU,3
+1974,Renewable Energy,C188573790,Canada,CA,6
+1974,Renewable Energy,C188573790,Switzerland,CH,1
+1974,Renewable Energy,C188573790,France,FR,1
+1974,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,9
+1974,Renewable Energy,C188573790,Israel,IL,1
+1974,Renewable Energy,C188573790,Japan,JP,1
+1974,Renewable Energy,C188573790,Portugal,PT,1
+1974,Renewable Energy,C188573790,Russian Federation,RU,2
+1974,Renewable Energy,C188573790,United States of America,US,33
+1974,Robotics & Automation,C34413123,United States of America,US,2
+1975,AI & Machine Learning,C119857082,Argentina,AR,2
+1975,AI & Machine Learning,C119857082,Austria,AT,7
+1975,AI & Machine Learning,C119857082,Australia,AU,60
+1975,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1975,AI & Machine Learning,C119857082,Bangladesh,BD,2
+1975,AI & Machine Learning,C119857082,Belgium,BE,36
+1975,AI & Machine Learning,C119857082,Bulgaria,BG,4
+1975,AI & Machine Learning,C119857082,Brazil,BR,10
+1975,AI & Machine Learning,C119857082,Canada,CA,143
+1975,AI & Machine Learning,C119857082,Switzerland,CH,15
+1975,AI & Machine Learning,C119857082,Chile,CL,2
+1975,AI & Machine Learning,C119857082,China,CN,5
+1975,AI & Machine Learning,C119857082,Colombia,CO,1
+1975,AI & Machine Learning,C119857082,Czechia,CZ,10
+1975,AI & Machine Learning,C119857082,Germany,DE,83
+1975,AI & Machine Learning,C119857082,Denmark,DK,4
+1975,AI & Machine Learning,C119857082,Ecuador,EC,1
+1975,AI & Machine Learning,C119857082,Egypt,EG,1
+1975,AI & Machine Learning,C119857082,Spain,ES,2
+1975,AI & Machine Learning,C119857082,Finland,FI,4
+1975,AI & Machine Learning,C119857082,France,FR,58
+1975,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,242
+1975,AI & Machine Learning,C119857082,Georgia,GE,1
+1975,AI & Machine Learning,C119857082,Ghana,GH,3
+1975,AI & Machine Learning,C119857082,Greece,GR,5
+1975,AI & Machine Learning,C119857082,Guam,GU,1
+1975,AI & Machine Learning,C119857082,Hong Kong,HK,2
+1975,AI & Machine Learning,C119857082,Croatia,HR,3
+1975,AI & Machine Learning,C119857082,Hungary,HU,5
+1975,AI & Machine Learning,C119857082,Ireland,IE,5
+1975,AI & Machine Learning,C119857082,Israel,IL,42
+1975,AI & Machine Learning,C119857082,India,IN,53
+1975,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,6
+1975,AI & Machine Learning,C119857082,Italy,IT,25
+1975,AI & Machine Learning,C119857082,Jamaica,JM,1
+1975,AI & Machine Learning,C119857082,Japan,JP,89
+1975,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2
+1975,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1975,AI & Machine Learning,C119857082,Lebanon,LB,1
+1975,AI & Machine Learning,C119857082,Morocco,MA,1
+1975,AI & Machine Learning,C119857082,Mexico,MX,1
+1975,AI & Machine Learning,C119857082,Malaysia,MY,4
+1975,AI & Machine Learning,C119857082,Niger,NE,1
+1975,AI & Machine Learning,C119857082,Nigeria,NG,1
+1975,AI & Machine Learning,C119857082,Netherlands,NL,31
+1975,AI & Machine Learning,C119857082,Norway,NO,9
+1975,AI & Machine Learning,C119857082,New Zealand,NZ,4
+1975,AI & Machine Learning,C119857082,Philippines,PH,3
+1975,AI & Machine Learning,C119857082,Pakistan,PK,3
+1975,AI & Machine Learning,C119857082,Poland,PL,14
+1975,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1975,AI & Machine Learning,C119857082,Portugal,PT,1
+1975,AI & Machine Learning,C119857082,Qatar,QA,2
+1975,AI & Machine Learning,C119857082,Romania,RO,6
+1975,AI & Machine Learning,C119857082,Serbia,RS,5
+1975,AI & Machine Learning,C119857082,Russian Federation,RU,48
+1975,AI & Machine Learning,C119857082,Saudi Arabia,SA,1
+1975,AI & Machine Learning,C119857082,Sweden,SE,4
+1975,AI & Machine Learning,C119857082,Singapore,SG,2
+1975,AI & Machine Learning,C119857082,Slovenia,SI,2
+1975,AI & Machine Learning,C119857082,Slovakia,SK,9
+1975,AI & Machine Learning,C119857082,South Sudan,SS,4
+1975,AI & Machine Learning,C119857082,Thailand,TH,1
+1975,AI & Machine Learning,C119857082,Tunisia,TN,1
+1975,AI & Machine Learning,C119857082,Turkey,TR,2
+1975,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,4
+1975,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1975,AI & Machine Learning,C119857082,Ukraine,UA,4
+1975,AI & Machine Learning,C119857082,United States of America,US,1315
+1975,AI & Machine Learning,C119857082,Viet Nam,VN,1
+1975,AI & Machine Learning,C119857082,South Africa,ZA,9
+1975,AI & Machine Learning,C119857082,Zambia,ZM,2
+1975,CRISPR & Genomics,C98108389,United States of America,US,3
+1975,Data Science & Big Data,C2522767166,Armenia,AM,1
+1975,Data Science & Big Data,C2522767166,Argentina,AR,1
+1975,Data Science & Big Data,C2522767166,Austria,AT,1
+1975,Data Science & Big Data,C2522767166,Australia,AU,7
+1975,Data Science & Big Data,C2522767166,Belgium,BE,4
+1975,Data Science & Big Data,C2522767166,Brazil,BR,4
+1975,Data Science & Big Data,C2522767166,Belarus,BY,1
+1975,Data Science & Big Data,C2522767166,Canada,CA,27
+1975,Data Science & Big Data,C2522767166,Switzerland,CH,2
+1975,Data Science & Big Data,C2522767166,China,CN,1
+1975,Data Science & Big Data,C2522767166,Czechia,CZ,1
+1975,Data Science & Big Data,C2522767166,Germany,DE,6
+1975,Data Science & Big Data,C2522767166,Denmark,DK,1
+1975,Data Science & Big Data,C2522767166,Spain,ES,2
+1975,Data Science & Big Data,C2522767166,France,FR,4
+1975,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,102
+1975,Data Science & Big Data,C2522767166,Ghana,GH,1
+1975,Data Science & Big Data,C2522767166,Greece,GR,1
+1975,Data Science & Big Data,C2522767166,Guam,GU,1
+1975,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1975,Data Science & Big Data,C2522767166,Ireland,IE,4
+1975,Data Science & Big Data,C2522767166,Israel,IL,3
+1975,Data Science & Big Data,C2522767166,India,IN,3
+1975,Data Science & Big Data,C2522767166,Italy,IT,5
+1975,Data Science & Big Data,C2522767166,Japan,JP,3
+1975,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1975,Data Science & Big Data,C2522767166,Latvia,LV,1
+1975,Data Science & Big Data,C2522767166,Mexico,MX,2
+1975,Data Science & Big Data,C2522767166,Netherlands,NL,3
+1975,Data Science & Big Data,C2522767166,Poland,PL,2
+1975,Data Science & Big Data,C2522767166,Portugal,PT,1
+1975,Data Science & Big Data,C2522767166,Romania,RO,1
+1975,Data Science & Big Data,C2522767166,Russian Federation,RU,4
+1975,Data Science & Big Data,C2522767166,Sweden,SE,3
+1975,Data Science & Big Data,C2522767166,Singapore,SG,2
+1975,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1975,Data Science & Big Data,C2522767166,Thailand,TH,1
+1975,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,1
+1975,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1975,Data Science & Big Data,C2522767166,Uganda,UG,1
+1975,Data Science & Big Data,C2522767166,United States of America,US,323
+1975,Data Science & Big Data,C2522767166,South Africa,ZA,2
+1975,Infectious Diseases,C524204448,United Arab Emirates,AE,3
+1975,Infectious Diseases,C524204448,Australia,AU,3
+1975,Infectious Diseases,C524204448,Belgium,BE,1
+1975,Infectious Diseases,C524204448,Brazil,BR,1
+1975,Infectious Diseases,C524204448,Canada,CA,4
+1975,Infectious Diseases,C524204448,Switzerland,CH,1
+1975,Infectious Diseases,C524204448,China,CN,1
+1975,Infectious Diseases,C524204448,Czechia,CZ,1
+1975,Infectious Diseases,C524204448,Germany,DE,3
+1975,Infectious Diseases,C524204448,Denmark,DK,1
+1975,Infectious Diseases,C524204448,France,FR,6
+1975,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,21
+1975,Infectious Diseases,C524204448,Ireland,IE,1
+1975,Infectious Diseases,C524204448,Israel,IL,1
+1975,Infectious Diseases,C524204448,India,IN,5
+1975,Infectious Diseases,C524204448,Italy,IT,1
+1975,Infectious Diseases,C524204448,Japan,JP,6
+1975,Infectious Diseases,C524204448,Mali,ML,2
+1975,Infectious Diseases,C524204448,Mexico,MX,1
+1975,Infectious Diseases,C524204448,Netherlands,NL,1
+1975,Infectious Diseases,C524204448,New Zealand,NZ,3
+1975,Infectious Diseases,C524204448,Peru,PE,1
+1975,Infectious Diseases,C524204448,Pakistan,PK,1
+1975,Infectious Diseases,C524204448,Poland,PL,1
+1975,Infectious Diseases,C524204448,Russian Federation,RU,1
+1975,Infectious Diseases,C524204448,Slovakia,SK,2
+1975,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,1
+1975,Infectious Diseases,C524204448,United States of America,US,74
+1975,Infectious Diseases,C524204448,Viet Nam,VN,1
+1975,Quantum Computing,C58053490,Australia,AU,1
+1975,Quantum Computing,C58053490,Canada,CA,3
+1975,Quantum Computing,C58053490,Germany,DE,1
+1975,Quantum Computing,C58053490,Italy,IT,1
+1975,Quantum Computing,C58053490,Russian Federation,RU,1
+1975,Quantum Computing,C58053490,Sweden,SE,1
+1975,Quantum Computing,C58053490,United States of America,US,11
+1975,Renewable Energy,C188573790,Australia,AU,2
+1975,Renewable Energy,C188573790,Canada,CA,5
+1975,Renewable Energy,C188573790,Switzerland,CH,2
+1975,Renewable Energy,C188573790,Germany,DE,1
+1975,Renewable Energy,C188573790,Denmark,DK,1
+1975,Renewable Energy,C188573790,France,FR,2
+1975,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,5
+1975,Renewable Energy,C188573790,Ireland,IE,1
+1975,Renewable Energy,C188573790,India,IN,1
+1975,Renewable Energy,C188573790,Japan,JP,2
+1975,Renewable Energy,C188573790,New Zealand,NZ,1
+1975,Renewable Energy,C188573790,United States of America,US,44
+1975,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,1
+1975,Robotics & Automation,C34413123,Hungary,HU,1
+1975,Robotics & Automation,C34413123,United States of America,US,5
+1976,AI & Machine Learning,C119857082,United Arab Emirates,AE,1
+1976,AI & Machine Learning,C119857082,Argentina,AR,1
+1976,AI & Machine Learning,C119857082,Austria,AT,7
+1976,AI & Machine Learning,C119857082,Australia,AU,53
+1976,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1976,AI & Machine Learning,C119857082,Bangladesh,BD,1
+1976,AI & Machine Learning,C119857082,Belgium,BE,32
+1976,AI & Machine Learning,C119857082,Bulgaria,BG,3
+1976,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1976,AI & Machine Learning,C119857082,Brazil,BR,8
+1976,AI & Machine Learning,C119857082,Belarus,BY,1
+1976,AI & Machine Learning,C119857082,Canada,CA,148
+1976,AI & Machine Learning,C119857082,Switzerland,CH,19
+1976,AI & Machine Learning,C119857082,Chile,CL,1
+1976,AI & Machine Learning,C119857082,China,CN,12
+1976,AI & Machine Learning,C119857082,Colombia,CO,2
+1976,AI & Machine Learning,C119857082,Cyprus,CY,1
+1976,AI & Machine Learning,C119857082,Czechia,CZ,13
+1976,AI & Machine Learning,C119857082,Germany,DE,88
+1976,AI & Machine Learning,C119857082,Denmark,DK,11
+1976,AI & Machine Learning,C119857082,Ecuador,EC,1
+1976,AI & Machine Learning,C119857082,Estonia,EE,1
+1976,AI & Machine Learning,C119857082,Egypt,EG,6
+1976,AI & Machine Learning,C119857082,Spain,ES,5
+1976,AI & Machine Learning,C119857082,Finland,FI,3
+1976,AI & Machine Learning,C119857082,France,FR,57
+1976,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,253
+1976,AI & Machine Learning,C119857082,Ghana,GH,2
+1976,AI & Machine Learning,C119857082,Greece,GR,7
+1976,AI & Machine Learning,C119857082,Hong Kong,HK,2
+1976,AI & Machine Learning,C119857082,Croatia,HR,4
+1976,AI & Machine Learning,C119857082,Hungary,HU,13
+1976,AI & Machine Learning,C119857082,Indonesia,ID,3
+1976,AI & Machine Learning,C119857082,Ireland,IE,7
+1976,AI & Machine Learning,C119857082,Israel,IL,30
+1976,AI & Machine Learning,C119857082,India,IN,68
+1976,AI & Machine Learning,C119857082,Iraq,IQ,1
+1976,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,4
+1976,AI & Machine Learning,C119857082,Italy,IT,27
+1976,AI & Machine Learning,C119857082,Jordan,JO,2
+1976,AI & Machine Learning,C119857082,Japan,JP,120
+1976,AI & Machine Learning,C119857082,Lebanon,LB,3
+1976,AI & Machine Learning,C119857082,Latvia,LV,1
+1976,AI & Machine Learning,C119857082,Mongolia,MN,1
+1976,AI & Machine Learning,C119857082,Malawi,MW,1
+1976,AI & Machine Learning,C119857082,Mexico,MX,2
+1976,AI & Machine Learning,C119857082,Nigeria,NG,7
+1976,AI & Machine Learning,C119857082,Netherlands,NL,37
+1976,AI & Machine Learning,C119857082,Norway,NO,4
+1976,AI & Machine Learning,C119857082,Nepal,NP,1
+1976,AI & Machine Learning,C119857082,New Zealand,NZ,13
+1976,AI & Machine Learning,C119857082,Panama,PA,1
+1976,AI & Machine Learning,C119857082,Philippines,PH,2
+1976,AI & Machine Learning,C119857082,Pakistan,PK,2
+1976,AI & Machine Learning,C119857082,Poland,PL,16
+1976,AI & Machine Learning,C119857082,Romania,RO,7
+1976,AI & Machine Learning,C119857082,Serbia,RS,3
+1976,AI & Machine Learning,C119857082,Russian Federation,RU,39
+1976,AI & Machine Learning,C119857082,Saudi Arabia,SA,2
+1976,AI & Machine Learning,C119857082,Sudan,SD,1
+1976,AI & Machine Learning,C119857082,Sweden,SE,15
+1976,AI & Machine Learning,C119857082,Singapore,SG,2
+1976,AI & Machine Learning,C119857082,Slovenia,SI,2
+1976,AI & Machine Learning,C119857082,Slovakia,SK,12
+1976,AI & Machine Learning,C119857082,South Sudan,SS,2
+1976,AI & Machine Learning,C119857082,Thailand,TH,2
+1976,AI & Machine Learning,C119857082,Turkey,TR,3
+1976,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,6
+1976,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1976,AI & Machine Learning,C119857082,Ukraine,UA,2
+1976,AI & Machine Learning,C119857082,Uganda,UG,1
+1976,AI & Machine Learning,C119857082,United States of America,US,1409
+1976,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1976,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,1
+1976,AI & Machine Learning,C119857082,South Africa,ZA,6
+1976,CRISPR & Genomics,C98108389,United States of America,US,1
+1976,Data Science & Big Data,C2522767166,Austria,AT,1
+1976,Data Science & Big Data,C2522767166,Australia,AU,15
+1976,Data Science & Big Data,C2522767166,Bangladesh,BD,1
+1976,Data Science & Big Data,C2522767166,Bulgaria,BG,1
+1976,Data Science & Big Data,C2522767166,Brazil,BR,1
+1976,Data Science & Big Data,C2522767166,Canada,CA,30
+1976,Data Science & Big Data,C2522767166,Switzerland,CH,5
+1976,Data Science & Big Data,C2522767166,China,CN,4
+1976,Data Science & Big Data,C2522767166,Colombia,CO,1
+1976,Data Science & Big Data,C2522767166,Czechia,CZ,6
+1976,Data Science & Big Data,C2522767166,Germany,DE,12
+1976,Data Science & Big Data,C2522767166,Denmark,DK,2
+1976,Data Science & Big Data,C2522767166,Estonia,EE,1
+1976,Data Science & Big Data,C2522767166,Spain,ES,2
+1976,Data Science & Big Data,C2522767166,France,FR,12
+1976,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,105
+1976,Data Science & Big Data,C2522767166,Ghana,GH,4
+1976,Data Science & Big Data,C2522767166,Guam,GU,1
+1976,Data Science & Big Data,C2522767166,Hungary,HU,3
+1976,Data Science & Big Data,C2522767166,Israel,IL,2
+1976,Data Science & Big Data,C2522767166,India,IN,8
+1976,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1976,Data Science & Big Data,C2522767166,Italy,IT,3
+1976,Data Science & Big Data,C2522767166,Japan,JP,5
+1976,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1976,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1976,Data Science & Big Data,C2522767166,Mexico,MX,3
+1976,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1976,Data Science & Big Data,C2522767166,Netherlands,NL,9
+1976,Data Science & Big Data,C2522767166,Norway,NO,2
+1976,Data Science & Big Data,C2522767166,New Zealand,NZ,1
+1976,Data Science & Big Data,C2522767166,Poland,PL,1
+1976,Data Science & Big Data,C2522767166,Russian Federation,RU,7
+1976,Data Science & Big Data,C2522767166,Sweden,SE,4
+1976,Data Science & Big Data,C2522767166,Singapore,SG,4
+1976,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1976,Data Science & Big Data,C2522767166,El Salvador,SV,1
+1976,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,1
+1976,Data Science & Big Data,C2522767166,Ukraine,UA,1
+1976,Data Science & Big Data,C2522767166,United States of America,US,349
+1976,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1976,Data Science & Big Data,C2522767166,South Africa,ZA,4
+1976,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1976,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1976,Infectious Diseases,C524204448,Australia,AU,2
+1976,Infectious Diseases,C524204448,Bulgaria,BG,1
+1976,Infectious Diseases,C524204448,Bahrain,BH,1
+1976,Infectious Diseases,C524204448,Canada,CA,4
+1976,Infectious Diseases,C524204448,Switzerland,CH,2
+1976,Infectious Diseases,C524204448,Colombia,CO,1
+1976,Infectious Diseases,C524204448,Germany,DE,3
+1976,Infectious Diseases,C524204448,Denmark,DK,1
+1976,Infectious Diseases,C524204448,Finland,FI,2
+1976,Infectious Diseases,C524204448,France,FR,4
+1976,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,14
+1976,Infectious Diseases,C524204448,Ireland,IE,1
+1976,Infectious Diseases,C524204448,Israel,IL,1
+1976,Infectious Diseases,C524204448,Italy,IT,1
+1976,Infectious Diseases,C524204448,Japan,JP,9
+1976,Infectious Diseases,C524204448,Netherlands,NL,4
+1976,Infectious Diseases,C524204448,Norway,NO,2
+1976,Infectious Diseases,C524204448,Nepal,NP,1
+1976,Infectious Diseases,C524204448,Sweden,SE,2
+1976,Infectious Diseases,C524204448,Senegal,SN,1
+1976,Infectious Diseases,C524204448,Uganda,UG,1
+1976,Infectious Diseases,C524204448,United States of America,US,82
+1976,Infectious Diseases,C524204448,Zambia,ZM,1
+1976,Quantum Computing,C58053490,Belgium,BE,2
+1976,Quantum Computing,C58053490,Canada,CA,1
+1976,Quantum Computing,C58053490,Germany,DE,1
+1976,Quantum Computing,C58053490,France,FR,1
+1976,Quantum Computing,C58053490,Japan,JP,1
+1976,Quantum Computing,C58053490,Poland,PL,1
+1976,Quantum Computing,C58053490,United States of America,US,11
+1976,Renewable Energy,C188573790,Austria,AT,1
+1976,Renewable Energy,C188573790,Australia,AU,2
+1976,Renewable Energy,C188573790,Brazil,BR,1
+1976,Renewable Energy,C188573790,Canada,CA,2
+1976,Renewable Energy,C188573790,Germany,DE,1
+1976,Renewable Energy,C188573790,Denmark,DK,2
+1976,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,8
+1976,Renewable Energy,C188573790,India,IN,1
+1976,Renewable Energy,C188573790,Japan,JP,1
+1976,Renewable Energy,C188573790,"Korea, Republic of",KR,1
+1976,Renewable Energy,C188573790,Malawi,MW,1
+1976,Renewable Energy,C188573790,Netherlands,NL,3
+1976,Renewable Energy,C188573790,Norway,NO,1
+1976,Renewable Energy,C188573790,Pakistan,PK,1
+1976,Renewable Energy,C188573790,Russian Federation,RU,1
+1976,Renewable Energy,C188573790,United States of America,US,53
+1976,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,1
+1976,Robotics & Automation,C34413123,Italy,IT,1
+1976,Robotics & Automation,C34413123,United States of America,US,1
+1977,AI & Machine Learning,C119857082,Argentina,AR,2
+1977,AI & Machine Learning,C119857082,Austria,AT,9
+1977,AI & Machine Learning,C119857082,Australia,AU,85
+1977,AI & Machine Learning,C119857082,Azerbaijan,AZ,3
+1977,AI & Machine Learning,C119857082,Bangladesh,BD,2
+1977,AI & Machine Learning,C119857082,Belgium,BE,26
+1977,AI & Machine Learning,C119857082,Bulgaria,BG,1
+1977,AI & Machine Learning,C119857082,Brazil,BR,13
+1977,AI & Machine Learning,C119857082,Belarus,BY,3
+1977,AI & Machine Learning,C119857082,Canada,CA,149
+1977,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+1977,AI & Machine Learning,C119857082,Switzerland,CH,27
+1977,AI & Machine Learning,C119857082,Chile,CL,5
+1977,AI & Machine Learning,C119857082,China,CN,9
+1977,AI & Machine Learning,C119857082,Colombia,CO,2
+1977,AI & Machine Learning,C119857082,Cyprus,CY,3
+1977,AI & Machine Learning,C119857082,Czechia,CZ,13
+1977,AI & Machine Learning,C119857082,Germany,DE,117
+1977,AI & Machine Learning,C119857082,Denmark,DK,9
+1977,AI & Machine Learning,C119857082,Algeria,DZ,1
+1977,AI & Machine Learning,C119857082,Egypt,EG,8
+1977,AI & Machine Learning,C119857082,Spain,ES,8
+1977,AI & Machine Learning,C119857082,Finland,FI,7
+1977,AI & Machine Learning,C119857082,Fiji,FJ,1
+1977,AI & Machine Learning,C119857082,France,FR,67
+1977,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,300
+1977,AI & Machine Learning,C119857082,Ghana,GH,5
+1977,AI & Machine Learning,C119857082,Greece,GR,7
+1977,AI & Machine Learning,C119857082,Hong Kong,HK,4
+1977,AI & Machine Learning,C119857082,Croatia,HR,3
+1977,AI & Machine Learning,C119857082,Hungary,HU,4
+1977,AI & Machine Learning,C119857082,Indonesia,ID,2
+1977,AI & Machine Learning,C119857082,Ireland,IE,12
+1977,AI & Machine Learning,C119857082,Israel,IL,46
+1977,AI & Machine Learning,C119857082,India,IN,80
+1977,AI & Machine Learning,C119857082,Iraq,IQ,3
+1977,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,9
+1977,AI & Machine Learning,C119857082,Italy,IT,33
+1977,AI & Machine Learning,C119857082,Jordan,JO,1
+1977,AI & Machine Learning,C119857082,Japan,JP,134
+1977,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2
+1977,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1977,AI & Machine Learning,C119857082,Sri Lanka,LK,1
+1977,AI & Machine Learning,C119857082,Lithuania,LT,2
+1977,AI & Machine Learning,C119857082,Latvia,LV,2
+1977,AI & Machine Learning,C119857082,Libya,LY,1
+1977,AI & Machine Learning,C119857082,Morocco,MA,2
+1977,AI & Machine Learning,C119857082,Maldives,MV,1
+1977,AI & Machine Learning,C119857082,Mexico,MX,5
+1977,AI & Machine Learning,C119857082,Malaysia,MY,1
+1977,AI & Machine Learning,C119857082,Nigeria,NG,5
+1977,AI & Machine Learning,C119857082,Nicaragua,NI,1
+1977,AI & Machine Learning,C119857082,Netherlands,NL,30
+1977,AI & Machine Learning,C119857082,Norway,NO,16
+1977,AI & Machine Learning,C119857082,Nepal,NP,1
+1977,AI & Machine Learning,C119857082,New Zealand,NZ,12
+1977,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1977,AI & Machine Learning,C119857082,Philippines,PH,1
+1977,AI & Machine Learning,C119857082,Pakistan,PK,3
+1977,AI & Machine Learning,C119857082,Poland,PL,24
+1977,AI & Machine Learning,C119857082,Portugal,PT,3
+1977,AI & Machine Learning,C119857082,Romania,RO,4
+1977,AI & Machine Learning,C119857082,Serbia,RS,3
+1977,AI & Machine Learning,C119857082,Russian Federation,RU,50
+1977,AI & Machine Learning,C119857082,Saudi Arabia,SA,4
+1977,AI & Machine Learning,C119857082,Sudan,SD,1
+1977,AI & Machine Learning,C119857082,Sweden,SE,23
+1977,AI & Machine Learning,C119857082,Singapore,SG,2
+1977,AI & Machine Learning,C119857082,Slovenia,SI,3
+1977,AI & Machine Learning,C119857082,Slovakia,SK,7
+1977,AI & Machine Learning,C119857082,South Sudan,SS,3
+1977,AI & Machine Learning,C119857082,Thailand,TH,1
+1977,AI & Machine Learning,C119857082,Tunisia,TN,2
+1977,AI & Machine Learning,C119857082,Turkey,TR,5
+1977,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,6
+1977,AI & Machine Learning,C119857082,Ukraine,UA,2
+1977,AI & Machine Learning,C119857082,United States of America,US,1493
+1977,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,3
+1977,AI & Machine Learning,C119857082,Viet Nam,VN,2
+1977,AI & Machine Learning,C119857082,South Africa,ZA,12
+1977,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
+1977,CRISPR & Genomics,C98108389,Switzerland,CH,1
+1977,CRISPR & Genomics,C98108389,Germany,DE,1
+1977,CRISPR & Genomics,C98108389,Denmark,DK,1
+1977,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1977,CRISPR & Genomics,C98108389,United States of America,US,1
+1977,Data Science & Big Data,C2522767166,Austria,AT,2
+1977,Data Science & Big Data,C2522767166,Australia,AU,11
+1977,Data Science & Big Data,C2522767166,Bangladesh,BD,1
+1977,Data Science & Big Data,C2522767166,Belgium,BE,8
+1977,Data Science & Big Data,C2522767166,Brazil,BR,2
+1977,Data Science & Big Data,C2522767166,Canada,CA,32
+1977,Data Science & Big Data,C2522767166,Switzerland,CH,7
+1977,Data Science & Big Data,C2522767166,China,CN,2
+1977,Data Science & Big Data,C2522767166,Germany,DE,9
+1977,Data Science & Big Data,C2522767166,Denmark,DK,1
+1977,Data Science & Big Data,C2522767166,Egypt,EG,1
+1977,Data Science & Big Data,C2522767166,Ethiopia,ET,1
+1977,Data Science & Big Data,C2522767166,Finland,FI,2
+1977,Data Science & Big Data,C2522767166,France,FR,9
+1977,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,116
+1977,Data Science & Big Data,C2522767166,Greece,GR,1
+1977,Data Science & Big Data,C2522767166,Hungary,HU,1
+1977,Data Science & Big Data,C2522767166,Ireland,IE,1
+1977,Data Science & Big Data,C2522767166,Israel,IL,3
+1977,Data Science & Big Data,C2522767166,India,IN,5
+1977,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1977,Data Science & Big Data,C2522767166,Italy,IT,4
+1977,Data Science & Big Data,C2522767166,Japan,JP,7
+1977,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1977,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1977,Data Science & Big Data,C2522767166,Luxembourg,LU,1
+1977,Data Science & Big Data,C2522767166,Mexico,MX,1
+1977,Data Science & Big Data,C2522767166,Netherlands,NL,11
+1977,Data Science & Big Data,C2522767166,Norway,NO,1
+1977,Data Science & Big Data,C2522767166,Oman,OM,1
+1977,Data Science & Big Data,C2522767166,Philippines,PH,2
+1977,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1977,Data Science & Big Data,C2522767166,Poland,PL,3
+1977,Data Science & Big Data,C2522767166,Russian Federation,RU,2
+1977,Data Science & Big Data,C2522767166,Sweden,SE,2
+1977,Data Science & Big Data,C2522767166,Slovenia,SI,3
+1977,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1977,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1977,Data Science & Big Data,C2522767166,Tunisia,TN,1
+1977,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1977,Data Science & Big Data,C2522767166,Ukraine,UA,1
+1977,Data Science & Big Data,C2522767166,United States of America,US,382
+1977,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1977,Data Science & Big Data,C2522767166,South Africa,ZA,2
+1977,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1977,Infectious Diseases,C524204448,United Arab Emirates,AE,3
+1977,Infectious Diseases,C524204448,Australia,AU,3
+1977,Infectious Diseases,C524204448,Bulgaria,BG,1
+1977,Infectious Diseases,C524204448,Canada,CA,4
+1977,Infectious Diseases,C524204448,Switzerland,CH,2
+1977,Infectious Diseases,C524204448,China,CN,1
+1977,Infectious Diseases,C524204448,Costa Rica,CR,1
+1977,Infectious Diseases,C524204448,Germany,DE,4
+1977,Infectious Diseases,C524204448,Denmark,DK,3
+1977,Infectious Diseases,C524204448,Finland,FI,1
+1977,Infectious Diseases,C524204448,France,FR,1
+1977,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,18
+1977,Infectious Diseases,C524204448,Guatemala,GT,1
+1977,Infectious Diseases,C524204448,Hong Kong,HK,1
+1977,Infectious Diseases,C524204448,Hungary,HU,2
+1977,Infectious Diseases,C524204448,Israel,IL,2
+1977,Infectious Diseases,C524204448,India,IN,2
+1977,Infectious Diseases,C524204448,Italy,IT,2
+1977,Infectious Diseases,C524204448,Japan,JP,5
+1977,Infectious Diseases,C524204448,Nigeria,NG,1
+1977,Infectious Diseases,C524204448,Norway,NO,1
+1977,Infectious Diseases,C524204448,Nepal,NP,1
+1977,Infectious Diseases,C524204448,New Zealand,NZ,2
+1977,Infectious Diseases,C524204448,Russian Federation,RU,1
+1977,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,1
+1977,Infectious Diseases,C524204448,United States of America,US,82
+1977,Infectious Diseases,C524204448,South Africa,ZA,2
+1977,Quantum Computing,C58053490,Germany,DE,4
+1977,Quantum Computing,C58053490,Israel,IL,1
+1977,Quantum Computing,C58053490,Italy,IT,1
+1977,Quantum Computing,C58053490,Japan,JP,1
+1977,Quantum Computing,C58053490,Poland,PL,1
+1977,Quantum Computing,C58053490,Portugal,PT,1
+1977,Quantum Computing,C58053490,Slovakia,SK,1
+1977,Quantum Computing,C58053490,United States of America,US,6
+1977,Renewable Energy,C188573790,Argentina,AR,3
+1977,Renewable Energy,C188573790,Austria,AT,1
+1977,Renewable Energy,C188573790,Australia,AU,5
+1977,Renewable Energy,C188573790,Belgium,BE,1
+1977,Renewable Energy,C188573790,Canada,CA,4
+1977,Renewable Energy,C188573790,China,CN,1
+1977,Renewable Energy,C188573790,Czechia,CZ,1
+1977,Renewable Energy,C188573790,Germany,DE,1
+1977,Renewable Energy,C188573790,Denmark,DK,2
+1977,Renewable Energy,C188573790,Algeria,DZ,1
+1977,Renewable Energy,C188573790,France,FR,3
+1977,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,10
+1977,Renewable Energy,C188573790,Ghana,GH,2
+1977,Renewable Energy,C188573790,Israel,IL,1
+1977,Renewable Energy,C188573790,India,IN,1
+1977,Renewable Energy,C188573790,Italy,IT,3
+1977,Renewable Energy,C188573790,Japan,JP,3
+1977,Renewable Energy,C188573790,Netherlands,NL,3
+1977,Renewable Energy,C188573790,Norway,NO,1
+1977,Renewable Energy,C188573790,Poland,PL,1
+1977,Renewable Energy,C188573790,Romania,RO,1
+1977,Renewable Energy,C188573790,Russian Federation,RU,1
+1977,Renewable Energy,C188573790,Turkey,TR,1
+1977,Renewable Energy,C188573790,"Taiwan, Province of China",TW,1
+1977,Renewable Energy,C188573790,United States of America,US,72
+1977,Robotics & Automation,C34413123,Italy,IT,1
+1977,Robotics & Automation,C34413123,United States of America,US,7
+1978,AI & Machine Learning,C119857082,Austria,AT,9
+1978,AI & Machine Learning,C119857082,Australia,AU,100
+1978,AI & Machine Learning,C119857082,Bangladesh,BD,1
+1978,AI & Machine Learning,C119857082,Belgium,BE,24
+1978,AI & Machine Learning,C119857082,Bulgaria,BG,1
+1978,AI & Machine Learning,C119857082,Benin,BJ,1
+1978,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1978,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,1
+1978,AI & Machine Learning,C119857082,Brazil,BR,19
+1978,AI & Machine Learning,C119857082,Bahamas,BS,1
+1978,AI & Machine Learning,C119857082,Belarus,BY,3
+1978,AI & Machine Learning,C119857082,Canada,CA,143
+1978,AI & Machine Learning,C119857082,Switzerland,CH,24
+1978,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1978,AI & Machine Learning,C119857082,Chile,CL,1
+1978,AI & Machine Learning,C119857082,Cameroon,CM,1
+1978,AI & Machine Learning,C119857082,China,CN,9
+1978,AI & Machine Learning,C119857082,Colombia,CO,1
+1978,AI & Machine Learning,C119857082,Cyprus,CY,1
+1978,AI & Machine Learning,C119857082,Czechia,CZ,13
+1978,AI & Machine Learning,C119857082,Germany,DE,120
+1978,AI & Machine Learning,C119857082,Denmark,DK,20
+1978,AI & Machine Learning,C119857082,Estonia,EE,1
+1978,AI & Machine Learning,C119857082,Egypt,EG,8
+1978,AI & Machine Learning,C119857082,Spain,ES,11
+1978,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1978,AI & Machine Learning,C119857082,Finland,FI,14
+1978,AI & Machine Learning,C119857082,France,FR,72
+1978,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,267
+1978,AI & Machine Learning,C119857082,Ghana,GH,4
+1978,AI & Machine Learning,C119857082,Greece,GR,6
+1978,AI & Machine Learning,C119857082,Hong Kong,HK,1
+1978,AI & Machine Learning,C119857082,Croatia,HR,4
+1978,AI & Machine Learning,C119857082,Hungary,HU,10
+1978,AI & Machine Learning,C119857082,Ireland,IE,4
+1978,AI & Machine Learning,C119857082,Israel,IL,59
+1978,AI & Machine Learning,C119857082,India,IN,63
+1978,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,12
+1978,AI & Machine Learning,C119857082,Iceland,IS,1
+1978,AI & Machine Learning,C119857082,Italy,IT,39
+1978,AI & Machine Learning,C119857082,Jordan,JO,1
+1978,AI & Machine Learning,C119857082,Japan,JP,151
+1978,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1
+1978,AI & Machine Learning,C119857082,Kazakhstan,KZ,2
+1978,AI & Machine Learning,C119857082,Lebanon,LB,1
+1978,AI & Machine Learning,C119857082,Luxembourg,LU,1
+1978,AI & Machine Learning,C119857082,Libya,LY,1
+1978,AI & Machine Learning,C119857082,North Macedonia,MK,1
+1978,AI & Machine Learning,C119857082,Mexico,MX,5
+1978,AI & Machine Learning,C119857082,Nigeria,NG,4
+1978,AI & Machine Learning,C119857082,Netherlands,NL,42
+1978,AI & Machine Learning,C119857082,Norway,NO,10
+1978,AI & Machine Learning,C119857082,New Zealand,NZ,20
+1978,AI & Machine Learning,C119857082,Peru,PE,2
+1978,AI & Machine Learning,C119857082,Pakistan,PK,1
+1978,AI & Machine Learning,C119857082,Poland,PL,22
+1978,AI & Machine Learning,C119857082,Portugal,PT,1
+1978,AI & Machine Learning,C119857082,Qatar,QA,1
+1978,AI & Machine Learning,C119857082,Romania,RO,3
+1978,AI & Machine Learning,C119857082,Serbia,RS,6
+1978,AI & Machine Learning,C119857082,Russian Federation,RU,51
+1978,AI & Machine Learning,C119857082,Saudi Arabia,SA,4
+1978,AI & Machine Learning,C119857082,Sweden,SE,30
+1978,AI & Machine Learning,C119857082,Singapore,SG,2
+1978,AI & Machine Learning,C119857082,Slovenia,SI,2
+1978,AI & Machine Learning,C119857082,Slovakia,SK,10
+1978,AI & Machine Learning,C119857082,South Sudan,SS,1
+1978,AI & Machine Learning,C119857082,Thailand,TH,1
+1978,AI & Machine Learning,C119857082,Turkey,TR,5
+1978,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+1978,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,5
+1978,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1978,AI & Machine Learning,C119857082,Ukraine,UA,3
+1978,AI & Machine Learning,C119857082,United States of America,US,1488
+1978,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,2
+1978,AI & Machine Learning,C119857082,South Africa,ZA,8
+1978,CRISPR & Genomics,C98108389,Canada,CA,1
+1978,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,3
+1978,CRISPR & Genomics,C98108389,Israel,IL,1
+1978,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1978,CRISPR & Genomics,C98108389,United States of America,US,5
+1978,Data Science & Big Data,C2522767166,Armenia,AM,1
+1978,Data Science & Big Data,C2522767166,Argentina,AR,1
+1978,Data Science & Big Data,C2522767166,Austria,AT,4
+1978,Data Science & Big Data,C2522767166,Australia,AU,19
+1978,Data Science & Big Data,C2522767166,Belgium,BE,7
+1978,Data Science & Big Data,C2522767166,Bulgaria,BG,1
+1978,Data Science & Big Data,C2522767166,Brazil,BR,1
+1978,Data Science & Big Data,C2522767166,Canada,CA,35
+1978,Data Science & Big Data,C2522767166,Switzerland,CH,7
+1978,Data Science & Big Data,C2522767166,Chile,CL,1
+1978,Data Science & Big Data,C2522767166,China,CN,4
+1978,Data Science & Big Data,C2522767166,Czechia,CZ,4
+1978,Data Science & Big Data,C2522767166,Germany,DE,14
+1978,Data Science & Big Data,C2522767166,Denmark,DK,1
+1978,Data Science & Big Data,C2522767166,Egypt,EG,2
+1978,Data Science & Big Data,C2522767166,Spain,ES,1
+1978,Data Science & Big Data,C2522767166,France,FR,9
+1978,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,351
+1978,Data Science & Big Data,C2522767166,Ghana,GH,1
+1978,Data Science & Big Data,C2522767166,Greece,GR,2
+1978,Data Science & Big Data,C2522767166,Guyana,GY,1
+1978,Data Science & Big Data,C2522767166,Hungary,HU,1
+1978,Data Science & Big Data,C2522767166,Ireland,IE,4
+1978,Data Science & Big Data,C2522767166,Israel,IL,4
+1978,Data Science & Big Data,C2522767166,India,IN,10
+1978,Data Science & Big Data,C2522767166,Italy,IT,5
+1978,Data Science & Big Data,C2522767166,Jamaica,JM,4
+1978,Data Science & Big Data,C2522767166,Japan,JP,12
+1978,Data Science & Big Data,C2522767166,Kuwait,KW,1
+1978,Data Science & Big Data,C2522767166,Mexico,MX,8
+1978,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1978,Data Science & Big Data,C2522767166,Netherlands,NL,15
+1978,Data Science & Big Data,C2522767166,New Zealand,NZ,2
+1978,Data Science & Big Data,C2522767166,Papua New Guinea,PG,1
+1978,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1978,Data Science & Big Data,C2522767166,Poland,PL,2
+1978,Data Science & Big Data,C2522767166,Qatar,QA,1
+1978,Data Science & Big Data,C2522767166,Romania,RO,2
+1978,Data Science & Big Data,C2522767166,Russian Federation,RU,5
+1978,Data Science & Big Data,C2522767166,Sweden,SE,3
+1978,Data Science & Big Data,C2522767166,Singapore,SG,2
+1978,Data Science & Big Data,C2522767166,Slovenia,SI,1
+1978,Data Science & Big Data,C2522767166,Thailand,TH,1
+1978,Data Science & Big Data,C2522767166,Tunisia,TN,1
+1978,Data Science & Big Data,C2522767166,Turkey,TR,1
+1978,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,1
+1978,Data Science & Big Data,C2522767166,United States of America,US,458
+1978,Data Science & Big Data,C2522767166,South Africa,ZA,4
+1978,Infectious Diseases,C524204448,United Arab Emirates,AE,2
+1978,Infectious Diseases,C524204448,Austria,AT,1
+1978,Infectious Diseases,C524204448,Australia,AU,8
+1978,Infectious Diseases,C524204448,Belgium,BE,1
+1978,Infectious Diseases,C524204448,Canada,CA,1
+1978,Infectious Diseases,C524204448,China,CN,1
+1978,Infectious Diseases,C524204448,Germany,DE,8
+1978,Infectious Diseases,C524204448,Denmark,DK,2
+1978,Infectious Diseases,C524204448,Ecuador,EC,1
+1978,Infectious Diseases,C524204448,Finland,FI,2
+1978,Infectious Diseases,C524204448,France,FR,4
+1978,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,21
+1978,Infectious Diseases,C524204448,Hong Kong,HK,1
+1978,Infectious Diseases,C524204448,Hungary,HU,1
+1978,Infectious Diseases,C524204448,Ireland,IE,1
+1978,Infectious Diseases,C524204448,"Iran, Islamic Republic of",IR,1
+1978,Infectious Diseases,C524204448,Italy,IT,5
+1978,Infectious Diseases,C524204448,Japan,JP,18
+1978,Infectious Diseases,C524204448,Netherlands,NL,3
+1978,Infectious Diseases,C524204448,Pakistan,PK,1
+1978,Infectious Diseases,C524204448,Romania,RO,1
+1978,Infectious Diseases,C524204448,Russian Federation,RU,1
+1978,Infectious Diseases,C524204448,Sweden,SE,3
+1978,Infectious Diseases,C524204448,Singapore,SG,1
+1978,Infectious Diseases,C524204448,Slovakia,SK,3
+1978,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,4
+1978,Infectious Diseases,C524204448,Uganda,UG,1
+1978,Infectious Diseases,C524204448,United States of America,US,81
+1978,Infectious Diseases,C524204448,South Africa,ZA,2
+1978,Infectious Diseases,C524204448,Zambia,ZM,1
+1978,Quantum Computing,C58053490,Canada,CA,3
+1978,Quantum Computing,C58053490,Switzerland,CH,1
+1978,Quantum Computing,C58053490,China,CN,1
+1978,Quantum Computing,C58053490,Germany,DE,8
+1978,Quantum Computing,C58053490,France,FR,1
+1978,Quantum Computing,C58053490,Netherlands,NL,1
+1978,Quantum Computing,C58053490,Poland,PL,1
+1978,Quantum Computing,C58053490,Russian Federation,RU,1
+1978,Quantum Computing,C58053490,Slovakia,SK,1
+1978,Quantum Computing,C58053490,Ukraine,UA,1
+1978,Quantum Computing,C58053490,United States of America,US,7
+1978,Renewable Energy,C188573790,Austria,AT,4
+1978,Renewable Energy,C188573790,Australia,AU,4
+1978,Renewable Energy,C188573790,Belgium,BE,2
+1978,Renewable Energy,C188573790,Brazil,BR,1
+1978,Renewable Energy,C188573790,Canada,CA,12
+1978,Renewable Energy,C188573790,Switzerland,CH,2
+1978,Renewable Energy,C188573790,Germany,DE,4
+1978,Renewable Energy,C188573790,Denmark,DK,2
+1978,Renewable Energy,C188573790,France,FR,6
+1978,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,22
+1978,Renewable Energy,C188573790,Greece,GR,2
+1978,Renewable Energy,C188573790,Israel,IL,1
+1978,Renewable Energy,C188573790,India,IN,3
+1978,Renewable Energy,C188573790,Italy,IT,3
+1978,Renewable Energy,C188573790,Japan,JP,1
+1978,Renewable Energy,C188573790,Malawi,MW,1
+1978,Renewable Energy,C188573790,Malaysia,MY,2
+1978,Renewable Energy,C188573790,Netherlands,NL,1
+1978,Renewable Energy,C188573790,Norway,NO,1
+1978,Renewable Energy,C188573790,New Zealand,NZ,1
+1978,Renewable Energy,C188573790,Russian Federation,RU,4
+1978,Renewable Energy,C188573790,Sweden,SE,1
+1978,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1978,Renewable Energy,C188573790,United States of America,US,79
+1978,Robotics & Automation,C34413123,Australia,AU,1
+1978,Robotics & Automation,C34413123,France,FR,1
+1978,Robotics & Automation,C34413123,Japan,JP,1
+1978,Robotics & Automation,C34413123,Portugal,PT,2
+1978,Robotics & Automation,C34413123,United States of America,US,2
+1979,AI & Machine Learning,C119857082,Argentina,AR,1
+1979,AI & Machine Learning,C119857082,Austria,AT,14
+1979,AI & Machine Learning,C119857082,Australia,AU,97
+1979,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1979,AI & Machine Learning,C119857082,Bangladesh,BD,1
+1979,AI & Machine Learning,C119857082,Belgium,BE,18
+1979,AI & Machine Learning,C119857082,Bulgaria,BG,5
+1979,AI & Machine Learning,C119857082,Brazil,BR,16
+1979,AI & Machine Learning,C119857082,Belarus,BY,3
+1979,AI & Machine Learning,C119857082,Canada,CA,181
+1979,AI & Machine Learning,C119857082,Switzerland,CH,25
+1979,AI & Machine Learning,C119857082,Chile,CL,3
+1979,AI & Machine Learning,C119857082,China,CN,11
+1979,AI & Machine Learning,C119857082,Colombia,CO,1
+1979,AI & Machine Learning,C119857082,Cuba,CU,1
+1979,AI & Machine Learning,C119857082,Czechia,CZ,18
+1979,AI & Machine Learning,C119857082,Germany,DE,145
+1979,AI & Machine Learning,C119857082,Denmark,DK,16
+1979,AI & Machine Learning,C119857082,Algeria,DZ,1
+1979,AI & Machine Learning,C119857082,Estonia,EE,1
+1979,AI & Machine Learning,C119857082,Egypt,EG,6
+1979,AI & Machine Learning,C119857082,Spain,ES,14
+1979,AI & Machine Learning,C119857082,Finland,FI,6
+1979,AI & Machine Learning,C119857082,Fiji,FJ,1
+1979,AI & Machine Learning,C119857082,France,FR,81
+1979,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,311
+1979,AI & Machine Learning,C119857082,Ghana,GH,6
+1979,AI & Machine Learning,C119857082,Greece,GR,14
+1979,AI & Machine Learning,C119857082,Guatemala,GT,1
+1979,AI & Machine Learning,C119857082,Guam,GU,1
+1979,AI & Machine Learning,C119857082,Hong Kong,HK,4
+1979,AI & Machine Learning,C119857082,Hungary,HU,8
+1979,AI & Machine Learning,C119857082,Indonesia,ID,1
+1979,AI & Machine Learning,C119857082,Ireland,IE,8
+1979,AI & Machine Learning,C119857082,Israel,IL,29
+1979,AI & Machine Learning,C119857082,India,IN,105
+1979,AI & Machine Learning,C119857082,Iraq,IQ,4
+1979,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,7
+1979,AI & Machine Learning,C119857082,Iceland,IS,1
+1979,AI & Machine Learning,C119857082,Italy,IT,31
+1979,AI & Machine Learning,C119857082,Jamaica,JM,2
+1979,AI & Machine Learning,C119857082,Japan,JP,155
+1979,AI & Machine Learning,C119857082,Kenya,KE,1
+1979,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1
+1979,AI & Machine Learning,C119857082,Lithuania,LT,1
+1979,AI & Machine Learning,C119857082,Latvia,LV,3
+1979,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+1979,AI & Machine Learning,C119857082,Mexico,MX,5
+1979,AI & Machine Learning,C119857082,Malaysia,MY,3
+1979,AI & Machine Learning,C119857082,Nigeria,NG,7
+1979,AI & Machine Learning,C119857082,Netherlands,NL,54
+1979,AI & Machine Learning,C119857082,Norway,NO,9
+1979,AI & Machine Learning,C119857082,New Zealand,NZ,9
+1979,AI & Machine Learning,C119857082,Oman,OM,1
+1979,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1979,AI & Machine Learning,C119857082,Philippines,PH,1
+1979,AI & Machine Learning,C119857082,Poland,PL,20
+1979,AI & Machine Learning,C119857082,Portugal,PT,5
+1979,AI & Machine Learning,C119857082,Romania,RO,4
+1979,AI & Machine Learning,C119857082,Serbia,RS,9
+1979,AI & Machine Learning,C119857082,Russian Federation,RU,54
+1979,AI & Machine Learning,C119857082,Saudi Arabia,SA,3
+1979,AI & Machine Learning,C119857082,Sweden,SE,31
+1979,AI & Machine Learning,C119857082,Singapore,SG,1
+1979,AI & Machine Learning,C119857082,Slovenia,SI,1
+1979,AI & Machine Learning,C119857082,Slovakia,SK,3
+1979,AI & Machine Learning,C119857082,South Sudan,SS,6
+1979,AI & Machine Learning,C119857082,Tunisia,TN,1
+1979,AI & Machine Learning,C119857082,Turkey,TR,4
+1979,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,9
+1979,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1979,AI & Machine Learning,C119857082,Ukraine,UA,6
+1979,AI & Machine Learning,C119857082,United States of America,US,1548
+1979,AI & Machine Learning,C119857082,Uzbekistan,UZ,3
+1979,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,2
+1979,AI & Machine Learning,C119857082,South Africa,ZA,15
+1979,AI & Machine Learning,C119857082,Zambia,ZM,3
+1979,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1979,CRISPR & Genomics,C98108389,Italy,IT,1
+1979,CRISPR & Genomics,C98108389,Poland,PL,1
+1979,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1979,CRISPR & Genomics,C98108389,United States of America,US,3
+1979,Data Science & Big Data,C2522767166,Armenia,AM,1
+1979,Data Science & Big Data,C2522767166,Austria,AT,6
+1979,Data Science & Big Data,C2522767166,Australia,AU,16
+1979,Data Science & Big Data,C2522767166,Azerbaijan,AZ,1
+1979,Data Science & Big Data,C2522767166,Bangladesh,BD,1
+1979,Data Science & Big Data,C2522767166,Belgium,BE,8
+1979,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1979,Data Science & Big Data,C2522767166,Brazil,BR,2
+1979,Data Science & Big Data,C2522767166,Canada,CA,39
+1979,Data Science & Big Data,C2522767166,Switzerland,CH,9
+1979,Data Science & Big Data,C2522767166,China,CN,4
+1979,Data Science & Big Data,C2522767166,Czechia,CZ,3
+1979,Data Science & Big Data,C2522767166,Germany,DE,9
+1979,Data Science & Big Data,C2522767166,Denmark,DK,1
+1979,Data Science & Big Data,C2522767166,Egypt,EG,1
+1979,Data Science & Big Data,C2522767166,Finland,FI,1
+1979,Data Science & Big Data,C2522767166,France,FR,16
+1979,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,345
+1979,Data Science & Big Data,C2522767166,Ghana,GH,1
+1979,Data Science & Big Data,C2522767166,Croatia,HR,2
+1979,Data Science & Big Data,C2522767166,Hungary,HU,1
+1979,Data Science & Big Data,C2522767166,Ireland,IE,1
+1979,Data Science & Big Data,C2522767166,Israel,IL,4
+1979,Data Science & Big Data,C2522767166,India,IN,6
+1979,Data Science & Big Data,C2522767166,Italy,IT,4
+1979,Data Science & Big Data,C2522767166,Jamaica,JM,4
+1979,Data Science & Big Data,C2522767166,Japan,JP,9
+1979,Data Science & Big Data,C2522767166,Libya,LY,1
+1979,Data Science & Big Data,C2522767166,Malta,MT,1
+1979,Data Science & Big Data,C2522767166,Mexico,MX,7
+1979,Data Science & Big Data,C2522767166,Malaysia,MY,2
+1979,Data Science & Big Data,C2522767166,Nigeria,NG,3
+1979,Data Science & Big Data,C2522767166,Netherlands,NL,16
+1979,Data Science & Big Data,C2522767166,Norway,NO,2
+1979,Data Science & Big Data,C2522767166,Nepal,NP,1
+1979,Data Science & Big Data,C2522767166,New Zealand,NZ,3
+1979,Data Science & Big Data,C2522767166,Poland,PL,2
+1979,Data Science & Big Data,C2522767166,Portugal,PT,4
+1979,Data Science & Big Data,C2522767166,Romania,RO,1
+1979,Data Science & Big Data,C2522767166,Russian Federation,RU,5
+1979,Data Science & Big Data,C2522767166,Sweden,SE,4
+1979,Data Science & Big Data,C2522767166,Singapore,SG,5
+1979,Data Science & Big Data,C2522767166,Slovenia,SI,1
+1979,Data Science & Big Data,C2522767166,Slovakia,SK,2
+1979,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1979,Data Science & Big Data,C2522767166,Thailand,TH,2
+1979,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1979,Data Science & Big Data,C2522767166,United States of America,US,506
+1979,Data Science & Big Data,C2522767166,Samoa,WS,1
+1979,Data Science & Big Data,C2522767166,South Africa,ZA,8
+1979,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1979,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1979,Infectious Diseases,C524204448,Argentina,AR,1
+1979,Infectious Diseases,C524204448,Austria,AT,1
+1979,Infectious Diseases,C524204448,Australia,AU,4
+1979,Infectious Diseases,C524204448,Belgium,BE,2
+1979,Infectious Diseases,C524204448,Canada,CA,5
+1979,Infectious Diseases,C524204448,Switzerland,CH,4
+1979,Infectious Diseases,C524204448,China,CN,2
+1979,Infectious Diseases,C524204448,Czechia,CZ,1
+1979,Infectious Diseases,C524204448,Germany,DE,11
+1979,Infectious Diseases,C524204448,Finland,FI,3
+1979,Infectious Diseases,C524204448,France,FR,6
+1979,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,29
+1979,Infectious Diseases,C524204448,Hong Kong,HK,3
+1979,Infectious Diseases,C524204448,Hungary,HU,1
+1979,Infectious Diseases,C524204448,India,IN,2
+1979,Infectious Diseases,C524204448,Italy,IT,3
+1979,Infectious Diseases,C524204448,Japan,JP,20
+1979,Infectious Diseases,C524204448,Mexico,MX,1
+1979,Infectious Diseases,C524204448,Netherlands,NL,7
+1979,Infectious Diseases,C524204448,New Zealand,NZ,2
+1979,Infectious Diseases,C524204448,Russian Federation,RU,1
+1979,Infectious Diseases,C524204448,Sweden,SE,1
+1979,Infectious Diseases,C524204448,Slovakia,SK,1
+1979,Infectious Diseases,C524204448,Senegal,SN,1
+1979,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,1
+1979,Infectious Diseases,C524204448,United States of America,US,105
+1979,Infectious Diseases,C524204448,Viet Nam,VN,1
+1979,Quantum Computing,C58053490,Belgium,BE,1
+1979,Quantum Computing,C58053490,Canada,CA,2
+1979,Quantum Computing,C58053490,Germany,DE,4
+1979,Quantum Computing,C58053490,Japan,JP,1
+1979,Quantum Computing,C58053490,Portugal,PT,1
+1979,Quantum Computing,C58053490,Russian Federation,RU,1
+1979,Quantum Computing,C58053490,Slovakia,SK,1
+1979,Quantum Computing,C58053490,United States of America,US,4
+1979,Renewable Energy,C188573790,Austria,AT,2
+1979,Renewable Energy,C188573790,Australia,AU,3
+1979,Renewable Energy,C188573790,Belgium,BE,1
+1979,Renewable Energy,C188573790,Brazil,BR,1
+1979,Renewable Energy,C188573790,Belarus,BY,1
+1979,Renewable Energy,C188573790,Canada,CA,10
+1979,Renewable Energy,C188573790,Switzerland,CH,1
+1979,Renewable Energy,C188573790,China,CN,4
+1979,Renewable Energy,C188573790,Germany,DE,6
+1979,Renewable Energy,C188573790,Denmark,DK,1
+1979,Renewable Energy,C188573790,France,FR,5
+1979,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,26
+1979,Renewable Energy,C188573790,Georgia,GE,1
+1979,Renewable Energy,C188573790,Ireland,IE,1
+1979,Renewable Energy,C188573790,Israel,IL,2
+1979,Renewable Energy,C188573790,India,IN,2
+1979,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,1
+1979,Renewable Energy,C188573790,Italy,IT,1
+1979,Renewable Energy,C188573790,Japan,JP,5
+1979,Renewable Energy,C188573790,Luxembourg,LU,1
+1979,Renewable Energy,C188573790,Latvia,LV,1
+1979,Renewable Energy,C188573790,Mexico,MX,3
+1979,Renewable Energy,C188573790,Malaysia,MY,1
+1979,Renewable Energy,C188573790,Netherlands,NL,1
+1979,Renewable Energy,C188573790,New Zealand,NZ,1
+1979,Renewable Energy,C188573790,Russian Federation,RU,8
+1979,Renewable Energy,C188573790,Sweden,SE,3
+1979,Renewable Energy,C188573790,Slovakia,SK,1
+1979,Renewable Energy,C188573790,Syrian Arab Republic,SY,1
+1979,Renewable Energy,C188573790,Thailand,TH,1
+1979,Renewable Energy,C188573790,United States of America,US,123
+1979,Renewable Energy,C188573790,South Africa,ZA,2
+1979,Robotics & Automation,C34413123,Brazil,BR,1
+1979,Robotics & Automation,C34413123,France,FR,1
+1979,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,2
+1979,Robotics & Automation,C34413123,Italy,IT,3
+1979,Robotics & Automation,C34413123,United States of America,US,7
+1980,AI & Machine Learning,C119857082,United Arab Emirates,AE,2
+1980,AI & Machine Learning,C119857082,Argentina,AR,3
+1980,AI & Machine Learning,C119857082,Austria,AT,14
+1980,AI & Machine Learning,C119857082,Australia,AU,104
+1980,AI & Machine Learning,C119857082,Belgium,BE,33
+1980,AI & Machine Learning,C119857082,Bulgaria,BG,3
+1980,AI & Machine Learning,C119857082,Burundi,BI,1
+1980,AI & Machine Learning,C119857082,Benin,BJ,1
+1980,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1980,AI & Machine Learning,C119857082,Brazil,BR,16
+1980,AI & Machine Learning,C119857082,Belarus,BY,2
+1980,AI & Machine Learning,C119857082,Canada,CA,188
+1980,AI & Machine Learning,C119857082,Switzerland,CH,45
+1980,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1980,AI & Machine Learning,C119857082,Cameroon,CM,1
+1980,AI & Machine Learning,C119857082,China,CN,16
+1980,AI & Machine Learning,C119857082,Cuba,CU,1
+1980,AI & Machine Learning,C119857082,Cyprus,CY,1
+1980,AI & Machine Learning,C119857082,Czechia,CZ,19
+1980,AI & Machine Learning,C119857082,Germany,DE,113
+1980,AI & Machine Learning,C119857082,Denmark,DK,12
+1980,AI & Machine Learning,C119857082,Estonia,EE,1
+1980,AI & Machine Learning,C119857082,Egypt,EG,14
+1980,AI & Machine Learning,C119857082,Spain,ES,8
+1980,AI & Machine Learning,C119857082,Finland,FI,11
+1980,AI & Machine Learning,C119857082,Fiji,FJ,1
+1980,AI & Machine Learning,C119857082,France,FR,88
+1980,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,322
+1980,AI & Machine Learning,C119857082,Ghana,GH,3
+1980,AI & Machine Learning,C119857082,Greece,GR,11
+1980,AI & Machine Learning,C119857082,Hong Kong,HK,2
+1980,AI & Machine Learning,C119857082,Croatia,HR,3
+1980,AI & Machine Learning,C119857082,Hungary,HU,13
+1980,AI & Machine Learning,C119857082,Indonesia,ID,1
+1980,AI & Machine Learning,C119857082,Ireland,IE,9
+1980,AI & Machine Learning,C119857082,Israel,IL,46
+1980,AI & Machine Learning,C119857082,India,IN,83
+1980,AI & Machine Learning,C119857082,Iraq,IQ,2
+1980,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2
+1980,AI & Machine Learning,C119857082,Iceland,IS,1
+1980,AI & Machine Learning,C119857082,Italy,IT,60
+1980,AI & Machine Learning,C119857082,Japan,JP,155
+1980,AI & Machine Learning,C119857082,Kenya,KE,2
+1980,AI & Machine Learning,C119857082,"Korea, Republic of",KR,3
+1980,AI & Machine Learning,C119857082,Latvia,LV,2
+1980,AI & Machine Learning,C119857082,Morocco,MA,2
+1980,AI & Machine Learning,C119857082,North Macedonia,MK,1
+1980,AI & Machine Learning,C119857082,Mexico,MX,6
+1980,AI & Machine Learning,C119857082,Malaysia,MY,1
+1980,AI & Machine Learning,C119857082,Nigeria,NG,8
+1980,AI & Machine Learning,C119857082,Netherlands,NL,60
+1980,AI & Machine Learning,C119857082,Norway,NO,13
+1980,AI & Machine Learning,C119857082,New Zealand,NZ,13
+1980,AI & Machine Learning,C119857082,Pakistan,PK,2
+1980,AI & Machine Learning,C119857082,Poland,PL,32
+1980,AI & Machine Learning,C119857082,Portugal,PT,2
+1980,AI & Machine Learning,C119857082,Qatar,QA,1
+1980,AI & Machine Learning,C119857082,Romania,RO,4
+1980,AI & Machine Learning,C119857082,Serbia,RS,7
+1980,AI & Machine Learning,C119857082,Russian Federation,RU,48
+1980,AI & Machine Learning,C119857082,Saudi Arabia,SA,2
+1980,AI & Machine Learning,C119857082,Sudan,SD,1
+1980,AI & Machine Learning,C119857082,Sweden,SE,34
+1980,AI & Machine Learning,C119857082,Singapore,SG,4
+1980,AI & Machine Learning,C119857082,Slovenia,SI,1
+1980,AI & Machine Learning,C119857082,Slovakia,SK,4
+1980,AI & Machine Learning,C119857082,Thailand,TH,2
+1980,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1980,AI & Machine Learning,C119857082,Tunisia,TN,2
+1980,AI & Machine Learning,C119857082,Turkey,TR,2
+1980,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,9
+1980,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,3
+1980,AI & Machine Learning,C119857082,Ukraine,UA,3
+1980,AI & Machine Learning,C119857082,Uganda,UG,1
+1980,AI & Machine Learning,C119857082,United States of America,US,1689
+1980,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,3
+1980,AI & Machine Learning,C119857082,Viet Nam,VN,1
+1980,AI & Machine Learning,C119857082,South Africa,ZA,14
+1980,CRISPR & Genomics,C98108389,France,FR,1
+1980,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,2
+1980,CRISPR & Genomics,C98108389,United States of America,US,1
+1980,Data Science & Big Data,C2522767166,Austria,AT,4
+1980,Data Science & Big Data,C2522767166,Australia,AU,28
+1980,Data Science & Big Data,C2522767166,Belgium,BE,4
+1980,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1980,Data Science & Big Data,C2522767166,Brazil,BR,1
+1980,Data Science & Big Data,C2522767166,Belarus,BY,1
+1980,Data Science & Big Data,C2522767166,Canada,CA,45
+1980,Data Science & Big Data,C2522767166,Switzerland,CH,8
+1980,Data Science & Big Data,C2522767166,Chile,CL,2
+1980,Data Science & Big Data,C2522767166,Cameroon,CM,1
+1980,Data Science & Big Data,C2522767166,China,CN,3
+1980,Data Science & Big Data,C2522767166,Colombia,CO,1
+1980,Data Science & Big Data,C2522767166,Czechia,CZ,3
+1980,Data Science & Big Data,C2522767166,Germany,DE,13
+1980,Data Science & Big Data,C2522767166,Denmark,DK,1
+1980,Data Science & Big Data,C2522767166,Algeria,DZ,2
+1980,Data Science & Big Data,C2522767166,Egypt,EG,4
+1980,Data Science & Big Data,C2522767166,Finland,FI,2
+1980,Data Science & Big Data,C2522767166,France,FR,15
+1980,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,356
+1980,Data Science & Big Data,C2522767166,Ghana,GH,2
+1980,Data Science & Big Data,C2522767166,Hungary,HU,3
+1980,Data Science & Big Data,C2522767166,Ireland,IE,4
+1980,Data Science & Big Data,C2522767166,Israel,IL,2
+1980,Data Science & Big Data,C2522767166,India,IN,8
+1980,Data Science & Big Data,C2522767166,Iceland,IS,1
+1980,Data Science & Big Data,C2522767166,Italy,IT,9
+1980,Data Science & Big Data,C2522767166,Jamaica,JM,1
+1980,Data Science & Big Data,C2522767166,Japan,JP,14
+1980,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1980,Data Science & Big Data,C2522767166,Mexico,MX,5
+1980,Data Science & Big Data,C2522767166,Nigeria,NG,2
+1980,Data Science & Big Data,C2522767166,Netherlands,NL,9
+1980,Data Science & Big Data,C2522767166,Norway,NO,4
+1980,Data Science & Big Data,C2522767166,New Zealand,NZ,3
+1980,Data Science & Big Data,C2522767166,Pakistan,PK,3
+1980,Data Science & Big Data,C2522767166,Poland,PL,1
+1980,Data Science & Big Data,C2522767166,Russian Federation,RU,2
+1980,Data Science & Big Data,C2522767166,Sweden,SE,5
+1980,Data Science & Big Data,C2522767166,Singapore,SG,5
+1980,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1980,Data Science & Big Data,C2522767166,Thailand,TH,2
+1980,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,1
+1980,Data Science & Big Data,C2522767166,United States of America,US,515
+1980,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1980,Data Science & Big Data,C2522767166,South Africa,ZA,5
+1980,Infectious Diseases,C524204448,United Arab Emirates,AE,5
+1980,Infectious Diseases,C524204448,Australia,AU,7
+1980,Infectious Diseases,C524204448,Belgium,BE,4
+1980,Infectious Diseases,C524204448,Brazil,BR,2
+1980,Infectious Diseases,C524204448,Canada,CA,7
+1980,Infectious Diseases,C524204448,Switzerland,CH,4
+1980,Infectious Diseases,C524204448,Czechia,CZ,1
+1980,Infectious Diseases,C524204448,Germany,DE,11
+1980,Infectious Diseases,C524204448,Finland,FI,2
+1980,Infectious Diseases,C524204448,France,FR,4
+1980,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,40
+1980,Infectious Diseases,C524204448,Hungary,HU,2
+1980,Infectious Diseases,C524204448,Israel,IL,2
+1980,Infectious Diseases,C524204448,India,IN,1
+1980,Infectious Diseases,C524204448,"Iran, Islamic Republic of",IR,1
+1980,Infectious Diseases,C524204448,Italy,IT,5
+1980,Infectious Diseases,C524204448,Japan,JP,15
+1980,Infectious Diseases,C524204448,"Korea, Republic of",KR,2
+1980,Infectious Diseases,C524204448,Libya,LY,1
+1980,Infectious Diseases,C524204448,Mexico,MX,1
+1980,Infectious Diseases,C524204448,Netherlands,NL,2
+1980,Infectious Diseases,C524204448,Norway,NO,1
+1980,Infectious Diseases,C524204448,Nepal,NP,1
+1980,Infectious Diseases,C524204448,New Zealand,NZ,2
+1980,Infectious Diseases,C524204448,Peru,PE,1
+1980,Infectious Diseases,C524204448,Philippines,PH,2
+1980,Infectious Diseases,C524204448,Pakistan,PK,2
+1980,Infectious Diseases,C524204448,Poland,PL,2
+1980,Infectious Diseases,C524204448,Romania,RO,1
+1980,Infectious Diseases,C524204448,Russian Federation,RU,5
+1980,Infectious Diseases,C524204448,Sweden,SE,4
+1980,Infectious Diseases,C524204448,Slovakia,SK,1
+1980,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,2
+1980,Infectious Diseases,C524204448,United States of America,US,123
+1980,Infectious Diseases,C524204448,South Africa,ZA,1
+1980,Quantum Computing,C58053490,Czechia,CZ,1
+1980,Quantum Computing,C58053490,Germany,DE,5
+1980,Quantum Computing,C58053490,Denmark,DK,1
+1980,Quantum Computing,C58053490,Finland,FI,2
+1980,Quantum Computing,C58053490,France,FR,2
+1980,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,1
+1980,Quantum Computing,C58053490,Italy,IT,1
+1980,Quantum Computing,C58053490,Japan,JP,2
+1980,Quantum Computing,C58053490,Poland,PL,2
+1980,Quantum Computing,C58053490,Sweden,SE,1
+1980,Quantum Computing,C58053490,Slovakia,SK,1
+1980,Quantum Computing,C58053490,United States of America,US,6
+1980,Renewable Energy,C188573790,Austria,AT,3
+1980,Renewable Energy,C188573790,Australia,AU,9
+1980,Renewable Energy,C188573790,Brazil,BR,1
+1980,Renewable Energy,C188573790,Canada,CA,15
+1980,Renewable Energy,C188573790,Switzerland,CH,1
+1980,Renewable Energy,C188573790,China,CN,2
+1980,Renewable Energy,C188573790,Germany,DE,6
+1980,Renewable Energy,C188573790,Denmark,DK,3
+1980,Renewable Energy,C188573790,Egypt,EG,1
+1980,Renewable Energy,C188573790,Ethiopia,ET,1
+1980,Renewable Energy,C188573790,Finland,FI,2
+1980,Renewable Energy,C188573790,France,FR,5
+1980,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,49
+1980,Renewable Energy,C188573790,Greece,GR,1
+1980,Renewable Energy,C188573790,Indonesia,ID,1
+1980,Renewable Energy,C188573790,Israel,IL,1
+1980,Renewable Energy,C188573790,India,IN,3
+1980,Renewable Energy,C188573790,Italy,IT,4
+1980,Renewable Energy,C188573790,Japan,JP,2
+1980,Renewable Energy,C188573790,Netherlands,NL,4
+1980,Renewable Energy,C188573790,Puerto Rico,PR,1
+1980,Renewable Energy,C188573790,Romania,RO,1
+1980,Renewable Energy,C188573790,Russian Federation,RU,3
+1980,Renewable Energy,C188573790,Saudi Arabia,SA,3
+1980,Renewable Energy,C188573790,Sweden,SE,4
+1980,Renewable Energy,C188573790,Thailand,TH,1
+1980,Renewable Energy,C188573790,Tunisia,TN,2
+1980,Renewable Energy,C188573790,Turkey,TR,2
+1980,Renewable Energy,C188573790,United States of America,US,124
+1980,Renewable Energy,C188573790,South Africa,ZA,2
+1980,Robotics & Automation,C34413123,France,FR,1
+1980,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,4
+1980,Robotics & Automation,C34413123,Italy,IT,2
+1980,Robotics & Automation,C34413123,Serbia,RS,1
+1980,Robotics & Automation,C34413123,United States of America,US,3
+1981,AI & Machine Learning,C119857082,Armenia,AM,1
+1981,AI & Machine Learning,C119857082,Argentina,AR,3
+1981,AI & Machine Learning,C119857082,Austria,AT,17
+1981,AI & Machine Learning,C119857082,Australia,AU,93
+1981,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1981,AI & Machine Learning,C119857082,Bangladesh,BD,2
+1981,AI & Machine Learning,C119857082,Belgium,BE,39
+1981,AI & Machine Learning,C119857082,Brazil,BR,22
+1981,AI & Machine Learning,C119857082,Belize,BZ,1
+1981,AI & Machine Learning,C119857082,Canada,CA,206
+1981,AI & Machine Learning,C119857082,Switzerland,CH,37
+1981,AI & Machine Learning,C119857082,Chile,CL,2
+1981,AI & Machine Learning,C119857082,China,CN,37
+1981,AI & Machine Learning,C119857082,Colombia,CO,1
+1981,AI & Machine Learning,C119857082,Cuba,CU,1
+1981,AI & Machine Learning,C119857082,Cyprus,CY,1
+1981,AI & Machine Learning,C119857082,Czechia,CZ,11
+1981,AI & Machine Learning,C119857082,Germany,DE,130
+1981,AI & Machine Learning,C119857082,Denmark,DK,16
+1981,AI & Machine Learning,C119857082,Algeria,DZ,1
+1981,AI & Machine Learning,C119857082,Estonia,EE,1
+1981,AI & Machine Learning,C119857082,Egypt,EG,11
+1981,AI & Machine Learning,C119857082,Spain,ES,20
+1981,AI & Machine Learning,C119857082,Finland,FI,10
+1981,AI & Machine Learning,C119857082,France,FR,97
+1981,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,356
+1981,AI & Machine Learning,C119857082,Ghana,GH,3
+1981,AI & Machine Learning,C119857082,Greece,GR,15
+1981,AI & Machine Learning,C119857082,Guatemala,GT,1
+1981,AI & Machine Learning,C119857082,Hong Kong,HK,6
+1981,AI & Machine Learning,C119857082,Croatia,HR,2
+1981,AI & Machine Learning,C119857082,Hungary,HU,13
+1981,AI & Machine Learning,C119857082,Indonesia,ID,2
+1981,AI & Machine Learning,C119857082,Ireland,IE,5
+1981,AI & Machine Learning,C119857082,Israel,IL,71
+1981,AI & Machine Learning,C119857082,India,IN,97
+1981,AI & Machine Learning,C119857082,Iraq,IQ,4
+1981,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3
+1981,AI & Machine Learning,C119857082,Iceland,IS,2
+1981,AI & Machine Learning,C119857082,Italy,IT,72
+1981,AI & Machine Learning,C119857082,Jordan,JO,2
+1981,AI & Machine Learning,C119857082,Japan,JP,198
+1981,AI & Machine Learning,C119857082,Kenya,KE,1
+1981,AI & Machine Learning,C119857082,Cambodia,KH,1
+1981,AI & Machine Learning,C119857082,"Korea, Republic of",KR,6
+1981,AI & Machine Learning,C119857082,Latvia,LV,3
+1981,AI & Machine Learning,C119857082,Libya,LY,1
+1981,AI & Machine Learning,C119857082,Mali,ML,1
+1981,AI & Machine Learning,C119857082,Mauritius,MU,1
+1981,AI & Machine Learning,C119857082,Malawi,MW,2
+1981,AI & Machine Learning,C119857082,Mexico,MX,6
+1981,AI & Machine Learning,C119857082,Malaysia,MY,3
+1981,AI & Machine Learning,C119857082,Niger,NE,1
+1981,AI & Machine Learning,C119857082,Nigeria,NG,5
+1981,AI & Machine Learning,C119857082,Netherlands,NL,68
+1981,AI & Machine Learning,C119857082,Norway,NO,16
+1981,AI & Machine Learning,C119857082,Nepal,NP,1
+1981,AI & Machine Learning,C119857082,New Zealand,NZ,22
+1981,AI & Machine Learning,C119857082,Panama,PA,2
+1981,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1981,AI & Machine Learning,C119857082,Philippines,PH,2
+1981,AI & Machine Learning,C119857082,Pakistan,PK,2
+1981,AI & Machine Learning,C119857082,Poland,PL,34
+1981,AI & Machine Learning,C119857082,Portugal,PT,2
+1981,AI & Machine Learning,C119857082,Paraguay,PY,1
+1981,AI & Machine Learning,C119857082,Qatar,QA,1
+1981,AI & Machine Learning,C119857082,Romania,RO,4
+1981,AI & Machine Learning,C119857082,Serbia,RS,5
+1981,AI & Machine Learning,C119857082,Russian Federation,RU,40
+1981,AI & Machine Learning,C119857082,Saudi Arabia,SA,1
+1981,AI & Machine Learning,C119857082,Sudan,SD,2
+1981,AI & Machine Learning,C119857082,Sweden,SE,36
+1981,AI & Machine Learning,C119857082,Singapore,SG,6
+1981,AI & Machine Learning,C119857082,Slovenia,SI,6
+1981,AI & Machine Learning,C119857082,Slovakia,SK,5
+1981,AI & Machine Learning,C119857082,Senegal,SN,1
+1981,AI & Machine Learning,C119857082,South Sudan,SS,2
+1981,AI & Machine Learning,C119857082,Thailand,TH,3
+1981,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1981,AI & Machine Learning,C119857082,Turkey,TR,7
+1981,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,13
+1981,AI & Machine Learning,C119857082,Ukraine,UA,3
+1981,AI & Machine Learning,C119857082,United States of America,US,1886
+1981,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1981,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,3
+1981,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,1
+1981,AI & Machine Learning,C119857082,South Africa,ZA,14
+1981,CRISPR & Genomics,C98108389,France,FR,2
+1981,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1981,CRISPR & Genomics,C98108389,United States of America,US,1
+1981,Data Science & Big Data,C2522767166,Austria,AT,3
+1981,Data Science & Big Data,C2522767166,Australia,AU,28
+1981,Data Science & Big Data,C2522767166,Bangladesh,BD,1
+1981,Data Science & Big Data,C2522767166,Belgium,BE,5
+1981,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1981,Data Science & Big Data,C2522767166,Brazil,BR,2
+1981,Data Science & Big Data,C2522767166,Belarus,BY,2
+1981,Data Science & Big Data,C2522767166,Canada,CA,48
+1981,Data Science & Big Data,C2522767166,Switzerland,CH,9
+1981,Data Science & Big Data,C2522767166,China,CN,5
+1981,Data Science & Big Data,C2522767166,Colombia,CO,1
+1981,Data Science & Big Data,C2522767166,Czechia,CZ,6
+1981,Data Science & Big Data,C2522767166,Germany,DE,20
+1981,Data Science & Big Data,C2522767166,Denmark,DK,3
+1981,Data Science & Big Data,C2522767166,Egypt,EG,3
+1981,Data Science & Big Data,C2522767166,Finland,FI,1
+1981,Data Science & Big Data,C2522767166,France,FR,16
+1981,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,364
+1981,Data Science & Big Data,C2522767166,Greece,GR,2
+1981,Data Science & Big Data,C2522767166,Hong Kong,HK,1
+1981,Data Science & Big Data,C2522767166,Hungary,HU,3
+1981,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1981,Data Science & Big Data,C2522767166,Ireland,IE,4
+1981,Data Science & Big Data,C2522767166,Israel,IL,3
+1981,Data Science & Big Data,C2522767166,India,IN,11
+1981,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1981,Data Science & Big Data,C2522767166,Italy,IT,8
+1981,Data Science & Big Data,C2522767166,Jamaica,JM,1
+1981,Data Science & Big Data,C2522767166,Japan,JP,17
+1981,Data Science & Big Data,C2522767166,Kenya,KE,1
+1981,Data Science & Big Data,C2522767166,Latvia,LV,1
+1981,Data Science & Big Data,C2522767166,Mexico,MX,7
+1981,Data Science & Big Data,C2522767166,Netherlands,NL,16
+1981,Data Science & Big Data,C2522767166,Norway,NO,4
+1981,Data Science & Big Data,C2522767166,New Zealand,NZ,3
+1981,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1981,Data Science & Big Data,C2522767166,Poland,PL,5
+1981,Data Science & Big Data,C2522767166,Puerto Rico,PR,1
+1981,Data Science & Big Data,C2522767166,Portugal,PT,2
+1981,Data Science & Big Data,C2522767166,Russian Federation,RU,6
+1981,Data Science & Big Data,C2522767166,Sweden,SE,5
+1981,Data Science & Big Data,C2522767166,Singapore,SG,2
+1981,Data Science & Big Data,C2522767166,Slovenia,SI,1
+1981,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1981,Data Science & Big Data,C2522767166,South Sudan,SS,3
+1981,Data Science & Big Data,C2522767166,Thailand,TH,2
+1981,Data Science & Big Data,C2522767166,Tunisia,TN,1
+1981,Data Science & Big Data,C2522767166,Turkey,TR,1
+1981,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1981,Data Science & Big Data,C2522767166,Uganda,UG,2
+1981,Data Science & Big Data,C2522767166,United States of America,US,621
+1981,Data Science & Big Data,C2522767166,Uruguay,UY,1
+1981,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,1
+1981,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1981,Data Science & Big Data,C2522767166,South Africa,ZA,4
+1981,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1981,Infectious Diseases,C524204448,Australia,AU,13
+1981,Infectious Diseases,C524204448,Belgium,BE,5
+1981,Infectious Diseases,C524204448,Brazil,BR,1
+1981,Infectious Diseases,C524204448,Canada,CA,15
+1981,Infectious Diseases,C524204448,Switzerland,CH,1
+1981,Infectious Diseases,C524204448,Czechia,CZ,3
+1981,Infectious Diseases,C524204448,Germany,DE,15
+1981,Infectious Diseases,C524204448,Denmark,DK,1
+1981,Infectious Diseases,C524204448,Finland,FI,1
+1981,Infectious Diseases,C524204448,France,FR,7
+1981,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,42
+1981,Infectious Diseases,C524204448,Greece,GR,1
+1981,Infectious Diseases,C524204448,Hungary,HU,2
+1981,Infectious Diseases,C524204448,Ireland,IE,1
+1981,Infectious Diseases,C524204448,Israel,IL,1
+1981,Infectious Diseases,C524204448,"Iran, Islamic Republic of",IR,1
+1981,Infectious Diseases,C524204448,Italy,IT,4
+1981,Infectious Diseases,C524204448,Japan,JP,18
+1981,Infectious Diseases,C524204448,Morocco,MA,1
+1981,Infectious Diseases,C524204448,Netherlands,NL,4
+1981,Infectious Diseases,C524204448,Nepal,NP,1
+1981,Infectious Diseases,C524204448,New Zealand,NZ,1
+1981,Infectious Diseases,C524204448,Puerto Rico,PR,1
+1981,Infectious Diseases,C524204448,Russian Federation,RU,1
+1981,Infectious Diseases,C524204448,Saudi Arabia,SA,1
+1981,Infectious Diseases,C524204448,Sweden,SE,1
+1981,Infectious Diseases,C524204448,Thailand,TH,2
+1981,Infectious Diseases,C524204448,Turkey,TR,1
+1981,Infectious Diseases,C524204448,United States of America,US,141
+1981,Infectious Diseases,C524204448,Zimbabwe,ZW,1
+1981,Quantum Computing,C58053490,Belgium,BE,1
+1981,Quantum Computing,C58053490,Canada,CA,5
+1981,Quantum Computing,C58053490,Germany,DE,7
+1981,Quantum Computing,C58053490,France,FR,3
+1981,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,1
+1981,Quantum Computing,C58053490,Hungary,HU,1
+1981,Quantum Computing,C58053490,Israel,IL,2
+1981,Quantum Computing,C58053490,Italy,IT,4
+1981,Quantum Computing,C58053490,Netherlands,NL,1
+1981,Quantum Computing,C58053490,Serbia,RS,1
+1981,Quantum Computing,C58053490,Russian Federation,RU,1
+1981,Quantum Computing,C58053490,Slovakia,SK,1
+1981,Quantum Computing,C58053490,United States of America,US,20
+1981,Renewable Energy,C188573790,Austria,AT,4
+1981,Renewable Energy,C188573790,Australia,AU,3
+1981,Renewable Energy,C188573790,Bangladesh,BD,1
+1981,Renewable Energy,C188573790,Belgium,BE,5
+1981,Renewable Energy,C188573790,Brunei Darussalam,BN,1
+1981,Renewable Energy,C188573790,Canada,CA,13
+1981,Renewable Energy,C188573790,Switzerland,CH,2
+1981,Renewable Energy,C188573790,China,CN,4
+1981,Renewable Energy,C188573790,Germany,DE,11
+1981,Renewable Energy,C188573790,Denmark,DK,3
+1981,Renewable Energy,C188573790,Egypt,EG,1
+1981,Renewable Energy,C188573790,Finland,FI,1
+1981,Renewable Energy,C188573790,France,FR,5
+1981,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,32
+1981,Renewable Energy,C188573790,Ireland,IE,1
+1981,Renewable Energy,C188573790,India,IN,8
+1981,Renewable Energy,C188573790,Italy,IT,1
+1981,Renewable Energy,C188573790,Japan,JP,7
+1981,Renewable Energy,C188573790,Netherlands,NL,2
+1981,Renewable Energy,C188573790,Norway,NO,1
+1981,Renewable Energy,C188573790,New Zealand,NZ,1
+1981,Renewable Energy,C188573790,Pakistan,PK,1
+1981,Renewable Energy,C188573790,Poland,PL,2
+1981,Renewable Energy,C188573790,Puerto Rico,PR,1
+1981,Renewable Energy,C188573790,Russian Federation,RU,2
+1981,Renewable Energy,C188573790,Sweden,SE,2
+1981,Renewable Energy,C188573790,Singapore,SG,1
+1981,Renewable Energy,C188573790,Thailand,TH,2
+1981,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1981,Renewable Energy,C188573790,United States of America,US,136
+1981,Renewable Energy,C188573790,Zambia,ZM,1
+1981,Robotics & Automation,C34413123,Germany,DE,1
+1981,Robotics & Automation,C34413123,France,FR,1
+1981,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,3
+1981,Robotics & Automation,C34413123,Hungary,HU,1
+1981,Robotics & Automation,C34413123,Italy,IT,1
+1981,Robotics & Automation,C34413123,Japan,JP,2
+1981,Robotics & Automation,C34413123,United States of America,US,12
+1982,AI & Machine Learning,C119857082,United Arab Emirates,AE,1
+1982,AI & Machine Learning,C119857082,Armenia,AM,1
+1982,AI & Machine Learning,C119857082,Argentina,AR,2
+1982,AI & Machine Learning,C119857082,Austria,AT,18
+1982,AI & Machine Learning,C119857082,Australia,AU,114
+1982,AI & Machine Learning,C119857082,Azerbaijan,AZ,2
+1982,AI & Machine Learning,C119857082,Bangladesh,BD,2
+1982,AI & Machine Learning,C119857082,Belgium,BE,27
+1982,AI & Machine Learning,C119857082,Bulgaria,BG,7
+1982,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1982,AI & Machine Learning,C119857082,Brazil,BR,21
+1982,AI & Machine Learning,C119857082,Belarus,BY,1
+1982,AI & Machine Learning,C119857082,Canada,CA,261
+1982,AI & Machine Learning,C119857082,Switzerland,CH,33
+1982,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1982,AI & Machine Learning,C119857082,Chile,CL,3
+1982,AI & Machine Learning,C119857082,China,CN,43
+1982,AI & Machine Learning,C119857082,Colombia,CO,1
+1982,AI & Machine Learning,C119857082,Cuba,CU,1
+1982,AI & Machine Learning,C119857082,Czechia,CZ,17
+1982,AI & Machine Learning,C119857082,Germany,DE,163
+1982,AI & Machine Learning,C119857082,Denmark,DK,16
+1982,AI & Machine Learning,C119857082,Algeria,DZ,4
+1982,AI & Machine Learning,C119857082,Egypt,EG,8
+1982,AI & Machine Learning,C119857082,Spain,ES,11
+1982,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1982,AI & Machine Learning,C119857082,Finland,FI,15
+1982,AI & Machine Learning,C119857082,Fiji,FJ,2
+1982,AI & Machine Learning,C119857082,France,FR,97
+1982,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,340
+1982,AI & Machine Learning,C119857082,Ghana,GH,3
+1982,AI & Machine Learning,C119857082,Greece,GR,9
+1982,AI & Machine Learning,C119857082,Guam,GU,1
+1982,AI & Machine Learning,C119857082,Hong Kong,HK,6
+1982,AI & Machine Learning,C119857082,Croatia,HR,3
+1982,AI & Machine Learning,C119857082,Hungary,HU,14
+1982,AI & Machine Learning,C119857082,Indonesia,ID,1
+1982,AI & Machine Learning,C119857082,Ireland,IE,14
+1982,AI & Machine Learning,C119857082,Israel,IL,58
+1982,AI & Machine Learning,C119857082,India,IN,92
+1982,AI & Machine Learning,C119857082,Iraq,IQ,2
+1982,AI & Machine Learning,C119857082,Italy,IT,70
+1982,AI & Machine Learning,C119857082,Jamaica,JM,2
+1982,AI & Machine Learning,C119857082,Jordan,JO,2
+1982,AI & Machine Learning,C119857082,Japan,JP,171
+1982,AI & Machine Learning,C119857082,Kenya,KE,1
+1982,AI & Machine Learning,C119857082,"Korea, Republic of",KR,11
+1982,AI & Machine Learning,C119857082,Kuwait,KW,2
+1982,AI & Machine Learning,C119857082,Lesotho,LS,2
+1982,AI & Machine Learning,C119857082,Latvia,LV,2
+1982,AI & Machine Learning,C119857082,Morocco,MA,2
+1982,AI & Machine Learning,C119857082,Myanmar,MM,2
+1982,AI & Machine Learning,C119857082,Malawi,MW,1
+1982,AI & Machine Learning,C119857082,Mexico,MX,5
+1982,AI & Machine Learning,C119857082,Malaysia,MY,1
+1982,AI & Machine Learning,C119857082,Nigeria,NG,7
+1982,AI & Machine Learning,C119857082,Netherlands,NL,63
+1982,AI & Machine Learning,C119857082,Norway,NO,20
+1982,AI & Machine Learning,C119857082,New Zealand,NZ,22
+1982,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1982,AI & Machine Learning,C119857082,Pakistan,PK,2
+1982,AI & Machine Learning,C119857082,Poland,PL,16
+1982,AI & Machine Learning,C119857082,Puerto Rico,PR,1
+1982,AI & Machine Learning,C119857082,Portugal,PT,4
+1982,AI & Machine Learning,C119857082,Romania,RO,6
+1982,AI & Machine Learning,C119857082,Serbia,RS,5
+1982,AI & Machine Learning,C119857082,Russian Federation,RU,58
+1982,AI & Machine Learning,C119857082,Saudi Arabia,SA,8
+1982,AI & Machine Learning,C119857082,Sudan,SD,1
+1982,AI & Machine Learning,C119857082,Sweden,SE,31
+1982,AI & Machine Learning,C119857082,Singapore,SG,4
+1982,AI & Machine Learning,C119857082,Slovenia,SI,3
+1982,AI & Machine Learning,C119857082,Slovakia,SK,9
+1982,AI & Machine Learning,C119857082,South Sudan,SS,2
+1982,AI & Machine Learning,C119857082,Thailand,TH,1
+1982,AI & Machine Learning,C119857082,Tunisia,TN,2
+1982,AI & Machine Learning,C119857082,Turkey,TR,7
+1982,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,22
+1982,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1982,AI & Machine Learning,C119857082,Ukraine,UA,5
+1982,AI & Machine Learning,C119857082,Uganda,UG,1
+1982,AI & Machine Learning,C119857082,United States of America,US,1903
+1982,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1982,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,3
+1982,AI & Machine Learning,C119857082,Viet Nam,VN,2
+1982,AI & Machine Learning,C119857082,Yemen,YE,1
+1982,AI & Machine Learning,C119857082,South Africa,ZA,16
+1982,AI & Machine Learning,C119857082,Zambia,ZM,1
+1982,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
+1982,CRISPR & Genomics,C98108389,Germany,DE,1
+1982,Data Science & Big Data,C2522767166,Austria,AT,4
+1982,Data Science & Big Data,C2522767166,Australia,AU,19
+1982,Data Science & Big Data,C2522767166,Belgium,BE,7
+1982,Data Science & Big Data,C2522767166,Bulgaria,BG,1
+1982,Data Science & Big Data,C2522767166,Brunei Darussalam,BN,1
+1982,Data Science & Big Data,C2522767166,Brazil,BR,1
+1982,Data Science & Big Data,C2522767166,Canada,CA,43
+1982,Data Science & Big Data,C2522767166,Switzerland,CH,6
+1982,Data Science & Big Data,C2522767166,Chile,CL,2
+1982,Data Science & Big Data,C2522767166,China,CN,6
+1982,Data Science & Big Data,C2522767166,Cyprus,CY,1
+1982,Data Science & Big Data,C2522767166,Czechia,CZ,5
+1982,Data Science & Big Data,C2522767166,Germany,DE,33
+1982,Data Science & Big Data,C2522767166,Denmark,DK,2
+1982,Data Science & Big Data,C2522767166,Estonia,EE,1
+1982,Data Science & Big Data,C2522767166,Egypt,EG,1
+1982,Data Science & Big Data,C2522767166,Spain,ES,1
+1982,Data Science & Big Data,C2522767166,Finland,FI,4
+1982,Data Science & Big Data,C2522767166,France,FR,19
+1982,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,356
+1982,Data Science & Big Data,C2522767166,Ghana,GH,2
+1982,Data Science & Big Data,C2522767166,Hong Kong,HK,2
+1982,Data Science & Big Data,C2522767166,Croatia,HR,1
+1982,Data Science & Big Data,C2522767166,Hungary,HU,2
+1982,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1982,Data Science & Big Data,C2522767166,Ireland,IE,4
+1982,Data Science & Big Data,C2522767166,Israel,IL,10
+1982,Data Science & Big Data,C2522767166,India,IN,13
+1982,Data Science & Big Data,C2522767166,Italy,IT,11
+1982,Data Science & Big Data,C2522767166,Jamaica,JM,1
+1982,Data Science & Big Data,C2522767166,Japan,JP,8
+1982,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1982,Data Science & Big Data,C2522767166,Latvia,LV,3
+1982,Data Science & Big Data,C2522767166,Mexico,MX,5
+1982,Data Science & Big Data,C2522767166,Nigeria,NG,4
+1982,Data Science & Big Data,C2522767166,Netherlands,NL,19
+1982,Data Science & Big Data,C2522767166,Norway,NO,3
+1982,Data Science & Big Data,C2522767166,New Zealand,NZ,2
+1982,Data Science & Big Data,C2522767166,Philippines,PH,1
+1982,Data Science & Big Data,C2522767166,Poland,PL,3
+1982,Data Science & Big Data,C2522767166,Russian Federation,RU,7
+1982,Data Science & Big Data,C2522767166,Saudi Arabia,SA,1
+1982,Data Science & Big Data,C2522767166,Sweden,SE,5
+1982,Data Science & Big Data,C2522767166,Singapore,SG,1
+1982,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1982,Data Science & Big Data,C2522767166,Slovakia,SK,2
+1982,Data Science & Big Data,C2522767166,Thailand,TH,1
+1982,Data Science & Big Data,C2522767166,Tunisia,TN,2
+1982,Data Science & Big Data,C2522767166,Trinidad and Tobago,TT,1
+1982,Data Science & Big Data,C2522767166,United States of America,US,645
+1982,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1982,Data Science & Big Data,C2522767166,South Africa,ZA,6
+1982,Infectious Diseases,C524204448,United Arab Emirates,AE,2
+1982,Infectious Diseases,C524204448,Armenia,AM,1
+1982,Infectious Diseases,C524204448,Australia,AU,12
+1982,Infectious Diseases,C524204448,Belgium,BE,4
+1982,Infectious Diseases,C524204448,Canada,CA,13
+1982,Infectious Diseases,C524204448,Switzerland,CH,4
+1982,Infectious Diseases,C524204448,China,CN,2
+1982,Infectious Diseases,C524204448,Cuba,CU,1
+1982,Infectious Diseases,C524204448,Germany,DE,12
+1982,Infectious Diseases,C524204448,Finland,FI,3
+1982,Infectious Diseases,C524204448,France,FR,12
+1982,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,39
+1982,Infectious Diseases,C524204448,Hong Kong,HK,2
+1982,Infectious Diseases,C524204448,Croatia,HR,2
+1982,Infectious Diseases,C524204448,Hungary,HU,1
+1982,Infectious Diseases,C524204448,Israel,IL,3
+1982,Infectious Diseases,C524204448,India,IN,3
+1982,Infectious Diseases,C524204448,Italy,IT,5
+1982,Infectious Diseases,C524204448,Japan,JP,21
+1982,Infectious Diseases,C524204448,Luxembourg,LU,1
+1982,Infectious Diseases,C524204448,Mongolia,MN,1
+1982,Infectious Diseases,C524204448,Mexico,MX,1
+1982,Infectious Diseases,C524204448,Nigeria,NG,1
+1982,Infectious Diseases,C524204448,Netherlands,NL,2
+1982,Infectious Diseases,C524204448,Nepal,NP,2
+1982,Infectious Diseases,C524204448,Pakistan,PK,1
+1982,Infectious Diseases,C524204448,Russian Federation,RU,3
+1982,Infectious Diseases,C524204448,Sweden,SE,2
+1982,Infectious Diseases,C524204448,Slovakia,SK,1
+1982,Infectious Diseases,C524204448,Thailand,TH,1
+1982,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,2
+1982,Infectious Diseases,C524204448,United States of America,US,136
+1982,Infectious Diseases,C524204448,South Africa,ZA,2
+1982,Quantum Computing,C58053490,Brazil,BR,1
+1982,Quantum Computing,C58053490,Switzerland,CH,1
+1982,Quantum Computing,C58053490,Czechia,CZ,1
+1982,Quantum Computing,C58053490,Germany,DE,1
+1982,Quantum Computing,C58053490,Spain,ES,1
+1982,Quantum Computing,C58053490,France,FR,2
+1982,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,2
+1982,Quantum Computing,C58053490,Greece,GR,1
+1982,Quantum Computing,C58053490,Israel,IL,2
+1982,Quantum Computing,C58053490,India,IN,1
+1982,Quantum Computing,C58053490,Poland,PL,1
+1982,Quantum Computing,C58053490,Russian Federation,RU,1
+1982,Quantum Computing,C58053490,United States of America,US,15
+1982,Renewable Energy,C188573790,Austria,AT,4
+1982,Renewable Energy,C188573790,Australia,AU,3
+1982,Renewable Energy,C188573790,Belgium,BE,3
+1982,Renewable Energy,C188573790,Canada,CA,11
+1982,Renewable Energy,C188573790,Switzerland,CH,2
+1982,Renewable Energy,C188573790,China,CN,4
+1982,Renewable Energy,C188573790,Czechia,CZ,1
+1982,Renewable Energy,C188573790,Germany,DE,10
+1982,Renewable Energy,C188573790,Denmark,DK,3
+1982,Renewable Energy,C188573790,Egypt,EG,1
+1982,Renewable Energy,C188573790,Spain,ES,2
+1982,Renewable Energy,C188573790,Finland,FI,1
+1982,Renewable Energy,C188573790,France,FR,5
+1982,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,40
+1982,Renewable Energy,C188573790,Ghana,GH,1
+1982,Renewable Energy,C188573790,Greece,GR,2
+1982,Renewable Energy,C188573790,Croatia,HR,1
+1982,Renewable Energy,C188573790,Ireland,IE,2
+1982,Renewable Energy,C188573790,Israel,IL,3
+1982,Renewable Energy,C188573790,India,IN,5
+1982,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,1
+1982,Renewable Energy,C188573790,Italy,IT,4
+1982,Renewable Energy,C188573790,Japan,JP,3
+1982,Renewable Energy,C188573790,Kenya,KE,1
+1982,Renewable Energy,C188573790,Latvia,LV,1
+1982,Renewable Energy,C188573790,Mongolia,MN,1
+1982,Renewable Energy,C188573790,Malawi,MW,2
+1982,Renewable Energy,C188573790,Mexico,MX,3
+1982,Renewable Energy,C188573790,Nigeria,NG,1
+1982,Renewable Energy,C188573790,Netherlands,NL,3
+1982,Renewable Energy,C188573790,Norway,NO,3
+1982,Renewable Energy,C188573790,Poland,PL,1
+1982,Renewable Energy,C188573790,Romania,RO,1
+1982,Renewable Energy,C188573790,Russian Federation,RU,2
+1982,Renewable Energy,C188573790,Sweden,SE,2
+1982,Renewable Energy,C188573790,Thailand,TH,1
+1982,Renewable Energy,C188573790,Turkey,TR,1
+1982,Renewable Energy,C188573790,"Taiwan, Province of China",TW,1
+1982,Renewable Energy,C188573790,United States of America,US,132
+1982,Renewable Energy,C188573790,South Africa,ZA,2
+1982,Robotics & Automation,C34413123,Australia,AU,3
+1982,Robotics & Automation,C34413123,Canada,CA,1
+1982,Robotics & Automation,C34413123,Switzerland,CH,1
+1982,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,1
+1982,Robotics & Automation,C34413123,Japan,JP,1
+1982,Robotics & Automation,C34413123,Serbia,RS,6
+1982,Robotics & Automation,C34413123,United States of America,US,29
+1983,AI & Machine Learning,C119857082,Argentina,AR,5
+1983,AI & Machine Learning,C119857082,Austria,AT,22
+1983,AI & Machine Learning,C119857082,Australia,AU,92
+1983,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1983,AI & Machine Learning,C119857082,Bangladesh,BD,2
+1983,AI & Machine Learning,C119857082,Belgium,BE,35
+1983,AI & Machine Learning,C119857082,Bulgaria,BG,4
+1983,AI & Machine Learning,C119857082,Burundi,BI,1
+1983,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1983,AI & Machine Learning,C119857082,Brazil,BR,17
+1983,AI & Machine Learning,C119857082,Bahamas,BS,1
+1983,AI & Machine Learning,C119857082,Canada,CA,227
+1983,AI & Machine Learning,C119857082,Switzerland,CH,33
+1983,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1983,AI & Machine Learning,C119857082,Chile,CL,3
+1983,AI & Machine Learning,C119857082,China,CN,49
+1983,AI & Machine Learning,C119857082,Colombia,CO,1
+1983,AI & Machine Learning,C119857082,Cuba,CU,1
+1983,AI & Machine Learning,C119857082,Cyprus,CY,1
+1983,AI & Machine Learning,C119857082,Czechia,CZ,16
+1983,AI & Machine Learning,C119857082,Germany,DE,158
+1983,AI & Machine Learning,C119857082,Denmark,DK,22
+1983,AI & Machine Learning,C119857082,Algeria,DZ,2
+1983,AI & Machine Learning,C119857082,Ecuador,EC,1
+1983,AI & Machine Learning,C119857082,Egypt,EG,14
+1983,AI & Machine Learning,C119857082,Spain,ES,19
+1983,AI & Machine Learning,C119857082,Finland,FI,11
+1983,AI & Machine Learning,C119857082,France,FR,101
+1983,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,394
+1983,AI & Machine Learning,C119857082,Greece,GR,29
+1983,AI & Machine Learning,C119857082,Hong Kong,HK,7
+1983,AI & Machine Learning,C119857082,Croatia,HR,1
+1983,AI & Machine Learning,C119857082,Hungary,HU,12
+1983,AI & Machine Learning,C119857082,Indonesia,ID,1
+1983,AI & Machine Learning,C119857082,Ireland,IE,10
+1983,AI & Machine Learning,C119857082,Israel,IL,65
+1983,AI & Machine Learning,C119857082,India,IN,93
+1983,AI & Machine Learning,C119857082,Iraq,IQ,6
+1983,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2
+1983,AI & Machine Learning,C119857082,Italy,IT,75
+1983,AI & Machine Learning,C119857082,Jamaica,JM,2
+1983,AI & Machine Learning,C119857082,Jordan,JO,1
+1983,AI & Machine Learning,C119857082,Japan,JP,229
+1983,AI & Machine Learning,C119857082,"Korea, Republic of",KR,5
+1983,AI & Machine Learning,C119857082,Kuwait,KW,2
+1983,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1983,AI & Machine Learning,C119857082,Lebanon,LB,1
+1983,AI & Machine Learning,C119857082,Lithuania,LT,2
+1983,AI & Machine Learning,C119857082,Latvia,LV,2
+1983,AI & Machine Learning,C119857082,Morocco,MA,2
+1983,AI & Machine Learning,C119857082,Malawi,MW,1
+1983,AI & Machine Learning,C119857082,Mexico,MX,3
+1983,AI & Machine Learning,C119857082,Malaysia,MY,1
+1983,AI & Machine Learning,C119857082,Nigeria,NG,6
+1983,AI & Machine Learning,C119857082,Netherlands,NL,79
+1983,AI & Machine Learning,C119857082,Norway,NO,13
+1983,AI & Machine Learning,C119857082,New Zealand,NZ,19
+1983,AI & Machine Learning,C119857082,Philippines,PH,6
+1983,AI & Machine Learning,C119857082,Pakistan,PK,3
+1983,AI & Machine Learning,C119857082,Poland,PL,39
+1983,AI & Machine Learning,C119857082,Puerto Rico,PR,1
+1983,AI & Machine Learning,C119857082,Portugal,PT,6
+1983,AI & Machine Learning,C119857082,Qatar,QA,1
+1983,AI & Machine Learning,C119857082,Romania,RO,9
+1983,AI & Machine Learning,C119857082,Serbia,RS,5
+1983,AI & Machine Learning,C119857082,Russian Federation,RU,77
+1983,AI & Machine Learning,C119857082,Saudi Arabia,SA,5
+1983,AI & Machine Learning,C119857082,Sudan,SD,1
+1983,AI & Machine Learning,C119857082,Sweden,SE,34
+1983,AI & Machine Learning,C119857082,Singapore,SG,5
+1983,AI & Machine Learning,C119857082,Slovenia,SI,6
+1983,AI & Machine Learning,C119857082,Slovakia,SK,8
+1983,AI & Machine Learning,C119857082,South Sudan,SS,3
+1983,AI & Machine Learning,C119857082,Thailand,TH,3
+1983,AI & Machine Learning,C119857082,Tunisia,TN,1
+1983,AI & Machine Learning,C119857082,Turkey,TR,12
+1983,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,4
+1983,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,15
+1983,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1983,AI & Machine Learning,C119857082,Ukraine,UA,4
+1983,AI & Machine Learning,C119857082,United States of America,US,2057
+1983,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1983,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,4
+1983,AI & Machine Learning,C119857082,Viet Nam,VN,2
+1983,AI & Machine Learning,C119857082,South Africa,ZA,23
+1983,AI & Machine Learning,C119857082,Zimbabwe,ZW,2
+1983,CRISPR & Genomics,C98108389,United States of America,US,4
+1983,Data Science & Big Data,C2522767166,Austria,AT,2
+1983,Data Science & Big Data,C2522767166,Australia,AU,22
+1983,Data Science & Big Data,C2522767166,Bangladesh,BD,1
+1983,Data Science & Big Data,C2522767166,Belgium,BE,8
+1983,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1983,Data Science & Big Data,C2522767166,Brazil,BR,2
+1983,Data Science & Big Data,C2522767166,Canada,CA,47
+1983,Data Science & Big Data,C2522767166,Switzerland,CH,6
+1983,Data Science & Big Data,C2522767166,China,CN,9
+1983,Data Science & Big Data,C2522767166,Czechia,CZ,9
+1983,Data Science & Big Data,C2522767166,Germany,DE,24
+1983,Data Science & Big Data,C2522767166,Denmark,DK,4
+1983,Data Science & Big Data,C2522767166,Spain,ES,1
+1983,Data Science & Big Data,C2522767166,Finland,FI,1
+1983,Data Science & Big Data,C2522767166,France,FR,15
+1983,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,376
+1983,Data Science & Big Data,C2522767166,Ghana,GH,3
+1983,Data Science & Big Data,C2522767166,Greece,GR,2
+1983,Data Science & Big Data,C2522767166,Guatemala,GT,1
+1983,Data Science & Big Data,C2522767166,Hungary,HU,10
+1983,Data Science & Big Data,C2522767166,Ireland,IE,7
+1983,Data Science & Big Data,C2522767166,Israel,IL,8
+1983,Data Science & Big Data,C2522767166,India,IN,12
+1983,Data Science & Big Data,C2522767166,Italy,IT,10
+1983,Data Science & Big Data,C2522767166,Japan,JP,15
+1983,Data Science & Big Data,C2522767166,Kenya,KE,1
+1983,Data Science & Big Data,C2522767166,Cambodia,KH,1
+1983,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,2
+1983,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1983,Data Science & Big Data,C2522767166,Sri Lanka,LK,1
+1983,Data Science & Big Data,C2522767166,Libya,LY,1
+1983,Data Science & Big Data,C2522767166,Myanmar,MM,1
+1983,Data Science & Big Data,C2522767166,Mexico,MX,4
+1983,Data Science & Big Data,C2522767166,Nigeria,NG,2
+1983,Data Science & Big Data,C2522767166,Netherlands,NL,19
+1983,Data Science & Big Data,C2522767166,Norway,NO,1
+1983,Data Science & Big Data,C2522767166,Nepal,NP,1
+1983,Data Science & Big Data,C2522767166,New Zealand,NZ,3
+1983,Data Science & Big Data,C2522767166,Peru,PE,1
+1983,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1983,Data Science & Big Data,C2522767166,Poland,PL,6
+1983,Data Science & Big Data,C2522767166,Romania,RO,2
+1983,Data Science & Big Data,C2522767166,Russian Federation,RU,7
+1983,Data Science & Big Data,C2522767166,Sweden,SE,9
+1983,Data Science & Big Data,C2522767166,Singapore,SG,1
+1983,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1983,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1983,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1983,Data Science & Big Data,C2522767166,Tunisia,TN,1
+1983,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1983,Data Science & Big Data,C2522767166,United States of America,US,640
+1983,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,1
+1983,Data Science & Big Data,C2522767166,Viet Nam,VN,3
+1983,Data Science & Big Data,C2522767166,South Africa,ZA,8
+1983,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1983,Infectious Diseases,C524204448,Australia,AU,11
+1983,Infectious Diseases,C524204448,Bangladesh,BD,2
+1983,Infectious Diseases,C524204448,Belgium,BE,3
+1983,Infectious Diseases,C524204448,Brazil,BR,2
+1983,Infectious Diseases,C524204448,Canada,CA,10
+1983,Infectious Diseases,C524204448,Switzerland,CH,3
+1983,Infectious Diseases,C524204448,Chile,CL,1
+1983,Infectious Diseases,C524204448,China,CN,1
+1983,Infectious Diseases,C524204448,Colombia,CO,2
+1983,Infectious Diseases,C524204448,Germany,DE,14
+1983,Infectious Diseases,C524204448,Denmark,DK,2
+1983,Infectious Diseases,C524204448,Spain,ES,2
+1983,Infectious Diseases,C524204448,Finland,FI,1
+1983,Infectious Diseases,C524204448,France,FR,3
+1983,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,32
+1983,Infectious Diseases,C524204448,Guatemala,GT,1
+1983,Infectious Diseases,C524204448,Hungary,HU,1
+1983,Infectious Diseases,C524204448,Indonesia,ID,1
+1983,Infectious Diseases,C524204448,Israel,IL,1
+1983,Infectious Diseases,C524204448,Italy,IT,3
+1983,Infectious Diseases,C524204448,Japan,JP,11
+1983,Infectious Diseases,C524204448,Latvia,LV,1
+1983,Infectious Diseases,C524204448,Mongolia,MN,1
+1983,Infectious Diseases,C524204448,Nigeria,NG,2
+1983,Infectious Diseases,C524204448,Netherlands,NL,6
+1983,Infectious Diseases,C524204448,New Zealand,NZ,1
+1983,Infectious Diseases,C524204448,Portugal,PT,1
+1983,Infectious Diseases,C524204448,Russian Federation,RU,2
+1983,Infectious Diseases,C524204448,Sudan,SD,1
+1983,Infectious Diseases,C524204448,Sweden,SE,1
+1983,Infectious Diseases,C524204448,Singapore,SG,1
+1983,Infectious Diseases,C524204448,Slovakia,SK,4
+1983,Infectious Diseases,C524204448,Turkey,TR,1
+1983,Infectious Diseases,C524204448,United States of America,US,138
+1983,Infectious Diseases,C524204448,Viet Nam,VN,1
+1983,Quantum Computing,C58053490,Austria,AT,1
+1983,Quantum Computing,C58053490,Belgium,BE,1
+1983,Quantum Computing,C58053490,Canada,CA,2
+1983,Quantum Computing,C58053490,Germany,DE,2
+1983,Quantum Computing,C58053490,Spain,ES,1
+1983,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,2
+1983,Quantum Computing,C58053490,Israel,IL,1
+1983,Quantum Computing,C58053490,Italy,IT,2
+1983,Quantum Computing,C58053490,Japan,JP,2
+1983,Quantum Computing,C58053490,Russian Federation,RU,1
+1983,Quantum Computing,C58053490,Slovakia,SK,2
+1983,Quantum Computing,C58053490,United States of America,US,12
+1983,Renewable Energy,C188573790,Austria,AT,3
+1983,Renewable Energy,C188573790,Australia,AU,5
+1983,Renewable Energy,C188573790,Belgium,BE,3
+1983,Renewable Energy,C188573790,Brazil,BR,2
+1983,Renewable Energy,C188573790,Canada,CA,3
+1983,Renewable Energy,C188573790,China,CN,2
+1983,Renewable Energy,C188573790,Costa Rica,CR,1
+1983,Renewable Energy,C188573790,Germany,DE,13
+1983,Renewable Energy,C188573790,Egypt,EG,1
+1983,Renewable Energy,C188573790,Spain,ES,1
+1983,Renewable Energy,C188573790,Finland,FI,1
+1983,Renewable Energy,C188573790,France,FR,2
+1983,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,27
+1983,Renewable Energy,C188573790,Greece,GR,4
+1983,Renewable Energy,C188573790,Israel,IL,2
+1983,Renewable Energy,C188573790,India,IN,5
+1983,Renewable Energy,C188573790,Italy,IT,3
+1983,Renewable Energy,C188573790,Japan,JP,6
+1983,Renewable Energy,C188573790,Kuwait,KW,3
+1983,Renewable Energy,C188573790,Sri Lanka,LK,1
+1983,Renewable Energy,C188573790,Latvia,LV,1
+1983,Renewable Energy,C188573790,Mexico,MX,1
+1983,Renewable Energy,C188573790,Nigeria,NG,5
+1983,Renewable Energy,C188573790,Netherlands,NL,2
+1983,Renewable Energy,C188573790,Norway,NO,1
+1983,Renewable Energy,C188573790,New Zealand,NZ,1
+1983,Renewable Energy,C188573790,Poland,PL,2
+1983,Renewable Energy,C188573790,Russian Federation,RU,1
+1983,Renewable Energy,C188573790,Sweden,SE,3
+1983,Renewable Energy,C188573790,Singapore,SG,2
+1983,Renewable Energy,C188573790,Thailand,TH,3
+1983,Renewable Energy,C188573790,Tunisia,TN,1
+1983,Renewable Energy,C188573790,Turkey,TR,1
+1983,Renewable Energy,C188573790,United States of America,US,105
+1983,Renewable Energy,C188573790,"Venezuela, Bolivarian Republic of",VE,1
+1983,Renewable Energy,C188573790,South Africa,ZA,1
+1983,Robotics & Automation,C34413123,Australia,AU,6
+1983,Robotics & Automation,C34413123,Bulgaria,BG,1
+1983,Robotics & Automation,C34413123,Canada,CA,1
+1983,Robotics & Automation,C34413123,Czechia,CZ,1
+1983,Robotics & Automation,C34413123,Germany,DE,4
+1983,Robotics & Automation,C34413123,Egypt,EG,2
+1983,Robotics & Automation,C34413123,France,FR,2
+1983,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,17
+1983,Robotics & Automation,C34413123,Israel,IL,2
+1983,Robotics & Automation,C34413123,India,IN,1
+1983,Robotics & Automation,C34413123,Italy,IT,1
+1983,Robotics & Automation,C34413123,Japan,JP,5
+1983,Robotics & Automation,C34413123,Norway,NO,1
+1983,Robotics & Automation,C34413123,Pakistan,PK,1
+1983,Robotics & Automation,C34413123,Poland,PL,1
+1983,Robotics & Automation,C34413123,Russian Federation,RU,1
+1983,Robotics & Automation,C34413123,Singapore,SG,1
+1983,Robotics & Automation,C34413123,United States of America,US,54
+1984,AI & Machine Learning,C119857082,Argentina,AR,6
+1984,AI & Machine Learning,C119857082,Austria,AT,17
+1984,AI & Machine Learning,C119857082,Australia,AU,116
+1984,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1984,AI & Machine Learning,C119857082,Bangladesh,BD,1
+1984,AI & Machine Learning,C119857082,Belgium,BE,49
+1984,AI & Machine Learning,C119857082,Bulgaria,BG,4
+1984,AI & Machine Learning,C119857082,Bahrain,BH,1
+1984,AI & Machine Learning,C119857082,Brazil,BR,27
+1984,AI & Machine Learning,C119857082,Bahamas,BS,1
+1984,AI & Machine Learning,C119857082,Belarus,BY,2
+1984,AI & Machine Learning,C119857082,Canada,CA,226
+1984,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+1984,AI & Machine Learning,C119857082,Switzerland,CH,28
+1984,AI & Machine Learning,C119857082,Chile,CL,3
+1984,AI & Machine Learning,C119857082,China,CN,55
+1984,AI & Machine Learning,C119857082,Colombia,CO,2
+1984,AI & Machine Learning,C119857082,Costa Rica,CR,1
+1984,AI & Machine Learning,C119857082,Cyprus,CY,1
+1984,AI & Machine Learning,C119857082,Czechia,CZ,20
+1984,AI & Machine Learning,C119857082,Germany,DE,149
+1984,AI & Machine Learning,C119857082,Denmark,DK,25
+1984,AI & Machine Learning,C119857082,Ecuador,EC,1
+1984,AI & Machine Learning,C119857082,Egypt,EG,20
+1984,AI & Machine Learning,C119857082,Spain,ES,20
+1984,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1984,AI & Machine Learning,C119857082,Finland,FI,24
+1984,AI & Machine Learning,C119857082,Fiji,FJ,1
+1984,AI & Machine Learning,C119857082,France,FR,97
+1984,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,402
+1984,AI & Machine Learning,C119857082,Georgia,GE,1
+1984,AI & Machine Learning,C119857082,Ghana,GH,5
+1984,AI & Machine Learning,C119857082,Greece,GR,18
+1984,AI & Machine Learning,C119857082,Hong Kong,HK,3
+1984,AI & Machine Learning,C119857082,Hungary,HU,17
+1984,AI & Machine Learning,C119857082,Indonesia,ID,4
+1984,AI & Machine Learning,C119857082,Ireland,IE,11
+1984,AI & Machine Learning,C119857082,Israel,IL,81
+1984,AI & Machine Learning,C119857082,India,IN,92
+1984,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2
+1984,AI & Machine Learning,C119857082,Iceland,IS,1
+1984,AI & Machine Learning,C119857082,Italy,IT,91
+1984,AI & Machine Learning,C119857082,Jamaica,JM,1
+1984,AI & Machine Learning,C119857082,Jordan,JO,1
+1984,AI & Machine Learning,C119857082,Japan,JP,223
+1984,AI & Machine Learning,C119857082,Kenya,KE,2
+1984,AI & Machine Learning,C119857082,"Korea, Republic of",KR,10
+1984,AI & Machine Learning,C119857082,Kuwait,KW,5
+1984,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1984,AI & Machine Learning,C119857082,Lithuania,LT,1
+1984,AI & Machine Learning,C119857082,Luxembourg,LU,1
+1984,AI & Machine Learning,C119857082,Latvia,LV,6
+1984,AI & Machine Learning,C119857082,Libya,LY,1
+1984,AI & Machine Learning,C119857082,Morocco,MA,1
+1984,AI & Machine Learning,C119857082,Saint Martin (French part),MF,1
+1984,AI & Machine Learning,C119857082,North Macedonia,MK,1
+1984,AI & Machine Learning,C119857082,Myanmar,MM,1
+1984,AI & Machine Learning,C119857082,Mongolia,MN,1
+1984,AI & Machine Learning,C119857082,Malta,MT,1
+1984,AI & Machine Learning,C119857082,Malawi,MW,1
+1984,AI & Machine Learning,C119857082,Mexico,MX,8
+1984,AI & Machine Learning,C119857082,Malaysia,MY,1
+1984,AI & Machine Learning,C119857082,Mozambique,MZ,1
+1984,AI & Machine Learning,C119857082,New Caledonia,NC,1
+1984,AI & Machine Learning,C119857082,Nigeria,NG,10
+1984,AI & Machine Learning,C119857082,Netherlands,NL,75
+1984,AI & Machine Learning,C119857082,Norway,NO,19
+1984,AI & Machine Learning,C119857082,New Zealand,NZ,20
+1984,AI & Machine Learning,C119857082,Panama,PA,2
+1984,AI & Machine Learning,C119857082,Peru,PE,1
+1984,AI & Machine Learning,C119857082,Philippines,PH,3
+1984,AI & Machine Learning,C119857082,Pakistan,PK,4
+1984,AI & Machine Learning,C119857082,Poland,PL,49
+1984,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1984,AI & Machine Learning,C119857082,Portugal,PT,4
+1984,AI & Machine Learning,C119857082,Qatar,QA,1
+1984,AI & Machine Learning,C119857082,Romania,RO,8
+1984,AI & Machine Learning,C119857082,Serbia,RS,10
+1984,AI & Machine Learning,C119857082,Russian Federation,RU,66
+1984,AI & Machine Learning,C119857082,Saudi Arabia,SA,5
+1984,AI & Machine Learning,C119857082,Sudan,SD,1
+1984,AI & Machine Learning,C119857082,Sweden,SE,40
+1984,AI & Machine Learning,C119857082,Singapore,SG,4
+1984,AI & Machine Learning,C119857082,Slovenia,SI,5
+1984,AI & Machine Learning,C119857082,Slovakia,SK,9
+1984,AI & Machine Learning,C119857082,South Sudan,SS,3
+1984,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1984,AI & Machine Learning,C119857082,Tunisia,TN,3
+1984,AI & Machine Learning,C119857082,Turkey,TR,9
+1984,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,19
+1984,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1984,AI & Machine Learning,C119857082,Ukraine,UA,4
+1984,AI & Machine Learning,C119857082,United States of America,US,2212
+1984,AI & Machine Learning,C119857082,Uruguay,UY,1
+1984,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1984,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,3
+1984,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,1
+1984,AI & Machine Learning,C119857082,Viet Nam,VN,2
+1984,AI & Machine Learning,C119857082,South Africa,ZA,15
+1984,AI & Machine Learning,C119857082,Zimbabwe,ZW,4
+1984,CRISPR & Genomics,C98108389,Canada,CA,1
+1984,CRISPR & Genomics,C98108389,Germany,DE,1
+1984,CRISPR & Genomics,C98108389,Hungary,HU,1
+1984,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1984,CRISPR & Genomics,C98108389,Slovakia,SK,1
+1984,CRISPR & Genomics,C98108389,United States of America,US,2
+1984,Data Science & Big Data,C2522767166,United Arab Emirates,AE,1
+1984,Data Science & Big Data,C2522767166,Armenia,AM,1
+1984,Data Science & Big Data,C2522767166,Austria,AT,4
+1984,Data Science & Big Data,C2522767166,Australia,AU,30
+1984,Data Science & Big Data,C2522767166,Belgium,BE,7
+1984,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1984,Data Science & Big Data,C2522767166,Brazil,BR,1
+1984,Data Science & Big Data,C2522767166,Canada,CA,62
+1984,Data Science & Big Data,C2522767166,Switzerland,CH,5
+1984,Data Science & Big Data,C2522767166,China,CN,9
+1984,Data Science & Big Data,C2522767166,Cyprus,CY,1
+1984,Data Science & Big Data,C2522767166,Czechia,CZ,2
+1984,Data Science & Big Data,C2522767166,Germany,DE,25
+1984,Data Science & Big Data,C2522767166,Denmark,DK,2
+1984,Data Science & Big Data,C2522767166,Ecuador,EC,1
+1984,Data Science & Big Data,C2522767166,Egypt,EG,1
+1984,Data Science & Big Data,C2522767166,Spain,ES,1
+1984,Data Science & Big Data,C2522767166,Finland,FI,2
+1984,Data Science & Big Data,C2522767166,France,FR,13
+1984,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,398
+1984,Data Science & Big Data,C2522767166,Ghana,GH,4
+1984,Data Science & Big Data,C2522767166,Greece,GR,1
+1984,Data Science & Big Data,C2522767166,Hong Kong,HK,1
+1984,Data Science & Big Data,C2522767166,Hungary,HU,8
+1984,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1984,Data Science & Big Data,C2522767166,Ireland,IE,8
+1984,Data Science & Big Data,C2522767166,Israel,IL,8
+1984,Data Science & Big Data,C2522767166,India,IN,16
+1984,Data Science & Big Data,C2522767166,Italy,IT,15
+1984,Data Science & Big Data,C2522767166,Japan,JP,13
+1984,Data Science & Big Data,C2522767166,Kenya,KE,1
+1984,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1984,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1984,Data Science & Big Data,C2522767166,Mongolia,MN,1
+1984,Data Science & Big Data,C2522767166,Mexico,MX,3
+1984,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1984,Data Science & Big Data,C2522767166,New Caledonia,NC,1
+1984,Data Science & Big Data,C2522767166,Nigeria,NG,5
+1984,Data Science & Big Data,C2522767166,Netherlands,NL,28
+1984,Data Science & Big Data,C2522767166,New Zealand,NZ,4
+1984,Data Science & Big Data,C2522767166,Poland,PL,3
+1984,Data Science & Big Data,C2522767166,Portugal,PT,3
+1984,Data Science & Big Data,C2522767166,Romania,RO,1
+1984,Data Science & Big Data,C2522767166,Russian Federation,RU,8
+1984,Data Science & Big Data,C2522767166,Saudi Arabia,SA,1
+1984,Data Science & Big Data,C2522767166,Sweden,SE,10
+1984,Data Science & Big Data,C2522767166,Singapore,SG,2
+1984,Data Science & Big Data,C2522767166,Slovenia,SI,1
+1984,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1984,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1984,Data Science & Big Data,C2522767166,Turkey,TR,1
+1984,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,1
+1984,Data Science & Big Data,C2522767166,United States of America,US,684
+1984,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1984,Data Science & Big Data,C2522767166,South Africa,ZA,5
+1984,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1984,Infectious Diseases,C524204448,Armenia,AM,2
+1984,Infectious Diseases,C524204448,Austria,AT,1
+1984,Infectious Diseases,C524204448,Australia,AU,10
+1984,Infectious Diseases,C524204448,Belgium,BE,6
+1984,Infectious Diseases,C524204448,Canada,CA,15
+1984,Infectious Diseases,C524204448,Switzerland,CH,2
+1984,Infectious Diseases,C524204448,Chile,CL,1
+1984,Infectious Diseases,C524204448,China,CN,2
+1984,Infectious Diseases,C524204448,Costa Rica,CR,1
+1984,Infectious Diseases,C524204448,Cyprus,CY,3
+1984,Infectious Diseases,C524204448,Germany,DE,24
+1984,Infectious Diseases,C524204448,Spain,ES,1
+1984,Infectious Diseases,C524204448,Finland,FI,2
+1984,Infectious Diseases,C524204448,France,FR,14
+1984,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,44
+1984,Infectious Diseases,C524204448,Greece,GR,3
+1984,Infectious Diseases,C524204448,Ireland,IE,2
+1984,Infectious Diseases,C524204448,Israel,IL,1
+1984,Infectious Diseases,C524204448,India,IN,2
+1984,Infectious Diseases,C524204448,Italy,IT,7
+1984,Infectious Diseases,C524204448,Japan,JP,19
+1984,Infectious Diseases,C524204448,Kenya,KE,1
+1984,Infectious Diseases,C524204448,Kuwait,KW,1
+1984,Infectious Diseases,C524204448,Mongolia,MN,1
+1984,Infectious Diseases,C524204448,Mexico,MX,2
+1984,Infectious Diseases,C524204448,Nigeria,NG,3
+1984,Infectious Diseases,C524204448,Netherlands,NL,10
+1984,Infectious Diseases,C524204448,New Zealand,NZ,5
+1984,Infectious Diseases,C524204448,Russian Federation,RU,4
+1984,Infectious Diseases,C524204448,Saudi Arabia,SA,1
+1984,Infectious Diseases,C524204448,Slovakia,SK,5
+1984,Infectious Diseases,C524204448,South Sudan,SS,1
+1984,Infectious Diseases,C524204448,Thailand,TH,1
+1984,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,1
+1984,Infectious Diseases,C524204448,United States of America,US,184
+1984,Infectious Diseases,C524204448,"Venezuela, Bolivarian Republic of",VE,1
+1984,Infectious Diseases,C524204448,South Africa,ZA,1
+1984,Quantum Computing,C58053490,Belgium,BE,1
+1984,Quantum Computing,C58053490,Canada,CA,1
+1984,Quantum Computing,C58053490,Germany,DE,3
+1984,Quantum Computing,C58053490,France,FR,2
+1984,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,1
+1984,Quantum Computing,C58053490,Hungary,HU,1
+1984,Quantum Computing,C58053490,India,IN,1
+1984,Quantum Computing,C58053490,Italy,IT,8
+1984,Quantum Computing,C58053490,Japan,JP,1
+1984,Quantum Computing,C58053490,Mexico,MX,1
+1984,Quantum Computing,C58053490,Poland,PL,1
+1984,Quantum Computing,C58053490,Russian Federation,RU,1
+1984,Quantum Computing,C58053490,"Taiwan, Province of China",TW,1
+1984,Quantum Computing,C58053490,United States of America,US,13
+1984,Renewable Energy,C188573790,Austria,AT,1
+1984,Renewable Energy,C188573790,Australia,AU,5
+1984,Renewable Energy,C188573790,Belgium,BE,3
+1984,Renewable Energy,C188573790,Brazil,BR,1
+1984,Renewable Energy,C188573790,Canada,CA,15
+1984,Renewable Energy,C188573790,"Congo, Democratic Republic of the",CD,1
+1984,Renewable Energy,C188573790,Switzerland,CH,1
+1984,Renewable Energy,C188573790,China,CN,3
+1984,Renewable Energy,C188573790,Germany,DE,7
+1984,Renewable Energy,C188573790,Denmark,DK,3
+1984,Renewable Energy,C188573790,Finland,FI,1
+1984,Renewable Energy,C188573790,France,FR,1
+1984,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,25
+1984,Renewable Energy,C188573790,Greece,GR,5
+1984,Renewable Energy,C188573790,Guatemala,GT,1
+1984,Renewable Energy,C188573790,Ireland,IE,1
+1984,Renewable Energy,C188573790,Israel,IL,6
+1984,Renewable Energy,C188573790,India,IN,4
+1984,Renewable Energy,C188573790,Italy,IT,4
+1984,Renewable Energy,C188573790,Japan,JP,5
+1984,Renewable Energy,C188573790,Kenya,KE,2
+1984,Renewable Energy,C188573790,Kuwait,KW,2
+1984,Renewable Energy,C188573790,Nigeria,NG,4
+1984,Renewable Energy,C188573790,Netherlands,NL,6
+1984,Renewable Energy,C188573790,Norway,NO,1
+1984,Renewable Energy,C188573790,New Zealand,NZ,3
+1984,Renewable Energy,C188573790,Pakistan,PK,1
+1984,Renewable Energy,C188573790,Poland,PL,1
+1984,Renewable Energy,C188573790,Saudi Arabia,SA,2
+1984,Renewable Energy,C188573790,Thailand,TH,1
+1984,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1984,Renewable Energy,C188573790,United States of America,US,93
+1984,Robotics & Automation,C34413123,Australia,AU,1
+1984,Robotics & Automation,C34413123,Bulgaria,BG,1
+1984,Robotics & Automation,C34413123,Canada,CA,2
+1984,Robotics & Automation,C34413123,Germany,DE,2
+1984,Robotics & Automation,C34413123,France,FR,3
+1984,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,18
+1984,Robotics & Automation,C34413123,Hungary,HU,1
+1984,Robotics & Automation,C34413123,Israel,IL,1
+1984,Robotics & Automation,C34413123,Italy,IT,1
+1984,Robotics & Automation,C34413123,Japan,JP,4
+1984,Robotics & Automation,C34413123,Portugal,PT,1
+1984,Robotics & Automation,C34413123,Serbia,RS,2
+1984,Robotics & Automation,C34413123,South Sudan,SS,1
+1984,Robotics & Automation,C34413123,United States of America,US,62
+1985,AI & Machine Learning,C119857082,United Arab Emirates,AE,1
+1985,AI & Machine Learning,C119857082,Armenia,AM,1
+1985,AI & Machine Learning,C119857082,Argentina,AR,4
+1985,AI & Machine Learning,C119857082,Austria,AT,19
+1985,AI & Machine Learning,C119857082,Australia,AU,129
+1985,AI & Machine Learning,C119857082,Bangladesh,BD,3
+1985,AI & Machine Learning,C119857082,Belgium,BE,46
+1985,AI & Machine Learning,C119857082,Bulgaria,BG,13
+1985,AI & Machine Learning,C119857082,Bahrain,BH,1
+1985,AI & Machine Learning,C119857082,Brunei Darussalam,BN,2
+1985,AI & Machine Learning,C119857082,Brazil,BR,15
+1985,AI & Machine Learning,C119857082,Botswana,BW,1
+1985,AI & Machine Learning,C119857082,Belarus,BY,5
+1985,AI & Machine Learning,C119857082,Canada,CA,275
+1985,AI & Machine Learning,C119857082,Switzerland,CH,37
+1985,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1985,AI & Machine Learning,C119857082,Chile,CL,3
+1985,AI & Machine Learning,C119857082,China,CN,63
+1985,AI & Machine Learning,C119857082,Cyprus,CY,2
+1985,AI & Machine Learning,C119857082,Czechia,CZ,27
+1985,AI & Machine Learning,C119857082,Germany,DE,189
+1985,AI & Machine Learning,C119857082,Denmark,DK,24
+1985,AI & Machine Learning,C119857082,Algeria,DZ,1
+1985,AI & Machine Learning,C119857082,Egypt,EG,22
+1985,AI & Machine Learning,C119857082,Spain,ES,23
+1985,AI & Machine Learning,C119857082,Finland,FI,13
+1985,AI & Machine Learning,C119857082,Fiji,FJ,1
+1985,AI & Machine Learning,C119857082,France,FR,126
+1985,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,443
+1985,AI & Machine Learning,C119857082,Ghana,GH,2
+1985,AI & Machine Learning,C119857082,Greece,GR,31
+1985,AI & Machine Learning,C119857082,Guatemala,GT,1
+1985,AI & Machine Learning,C119857082,Hong Kong,HK,5
+1985,AI & Machine Learning,C119857082,Croatia,HR,3
+1985,AI & Machine Learning,C119857082,Hungary,HU,21
+1985,AI & Machine Learning,C119857082,Ireland,IE,9
+1985,AI & Machine Learning,C119857082,Israel,IL,72
+1985,AI & Machine Learning,C119857082,India,IN,92
+1985,AI & Machine Learning,C119857082,Iraq,IQ,1
+1985,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,1
+1985,AI & Machine Learning,C119857082,Italy,IT,102
+1985,AI & Machine Learning,C119857082,Jordan,JO,2
+1985,AI & Machine Learning,C119857082,Japan,JP,261
+1985,AI & Machine Learning,C119857082,"Korea, Republic of",KR,15
+1985,AI & Machine Learning,C119857082,Kuwait,KW,5
+1985,AI & Machine Learning,C119857082,Kazakhstan,KZ,2
+1985,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,1
+1985,AI & Machine Learning,C119857082,Lesotho,LS,1
+1985,AI & Machine Learning,C119857082,Latvia,LV,1
+1985,AI & Machine Learning,C119857082,Morocco,MA,1
+1985,AI & Machine Learning,C119857082,Mali,ML,1
+1985,AI & Machine Learning,C119857082,Malta,MT,1
+1985,AI & Machine Learning,C119857082,Malawi,MW,5
+1985,AI & Machine Learning,C119857082,Mexico,MX,8
+1985,AI & Machine Learning,C119857082,Malaysia,MY,2
+1985,AI & Machine Learning,C119857082,Mozambique,MZ,1
+1985,AI & Machine Learning,C119857082,Nigeria,NG,5
+1985,AI & Machine Learning,C119857082,Nicaragua,NI,1
+1985,AI & Machine Learning,C119857082,Netherlands,NL,83
+1985,AI & Machine Learning,C119857082,Norway,NO,15
+1985,AI & Machine Learning,C119857082,New Zealand,NZ,16
+1985,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1985,AI & Machine Learning,C119857082,Poland,PL,45
+1985,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1985,AI & Machine Learning,C119857082,Portugal,PT,4
+1985,AI & Machine Learning,C119857082,Qatar,QA,2
+1985,AI & Machine Learning,C119857082,Romania,RO,10
+1985,AI & Machine Learning,C119857082,Serbia,RS,10
+1985,AI & Machine Learning,C119857082,Russian Federation,RU,79
+1985,AI & Machine Learning,C119857082,Saudi Arabia,SA,4
+1985,AI & Machine Learning,C119857082,Sudan,SD,2
+1985,AI & Machine Learning,C119857082,Sweden,SE,33
+1985,AI & Machine Learning,C119857082,Singapore,SG,13
+1985,AI & Machine Learning,C119857082,Slovenia,SI,7
+1985,AI & Machine Learning,C119857082,Slovakia,SK,6
+1985,AI & Machine Learning,C119857082,Thailand,TH,2
+1985,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1985,AI & Machine Learning,C119857082,Tunisia,TN,4
+1985,AI & Machine Learning,C119857082,Turkey,TR,11
+1985,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,3
+1985,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,20
+1985,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1985,AI & Machine Learning,C119857082,Ukraine,UA,8
+1985,AI & Machine Learning,C119857082,United States of America,US,2327
+1985,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,2
+1985,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,3
+1985,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+1985,AI & Machine Learning,C119857082,Viet Nam,VN,5
+1985,AI & Machine Learning,C119857082,South Africa,ZA,31
+1985,AI & Machine Learning,C119857082,Zambia,ZM,2
+1985,CRISPR & Genomics,C98108389,France,FR,1
+1985,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1985,CRISPR & Genomics,C98108389,United States of America,US,7
+1985,Data Science & Big Data,C2522767166,United Arab Emirates,AE,2
+1985,Data Science & Big Data,C2522767166,Austria,AT,3
+1985,Data Science & Big Data,C2522767166,Australia,AU,25
+1985,Data Science & Big Data,C2522767166,Belgium,BE,10
+1985,Data Science & Big Data,C2522767166,Bulgaria,BG,1
+1985,Data Science & Big Data,C2522767166,Brazil,BR,2
+1985,Data Science & Big Data,C2522767166,Canada,CA,61
+1985,Data Science & Big Data,C2522767166,Switzerland,CH,4
+1985,Data Science & Big Data,C2522767166,China,CN,2
+1985,Data Science & Big Data,C2522767166,Czechia,CZ,4
+1985,Data Science & Big Data,C2522767166,Germany,DE,47
+1985,Data Science & Big Data,C2522767166,Denmark,DK,7
+1985,Data Science & Big Data,C2522767166,Egypt,EG,1
+1985,Data Science & Big Data,C2522767166,Spain,ES,4
+1985,Data Science & Big Data,C2522767166,Finland,FI,3
+1985,Data Science & Big Data,C2522767166,France,FR,17
+1985,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,456
+1985,Data Science & Big Data,C2522767166,Ghana,GH,3
+1985,Data Science & Big Data,C2522767166,Greece,GR,2
+1985,Data Science & Big Data,C2522767166,Croatia,HR,4
+1985,Data Science & Big Data,C2522767166,Hungary,HU,5
+1985,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1985,Data Science & Big Data,C2522767166,Ireland,IE,4
+1985,Data Science & Big Data,C2522767166,Israel,IL,9
+1985,Data Science & Big Data,C2522767166,India,IN,10
+1985,Data Science & Big Data,C2522767166,Italy,IT,18
+1985,Data Science & Big Data,C2522767166,Jamaica,JM,1
+1985,Data Science & Big Data,C2522767166,Jordan,JO,1
+1985,Data Science & Big Data,C2522767166,Japan,JP,16
+1985,Data Science & Big Data,C2522767166,Kenya,KE,2
+1985,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1985,Data Science & Big Data,C2522767166,Kuwait,KW,1
+1985,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1985,Data Science & Big Data,C2522767166,Lebanon,LB,1
+1985,Data Science & Big Data,C2522767166,Sri Lanka,LK,1
+1985,Data Science & Big Data,C2522767166,Morocco,MA,1
+1985,Data Science & Big Data,C2522767166,Mexico,MX,4
+1985,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1985,Data Science & Big Data,C2522767166,Nigeria,NG,2
+1985,Data Science & Big Data,C2522767166,Netherlands,NL,28
+1985,Data Science & Big Data,C2522767166,Norway,NO,1
+1985,Data Science & Big Data,C2522767166,New Zealand,NZ,9
+1985,Data Science & Big Data,C2522767166,Pakistan,PK,3
+1985,Data Science & Big Data,C2522767166,Poland,PL,8
+1985,Data Science & Big Data,C2522767166,Puerto Rico,PR,1
+1985,Data Science & Big Data,C2522767166,Portugal,PT,2
+1985,Data Science & Big Data,C2522767166,Romania,RO,1
+1985,Data Science & Big Data,C2522767166,Russian Federation,RU,5
+1985,Data Science & Big Data,C2522767166,Sudan,SD,1
+1985,Data Science & Big Data,C2522767166,Sweden,SE,12
+1985,Data Science & Big Data,C2522767166,Singapore,SG,5
+1985,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1985,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1985,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1985,Data Science & Big Data,C2522767166,Chad,TD,1
+1985,Data Science & Big Data,C2522767166,Thailand,TH,2
+1985,Data Science & Big Data,C2522767166,Tunisia,TN,1
+1985,Data Science & Big Data,C2522767166,Ukraine,UA,1
+1985,Data Science & Big Data,C2522767166,United States of America,US,729
+1985,Data Science & Big Data,C2522767166,South Africa,ZA,5
+1985,Infectious Diseases,C524204448,Austria,AT,1
+1985,Infectious Diseases,C524204448,Australia,AU,8
+1985,Infectious Diseases,C524204448,Canada,CA,16
+1985,Infectious Diseases,C524204448,Switzerland,CH,1
+1985,Infectious Diseases,C524204448,China,CN,1
+1985,Infectious Diseases,C524204448,Costa Rica,CR,1
+1985,Infectious Diseases,C524204448,Czechia,CZ,1
+1985,Infectious Diseases,C524204448,Germany,DE,15
+1985,Infectious Diseases,C524204448,Denmark,DK,2
+1985,Infectious Diseases,C524204448,Spain,ES,1
+1985,Infectious Diseases,C524204448,Finland,FI,2
+1985,Infectious Diseases,C524204448,France,FR,5
+1985,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,31
+1985,Infectious Diseases,C524204448,Hong Kong,HK,2
+1985,Infectious Diseases,C524204448,Israel,IL,5
+1985,Infectious Diseases,C524204448,India,IN,1
+1985,Infectious Diseases,C524204448,Italy,IT,7
+1985,Infectious Diseases,C524204448,Japan,JP,14
+1985,Infectious Diseases,C524204448,Morocco,MA,1
+1985,Infectious Diseases,C524204448,Mexico,MX,1
+1985,Infectious Diseases,C524204448,Netherlands,NL,3
+1985,Infectious Diseases,C524204448,Norway,NO,4
+1985,Infectious Diseases,C524204448,New Zealand,NZ,3
+1985,Infectious Diseases,C524204448,Pakistan,PK,1
+1985,Infectious Diseases,C524204448,Poland,PL,1
+1985,Infectious Diseases,C524204448,Russian Federation,RU,1
+1985,Infectious Diseases,C524204448,Saudi Arabia,SA,1
+1985,Infectious Diseases,C524204448,Sweden,SE,2
+1985,Infectious Diseases,C524204448,Slovakia,SK,2
+1985,Infectious Diseases,C524204448,Turkey,TR,1
+1985,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,1
+1985,Infectious Diseases,C524204448,United States of America,US,174
+1985,Infectious Diseases,C524204448,Viet Nam,VN,1
+1985,Infectious Diseases,C524204448,Yemen,YE,1
+1985,Infectious Diseases,C524204448,South Africa,ZA,1
+1985,Infectious Diseases,C524204448,Zimbabwe,ZW,2
+1985,Quantum Computing,C58053490,Australia,AU,1
+1985,Quantum Computing,C58053490,Belgium,BE,2
+1985,Quantum Computing,C58053490,Canada,CA,1
+1985,Quantum Computing,C58053490,Switzerland,CH,3
+1985,Quantum Computing,C58053490,Germany,DE,3
+1985,Quantum Computing,C58053490,France,FR,1
+1985,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,4
+1985,Quantum Computing,C58053490,Israel,IL,1
+1985,Quantum Computing,C58053490,India,IN,1
+1985,Quantum Computing,C58053490,Italy,IT,1
+1985,Quantum Computing,C58053490,Japan,JP,1
+1985,Quantum Computing,C58053490,Netherlands,NL,1
+1985,Quantum Computing,C58053490,Poland,PL,2
+1985,Quantum Computing,C58053490,Russian Federation,RU,1
+1985,Quantum Computing,C58053490,Slovakia,SK,1
+1985,Quantum Computing,C58053490,United States of America,US,10
+1985,Renewable Energy,C188573790,Austria,AT,1
+1985,Renewable Energy,C188573790,Australia,AU,5
+1985,Renewable Energy,C188573790,Bangladesh,BD,1
+1985,Renewable Energy,C188573790,Belgium,BE,1
+1985,Renewable Energy,C188573790,Canada,CA,14
+1985,Renewable Energy,C188573790,Switzerland,CH,2
+1985,Renewable Energy,C188573790,China,CN,1
+1985,Renewable Energy,C188573790,Colombia,CO,1
+1985,Renewable Energy,C188573790,Germany,DE,7
+1985,Renewable Energy,C188573790,Djibouti,DJ,1
+1985,Renewable Energy,C188573790,Egypt,EG,2
+1985,Renewable Energy,C188573790,Finland,FI,2
+1985,Renewable Energy,C188573790,France,FR,1
+1985,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,23
+1985,Renewable Energy,C188573790,Greece,GR,3
+1985,Renewable Energy,C188573790,Hungary,HU,2
+1985,Renewable Energy,C188573790,Ireland,IE,1
+1985,Renewable Energy,C188573790,Israel,IL,2
+1985,Renewable Energy,C188573790,India,IN,7
+1985,Renewable Energy,C188573790,Italy,IT,4
+1985,Renewable Energy,C188573790,Japan,JP,9
+1985,Renewable Energy,C188573790,Malaysia,MY,1
+1985,Renewable Energy,C188573790,Nigeria,NG,2
+1985,Renewable Energy,C188573790,Netherlands,NL,2
+1985,Renewable Energy,C188573790,Philippines,PH,1
+1985,Renewable Energy,C188573790,Poland,PL,3
+1985,Renewable Energy,C188573790,Sudan,SD,1
+1985,Renewable Energy,C188573790,Sweden,SE,1
+1985,Renewable Energy,C188573790,Singapore,SG,1
+1985,Renewable Energy,C188573790,"Taiwan, Province of China",TW,3
+1985,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1985,Renewable Energy,C188573790,United States of America,US,95
+1985,Renewable Energy,C188573790,Uruguay,UY,1
+1985,Robotics & Automation,C34413123,Austria,AT,2
+1985,Robotics & Automation,C34413123,Belgium,BE,1
+1985,Robotics & Automation,C34413123,Canada,CA,6
+1985,Robotics & Automation,C34413123,China,CN,1
+1985,Robotics & Automation,C34413123,Germany,DE,5
+1985,Robotics & Automation,C34413123,Spain,ES,3
+1985,Robotics & Automation,C34413123,France,FR,3
+1985,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,8
+1985,Robotics & Automation,C34413123,Israel,IL,3
+1985,Robotics & Automation,C34413123,Italy,IT,4
+1985,Robotics & Automation,C34413123,Japan,JP,3
+1985,Robotics & Automation,C34413123,Poland,PL,1
+1985,Robotics & Automation,C34413123,Romania,RO,1
+1985,Robotics & Automation,C34413123,Serbia,RS,1
+1985,Robotics & Automation,C34413123,Sweden,SE,1
+1985,Robotics & Automation,C34413123,United States of America,US,87
+1986,AI & Machine Learning,C119857082,Argentina,AR,13
+1986,AI & Machine Learning,C119857082,Austria,AT,22
+1986,AI & Machine Learning,C119857082,Australia,AU,118
+1986,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1986,AI & Machine Learning,C119857082,Bangladesh,BD,3
+1986,AI & Machine Learning,C119857082,Belgium,BE,54
+1986,AI & Machine Learning,C119857082,Bulgaria,BG,16
+1986,AI & Machine Learning,C119857082,Brunei Darussalam,BN,2
+1986,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,1
+1986,AI & Machine Learning,C119857082,Brazil,BR,29
+1986,AI & Machine Learning,C119857082,Belarus,BY,1
+1986,AI & Machine Learning,C119857082,Canada,CA,343
+1986,AI & Machine Learning,C119857082,Switzerland,CH,43
+1986,AI & Machine Learning,C119857082,Chile,CL,3
+1986,AI & Machine Learning,C119857082,Cameroon,CM,1
+1986,AI & Machine Learning,C119857082,China,CN,69
+1986,AI & Machine Learning,C119857082,Colombia,CO,2
+1986,AI & Machine Learning,C119857082,Cuba,CU,2
+1986,AI & Machine Learning,C119857082,Czechia,CZ,24
+1986,AI & Machine Learning,C119857082,Germany,DE,207
+1986,AI & Machine Learning,C119857082,Denmark,DK,24
+1986,AI & Machine Learning,C119857082,Dominican Republic,DO,1
+1986,AI & Machine Learning,C119857082,Algeria,DZ,1
+1986,AI & Machine Learning,C119857082,Ecuador,EC,1
+1986,AI & Machine Learning,C119857082,Egypt,EG,18
+1986,AI & Machine Learning,C119857082,Spain,ES,36
+1986,AI & Machine Learning,C119857082,Finland,FI,13
+1986,AI & Machine Learning,C119857082,France,FR,148
+1986,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,442
+1986,AI & Machine Learning,C119857082,Ghana,GH,2
+1986,AI & Machine Learning,C119857082,Greece,GR,31
+1986,AI & Machine Learning,C119857082,Hong Kong,HK,9
+1986,AI & Machine Learning,C119857082,Croatia,HR,2
+1986,AI & Machine Learning,C119857082,Hungary,HU,19
+1986,AI & Machine Learning,C119857082,Indonesia,ID,1
+1986,AI & Machine Learning,C119857082,Ireland,IE,2
+1986,AI & Machine Learning,C119857082,Israel,IL,86
+1986,AI & Machine Learning,C119857082,India,IN,109
+1986,AI & Machine Learning,C119857082,Iraq,IQ,4
+1986,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,4
+1986,AI & Machine Learning,C119857082,Iceland,IS,1
+1986,AI & Machine Learning,C119857082,Italy,IT,123
+1986,AI & Machine Learning,C119857082,Jordan,JO,2
+1986,AI & Machine Learning,C119857082,Japan,JP,290
+1986,AI & Machine Learning,C119857082,Kenya,KE,1
+1986,AI & Machine Learning,C119857082,"Korea, Republic of",KR,15
+1986,AI & Machine Learning,C119857082,Kuwait,KW,5
+1986,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1986,AI & Machine Learning,C119857082,Latvia,LV,4
+1986,AI & Machine Learning,C119857082,Myanmar,MM,1
+1986,AI & Machine Learning,C119857082,Mongolia,MN,1
+1986,AI & Machine Learning,C119857082,Malawi,MW,2
+1986,AI & Machine Learning,C119857082,Mexico,MX,11
+1986,AI & Machine Learning,C119857082,Malaysia,MY,2
+1986,AI & Machine Learning,C119857082,Mozambique,MZ,1
+1986,AI & Machine Learning,C119857082,Nigeria,NG,5
+1986,AI & Machine Learning,C119857082,Netherlands,NL,99
+1986,AI & Machine Learning,C119857082,Norway,NO,23
+1986,AI & Machine Learning,C119857082,Nepal,NP,1
+1986,AI & Machine Learning,C119857082,New Zealand,NZ,23
+1986,AI & Machine Learning,C119857082,Peru,PE,1
+1986,AI & Machine Learning,C119857082,Philippines,PH,1
+1986,AI & Machine Learning,C119857082,Pakistan,PK,1
+1986,AI & Machine Learning,C119857082,Poland,PL,48
+1986,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1986,AI & Machine Learning,C119857082,Portugal,PT,2
+1986,AI & Machine Learning,C119857082,Qatar,QA,3
+1986,AI & Machine Learning,C119857082,Romania,RO,6
+1986,AI & Machine Learning,C119857082,Serbia,RS,13
+1986,AI & Machine Learning,C119857082,Russian Federation,RU,68
+1986,AI & Machine Learning,C119857082,Saudi Arabia,SA,5
+1986,AI & Machine Learning,C119857082,Sudan,SD,3
+1986,AI & Machine Learning,C119857082,Sweden,SE,41
+1986,AI & Machine Learning,C119857082,Singapore,SG,11
+1986,AI & Machine Learning,C119857082,Slovenia,SI,3
+1986,AI & Machine Learning,C119857082,Slovakia,SK,11
+1986,AI & Machine Learning,C119857082,South Sudan,SS,3
+1986,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+1986,AI & Machine Learning,C119857082,Thailand,TH,3
+1986,AI & Machine Learning,C119857082,Tunisia,TN,3
+1986,AI & Machine Learning,C119857082,Turkey,TR,9
+1986,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,45
+1986,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1986,AI & Machine Learning,C119857082,Ukraine,UA,5
+1986,AI & Machine Learning,C119857082,United States of America,US,2627
+1986,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1986,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,5
+1986,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,1
+1986,AI & Machine Learning,C119857082,Viet Nam,VN,3
+1986,AI & Machine Learning,C119857082,South Africa,ZA,40
+1986,AI & Machine Learning,C119857082,Zambia,ZM,2
+1986,CRISPR & Genomics,C98108389,Germany,DE,1
+1986,CRISPR & Genomics,C98108389,France,FR,1
+1986,CRISPR & Genomics,C98108389,Japan,JP,1
+1986,CRISPR & Genomics,C98108389,United States of America,US,6
+1986,Data Science & Big Data,C2522767166,Argentina,AR,1
+1986,Data Science & Big Data,C2522767166,Austria,AT,4
+1986,Data Science & Big Data,C2522767166,Australia,AU,20
+1986,Data Science & Big Data,C2522767166,Bangladesh,BD,3
+1986,Data Science & Big Data,C2522767166,Belgium,BE,15
+1986,Data Science & Big Data,C2522767166,Bulgaria,BG,1
+1986,Data Science & Big Data,C2522767166,Brunei Darussalam,BN,1
+1986,Data Science & Big Data,C2522767166,Brazil,BR,3
+1986,Data Science & Big Data,C2522767166,Belarus,BY,1
+1986,Data Science & Big Data,C2522767166,Canada,CA,59
+1986,Data Science & Big Data,C2522767166,Switzerland,CH,11
+1986,Data Science & Big Data,C2522767166,Chile,CL,3
+1986,Data Science & Big Data,C2522767166,China,CN,7
+1986,Data Science & Big Data,C2522767166,Colombia,CO,1
+1986,Data Science & Big Data,C2522767166,Cyprus,CY,2
+1986,Data Science & Big Data,C2522767166,Czechia,CZ,4
+1986,Data Science & Big Data,C2522767166,Germany,DE,45
+1986,Data Science & Big Data,C2522767166,Denmark,DK,9
+1986,Data Science & Big Data,C2522767166,Spain,ES,4
+1986,Data Science & Big Data,C2522767166,Finland,FI,8
+1986,Data Science & Big Data,C2522767166,France,FR,30
+1986,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,412
+1986,Data Science & Big Data,C2522767166,Ghana,GH,5
+1986,Data Science & Big Data,C2522767166,Gambia,GM,1
+1986,Data Science & Big Data,C2522767166,Greece,GR,1
+1986,Data Science & Big Data,C2522767166,Croatia,HR,1
+1986,Data Science & Big Data,C2522767166,Hungary,HU,5
+1986,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1986,Data Science & Big Data,C2522767166,Ireland,IE,3
+1986,Data Science & Big Data,C2522767166,Israel,IL,6
+1986,Data Science & Big Data,C2522767166,India,IN,3
+1986,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1986,Data Science & Big Data,C2522767166,Italy,IT,12
+1986,Data Science & Big Data,C2522767166,Japan,JP,20
+1986,Data Science & Big Data,C2522767166,Kenya,KE,1
+1986,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,4
+1986,Data Science & Big Data,C2522767166,Sri Lanka,LK,2
+1986,Data Science & Big Data,C2522767166,Latvia,LV,1
+1986,Data Science & Big Data,C2522767166,Malta,MT,1
+1986,Data Science & Big Data,C2522767166,Malawi,MW,1
+1986,Data Science & Big Data,C2522767166,Mexico,MX,8
+1986,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1986,Data Science & Big Data,C2522767166,Nigeria,NG,4
+1986,Data Science & Big Data,C2522767166,Netherlands,NL,22
+1986,Data Science & Big Data,C2522767166,Norway,NO,3
+1986,Data Science & Big Data,C2522767166,New Zealand,NZ,7
+1986,Data Science & Big Data,C2522767166,Poland,PL,4
+1986,Data Science & Big Data,C2522767166,Puerto Rico,PR,1
+1986,Data Science & Big Data,C2522767166,Portugal,PT,1
+1986,Data Science & Big Data,C2522767166,Qatar,QA,1
+1986,Data Science & Big Data,C2522767166,Romania,RO,2
+1986,Data Science & Big Data,C2522767166,Russian Federation,RU,10
+1986,Data Science & Big Data,C2522767166,Sweden,SE,14
+1986,Data Science & Big Data,C2522767166,Singapore,SG,4
+1986,Data Science & Big Data,C2522767166,Slovakia,SK,5
+1986,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1986,Data Science & Big Data,C2522767166,Thailand,TH,1
+1986,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,2
+1986,Data Science & Big Data,C2522767166,Ukraine,UA,1
+1986,Data Science & Big Data,C2522767166,United States of America,US,790
+1986,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,1
+1986,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1986,Data Science & Big Data,C2522767166,South Africa,ZA,7
+1986,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1986,Infectious Diseases,C524204448,Austria,AT,2
+1986,Infectious Diseases,C524204448,Australia,AU,10
+1986,Infectious Diseases,C524204448,Belgium,BE,4
+1986,Infectious Diseases,C524204448,Canada,CA,6
+1986,Infectious Diseases,C524204448,Switzerland,CH,5
+1986,Infectious Diseases,C524204448,Côte d'Ivoire,CI,2
+1986,Infectious Diseases,C524204448,China,CN,1
+1986,Infectious Diseases,C524204448,Cuba,CU,1
+1986,Infectious Diseases,C524204448,Czechia,CZ,2
+1986,Infectious Diseases,C524204448,Germany,DE,8
+1986,Infectious Diseases,C524204448,Spain,ES,2
+1986,Infectious Diseases,C524204448,France,FR,8
+1986,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,33
+1986,Infectious Diseases,C524204448,Guadeloupe,GP,1
+1986,Infectious Diseases,C524204448,Greece,GR,1
+1986,Infectious Diseases,C524204448,Hungary,HU,2
+1986,Infectious Diseases,C524204448,Israel,IL,3
+1986,Infectious Diseases,C524204448,India,IN,2
+1986,Infectious Diseases,C524204448,Italy,IT,3
+1986,Infectious Diseases,C524204448,Japan,JP,15
+1986,Infectious Diseases,C524204448,Lebanon,LB,1
+1986,Infectious Diseases,C524204448,Morocco,MA,2
+1986,Infectious Diseases,C524204448,Nigeria,NG,1
+1986,Infectious Diseases,C524204448,Netherlands,NL,8
+1986,Infectious Diseases,C524204448,Norway,NO,1
+1986,Infectious Diseases,C524204448,Nepal,NP,1
+1986,Infectious Diseases,C524204448,New Zealand,NZ,2
+1986,Infectious Diseases,C524204448,Panama,PA,1
+1986,Infectious Diseases,C524204448,Poland,PL,1
+1986,Infectious Diseases,C524204448,Russian Federation,RU,2
+1986,Infectious Diseases,C524204448,Sweden,SE,1
+1986,Infectious Diseases,C524204448,Singapore,SG,2
+1986,Infectious Diseases,C524204448,Slovakia,SK,5
+1986,Infectious Diseases,C524204448,United States of America,US,160
+1986,Infectious Diseases,C524204448,South Africa,ZA,1
+1986,Quantum Computing,C58053490,Canada,CA,2
+1986,Quantum Computing,C58053490,Czechia,CZ,1
+1986,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,3
+1986,Quantum Computing,C58053490,Israel,IL,1
+1986,Quantum Computing,C58053490,Italy,IT,2
+1986,Quantum Computing,C58053490,Japan,JP,1
+1986,Quantum Computing,C58053490,Poland,PL,1
+1986,Quantum Computing,C58053490,Sweden,SE,1
+1986,Quantum Computing,C58053490,Slovakia,SK,1
+1986,Quantum Computing,C58053490,Ukraine,UA,1
+1986,Quantum Computing,C58053490,United States of America,US,14
+1986,Renewable Energy,C188573790,Argentina,AR,2
+1986,Renewable Energy,C188573790,Austria,AT,1
+1986,Renewable Energy,C188573790,Australia,AU,1
+1986,Renewable Energy,C188573790,Belgium,BE,2
+1986,Renewable Energy,C188573790,Bulgaria,BG,1
+1986,Renewable Energy,C188573790,Brazil,BR,1
+1986,Renewable Energy,C188573790,Botswana,BW,1
+1986,Renewable Energy,C188573790,Canada,CA,7
+1986,Renewable Energy,C188573790,China,CN,2
+1986,Renewable Energy,C188573790,Czechia,CZ,2
+1986,Renewable Energy,C188573790,Germany,DE,6
+1986,Renewable Energy,C188573790,Denmark,DK,2
+1986,Renewable Energy,C188573790,Egypt,EG,4
+1986,Renewable Energy,C188573790,Spain,ES,1
+1986,Renewable Energy,C188573790,Finland,FI,1
+1986,Renewable Energy,C188573790,France,FR,7
+1986,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,20
+1986,Renewable Energy,C188573790,Greece,GR,1
+1986,Renewable Energy,C188573790,Hungary,HU,1
+1986,Renewable Energy,C188573790,Ireland,IE,1
+1986,Renewable Energy,C188573790,Israel,IL,2
+1986,Renewable Energy,C188573790,India,IN,8
+1986,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,2
+1986,Renewable Energy,C188573790,Italy,IT,3
+1986,Renewable Energy,C188573790,Japan,JP,7
+1986,Renewable Energy,C188573790,Kazakhstan,KZ,1
+1986,Renewable Energy,C188573790,Sri Lanka,LK,2
+1986,Renewable Energy,C188573790,Mauritius,MU,1
+1986,Renewable Energy,C188573790,Nigeria,NG,2
+1986,Renewable Energy,C188573790,Netherlands,NL,5
+1986,Renewable Energy,C188573790,New Zealand,NZ,1
+1986,Renewable Energy,C188573790,Philippines,PH,1
+1986,Renewable Energy,C188573790,Saudi Arabia,SA,1
+1986,Renewable Energy,C188573790,Thailand,TH,1
+1986,Renewable Energy,C188573790,Turkey,TR,2
+1986,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1986,Renewable Energy,C188573790,United States of America,US,70
+1986,Renewable Energy,C188573790,South Africa,ZA,2
+1986,Robotics & Automation,C34413123,Argentina,AR,1
+1986,Robotics & Automation,C34413123,Austria,AT,1
+1986,Robotics & Automation,C34413123,Australia,AU,2
+1986,Robotics & Automation,C34413123,Belgium,BE,1
+1986,Robotics & Automation,C34413123,Bulgaria,BG,1
+1986,Robotics & Automation,C34413123,Canada,CA,2
+1986,Robotics & Automation,C34413123,Switzerland,CH,1
+1986,Robotics & Automation,C34413123,Germany,DE,6
+1986,Robotics & Automation,C34413123,Denmark,DK,1
+1986,Robotics & Automation,C34413123,Egypt,EG,1
+1986,Robotics & Automation,C34413123,Spain,ES,1
+1986,Robotics & Automation,C34413123,Finland,FI,3
+1986,Robotics & Automation,C34413123,France,FR,11
+1986,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,14
+1986,Robotics & Automation,C34413123,Greece,GR,2
+1986,Robotics & Automation,C34413123,Israel,IL,2
+1986,Robotics & Automation,C34413123,India,IN,1
+1986,Robotics & Automation,C34413123,Italy,IT,2
+1986,Robotics & Automation,C34413123,Japan,JP,12
+1986,Robotics & Automation,C34413123,Lithuania,LT,1
+1986,Robotics & Automation,C34413123,Netherlands,NL,1
+1986,Robotics & Automation,C34413123,Poland,PL,2
+1986,Robotics & Automation,C34413123,Portugal,PT,2
+1986,Robotics & Automation,C34413123,Serbia,RS,5
+1986,Robotics & Automation,C34413123,Singapore,SG,1
+1986,Robotics & Automation,C34413123,United States of America,US,103
+1987,AI & Machine Learning,C119857082,Argentina,AR,10
+1987,AI & Machine Learning,C119857082,Austria,AT,27
+1987,AI & Machine Learning,C119857082,Australia,AU,135
+1987,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1987,AI & Machine Learning,C119857082,Bangladesh,BD,5
+1987,AI & Machine Learning,C119857082,Belgium,BE,44
+1987,AI & Machine Learning,C119857082,Bulgaria,BG,10
+1987,AI & Machine Learning,C119857082,Burundi,BI,1
+1987,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,1
+1987,AI & Machine Learning,C119857082,Brazil,BR,27
+1987,AI & Machine Learning,C119857082,Botswana,BW,1
+1987,AI & Machine Learning,C119857082,Belarus,BY,2
+1987,AI & Machine Learning,C119857082,Canada,CA,346
+1987,AI & Machine Learning,C119857082,Switzerland,CH,50
+1987,AI & Machine Learning,C119857082,Chile,CL,8
+1987,AI & Machine Learning,C119857082,Cameroon,CM,2
+1987,AI & Machine Learning,C119857082,China,CN,103
+1987,AI & Machine Learning,C119857082,Colombia,CO,3
+1987,AI & Machine Learning,C119857082,Costa Rica,CR,1
+1987,AI & Machine Learning,C119857082,Czechia,CZ,25
+1987,AI & Machine Learning,C119857082,Germany,DE,283
+1987,AI & Machine Learning,C119857082,Denmark,DK,25
+1987,AI & Machine Learning,C119857082,Ecuador,EC,2
+1987,AI & Machine Learning,C119857082,Egypt,EG,18
+1987,AI & Machine Learning,C119857082,Spain,ES,42
+1987,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1987,AI & Machine Learning,C119857082,Finland,FI,17
+1987,AI & Machine Learning,C119857082,France,FR,167
+1987,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,501
+1987,AI & Machine Learning,C119857082,Georgia,GE,2
+1987,AI & Machine Learning,C119857082,Ghana,GH,6
+1987,AI & Machine Learning,C119857082,Gibraltar,GI,1
+1987,AI & Machine Learning,C119857082,Greece,GR,47
+1987,AI & Machine Learning,C119857082,Guam,GU,2
+1987,AI & Machine Learning,C119857082,Hong Kong,HK,6
+1987,AI & Machine Learning,C119857082,Croatia,HR,5
+1987,AI & Machine Learning,C119857082,Hungary,HU,26
+1987,AI & Machine Learning,C119857082,Indonesia,ID,2
+1987,AI & Machine Learning,C119857082,Ireland,IE,8
+1987,AI & Machine Learning,C119857082,Israel,IL,80
+1987,AI & Machine Learning,C119857082,India,IN,91
+1987,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3
+1987,AI & Machine Learning,C119857082,Italy,IT,126
+1987,AI & Machine Learning,C119857082,Jamaica,JM,1
+1987,AI & Machine Learning,C119857082,Jordan,JO,3
+1987,AI & Machine Learning,C119857082,Japan,JP,305
+1987,AI & Machine Learning,C119857082,Kenya,KE,2
+1987,AI & Machine Learning,C119857082,Cambodia,KH,2
+1987,AI & Machine Learning,C119857082,"Korea, Republic of",KR,15
+1987,AI & Machine Learning,C119857082,Kuwait,KW,9
+1987,AI & Machine Learning,C119857082,Latvia,LV,3
+1987,AI & Machine Learning,C119857082,Libya,LY,1
+1987,AI & Machine Learning,C119857082,Myanmar,MM,1
+1987,AI & Machine Learning,C119857082,Mongolia,MN,1
+1987,AI & Machine Learning,C119857082,Malta,MT,1
+1987,AI & Machine Learning,C119857082,Malawi,MW,2
+1987,AI & Machine Learning,C119857082,Mexico,MX,23
+1987,AI & Machine Learning,C119857082,Malaysia,MY,6
+1987,AI & Machine Learning,C119857082,Mozambique,MZ,3
+1987,AI & Machine Learning,C119857082,Niger,NE,2
+1987,AI & Machine Learning,C119857082,Nigeria,NG,12
+1987,AI & Machine Learning,C119857082,Netherlands,NL,100
+1987,AI & Machine Learning,C119857082,Norway,NO,29
+1987,AI & Machine Learning,C119857082,New Zealand,NZ,19
+1987,AI & Machine Learning,C119857082,Peru,PE,1
+1987,AI & Machine Learning,C119857082,Philippines,PH,3
+1987,AI & Machine Learning,C119857082,Pakistan,PK,1
+1987,AI & Machine Learning,C119857082,Poland,PL,68
+1987,AI & Machine Learning,C119857082,Puerto Rico,PR,5
+1987,AI & Machine Learning,C119857082,Portugal,PT,12
+1987,AI & Machine Learning,C119857082,Romania,RO,3
+1987,AI & Machine Learning,C119857082,Serbia,RS,15
+1987,AI & Machine Learning,C119857082,Russian Federation,RU,64
+1987,AI & Machine Learning,C119857082,Saudi Arabia,SA,18
+1987,AI & Machine Learning,C119857082,Sweden,SE,41
+1987,AI & Machine Learning,C119857082,Singapore,SG,15
+1987,AI & Machine Learning,C119857082,Slovenia,SI,8
+1987,AI & Machine Learning,C119857082,Slovakia,SK,14
+1987,AI & Machine Learning,C119857082,Somalia,SO,1
+1987,AI & Machine Learning,C119857082,South Sudan,SS,6
+1987,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+1987,AI & Machine Learning,C119857082,Thailand,TH,3
+1987,AI & Machine Learning,C119857082,Tunisia,TN,3
+1987,AI & Machine Learning,C119857082,Turkey,TR,7
+1987,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,53
+1987,AI & Machine Learning,C119857082,Ukraine,UA,6
+1987,AI & Machine Learning,C119857082,Uganda,UG,1
+1987,AI & Machine Learning,C119857082,United States of America,US,2882
+1987,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1987,AI & Machine Learning,C119857082,Holy See,VA,1
+1987,AI & Machine Learning,C119857082,Viet Nam,VN,2
+1987,AI & Machine Learning,C119857082,Yemen,YE,1
+1987,AI & Machine Learning,C119857082,South Africa,ZA,31
+1987,AI & Machine Learning,C119857082,Zambia,ZM,1
+1987,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
+1987,CRISPR & Genomics,C98108389,Australia,AU,1
+1987,CRISPR & Genomics,C98108389,Switzerland,CH,1
+1987,CRISPR & Genomics,C98108389,Germany,DE,3
+1987,CRISPR & Genomics,C98108389,France,FR,1
+1987,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1987,CRISPR & Genomics,C98108389,Japan,JP,1
+1987,CRISPR & Genomics,C98108389,Mexico,MX,1
+1987,CRISPR & Genomics,C98108389,United States of America,US,7
+1987,Data Science & Big Data,C2522767166,Austria,AT,6
+1987,Data Science & Big Data,C2522767166,Australia,AU,34
+1987,Data Science & Big Data,C2522767166,Bangladesh,BD,2
+1987,Data Science & Big Data,C2522767166,Belgium,BE,16
+1987,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1987,Data Science & Big Data,C2522767166,Brazil,BR,2
+1987,Data Science & Big Data,C2522767166,Belarus,BY,1
+1987,Data Science & Big Data,C2522767166,Canada,CA,70
+1987,Data Science & Big Data,C2522767166,Switzerland,CH,9
+1987,Data Science & Big Data,C2522767166,China,CN,9
+1987,Data Science & Big Data,C2522767166,Colombia,CO,1
+1987,Data Science & Big Data,C2522767166,Cuba,CU,1
+1987,Data Science & Big Data,C2522767166,Czechia,CZ,4
+1987,Data Science & Big Data,C2522767166,Germany,DE,42
+1987,Data Science & Big Data,C2522767166,Denmark,DK,3
+1987,Data Science & Big Data,C2522767166,Estonia,EE,1
+1987,Data Science & Big Data,C2522767166,Egypt,EG,1
+1987,Data Science & Big Data,C2522767166,Spain,ES,2
+1987,Data Science & Big Data,C2522767166,Finland,FI,7
+1987,Data Science & Big Data,C2522767166,France,FR,38
+1987,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,489
+1987,Data Science & Big Data,C2522767166,Ghana,GH,3
+1987,Data Science & Big Data,C2522767166,Greece,GR,2
+1987,Data Science & Big Data,C2522767166,Hong Kong,HK,1
+1987,Data Science & Big Data,C2522767166,Croatia,HR,2
+1987,Data Science & Big Data,C2522767166,Hungary,HU,6
+1987,Data Science & Big Data,C2522767166,Ireland,IE,10
+1987,Data Science & Big Data,C2522767166,Israel,IL,8
+1987,Data Science & Big Data,C2522767166,India,IN,11
+1987,Data Science & Big Data,C2522767166,Iceland,IS,1
+1987,Data Science & Big Data,C2522767166,Italy,IT,11
+1987,Data Science & Big Data,C2522767166,Japan,JP,23
+1987,Data Science & Big Data,C2522767166,Kenya,KE,1
+1987,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1987,Data Science & Big Data,C2522767166,Kuwait,KW,2
+1987,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1987,Data Science & Big Data,C2522767166,Libya,LY,1
+1987,Data Science & Big Data,C2522767166,Mali,ML,1
+1987,Data Science & Big Data,C2522767166,Malta,MT,1
+1987,Data Science & Big Data,C2522767166,Mexico,MX,4
+1987,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1987,Data Science & Big Data,C2522767166,Niger,NE,2
+1987,Data Science & Big Data,C2522767166,Nigeria,NG,6
+1987,Data Science & Big Data,C2522767166,Netherlands,NL,43
+1987,Data Science & Big Data,C2522767166,Norway,NO,6
+1987,Data Science & Big Data,C2522767166,New Zealand,NZ,5
+1987,Data Science & Big Data,C2522767166,Oman,OM,1
+1987,Data Science & Big Data,C2522767166,Philippines,PH,1
+1987,Data Science & Big Data,C2522767166,Poland,PL,3
+1987,Data Science & Big Data,C2522767166,Qatar,QA,1
+1987,Data Science & Big Data,C2522767166,Russian Federation,RU,11
+1987,Data Science & Big Data,C2522767166,Saudi Arabia,SA,1
+1987,Data Science & Big Data,C2522767166,Sweden,SE,10
+1987,Data Science & Big Data,C2522767166,Singapore,SG,3
+1987,Data Science & Big Data,C2522767166,Slovenia,SI,3
+1987,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1987,Data Science & Big Data,C2522767166,Sint Maarten (Dutch part),SX,1
+1987,Data Science & Big Data,C2522767166,Thailand,TH,3
+1987,Data Science & Big Data,C2522767166,Tunisia,TN,1
+1987,Data Science & Big Data,C2522767166,Turkey,TR,1
+1987,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,2
+1987,Data Science & Big Data,C2522767166,United States of America,US,894
+1987,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,1
+1987,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,1
+1987,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1987,Data Science & Big Data,C2522767166,Yemen,YE,2
+1987,Data Science & Big Data,C2522767166,South Africa,ZA,5
+1987,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1987,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1987,Infectious Diseases,C524204448,Austria,AT,3
+1987,Infectious Diseases,C524204448,Australia,AU,19
+1987,Infectious Diseases,C524204448,Belgium,BE,4
+1987,Infectious Diseases,C524204448,Brazil,BR,1
+1987,Infectious Diseases,C524204448,Canada,CA,30
+1987,Infectious Diseases,C524204448,Switzerland,CH,1
+1987,Infectious Diseases,C524204448,China,CN,2
+1987,Infectious Diseases,C524204448,Czechia,CZ,1
+1987,Infectious Diseases,C524204448,Germany,DE,32
+1987,Infectious Diseases,C524204448,Denmark,DK,3
+1987,Infectious Diseases,C524204448,Spain,ES,4
+1987,Infectious Diseases,C524204448,Finland,FI,3
+1987,Infectious Diseases,C524204448,France,FR,15
+1987,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,44
+1987,Infectious Diseases,C524204448,Greece,GR,1
+1987,Infectious Diseases,C524204448,Hungary,HU,3
+1987,Infectious Diseases,C524204448,Israel,IL,3
+1987,Infectious Diseases,C524204448,India,IN,1
+1987,Infectious Diseases,C524204448,Italy,IT,7
+1987,Infectious Diseases,C524204448,Japan,JP,16
+1987,Infectious Diseases,C524204448,Kenya,KE,1
+1987,Infectious Diseases,C524204448,Cambodia,KH,1
+1987,Infectious Diseases,C524204448,"Korea, Republic of",KR,1
+1987,Infectious Diseases,C524204448,Morocco,MA,3
+1987,Infectious Diseases,C524204448,Malaysia,MY,1
+1987,Infectious Diseases,C524204448,Nigeria,NG,2
+1987,Infectious Diseases,C524204448,Netherlands,NL,16
+1987,Infectious Diseases,C524204448,New Zealand,NZ,2
+1987,Infectious Diseases,C524204448,Pakistan,PK,1
+1987,Infectious Diseases,C524204448,Poland,PL,1
+1987,Infectious Diseases,C524204448,Qatar,QA,1
+1987,Infectious Diseases,C524204448,Romania,RO,1
+1987,Infectious Diseases,C524204448,Russian Federation,RU,3
+1987,Infectious Diseases,C524204448,Sweden,SE,3
+1987,Infectious Diseases,C524204448,Singapore,SG,3
+1987,Infectious Diseases,C524204448,Slovakia,SK,13
+1987,Infectious Diseases,C524204448,Tunisia,TN,1
+1987,Infectious Diseases,C524204448,Tonga,TO,1
+1987,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,1
+1987,Infectious Diseases,C524204448,Ukraine,UA,1
+1987,Infectious Diseases,C524204448,Uganda,UG,1
+1987,Infectious Diseases,C524204448,United States of America,US,278
+1987,Infectious Diseases,C524204448,Zambia,ZM,1
+1987,Quantum Computing,C58053490,Canada,CA,3
+1987,Quantum Computing,C58053490,Czechia,CZ,1
+1987,Quantum Computing,C58053490,Germany,DE,7
+1987,Quantum Computing,C58053490,France,FR,1
+1987,Quantum Computing,C58053490,Croatia,HR,1
+1987,Quantum Computing,C58053490,Israel,IL,1
+1987,Quantum Computing,C58053490,Italy,IT,1
+1987,Quantum Computing,C58053490,Japan,JP,1
+1987,Quantum Computing,C58053490,Russian Federation,RU,1
+1987,Quantum Computing,C58053490,Slovakia,SK,2
+1987,Quantum Computing,C58053490,United States of America,US,15
+1987,Quantum Computing,C58053490,South Africa,ZA,1
+1987,Renewable Energy,C188573790,Austria,AT,1
+1987,Renewable Energy,C188573790,Australia,AU,2
+1987,Renewable Energy,C188573790,Bangladesh,BD,1
+1987,Renewable Energy,C188573790,Belgium,BE,3
+1987,Renewable Energy,C188573790,Brazil,BR,1
+1987,Renewable Energy,C188573790,Belarus,BY,1
+1987,Renewable Energy,C188573790,Canada,CA,3
+1987,Renewable Energy,C188573790,Switzerland,CH,2
+1987,Renewable Energy,C188573790,China,CN,3
+1987,Renewable Energy,C188573790,Czechia,CZ,1
+1987,Renewable Energy,C188573790,Germany,DE,8
+1987,Renewable Energy,C188573790,Denmark,DK,2
+1987,Renewable Energy,C188573790,Spain,ES,2
+1987,Renewable Energy,C188573790,France,FR,8
+1987,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,20
+1987,Renewable Energy,C188573790,Greece,GR,3
+1987,Renewable Energy,C188573790,Ireland,IE,1
+1987,Renewable Energy,C188573790,Israel,IL,2
+1987,Renewable Energy,C188573790,India,IN,11
+1987,Renewable Energy,C188573790,Italy,IT,6
+1987,Renewable Energy,C188573790,Japan,JP,3
+1987,Renewable Energy,C188573790,"Korea, Republic of",KR,3
+1987,Renewable Energy,C188573790,Mexico,MX,1
+1987,Renewable Energy,C188573790,Nigeria,NG,1
+1987,Renewable Energy,C188573790,Netherlands,NL,2
+1987,Renewable Energy,C188573790,Norway,NO,1
+1987,Renewable Energy,C188573790,Nepal,NP,1
+1987,Renewable Energy,C188573790,New Zealand,NZ,1
+1987,Renewable Energy,C188573790,Réunion,RE,1
+1987,Renewable Energy,C188573790,Romania,RO,1
+1987,Renewable Energy,C188573790,Russian Federation,RU,1
+1987,Renewable Energy,C188573790,Saudi Arabia,SA,2
+1987,Renewable Energy,C188573790,Sweden,SE,2
+1987,Renewable Energy,C188573790,Thailand,TH,5
+1987,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1987,Renewable Energy,C188573790,United States of America,US,66
+1987,Renewable Energy,C188573790,South Africa,ZA,2
+1987,Robotics & Automation,C34413123,Austria,AT,1
+1987,Robotics & Automation,C34413123,Australia,AU,2
+1987,Robotics & Automation,C34413123,Belgium,BE,2
+1987,Robotics & Automation,C34413123,Canada,CA,12
+1987,Robotics & Automation,C34413123,China,CN,1
+1987,Robotics & Automation,C34413123,Germany,DE,6
+1987,Robotics & Automation,C34413123,Egypt,EG,1
+1987,Robotics & Automation,C34413123,France,FR,8
+1987,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,21
+1987,Robotics & Automation,C34413123,Greece,GR,1
+1987,Robotics & Automation,C34413123,Hong Kong,HK,1
+1987,Robotics & Automation,C34413123,Hungary,HU,5
+1987,Robotics & Automation,C34413123,Israel,IL,2
+1987,Robotics & Automation,C34413123,India,IN,1
+1987,Robotics & Automation,C34413123,Italy,IT,1
+1987,Robotics & Automation,C34413123,Japan,JP,7
+1987,Robotics & Automation,C34413123,"Korea, Republic of",KR,2
+1987,Robotics & Automation,C34413123,Netherlands,NL,1
+1987,Robotics & Automation,C34413123,Poland,PL,4
+1987,Robotics & Automation,C34413123,Portugal,PT,3
+1987,Robotics & Automation,C34413123,Russian Federation,RU,3
+1987,Robotics & Automation,C34413123,Sweden,SE,2
+1987,Robotics & Automation,C34413123,Slovakia,SK,1
+1987,Robotics & Automation,C34413123,Turkey,TR,1
+1987,Robotics & Automation,C34413123,United States of America,US,146
+1988,AI & Machine Learning,C119857082,Afghanistan,AF,1
+1988,AI & Machine Learning,C119857082,Armenia,AM,2
+1988,AI & Machine Learning,C119857082,Argentina,AR,12
+1988,AI & Machine Learning,C119857082,Austria,AT,36
+1988,AI & Machine Learning,C119857082,Australia,AU,149
+1988,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1988,AI & Machine Learning,C119857082,Bangladesh,BD,1
+1988,AI & Machine Learning,C119857082,Belgium,BE,64
+1988,AI & Machine Learning,C119857082,Bulgaria,BG,15
+1988,AI & Machine Learning,C119857082,Bahrain,BH,2
+1988,AI & Machine Learning,C119857082,Brazil,BR,19
+1988,AI & Machine Learning,C119857082,Botswana,BW,2
+1988,AI & Machine Learning,C119857082,Belarus,BY,3
+1988,AI & Machine Learning,C119857082,Canada,CA,342
+1988,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+1988,AI & Machine Learning,C119857082,Switzerland,CH,67
+1988,AI & Machine Learning,C119857082,Chile,CL,5
+1988,AI & Machine Learning,C119857082,Cameroon,CM,2
+1988,AI & Machine Learning,C119857082,China,CN,128
+1988,AI & Machine Learning,C119857082,Colombia,CO,1
+1988,AI & Machine Learning,C119857082,Czechia,CZ,29
+1988,AI & Machine Learning,C119857082,Germany,DE,296
+1988,AI & Machine Learning,C119857082,Denmark,DK,29
+1988,AI & Machine Learning,C119857082,Algeria,DZ,3
+1988,AI & Machine Learning,C119857082,Estonia,EE,3
+1988,AI & Machine Learning,C119857082,Egypt,EG,24
+1988,AI & Machine Learning,C119857082,Spain,ES,53
+1988,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1988,AI & Machine Learning,C119857082,Finland,FI,24
+1988,AI & Machine Learning,C119857082,Fiji,FJ,4
+1988,AI & Machine Learning,C119857082,France,FR,195
+1988,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,557
+1988,AI & Machine Learning,C119857082,Ghana,GH,5
+1988,AI & Machine Learning,C119857082,Greece,GR,32
+1988,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+1988,AI & Machine Learning,C119857082,Hong Kong,HK,11
+1988,AI & Machine Learning,C119857082,Croatia,HR,7
+1988,AI & Machine Learning,C119857082,Hungary,HU,25
+1988,AI & Machine Learning,C119857082,Indonesia,ID,1
+1988,AI & Machine Learning,C119857082,Ireland,IE,9
+1988,AI & Machine Learning,C119857082,Israel,IL,84
+1988,AI & Machine Learning,C119857082,India,IN,98
+1988,AI & Machine Learning,C119857082,Iraq,IQ,1
+1988,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2
+1988,AI & Machine Learning,C119857082,Italy,IT,169
+1988,AI & Machine Learning,C119857082,Jamaica,JM,1
+1988,AI & Machine Learning,C119857082,Jordan,JO,6
+1988,AI & Machine Learning,C119857082,Japan,JP,300
+1988,AI & Machine Learning,C119857082,Kenya,KE,2
+1988,AI & Machine Learning,C119857082,"Korea, Republic of",KR,35
+1988,AI & Machine Learning,C119857082,Kuwait,KW,5
+1988,AI & Machine Learning,C119857082,Kazakhstan,KZ,4
+1988,AI & Machine Learning,C119857082,Lebanon,LB,2
+1988,AI & Machine Learning,C119857082,Lesotho,LS,1
+1988,AI & Machine Learning,C119857082,Lithuania,LT,4
+1988,AI & Machine Learning,C119857082,Latvia,LV,4
+1988,AI & Machine Learning,C119857082,Morocco,MA,3
+1988,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+1988,AI & Machine Learning,C119857082,Myanmar,MM,1
+1988,AI & Machine Learning,C119857082,Mongolia,MN,1
+1988,AI & Machine Learning,C119857082,Malta,MT,2
+1988,AI & Machine Learning,C119857082,Malawi,MW,1
+1988,AI & Machine Learning,C119857082,Mexico,MX,25
+1988,AI & Machine Learning,C119857082,Malaysia,MY,4
+1988,AI & Machine Learning,C119857082,Mozambique,MZ,2
+1988,AI & Machine Learning,C119857082,Niger,NE,2
+1988,AI & Machine Learning,C119857082,Nigeria,NG,8
+1988,AI & Machine Learning,C119857082,Netherlands,NL,127
+1988,AI & Machine Learning,C119857082,Norway,NO,31
+1988,AI & Machine Learning,C119857082,New Zealand,NZ,38
+1988,AI & Machine Learning,C119857082,Panama,PA,1
+1988,AI & Machine Learning,C119857082,Peru,PE,1
+1988,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1988,AI & Machine Learning,C119857082,Philippines,PH,2
+1988,AI & Machine Learning,C119857082,Pakistan,PK,3
+1988,AI & Machine Learning,C119857082,Poland,PL,63
+1988,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1988,AI & Machine Learning,C119857082,Portugal,PT,6
+1988,AI & Machine Learning,C119857082,Romania,RO,13
+1988,AI & Machine Learning,C119857082,Serbia,RS,7
+1988,AI & Machine Learning,C119857082,Russian Federation,RU,80
+1988,AI & Machine Learning,C119857082,Saudi Arabia,SA,18
+1988,AI & Machine Learning,C119857082,Sweden,SE,57
+1988,AI & Machine Learning,C119857082,Singapore,SG,16
+1988,AI & Machine Learning,C119857082,Slovenia,SI,7
+1988,AI & Machine Learning,C119857082,Slovakia,SK,6
+1988,AI & Machine Learning,C119857082,South Sudan,SS,5
+1988,AI & Machine Learning,C119857082,Thailand,TH,4
+1988,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1988,AI & Machine Learning,C119857082,Turkey,TR,9
+1988,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,60
+1988,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1988,AI & Machine Learning,C119857082,Ukraine,UA,7
+1988,AI & Machine Learning,C119857082,United States of America,US,3118
+1988,AI & Machine Learning,C119857082,Uruguay,UY,1
+1988,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1988,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,1
+1988,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,1
+1988,AI & Machine Learning,C119857082,Viet Nam,VN,3
+1988,AI & Machine Learning,C119857082,South Africa,ZA,27
+1988,CRISPR & Genomics,C98108389,Argentina,AR,1
+1988,CRISPR & Genomics,C98108389,Germany,DE,3
+1988,CRISPR & Genomics,C98108389,Finland,FI,1
+1988,CRISPR & Genomics,C98108389,France,FR,1
+1988,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,2
+1988,CRISPR & Genomics,C98108389,Japan,JP,1
+1988,CRISPR & Genomics,C98108389,United States of America,US,20
+1988,Data Science & Big Data,C2522767166,Armenia,AM,1
+1988,Data Science & Big Data,C2522767166,Argentina,AR,2
+1988,Data Science & Big Data,C2522767166,Austria,AT,4
+1988,Data Science & Big Data,C2522767166,Australia,AU,37
+1988,Data Science & Big Data,C2522767166,Belgium,BE,8
+1988,Data Science & Big Data,C2522767166,Bulgaria,BG,3
+1988,Data Science & Big Data,C2522767166,Brazil,BR,1
+1988,Data Science & Big Data,C2522767166,Belarus,BY,2
+1988,Data Science & Big Data,C2522767166,Canada,CA,116
+1988,Data Science & Big Data,C2522767166,Switzerland,CH,13
+1988,Data Science & Big Data,C2522767166,China,CN,10
+1988,Data Science & Big Data,C2522767166,Czechia,CZ,1
+1988,Data Science & Big Data,C2522767166,Germany,DE,65
+1988,Data Science & Big Data,C2522767166,Denmark,DK,22
+1988,Data Science & Big Data,C2522767166,Algeria,DZ,1
+1988,Data Science & Big Data,C2522767166,Egypt,EG,2
+1988,Data Science & Big Data,C2522767166,Spain,ES,6
+1988,Data Science & Big Data,C2522767166,Finland,FI,6
+1988,Data Science & Big Data,C2522767166,France,FR,30
+1988,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,480
+1988,Data Science & Big Data,C2522767166,Ghana,GH,3
+1988,Data Science & Big Data,C2522767166,Greece,GR,1
+1988,Data Science & Big Data,C2522767166,Hong Kong,HK,2
+1988,Data Science & Big Data,C2522767166,Croatia,HR,1
+1988,Data Science & Big Data,C2522767166,Hungary,HU,15
+1988,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1988,Data Science & Big Data,C2522767166,Ireland,IE,6
+1988,Data Science & Big Data,C2522767166,Israel,IL,11
+1988,Data Science & Big Data,C2522767166,India,IN,20
+1988,Data Science & Big Data,C2522767166,Italy,IT,22
+1988,Data Science & Big Data,C2522767166,Japan,JP,22
+1988,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1988,Data Science & Big Data,C2522767166,Libya,LY,1
+1988,Data Science & Big Data,C2522767166,Myanmar,MM,1
+1988,Data Science & Big Data,C2522767166,Malta,MT,1
+1988,Data Science & Big Data,C2522767166,Mexico,MX,5
+1988,Data Science & Big Data,C2522767166,Niger,NE,1
+1988,Data Science & Big Data,C2522767166,Nigeria,NG,4
+1988,Data Science & Big Data,C2522767166,Netherlands,NL,38
+1988,Data Science & Big Data,C2522767166,Norway,NO,8
+1988,Data Science & Big Data,C2522767166,New Zealand,NZ,4
+1988,Data Science & Big Data,C2522767166,Peru,PE,1
+1988,Data Science & Big Data,C2522767166,Philippines,PH,1
+1988,Data Science & Big Data,C2522767166,Pakistan,PK,2
+1988,Data Science & Big Data,C2522767166,Poland,PL,5
+1988,Data Science & Big Data,C2522767166,Portugal,PT,1
+1988,Data Science & Big Data,C2522767166,Romania,RO,1
+1988,Data Science & Big Data,C2522767166,Serbia,RS,1
+1988,Data Science & Big Data,C2522767166,Russian Federation,RU,12
+1988,Data Science & Big Data,C2522767166,Saudi Arabia,SA,4
+1988,Data Science & Big Data,C2522767166,Sweden,SE,18
+1988,Data Science & Big Data,C2522767166,Singapore,SG,2
+1988,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1988,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1988,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1988,Data Science & Big Data,C2522767166,Chad,TD,1
+1988,Data Science & Big Data,C2522767166,Thailand,TH,1
+1988,Data Science & Big Data,C2522767166,Turkey,TR,1
+1988,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,3
+1988,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1988,Data Science & Big Data,C2522767166,United States of America,US,890
+1988,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,2
+1988,Data Science & Big Data,C2522767166,Viet Nam,VN,2
+1988,Data Science & Big Data,C2522767166,South Africa,ZA,11
+1988,Infectious Diseases,C524204448,United Arab Emirates,AE,2
+1988,Infectious Diseases,C524204448,Austria,AT,2
+1988,Infectious Diseases,C524204448,Australia,AU,7
+1988,Infectious Diseases,C524204448,Belgium,BE,5
+1988,Infectious Diseases,C524204448,Brazil,BR,3
+1988,Infectious Diseases,C524204448,Canada,CA,22
+1988,Infectious Diseases,C524204448,Switzerland,CH,11
+1988,Infectious Diseases,C524204448,Côte d'Ivoire,CI,1
+1988,Infectious Diseases,C524204448,Chile,CL,1
+1988,Infectious Diseases,C524204448,China,CN,1
+1988,Infectious Diseases,C524204448,Czechia,CZ,3
+1988,Infectious Diseases,C524204448,Germany,DE,19
+1988,Infectious Diseases,C524204448,Denmark,DK,4
+1988,Infectious Diseases,C524204448,Egypt,EG,2
+1988,Infectious Diseases,C524204448,Spain,ES,3
+1988,Infectious Diseases,C524204448,Finland,FI,2
+1988,Infectious Diseases,C524204448,France,FR,16
+1988,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,52
+1988,Infectious Diseases,C524204448,Guatemala,GT,1
+1988,Infectious Diseases,C524204448,Hong Kong,HK,1
+1988,Infectious Diseases,C524204448,Indonesia,ID,1
+1988,Infectious Diseases,C524204448,Israel,IL,5
+1988,Infectious Diseases,C524204448,India,IN,4
+1988,Infectious Diseases,C524204448,Italy,IT,8
+1988,Infectious Diseases,C524204448,Japan,JP,27
+1988,Infectious Diseases,C524204448,Kuwait,KW,3
+1988,Infectious Diseases,C524204448,Morocco,MA,2
+1988,Infectious Diseases,C524204448,Mexico,MX,2
+1988,Infectious Diseases,C524204448,Malaysia,MY,1
+1988,Infectious Diseases,C524204448,Nigeria,NG,2
+1988,Infectious Diseases,C524204448,Netherlands,NL,13
+1988,Infectious Diseases,C524204448,Norway,NO,1
+1988,Infectious Diseases,C524204448,New Zealand,NZ,5
+1988,Infectious Diseases,C524204448,Papua New Guinea,PG,1
+1988,Infectious Diseases,C524204448,Pakistan,PK,2
+1988,Infectious Diseases,C524204448,Portugal,PT,1
+1988,Infectious Diseases,C524204448,Russian Federation,RU,4
+1988,Infectious Diseases,C524204448,Sweden,SE,8
+1988,Infectious Diseases,C524204448,Singapore,SG,1
+1988,Infectious Diseases,C524204448,Slovakia,SK,6
+1988,Infectious Diseases,C524204448,South Sudan,SS,2
+1988,Infectious Diseases,C524204448,Thailand,TH,1
+1988,Infectious Diseases,C524204448,Tunisia,TN,1
+1988,Infectious Diseases,C524204448,Turkey,TR,1
+1988,Infectious Diseases,C524204448,Uganda,UG,1
+1988,Infectious Diseases,C524204448,United States of America,US,282
+1988,Infectious Diseases,C524204448,South Africa,ZA,2
+1988,Quantum Computing,C58053490,Australia,AU,1
+1988,Quantum Computing,C58053490,Canada,CA,2
+1988,Quantum Computing,C58053490,China,CN,1
+1988,Quantum Computing,C58053490,Czechia,CZ,1
+1988,Quantum Computing,C58053490,France,FR,1
+1988,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,1
+1988,Quantum Computing,C58053490,Italy,IT,3
+1988,Quantum Computing,C58053490,Japan,JP,2
+1988,Quantum Computing,C58053490,Russian Federation,RU,2
+1988,Quantum Computing,C58053490,Slovakia,SK,2
+1988,Quantum Computing,C58053490,United States of America,US,17
+1988,Renewable Energy,C188573790,Austria,AT,4
+1988,Renewable Energy,C188573790,Australia,AU,2
+1988,Renewable Energy,C188573790,Belgium,BE,1
+1988,Renewable Energy,C188573790,Brazil,BR,1
+1988,Renewable Energy,C188573790,Canada,CA,9
+1988,Renewable Energy,C188573790,Colombia,CO,1
+1988,Renewable Energy,C188573790,Germany,DE,16
+1988,Renewable Energy,C188573790,Denmark,DK,1
+1988,Renewable Energy,C188573790,Egypt,EG,3
+1988,Renewable Energy,C188573790,France,FR,3
+1988,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,20
+1988,Renewable Energy,C188573790,Hungary,HU,2
+1988,Renewable Energy,C188573790,Israel,IL,2
+1988,Renewable Energy,C188573790,India,IN,7
+1988,Renewable Energy,C188573790,Italy,IT,4
+1988,Renewable Energy,C188573790,Jordan,JO,1
+1988,Renewable Energy,C188573790,Japan,JP,3
+1988,Renewable Energy,C188573790,Kenya,KE,1
+1988,Renewable Energy,C188573790,Kuwait,KW,1
+1988,Renewable Energy,C188573790,Malawi,MW,1
+1988,Renewable Energy,C188573790,Mexico,MX,2
+1988,Renewable Energy,C188573790,Malaysia,MY,1
+1988,Renewable Energy,C188573790,Nigeria,NG,1
+1988,Renewable Energy,C188573790,Nicaragua,NI,1
+1988,Renewable Energy,C188573790,Netherlands,NL,5
+1988,Renewable Energy,C188573790,Norway,NO,1
+1988,Renewable Energy,C188573790,New Zealand,NZ,1
+1988,Renewable Energy,C188573790,Saudi Arabia,SA,2
+1988,Renewable Energy,C188573790,Sweden,SE,2
+1988,Renewable Energy,C188573790,Singapore,SG,1
+1988,Renewable Energy,C188573790,Turkey,TR,2
+1988,Renewable Energy,C188573790,"Taiwan, Province of China",TW,1
+1988,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1988,Renewable Energy,C188573790,United States of America,US,76
+1988,Renewable Energy,C188573790,Uruguay,UY,1
+1988,Renewable Energy,C188573790,South Africa,ZA,4
+1988,Robotics & Automation,C34413123,Austria,AT,1
+1988,Robotics & Automation,C34413123,Australia,AU,2
+1988,Robotics & Automation,C34413123,Belgium,BE,1
+1988,Robotics & Automation,C34413123,Bulgaria,BG,1
+1988,Robotics & Automation,C34413123,Canada,CA,16
+1988,Robotics & Automation,C34413123,Switzerland,CH,2
+1988,Robotics & Automation,C34413123,China,CN,2
+1988,Robotics & Automation,C34413123,Germany,DE,11
+1988,Robotics & Automation,C34413123,Spain,ES,2
+1988,Robotics & Automation,C34413123,Finland,FI,1
+1988,Robotics & Automation,C34413123,France,FR,6
+1988,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,26
+1988,Robotics & Automation,C34413123,Israel,IL,1
+1988,Robotics & Automation,C34413123,India,IN,3
+1988,Robotics & Automation,C34413123,Italy,IT,5
+1988,Robotics & Automation,C34413123,Japan,JP,8
+1988,Robotics & Automation,C34413123,Netherlands,NL,4
+1988,Robotics & Automation,C34413123,Poland,PL,3
+1988,Robotics & Automation,C34413123,Portugal,PT,1
+1988,Robotics & Automation,C34413123,Russian Federation,RU,1
+1988,Robotics & Automation,C34413123,Sweden,SE,3
+1988,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,1
+1988,Robotics & Automation,C34413123,United States of America,US,136
+1989,AI & Machine Learning,C119857082,Armenia,AM,2
+1989,AI & Machine Learning,C119857082,Argentina,AR,18
+1989,AI & Machine Learning,C119857082,Austria,AT,48
+1989,AI & Machine Learning,C119857082,Australia,AU,161
+1989,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1989,AI & Machine Learning,C119857082,Bangladesh,BD,3
+1989,AI & Machine Learning,C119857082,Belgium,BE,67
+1989,AI & Machine Learning,C119857082,Bulgaria,BG,13
+1989,AI & Machine Learning,C119857082,Bahrain,BH,7
+1989,AI & Machine Learning,C119857082,Burundi,BI,1
+1989,AI & Machine Learning,C119857082,Brazil,BR,38
+1989,AI & Machine Learning,C119857082,Botswana,BW,1
+1989,AI & Machine Learning,C119857082,Belarus,BY,2
+1989,AI & Machine Learning,C119857082,Canada,CA,411
+1989,AI & Machine Learning,C119857082,Switzerland,CH,66
+1989,AI & Machine Learning,C119857082,Chile,CL,15
+1989,AI & Machine Learning,C119857082,China,CN,170
+1989,AI & Machine Learning,C119857082,Colombia,CO,1
+1989,AI & Machine Learning,C119857082,Cuba,CU,1
+1989,AI & Machine Learning,C119857082,Cyprus,CY,1
+1989,AI & Machine Learning,C119857082,Czechia,CZ,37
+1989,AI & Machine Learning,C119857082,Germany,DE,326
+1989,AI & Machine Learning,C119857082,Denmark,DK,29
+1989,AI & Machine Learning,C119857082,Algeria,DZ,2
+1989,AI & Machine Learning,C119857082,Ecuador,EC,2
+1989,AI & Machine Learning,C119857082,Estonia,EE,2
+1989,AI & Machine Learning,C119857082,Egypt,EG,23
+1989,AI & Machine Learning,C119857082,Spain,ES,60
+1989,AI & Machine Learning,C119857082,Ethiopia,ET,2
+1989,AI & Machine Learning,C119857082,Finland,FI,38
+1989,AI & Machine Learning,C119857082,France,FR,233
+1989,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,599
+1989,AI & Machine Learning,C119857082,Georgia,GE,3
+1989,AI & Machine Learning,C119857082,Ghana,GH,3
+1989,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+1989,AI & Machine Learning,C119857082,Greece,GR,43
+1989,AI & Machine Learning,C119857082,Guatemala,GT,2
+1989,AI & Machine Learning,C119857082,Guam,GU,1
+1989,AI & Machine Learning,C119857082,Hong Kong,HK,13
+1989,AI & Machine Learning,C119857082,Croatia,HR,6
+1989,AI & Machine Learning,C119857082,Hungary,HU,28
+1989,AI & Machine Learning,C119857082,Indonesia,ID,3
+1989,AI & Machine Learning,C119857082,Ireland,IE,19
+1989,AI & Machine Learning,C119857082,Israel,IL,91
+1989,AI & Machine Learning,C119857082,India,IN,98
+1989,AI & Machine Learning,C119857082,Iraq,IQ,2
+1989,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,1
+1989,AI & Machine Learning,C119857082,Iceland,IS,2
+1989,AI & Machine Learning,C119857082,Italy,IT,178
+1989,AI & Machine Learning,C119857082,Jamaica,JM,2
+1989,AI & Machine Learning,C119857082,Jordan,JO,7
+1989,AI & Machine Learning,C119857082,Japan,JP,335
+1989,AI & Machine Learning,C119857082,Kenya,KE,1
+1989,AI & Machine Learning,C119857082,"Korea, Republic of",KR,33
+1989,AI & Machine Learning,C119857082,Kuwait,KW,6
+1989,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1989,AI & Machine Learning,C119857082,Lebanon,LB,1
+1989,AI & Machine Learning,C119857082,Liechtenstein,LI,1
+1989,AI & Machine Learning,C119857082,Sri Lanka,LK,4
+1989,AI & Machine Learning,C119857082,Lithuania,LT,1
+1989,AI & Machine Learning,C119857082,Latvia,LV,7
+1989,AI & Machine Learning,C119857082,Morocco,MA,8
+1989,AI & Machine Learning,C119857082,North Macedonia,MK,2
+1989,AI & Machine Learning,C119857082,Mexico,MX,20
+1989,AI & Machine Learning,C119857082,Malaysia,MY,4
+1989,AI & Machine Learning,C119857082,Niger,NE,1
+1989,AI & Machine Learning,C119857082,Nigeria,NG,10
+1989,AI & Machine Learning,C119857082,Netherlands,NL,149
+1989,AI & Machine Learning,C119857082,Norway,NO,31
+1989,AI & Machine Learning,C119857082,Nepal,NP,1
+1989,AI & Machine Learning,C119857082,New Zealand,NZ,31
+1989,AI & Machine Learning,C119857082,Peru,PE,1
+1989,AI & Machine Learning,C119857082,Philippines,PH,3
+1989,AI & Machine Learning,C119857082,Pakistan,PK,3
+1989,AI & Machine Learning,C119857082,Poland,PL,70
+1989,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1989,AI & Machine Learning,C119857082,"Palestine, State of",PS,1
+1989,AI & Machine Learning,C119857082,Portugal,PT,12
+1989,AI & Machine Learning,C119857082,Romania,RO,13
+1989,AI & Machine Learning,C119857082,Serbia,RS,16
+1989,AI & Machine Learning,C119857082,Russian Federation,RU,95
+1989,AI & Machine Learning,C119857082,Saudi Arabia,SA,17
+1989,AI & Machine Learning,C119857082,Sudan,SD,2
+1989,AI & Machine Learning,C119857082,Sweden,SE,66
+1989,AI & Machine Learning,C119857082,Singapore,SG,43
+1989,AI & Machine Learning,C119857082,Slovenia,SI,9
+1989,AI & Machine Learning,C119857082,Slovakia,SK,12
+1989,AI & Machine Learning,C119857082,Senegal,SN,1
+1989,AI & Machine Learning,C119857082,South Sudan,SS,2
+1989,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+1989,AI & Machine Learning,C119857082,Thailand,TH,6
+1989,AI & Machine Learning,C119857082,Tunisia,TN,7
+1989,AI & Machine Learning,C119857082,Turkey,TR,8
+1989,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,76
+1989,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1989,AI & Machine Learning,C119857082,Ukraine,UA,10
+1989,AI & Machine Learning,C119857082,United States of America,US,3605
+1989,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1989,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,1
+1989,AI & Machine Learning,C119857082,Viet Nam,VN,3
+1989,AI & Machine Learning,C119857082,Yemen,YE,1
+1989,AI & Machine Learning,C119857082,South Africa,ZA,37
+1989,AI & Machine Learning,C119857082,Zambia,ZM,1
+1989,AI & Machine Learning,C119857082,Zimbabwe,ZW,2
+1989,CRISPR & Genomics,C98108389,Canada,CA,1
+1989,CRISPR & Genomics,C98108389,Germany,DE,2
+1989,CRISPR & Genomics,C98108389,France,FR,4
+1989,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1989,CRISPR & Genomics,C98108389,Italy,IT,1
+1989,CRISPR & Genomics,C98108389,Japan,JP,4
+1989,CRISPR & Genomics,C98108389,Netherlands,NL,1
+1989,CRISPR & Genomics,C98108389,"Taiwan, Province of China",TW,1
+1989,CRISPR & Genomics,C98108389,United States of America,US,16
+1989,Data Science & Big Data,C2522767166,Argentina,AR,1
+1989,Data Science & Big Data,C2522767166,Austria,AT,6
+1989,Data Science & Big Data,C2522767166,Australia,AU,30
+1989,Data Science & Big Data,C2522767166,Bangladesh,BD,3
+1989,Data Science & Big Data,C2522767166,Belgium,BE,11
+1989,Data Science & Big Data,C2522767166,Bulgaria,BG,6
+1989,Data Science & Big Data,C2522767166,Brunei Darussalam,BN,1
+1989,Data Science & Big Data,C2522767166,Brazil,BR,3
+1989,Data Science & Big Data,C2522767166,Belarus,BY,1
+1989,Data Science & Big Data,C2522767166,Canada,CA,129
+1989,Data Science & Big Data,C2522767166,Switzerland,CH,17
+1989,Data Science & Big Data,C2522767166,Cameroon,CM,1
+1989,Data Science & Big Data,C2522767166,China,CN,13
+1989,Data Science & Big Data,C2522767166,Cuba,CU,3
+1989,Data Science & Big Data,C2522767166,Cyprus,CY,1
+1989,Data Science & Big Data,C2522767166,Czechia,CZ,4
+1989,Data Science & Big Data,C2522767166,Germany,DE,62
+1989,Data Science & Big Data,C2522767166,Denmark,DK,11
+1989,Data Science & Big Data,C2522767166,Egypt,EG,3
+1989,Data Science & Big Data,C2522767166,Spain,ES,4
+1989,Data Science & Big Data,C2522767166,Finland,FI,8
+1989,Data Science & Big Data,C2522767166,Fiji,FJ,1
+1989,Data Science & Big Data,C2522767166,"Micronesia, Federated States of",FM,1
+1989,Data Science & Big Data,C2522767166,France,FR,48
+1989,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,433
+1989,Data Science & Big Data,C2522767166,Ghana,GH,4
+1989,Data Science & Big Data,C2522767166,Gibraltar,GI,2
+1989,Data Science & Big Data,C2522767166,Gambia,GM,2
+1989,Data Science & Big Data,C2522767166,Greece,GR,2
+1989,Data Science & Big Data,C2522767166,Guatemala,GT,1
+1989,Data Science & Big Data,C2522767166,Hong Kong,HK,3
+1989,Data Science & Big Data,C2522767166,Croatia,HR,2
+1989,Data Science & Big Data,C2522767166,Hungary,HU,11
+1989,Data Science & Big Data,C2522767166,Ireland,IE,4
+1989,Data Science & Big Data,C2522767166,Israel,IL,13
+1989,Data Science & Big Data,C2522767166,India,IN,18
+1989,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1989,Data Science & Big Data,C2522767166,Italy,IT,27
+1989,Data Science & Big Data,C2522767166,Japan,JP,25
+1989,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,2
+1989,Data Science & Big Data,C2522767166,Sri Lanka,LK,1
+1989,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1989,Data Science & Big Data,C2522767166,Latvia,LV,1
+1989,Data Science & Big Data,C2522767166,Libya,LY,1
+1989,Data Science & Big Data,C2522767166,Malta,MT,2
+1989,Data Science & Big Data,C2522767166,Mexico,MX,11
+1989,Data Science & Big Data,C2522767166,Malaysia,MY,1
+1989,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1989,Data Science & Big Data,C2522767166,Netherlands,NL,44
+1989,Data Science & Big Data,C2522767166,Norway,NO,3
+1989,Data Science & Big Data,C2522767166,New Zealand,NZ,7
+1989,Data Science & Big Data,C2522767166,Pakistan,PK,2
+1989,Data Science & Big Data,C2522767166,Poland,PL,5
+1989,Data Science & Big Data,C2522767166,Portugal,PT,4
+1989,Data Science & Big Data,C2522767166,Qatar,QA,1
+1989,Data Science & Big Data,C2522767166,Romania,RO,3
+1989,Data Science & Big Data,C2522767166,Russian Federation,RU,10
+1989,Data Science & Big Data,C2522767166,Saudi Arabia,SA,1
+1989,Data Science & Big Data,C2522767166,Sweden,SE,18
+1989,Data Science & Big Data,C2522767166,Singapore,SG,6
+1989,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1989,Data Science & Big Data,C2522767166,Suriname,SR,1
+1989,Data Science & Big Data,C2522767166,South Sudan,SS,3
+1989,Data Science & Big Data,C2522767166,Thailand,TH,1
+1989,Data Science & Big Data,C2522767166,Trinidad and Tobago,TT,1
+1989,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,4
+1989,Data Science & Big Data,C2522767166,United States of America,US,1019
+1989,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,2
+1989,Data Science & Big Data,C2522767166,Viet Nam,VN,2
+1989,Data Science & Big Data,C2522767166,South Africa,ZA,3
+1989,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1989,Infectious Diseases,C524204448,Argentina,AR,2
+1989,Infectious Diseases,C524204448,Australia,AU,8
+1989,Infectious Diseases,C524204448,Bangladesh,BD,1
+1989,Infectious Diseases,C524204448,Belgium,BE,8
+1989,Infectious Diseases,C524204448,Brazil,BR,5
+1989,Infectious Diseases,C524204448,Belarus,BY,1
+1989,Infectious Diseases,C524204448,Canada,CA,31
+1989,Infectious Diseases,C524204448,Switzerland,CH,7
+1989,Infectious Diseases,C524204448,Côte d'Ivoire,CI,1
+1989,Infectious Diseases,C524204448,Chile,CL,1
+1989,Infectious Diseases,C524204448,China,CN,2
+1989,Infectious Diseases,C524204448,Czechia,CZ,3
+1989,Infectious Diseases,C524204448,Germany,DE,26
+1989,Infectious Diseases,C524204448,Denmark,DK,6
+1989,Infectious Diseases,C524204448,Algeria,DZ,1
+1989,Infectious Diseases,C524204448,Spain,ES,6
+1989,Infectious Diseases,C524204448,Finland,FI,1
+1989,Infectious Diseases,C524204448,France,FR,20
+1989,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,62
+1989,Infectious Diseases,C524204448,Greece,GR,2
+1989,Infectious Diseases,C524204448,Hong Kong,HK,1
+1989,Infectious Diseases,C524204448,Croatia,HR,1
+1989,Infectious Diseases,C524204448,Ireland,IE,1
+1989,Infectious Diseases,C524204448,Israel,IL,8
+1989,Infectious Diseases,C524204448,Italy,IT,9
+1989,Infectious Diseases,C524204448,Japan,JP,14
+1989,Infectious Diseases,C524204448,"Korea, Republic of",KR,2
+1989,Infectious Diseases,C524204448,Kuwait,KW,1
+1989,Infectious Diseases,C524204448,Lebanon,LB,1
+1989,Infectious Diseases,C524204448,Morocco,MA,1
+1989,Infectious Diseases,C524204448,Mexico,MX,2
+1989,Infectious Diseases,C524204448,Malaysia,MY,1
+1989,Infectious Diseases,C524204448,Nigeria,NG,1
+1989,Infectious Diseases,C524204448,Netherlands,NL,18
+1989,Infectious Diseases,C524204448,Norway,NO,2
+1989,Infectious Diseases,C524204448,New Zealand,NZ,1
+1989,Infectious Diseases,C524204448,French Polynesia,PF,1
+1989,Infectious Diseases,C524204448,Philippines,PH,1
+1989,Infectious Diseases,C524204448,Poland,PL,2
+1989,Infectious Diseases,C524204448,Russian Federation,RU,12
+1989,Infectious Diseases,C524204448,Sweden,SE,4
+1989,Infectious Diseases,C524204448,Slovakia,SK,8
+1989,Infectious Diseases,C524204448,Turkey,TR,1
+1989,Infectious Diseases,C524204448,Uganda,UG,1
+1989,Infectious Diseases,C524204448,United States of America,US,271
+1989,Infectious Diseases,C524204448,Viet Nam,VN,2
+1989,Infectious Diseases,C524204448,South Africa,ZA,3
+1989,Infectious Diseases,C524204448,Zimbabwe,ZW,1
+1989,Quantum Computing,C58053490,Australia,AU,1
+1989,Quantum Computing,C58053490,Belgium,BE,2
+1989,Quantum Computing,C58053490,Canada,CA,2
+1989,Quantum Computing,C58053490,China,CN,3
+1989,Quantum Computing,C58053490,Czechia,CZ,1
+1989,Quantum Computing,C58053490,Germany,DE,5
+1989,Quantum Computing,C58053490,Denmark,DK,1
+1989,Quantum Computing,C58053490,France,FR,1
+1989,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,2
+1989,Quantum Computing,C58053490,Italy,IT,2
+1989,Quantum Computing,C58053490,Japan,JP,2
+1989,Quantum Computing,C58053490,"Korea, Republic of",KR,1
+1989,Quantum Computing,C58053490,Poland,PL,1
+1989,Quantum Computing,C58053490,Russian Federation,RU,1
+1989,Quantum Computing,C58053490,Slovakia,SK,3
+1989,Quantum Computing,C58053490,United States of America,US,12
+1989,Renewable Energy,C188573790,Austria,AT,2
+1989,Renewable Energy,C188573790,Belgium,BE,1
+1989,Renewable Energy,C188573790,Bulgaria,BG,2
+1989,Renewable Energy,C188573790,Brazil,BR,1
+1989,Renewable Energy,C188573790,Canada,CA,10
+1989,Renewable Energy,C188573790,Switzerland,CH,6
+1989,Renewable Energy,C188573790,China,CN,3
+1989,Renewable Energy,C188573790,Czechia,CZ,1
+1989,Renewable Energy,C188573790,Germany,DE,4
+1989,Renewable Energy,C188573790,Egypt,EG,1
+1989,Renewable Energy,C188573790,Spain,ES,1
+1989,Renewable Energy,C188573790,France,FR,2
+1989,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,24
+1989,Renewable Energy,C188573790,Greece,GR,1
+1989,Renewable Energy,C188573790,Hungary,HU,2
+1989,Renewable Energy,C188573790,Indonesia,ID,1
+1989,Renewable Energy,C188573790,Israel,IL,4
+1989,Renewable Energy,C188573790,India,IN,5
+1989,Renewable Energy,C188573790,Italy,IT,2
+1989,Renewable Energy,C188573790,Japan,JP,12
+1989,Renewable Energy,C188573790,Netherlands,NL,2
+1989,Renewable Energy,C188573790,Pakistan,PK,1
+1989,Renewable Energy,C188573790,Poland,PL,1
+1989,Renewable Energy,C188573790,Russian Federation,RU,1
+1989,Renewable Energy,C188573790,Saudi Arabia,SA,2
+1989,Renewable Energy,C188573790,Sweden,SE,1
+1989,Renewable Energy,C188573790,South Sudan,SS,1
+1989,Renewable Energy,C188573790,Turkey,TR,2
+1989,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1989,Renewable Energy,C188573790,United States of America,US,74
+1989,Renewable Energy,C188573790,South Africa,ZA,1
+1989,Robotics & Automation,C34413123,Australia,AU,5
+1989,Robotics & Automation,C34413123,Belgium,BE,2
+1989,Robotics & Automation,C34413123,Canada,CA,22
+1989,Robotics & Automation,C34413123,Switzerland,CH,4
+1989,Robotics & Automation,C34413123,China,CN,3
+1989,Robotics & Automation,C34413123,Germany,DE,10
+1989,Robotics & Automation,C34413123,Denmark,DK,2
+1989,Robotics & Automation,C34413123,Spain,ES,4
+1989,Robotics & Automation,C34413123,Finland,FI,1
+1989,Robotics & Automation,C34413123,France,FR,6
+1989,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,26
+1989,Robotics & Automation,C34413123,India,IN,2
+1989,Robotics & Automation,C34413123,Italy,IT,11
+1989,Robotics & Automation,C34413123,Japan,JP,12
+1989,Robotics & Automation,C34413123,"Korea, Republic of",KR,1
+1989,Robotics & Automation,C34413123,Kuwait,KW,1
+1989,Robotics & Automation,C34413123,Poland,PL,7
+1989,Robotics & Automation,C34413123,Serbia,RS,5
+1989,Robotics & Automation,C34413123,Singapore,SG,1
+1989,Robotics & Automation,C34413123,Slovenia,SI,1
+1989,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,1
+1989,Robotics & Automation,C34413123,United States of America,US,193
+1990,AI & Machine Learning,C119857082,Argentina,AR,17
+1990,AI & Machine Learning,C119857082,American Samoa,AS,1
+1990,AI & Machine Learning,C119857082,Austria,AT,44
+1990,AI & Machine Learning,C119857082,Australia,AU,205
+1990,AI & Machine Learning,C119857082,Azerbaijan,AZ,4
+1990,AI & Machine Learning,C119857082,Bangladesh,BD,4
+1990,AI & Machine Learning,C119857082,Belgium,BE,77
+1990,AI & Machine Learning,C119857082,Burkina Faso,BF,1
+1990,AI & Machine Learning,C119857082,Bulgaria,BG,21
+1990,AI & Machine Learning,C119857082,Bahrain,BH,4
+1990,AI & Machine Learning,C119857082,Burundi,BI,2
+1990,AI & Machine Learning,C119857082,Brazil,BR,43
+1990,AI & Machine Learning,C119857082,Belarus,BY,2
+1990,AI & Machine Learning,C119857082,Canada,CA,442
+1990,AI & Machine Learning,C119857082,Switzerland,CH,81
+1990,AI & Machine Learning,C119857082,Chile,CL,8
+1990,AI & Machine Learning,C119857082,Cameroon,CM,4
+1990,AI & Machine Learning,C119857082,China,CN,184
+1990,AI & Machine Learning,C119857082,Colombia,CO,2
+1990,AI & Machine Learning,C119857082,Costa Rica,CR,2
+1990,AI & Machine Learning,C119857082,Cuba,CU,1
+1990,AI & Machine Learning,C119857082,Cyprus,CY,2
+1990,AI & Machine Learning,C119857082,Czechia,CZ,38
+1990,AI & Machine Learning,C119857082,Germany,DE,380
+1990,AI & Machine Learning,C119857082,Denmark,DK,49
+1990,AI & Machine Learning,C119857082,Algeria,DZ,2
+1990,AI & Machine Learning,C119857082,Egypt,EG,24
+1990,AI & Machine Learning,C119857082,Spain,ES,73
+1990,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1990,AI & Machine Learning,C119857082,Finland,FI,27
+1990,AI & Machine Learning,C119857082,Fiji,FJ,2
+1990,AI & Machine Learning,C119857082,France,FR,243
+1990,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,644
+1990,AI & Machine Learning,C119857082,Ghana,GH,7
+1990,AI & Machine Learning,C119857082,Greece,GR,44
+1990,AI & Machine Learning,C119857082,Guatemala,GT,1
+1990,AI & Machine Learning,C119857082,Hong Kong,HK,8
+1990,AI & Machine Learning,C119857082,Croatia,HR,6
+1990,AI & Machine Learning,C119857082,Haiti,HT,1
+1990,AI & Machine Learning,C119857082,Hungary,HU,29
+1990,AI & Machine Learning,C119857082,Indonesia,ID,1
+1990,AI & Machine Learning,C119857082,Ireland,IE,18
+1990,AI & Machine Learning,C119857082,Israel,IL,79
+1990,AI & Machine Learning,C119857082,India,IN,124
+1990,AI & Machine Learning,C119857082,Iraq,IQ,1
+1990,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,8
+1990,AI & Machine Learning,C119857082,Iceland,IS,1
+1990,AI & Machine Learning,C119857082,Italy,IT,201
+1990,AI & Machine Learning,C119857082,Jamaica,JM,2
+1990,AI & Machine Learning,C119857082,Jordan,JO,1
+1990,AI & Machine Learning,C119857082,Japan,JP,396
+1990,AI & Machine Learning,C119857082,Kenya,KE,3
+1990,AI & Machine Learning,C119857082,"Korea, Republic of",KR,30
+1990,AI & Machine Learning,C119857082,Kuwait,KW,11
+1990,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,1
+1990,AI & Machine Learning,C119857082,Lebanon,LB,2
+1990,AI & Machine Learning,C119857082,Sri Lanka,LK,6
+1990,AI & Machine Learning,C119857082,Lithuania,LT,2
+1990,AI & Machine Learning,C119857082,Latvia,LV,6
+1990,AI & Machine Learning,C119857082,Morocco,MA,5
+1990,AI & Machine Learning,C119857082,Madagascar,MG,2
+1990,AI & Machine Learning,C119857082,Mali,ML,1
+1990,AI & Machine Learning,C119857082,Mongolia,MN,1
+1990,AI & Machine Learning,C119857082,Malawi,MW,1
+1990,AI & Machine Learning,C119857082,Mexico,MX,29
+1990,AI & Machine Learning,C119857082,Malaysia,MY,8
+1990,AI & Machine Learning,C119857082,New Caledonia,NC,1
+1990,AI & Machine Learning,C119857082,Nigeria,NG,18
+1990,AI & Machine Learning,C119857082,Netherlands,NL,158
+1990,AI & Machine Learning,C119857082,Norway,NO,40
+1990,AI & Machine Learning,C119857082,Nepal,NP,1
+1990,AI & Machine Learning,C119857082,New Zealand,NZ,35
+1990,AI & Machine Learning,C119857082,Panama,PA,1
+1990,AI & Machine Learning,C119857082,Peru,PE,3
+1990,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1990,AI & Machine Learning,C119857082,Philippines,PH,3
+1990,AI & Machine Learning,C119857082,Pakistan,PK,4
+1990,AI & Machine Learning,C119857082,Poland,PL,62
+1990,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1990,AI & Machine Learning,C119857082,Portugal,PT,16
+1990,AI & Machine Learning,C119857082,Qatar,QA,1
+1990,AI & Machine Learning,C119857082,Romania,RO,5
+1990,AI & Machine Learning,C119857082,Serbia,RS,10
+1990,AI & Machine Learning,C119857082,Russian Federation,RU,115
+1990,AI & Machine Learning,C119857082,Saudi Arabia,SA,14
+1990,AI & Machine Learning,C119857082,Sweden,SE,85
+1990,AI & Machine Learning,C119857082,Singapore,SG,34
+1990,AI & Machine Learning,C119857082,Slovenia,SI,5
+1990,AI & Machine Learning,C119857082,Slovakia,SK,30
+1990,AI & Machine Learning,C119857082,Senegal,SN,2
+1990,AI & Machine Learning,C119857082,South Sudan,SS,6
+1990,AI & Machine Learning,C119857082,Togo,TG,1
+1990,AI & Machine Learning,C119857082,Thailand,TH,7
+1990,AI & Machine Learning,C119857082,Tajikistan,TJ,3
+1990,AI & Machine Learning,C119857082,Tunisia,TN,1
+1990,AI & Machine Learning,C119857082,Turkey,TR,18
+1990,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,86
+1990,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1990,AI & Machine Learning,C119857082,Ukraine,UA,8
+1990,AI & Machine Learning,C119857082,Uganda,UG,1
+1990,AI & Machine Learning,C119857082,United States of America,US,3931
+1990,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1990,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,5
+1990,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,4
+1990,AI & Machine Learning,C119857082,Viet Nam,VN,5
+1990,AI & Machine Learning,C119857082,South Africa,ZA,30
+1990,CRISPR & Genomics,C98108389,Austria,AT,1
+1990,CRISPR & Genomics,C98108389,Australia,AU,1
+1990,CRISPR & Genomics,C98108389,Switzerland,CH,2
+1990,CRISPR & Genomics,C98108389,China,CN,1
+1990,CRISPR & Genomics,C98108389,Germany,DE,2
+1990,CRISPR & Genomics,C98108389,France,FR,5
+1990,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,3
+1990,CRISPR & Genomics,C98108389,Ireland,IE,1
+1990,CRISPR & Genomics,C98108389,Japan,JP,2
+1990,CRISPR & Genomics,C98108389,Netherlands,NL,1
+1990,CRISPR & Genomics,C98108389,Nepal,NP,1
+1990,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1990,CRISPR & Genomics,C98108389,United States of America,US,19
+1990,Data Science & Big Data,C2522767166,Argentina,AR,1
+1990,Data Science & Big Data,C2522767166,Austria,AT,14
+1990,Data Science & Big Data,C2522767166,Australia,AU,56
+1990,Data Science & Big Data,C2522767166,Azerbaijan,AZ,1
+1990,Data Science & Big Data,C2522767166,Bangladesh,BD,5
+1990,Data Science & Big Data,C2522767166,Belgium,BE,15
+1990,Data Science & Big Data,C2522767166,Bulgaria,BG,6
+1990,Data Science & Big Data,C2522767166,Brunei Darussalam,BN,1
+1990,Data Science & Big Data,C2522767166,Brazil,BR,4
+1990,Data Science & Big Data,C2522767166,Canada,CA,138
+1990,Data Science & Big Data,C2522767166,Switzerland,CH,22
+1990,Data Science & Big Data,C2522767166,Chile,CL,2
+1990,Data Science & Big Data,C2522767166,China,CN,15
+1990,Data Science & Big Data,C2522767166,Czechia,CZ,3
+1990,Data Science & Big Data,C2522767166,Germany,DE,95
+1990,Data Science & Big Data,C2522767166,Denmark,DK,16
+1990,Data Science & Big Data,C2522767166,Dominican Republic,DO,1
+1990,Data Science & Big Data,C2522767166,Estonia,EE,1
+1990,Data Science & Big Data,C2522767166,Egypt,EG,2
+1990,Data Science & Big Data,C2522767166,Spain,ES,13
+1990,Data Science & Big Data,C2522767166,Finland,FI,17
+1990,Data Science & Big Data,C2522767166,France,FR,41
+1990,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,507
+1990,Data Science & Big Data,C2522767166,Gibraltar,GI,1
+1990,Data Science & Big Data,C2522767166,Greece,GR,6
+1990,Data Science & Big Data,C2522767166,Hong Kong,HK,4
+1990,Data Science & Big Data,C2522767166,Croatia,HR,2
+1990,Data Science & Big Data,C2522767166,Hungary,HU,9
+1990,Data Science & Big Data,C2522767166,Ireland,IE,7
+1990,Data Science & Big Data,C2522767166,Israel,IL,14
+1990,Data Science & Big Data,C2522767166,India,IN,10
+1990,Data Science & Big Data,C2522767166,Iraq,IQ,1
+1990,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1990,Data Science & Big Data,C2522767166,Italy,IT,42
+1990,Data Science & Big Data,C2522767166,Japan,JP,29
+1990,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,2
+1990,Data Science & Big Data,C2522767166,Kuwait,KW,1
+1990,Data Science & Big Data,C2522767166,Sri Lanka,LK,1
+1990,Data Science & Big Data,C2522767166,Latvia,LV,2
+1990,Data Science & Big Data,C2522767166,Myanmar,MM,1
+1990,Data Science & Big Data,C2522767166,Malta,MT,1
+1990,Data Science & Big Data,C2522767166,Malawi,MW,1
+1990,Data Science & Big Data,C2522767166,Mexico,MX,2
+1990,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1990,Data Science & Big Data,C2522767166,Netherlands,NL,44
+1990,Data Science & Big Data,C2522767166,Norway,NO,4
+1990,Data Science & Big Data,C2522767166,Nepal,NP,1
+1990,Data Science & Big Data,C2522767166,New Zealand,NZ,4
+1990,Data Science & Big Data,C2522767166,Philippines,PH,1
+1990,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1990,Data Science & Big Data,C2522767166,Poland,PL,6
+1990,Data Science & Big Data,C2522767166,Puerto Rico,PR,1
+1990,Data Science & Big Data,C2522767166,Portugal,PT,4
+1990,Data Science & Big Data,C2522767166,Serbia,RS,1
+1990,Data Science & Big Data,C2522767166,Russian Federation,RU,19
+1990,Data Science & Big Data,C2522767166,Sweden,SE,15
+1990,Data Science & Big Data,C2522767166,Singapore,SG,6
+1990,Data Science & Big Data,C2522767166,Slovenia,SI,1
+1990,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1990,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1990,Data Science & Big Data,C2522767166,Thailand,TH,1
+1990,Data Science & Big Data,C2522767166,Tunisia,TN,2
+1990,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,2
+1990,Data Science & Big Data,C2522767166,Ukraine,UA,3
+1990,Data Science & Big Data,C2522767166,Uganda,UG,2
+1990,Data Science & Big Data,C2522767166,United States of America,US,1087
+1990,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,1
+1990,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,2
+1990,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1990,Data Science & Big Data,C2522767166,South Africa,ZA,9
+1990,Infectious Diseases,C524204448,United Arab Emirates,AE,2
+1990,Infectious Diseases,C524204448,Argentina,AR,1
+1990,Infectious Diseases,C524204448,Austria,AT,2
+1990,Infectious Diseases,C524204448,Australia,AU,15
+1990,Infectious Diseases,C524204448,Belgium,BE,8
+1990,Infectious Diseases,C524204448,Bulgaria,BG,2
+1990,Infectious Diseases,C524204448,Brazil,BR,2
+1990,Infectious Diseases,C524204448,Canada,CA,40
+1990,Infectious Diseases,C524204448,Switzerland,CH,10
+1990,Infectious Diseases,C524204448,China,CN,1
+1990,Infectious Diseases,C524204448,Czechia,CZ,5
+1990,Infectious Diseases,C524204448,Germany,DE,34
+1990,Infectious Diseases,C524204448,Denmark,DK,5
+1990,Infectious Diseases,C524204448,Egypt,EG,2
+1990,Infectious Diseases,C524204448,Spain,ES,12
+1990,Infectious Diseases,C524204448,Finland,FI,1
+1990,Infectious Diseases,C524204448,France,FR,44
+1990,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,51
+1990,Infectious Diseases,C524204448,Guatemala,GT,1
+1990,Infectious Diseases,C524204448,Hong Kong,HK,2
+1990,Infectious Diseases,C524204448,Hungary,HU,1
+1990,Infectious Diseases,C524204448,Ireland,IE,2
+1990,Infectious Diseases,C524204448,Israel,IL,3
+1990,Infectious Diseases,C524204448,India,IN,1
+1990,Infectious Diseases,C524204448,Iraq,IQ,1
+1990,Infectious Diseases,C524204448,Italy,IT,7
+1990,Infectious Diseases,C524204448,Japan,JP,38
+1990,Infectious Diseases,C524204448,Morocco,MA,1
+1990,Infectious Diseases,C524204448,North Macedonia,MK,1
+1990,Infectious Diseases,C524204448,Mongolia,MN,1
+1990,Infectious Diseases,C524204448,Mexico,MX,3
+1990,Infectious Diseases,C524204448,Nigeria,NG,1
+1990,Infectious Diseases,C524204448,Netherlands,NL,31
+1990,Infectious Diseases,C524204448,New Zealand,NZ,3
+1990,Infectious Diseases,C524204448,Pakistan,PK,1
+1990,Infectious Diseases,C524204448,Poland,PL,3
+1990,Infectious Diseases,C524204448,Serbia,RS,1
+1990,Infectious Diseases,C524204448,Russian Federation,RU,4
+1990,Infectious Diseases,C524204448,Saudi Arabia,SA,2
+1990,Infectious Diseases,C524204448,Sweden,SE,9
+1990,Infectious Diseases,C524204448,Singapore,SG,1
+1990,Infectious Diseases,C524204448,Slovakia,SK,13
+1990,Infectious Diseases,C524204448,Thailand,TH,1
+1990,Infectious Diseases,C524204448,Turkey,TR,1
+1990,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,1
+1990,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,2
+1990,Infectious Diseases,C524204448,Uganda,UG,1
+1990,Infectious Diseases,C524204448,United States of America,US,346
+1990,Infectious Diseases,C524204448,Viet Nam,VN,3
+1990,Infectious Diseases,C524204448,South Africa,ZA,1
+1990,Quantum Computing,C58053490,Belgium,BE,1
+1990,Quantum Computing,C58053490,Bulgaria,BG,1
+1990,Quantum Computing,C58053490,Brazil,BR,1
+1990,Quantum Computing,C58053490,Canada,CA,1
+1990,Quantum Computing,C58053490,Switzerland,CH,1
+1990,Quantum Computing,C58053490,Germany,DE,2
+1990,Quantum Computing,C58053490,Denmark,DK,1
+1990,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,3
+1990,Quantum Computing,C58053490,Italy,IT,4
+1990,Quantum Computing,C58053490,Japan,JP,1
+1990,Quantum Computing,C58053490,Poland,PL,1
+1990,Quantum Computing,C58053490,United States of America,US,12
+1990,Renewable Energy,C188573790,Austria,AT,6
+1990,Renewable Energy,C188573790,Australia,AU,9
+1990,Renewable Energy,C188573790,Belgium,BE,3
+1990,Renewable Energy,C188573790,Bahrain,BH,1
+1990,Renewable Energy,C188573790,Brazil,BR,1
+1990,Renewable Energy,C188573790,Canada,CA,15
+1990,Renewable Energy,C188573790,Switzerland,CH,2
+1990,Renewable Energy,C188573790,China,CN,2
+1990,Renewable Energy,C188573790,Czechia,CZ,1
+1990,Renewable Energy,C188573790,Germany,DE,12
+1990,Renewable Energy,C188573790,Denmark,DK,3
+1990,Renewable Energy,C188573790,Finland,FI,2
+1990,Renewable Energy,C188573790,France,FR,3
+1990,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,30
+1990,Renewable Energy,C188573790,Ghana,GH,1
+1990,Renewable Energy,C188573790,Croatia,HR,1
+1990,Renewable Energy,C188573790,Ireland,IE,1
+1990,Renewable Energy,C188573790,Israel,IL,2
+1990,Renewable Energy,C188573790,India,IN,10
+1990,Renewable Energy,C188573790,Italy,IT,5
+1990,Renewable Energy,C188573790,Japan,JP,6
+1990,Renewable Energy,C188573790,Kuwait,KW,1
+1990,Renewable Energy,C188573790,Libya,LY,2
+1990,Renewable Energy,C188573790,Nigeria,NG,1
+1990,Renewable Energy,C188573790,Netherlands,NL,4
+1990,Renewable Energy,C188573790,Norway,NO,2
+1990,Renewable Energy,C188573790,New Zealand,NZ,1
+1990,Renewable Energy,C188573790,Pakistan,PK,1
+1990,Renewable Energy,C188573790,Qatar,QA,1
+1990,Renewable Energy,C188573790,Russian Federation,RU,1
+1990,Renewable Energy,C188573790,Saudi Arabia,SA,2
+1990,Renewable Energy,C188573790,Sweden,SE,1
+1990,Renewable Energy,C188573790,Singapore,SG,1
+1990,Renewable Energy,C188573790,Slovakia,SK,1
+1990,Renewable Energy,C188573790,Thailand,TH,1
+1990,Renewable Energy,C188573790,Turkey,TR,1
+1990,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1990,Renewable Energy,C188573790,United States of America,US,74
+1990,Renewable Energy,C188573790,South Africa,ZA,1
+1990,Renewable Energy,C188573790,Zimbabwe,ZW,2
+1990,Robotics & Automation,C34413123,Austria,AT,1
+1990,Robotics & Automation,C34413123,Australia,AU,2
+1990,Robotics & Automation,C34413123,Belgium,BE,2
+1990,Robotics & Automation,C34413123,Burkina Faso,BF,1
+1990,Robotics & Automation,C34413123,Canada,CA,20
+1990,Robotics & Automation,C34413123,Switzerland,CH,6
+1990,Robotics & Automation,C34413123,China,CN,5
+1990,Robotics & Automation,C34413123,Czechia,CZ,1
+1990,Robotics & Automation,C34413123,Germany,DE,5
+1990,Robotics & Automation,C34413123,Spain,ES,1
+1990,Robotics & Automation,C34413123,Finland,FI,2
+1990,Robotics & Automation,C34413123,France,FR,5
+1990,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,38
+1990,Robotics & Automation,C34413123,Ireland,IE,1
+1990,Robotics & Automation,C34413123,Israel,IL,6
+1990,Robotics & Automation,C34413123,India,IN,1
+1990,Robotics & Automation,C34413123,Italy,IT,5
+1990,Robotics & Automation,C34413123,Japan,JP,12
+1990,Robotics & Automation,C34413123,"Korea, Republic of",KR,1
+1990,Robotics & Automation,C34413123,Mexico,MX,1
+1990,Robotics & Automation,C34413123,Netherlands,NL,1
+1990,Robotics & Automation,C34413123,Norway,NO,1
+1990,Robotics & Automation,C34413123,Poland,PL,5
+1990,Robotics & Automation,C34413123,Serbia,RS,1
+1990,Robotics & Automation,C34413123,Russian Federation,RU,1
+1990,Robotics & Automation,C34413123,Saudi Arabia,SA,1
+1990,Robotics & Automation,C34413123,Sweden,SE,1
+1990,Robotics & Automation,C34413123,Slovenia,SI,1
+1990,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,3
+1990,Robotics & Automation,C34413123,United States of America,US,151
+1991,AI & Machine Learning,C119857082,United Arab Emirates,AE,3
+1991,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+1991,AI & Machine Learning,C119857082,Armenia,AM,2
+1991,AI & Machine Learning,C119857082,Angola,AO,1
+1991,AI & Machine Learning,C119857082,Argentina,AR,24
+1991,AI & Machine Learning,C119857082,Austria,AT,65
+1991,AI & Machine Learning,C119857082,Australia,AU,207
+1991,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1991,AI & Machine Learning,C119857082,Bangladesh,BD,9
+1991,AI & Machine Learning,C119857082,Belgium,BE,68
+1991,AI & Machine Learning,C119857082,Bulgaria,BG,24
+1991,AI & Machine Learning,C119857082,Bahrain,BH,2
+1991,AI & Machine Learning,C119857082,Burundi,BI,1
+1991,AI & Machine Learning,C119857082,Brazil,BR,36
+1991,AI & Machine Learning,C119857082,Botswana,BW,1
+1991,AI & Machine Learning,C119857082,Belarus,BY,1
+1991,AI & Machine Learning,C119857082,Canada,CA,474
+1991,AI & Machine Learning,C119857082,Switzerland,CH,88
+1991,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1991,AI & Machine Learning,C119857082,Chile,CL,11
+1991,AI & Machine Learning,C119857082,Cameroon,CM,1
+1991,AI & Machine Learning,C119857082,China,CN,195
+1991,AI & Machine Learning,C119857082,Cuba,CU,1
+1991,AI & Machine Learning,C119857082,Cyprus,CY,6
+1991,AI & Machine Learning,C119857082,Czechia,CZ,40
+1991,AI & Machine Learning,C119857082,Germany,DE,371
+1991,AI & Machine Learning,C119857082,Denmark,DK,41
+1991,AI & Machine Learning,C119857082,Dominican Republic,DO,2
+1991,AI & Machine Learning,C119857082,Algeria,DZ,1
+1991,AI & Machine Learning,C119857082,Estonia,EE,1
+1991,AI & Machine Learning,C119857082,Egypt,EG,27
+1991,AI & Machine Learning,C119857082,Spain,ES,92
+1991,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1991,AI & Machine Learning,C119857082,Finland,FI,44
+1991,AI & Machine Learning,C119857082,Fiji,FJ,1
+1991,AI & Machine Learning,C119857082,France,FR,278
+1991,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,754
+1991,AI & Machine Learning,C119857082,Ghana,GH,6
+1991,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+1991,AI & Machine Learning,C119857082,Greece,GR,45
+1991,AI & Machine Learning,C119857082,Hong Kong,HK,22
+1991,AI & Machine Learning,C119857082,Croatia,HR,6
+1991,AI & Machine Learning,C119857082,Haiti,HT,1
+1991,AI & Machine Learning,C119857082,Hungary,HU,26
+1991,AI & Machine Learning,C119857082,Indonesia,ID,2
+1991,AI & Machine Learning,C119857082,Ireland,IE,17
+1991,AI & Machine Learning,C119857082,Israel,IL,97
+1991,AI & Machine Learning,C119857082,India,IN,124
+1991,AI & Machine Learning,C119857082,Iraq,IQ,3
+1991,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3
+1991,AI & Machine Learning,C119857082,Italy,IT,240
+1991,AI & Machine Learning,C119857082,Jersey,JE,1
+1991,AI & Machine Learning,C119857082,Jordan,JO,3
+1991,AI & Machine Learning,C119857082,Japan,JP,466
+1991,AI & Machine Learning,C119857082,Kenya,KE,1
+1991,AI & Machine Learning,C119857082,"Korea, Republic of",KR,64
+1991,AI & Machine Learning,C119857082,Kuwait,KW,9
+1991,AI & Machine Learning,C119857082,Kazakhstan,KZ,5
+1991,AI & Machine Learning,C119857082,Lebanon,LB,2
+1991,AI & Machine Learning,C119857082,Sri Lanka,LK,1
+1991,AI & Machine Learning,C119857082,Lithuania,LT,3
+1991,AI & Machine Learning,C119857082,Latvia,LV,8
+1991,AI & Machine Learning,C119857082,Morocco,MA,8
+1991,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+1991,AI & Machine Learning,C119857082,Myanmar,MM,2
+1991,AI & Machine Learning,C119857082,Malta,MT,1
+1991,AI & Machine Learning,C119857082,Mexico,MX,26
+1991,AI & Machine Learning,C119857082,Malaysia,MY,7
+1991,AI & Machine Learning,C119857082,Mozambique,MZ,1
+1991,AI & Machine Learning,C119857082,Niger,NE,1
+1991,AI & Machine Learning,C119857082,Nigeria,NG,6
+1991,AI & Machine Learning,C119857082,Nicaragua,NI,1
+1991,AI & Machine Learning,C119857082,Netherlands,NL,177
+1991,AI & Machine Learning,C119857082,Norway,NO,36
+1991,AI & Machine Learning,C119857082,Nepal,NP,1
+1991,AI & Machine Learning,C119857082,New Zealand,NZ,24
+1991,AI & Machine Learning,C119857082,Oman,OM,2
+1991,AI & Machine Learning,C119857082,Panama,PA,1
+1991,AI & Machine Learning,C119857082,Peru,PE,4
+1991,AI & Machine Learning,C119857082,Philippines,PH,4
+1991,AI & Machine Learning,C119857082,Pakistan,PK,3
+1991,AI & Machine Learning,C119857082,Poland,PL,65
+1991,AI & Machine Learning,C119857082,Puerto Rico,PR,1
+1991,AI & Machine Learning,C119857082,Portugal,PT,17
+1991,AI & Machine Learning,C119857082,Qatar,QA,1
+1991,AI & Machine Learning,C119857082,Romania,RO,6
+1991,AI & Machine Learning,C119857082,Serbia,RS,17
+1991,AI & Machine Learning,C119857082,Russian Federation,RU,115
+1991,AI & Machine Learning,C119857082,Saudi Arabia,SA,14
+1991,AI & Machine Learning,C119857082,Sweden,SE,81
+1991,AI & Machine Learning,C119857082,Singapore,SG,63
+1991,AI & Machine Learning,C119857082,Slovenia,SI,16
+1991,AI & Machine Learning,C119857082,Svalbard and Jan Mayen,SJ,1
+1991,AI & Machine Learning,C119857082,Slovakia,SK,18
+1991,AI & Machine Learning,C119857082,Senegal,SN,1
+1991,AI & Machine Learning,C119857082,Somalia,SO,1
+1991,AI & Machine Learning,C119857082,South Sudan,SS,2
+1991,AI & Machine Learning,C119857082,Thailand,TH,14
+1991,AI & Machine Learning,C119857082,Tunisia,TN,2
+1991,AI & Machine Learning,C119857082,Turkey,TR,20
+1991,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,108
+1991,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1991,AI & Machine Learning,C119857082,Ukraine,UA,20
+1991,AI & Machine Learning,C119857082,United States of America,US,4248
+1991,AI & Machine Learning,C119857082,Uzbekistan,UZ,4
+1991,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,5
+1991,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,1
+1991,AI & Machine Learning,C119857082,Viet Nam,VN,7
+1991,AI & Machine Learning,C119857082,Yemen,YE,1
+1991,AI & Machine Learning,C119857082,South Africa,ZA,42
+1991,AI & Machine Learning,C119857082,Zimbabwe,ZW,2
+1991,CRISPR & Genomics,C98108389,Australia,AU,1
+1991,CRISPR & Genomics,C98108389,Belarus,BY,1
+1991,CRISPR & Genomics,C98108389,Canada,CA,1
+1991,CRISPR & Genomics,C98108389,Germany,DE,3
+1991,CRISPR & Genomics,C98108389,Denmark,DK,1
+1991,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,4
+1991,CRISPR & Genomics,C98108389,Japan,JP,2
+1991,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1991,CRISPR & Genomics,C98108389,Tajikistan,TJ,1
+1991,CRISPR & Genomics,C98108389,United States of America,US,25
+1991,Data Science & Big Data,C2522767166,United Arab Emirates,AE,1
+1991,Data Science & Big Data,C2522767166,Argentina,AR,2
+1991,Data Science & Big Data,C2522767166,Austria,AT,13
+1991,Data Science & Big Data,C2522767166,Australia,AU,44
+1991,Data Science & Big Data,C2522767166,Bangladesh,BD,2
+1991,Data Science & Big Data,C2522767166,Belgium,BE,19
+1991,Data Science & Big Data,C2522767166,Bulgaria,BG,6
+1991,Data Science & Big Data,C2522767166,Brazil,BR,5
+1991,Data Science & Big Data,C2522767166,Canada,CA,148
+1991,Data Science & Big Data,C2522767166,Switzerland,CH,24
+1991,Data Science & Big Data,C2522767166,Chile,CL,3
+1991,Data Science & Big Data,C2522767166,China,CN,19
+1991,Data Science & Big Data,C2522767166,Colombia,CO,1
+1991,Data Science & Big Data,C2522767166,Costa Rica,CR,1
+1991,Data Science & Big Data,C2522767166,Cuba,CU,1
+1991,Data Science & Big Data,C2522767166,Czechia,CZ,11
+1991,Data Science & Big Data,C2522767166,Germany,DE,84
+1991,Data Science & Big Data,C2522767166,Denmark,DK,24
+1991,Data Science & Big Data,C2522767166,Estonia,EE,2
+1991,Data Science & Big Data,C2522767166,Egypt,EG,1
+1991,Data Science & Big Data,C2522767166,Spain,ES,7
+1991,Data Science & Big Data,C2522767166,Finland,FI,9
+1991,Data Science & Big Data,C2522767166,France,FR,56
+1991,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,566
+1991,Data Science & Big Data,C2522767166,Ghana,GH,3
+1991,Data Science & Big Data,C2522767166,Gibraltar,GI,3
+1991,Data Science & Big Data,C2522767166,Greece,GR,5
+1991,Data Science & Big Data,C2522767166,Hong Kong,HK,2
+1991,Data Science & Big Data,C2522767166,Croatia,HR,2
+1991,Data Science & Big Data,C2522767166,Hungary,HU,8
+1991,Data Science & Big Data,C2522767166,Ireland,IE,9
+1991,Data Science & Big Data,C2522767166,Israel,IL,13
+1991,Data Science & Big Data,C2522767166,India,IN,10
+1991,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,2
+1991,Data Science & Big Data,C2522767166,Italy,IT,48
+1991,Data Science & Big Data,C2522767166,Jamaica,JM,2
+1991,Data Science & Big Data,C2522767166,Japan,JP,35
+1991,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,6
+1991,Data Science & Big Data,C2522767166,Luxembourg,LU,1
+1991,Data Science & Big Data,C2522767166,Madagascar,MG,1
+1991,Data Science & Big Data,C2522767166,Malta,MT,2
+1991,Data Science & Big Data,C2522767166,Mexico,MX,9
+1991,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1991,Data Science & Big Data,C2522767166,Netherlands,NL,48
+1991,Data Science & Big Data,C2522767166,Norway,NO,9
+1991,Data Science & Big Data,C2522767166,Nepal,NP,2
+1991,Data Science & Big Data,C2522767166,New Zealand,NZ,9
+1991,Data Science & Big Data,C2522767166,Philippines,PH,2
+1991,Data Science & Big Data,C2522767166,Pakistan,PK,2
+1991,Data Science & Big Data,C2522767166,Poland,PL,8
+1991,Data Science & Big Data,C2522767166,Portugal,PT,3
+1991,Data Science & Big Data,C2522767166,Qatar,QA,2
+1991,Data Science & Big Data,C2522767166,Serbia,RS,2
+1991,Data Science & Big Data,C2522767166,Russian Federation,RU,17
+1991,Data Science & Big Data,C2522767166,Saudi Arabia,SA,2
+1991,Data Science & Big Data,C2522767166,Sweden,SE,17
+1991,Data Science & Big Data,C2522767166,Singapore,SG,6
+1991,Data Science & Big Data,C2522767166,Slovenia,SI,5
+1991,Data Science & Big Data,C2522767166,Slovakia,SK,4
+1991,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1991,Data Science & Big Data,C2522767166,Syrian Arab Republic,SY,1
+1991,Data Science & Big Data,C2522767166,Thailand,TH,3
+1991,Data Science & Big Data,C2522767166,Turkey,TR,3
+1991,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,3
+1991,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1991,Data Science & Big Data,C2522767166,Ukraine,UA,1
+1991,Data Science & Big Data,C2522767166,United States of America,US,1223
+1991,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,2
+1991,Data Science & Big Data,C2522767166,South Africa,ZA,9
+1991,Data Science & Big Data,C2522767166,Zimbabwe,ZW,1
+1991,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1991,Infectious Diseases,C524204448,Argentina,AR,2
+1991,Infectious Diseases,C524204448,Austria,AT,5
+1991,Infectious Diseases,C524204448,Australia,AU,19
+1991,Infectious Diseases,C524204448,Belgium,BE,3
+1991,Infectious Diseases,C524204448,Bahrain,BH,1
+1991,Infectious Diseases,C524204448,Brazil,BR,9
+1991,Infectious Diseases,C524204448,Canada,CA,37
+1991,Infectious Diseases,C524204448,Switzerland,CH,16
+1991,Infectious Diseases,C524204448,Chile,CL,1
+1991,Infectious Diseases,C524204448,China,CN,4
+1991,Infectious Diseases,C524204448,Costa Rica,CR,1
+1991,Infectious Diseases,C524204448,Cuba,CU,1
+1991,Infectious Diseases,C524204448,Cyprus,CY,3
+1991,Infectious Diseases,C524204448,Czechia,CZ,3
+1991,Infectious Diseases,C524204448,Germany,DE,40
+1991,Infectious Diseases,C524204448,Denmark,DK,3
+1991,Infectious Diseases,C524204448,Ecuador,EC,1
+1991,Infectious Diseases,C524204448,Egypt,EG,3
+1991,Infectious Diseases,C524204448,Spain,ES,12
+1991,Infectious Diseases,C524204448,Ethiopia,ET,1
+1991,Infectious Diseases,C524204448,Finland,FI,3
+1991,Infectious Diseases,C524204448,France,FR,28
+1991,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,72
+1991,Infectious Diseases,C524204448,Greece,GR,2
+1991,Infectious Diseases,C524204448,Guinea-Bissau,GW,1
+1991,Infectious Diseases,C524204448,Hong Kong,HK,1
+1991,Infectious Diseases,C524204448,Croatia,HR,2
+1991,Infectious Diseases,C524204448,Ireland,IE,1
+1991,Infectious Diseases,C524204448,Israel,IL,6
+1991,Infectious Diseases,C524204448,India,IN,6
+1991,Infectious Diseases,C524204448,Italy,IT,8
+1991,Infectious Diseases,C524204448,Japan,JP,42
+1991,Infectious Diseases,C524204448,Kuwait,KW,1
+1991,Infectious Diseases,C524204448,Sri Lanka,LK,1
+1991,Infectious Diseases,C524204448,Morocco,MA,1
+1991,Infectious Diseases,C524204448,Mongolia,MN,1
+1991,Infectious Diseases,C524204448,Mexico,MX,4
+1991,Infectious Diseases,C524204448,Niger,NE,1
+1991,Infectious Diseases,C524204448,Nigeria,NG,1
+1991,Infectious Diseases,C524204448,Netherlands,NL,19
+1991,Infectious Diseases,C524204448,Norway,NO,6
+1991,Infectious Diseases,C524204448,New Zealand,NZ,5
+1991,Infectious Diseases,C524204448,Peru,PE,3
+1991,Infectious Diseases,C524204448,Papua New Guinea,PG,1
+1991,Infectious Diseases,C524204448,Poland,PL,4
+1991,Infectious Diseases,C524204448,Paraguay,PY,2
+1991,Infectious Diseases,C524204448,Russian Federation,RU,3
+1991,Infectious Diseases,C524204448,Saudi Arabia,SA,1
+1991,Infectious Diseases,C524204448,Sweden,SE,11
+1991,Infectious Diseases,C524204448,Singapore,SG,2
+1991,Infectious Diseases,C524204448,Slovakia,SK,7
+1991,Infectious Diseases,C524204448,Senegal,SN,1
+1991,Infectious Diseases,C524204448,South Sudan,SS,1
+1991,Infectious Diseases,C524204448,Thailand,TH,4
+1991,Infectious Diseases,C524204448,Turkey,TR,2
+1991,Infectious Diseases,C524204448,United States of America,US,332
+1991,Infectious Diseases,C524204448,"Venezuela, Bolivarian Republic of",VE,1
+1991,Infectious Diseases,C524204448,Viet Nam,VN,2
+1991,Infectious Diseases,C524204448,South Africa,ZA,3
+1991,Quantum Computing,C58053490,Australia,AU,1
+1991,Quantum Computing,C58053490,Switzerland,CH,2
+1991,Quantum Computing,C58053490,Czechia,CZ,2
+1991,Quantum Computing,C58053490,Germany,DE,2
+1991,Quantum Computing,C58053490,Denmark,DK,2
+1991,Quantum Computing,C58053490,Algeria,DZ,1
+1991,Quantum Computing,C58053490,Spain,ES,3
+1991,Quantum Computing,C58053490,France,FR,1
+1991,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,4
+1991,Quantum Computing,C58053490,Hungary,HU,1
+1991,Quantum Computing,C58053490,Italy,IT,3
+1991,Quantum Computing,C58053490,Japan,JP,5
+1991,Quantum Computing,C58053490,Morocco,MA,1
+1991,Quantum Computing,C58053490,Mexico,MX,1
+1991,Quantum Computing,C58053490,Poland,PL,1
+1991,Quantum Computing,C58053490,Slovakia,SK,1
+1991,Quantum Computing,C58053490,United States of America,US,22
+1991,Renewable Energy,C188573790,Austria,AT,6
+1991,Renewable Energy,C188573790,Australia,AU,2
+1991,Renewable Energy,C188573790,Bangladesh,BD,1
+1991,Renewable Energy,C188573790,Belgium,BE,3
+1991,Renewable Energy,C188573790,Bahrain,BH,1
+1991,Renewable Energy,C188573790,Canada,CA,5
+1991,Renewable Energy,C188573790,Switzerland,CH,1
+1991,Renewable Energy,C188573790,China,CN,7
+1991,Renewable Energy,C188573790,Cyprus,CY,2
+1991,Renewable Energy,C188573790,Germany,DE,16
+1991,Renewable Energy,C188573790,Denmark,DK,1
+1991,Renewable Energy,C188573790,Egypt,EG,2
+1991,Renewable Energy,C188573790,Spain,ES,3
+1991,Renewable Energy,C188573790,Finland,FI,3
+1991,Renewable Energy,C188573790,France,FR,2
+1991,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,28
+1991,Renewable Energy,C188573790,Ghana,GH,2
+1991,Renewable Energy,C188573790,Greece,GR,4
+1991,Renewable Energy,C188573790,Hong Kong,HK,1
+1991,Renewable Energy,C188573790,Hungary,HU,1
+1991,Renewable Energy,C188573790,Indonesia,ID,1
+1991,Renewable Energy,C188573790,Israel,IL,1
+1991,Renewable Energy,C188573790,India,IN,13
+1991,Renewable Energy,C188573790,Italy,IT,3
+1991,Renewable Energy,C188573790,Japan,JP,8
+1991,Renewable Energy,C188573790,"Korea, Republic of",KR,2
+1991,Renewable Energy,C188573790,Kuwait,KW,3
+1991,Renewable Energy,C188573790,Mexico,MX,1
+1991,Renewable Energy,C188573790,Malaysia,MY,2
+1991,Renewable Energy,C188573790,Nigeria,NG,2
+1991,Renewable Energy,C188573790,Netherlands,NL,2
+1991,Renewable Energy,C188573790,Norway,NO,2
+1991,Renewable Energy,C188573790,New Zealand,NZ,1
+1991,Renewable Energy,C188573790,Poland,PL,1
+1991,Renewable Energy,C188573790,Portugal,PT,1
+1991,Renewable Energy,C188573790,Russian Federation,RU,2
+1991,Renewable Energy,C188573790,Saudi Arabia,SA,1
+1991,Renewable Energy,C188573790,Sweden,SE,3
+1991,Renewable Energy,C188573790,Slovakia,SK,4
+1991,Renewable Energy,C188573790,Tunisia,TN,1
+1991,Renewable Energy,C188573790,Turkey,TR,3
+1991,Renewable Energy,C188573790,"Taiwan, Province of China",TW,3
+1991,Renewable Energy,C188573790,United States of America,US,89
+1991,Renewable Energy,C188573790,Viet Nam,VN,2
+1991,Renewable Energy,C188573790,Vanuatu,VU,1
+1991,Renewable Energy,C188573790,Yemen,YE,1
+1991,Renewable Energy,C188573790,South Africa,ZA,4
+1991,Robotics & Automation,C34413123,Austria,AT,5
+1991,Robotics & Automation,C34413123,Australia,AU,1
+1991,Robotics & Automation,C34413123,Bangladesh,BD,1
+1991,Robotics & Automation,C34413123,Belgium,BE,3
+1991,Robotics & Automation,C34413123,Bulgaria,BG,1
+1991,Robotics & Automation,C34413123,Canada,CA,19
+1991,Robotics & Automation,C34413123,Switzerland,CH,2
+1991,Robotics & Automation,C34413123,Chile,CL,1
+1991,Robotics & Automation,C34413123,China,CN,3
+1991,Robotics & Automation,C34413123,Germany,DE,10
+1991,Robotics & Automation,C34413123,Estonia,EE,1
+1991,Robotics & Automation,C34413123,Spain,ES,2
+1991,Robotics & Automation,C34413123,Finland,FI,1
+1991,Robotics & Automation,C34413123,France,FR,11
+1991,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,46
+1991,Robotics & Automation,C34413123,Hungary,HU,1
+1991,Robotics & Automation,C34413123,Indonesia,ID,1
+1991,Robotics & Automation,C34413123,Israel,IL,5
+1991,Robotics & Automation,C34413123,India,IN,2
+1991,Robotics & Automation,C34413123,Italy,IT,17
+1991,Robotics & Automation,C34413123,Japan,JP,16
+1991,Robotics & Automation,C34413123,Netherlands,NL,3
+1991,Robotics & Automation,C34413123,New Zealand,NZ,1
+1991,Robotics & Automation,C34413123,Poland,PL,4
+1991,Robotics & Automation,C34413123,Portugal,PT,11
+1991,Robotics & Automation,C34413123,Serbia,RS,1
+1991,Robotics & Automation,C34413123,Russian Federation,RU,1
+1991,Robotics & Automation,C34413123,Sweden,SE,1
+1991,Robotics & Automation,C34413123,Singapore,SG,1
+1991,Robotics & Automation,C34413123,Slovenia,SI,2
+1991,Robotics & Automation,C34413123,Slovakia,SK,1
+1991,Robotics & Automation,C34413123,South Sudan,SS,2
+1991,Robotics & Automation,C34413123,Turkey,TR,1
+1991,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,2
+1991,Robotics & Automation,C34413123,United States of America,US,150
+1992,AI & Machine Learning,C119857082,United Arab Emirates,AE,3
+1992,AI & Machine Learning,C119857082,Argentina,AR,14
+1992,AI & Machine Learning,C119857082,Austria,AT,62
+1992,AI & Machine Learning,C119857082,Australia,AU,225
+1992,AI & Machine Learning,C119857082,Bangladesh,BD,4
+1992,AI & Machine Learning,C119857082,Belgium,BE,65
+1992,AI & Machine Learning,C119857082,Burkina Faso,BF,1
+1992,AI & Machine Learning,C119857082,Bulgaria,BG,27
+1992,AI & Machine Learning,C119857082,Bahrain,BH,3
+1992,AI & Machine Learning,C119857082,Burundi,BI,2
+1992,AI & Machine Learning,C119857082,Brazil,BR,60
+1992,AI & Machine Learning,C119857082,Botswana,BW,2
+1992,AI & Machine Learning,C119857082,Belarus,BY,8
+1992,AI & Machine Learning,C119857082,Canada,CA,472
+1992,AI & Machine Learning,C119857082,Switzerland,CH,95
+1992,AI & Machine Learning,C119857082,Chile,CL,15
+1992,AI & Machine Learning,C119857082,Cameroon,CM,2
+1992,AI & Machine Learning,C119857082,China,CN,185
+1992,AI & Machine Learning,C119857082,Colombia,CO,1
+1992,AI & Machine Learning,C119857082,Costa Rica,CR,2
+1992,AI & Machine Learning,C119857082,Cuba,CU,2
+1992,AI & Machine Learning,C119857082,Cyprus,CY,8
+1992,AI & Machine Learning,C119857082,Czechia,CZ,39
+1992,AI & Machine Learning,C119857082,Germany,DE,427
+1992,AI & Machine Learning,C119857082,Denmark,DK,61
+1992,AI & Machine Learning,C119857082,Algeria,DZ,3
+1992,AI & Machine Learning,C119857082,Ecuador,EC,1
+1992,AI & Machine Learning,C119857082,Estonia,EE,3
+1992,AI & Machine Learning,C119857082,Egypt,EG,13
+1992,AI & Machine Learning,C119857082,Spain,ES,119
+1992,AI & Machine Learning,C119857082,Ethiopia,ET,3
+1992,AI & Machine Learning,C119857082,Finland,FI,42
+1992,AI & Machine Learning,C119857082,France,FR,364
+1992,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,865
+1992,AI & Machine Learning,C119857082,Ghana,GH,5
+1992,AI & Machine Learning,C119857082,Greece,GR,56
+1992,AI & Machine Learning,C119857082,Hong Kong,HK,23
+1992,AI & Machine Learning,C119857082,Croatia,HR,7
+1992,AI & Machine Learning,C119857082,Hungary,HU,44
+1992,AI & Machine Learning,C119857082,Indonesia,ID,2
+1992,AI & Machine Learning,C119857082,Ireland,IE,18
+1992,AI & Machine Learning,C119857082,Israel,IL,114
+1992,AI & Machine Learning,C119857082,India,IN,114
+1992,AI & Machine Learning,C119857082,Iraq,IQ,2
+1992,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,5
+1992,AI & Machine Learning,C119857082,Iceland,IS,1
+1992,AI & Machine Learning,C119857082,Italy,IT,250
+1992,AI & Machine Learning,C119857082,Jordan,JO,2
+1992,AI & Machine Learning,C119857082,Japan,JP,485
+1992,AI & Machine Learning,C119857082,Kenya,KE,2
+1992,AI & Machine Learning,C119857082,"Korea, Republic of",KR,77
+1992,AI & Machine Learning,C119857082,Kuwait,KW,2
+1992,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1992,AI & Machine Learning,C119857082,Lebanon,LB,1
+1992,AI & Machine Learning,C119857082,Sri Lanka,LK,3
+1992,AI & Machine Learning,C119857082,Lithuania,LT,2
+1992,AI & Machine Learning,C119857082,Latvia,LV,15
+1992,AI & Machine Learning,C119857082,Morocco,MA,9
+1992,AI & Machine Learning,C119857082,North Macedonia,MK,1
+1992,AI & Machine Learning,C119857082,Myanmar,MM,2
+1992,AI & Machine Learning,C119857082,Mongolia,MN,2
+1992,AI & Machine Learning,C119857082,Macao,MO,1
+1992,AI & Machine Learning,C119857082,Malawi,MW,1
+1992,AI & Machine Learning,C119857082,Mexico,MX,20
+1992,AI & Machine Learning,C119857082,Malaysia,MY,5
+1992,AI & Machine Learning,C119857082,Mozambique,MZ,1
+1992,AI & Machine Learning,C119857082,Niger,NE,2
+1992,AI & Machine Learning,C119857082,Nigeria,NG,7
+1992,AI & Machine Learning,C119857082,Netherlands,NL,220
+1992,AI & Machine Learning,C119857082,Norway,NO,48
+1992,AI & Machine Learning,C119857082,New Zealand,NZ,33
+1992,AI & Machine Learning,C119857082,Oman,OM,1
+1992,AI & Machine Learning,C119857082,Panama,PA,3
+1992,AI & Machine Learning,C119857082,Peru,PE,5
+1992,AI & Machine Learning,C119857082,Philippines,PH,6
+1992,AI & Machine Learning,C119857082,Pakistan,PK,3
+1992,AI & Machine Learning,C119857082,Poland,PL,70
+1992,AI & Machine Learning,C119857082,Puerto Rico,PR,6
+1992,AI & Machine Learning,C119857082,Portugal,PT,23
+1992,AI & Machine Learning,C119857082,Qatar,QA,1
+1992,AI & Machine Learning,C119857082,Romania,RO,11
+1992,AI & Machine Learning,C119857082,Serbia,RS,11
+1992,AI & Machine Learning,C119857082,Russian Federation,RU,155
+1992,AI & Machine Learning,C119857082,Saudi Arabia,SA,9
+1992,AI & Machine Learning,C119857082,Sudan,SD,1
+1992,AI & Machine Learning,C119857082,Sweden,SE,90
+1992,AI & Machine Learning,C119857082,Singapore,SG,45
+1992,AI & Machine Learning,C119857082,Slovenia,SI,15
+1992,AI & Machine Learning,C119857082,Slovakia,SK,18
+1992,AI & Machine Learning,C119857082,South Sudan,SS,5
+1992,AI & Machine Learning,C119857082,Thailand,TH,4
+1992,AI & Machine Learning,C119857082,Tajikistan,TJ,4
+1992,AI & Machine Learning,C119857082,Tunisia,TN,2
+1992,AI & Machine Learning,C119857082,Turkey,TR,21
+1992,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+1992,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,122
+1992,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,3
+1992,AI & Machine Learning,C119857082,Ukraine,UA,18
+1992,AI & Machine Learning,C119857082,United States of America,US,4579
+1992,AI & Machine Learning,C119857082,Uruguay,UY,1
+1992,AI & Machine Learning,C119857082,Uzbekistan,UZ,4
+1992,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,7
+1992,AI & Machine Learning,C119857082,Viet Nam,VN,5
+1992,AI & Machine Learning,C119857082,South Africa,ZA,38
+1992,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
+1992,CRISPR & Genomics,C98108389,Armenia,AM,3
+1992,CRISPR & Genomics,C98108389,Germany,DE,6
+1992,CRISPR & Genomics,C98108389,France,FR,3
+1992,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,2
+1992,CRISPR & Genomics,C98108389,Hungary,HU,1
+1992,CRISPR & Genomics,C98108389,Israel,IL,3
+1992,CRISPR & Genomics,C98108389,Italy,IT,2
+1992,CRISPR & Genomics,C98108389,Japan,JP,4
+1992,CRISPR & Genomics,C98108389,Netherlands,NL,2
+1992,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1992,CRISPR & Genomics,C98108389,Sweden,SE,1
+1992,CRISPR & Genomics,C98108389,United States of America,US,19
+1992,Data Science & Big Data,C2522767166,United Arab Emirates,AE,1
+1992,Data Science & Big Data,C2522767166,Armenia,AM,1
+1992,Data Science & Big Data,C2522767166,Austria,AT,17
+1992,Data Science & Big Data,C2522767166,Australia,AU,73
+1992,Data Science & Big Data,C2522767166,Bangladesh,BD,5
+1992,Data Science & Big Data,C2522767166,Belgium,BE,15
+1992,Data Science & Big Data,C2522767166,Bulgaria,BG,9
+1992,Data Science & Big Data,C2522767166,Brazil,BR,9
+1992,Data Science & Big Data,C2522767166,Bahamas,BS,1
+1992,Data Science & Big Data,C2522767166,Canada,CA,156
+1992,Data Science & Big Data,C2522767166,Switzerland,CH,21
+1992,Data Science & Big Data,C2522767166,Chile,CL,1
+1992,Data Science & Big Data,C2522767166,China,CN,10
+1992,Data Science & Big Data,C2522767166,Cyprus,CY,4
+1992,Data Science & Big Data,C2522767166,Czechia,CZ,6
+1992,Data Science & Big Data,C2522767166,Germany,DE,87
+1992,Data Science & Big Data,C2522767166,Denmark,DK,15
+1992,Data Science & Big Data,C2522767166,Egypt,EG,2
+1992,Data Science & Big Data,C2522767166,Spain,ES,13
+1992,Data Science & Big Data,C2522767166,Finland,FI,16
+1992,Data Science & Big Data,C2522767166,France,FR,63
+1992,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,501
+1992,Data Science & Big Data,C2522767166,Gibraltar,GI,1
+1992,Data Science & Big Data,C2522767166,Greece,GR,10
+1992,Data Science & Big Data,C2522767166,Guam,GU,1
+1992,Data Science & Big Data,C2522767166,Hong Kong,HK,4
+1992,Data Science & Big Data,C2522767166,Honduras,HN,1
+1992,Data Science & Big Data,C2522767166,Hungary,HU,11
+1992,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1992,Data Science & Big Data,C2522767166,Ireland,IE,9
+1992,Data Science & Big Data,C2522767166,Israel,IL,21
+1992,Data Science & Big Data,C2522767166,India,IN,19
+1992,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,2
+1992,Data Science & Big Data,C2522767166,Italy,IT,44
+1992,Data Science & Big Data,C2522767166,Jamaica,JM,1
+1992,Data Science & Big Data,C2522767166,Japan,JP,38
+1992,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,1
+1992,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1992,Data Science & Big Data,C2522767166,Latvia,LV,2
+1992,Data Science & Big Data,C2522767166,Myanmar,MM,2
+1992,Data Science & Big Data,C2522767166,Malta,MT,1
+1992,Data Science & Big Data,C2522767166,Mexico,MX,7
+1992,Data Science & Big Data,C2522767166,Malaysia,MY,2
+1992,Data Science & Big Data,C2522767166,Netherlands,NL,61
+1992,Data Science & Big Data,C2522767166,Norway,NO,11
+1992,Data Science & Big Data,C2522767166,Nepal,NP,1
+1992,Data Science & Big Data,C2522767166,New Zealand,NZ,18
+1992,Data Science & Big Data,C2522767166,Papua New Guinea,PG,2
+1992,Data Science & Big Data,C2522767166,Philippines,PH,1
+1992,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1992,Data Science & Big Data,C2522767166,Poland,PL,3
+1992,Data Science & Big Data,C2522767166,Portugal,PT,6
+1992,Data Science & Big Data,C2522767166,Qatar,QA,2
+1992,Data Science & Big Data,C2522767166,Romania,RO,3
+1992,Data Science & Big Data,C2522767166,Russian Federation,RU,5
+1992,Data Science & Big Data,C2522767166,Saudi Arabia,SA,2
+1992,Data Science & Big Data,C2522767166,Sweden,SE,22
+1992,Data Science & Big Data,C2522767166,Singapore,SG,7
+1992,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1992,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1992,Data Science & Big Data,C2522767166,Senegal,SN,1
+1992,Data Science & Big Data,C2522767166,Somalia,SO,1
+1992,Data Science & Big Data,C2522767166,Syrian Arab Republic,SY,1
+1992,Data Science & Big Data,C2522767166,Thailand,TH,2
+1992,Data Science & Big Data,C2522767166,Tunisia,TN,2
+1992,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1992,Data Science & Big Data,C2522767166,United States of America,US,1249
+1992,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,4
+1992,Data Science & Big Data,C2522767166,Viet Nam,VN,3
+1992,Data Science & Big Data,C2522767166,South Africa,ZA,9
+1992,Infectious Diseases,C524204448,United Arab Emirates,AE,2
+1992,Infectious Diseases,C524204448,Austria,AT,3
+1992,Infectious Diseases,C524204448,Australia,AU,15
+1992,Infectious Diseases,C524204448,Belgium,BE,2
+1992,Infectious Diseases,C524204448,Brazil,BR,6
+1992,Infectious Diseases,C524204448,Canada,CA,22
+1992,Infectious Diseases,C524204448,Switzerland,CH,10
+1992,Infectious Diseases,C524204448,Côte d'Ivoire,CI,2
+1992,Infectious Diseases,C524204448,Chile,CL,2
+1992,Infectious Diseases,C524204448,China,CN,7
+1992,Infectious Diseases,C524204448,Cuba,CU,2
+1992,Infectious Diseases,C524204448,Czechia,CZ,3
+1992,Infectious Diseases,C524204448,Germany,DE,35
+1992,Infectious Diseases,C524204448,Denmark,DK,4
+1992,Infectious Diseases,C524204448,Estonia,EE,1
+1992,Infectious Diseases,C524204448,Egypt,EG,1
+1992,Infectious Diseases,C524204448,Spain,ES,8
+1992,Infectious Diseases,C524204448,Ethiopia,ET,1
+1992,Infectious Diseases,C524204448,Finland,FI,3
+1992,Infectious Diseases,C524204448,France,FR,41
+1992,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,75
+1992,Infectious Diseases,C524204448,Georgia,GE,1
+1992,Infectious Diseases,C524204448,Greece,GR,1
+1992,Infectious Diseases,C524204448,Guatemala,GT,1
+1992,Infectious Diseases,C524204448,Hong Kong,HK,2
+1992,Infectious Diseases,C524204448,Hungary,HU,2
+1992,Infectious Diseases,C524204448,Israel,IL,4
+1992,Infectious Diseases,C524204448,India,IN,3
+1992,Infectious Diseases,C524204448,Italy,IT,22
+1992,Infectious Diseases,C524204448,Japan,JP,37
+1992,Infectious Diseases,C524204448,Kenya,KE,2
+1992,Infectious Diseases,C524204448,"Korea, Republic of",KR,1
+1992,Infectious Diseases,C524204448,Morocco,MA,1
+1992,Infectious Diseases,C524204448,Mali,ML,1
+1992,Infectious Diseases,C524204448,Mongolia,MN,1
+1992,Infectious Diseases,C524204448,Mexico,MX,2
+1992,Infectious Diseases,C524204448,Nigeria,NG,1
+1992,Infectious Diseases,C524204448,Netherlands,NL,25
+1992,Infectious Diseases,C524204448,Norway,NO,8
+1992,Infectious Diseases,C524204448,Nepal,NP,2
+1992,Infectious Diseases,C524204448,New Zealand,NZ,4
+1992,Infectious Diseases,C524204448,Philippines,PH,1
+1992,Infectious Diseases,C524204448,Poland,PL,1
+1992,Infectious Diseases,C524204448,Portugal,PT,1
+1992,Infectious Diseases,C524204448,Serbia,RS,1
+1992,Infectious Diseases,C524204448,Russian Federation,RU,4
+1992,Infectious Diseases,C524204448,Saudi Arabia,SA,2
+1992,Infectious Diseases,C524204448,Sweden,SE,5
+1992,Infectious Diseases,C524204448,Singapore,SG,3
+1992,Infectious Diseases,C524204448,Slovakia,SK,7
+1992,Infectious Diseases,C524204448,Somalia,SO,1
+1992,Infectious Diseases,C524204448,South Sudan,SS,3
+1992,Infectious Diseases,C524204448,Thailand,TH,1
+1992,Infectious Diseases,C524204448,Tunisia,TN,1
+1992,Infectious Diseases,C524204448,Turkey,TR,2
+1992,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,4
+1992,Infectious Diseases,C524204448,United States of America,US,373
+1992,Infectious Diseases,C524204448,Uruguay,UY,1
+1992,Infectious Diseases,C524204448,"Venezuela, Bolivarian Republic of",VE,1
+1992,Infectious Diseases,C524204448,Viet Nam,VN,2
+1992,Infectious Diseases,C524204448,South Africa,ZA,2
+1992,Infectious Diseases,C524204448,Zambia,ZM,1
+1992,Quantum Computing,C58053490,Belgium,BE,1
+1992,Quantum Computing,C58053490,Bulgaria,BG,1
+1992,Quantum Computing,C58053490,Brazil,BR,1
+1992,Quantum Computing,C58053490,Canada,CA,3
+1992,Quantum Computing,C58053490,Switzerland,CH,1
+1992,Quantum Computing,C58053490,China,CN,3
+1992,Quantum Computing,C58053490,Czechia,CZ,2
+1992,Quantum Computing,C58053490,Germany,DE,5
+1992,Quantum Computing,C58053490,Spain,ES,5
+1992,Quantum Computing,C58053490,Finland,FI,1
+1992,Quantum Computing,C58053490,France,FR,5
+1992,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,9
+1992,Quantum Computing,C58053490,Croatia,HR,1
+1992,Quantum Computing,C58053490,Hungary,HU,1
+1992,Quantum Computing,C58053490,Israel,IL,1
+1992,Quantum Computing,C58053490,India,IN,1
+1992,Quantum Computing,C58053490,Italy,IT,4
+1992,Quantum Computing,C58053490,Japan,JP,6
+1992,Quantum Computing,C58053490,Poland,PL,1
+1992,Quantum Computing,C58053490,Russian Federation,RU,2
+1992,Quantum Computing,C58053490,Sweden,SE,1
+1992,Quantum Computing,C58053490,Singapore,SG,1
+1992,Quantum Computing,C58053490,Slovakia,SK,2
+1992,Quantum Computing,C58053490,United States of America,US,24
+1992,Renewable Energy,C188573790,Australia,AU,6
+1992,Renewable Energy,C188573790,Bangladesh,BD,1
+1992,Renewable Energy,C188573790,Belgium,BE,2
+1992,Renewable Energy,C188573790,Brazil,BR,1
+1992,Renewable Energy,C188573790,Canada,CA,12
+1992,Renewable Energy,C188573790,Switzerland,CH,3
+1992,Renewable Energy,C188573790,China,CN,3
+1992,Renewable Energy,C188573790,Germany,DE,19
+1992,Renewable Energy,C188573790,Denmark,DK,1
+1992,Renewable Energy,C188573790,Dominican Republic,DO,1
+1992,Renewable Energy,C188573790,Egypt,EG,4
+1992,Renewable Energy,C188573790,Spain,ES,3
+1992,Renewable Energy,C188573790,Finland,FI,1
+1992,Renewable Energy,C188573790,France,FR,4
+1992,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,40
+1992,Renewable Energy,C188573790,Ghana,GH,1
+1992,Renewable Energy,C188573790,Greece,GR,2
+1992,Renewable Energy,C188573790,Hong Kong,HK,1
+1992,Renewable Energy,C188573790,Indonesia,ID,1
+1992,Renewable Energy,C188573790,Israel,IL,2
+1992,Renewable Energy,C188573790,India,IN,9
+1992,Renewable Energy,C188573790,Italy,IT,3
+1992,Renewable Energy,C188573790,Jordan,JO,1
+1992,Renewable Energy,C188573790,Japan,JP,14
+1992,Renewable Energy,C188573790,Kenya,KE,2
+1992,Renewable Energy,C188573790,"Korea, Republic of",KR,3
+1992,Renewable Energy,C188573790,Nigeria,NG,1
+1992,Renewable Energy,C188573790,Nicaragua,NI,1
+1992,Renewable Energy,C188573790,Netherlands,NL,9
+1992,Renewable Energy,C188573790,Philippines,PH,1
+1992,Renewable Energy,C188573790,Poland,PL,1
+1992,Renewable Energy,C188573790,Serbia,RS,2
+1992,Renewable Energy,C188573790,Russian Federation,RU,4
+1992,Renewable Energy,C188573790,Saudi Arabia,SA,1
+1992,Renewable Energy,C188573790,Sweden,SE,6
+1992,Renewable Energy,C188573790,Slovakia,SK,1
+1992,Renewable Energy,C188573790,Thailand,TH,1
+1992,Renewable Energy,C188573790,Turkey,TR,2
+1992,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1992,Renewable Energy,C188573790,United States of America,US,105
+1992,Renewable Energy,C188573790,South Africa,ZA,2
+1992,Renewable Energy,C188573790,Zimbabwe,ZW,2
+1992,Robotics & Automation,C34413123,Austria,AT,2
+1992,Robotics & Automation,C34413123,Australia,AU,5
+1992,Robotics & Automation,C34413123,Belgium,BE,3
+1992,Robotics & Automation,C34413123,Canada,CA,15
+1992,Robotics & Automation,C34413123,Switzerland,CH,6
+1992,Robotics & Automation,C34413123,China,CN,2
+1992,Robotics & Automation,C34413123,Germany,DE,10
+1992,Robotics & Automation,C34413123,Denmark,DK,1
+1992,Robotics & Automation,C34413123,Spain,ES,1
+1992,Robotics & Automation,C34413123,France,FR,20
+1992,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,26
+1992,Robotics & Automation,C34413123,Greece,GR,1
+1992,Robotics & Automation,C34413123,Hong Kong,HK,1
+1992,Robotics & Automation,C34413123,Israel,IL,1
+1992,Robotics & Automation,C34413123,India,IN,2
+1992,Robotics & Automation,C34413123,Italy,IT,8
+1992,Robotics & Automation,C34413123,Japan,JP,15
+1992,Robotics & Automation,C34413123,Netherlands,NL,4
+1992,Robotics & Automation,C34413123,Poland,PL,2
+1992,Robotics & Automation,C34413123,Russian Federation,RU,1
+1992,Robotics & Automation,C34413123,Slovakia,SK,1
+1992,Robotics & Automation,C34413123,Turkey,TR,2
+1992,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,1
+1992,Robotics & Automation,C34413123,United States of America,US,164
+1993,AI & Machine Learning,C119857082,United Arab Emirates,AE,2
+1993,AI & Machine Learning,C119857082,Albania,AL,1
+1993,AI & Machine Learning,C119857082,Argentina,AR,19
+1993,AI & Machine Learning,C119857082,Austria,AT,56
+1993,AI & Machine Learning,C119857082,Australia,AU,282
+1993,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1993,AI & Machine Learning,C119857082,Bangladesh,BD,4
+1993,AI & Machine Learning,C119857082,Belgium,BE,96
+1993,AI & Machine Learning,C119857082,Burkina Faso,BF,1
+1993,AI & Machine Learning,C119857082,Bulgaria,BG,15
+1993,AI & Machine Learning,C119857082,Bahrain,BH,2
+1993,AI & Machine Learning,C119857082,Burundi,BI,1
+1993,AI & Machine Learning,C119857082,Benin,BJ,1
+1993,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1993,AI & Machine Learning,C119857082,Brazil,BR,46
+1993,AI & Machine Learning,C119857082,Botswana,BW,1
+1993,AI & Machine Learning,C119857082,Belarus,BY,11
+1993,AI & Machine Learning,C119857082,Canada,CA,583
+1993,AI & Machine Learning,C119857082,Switzerland,CH,86
+1993,AI & Machine Learning,C119857082,Chile,CL,12
+1993,AI & Machine Learning,C119857082,Cameroon,CM,3
+1993,AI & Machine Learning,C119857082,China,CN,251
+1993,AI & Machine Learning,C119857082,Colombia,CO,4
+1993,AI & Machine Learning,C119857082,Cuba,CU,1
+1993,AI & Machine Learning,C119857082,Cyprus,CY,3
+1993,AI & Machine Learning,C119857082,Czechia,CZ,48
+1993,AI & Machine Learning,C119857082,Germany,DE,438
+1993,AI & Machine Learning,C119857082,Denmark,DK,64
+1993,AI & Machine Learning,C119857082,Algeria,DZ,4
+1993,AI & Machine Learning,C119857082,Ecuador,EC,1
+1993,AI & Machine Learning,C119857082,Estonia,EE,2
+1993,AI & Machine Learning,C119857082,Egypt,EG,31
+1993,AI & Machine Learning,C119857082,Spain,ES,132
+1993,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1993,AI & Machine Learning,C119857082,Finland,FI,43
+1993,AI & Machine Learning,C119857082,France,FR,409
+1993,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,898
+1993,AI & Machine Learning,C119857082,Georgia,GE,1
+1993,AI & Machine Learning,C119857082,Ghana,GH,3
+1993,AI & Machine Learning,C119857082,Greece,GR,50
+1993,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+1993,AI & Machine Learning,C119857082,Guyana,GY,1
+1993,AI & Machine Learning,C119857082,Hong Kong,HK,38
+1993,AI & Machine Learning,C119857082,Honduras,HN,1
+1993,AI & Machine Learning,C119857082,Croatia,HR,9
+1993,AI & Machine Learning,C119857082,Hungary,HU,32
+1993,AI & Machine Learning,C119857082,Indonesia,ID,2
+1993,AI & Machine Learning,C119857082,Ireland,IE,31
+1993,AI & Machine Learning,C119857082,Israel,IL,138
+1993,AI & Machine Learning,C119857082,India,IN,139
+1993,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,6
+1993,AI & Machine Learning,C119857082,Italy,IT,276
+1993,AI & Machine Learning,C119857082,Jordan,JO,6
+1993,AI & Machine Learning,C119857082,Japan,JP,569
+1993,AI & Machine Learning,C119857082,Kenya,KE,2
+1993,AI & Machine Learning,C119857082,Cambodia,KH,2
+1993,AI & Machine Learning,C119857082,"Korea, Republic of",KR,76
+1993,AI & Machine Learning,C119857082,Kuwait,KW,3
+1993,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1993,AI & Machine Learning,C119857082,Lebanon,LB,1
+1993,AI & Machine Learning,C119857082,Liechtenstein,LI,1
+1993,AI & Machine Learning,C119857082,Sri Lanka,LK,1
+1993,AI & Machine Learning,C119857082,Lithuania,LT,3
+1993,AI & Machine Learning,C119857082,Luxembourg,LU,1
+1993,AI & Machine Learning,C119857082,Latvia,LV,14
+1993,AI & Machine Learning,C119857082,Morocco,MA,8
+1993,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+1993,AI & Machine Learning,C119857082,North Macedonia,MK,2
+1993,AI & Machine Learning,C119857082,Myanmar,MM,2
+1993,AI & Machine Learning,C119857082,Mongolia,MN,2
+1993,AI & Machine Learning,C119857082,Mexico,MX,37
+1993,AI & Machine Learning,C119857082,Malaysia,MY,7
+1993,AI & Machine Learning,C119857082,Niger,NE,2
+1993,AI & Machine Learning,C119857082,Nigeria,NG,8
+1993,AI & Machine Learning,C119857082,Netherlands,NL,228
+1993,AI & Machine Learning,C119857082,Norway,NO,41
+1993,AI & Machine Learning,C119857082,Nepal,NP,1
+1993,AI & Machine Learning,C119857082,New Zealand,NZ,43
+1993,AI & Machine Learning,C119857082,Oman,OM,2
+1993,AI & Machine Learning,C119857082,Panama,PA,1
+1993,AI & Machine Learning,C119857082,Peru,PE,1
+1993,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1993,AI & Machine Learning,C119857082,Philippines,PH,3
+1993,AI & Machine Learning,C119857082,Pakistan,PK,5
+1993,AI & Machine Learning,C119857082,Poland,PL,84
+1993,AI & Machine Learning,C119857082,Portugal,PT,23
+1993,AI & Machine Learning,C119857082,Qatar,QA,2
+1993,AI & Machine Learning,C119857082,Romania,RO,21
+1993,AI & Machine Learning,C119857082,Serbia,RS,5
+1993,AI & Machine Learning,C119857082,Russian Federation,RU,135
+1993,AI & Machine Learning,C119857082,Saudi Arabia,SA,14
+1993,AI & Machine Learning,C119857082,Sudan,SD,2
+1993,AI & Machine Learning,C119857082,Sweden,SE,132
+1993,AI & Machine Learning,C119857082,Singapore,SG,62
+1993,AI & Machine Learning,C119857082,Slovenia,SI,23
+1993,AI & Machine Learning,C119857082,Slovakia,SK,18
+1993,AI & Machine Learning,C119857082,Sierra Leone,SL,1
+1993,AI & Machine Learning,C119857082,South Sudan,SS,2
+1993,AI & Machine Learning,C119857082,Thailand,TH,6
+1993,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1993,AI & Machine Learning,C119857082,Tunisia,TN,5
+1993,AI & Machine Learning,C119857082,Turkey,TR,18
+1993,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+1993,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,147
+1993,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1993,AI & Machine Learning,C119857082,Ukraine,UA,37
+1993,AI & Machine Learning,C119857082,Uganda,UG,1
+1993,AI & Machine Learning,C119857082,United States of America,US,4594
+1993,AI & Machine Learning,C119857082,Uruguay,UY,1
+1993,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1993,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,6
+1993,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,2
+1993,AI & Machine Learning,C119857082,Viet Nam,VN,7
+1993,AI & Machine Learning,C119857082,Yemen,YE,4
+1993,AI & Machine Learning,C119857082,South Africa,ZA,47
+1993,AI & Machine Learning,C119857082,Zimbabwe,ZW,2
+1993,CRISPR & Genomics,C98108389,Austria,AT,1
+1993,CRISPR & Genomics,C98108389,Australia,AU,1
+1993,CRISPR & Genomics,C98108389,Canada,CA,2
+1993,CRISPR & Genomics,C98108389,Germany,DE,2
+1993,CRISPR & Genomics,C98108389,Denmark,DK,1
+1993,CRISPR & Genomics,C98108389,France,FR,3
+1993,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,2
+1993,CRISPR & Genomics,C98108389,Japan,JP,2
+1993,CRISPR & Genomics,C98108389,Netherlands,NL,1
+1993,CRISPR & Genomics,C98108389,Russian Federation,RU,2
+1993,CRISPR & Genomics,C98108389,Sweden,SE,1
+1993,CRISPR & Genomics,C98108389,United States of America,US,17
+1993,Data Science & Big Data,C2522767166,Argentina,AR,2
+1993,Data Science & Big Data,C2522767166,Austria,AT,15
+1993,Data Science & Big Data,C2522767166,Australia,AU,56
+1993,Data Science & Big Data,C2522767166,Bosnia and Herzegovina,BA,2
+1993,Data Science & Big Data,C2522767166,Belgium,BE,13
+1993,Data Science & Big Data,C2522767166,Bulgaria,BG,8
+1993,Data Science & Big Data,C2522767166,Burundi,BI,1
+1993,Data Science & Big Data,C2522767166,Brunei Darussalam,BN,1
+1993,Data Science & Big Data,C2522767166,Brazil,BR,7
+1993,Data Science & Big Data,C2522767166,Canada,CA,166
+1993,Data Science & Big Data,C2522767166,Switzerland,CH,28
+1993,Data Science & Big Data,C2522767166,Cameroon,CM,1
+1993,Data Science & Big Data,C2522767166,China,CN,16
+1993,Data Science & Big Data,C2522767166,Colombia,CO,1
+1993,Data Science & Big Data,C2522767166,Cuba,CU,1
+1993,Data Science & Big Data,C2522767166,Cyprus,CY,2
+1993,Data Science & Big Data,C2522767166,Czechia,CZ,6
+1993,Data Science & Big Data,C2522767166,Germany,DE,86
+1993,Data Science & Big Data,C2522767166,Denmark,DK,9
+1993,Data Science & Big Data,C2522767166,Dominican Republic,DO,1
+1993,Data Science & Big Data,C2522767166,Estonia,EE,1
+1993,Data Science & Big Data,C2522767166,Egypt,EG,2
+1993,Data Science & Big Data,C2522767166,Spain,ES,13
+1993,Data Science & Big Data,C2522767166,Finland,FI,5
+1993,Data Science & Big Data,C2522767166,France,FR,59
+1993,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,513
+1993,Data Science & Big Data,C2522767166,Greenland,GL,1
+1993,Data Science & Big Data,C2522767166,Greece,GR,3
+1993,Data Science & Big Data,C2522767166,Guatemala,GT,1
+1993,Data Science & Big Data,C2522767166,Hong Kong,HK,6
+1993,Data Science & Big Data,C2522767166,Croatia,HR,2
+1993,Data Science & Big Data,C2522767166,Hungary,HU,7
+1993,Data Science & Big Data,C2522767166,Ireland,IE,11
+1993,Data Science & Big Data,C2522767166,Israel,IL,20
+1993,Data Science & Big Data,C2522767166,India,IN,20
+1993,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,1
+1993,Data Science & Big Data,C2522767166,Iceland,IS,2
+1993,Data Science & Big Data,C2522767166,Italy,IT,34
+1993,Data Science & Big Data,C2522767166,Japan,JP,38
+1993,Data Science & Big Data,C2522767166,Kenya,KE,1
+1993,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,6
+1993,Data Science & Big Data,C2522767166,Kuwait,KW,1
+1993,Data Science & Big Data,C2522767166,Luxembourg,LU,1
+1993,Data Science & Big Data,C2522767166,Latvia,LV,1
+1993,Data Science & Big Data,C2522767166,Morocco,MA,2
+1993,Data Science & Big Data,C2522767166,"Moldova, Republic of",MD,1
+1993,Data Science & Big Data,C2522767166,North Macedonia,MK,1
+1993,Data Science & Big Data,C2522767166,Mongolia,MN,1
+1993,Data Science & Big Data,C2522767166,Malta,MT,1
+1993,Data Science & Big Data,C2522767166,Malawi,MW,1
+1993,Data Science & Big Data,C2522767166,Mexico,MX,7
+1993,Data Science & Big Data,C2522767166,Malaysia,MY,4
+1993,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1993,Data Science & Big Data,C2522767166,Netherlands,NL,55
+1993,Data Science & Big Data,C2522767166,Norway,NO,19
+1993,Data Science & Big Data,C2522767166,Nepal,NP,1
+1993,Data Science & Big Data,C2522767166,New Zealand,NZ,12
+1993,Data Science & Big Data,C2522767166,Papua New Guinea,PG,1
+1993,Data Science & Big Data,C2522767166,Pakistan,PK,1
+1993,Data Science & Big Data,C2522767166,Poland,PL,6
+1993,Data Science & Big Data,C2522767166,Portugal,PT,3
+1993,Data Science & Big Data,C2522767166,Qatar,QA,2
+1993,Data Science & Big Data,C2522767166,Romania,RO,1
+1993,Data Science & Big Data,C2522767166,Russian Federation,RU,14
+1993,Data Science & Big Data,C2522767166,Saudi Arabia,SA,3
+1993,Data Science & Big Data,C2522767166,Sudan,SD,1
+1993,Data Science & Big Data,C2522767166,Sweden,SE,26
+1993,Data Science & Big Data,C2522767166,Singapore,SG,8
+1993,Data Science & Big Data,C2522767166,Slovenia,SI,5
+1993,Data Science & Big Data,C2522767166,Slovakia,SK,2
+1993,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1993,Data Science & Big Data,C2522767166,Thailand,TH,1
+1993,Data Science & Big Data,C2522767166,Tajikistan,TJ,1
+1993,Data Science & Big Data,C2522767166,Turkey,TR,3
+1993,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,7
+1993,Data Science & Big Data,C2522767166,United States of America,US,1352
+1993,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,1
+1993,Data Science & Big Data,C2522767166,Viet Nam,VN,3
+1993,Data Science & Big Data,C2522767166,South Africa,ZA,9
+1993,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1993,Infectious Diseases,C524204448,Argentina,AR,1
+1993,Infectious Diseases,C524204448,Austria,AT,3
+1993,Infectious Diseases,C524204448,Australia,AU,19
+1993,Infectious Diseases,C524204448,Bangladesh,BD,1
+1993,Infectious Diseases,C524204448,Belgium,BE,5
+1993,Infectious Diseases,C524204448,Burkina Faso,BF,1
+1993,Infectious Diseases,C524204448,Brazil,BR,7
+1993,Infectious Diseases,C524204448,Canada,CA,23
+1993,Infectious Diseases,C524204448,Switzerland,CH,16
+1993,Infectious Diseases,C524204448,Côte d'Ivoire,CI,2
+1993,Infectious Diseases,C524204448,Chile,CL,1
+1993,Infectious Diseases,C524204448,China,CN,2
+1993,Infectious Diseases,C524204448,Cuba,CU,1
+1993,Infectious Diseases,C524204448,Czechia,CZ,4
+1993,Infectious Diseases,C524204448,Germany,DE,24
+1993,Infectious Diseases,C524204448,Denmark,DK,12
+1993,Infectious Diseases,C524204448,Egypt,EG,2
+1993,Infectious Diseases,C524204448,Spain,ES,6
+1993,Infectious Diseases,C524204448,Finland,FI,2
+1993,Infectious Diseases,C524204448,France,FR,36
+1993,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,74
+1993,Infectious Diseases,C524204448,Hungary,HU,2
+1993,Infectious Diseases,C524204448,Ireland,IE,1
+1993,Infectious Diseases,C524204448,Israel,IL,7
+1993,Infectious Diseases,C524204448,India,IN,4
+1993,Infectious Diseases,C524204448,"Iran, Islamic Republic of",IR,2
+1993,Infectious Diseases,C524204448,Italy,IT,14
+1993,Infectious Diseases,C524204448,Japan,JP,34
+1993,Infectious Diseases,C524204448,"Korea, Republic of",KR,3
+1993,Infectious Diseases,C524204448,Morocco,MA,2
+1993,Infectious Diseases,C524204448,Myanmar,MM,1
+1993,Infectious Diseases,C524204448,Mongolia,MN,1
+1993,Infectious Diseases,C524204448,Mexico,MX,2
+1993,Infectious Diseases,C524204448,Nigeria,NG,1
+1993,Infectious Diseases,C524204448,Netherlands,NL,15
+1993,Infectious Diseases,C524204448,Norway,NO,5
+1993,Infectious Diseases,C524204448,Nepal,NP,1
+1993,Infectious Diseases,C524204448,New Zealand,NZ,5
+1993,Infectious Diseases,C524204448,Peru,PE,3
+1993,Infectious Diseases,C524204448,Pakistan,PK,1
+1993,Infectious Diseases,C524204448,Poland,PL,5
+1993,Infectious Diseases,C524204448,Puerto Rico,PR,1
+1993,Infectious Diseases,C524204448,Portugal,PT,2
+1993,Infectious Diseases,C524204448,Serbia,RS,1
+1993,Infectious Diseases,C524204448,Russian Federation,RU,5
+1993,Infectious Diseases,C524204448,Saudi Arabia,SA,3
+1993,Infectious Diseases,C524204448,Sweden,SE,11
+1993,Infectious Diseases,C524204448,Singapore,SG,4
+1993,Infectious Diseases,C524204448,Slovakia,SK,4
+1993,Infectious Diseases,C524204448,Thailand,TH,1
+1993,Infectious Diseases,C524204448,Turkey,TR,1
+1993,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,2
+1993,Infectious Diseases,C524204448,Uganda,UG,2
+1993,Infectious Diseases,C524204448,United States of America,US,423
+1993,Infectious Diseases,C524204448,"Venezuela, Bolivarian Republic of",VE,2
+1993,Infectious Diseases,C524204448,Viet Nam,VN,5
+1993,Infectious Diseases,C524204448,South Africa,ZA,2
+1993,Infectious Diseases,C524204448,Zambia,ZM,1
+1993,Quantum Computing,C58053490,Bulgaria,BG,1
+1993,Quantum Computing,C58053490,Brazil,BR,1
+1993,Quantum Computing,C58053490,Canada,CA,1
+1993,Quantum Computing,C58053490,Switzerland,CH,3
+1993,Quantum Computing,C58053490,China,CN,3
+1993,Quantum Computing,C58053490,Czechia,CZ,1
+1993,Quantum Computing,C58053490,Germany,DE,3
+1993,Quantum Computing,C58053490,Spain,ES,1
+1993,Quantum Computing,C58053490,France,FR,4
+1993,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,5
+1993,Quantum Computing,C58053490,Croatia,HR,1
+1993,Quantum Computing,C58053490,Israel,IL,1
+1993,Quantum Computing,C58053490,Italy,IT,4
+1993,Quantum Computing,C58053490,Japan,JP,2
+1993,Quantum Computing,C58053490,Mexico,MX,1
+1993,Quantum Computing,C58053490,Poland,PL,2
+1993,Quantum Computing,C58053490,Russian Federation,RU,2
+1993,Quantum Computing,C58053490,Slovakia,SK,5
+1993,Quantum Computing,C58053490,United States of America,US,21
+1993,Renewable Energy,C188573790,Austria,AT,2
+1993,Renewable Energy,C188573790,Australia,AU,6
+1993,Renewable Energy,C188573790,Bosnia and Herzegovina,BA,1
+1993,Renewable Energy,C188573790,Belgium,BE,4
+1993,Renewable Energy,C188573790,Bulgaria,BG,1
+1993,Renewable Energy,C188573790,Brazil,BR,2
+1993,Renewable Energy,C188573790,Canada,CA,5
+1993,Renewable Energy,C188573790,Switzerland,CH,3
+1993,Renewable Energy,C188573790,Côte d'Ivoire,CI,1
+1993,Renewable Energy,C188573790,China,CN,3
+1993,Renewable Energy,C188573790,Colombia,CO,1
+1993,Renewable Energy,C188573790,Cyprus,CY,1
+1993,Renewable Energy,C188573790,Czechia,CZ,1
+1993,Renewable Energy,C188573790,Germany,DE,14
+1993,Renewable Energy,C188573790,Denmark,DK,2
+1993,Renewable Energy,C188573790,Egypt,EG,2
+1993,Renewable Energy,C188573790,Spain,ES,1
+1993,Renewable Energy,C188573790,Finland,FI,6
+1993,Renewable Energy,C188573790,Fiji,FJ,1
+1993,Renewable Energy,C188573790,France,FR,6
+1993,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,50
+1993,Renewable Energy,C188573790,Ghana,GH,1
+1993,Renewable Energy,C188573790,Indonesia,ID,2
+1993,Renewable Energy,C188573790,Ireland,IE,4
+1993,Renewable Energy,C188573790,Israel,IL,2
+1993,Renewable Energy,C188573790,India,IN,13
+1993,Renewable Energy,C188573790,Italy,IT,6
+1993,Renewable Energy,C188573790,Jordan,JO,4
+1993,Renewable Energy,C188573790,Japan,JP,9
+1993,Renewable Energy,C188573790,Mexico,MX,1
+1993,Renewable Energy,C188573790,Malaysia,MY,1
+1993,Renewable Energy,C188573790,Netherlands,NL,7
+1993,Renewable Energy,C188573790,Norway,NO,2
+1993,Renewable Energy,C188573790,Nepal,NP,1
+1993,Renewable Energy,C188573790,New Zealand,NZ,1
+1993,Renewable Energy,C188573790,Pakistan,PK,1
+1993,Renewable Energy,C188573790,Poland,PL,5
+1993,Renewable Energy,C188573790,Russian Federation,RU,2
+1993,Renewable Energy,C188573790,Saudi Arabia,SA,2
+1993,Renewable Energy,C188573790,Sweden,SE,7
+1993,Renewable Energy,C188573790,South Sudan,SS,1
+1993,Renewable Energy,C188573790,Tunisia,TN,1
+1993,Renewable Energy,C188573790,Turkey,TR,2
+1993,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1993,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,2
+1993,Renewable Energy,C188573790,United States of America,US,110
+1993,Renewable Energy,C188573790,South Africa,ZA,2
+1993,Renewable Energy,C188573790,Zambia,ZM,1
+1993,Robotics & Automation,C34413123,Austria,AT,2
+1993,Robotics & Automation,C34413123,Australia,AU,3
+1993,Robotics & Automation,C34413123,Belgium,BE,4
+1993,Robotics & Automation,C34413123,Bulgaria,BG,1
+1993,Robotics & Automation,C34413123,Brazil,BR,1
+1993,Robotics & Automation,C34413123,Belarus,BY,3
+1993,Robotics & Automation,C34413123,Canada,CA,22
+1993,Robotics & Automation,C34413123,Switzerland,CH,2
+1993,Robotics & Automation,C34413123,China,CN,5
+1993,Robotics & Automation,C34413123,Cyprus,CY,1
+1993,Robotics & Automation,C34413123,Germany,DE,11
+1993,Robotics & Automation,C34413123,Spain,ES,4
+1993,Robotics & Automation,C34413123,Finland,FI,1
+1993,Robotics & Automation,C34413123,France,FR,13
+1993,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,25
+1993,Robotics & Automation,C34413123,Greece,GR,2
+1993,Robotics & Automation,C34413123,Croatia,HR,1
+1993,Robotics & Automation,C34413123,Hungary,HU,3
+1993,Robotics & Automation,C34413123,Israel,IL,5
+1993,Robotics & Automation,C34413123,Iraq,IQ,1
+1993,Robotics & Automation,C34413123,"Iran, Islamic Republic of",IR,1
+1993,Robotics & Automation,C34413123,Italy,IT,13
+1993,Robotics & Automation,C34413123,Japan,JP,13
+1993,Robotics & Automation,C34413123,"Korea, Republic of",KR,1
+1993,Robotics & Automation,C34413123,Mexico,MX,1
+1993,Robotics & Automation,C34413123,Netherlands,NL,1
+1993,Robotics & Automation,C34413123,Poland,PL,5
+1993,Robotics & Automation,C34413123,Portugal,PT,1
+1993,Robotics & Automation,C34413123,Serbia,RS,1
+1993,Robotics & Automation,C34413123,Russian Federation,RU,2
+1993,Robotics & Automation,C34413123,Sweden,SE,2
+1993,Robotics & Automation,C34413123,Singapore,SG,1
+1993,Robotics & Automation,C34413123,Slovakia,SK,1
+1993,Robotics & Automation,C34413123,Turkey,TR,1
+1993,Robotics & Automation,C34413123,United States of America,US,158
+1994,AI & Machine Learning,C119857082,United Arab Emirates,AE,5
+1994,AI & Machine Learning,C119857082,Albania,AL,1
+1994,AI & Machine Learning,C119857082,Armenia,AM,4
+1994,AI & Machine Learning,C119857082,Argentina,AR,15
+1994,AI & Machine Learning,C119857082,Austria,AT,78
+1994,AI & Machine Learning,C119857082,Australia,AU,319
+1994,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1994,AI & Machine Learning,C119857082,Bangladesh,BD,3
+1994,AI & Machine Learning,C119857082,Belgium,BE,110
+1994,AI & Machine Learning,C119857082,Burkina Faso,BF,1
+1994,AI & Machine Learning,C119857082,Bulgaria,BG,27
+1994,AI & Machine Learning,C119857082,Bahrain,BH,4
+1994,AI & Machine Learning,C119857082,Burundi,BI,1
+1994,AI & Machine Learning,C119857082,Benin,BJ,1
+1994,AI & Machine Learning,C119857082,Brazil,BR,66
+1994,AI & Machine Learning,C119857082,Bahamas,BS,1
+1994,AI & Machine Learning,C119857082,Botswana,BW,1
+1994,AI & Machine Learning,C119857082,Belarus,BY,4
+1994,AI & Machine Learning,C119857082,Canada,CA,566
+1994,AI & Machine Learning,C119857082,Switzerland,CH,121
+1994,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1994,AI & Machine Learning,C119857082,Chile,CL,14
+1994,AI & Machine Learning,C119857082,Cameroon,CM,4
+1994,AI & Machine Learning,C119857082,China,CN,228
+1994,AI & Machine Learning,C119857082,Colombia,CO,2
+1994,AI & Machine Learning,C119857082,Costa Rica,CR,1
+1994,AI & Machine Learning,C119857082,Cuba,CU,2
+1994,AI & Machine Learning,C119857082,Cyprus,CY,8
+1994,AI & Machine Learning,C119857082,Czechia,CZ,42
+1994,AI & Machine Learning,C119857082,Germany,DE,579
+1994,AI & Machine Learning,C119857082,Denmark,DK,61
+1994,AI & Machine Learning,C119857082,Algeria,DZ,2
+1994,AI & Machine Learning,C119857082,Ecuador,EC,1
+1994,AI & Machine Learning,C119857082,Estonia,EE,5
+1994,AI & Machine Learning,C119857082,Egypt,EG,34
+1994,AI & Machine Learning,C119857082,Spain,ES,149
+1994,AI & Machine Learning,C119857082,Finland,FI,50
+1994,AI & Machine Learning,C119857082,France,FR,403
+1994,AI & Machine Learning,C119857082,Gabon,GA,1
+1994,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1114
+1994,AI & Machine Learning,C119857082,Georgia,GE,3
+1994,AI & Machine Learning,C119857082,Ghana,GH,5
+1994,AI & Machine Learning,C119857082,Gibraltar,GI,1
+1994,AI & Machine Learning,C119857082,Guinea,GN,1
+1994,AI & Machine Learning,C119857082,Greece,GR,68
+1994,AI & Machine Learning,C119857082,Guatemala,GT,1
+1994,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+1994,AI & Machine Learning,C119857082,Guyana,GY,2
+1994,AI & Machine Learning,C119857082,Hong Kong,HK,42
+1994,AI & Machine Learning,C119857082,Croatia,HR,8
+1994,AI & Machine Learning,C119857082,Hungary,HU,41
+1994,AI & Machine Learning,C119857082,Indonesia,ID,5
+1994,AI & Machine Learning,C119857082,Ireland,IE,27
+1994,AI & Machine Learning,C119857082,Israel,IL,132
+1994,AI & Machine Learning,C119857082,Isle of Man,IM,1
+1994,AI & Machine Learning,C119857082,India,IN,132
+1994,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,8
+1994,AI & Machine Learning,C119857082,Italy,IT,321
+1994,AI & Machine Learning,C119857082,Jamaica,JM,4
+1994,AI & Machine Learning,C119857082,Jordan,JO,6
+1994,AI & Machine Learning,C119857082,Japan,JP,630
+1994,AI & Machine Learning,C119857082,Kenya,KE,6
+1994,AI & Machine Learning,C119857082,"Korea, Republic of",KR,105
+1994,AI & Machine Learning,C119857082,Kuwait,KW,5
+1994,AI & Machine Learning,C119857082,Lebanon,LB,3
+1994,AI & Machine Learning,C119857082,Sri Lanka,LK,1
+1994,AI & Machine Learning,C119857082,Lithuania,LT,2
+1994,AI & Machine Learning,C119857082,Luxembourg,LU,1
+1994,AI & Machine Learning,C119857082,Latvia,LV,12
+1994,AI & Machine Learning,C119857082,Morocco,MA,7
+1994,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+1994,AI & Machine Learning,C119857082,North Macedonia,MK,2
+1994,AI & Machine Learning,C119857082,Macao,MO,1
+1994,AI & Machine Learning,C119857082,Malta,MT,2
+1994,AI & Machine Learning,C119857082,Mexico,MX,47
+1994,AI & Machine Learning,C119857082,Malaysia,MY,10
+1994,AI & Machine Learning,C119857082,Mozambique,MZ,1
+1994,AI & Machine Learning,C119857082,Nigeria,NG,7
+1994,AI & Machine Learning,C119857082,Netherlands,NL,228
+1994,AI & Machine Learning,C119857082,Norway,NO,45
+1994,AI & Machine Learning,C119857082,Nepal,NP,1
+1994,AI & Machine Learning,C119857082,New Zealand,NZ,39
+1994,AI & Machine Learning,C119857082,Oman,OM,6
+1994,AI & Machine Learning,C119857082,Panama,PA,1
+1994,AI & Machine Learning,C119857082,Peru,PE,8
+1994,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+1994,AI & Machine Learning,C119857082,Philippines,PH,3
+1994,AI & Machine Learning,C119857082,Pakistan,PK,5
+1994,AI & Machine Learning,C119857082,Poland,PL,110
+1994,AI & Machine Learning,C119857082,Puerto Rico,PR,7
+1994,AI & Machine Learning,C119857082,Portugal,PT,29
+1994,AI & Machine Learning,C119857082,Qatar,QA,1
+1994,AI & Machine Learning,C119857082,Romania,RO,24
+1994,AI & Machine Learning,C119857082,Serbia,RS,11
+1994,AI & Machine Learning,C119857082,Russian Federation,RU,165
+1994,AI & Machine Learning,C119857082,Saudi Arabia,SA,20
+1994,AI & Machine Learning,C119857082,Sweden,SE,106
+1994,AI & Machine Learning,C119857082,Singapore,SG,57
+1994,AI & Machine Learning,C119857082,Slovenia,SI,18
+1994,AI & Machine Learning,C119857082,Slovakia,SK,18
+1994,AI & Machine Learning,C119857082,Senegal,SN,2
+1994,AI & Machine Learning,C119857082,South Sudan,SS,4
+1994,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+1994,AI & Machine Learning,C119857082,Thailand,TH,8
+1994,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1994,AI & Machine Learning,C119857082,Tunisia,TN,4
+1994,AI & Machine Learning,C119857082,Turkey,TR,22
+1994,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+1994,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,164
+1994,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1994,AI & Machine Learning,C119857082,Ukraine,UA,33
+1994,AI & Machine Learning,C119857082,United States of America,US,4885
+1994,AI & Machine Learning,C119857082,Uruguay,UY,1
+1994,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1994,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,5
+1994,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,3
+1994,AI & Machine Learning,C119857082,Viet Nam,VN,6
+1994,AI & Machine Learning,C119857082,Yemen,YE,3
+1994,AI & Machine Learning,C119857082,South Africa,ZA,52
+1994,CRISPR & Genomics,C98108389,Canada,CA,2
+1994,CRISPR & Genomics,C98108389,Switzerland,CH,1
+1994,CRISPR & Genomics,C98108389,Germany,DE,2
+1994,CRISPR & Genomics,C98108389,Denmark,DK,1
+1994,CRISPR & Genomics,C98108389,Spain,ES,1
+1994,CRISPR & Genomics,C98108389,France,FR,2
+1994,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,5
+1994,CRISPR & Genomics,C98108389,Israel,IL,2
+1994,CRISPR & Genomics,C98108389,Italy,IT,2
+1994,CRISPR & Genomics,C98108389,Japan,JP,5
+1994,CRISPR & Genomics,C98108389,"Korea, Republic of",KR,1
+1994,CRISPR & Genomics,C98108389,Netherlands,NL,2
+1994,CRISPR & Genomics,C98108389,Sweden,SE,1
+1994,CRISPR & Genomics,C98108389,Ukraine,UA,1
+1994,CRISPR & Genomics,C98108389,United States of America,US,33
+1994,CRISPR & Genomics,C98108389,Viet Nam,VN,1
+1994,CRISPR & Genomics,C98108389,South Africa,ZA,1
+1994,Data Science & Big Data,C2522767166,United Arab Emirates,AE,1
+1994,Data Science & Big Data,C2522767166,Argentina,AR,4
+1994,Data Science & Big Data,C2522767166,Austria,AT,15
+1994,Data Science & Big Data,C2522767166,Australia,AU,91
+1994,Data Science & Big Data,C2522767166,Bangladesh,BD,5
+1994,Data Science & Big Data,C2522767166,Belgium,BE,27
+1994,Data Science & Big Data,C2522767166,Burkina Faso,BF,1
+1994,Data Science & Big Data,C2522767166,Bulgaria,BG,1
+1994,Data Science & Big Data,C2522767166,Brazil,BR,12
+1994,Data Science & Big Data,C2522767166,Belarus,BY,1
+1994,Data Science & Big Data,C2522767166,Canada,CA,176
+1994,Data Science & Big Data,C2522767166,Switzerland,CH,42
+1994,Data Science & Big Data,C2522767166,Chile,CL,3
+1994,Data Science & Big Data,C2522767166,China,CN,15
+1994,Data Science & Big Data,C2522767166,Cyprus,CY,1
+1994,Data Science & Big Data,C2522767166,Czechia,CZ,4
+1994,Data Science & Big Data,C2522767166,Germany,DE,112
+1994,Data Science & Big Data,C2522767166,Denmark,DK,17
+1994,Data Science & Big Data,C2522767166,Algeria,DZ,1
+1994,Data Science & Big Data,C2522767166,Egypt,EG,2
+1994,Data Science & Big Data,C2522767166,Spain,ES,22
+1994,Data Science & Big Data,C2522767166,Finland,FI,10
+1994,Data Science & Big Data,C2522767166,France,FR,88
+1994,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,664
+1994,Data Science & Big Data,C2522767166,Greece,GR,13
+1994,Data Science & Big Data,C2522767166,Guatemala,GT,1
+1994,Data Science & Big Data,C2522767166,Hong Kong,HK,4
+1994,Data Science & Big Data,C2522767166,Croatia,HR,2
+1994,Data Science & Big Data,C2522767166,Hungary,HU,11
+1994,Data Science & Big Data,C2522767166,Ireland,IE,13
+1994,Data Science & Big Data,C2522767166,Israel,IL,16
+1994,Data Science & Big Data,C2522767166,India,IN,16
+1994,Data Science & Big Data,C2522767166,Italy,IT,47
+1994,Data Science & Big Data,C2522767166,Japan,JP,58
+1994,Data Science & Big Data,C2522767166,Kenya,KE,4
+1994,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,6
+1994,Data Science & Big Data,C2522767166,Kuwait,KW,1
+1994,Data Science & Big Data,C2522767166,Latvia,LV,1
+1994,Data Science & Big Data,C2522767166,Morocco,MA,1
+1994,Data Science & Big Data,C2522767166,"Moldova, Republic of",MD,1
+1994,Data Science & Big Data,C2522767166,Mali,ML,1
+1994,Data Science & Big Data,C2522767166,Myanmar,MM,1
+1994,Data Science & Big Data,C2522767166,Malta,MT,1
+1994,Data Science & Big Data,C2522767166,Mexico,MX,5
+1994,Data Science & Big Data,C2522767166,Malaysia,MY,3
+1994,Data Science & Big Data,C2522767166,Niger,NE,1
+1994,Data Science & Big Data,C2522767166,Nigeria,NG,3
+1994,Data Science & Big Data,C2522767166,Nicaragua,NI,1
+1994,Data Science & Big Data,C2522767166,Netherlands,NL,64
+1994,Data Science & Big Data,C2522767166,Norway,NO,19
+1994,Data Science & Big Data,C2522767166,Nepal,NP,2
+1994,Data Science & Big Data,C2522767166,New Zealand,NZ,16
+1994,Data Science & Big Data,C2522767166,Peru,PE,3
+1994,Data Science & Big Data,C2522767166,Philippines,PH,1
+1994,Data Science & Big Data,C2522767166,Pakistan,PK,3
+1994,Data Science & Big Data,C2522767166,Poland,PL,6
+1994,Data Science & Big Data,C2522767166,Portugal,PT,6
+1994,Data Science & Big Data,C2522767166,Qatar,QA,1
+1994,Data Science & Big Data,C2522767166,Russian Federation,RU,12
+1994,Data Science & Big Data,C2522767166,Saudi Arabia,SA,2
+1994,Data Science & Big Data,C2522767166,Sweden,SE,12
+1994,Data Science & Big Data,C2522767166,Singapore,SG,7
+1994,Data Science & Big Data,C2522767166,Slovenia,SI,7
+1994,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1994,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1994,Data Science & Big Data,C2522767166,Tunisia,TN,2
+1994,Data Science & Big Data,C2522767166,Turkey,TR,4
+1994,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,6
+1994,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1994,Data Science & Big Data,C2522767166,Uganda,UG,1
+1994,Data Science & Big Data,C2522767166,United States of America,US,1428
+1994,Data Science & Big Data,C2522767166,Uruguay,UY,1
+1994,Data Science & Big Data,C2522767166,South Africa,ZA,12
+1994,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1994,Data Science & Big Data,C2522767166,Zimbabwe,ZW,1
+1994,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1994,Infectious Diseases,C524204448,Albania,AL,1
+1994,Infectious Diseases,C524204448,Argentina,AR,1
+1994,Infectious Diseases,C524204448,Austria,AT,4
+1994,Infectious Diseases,C524204448,Australia,AU,39
+1994,Infectious Diseases,C524204448,Bosnia and Herzegovina,BA,1
+1994,Infectious Diseases,C524204448,Bangladesh,BD,1
+1994,Infectious Diseases,C524204448,Belgium,BE,7
+1994,Infectious Diseases,C524204448,Bulgaria,BG,2
+1994,Infectious Diseases,C524204448,Brazil,BR,7
+1994,Infectious Diseases,C524204448,Canada,CA,48
+1994,Infectious Diseases,C524204448,Switzerland,CH,19
+1994,Infectious Diseases,C524204448,Chile,CL,2
+1994,Infectious Diseases,C524204448,China,CN,7
+1994,Infectious Diseases,C524204448,Colombia,CO,1
+1994,Infectious Diseases,C524204448,Cuba,CU,1
+1994,Infectious Diseases,C524204448,Czechia,CZ,3
+1994,Infectious Diseases,C524204448,Germany,DE,38
+1994,Infectious Diseases,C524204448,Denmark,DK,6
+1994,Infectious Diseases,C524204448,Egypt,EG,1
+1994,Infectious Diseases,C524204448,Spain,ES,17
+1994,Infectious Diseases,C524204448,Finland,FI,7
+1994,Infectious Diseases,C524204448,France,FR,48
+1994,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,86
+1994,Infectious Diseases,C524204448,Georgia,GE,1
+1994,Infectious Diseases,C524204448,Guatemala,GT,1
+1994,Infectious Diseases,C524204448,Hong Kong,HK,5
+1994,Infectious Diseases,C524204448,Croatia,HR,1
+1994,Infectious Diseases,C524204448,Ireland,IE,5
+1994,Infectious Diseases,C524204448,Israel,IL,11
+1994,Infectious Diseases,C524204448,India,IN,11
+1994,Infectious Diseases,C524204448,Italy,IT,19
+1994,Infectious Diseases,C524204448,Japan,JP,35
+1994,Infectious Diseases,C524204448,Kenya,KE,5
+1994,Infectious Diseases,C524204448,"Korea, Republic of",KR,3
+1994,Infectious Diseases,C524204448,Kuwait,KW,1
+1994,Infectious Diseases,C524204448,Morocco,MA,2
+1994,Infectious Diseases,C524204448,Mongolia,MN,1
+1994,Infectious Diseases,C524204448,Mexico,MX,3
+1994,Infectious Diseases,C524204448,Netherlands,NL,21
+1994,Infectious Diseases,C524204448,Norway,NO,7
+1994,Infectious Diseases,C524204448,New Zealand,NZ,2
+1994,Infectious Diseases,C524204448,Pakistan,PK,3
+1994,Infectious Diseases,C524204448,Poland,PL,1
+1994,Infectious Diseases,C524204448,Serbia,RS,1
+1994,Infectious Diseases,C524204448,Russian Federation,RU,4
+1994,Infectious Diseases,C524204448,Saudi Arabia,SA,2
+1994,Infectious Diseases,C524204448,Sweden,SE,7
+1994,Infectious Diseases,C524204448,Singapore,SG,2
+1994,Infectious Diseases,C524204448,Slovenia,SI,1
+1994,Infectious Diseases,C524204448,Slovakia,SK,3
+1994,Infectious Diseases,C524204448,Turkey,TR,1
+1994,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,4
+1994,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,2
+1994,Infectious Diseases,C524204448,Ukraine,UA,1
+1994,Infectious Diseases,C524204448,Uganda,UG,4
+1994,Infectious Diseases,C524204448,United States of America,US,404
+1994,Infectious Diseases,C524204448,Uruguay,UY,1
+1994,Infectious Diseases,C524204448,Viet Nam,VN,1
+1994,Infectious Diseases,C524204448,South Africa,ZA,2
+1994,Quantum Computing,C58053490,Australia,AU,1
+1994,Quantum Computing,C58053490,Belgium,BE,3
+1994,Quantum Computing,C58053490,Canada,CA,3
+1994,Quantum Computing,C58053490,Switzerland,CH,1
+1994,Quantum Computing,C58053490,China,CN,1
+1994,Quantum Computing,C58053490,Germany,DE,9
+1994,Quantum Computing,C58053490,Denmark,DK,1
+1994,Quantum Computing,C58053490,Spain,ES,2
+1994,Quantum Computing,C58053490,France,FR,1
+1994,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,6
+1994,Quantum Computing,C58053490,Greece,GR,1
+1994,Quantum Computing,C58053490,Israel,IL,2
+1994,Quantum Computing,C58053490,India,IN,1
+1994,Quantum Computing,C58053490,Italy,IT,6
+1994,Quantum Computing,C58053490,Jordan,JO,1
+1994,Quantum Computing,C58053490,Japan,JP,5
+1994,Quantum Computing,C58053490,"Korea, Republic of",KR,1
+1994,Quantum Computing,C58053490,"Moldova, Republic of",MD,1
+1994,Quantum Computing,C58053490,New Zealand,NZ,1
+1994,Quantum Computing,C58053490,Poland,PL,2
+1994,Quantum Computing,C58053490,Portugal,PT,1
+1994,Quantum Computing,C58053490,Romania,RO,1
+1994,Quantum Computing,C58053490,Serbia,RS,1
+1994,Quantum Computing,C58053490,Russian Federation,RU,2
+1994,Quantum Computing,C58053490,Slovakia,SK,3
+1994,Quantum Computing,C58053490,United States of America,US,22
+1994,Quantum Computing,C58053490,South Africa,ZA,1
+1994,Renewable Energy,C188573790,Argentina,AR,2
+1994,Renewable Energy,C188573790,Austria,AT,10
+1994,Renewable Energy,C188573790,Australia,AU,10
+1994,Renewable Energy,C188573790,Bangladesh,BD,1
+1994,Renewable Energy,C188573790,Belgium,BE,5
+1994,Renewable Energy,C188573790,Brazil,BR,4
+1994,Renewable Energy,C188573790,Botswana,BW,1
+1994,Renewable Energy,C188573790,Canada,CA,11
+1994,Renewable Energy,C188573790,Switzerland,CH,2
+1994,Renewable Energy,C188573790,China,CN,7
+1994,Renewable Energy,C188573790,Czechia,CZ,3
+1994,Renewable Energy,C188573790,Germany,DE,27
+1994,Renewable Energy,C188573790,Denmark,DK,3
+1994,Renewable Energy,C188573790,Egypt,EG,2
+1994,Renewable Energy,C188573790,Spain,ES,1
+1994,Renewable Energy,C188573790,Finland,FI,2
+1994,Renewable Energy,C188573790,France,FR,2
+1994,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,43
+1994,Renewable Energy,C188573790,Greece,GR,2
+1994,Renewable Energy,C188573790,Hungary,HU,1
+1994,Renewable Energy,C188573790,Indonesia,ID,1
+1994,Renewable Energy,C188573790,Ireland,IE,1
+1994,Renewable Energy,C188573790,India,IN,14
+1994,Renewable Energy,C188573790,Italy,IT,12
+1994,Renewable Energy,C188573790,Japan,JP,14
+1994,Renewable Energy,C188573790,Libya,LY,1
+1994,Renewable Energy,C188573790,Morocco,MA,1
+1994,Renewable Energy,C188573790,"Moldova, Republic of",MD,1
+1994,Renewable Energy,C188573790,Mexico,MX,2
+1994,Renewable Energy,C188573790,Malaysia,MY,1
+1994,Renewable Energy,C188573790,Nigeria,NG,4
+1994,Renewable Energy,C188573790,Netherlands,NL,13
+1994,Renewable Energy,C188573790,Norway,NO,2
+1994,Renewable Energy,C188573790,New Zealand,NZ,2
+1994,Renewable Energy,C188573790,Pakistan,PK,2
+1994,Renewable Energy,C188573790,Poland,PL,3
+1994,Renewable Energy,C188573790,Portugal,PT,3
+1994,Renewable Energy,C188573790,Romania,RO,1
+1994,Renewable Energy,C188573790,Russian Federation,RU,7
+1994,Renewable Energy,C188573790,Saudi Arabia,SA,3
+1994,Renewable Energy,C188573790,Sweden,SE,7
+1994,Renewable Energy,C188573790,Singapore,SG,1
+1994,Renewable Energy,C188573790,Slovenia,SI,1
+1994,Renewable Energy,C188573790,Thailand,TH,1
+1994,Renewable Energy,C188573790,Tunisia,TN,1
+1994,Renewable Energy,C188573790,Turkey,TR,4
+1994,Renewable Energy,C188573790,"Taiwan, Province of China",TW,1
+1994,Renewable Energy,C188573790,Ukraine,UA,2
+1994,Renewable Energy,C188573790,United States of America,US,122
+1994,Renewable Energy,C188573790,"Venezuela, Bolivarian Republic of",VE,1
+1994,Renewable Energy,C188573790,South Africa,ZA,3
+1994,Renewable Energy,C188573790,Zambia,ZM,1
+1994,Renewable Energy,C188573790,Zimbabwe,ZW,2
+1994,Robotics & Automation,C34413123,Austria,AT,8
+1994,Robotics & Automation,C34413123,Australia,AU,3
+1994,Robotics & Automation,C34413123,Belgium,BE,2
+1994,Robotics & Automation,C34413123,Canada,CA,17
+1994,Robotics & Automation,C34413123,Switzerland,CH,6
+1994,Robotics & Automation,C34413123,China,CN,2
+1994,Robotics & Automation,C34413123,Czechia,CZ,1
+1994,Robotics & Automation,C34413123,Germany,DE,14
+1994,Robotics & Automation,C34413123,Denmark,DK,1
+1994,Robotics & Automation,C34413123,Spain,ES,5
+1994,Robotics & Automation,C34413123,France,FR,10
+1994,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,32
+1994,Robotics & Automation,C34413123,Croatia,HR,1
+1994,Robotics & Automation,C34413123,Ireland,IE,1
+1994,Robotics & Automation,C34413123,Israel,IL,6
+1994,Robotics & Automation,C34413123,India,IN,1
+1994,Robotics & Automation,C34413123,"Iran, Islamic Republic of",IR,1
+1994,Robotics & Automation,C34413123,Italy,IT,13
+1994,Robotics & Automation,C34413123,Japan,JP,33
+1994,Robotics & Automation,C34413123,"Korea, Republic of",KR,2
+1994,Robotics & Automation,C34413123,Sri Lanka,LK,1
+1994,Robotics & Automation,C34413123,North Macedonia,MK,1
+1994,Robotics & Automation,C34413123,Netherlands,NL,1
+1994,Robotics & Automation,C34413123,Poland,PL,1
+1994,Robotics & Automation,C34413123,Portugal,PT,2
+1994,Robotics & Automation,C34413123,Romania,RO,1
+1994,Robotics & Automation,C34413123,Serbia,RS,2
+1994,Robotics & Automation,C34413123,Saudi Arabia,SA,1
+1994,Robotics & Automation,C34413123,Sweden,SE,3
+1994,Robotics & Automation,C34413123,Singapore,SG,1
+1994,Robotics & Automation,C34413123,Slovenia,SI,6
+1994,Robotics & Automation,C34413123,Thailand,TH,1
+1994,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,2
+1994,Robotics & Automation,C34413123,United States of America,US,144
+1995,AI & Machine Learning,C119857082,United Arab Emirates,AE,3
+1995,AI & Machine Learning,C119857082,Albania,AL,1
+1995,AI & Machine Learning,C119857082,Armenia,AM,1
+1995,AI & Machine Learning,C119857082,Argentina,AR,20
+1995,AI & Machine Learning,C119857082,Austria,AT,71
+1995,AI & Machine Learning,C119857082,Australia,AU,363
+1995,AI & Machine Learning,C119857082,Azerbaijan,AZ,2
+1995,AI & Machine Learning,C119857082,Bangladesh,BD,5
+1995,AI & Machine Learning,C119857082,Belgium,BE,137
+1995,AI & Machine Learning,C119857082,Bulgaria,BG,37
+1995,AI & Machine Learning,C119857082,Bahrain,BH,4
+1995,AI & Machine Learning,C119857082,Burundi,BI,2
+1995,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,1
+1995,AI & Machine Learning,C119857082,Brazil,BR,102
+1995,AI & Machine Learning,C119857082,Belarus,BY,8
+1995,AI & Machine Learning,C119857082,Canada,CA,627
+1995,AI & Machine Learning,C119857082,Congo,CG,1
+1995,AI & Machine Learning,C119857082,Switzerland,CH,131
+1995,AI & Machine Learning,C119857082,Chile,CL,15
+1995,AI & Machine Learning,C119857082,Cameroon,CM,2
+1995,AI & Machine Learning,C119857082,China,CN,283
+1995,AI & Machine Learning,C119857082,Colombia,CO,4
+1995,AI & Machine Learning,C119857082,Costa Rica,CR,3
+1995,AI & Machine Learning,C119857082,Cuba,CU,8
+1995,AI & Machine Learning,C119857082,Cyprus,CY,7
+1995,AI & Machine Learning,C119857082,Czechia,CZ,65
+1995,AI & Machine Learning,C119857082,Germany,DE,561
+1995,AI & Machine Learning,C119857082,Denmark,DK,69
+1995,AI & Machine Learning,C119857082,Algeria,DZ,3
+1995,AI & Machine Learning,C119857082,Ecuador,EC,1
+1995,AI & Machine Learning,C119857082,Estonia,EE,6
+1995,AI & Machine Learning,C119857082,Egypt,EG,27
+1995,AI & Machine Learning,C119857082,Spain,ES,202
+1995,AI & Machine Learning,C119857082,Finland,FI,61
+1995,AI & Machine Learning,C119857082,Fiji,FJ,1
+1995,AI & Machine Learning,C119857082,France,FR,436
+1995,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1262
+1995,AI & Machine Learning,C119857082,Grenada,GD,1
+1995,AI & Machine Learning,C119857082,Georgia,GE,3
+1995,AI & Machine Learning,C119857082,French Guiana,GF,2
+1995,AI & Machine Learning,C119857082,Ghana,GH,4
+1995,AI & Machine Learning,C119857082,Greece,GR,79
+1995,AI & Machine Learning,C119857082,Guatemala,GT,1
+1995,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+1995,AI & Machine Learning,C119857082,Guyana,GY,2
+1995,AI & Machine Learning,C119857082,Hong Kong,HK,76
+1995,AI & Machine Learning,C119857082,Croatia,HR,8
+1995,AI & Machine Learning,C119857082,Hungary,HU,58
+1995,AI & Machine Learning,C119857082,Indonesia,ID,5
+1995,AI & Machine Learning,C119857082,Ireland,IE,28
+1995,AI & Machine Learning,C119857082,Israel,IL,138
+1995,AI & Machine Learning,C119857082,India,IN,156
+1995,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,7
+1995,AI & Machine Learning,C119857082,Iceland,IS,2
+1995,AI & Machine Learning,C119857082,Italy,IT,384
+1995,AI & Machine Learning,C119857082,Jordan,JO,9
+1995,AI & Machine Learning,C119857082,Japan,JP,733
+1995,AI & Machine Learning,C119857082,Kenya,KE,4
+1995,AI & Machine Learning,C119857082,"Korea, Republic of",KR,115
+1995,AI & Machine Learning,C119857082,Kuwait,KW,10
+1995,AI & Machine Learning,C119857082,Kazakhstan,KZ,4
+1995,AI & Machine Learning,C119857082,Lebanon,LB,1
+1995,AI & Machine Learning,C119857082,Sri Lanka,LK,4
+1995,AI & Machine Learning,C119857082,Lithuania,LT,4
+1995,AI & Machine Learning,C119857082,Luxembourg,LU,3
+1995,AI & Machine Learning,C119857082,Latvia,LV,12
+1995,AI & Machine Learning,C119857082,Libya,LY,1
+1995,AI & Machine Learning,C119857082,Morocco,MA,5
+1995,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,3
+1995,AI & Machine Learning,C119857082,North Macedonia,MK,3
+1995,AI & Machine Learning,C119857082,Myanmar,MM,2
+1995,AI & Machine Learning,C119857082,Macao,MO,1
+1995,AI & Machine Learning,C119857082,Malta,MT,2
+1995,AI & Machine Learning,C119857082,Malawi,MW,2
+1995,AI & Machine Learning,C119857082,Mexico,MX,48
+1995,AI & Machine Learning,C119857082,Malaysia,MY,15
+1995,AI & Machine Learning,C119857082,Niger,NE,1
+1995,AI & Machine Learning,C119857082,Nigeria,NG,10
+1995,AI & Machine Learning,C119857082,Netherlands,NL,263
+1995,AI & Machine Learning,C119857082,Norway,NO,74
+1995,AI & Machine Learning,C119857082,Nepal,NP,2
+1995,AI & Machine Learning,C119857082,New Zealand,NZ,50
+1995,AI & Machine Learning,C119857082,Oman,OM,1
+1995,AI & Machine Learning,C119857082,Peru,PE,2
+1995,AI & Machine Learning,C119857082,Philippines,PH,5
+1995,AI & Machine Learning,C119857082,Pakistan,PK,1
+1995,AI & Machine Learning,C119857082,Poland,PL,95
+1995,AI & Machine Learning,C119857082,Puerto Rico,PR,2
+1995,AI & Machine Learning,C119857082,Portugal,PT,32
+1995,AI & Machine Learning,C119857082,Qatar,QA,2
+1995,AI & Machine Learning,C119857082,Romania,RO,30
+1995,AI & Machine Learning,C119857082,Serbia,RS,13
+1995,AI & Machine Learning,C119857082,Russian Federation,RU,182
+1995,AI & Machine Learning,C119857082,Saudi Arabia,SA,22
+1995,AI & Machine Learning,C119857082,Sweden,SE,124
+1995,AI & Machine Learning,C119857082,Singapore,SG,96
+1995,AI & Machine Learning,C119857082,Slovenia,SI,22
+1995,AI & Machine Learning,C119857082,Slovakia,SK,25
+1995,AI & Machine Learning,C119857082,Senegal,SN,1
+1995,AI & Machine Learning,C119857082,South Sudan,SS,7
+1995,AI & Machine Learning,C119857082,El Salvador,SV,1
+1995,AI & Machine Learning,C119857082,Thailand,TH,4
+1995,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+1995,AI & Machine Learning,C119857082,Turkmenistan,TM,1
+1995,AI & Machine Learning,C119857082,Tunisia,TN,8
+1995,AI & Machine Learning,C119857082,Turkey,TR,29
+1995,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,162
+1995,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,4
+1995,AI & Machine Learning,C119857082,Ukraine,UA,43
+1995,AI & Machine Learning,C119857082,United States of America,US,4962
+1995,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+1995,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,10
+1995,AI & Machine Learning,C119857082,Viet Nam,VN,10
+1995,AI & Machine Learning,C119857082,South Africa,ZA,47
+1995,AI & Machine Learning,C119857082,Zambia,ZM,1
+1995,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
+1995,CRISPR & Genomics,C98108389,Canada,CA,1
+1995,CRISPR & Genomics,C98108389,Germany,DE,4
+1995,CRISPR & Genomics,C98108389,Denmark,DK,2
+1995,CRISPR & Genomics,C98108389,France,FR,4
+1995,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,3
+1995,CRISPR & Genomics,C98108389,Hungary,HU,1
+1995,CRISPR & Genomics,C98108389,Ireland,IE,1
+1995,CRISPR & Genomics,C98108389,Israel,IL,2
+1995,CRISPR & Genomics,C98108389,Italy,IT,2
+1995,CRISPR & Genomics,C98108389,Japan,JP,1
+1995,CRISPR & Genomics,C98108389,Netherlands,NL,3
+1995,CRISPR & Genomics,C98108389,Poland,PL,2
+1995,CRISPR & Genomics,C98108389,United States of America,US,32
+1995,CRISPR & Genomics,C98108389,South Africa,ZA,1
+1995,Data Science & Big Data,C2522767166,Armenia,AM,1
+1995,Data Science & Big Data,C2522767166,Argentina,AR,1
+1995,Data Science & Big Data,C2522767166,Austria,AT,18
+1995,Data Science & Big Data,C2522767166,Australia,AU,92
+1995,Data Science & Big Data,C2522767166,Bosnia and Herzegovina,BA,1
+1995,Data Science & Big Data,C2522767166,Belgium,BE,28
+1995,Data Science & Big Data,C2522767166,Burkina Faso,BF,1
+1995,Data Science & Big Data,C2522767166,Bulgaria,BG,6
+1995,Data Science & Big Data,C2522767166,Bahrain,BH,1
+1995,Data Science & Big Data,C2522767166,"Bolivia, Plurinational State of",BO,1
+1995,Data Science & Big Data,C2522767166,Brazil,BR,12
+1995,Data Science & Big Data,C2522767166,Canada,CA,151
+1995,Data Science & Big Data,C2522767166,Switzerland,CH,33
+1995,Data Science & Big Data,C2522767166,Chile,CL,1
+1995,Data Science & Big Data,C2522767166,China,CN,20
+1995,Data Science & Big Data,C2522767166,Cuba,CU,1
+1995,Data Science & Big Data,C2522767166,Curaçao,CW,1
+1995,Data Science & Big Data,C2522767166,Cyprus,CY,1
+1995,Data Science & Big Data,C2522767166,Czechia,CZ,9
+1995,Data Science & Big Data,C2522767166,Germany,DE,131
+1995,Data Science & Big Data,C2522767166,Denmark,DK,21
+1995,Data Science & Big Data,C2522767166,Estonia,EE,2
+1995,Data Science & Big Data,C2522767166,Egypt,EG,5
+1995,Data Science & Big Data,C2522767166,Spain,ES,25
+1995,Data Science & Big Data,C2522767166,Finland,FI,14
+1995,Data Science & Big Data,C2522767166,France,FR,95
+1995,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,682
+1995,Data Science & Big Data,C2522767166,Greece,GR,16
+1995,Data Science & Big Data,C2522767166,Guatemala,GT,3
+1995,Data Science & Big Data,C2522767166,Hong Kong,HK,11
+1995,Data Science & Big Data,C2522767166,Hungary,HU,6
+1995,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1995,Data Science & Big Data,C2522767166,Ireland,IE,15
+1995,Data Science & Big Data,C2522767166,Israel,IL,29
+1995,Data Science & Big Data,C2522767166,India,IN,25
+1995,Data Science & Big Data,C2522767166,Italy,IT,49
+1995,Data Science & Big Data,C2522767166,Japan,JP,47
+1995,Data Science & Big Data,C2522767166,Kenya,KE,3
+1995,Data Science & Big Data,C2522767166,Kyrgyzstan,KG,1
+1995,Data Science & Big Data,C2522767166,Cambodia,KH,1
+1995,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,8
+1995,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1995,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1995,Data Science & Big Data,C2522767166,Luxembourg,LU,2
+1995,Data Science & Big Data,C2522767166,Latvia,LV,1
+1995,Data Science & Big Data,C2522767166,Madagascar,MG,1
+1995,Data Science & Big Data,C2522767166,Malta,MT,1
+1995,Data Science & Big Data,C2522767166,Mexico,MX,5
+1995,Data Science & Big Data,C2522767166,Malaysia,MY,2
+1995,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1995,Data Science & Big Data,C2522767166,Netherlands,NL,96
+1995,Data Science & Big Data,C2522767166,Norway,NO,14
+1995,Data Science & Big Data,C2522767166,Nepal,NP,2
+1995,Data Science & Big Data,C2522767166,New Zealand,NZ,18
+1995,Data Science & Big Data,C2522767166,Peru,PE,1
+1995,Data Science & Big Data,C2522767166,Papua New Guinea,PG,1
+1995,Data Science & Big Data,C2522767166,Philippines,PH,2
+1995,Data Science & Big Data,C2522767166,Pakistan,PK,2
+1995,Data Science & Big Data,C2522767166,Poland,PL,4
+1995,Data Science & Big Data,C2522767166,Puerto Rico,PR,1
+1995,Data Science & Big Data,C2522767166,Portugal,PT,5
+1995,Data Science & Big Data,C2522767166,Qatar,QA,2
+1995,Data Science & Big Data,C2522767166,Romania,RO,3
+1995,Data Science & Big Data,C2522767166,Russian Federation,RU,11
+1995,Data Science & Big Data,C2522767166,Saudi Arabia,SA,6
+1995,Data Science & Big Data,C2522767166,Sweden,SE,31
+1995,Data Science & Big Data,C2522767166,Singapore,SG,11
+1995,Data Science & Big Data,C2522767166,Slovenia,SI,5
+1995,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1995,Data Science & Big Data,C2522767166,South Sudan,SS,2
+1995,Data Science & Big Data,C2522767166,Thailand,TH,2
+1995,Data Science & Big Data,C2522767166,Tajikistan,TJ,2
+1995,Data Science & Big Data,C2522767166,Turkey,TR,1
+1995,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,7
+1995,Data Science & Big Data,C2522767166,Ukraine,UA,3
+1995,Data Science & Big Data,C2522767166,United States of America,US,1431
+1995,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,1
+1995,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,1
+1995,Data Science & Big Data,C2522767166,South Africa,ZA,18
+1995,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1995,Data Science & Big Data,C2522767166,Zimbabwe,ZW,1
+1995,Infectious Diseases,C524204448,Austria,AT,3
+1995,Infectious Diseases,C524204448,Australia,AU,36
+1995,Infectious Diseases,C524204448,Belgium,BE,9
+1995,Infectious Diseases,C524204448,Bulgaria,BG,1
+1995,Infectious Diseases,C524204448,Brazil,BR,7
+1995,Infectious Diseases,C524204448,Botswana,BW,1
+1995,Infectious Diseases,C524204448,Canada,CA,68
+1995,Infectious Diseases,C524204448,Switzerland,CH,14
+1995,Infectious Diseases,C524204448,Cameroon,CM,2
+1995,Infectious Diseases,C524204448,China,CN,2
+1995,Infectious Diseases,C524204448,Colombia,CO,1
+1995,Infectious Diseases,C524204448,Czechia,CZ,2
+1995,Infectious Diseases,C524204448,Germany,DE,44
+1995,Infectious Diseases,C524204448,Denmark,DK,3
+1995,Infectious Diseases,C524204448,Ecuador,EC,1
+1995,Infectious Diseases,C524204448,Spain,ES,13
+1995,Infectious Diseases,C524204448,Finland,FI,5
+1995,Infectious Diseases,C524204448,France,FR,35
+1995,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,99
+1995,Infectious Diseases,C524204448,Greece,GR,3
+1995,Infectious Diseases,C524204448,Hong Kong,HK,1
+1995,Infectious Diseases,C524204448,Croatia,HR,2
+1995,Infectious Diseases,C524204448,Hungary,HU,2
+1995,Infectious Diseases,C524204448,Ireland,IE,4
+1995,Infectious Diseases,C524204448,Israel,IL,10
+1995,Infectious Diseases,C524204448,India,IN,5
+1995,Infectious Diseases,C524204448,Italy,IT,12
+1995,Infectious Diseases,C524204448,Jordan,JO,1
+1995,Infectious Diseases,C524204448,Japan,JP,38
+1995,Infectious Diseases,C524204448,Kenya,KE,3
+1995,Infectious Diseases,C524204448,"Korea, Republic of",KR,1
+1995,Infectious Diseases,C524204448,Sri Lanka,LK,1
+1995,Infectious Diseases,C524204448,Lithuania,LT,1
+1995,Infectious Diseases,C524204448,Morocco,MA,3
+1995,Infectious Diseases,C524204448,Mexico,MX,1
+1995,Infectious Diseases,C524204448,Nigeria,NG,1
+1995,Infectious Diseases,C524204448,Netherlands,NL,43
+1995,Infectious Diseases,C524204448,Norway,NO,6
+1995,Infectious Diseases,C524204448,Nepal,NP,2
+1995,Infectious Diseases,C524204448,New Zealand,NZ,4
+1995,Infectious Diseases,C524204448,Peru,PE,1
+1995,Infectious Diseases,C524204448,Papua New Guinea,PG,1
+1995,Infectious Diseases,C524204448,Philippines,PH,1
+1995,Infectious Diseases,C524204448,Pakistan,PK,4
+1995,Infectious Diseases,C524204448,Poland,PL,4
+1995,Infectious Diseases,C524204448,Russian Federation,RU,4
+1995,Infectious Diseases,C524204448,Saudi Arabia,SA,1
+1995,Infectious Diseases,C524204448,Sweden,SE,11
+1995,Infectious Diseases,C524204448,Singapore,SG,3
+1995,Infectious Diseases,C524204448,Slovenia,SI,1
+1995,Infectious Diseases,C524204448,Slovakia,SK,4
+1995,Infectious Diseases,C524204448,South Sudan,SS,1
+1995,Infectious Diseases,C524204448,Turkey,TR,1
+1995,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,2
+1995,Infectious Diseases,C524204448,Uganda,UG,1
+1995,Infectious Diseases,C524204448,United States of America,US,507
+1995,Infectious Diseases,C524204448,Viet Nam,VN,2
+1995,Infectious Diseases,C524204448,South Africa,ZA,5
+1995,Infectious Diseases,C524204448,Zimbabwe,ZW,1
+1995,Quantum Computing,C58053490,Austria,AT,9
+1995,Quantum Computing,C58053490,Australia,AU,1
+1995,Quantum Computing,C58053490,Belgium,BE,1
+1995,Quantum Computing,C58053490,Canada,CA,3
+1995,Quantum Computing,C58053490,Switzerland,CH,1
+1995,Quantum Computing,C58053490,Czechia,CZ,2
+1995,Quantum Computing,C58053490,Germany,DE,3
+1995,Quantum Computing,C58053490,Spain,ES,3
+1995,Quantum Computing,C58053490,Finland,FI,1
+1995,Quantum Computing,C58053490,France,FR,4
+1995,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,11
+1995,Quantum Computing,C58053490,Hungary,HU,1
+1995,Quantum Computing,C58053490,Israel,IL,2
+1995,Quantum Computing,C58053490,India,IN,1
+1995,Quantum Computing,C58053490,Italy,IT,9
+1995,Quantum Computing,C58053490,Japan,JP,6
+1995,Quantum Computing,C58053490,Netherlands,NL,2
+1995,Quantum Computing,C58053490,Poland,PL,4
+1995,Quantum Computing,C58053490,Russian Federation,RU,2
+1995,Quantum Computing,C58053490,Slovakia,SK,2
+1995,Quantum Computing,C58053490,Ukraine,UA,1
+1995,Quantum Computing,C58053490,United States of America,US,33
+1995,Renewable Energy,C188573790,Argentina,AR,1
+1995,Renewable Energy,C188573790,Austria,AT,4
+1995,Renewable Energy,C188573790,Australia,AU,4
+1995,Renewable Energy,C188573790,Belgium,BE,9
+1995,Renewable Energy,C188573790,Bahrain,BH,2
+1995,Renewable Energy,C188573790,Brazil,BR,2
+1995,Renewable Energy,C188573790,Canada,CA,12
+1995,Renewable Energy,C188573790,Switzerland,CH,3
+1995,Renewable Energy,C188573790,China,CN,1
+1995,Renewable Energy,C188573790,Germany,DE,11
+1995,Renewable Energy,C188573790,Denmark,DK,2
+1995,Renewable Energy,C188573790,Egypt,EG,1
+1995,Renewable Energy,C188573790,Spain,ES,1
+1995,Renewable Energy,C188573790,Finland,FI,2
+1995,Renewable Energy,C188573790,France,FR,6
+1995,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,56
+1995,Renewable Energy,C188573790,Greece,GR,2
+1995,Renewable Energy,C188573790,Hong Kong,HK,1
+1995,Renewable Energy,C188573790,Indonesia,ID,1
+1995,Renewable Energy,C188573790,Ireland,IE,1
+1995,Renewable Energy,C188573790,Israel,IL,1
+1995,Renewable Energy,C188573790,India,IN,11
+1995,Renewable Energy,C188573790,Italy,IT,7
+1995,Renewable Energy,C188573790,Japan,JP,22
+1995,Renewable Energy,C188573790,"Korea, Republic of",KR,1
+1995,Renewable Energy,C188573790,Kuwait,KW,1
+1995,Renewable Energy,C188573790,Lao People's Democratic Republic,LA,1
+1995,Renewable Energy,C188573790,Lebanon,LB,1
+1995,Renewable Energy,C188573790,Libya,LY,2
+1995,Renewable Energy,C188573790,Malawi,MW,1
+1995,Renewable Energy,C188573790,Mexico,MX,1
+1995,Renewable Energy,C188573790,Malaysia,MY,1
+1995,Renewable Energy,C188573790,Netherlands,NL,8
+1995,Renewable Energy,C188573790,Norway,NO,1
+1995,Renewable Energy,C188573790,New Zealand,NZ,3
+1995,Renewable Energy,C188573790,Papua New Guinea,PG,1
+1995,Renewable Energy,C188573790,Pakistan,PK,1
+1995,Renewable Energy,C188573790,Poland,PL,2
+1995,Renewable Energy,C188573790,Russian Federation,RU,3
+1995,Renewable Energy,C188573790,Saudi Arabia,SA,1
+1995,Renewable Energy,C188573790,Sweden,SE,7
+1995,Renewable Energy,C188573790,South Sudan,SS,1
+1995,Renewable Energy,C188573790,Tunisia,TN,1
+1995,Renewable Energy,C188573790,Turkey,TR,6
+1995,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1995,Renewable Energy,C188573790,United States of America,US,120
+1995,Renewable Energy,C188573790,South Africa,ZA,3
+1995,Robotics & Automation,C34413123,Austria,AT,2
+1995,Robotics & Automation,C34413123,Australia,AU,1
+1995,Robotics & Automation,C34413123,Belgium,BE,4
+1995,Robotics & Automation,C34413123,Brazil,BR,1
+1995,Robotics & Automation,C34413123,Canada,CA,10
+1995,Robotics & Automation,C34413123,Switzerland,CH,13
+1995,Robotics & Automation,C34413123,China,CN,2
+1995,Robotics & Automation,C34413123,Germany,DE,17
+1995,Robotics & Automation,C34413123,Denmark,DK,1
+1995,Robotics & Automation,C34413123,Algeria,DZ,1
+1995,Robotics & Automation,C34413123,Egypt,EG,1
+1995,Robotics & Automation,C34413123,Spain,ES,5
+1995,Robotics & Automation,C34413123,Finland,FI,1
+1995,Robotics & Automation,C34413123,Fiji,FJ,1
+1995,Robotics & Automation,C34413123,France,FR,26
+1995,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,36
+1995,Robotics & Automation,C34413123,Greece,GR,1
+1995,Robotics & Automation,C34413123,Croatia,HR,1
+1995,Robotics & Automation,C34413123,Israel,IL,5
+1995,Robotics & Automation,C34413123,Italy,IT,21
+1995,Robotics & Automation,C34413123,Japan,JP,27
+1995,Robotics & Automation,C34413123,"Korea, Republic of",KR,9
+1995,Robotics & Automation,C34413123,Netherlands,NL,1
+1995,Robotics & Automation,C34413123,Oman,OM,1
+1995,Robotics & Automation,C34413123,Pakistan,PK,1
+1995,Robotics & Automation,C34413123,Poland,PL,3
+1995,Robotics & Automation,C34413123,Portugal,PT,5
+1995,Robotics & Automation,C34413123,Serbia,RS,4
+1995,Robotics & Automation,C34413123,Russian Federation,RU,2
+1995,Robotics & Automation,C34413123,Sweden,SE,2
+1995,Robotics & Automation,C34413123,Singapore,SG,3
+1995,Robotics & Automation,C34413123,Turkey,TR,2
+1995,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,2
+1995,Robotics & Automation,C34413123,United States of America,US,138
+1996,AI & Machine Learning,C119857082,United Arab Emirates,AE,2
+1996,AI & Machine Learning,C119857082,Albania,AL,1
+1996,AI & Machine Learning,C119857082,Argentina,AR,41
+1996,AI & Machine Learning,C119857082,Austria,AT,77
+1996,AI & Machine Learning,C119857082,Australia,AU,411
+1996,AI & Machine Learning,C119857082,Azerbaijan,AZ,5
+1996,AI & Machine Learning,C119857082,Bangladesh,BD,5
+1996,AI & Machine Learning,C119857082,Belgium,BE,139
+1996,AI & Machine Learning,C119857082,Bulgaria,BG,24
+1996,AI & Machine Learning,C119857082,Bahrain,BH,4
+1996,AI & Machine Learning,C119857082,Burundi,BI,3
+1996,AI & Machine Learning,C119857082,Bermuda,BM,2
+1996,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1996,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,1
+1996,AI & Machine Learning,C119857082,Brazil,BR,94
+1996,AI & Machine Learning,C119857082,Botswana,BW,3
+1996,AI & Machine Learning,C119857082,Belarus,BY,12
+1996,AI & Machine Learning,C119857082,Canada,CA,646
+1996,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,2
+1996,AI & Machine Learning,C119857082,Switzerland,CH,145
+1996,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,2
+1996,AI & Machine Learning,C119857082,Chile,CL,19
+1996,AI & Machine Learning,C119857082,Cameroon,CM,2
+1996,AI & Machine Learning,C119857082,China,CN,341
+1996,AI & Machine Learning,C119857082,Colombia,CO,8
+1996,AI & Machine Learning,C119857082,Cuba,CU,5
+1996,AI & Machine Learning,C119857082,Cyprus,CY,12
+1996,AI & Machine Learning,C119857082,Czechia,CZ,53
+1996,AI & Machine Learning,C119857082,Germany,DE,632
+1996,AI & Machine Learning,C119857082,Denmark,DK,73
+1996,AI & Machine Learning,C119857082,Algeria,DZ,3
+1996,AI & Machine Learning,C119857082,Estonia,EE,3
+1996,AI & Machine Learning,C119857082,Egypt,EG,36
+1996,AI & Machine Learning,C119857082,Spain,ES,194
+1996,AI & Machine Learning,C119857082,Ethiopia,ET,2
+1996,AI & Machine Learning,C119857082,Finland,FI,73
+1996,AI & Machine Learning,C119857082,Fiji,FJ,1
+1996,AI & Machine Learning,C119857082,France,FR,500
+1996,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1369
+1996,AI & Machine Learning,C119857082,Georgia,GE,2
+1996,AI & Machine Learning,C119857082,Ghana,GH,3
+1996,AI & Machine Learning,C119857082,Gambia,GM,1
+1996,AI & Machine Learning,C119857082,Greece,GR,84
+1996,AI & Machine Learning,C119857082,Guatemala,GT,1
+1996,AI & Machine Learning,C119857082,Guyana,GY,1
+1996,AI & Machine Learning,C119857082,Hong Kong,HK,98
+1996,AI & Machine Learning,C119857082,Croatia,HR,7
+1996,AI & Machine Learning,C119857082,Hungary,HU,47
+1996,AI & Machine Learning,C119857082,Indonesia,ID,7
+1996,AI & Machine Learning,C119857082,Ireland,IE,42
+1996,AI & Machine Learning,C119857082,Israel,IL,184
+1996,AI & Machine Learning,C119857082,India,IN,167
+1996,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,8
+1996,AI & Machine Learning,C119857082,Iceland,IS,1
+1996,AI & Machine Learning,C119857082,Italy,IT,405
+1996,AI & Machine Learning,C119857082,Jordan,JO,2
+1996,AI & Machine Learning,C119857082,Japan,JP,760
+1996,AI & Machine Learning,C119857082,Kenya,KE,6
+1996,AI & Machine Learning,C119857082,Cambodia,KH,1
+1996,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,1
+1996,AI & Machine Learning,C119857082,"Korea, Republic of",KR,153
+1996,AI & Machine Learning,C119857082,Kuwait,KW,7
+1996,AI & Machine Learning,C119857082,Kazakhstan,KZ,6
+1996,AI & Machine Learning,C119857082,Lebanon,LB,2
+1996,AI & Machine Learning,C119857082,Sri Lanka,LK,5
+1996,AI & Machine Learning,C119857082,Lesotho,LS,1
+1996,AI & Machine Learning,C119857082,Lithuania,LT,6
+1996,AI & Machine Learning,C119857082,Latvia,LV,13
+1996,AI & Machine Learning,C119857082,Morocco,MA,12
+1996,AI & Machine Learning,C119857082,Monaco,MC,1
+1996,AI & Machine Learning,C119857082,North Macedonia,MK,5
+1996,AI & Machine Learning,C119857082,Mali,ML,1
+1996,AI & Machine Learning,C119857082,Myanmar,MM,3
+1996,AI & Machine Learning,C119857082,Mongolia,MN,2
+1996,AI & Machine Learning,C119857082,Mauritania,MR,1
+1996,AI & Machine Learning,C119857082,Malta,MT,1
+1996,AI & Machine Learning,C119857082,Mexico,MX,48
+1996,AI & Machine Learning,C119857082,Malaysia,MY,16
+1996,AI & Machine Learning,C119857082,Namibia,NA,1
+1996,AI & Machine Learning,C119857082,New Caledonia,NC,1
+1996,AI & Machine Learning,C119857082,Niger,NE,1
+1996,AI & Machine Learning,C119857082,Nigeria,NG,10
+1996,AI & Machine Learning,C119857082,Netherlands,NL,289
+1996,AI & Machine Learning,C119857082,Norway,NO,87
+1996,AI & Machine Learning,C119857082,Nepal,NP,2
+1996,AI & Machine Learning,C119857082,New Zealand,NZ,65
+1996,AI & Machine Learning,C119857082,Oman,OM,2
+1996,AI & Machine Learning,C119857082,Panama,PA,1
+1996,AI & Machine Learning,C119857082,Peru,PE,6
+1996,AI & Machine Learning,C119857082,Philippines,PH,3
+1996,AI & Machine Learning,C119857082,Pakistan,PK,8
+1996,AI & Machine Learning,C119857082,Poland,PL,87
+1996,AI & Machine Learning,C119857082,Puerto Rico,PR,8
+1996,AI & Machine Learning,C119857082,"Palestine, State of",PS,1
+1996,AI & Machine Learning,C119857082,Portugal,PT,41
+1996,AI & Machine Learning,C119857082,Qatar,QA,2
+1996,AI & Machine Learning,C119857082,Romania,RO,19
+1996,AI & Machine Learning,C119857082,Serbia,RS,9
+1996,AI & Machine Learning,C119857082,Russian Federation,RU,211
+1996,AI & Machine Learning,C119857082,Rwanda,RW,1
+1996,AI & Machine Learning,C119857082,Saudi Arabia,SA,27
+1996,AI & Machine Learning,C119857082,Sweden,SE,141
+1996,AI & Machine Learning,C119857082,Singapore,SG,86
+1996,AI & Machine Learning,C119857082,Slovenia,SI,31
+1996,AI & Machine Learning,C119857082,Slovakia,SK,19
+1996,AI & Machine Learning,C119857082,Senegal,SN,2
+1996,AI & Machine Learning,C119857082,South Sudan,SS,7
+1996,AI & Machine Learning,C119857082,Togo,TG,1
+1996,AI & Machine Learning,C119857082,Thailand,TH,13
+1996,AI & Machine Learning,C119857082,Tajikistan,TJ,3
+1996,AI & Machine Learning,C119857082,Tunisia,TN,4
+1996,AI & Machine Learning,C119857082,Turkey,TR,41
+1996,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+1996,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,193
+1996,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,3
+1996,AI & Machine Learning,C119857082,Ukraine,UA,46
+1996,AI & Machine Learning,C119857082,Uganda,UG,1
+1996,AI & Machine Learning,C119857082,United States of America,US,5283
+1996,AI & Machine Learning,C119857082,Uruguay,UY,3
+1996,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,9
+1996,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,1
+1996,AI & Machine Learning,C119857082,Viet Nam,VN,6
+1996,AI & Machine Learning,C119857082,Yemen,YE,2
+1996,AI & Machine Learning,C119857082,South Africa,ZA,57
+1996,AI & Machine Learning,C119857082,Zambia,ZM,2
+1996,AI & Machine Learning,C119857082,Zimbabwe,ZW,2
+1996,CRISPR & Genomics,C98108389,Canada,CA,2
+1996,CRISPR & Genomics,C98108389,Czechia,CZ,1
+1996,CRISPR & Genomics,C98108389,Germany,DE,6
+1996,CRISPR & Genomics,C98108389,Spain,ES,1
+1996,CRISPR & Genomics,C98108389,France,FR,3
+1996,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,2
+1996,CRISPR & Genomics,C98108389,Ireland,IE,1
+1996,CRISPR & Genomics,C98108389,Italy,IT,2
+1996,CRISPR & Genomics,C98108389,Japan,JP,1
+1996,CRISPR & Genomics,C98108389,Netherlands,NL,3
+1996,CRISPR & Genomics,C98108389,Poland,PL,1
+1996,CRISPR & Genomics,C98108389,Russian Federation,RU,2
+1996,CRISPR & Genomics,C98108389,Sweden,SE,1
+1996,CRISPR & Genomics,C98108389,United States of America,US,29
+1996,Data Science & Big Data,C2522767166,Afghanistan,AF,1
+1996,Data Science & Big Data,C2522767166,Armenia,AM,2
+1996,Data Science & Big Data,C2522767166,Argentina,AR,2
+1996,Data Science & Big Data,C2522767166,Austria,AT,21
+1996,Data Science & Big Data,C2522767166,Australia,AU,108
+1996,Data Science & Big Data,C2522767166,Belgium,BE,32
+1996,Data Science & Big Data,C2522767166,Bulgaria,BG,3
+1996,Data Science & Big Data,C2522767166,Benin,BJ,1
+1996,Data Science & Big Data,C2522767166,Brazil,BR,7
+1996,Data Science & Big Data,C2522767166,Belarus,BY,3
+1996,Data Science & Big Data,C2522767166,Canada,CA,157
+1996,Data Science & Big Data,C2522767166,Switzerland,CH,37
+1996,Data Science & Big Data,C2522767166,Chile,CL,4
+1996,Data Science & Big Data,C2522767166,Cameroon,CM,1
+1996,Data Science & Big Data,C2522767166,China,CN,15
+1996,Data Science & Big Data,C2522767166,Colombia,CO,1
+1996,Data Science & Big Data,C2522767166,Cuba,CU,2
+1996,Data Science & Big Data,C2522767166,Cyprus,CY,1
+1996,Data Science & Big Data,C2522767166,Czechia,CZ,8
+1996,Data Science & Big Data,C2522767166,Germany,DE,129
+1996,Data Science & Big Data,C2522767166,Denmark,DK,20
+1996,Data Science & Big Data,C2522767166,Algeria,DZ,1
+1996,Data Science & Big Data,C2522767166,Egypt,EG,3
+1996,Data Science & Big Data,C2522767166,Spain,ES,20
+1996,Data Science & Big Data,C2522767166,Finland,FI,20
+1996,Data Science & Big Data,C2522767166,Fiji,FJ,1
+1996,Data Science & Big Data,C2522767166,France,FR,100
+1996,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,820
+1996,Data Science & Big Data,C2522767166,Ghana,GH,1
+1996,Data Science & Big Data,C2522767166,Gambia,GM,1
+1996,Data Science & Big Data,C2522767166,Greece,GR,12
+1996,Data Science & Big Data,C2522767166,Hong Kong,HK,14
+1996,Data Science & Big Data,C2522767166,Croatia,HR,3
+1996,Data Science & Big Data,C2522767166,Hungary,HU,9
+1996,Data Science & Big Data,C2522767166,Indonesia,ID,1
+1996,Data Science & Big Data,C2522767166,Ireland,IE,14
+1996,Data Science & Big Data,C2522767166,Israel,IL,22
+1996,Data Science & Big Data,C2522767166,India,IN,28
+1996,Data Science & Big Data,C2522767166,Iraq,IQ,4
+1996,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,3
+1996,Data Science & Big Data,C2522767166,Iceland,IS,1
+1996,Data Science & Big Data,C2522767166,Italy,IT,49
+1996,Data Science & Big Data,C2522767166,Jamaica,JM,1
+1996,Data Science & Big Data,C2522767166,Jordan,JO,1
+1996,Data Science & Big Data,C2522767166,Japan,JP,54
+1996,Data Science & Big Data,C2522767166,Kenya,KE,1
+1996,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,5
+1996,Data Science & Big Data,C2522767166,Kuwait,KW,2
+1996,Data Science & Big Data,C2522767166,Kazakhstan,KZ,1
+1996,Data Science & Big Data,C2522767166,Lebanon,LB,1
+1996,Data Science & Big Data,C2522767166,Sri Lanka,LK,2
+1996,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1996,Data Science & Big Data,C2522767166,Luxembourg,LU,2
+1996,Data Science & Big Data,C2522767166,Latvia,LV,1
+1996,Data Science & Big Data,C2522767166,"Moldova, Republic of",MD,1
+1996,Data Science & Big Data,C2522767166,Madagascar,MG,1
+1996,Data Science & Big Data,C2522767166,North Macedonia,MK,3
+1996,Data Science & Big Data,C2522767166,Malta,MT,1
+1996,Data Science & Big Data,C2522767166,Mexico,MX,6
+1996,Data Science & Big Data,C2522767166,Malaysia,MY,3
+1996,Data Science & Big Data,C2522767166,Nigeria,NG,6
+1996,Data Science & Big Data,C2522767166,Netherlands,NL,88
+1996,Data Science & Big Data,C2522767166,Norway,NO,19
+1996,Data Science & Big Data,C2522767166,Nepal,NP,2
+1996,Data Science & Big Data,C2522767166,New Zealand,NZ,37
+1996,Data Science & Big Data,C2522767166,Peru,PE,2
+1996,Data Science & Big Data,C2522767166,Philippines,PH,1
+1996,Data Science & Big Data,C2522767166,Pakistan,PK,4
+1996,Data Science & Big Data,C2522767166,Poland,PL,19
+1996,Data Science & Big Data,C2522767166,Puerto Rico,PR,1
+1996,Data Science & Big Data,C2522767166,Portugal,PT,7
+1996,Data Science & Big Data,C2522767166,Qatar,QA,3
+1996,Data Science & Big Data,C2522767166,Romania,RO,4
+1996,Data Science & Big Data,C2522767166,Russian Federation,RU,15
+1996,Data Science & Big Data,C2522767166,Saudi Arabia,SA,2
+1996,Data Science & Big Data,C2522767166,Sweden,SE,25
+1996,Data Science & Big Data,C2522767166,Singapore,SG,9
+1996,Data Science & Big Data,C2522767166,Slovenia,SI,2
+1996,Data Science & Big Data,C2522767166,Slovakia,SK,3
+1996,Data Science & Big Data,C2522767166,Thailand,TH,1
+1996,Data Science & Big Data,C2522767166,Tajikistan,TJ,1
+1996,Data Science & Big Data,C2522767166,Tunisia,TN,2
+1996,Data Science & Big Data,C2522767166,Turkey,TR,7
+1996,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,5
+1996,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,2
+1996,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1996,Data Science & Big Data,C2522767166,Uganda,UG,2
+1996,Data Science & Big Data,C2522767166,United States of America,US,1590
+1996,Data Science & Big Data,C2522767166,Uruguay,UY,1
+1996,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,1
+1996,Data Science & Big Data,C2522767166,Viet Nam,VN,5
+1996,Data Science & Big Data,C2522767166,South Africa,ZA,10
+1996,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1996,Infectious Diseases,C524204448,Argentina,AR,1
+1996,Infectious Diseases,C524204448,Austria,AT,8
+1996,Infectious Diseases,C524204448,Australia,AU,33
+1996,Infectious Diseases,C524204448,Azerbaijan,AZ,1
+1996,Infectious Diseases,C524204448,Bangladesh,BD,2
+1996,Infectious Diseases,C524204448,Belgium,BE,8
+1996,Infectious Diseases,C524204448,Bulgaria,BG,1
+1996,Infectious Diseases,C524204448,Brazil,BR,3
+1996,Infectious Diseases,C524204448,Canada,CA,40
+1996,Infectious Diseases,C524204448,Switzerland,CH,10
+1996,Infectious Diseases,C524204448,Côte d'Ivoire,CI,1
+1996,Infectious Diseases,C524204448,Chile,CL,1
+1996,Infectious Diseases,C524204448,Cameroon,CM,1
+1996,Infectious Diseases,C524204448,China,CN,11
+1996,Infectious Diseases,C524204448,Czechia,CZ,4
+1996,Infectious Diseases,C524204448,Germany,DE,44
+1996,Infectious Diseases,C524204448,Denmark,DK,4
+1996,Infectious Diseases,C524204448,Algeria,DZ,1
+1996,Infectious Diseases,C524204448,Egypt,EG,1
+1996,Infectious Diseases,C524204448,Spain,ES,22
+1996,Infectious Diseases,C524204448,Finland,FI,4
+1996,Infectious Diseases,C524204448,France,FR,33
+1996,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,99
+1996,Infectious Diseases,C524204448,Gibraltar,GI,1
+1996,Infectious Diseases,C524204448,Greece,GR,6
+1996,Infectious Diseases,C524204448,Guatemala,GT,1
+1996,Infectious Diseases,C524204448,Hong Kong,HK,3
+1996,Infectious Diseases,C524204448,Croatia,HR,2
+1996,Infectious Diseases,C524204448,Hungary,HU,3
+1996,Infectious Diseases,C524204448,Indonesia,ID,2
+1996,Infectious Diseases,C524204448,Israel,IL,8
+1996,Infectious Diseases,C524204448,India,IN,11
+1996,Infectious Diseases,C524204448,"Iran, Islamic Republic of",IR,1
+1996,Infectious Diseases,C524204448,Italy,IT,15
+1996,Infectious Diseases,C524204448,Japan,JP,48
+1996,Infectious Diseases,C524204448,Kenya,KE,2
+1996,Infectious Diseases,C524204448,"Korea, Republic of",KR,2
+1996,Infectious Diseases,C524204448,Lebanon,LB,1
+1996,Infectious Diseases,C524204448,Myanmar,MM,1
+1996,Infectious Diseases,C524204448,Mongolia,MN,2
+1996,Infectious Diseases,C524204448,Malta,MT,1
+1996,Infectious Diseases,C524204448,Malawi,MW,1
+1996,Infectious Diseases,C524204448,Mexico,MX,3
+1996,Infectious Diseases,C524204448,Malaysia,MY,2
+1996,Infectious Diseases,C524204448,Nigeria,NG,1
+1996,Infectious Diseases,C524204448,Netherlands,NL,27
+1996,Infectious Diseases,C524204448,Norway,NO,9
+1996,Infectious Diseases,C524204448,New Zealand,NZ,6
+1996,Infectious Diseases,C524204448,Pakistan,PK,3
+1996,Infectious Diseases,C524204448,Poland,PL,3
+1996,Infectious Diseases,C524204448,Romania,RO,2
+1996,Infectious Diseases,C524204448,Serbia,RS,3
+1996,Infectious Diseases,C524204448,Russian Federation,RU,4
+1996,Infectious Diseases,C524204448,Saudi Arabia,SA,2
+1996,Infectious Diseases,C524204448,Sweden,SE,12
+1996,Infectious Diseases,C524204448,Singapore,SG,2
+1996,Infectious Diseases,C524204448,Slovakia,SK,1
+1996,Infectious Diseases,C524204448,Togo,TG,1
+1996,Infectious Diseases,C524204448,Thailand,TH,2
+1996,Infectious Diseases,C524204448,Turkey,TR,2
+1996,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,4
+1996,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,2
+1996,Infectious Diseases,C524204448,Uganda,UG,1
+1996,Infectious Diseases,C524204448,United States of America,US,438
+1996,Infectious Diseases,C524204448,"Venezuela, Bolivarian Republic of",VE,1
+1996,Infectious Diseases,C524204448,Viet Nam,VN,5
+1996,Infectious Diseases,C524204448,South Africa,ZA,1
+1996,Infectious Diseases,C524204448,Zambia,ZM,3
+1996,Quantum Computing,C58053490,Argentina,AR,1
+1996,Quantum Computing,C58053490,Austria,AT,2
+1996,Quantum Computing,C58053490,Australia,AU,3
+1996,Quantum Computing,C58053490,Burundi,BI,2
+1996,Quantum Computing,C58053490,Brazil,BR,3
+1996,Quantum Computing,C58053490,Canada,CA,6
+1996,Quantum Computing,C58053490,Switzerland,CH,1
+1996,Quantum Computing,C58053490,China,CN,5
+1996,Quantum Computing,C58053490,Germany,DE,6
+1996,Quantum Computing,C58053490,Spain,ES,1
+1996,Quantum Computing,C58053490,Finland,FI,3
+1996,Quantum Computing,C58053490,France,FR,6
+1996,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,16
+1996,Quantum Computing,C58053490,Greece,GR,1
+1996,Quantum Computing,C58053490,Hungary,HU,1
+1996,Quantum Computing,C58053490,Israel,IL,3
+1996,Quantum Computing,C58053490,Italy,IT,6
+1996,Quantum Computing,C58053490,Japan,JP,9
+1996,Quantum Computing,C58053490,Lebanon,LB,1
+1996,Quantum Computing,C58053490,Netherlands,NL,3
+1996,Quantum Computing,C58053490,Poland,PL,1
+1996,Quantum Computing,C58053490,Russian Federation,RU,4
+1996,Quantum Computing,C58053490,Slovakia,SK,1
+1996,Quantum Computing,C58053490,United States of America,US,69
+1996,Renewable Energy,C188573790,Austria,AT,7
+1996,Renewable Energy,C188573790,Australia,AU,18
+1996,Renewable Energy,C188573790,Bangladesh,BD,2
+1996,Renewable Energy,C188573790,Belgium,BE,3
+1996,Renewable Energy,C188573790,Bulgaria,BG,3
+1996,Renewable Energy,C188573790,Brazil,BR,4
+1996,Renewable Energy,C188573790,Canada,CA,22
+1996,Renewable Energy,C188573790,Switzerland,CH,2
+1996,Renewable Energy,C188573790,Chile,CL,1
+1996,Renewable Energy,C188573790,China,CN,11
+1996,Renewable Energy,C188573790,Colombia,CO,2
+1996,Renewable Energy,C188573790,Cyprus,CY,1
+1996,Renewable Energy,C188573790,Germany,DE,17
+1996,Renewable Energy,C188573790,Denmark,DK,10
+1996,Renewable Energy,C188573790,Algeria,DZ,1
+1996,Renewable Energy,C188573790,Estonia,EE,1
+1996,Renewable Energy,C188573790,Egypt,EG,1
+1996,Renewable Energy,C188573790,Spain,ES,2
+1996,Renewable Energy,C188573790,Finland,FI,2
+1996,Renewable Energy,C188573790,France,FR,10
+1996,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,67
+1996,Renewable Energy,C188573790,Greece,GR,4
+1996,Renewable Energy,C188573790,Hong Kong,HK,1
+1996,Renewable Energy,C188573790,Croatia,HR,1
+1996,Renewable Energy,C188573790,Hungary,HU,1
+1996,Renewable Energy,C188573790,Ireland,IE,2
+1996,Renewable Energy,C188573790,Israel,IL,1
+1996,Renewable Energy,C188573790,India,IN,15
+1996,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,1
+1996,Renewable Energy,C188573790,Italy,IT,13
+1996,Renewable Energy,C188573790,Jamaica,JM,1
+1996,Renewable Energy,C188573790,Japan,JP,14
+1996,Renewable Energy,C188573790,Kenya,KE,2
+1996,Renewable Energy,C188573790,"Korea, Republic of",KR,2
+1996,Renewable Energy,C188573790,Morocco,MA,1
+1996,Renewable Energy,C188573790,Mexico,MX,3
+1996,Renewable Energy,C188573790,Malaysia,MY,3
+1996,Renewable Energy,C188573790,Nigeria,NG,2
+1996,Renewable Energy,C188573790,Netherlands,NL,9
+1996,Renewable Energy,C188573790,Norway,NO,2
+1996,Renewable Energy,C188573790,New Zealand,NZ,1
+1996,Renewable Energy,C188573790,Poland,PL,4
+1996,Renewable Energy,C188573790,Portugal,PT,4
+1996,Renewable Energy,C188573790,Russian Federation,RU,3
+1996,Renewable Energy,C188573790,Saudi Arabia,SA,6
+1996,Renewable Energy,C188573790,Sweden,SE,9
+1996,Renewable Energy,C188573790,Singapore,SG,2
+1996,Renewable Energy,C188573790,Slovakia,SK,3
+1996,Renewable Energy,C188573790,Sierra Leone,SL,1
+1996,Renewable Energy,C188573790,Thailand,TH,2
+1996,Renewable Energy,C188573790,Tunisia,TN,1
+1996,Renewable Energy,C188573790,Turkey,TR,3
+1996,Renewable Energy,C188573790,"Taiwan, Province of China",TW,1
+1996,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1996,Renewable Energy,C188573790,United States of America,US,172
+1996,Renewable Energy,C188573790,Uruguay,UY,1
+1996,Renewable Energy,C188573790,Viet Nam,VN,2
+1996,Renewable Energy,C188573790,South Africa,ZA,4
+1996,Robotics & Automation,C34413123,Austria,AT,5
+1996,Robotics & Automation,C34413123,Australia,AU,8
+1996,Robotics & Automation,C34413123,Belgium,BE,6
+1996,Robotics & Automation,C34413123,Bulgaria,BG,1
+1996,Robotics & Automation,C34413123,Canada,CA,12
+1996,Robotics & Automation,C34413123,Switzerland,CH,8
+1996,Robotics & Automation,C34413123,China,CN,2
+1996,Robotics & Automation,C34413123,Czechia,CZ,1
+1996,Robotics & Automation,C34413123,Germany,DE,18
+1996,Robotics & Automation,C34413123,Spain,ES,1
+1996,Robotics & Automation,C34413123,Finland,FI,1
+1996,Robotics & Automation,C34413123,France,FR,18
+1996,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,34
+1996,Robotics & Automation,C34413123,Greece,GR,2
+1996,Robotics & Automation,C34413123,Hong Kong,HK,6
+1996,Robotics & Automation,C34413123,Israel,IL,4
+1996,Robotics & Automation,C34413123,India,IN,1
+1996,Robotics & Automation,C34413123,"Iran, Islamic Republic of",IR,1
+1996,Robotics & Automation,C34413123,Italy,IT,21
+1996,Robotics & Automation,C34413123,Japan,JP,45
+1996,Robotics & Automation,C34413123,"Korea, Republic of",KR,2
+1996,Robotics & Automation,C34413123,Kuwait,KW,1
+1996,Robotics & Automation,C34413123,North Macedonia,MK,1
+1996,Robotics & Automation,C34413123,Mexico,MX,1
+1996,Robotics & Automation,C34413123,Netherlands,NL,3
+1996,Robotics & Automation,C34413123,Nepal,NP,2
+1996,Robotics & Automation,C34413123,New Zealand,NZ,1
+1996,Robotics & Automation,C34413123,Poland,PL,8
+1996,Robotics & Automation,C34413123,"Palestine, State of",PS,2
+1996,Robotics & Automation,C34413123,Portugal,PT,2
+1996,Robotics & Automation,C34413123,Serbia,RS,6
+1996,Robotics & Automation,C34413123,Russian Federation,RU,3
+1996,Robotics & Automation,C34413123,Singapore,SG,4
+1996,Robotics & Automation,C34413123,Turkey,TR,2
+1996,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,3
+1996,Robotics & Automation,C34413123,Ukraine,UA,1
+1996,Robotics & Automation,C34413123,United States of America,US,113
+1997,AI & Machine Learning,C119857082,United Arab Emirates,AE,3
+1997,AI & Machine Learning,C119857082,Armenia,AM,5
+1997,AI & Machine Learning,C119857082,Argentina,AR,33
+1997,AI & Machine Learning,C119857082,Austria,AT,75
+1997,AI & Machine Learning,C119857082,Australia,AU,497
+1997,AI & Machine Learning,C119857082,Azerbaijan,AZ,4
+1997,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,2
+1997,AI & Machine Learning,C119857082,Barbados,BB,1
+1997,AI & Machine Learning,C119857082,Bangladesh,BD,8
+1997,AI & Machine Learning,C119857082,Belgium,BE,175
+1997,AI & Machine Learning,C119857082,Bulgaria,BG,34
+1997,AI & Machine Learning,C119857082,Bahrain,BH,2
+1997,AI & Machine Learning,C119857082,Bermuda,BM,1
+1997,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,2
+1997,AI & Machine Learning,C119857082,Brazil,BR,116
+1997,AI & Machine Learning,C119857082,Botswana,BW,1
+1997,AI & Machine Learning,C119857082,Belarus,BY,7
+1997,AI & Machine Learning,C119857082,Canada,CA,668
+1997,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,2
+1997,AI & Machine Learning,C119857082,Switzerland,CH,165
+1997,AI & Machine Learning,C119857082,Chile,CL,21
+1997,AI & Machine Learning,C119857082,Cameroon,CM,2
+1997,AI & Machine Learning,C119857082,China,CN,385
+1997,AI & Machine Learning,C119857082,Colombia,CO,7
+1997,AI & Machine Learning,C119857082,Costa Rica,CR,2
+1997,AI & Machine Learning,C119857082,Cuba,CU,3
+1997,AI & Machine Learning,C119857082,Cyprus,CY,11
+1997,AI & Machine Learning,C119857082,Czechia,CZ,64
+1997,AI & Machine Learning,C119857082,Germany,DE,750
+1997,AI & Machine Learning,C119857082,Denmark,DK,84
+1997,AI & Machine Learning,C119857082,Algeria,DZ,4
+1997,AI & Machine Learning,C119857082,Ecuador,EC,3
+1997,AI & Machine Learning,C119857082,Estonia,EE,9
+1997,AI & Machine Learning,C119857082,Egypt,EG,27
+1997,AI & Machine Learning,C119857082,Spain,ES,250
+1997,AI & Machine Learning,C119857082,Ethiopia,ET,4
+1997,AI & Machine Learning,C119857082,Finland,FI,76
+1997,AI & Machine Learning,C119857082,Fiji,FJ,2
+1997,AI & Machine Learning,C119857082,France,FR,565
+1997,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1602
+1997,AI & Machine Learning,C119857082,Georgia,GE,4
+1997,AI & Machine Learning,C119857082,French Guiana,GF,1
+1997,AI & Machine Learning,C119857082,Ghana,GH,3
+1997,AI & Machine Learning,C119857082,Greece,GR,88
+1997,AI & Machine Learning,C119857082,Guatemala,GT,1
+1997,AI & Machine Learning,C119857082,Hong Kong,HK,141
+1997,AI & Machine Learning,C119857082,Croatia,HR,17
+1997,AI & Machine Learning,C119857082,Hungary,HU,45
+1997,AI & Machine Learning,C119857082,Indonesia,ID,7
+1997,AI & Machine Learning,C119857082,Ireland,IE,34
+1997,AI & Machine Learning,C119857082,Israel,IL,170
+1997,AI & Machine Learning,C119857082,Isle of Man,IM,1
+1997,AI & Machine Learning,C119857082,India,IN,189
+1997,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,16
+1997,AI & Machine Learning,C119857082,Iceland,IS,7
+1997,AI & Machine Learning,C119857082,Italy,IT,409
+1997,AI & Machine Learning,C119857082,Jamaica,JM,1
+1997,AI & Machine Learning,C119857082,Jordan,JO,6
+1997,AI & Machine Learning,C119857082,Japan,JP,778
+1997,AI & Machine Learning,C119857082,Kenya,KE,7
+1997,AI & Machine Learning,C119857082,Cambodia,KH,2
+1997,AI & Machine Learning,C119857082,"Korea, Republic of",KR,166
+1997,AI & Machine Learning,C119857082,Kuwait,KW,10
+1997,AI & Machine Learning,C119857082,Kazakhstan,KZ,3
+1997,AI & Machine Learning,C119857082,Lebanon,LB,4
+1997,AI & Machine Learning,C119857082,Liechtenstein,LI,1
+1997,AI & Machine Learning,C119857082,Liberia,LR,1
+1997,AI & Machine Learning,C119857082,Lithuania,LT,8
+1997,AI & Machine Learning,C119857082,Luxembourg,LU,2
+1997,AI & Machine Learning,C119857082,Latvia,LV,23
+1997,AI & Machine Learning,C119857082,Libya,LY,1
+1997,AI & Machine Learning,C119857082,Morocco,MA,15
+1997,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,2
+1997,AI & Machine Learning,C119857082,Montenegro,ME,1
+1997,AI & Machine Learning,C119857082,North Macedonia,MK,3
+1997,AI & Machine Learning,C119857082,Mali,ML,2
+1997,AI & Machine Learning,C119857082,Myanmar,MM,1
+1997,AI & Machine Learning,C119857082,Macao,MO,1
+1997,AI & Machine Learning,C119857082,Malta,MT,3
+1997,AI & Machine Learning,C119857082,Mauritius,MU,1
+1997,AI & Machine Learning,C119857082,Mexico,MX,60
+1997,AI & Machine Learning,C119857082,Malaysia,MY,13
+1997,AI & Machine Learning,C119857082,Mozambique,MZ,3
+1997,AI & Machine Learning,C119857082,Niger,NE,1
+1997,AI & Machine Learning,C119857082,Nigeria,NG,5
+1997,AI & Machine Learning,C119857082,Nicaragua,NI,1
+1997,AI & Machine Learning,C119857082,Netherlands,NL,359
+1997,AI & Machine Learning,C119857082,Norway,NO,72
+1997,AI & Machine Learning,C119857082,Nepal,NP,5
+1997,AI & Machine Learning,C119857082,New Zealand,NZ,62
+1997,AI & Machine Learning,C119857082,Oman,OM,2
+1997,AI & Machine Learning,C119857082,Panama,PA,1
+1997,AI & Machine Learning,C119857082,Peru,PE,3
+1997,AI & Machine Learning,C119857082,Philippines,PH,6
+1997,AI & Machine Learning,C119857082,Pakistan,PK,10
+1997,AI & Machine Learning,C119857082,Poland,PL,102
+1997,AI & Machine Learning,C119857082,Puerto Rico,PR,7
+1997,AI & Machine Learning,C119857082,Portugal,PT,56
+1997,AI & Machine Learning,C119857082,Qatar,QA,4
+1997,AI & Machine Learning,C119857082,Romania,RO,44
+1997,AI & Machine Learning,C119857082,Serbia,RS,26
+1997,AI & Machine Learning,C119857082,Russian Federation,RU,191
+1997,AI & Machine Learning,C119857082,Saudi Arabia,SA,34
+1997,AI & Machine Learning,C119857082,Sudan,SD,2
+1997,AI & Machine Learning,C119857082,Sweden,SE,164
+1997,AI & Machine Learning,C119857082,Singapore,SG,112
+1997,AI & Machine Learning,C119857082,Slovenia,SI,50
+1997,AI & Machine Learning,C119857082,Slovakia,SK,29
+1997,AI & Machine Learning,C119857082,Senegal,SN,1
+1997,AI & Machine Learning,C119857082,South Sudan,SS,8
+1997,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+1997,AI & Machine Learning,C119857082,Thailand,TH,21
+1997,AI & Machine Learning,C119857082,Tajikistan,TJ,2
+1997,AI & Machine Learning,C119857082,Tunisia,TN,8
+1997,AI & Machine Learning,C119857082,Turkey,TR,45
+1997,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,228
+1997,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+1997,AI & Machine Learning,C119857082,Ukraine,UA,43
+1997,AI & Machine Learning,C119857082,Uganda,UG,1
+1997,AI & Machine Learning,C119857082,United States of America,US,5395
+1997,AI & Machine Learning,C119857082,Uruguay,UY,3
+1997,AI & Machine Learning,C119857082,Uzbekistan,UZ,3
+1997,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,14
+1997,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,5
+1997,AI & Machine Learning,C119857082,Viet Nam,VN,5
+1997,AI & Machine Learning,C119857082,Yemen,YE,3
+1997,AI & Machine Learning,C119857082,South Africa,ZA,65
+1997,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
+1997,CRISPR & Genomics,C98108389,Australia,AU,1
+1997,CRISPR & Genomics,C98108389,Belize,BZ,1
+1997,CRISPR & Genomics,C98108389,Canada,CA,3
+1997,CRISPR & Genomics,C98108389,Germany,DE,3
+1997,CRISPR & Genomics,C98108389,Spain,ES,1
+1997,CRISPR & Genomics,C98108389,France,FR,3
+1997,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1997,CRISPR & Genomics,C98108389,Croatia,HR,1
+1997,CRISPR & Genomics,C98108389,Hungary,HU,1
+1997,CRISPR & Genomics,C98108389,Italy,IT,2
+1997,CRISPR & Genomics,C98108389,Japan,JP,3
+1997,CRISPR & Genomics,C98108389,Russian Federation,RU,2
+1997,CRISPR & Genomics,C98108389,Sweden,SE,1
+1997,CRISPR & Genomics,C98108389,"Taiwan, Province of China",TW,1
+1997,CRISPR & Genomics,C98108389,United States of America,US,20
+1997,Data Science & Big Data,C2522767166,United Arab Emirates,AE,1
+1997,Data Science & Big Data,C2522767166,Armenia,AM,1
+1997,Data Science & Big Data,C2522767166,Argentina,AR,2
+1997,Data Science & Big Data,C2522767166,Austria,AT,29
+1997,Data Science & Big Data,C2522767166,Australia,AU,128
+1997,Data Science & Big Data,C2522767166,Bangladesh,BD,2
+1997,Data Science & Big Data,C2522767166,Belgium,BE,36
+1997,Data Science & Big Data,C2522767166,Bulgaria,BG,4
+1997,Data Science & Big Data,C2522767166,Burundi,BI,1
+1997,Data Science & Big Data,C2522767166,Brazil,BR,13
+1997,Data Science & Big Data,C2522767166,Belarus,BY,1
+1997,Data Science & Big Data,C2522767166,Canada,CA,222
+1997,Data Science & Big Data,C2522767166,Switzerland,CH,57
+1997,Data Science & Big Data,C2522767166,Côte d'Ivoire,CI,1
+1997,Data Science & Big Data,C2522767166,Chile,CL,5
+1997,Data Science & Big Data,C2522767166,China,CN,39
+1997,Data Science & Big Data,C2522767166,Colombia,CO,1
+1997,Data Science & Big Data,C2522767166,Cyprus,CY,5
+1997,Data Science & Big Data,C2522767166,Czechia,CZ,20
+1997,Data Science & Big Data,C2522767166,Germany,DE,162
+1997,Data Science & Big Data,C2522767166,Denmark,DK,30
+1997,Data Science & Big Data,C2522767166,Dominican Republic,DO,2
+1997,Data Science & Big Data,C2522767166,Algeria,DZ,1
+1997,Data Science & Big Data,C2522767166,Egypt,EG,4
+1997,Data Science & Big Data,C2522767166,Spain,ES,31
+1997,Data Science & Big Data,C2522767166,Finland,FI,21
+1997,Data Science & Big Data,C2522767166,France,FR,118
+1997,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,823
+1997,Data Science & Big Data,C2522767166,Ghana,GH,2
+1997,Data Science & Big Data,C2522767166,Gambia,GM,1
+1997,Data Science & Big Data,C2522767166,Greece,GR,14
+1997,Data Science & Big Data,C2522767166,Hong Kong,HK,18
+1997,Data Science & Big Data,C2522767166,Croatia,HR,4
+1997,Data Science & Big Data,C2522767166,Hungary,HU,9
+1997,Data Science & Big Data,C2522767166,Ireland,IE,14
+1997,Data Science & Big Data,C2522767166,Israel,IL,27
+1997,Data Science & Big Data,C2522767166,India,IN,32
+1997,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,3
+1997,Data Science & Big Data,C2522767166,Iceland,IS,1
+1997,Data Science & Big Data,C2522767166,Italy,IT,83
+1997,Data Science & Big Data,C2522767166,Japan,JP,55
+1997,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,6
+1997,Data Science & Big Data,C2522767166,Kuwait,KW,1
+1997,Data Science & Big Data,C2522767166,Sri Lanka,LK,2
+1997,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1997,Data Science & Big Data,C2522767166,Latvia,LV,1
+1997,Data Science & Big Data,C2522767166,Morocco,MA,1
+1997,Data Science & Big Data,C2522767166,"Moldova, Republic of",MD,1
+1997,Data Science & Big Data,C2522767166,North Macedonia,MK,1
+1997,Data Science & Big Data,C2522767166,Myanmar,MM,1
+1997,Data Science & Big Data,C2522767166,Mongolia,MN,1
+1997,Data Science & Big Data,C2522767166,Macao,MO,1
+1997,Data Science & Big Data,C2522767166,Malta,MT,1
+1997,Data Science & Big Data,C2522767166,Mexico,MX,13
+1997,Data Science & Big Data,C2522767166,Malaysia,MY,3
+1997,Data Science & Big Data,C2522767166,Nigeria,NG,4
+1997,Data Science & Big Data,C2522767166,Netherlands,NL,112
+1997,Data Science & Big Data,C2522767166,Norway,NO,23
+1997,Data Science & Big Data,C2522767166,Nepal,NP,3
+1997,Data Science & Big Data,C2522767166,New Zealand,NZ,18
+1997,Data Science & Big Data,C2522767166,Oman,OM,2
+1997,Data Science & Big Data,C2522767166,Peru,PE,1
+1997,Data Science & Big Data,C2522767166,Papua New Guinea,PG,1
+1997,Data Science & Big Data,C2522767166,Philippines,PH,3
+1997,Data Science & Big Data,C2522767166,Pakistan,PK,3
+1997,Data Science & Big Data,C2522767166,Poland,PL,15
+1997,Data Science & Big Data,C2522767166,Portugal,PT,9
+1997,Data Science & Big Data,C2522767166,Qatar,QA,4
+1997,Data Science & Big Data,C2522767166,Romania,RO,2
+1997,Data Science & Big Data,C2522767166,Russian Federation,RU,20
+1997,Data Science & Big Data,C2522767166,Saudi Arabia,SA,4
+1997,Data Science & Big Data,C2522767166,Sudan,SD,1
+1997,Data Science & Big Data,C2522767166,Sweden,SE,25
+1997,Data Science & Big Data,C2522767166,Singapore,SG,12
+1997,Data Science & Big Data,C2522767166,Slovenia,SI,12
+1997,Data Science & Big Data,C2522767166,Slovakia,SK,5
+1997,Data Science & Big Data,C2522767166,Thailand,TH,2
+1997,Data Science & Big Data,C2522767166,Turkey,TR,8
+1997,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,13
+1997,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,2
+1997,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1997,Data Science & Big Data,C2522767166,Uganda,UG,1
+1997,Data Science & Big Data,C2522767166,United States of America,US,1660
+1997,Data Science & Big Data,C2522767166,Uruguay,UY,1
+1997,Data Science & Big Data,C2522767166,Uzbekistan,UZ,1
+1997,Data Science & Big Data,C2522767166,Viet Nam,VN,4
+1997,Data Science & Big Data,C2522767166,South Africa,ZA,15
+1997,Infectious Diseases,C524204448,United Arab Emirates,AE,3
+1997,Infectious Diseases,C524204448,Albania,AL,1
+1997,Infectious Diseases,C524204448,Armenia,AM,1
+1997,Infectious Diseases,C524204448,Argentina,AR,2
+1997,Infectious Diseases,C524204448,Austria,AT,1
+1997,Infectious Diseases,C524204448,Australia,AU,29
+1997,Infectious Diseases,C524204448,Bangladesh,BD,1
+1997,Infectious Diseases,C524204448,Belgium,BE,8
+1997,Infectious Diseases,C524204448,Brazil,BR,6
+1997,Infectious Diseases,C524204448,Canada,CA,48
+1997,Infectious Diseases,C524204448,Switzerland,CH,15
+1997,Infectious Diseases,C524204448,Côte d'Ivoire,CI,1
+1997,Infectious Diseases,C524204448,Chile,CL,3
+1997,Infectious Diseases,C524204448,Cameroon,CM,1
+1997,Infectious Diseases,C524204448,China,CN,9
+1997,Infectious Diseases,C524204448,Costa Rica,CR,1
+1997,Infectious Diseases,C524204448,Cuba,CU,1
+1997,Infectious Diseases,C524204448,Czechia,CZ,5
+1997,Infectious Diseases,C524204448,Germany,DE,29
+1997,Infectious Diseases,C524204448,Djibouti,DJ,1
+1997,Infectious Diseases,C524204448,Denmark,DK,5
+1997,Infectious Diseases,C524204448,Egypt,EG,3
+1997,Infectious Diseases,C524204448,Spain,ES,19
+1997,Infectious Diseases,C524204448,Ethiopia,ET,1
+1997,Infectious Diseases,C524204448,Finland,FI,4
+1997,Infectious Diseases,C524204448,France,FR,30
+1997,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,107
+1997,Infectious Diseases,C524204448,Greece,GR,2
+1997,Infectious Diseases,C524204448,Hong Kong,HK,2
+1997,Infectious Diseases,C524204448,Honduras,HN,1
+1997,Infectious Diseases,C524204448,Croatia,HR,1
+1997,Infectious Diseases,C524204448,Hungary,HU,2
+1997,Infectious Diseases,C524204448,Ireland,IE,2
+1997,Infectious Diseases,C524204448,Israel,IL,6
+1997,Infectious Diseases,C524204448,India,IN,10
+1997,Infectious Diseases,C524204448,Italy,IT,20
+1997,Infectious Diseases,C524204448,Jamaica,JM,1
+1997,Infectious Diseases,C524204448,Japan,JP,52
+1997,Infectious Diseases,C524204448,Kenya,KE,1
+1997,Infectious Diseases,C524204448,"Korea, Republic of",KR,4
+1997,Infectious Diseases,C524204448,Madagascar,MG,1
+1997,Infectious Diseases,C524204448,Myanmar,MM,2
+1997,Infectious Diseases,C524204448,Mongolia,MN,1
+1997,Infectious Diseases,C524204448,Malawi,MW,2
+1997,Infectious Diseases,C524204448,Mexico,MX,3
+1997,Infectious Diseases,C524204448,Niger,NE,1
+1997,Infectious Diseases,C524204448,Nigeria,NG,1
+1997,Infectious Diseases,C524204448,Netherlands,NL,34
+1997,Infectious Diseases,C524204448,Norway,NO,2
+1997,Infectious Diseases,C524204448,New Zealand,NZ,5
+1997,Infectious Diseases,C524204448,Panama,PA,3
+1997,Infectious Diseases,C524204448,Pakistan,PK,2
+1997,Infectious Diseases,C524204448,Poland,PL,3
+1997,Infectious Diseases,C524204448,Portugal,PT,1
+1997,Infectious Diseases,C524204448,Qatar,QA,1
+1997,Infectious Diseases,C524204448,Romania,RO,1
+1997,Infectious Diseases,C524204448,Serbia,RS,1
+1997,Infectious Diseases,C524204448,Russian Federation,RU,5
+1997,Infectious Diseases,C524204448,Saudi Arabia,SA,1
+1997,Infectious Diseases,C524204448,Sweden,SE,8
+1997,Infectious Diseases,C524204448,Singapore,SG,4
+1997,Infectious Diseases,C524204448,Slovenia,SI,1
+1997,Infectious Diseases,C524204448,Slovakia,SK,2
+1997,Infectious Diseases,C524204448,Thailand,TH,6
+1997,Infectious Diseases,C524204448,Tunisia,TN,1
+1997,Infectious Diseases,C524204448,Turkey,TR,2
+1997,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,2
+1997,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,3
+1997,Infectious Diseases,C524204448,Uganda,UG,1
+1997,Infectious Diseases,C524204448,United States of America,US,414
+1997,Infectious Diseases,C524204448,Viet Nam,VN,1
+1997,Infectious Diseases,C524204448,South Africa,ZA,8
+1997,Infectious Diseases,C524204448,Zambia,ZM,3
+1997,Quantum Computing,C58053490,Argentina,AR,2
+1997,Quantum Computing,C58053490,Austria,AT,7
+1997,Quantum Computing,C58053490,Australia,AU,2
+1997,Quantum Computing,C58053490,Belgium,BE,2
+1997,Quantum Computing,C58053490,Canada,CA,8
+1997,Quantum Computing,C58053490,Switzerland,CH,3
+1997,Quantum Computing,C58053490,China,CN,5
+1997,Quantum Computing,C58053490,Czechia,CZ,1
+1997,Quantum Computing,C58053490,Germany,DE,7
+1997,Quantum Computing,C58053490,Spain,ES,4
+1997,Quantum Computing,C58053490,Finland,FI,1
+1997,Quantum Computing,C58053490,France,FR,7
+1997,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,21
+1997,Quantum Computing,C58053490,Hong Kong,HK,3
+1997,Quantum Computing,C58053490,Ireland,IE,1
+1997,Quantum Computing,C58053490,Israel,IL,4
+1997,Quantum Computing,C58053490,Italy,IT,9
+1997,Quantum Computing,C58053490,Japan,JP,8
+1997,Quantum Computing,C58053490,Netherlands,NL,2
+1997,Quantum Computing,C58053490,New Zealand,NZ,1
+1997,Quantum Computing,C58053490,Poland,PL,3
+1997,Quantum Computing,C58053490,Portugal,PT,1
+1997,Quantum Computing,C58053490,Russian Federation,RU,5
+1997,Quantum Computing,C58053490,Slovakia,SK,1
+1997,Quantum Computing,C58053490,Turkey,TR,1
+1997,Quantum Computing,C58053490,United States of America,US,64
+1997,Quantum Computing,C58053490,Uruguay,UY,1
+1997,Renewable Energy,C188573790,Argentina,AR,1
+1997,Renewable Energy,C188573790,Austria,AT,2
+1997,Renewable Energy,C188573790,Australia,AU,20
+1997,Renewable Energy,C188573790,Barbados,BB,1
+1997,Renewable Energy,C188573790,Bangladesh,BD,1
+1997,Renewable Energy,C188573790,Belgium,BE,3
+1997,Renewable Energy,C188573790,Bulgaria,BG,3
+1997,Renewable Energy,C188573790,Brazil,BR,3
+1997,Renewable Energy,C188573790,Botswana,BW,1
+1997,Renewable Energy,C188573790,Canada,CA,18
+1997,Renewable Energy,C188573790,Switzerland,CH,4
+1997,Renewable Energy,C188573790,China,CN,8
+1997,Renewable Energy,C188573790,Czechia,CZ,2
+1997,Renewable Energy,C188573790,Germany,DE,23
+1997,Renewable Energy,C188573790,Denmark,DK,7
+1997,Renewable Energy,C188573790,Egypt,EG,3
+1997,Renewable Energy,C188573790,Spain,ES,3
+1997,Renewable Energy,C188573790,Finland,FI,3
+1997,Renewable Energy,C188573790,France,FR,12
+1997,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,38
+1997,Renewable Energy,C188573790,Greece,GR,13
+1997,Renewable Energy,C188573790,Hungary,HU,1
+1997,Renewable Energy,C188573790,Israel,IL,3
+1997,Renewable Energy,C188573790,India,IN,23
+1997,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,1
+1997,Renewable Energy,C188573790,Italy,IT,8
+1997,Renewable Energy,C188573790,Jordan,JO,1
+1997,Renewable Energy,C188573790,Japan,JP,17
+1997,Renewable Energy,C188573790,Kenya,KE,1
+1997,Renewable Energy,C188573790,"Korea, Republic of",KR,3
+1997,Renewable Energy,C188573790,Lebanon,LB,1
+1997,Renewable Energy,C188573790,Libya,LY,1
+1997,Renewable Energy,C188573790,Netherlands,NL,16
+1997,Renewable Energy,C188573790,Norway,NO,2
+1997,Renewable Energy,C188573790,Nepal,NP,1
+1997,Renewable Energy,C188573790,Papua New Guinea,PG,1
+1997,Renewable Energy,C188573790,Philippines,PH,1
+1997,Renewable Energy,C188573790,Poland,PL,3
+1997,Renewable Energy,C188573790,Portugal,PT,1
+1997,Renewable Energy,C188573790,Russian Federation,RU,1
+1997,Renewable Energy,C188573790,Sweden,SE,11
+1997,Renewable Energy,C188573790,Thailand,TH,2
+1997,Renewable Energy,C188573790,Tajikistan,TJ,1
+1997,Renewable Energy,C188573790,Turkey,TR,1
+1997,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1997,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1997,Renewable Energy,C188573790,United States of America,US,118
+1997,Renewable Energy,C188573790,South Africa,ZA,2
+1997,Robotics & Automation,C34413123,Armenia,AM,1
+1997,Robotics & Automation,C34413123,Austria,AT,3
+1997,Robotics & Automation,C34413123,Australia,AU,8
+1997,Robotics & Automation,C34413123,Belgium,BE,3
+1997,Robotics & Automation,C34413123,Brazil,BR,2
+1997,Robotics & Automation,C34413123,Canada,CA,16
+1997,Robotics & Automation,C34413123,Switzerland,CH,5
+1997,Robotics & Automation,C34413123,China,CN,1
+1997,Robotics & Automation,C34413123,Czechia,CZ,1
+1997,Robotics & Automation,C34413123,Germany,DE,22
+1997,Robotics & Automation,C34413123,Egypt,EG,1
+1997,Robotics & Automation,C34413123,Spain,ES,6
+1997,Robotics & Automation,C34413123,Finland,FI,1
+1997,Robotics & Automation,C34413123,France,FR,14
+1997,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,35
+1997,Robotics & Automation,C34413123,Hong Kong,HK,1
+1997,Robotics & Automation,C34413123,Hungary,HU,2
+1997,Robotics & Automation,C34413123,Israel,IL,7
+1997,Robotics & Automation,C34413123,India,IN,1
+1997,Robotics & Automation,C34413123,Italy,IT,22
+1997,Robotics & Automation,C34413123,Japan,JP,30
+1997,Robotics & Automation,C34413123,"Korea, Republic of",KR,3
+1997,Robotics & Automation,C34413123,Lebanon,LB,1
+1997,Robotics & Automation,C34413123,Mexico,MX,1
+1997,Robotics & Automation,C34413123,Netherlands,NL,3
+1997,Robotics & Automation,C34413123,Poland,PL,4
+1997,Robotics & Automation,C34413123,Portugal,PT,3
+1997,Robotics & Automation,C34413123,Sweden,SE,3
+1997,Robotics & Automation,C34413123,Singapore,SG,3
+1997,Robotics & Automation,C34413123,Slovenia,SI,1
+1997,Robotics & Automation,C34413123,Slovakia,SK,1
+1997,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,2
+1997,Robotics & Automation,C34413123,United States of America,US,152
+1998,AI & Machine Learning,C119857082,United Arab Emirates,AE,6
+1998,AI & Machine Learning,C119857082,Albania,AL,4
+1998,AI & Machine Learning,C119857082,Armenia,AM,4
+1998,AI & Machine Learning,C119857082,Argentina,AR,35
+1998,AI & Machine Learning,C119857082,Austria,AT,82
+1998,AI & Machine Learning,C119857082,Australia,AU,542
+1998,AI & Machine Learning,C119857082,Azerbaijan,AZ,4
+1998,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1998,AI & Machine Learning,C119857082,Bangladesh,BD,9
+1998,AI & Machine Learning,C119857082,Belgium,BE,204
+1998,AI & Machine Learning,C119857082,Bulgaria,BG,48
+1998,AI & Machine Learning,C119857082,Bahrain,BH,8
+1998,AI & Machine Learning,C119857082,Brunei Darussalam,BN,1
+1998,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,2
+1998,AI & Machine Learning,C119857082,Brazil,BR,142
+1998,AI & Machine Learning,C119857082,Botswana,BW,2
+1998,AI & Machine Learning,C119857082,Belarus,BY,20
+1998,AI & Machine Learning,C119857082,Canada,CA,671
+1998,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,2
+1998,AI & Machine Learning,C119857082,Switzerland,CH,185
+1998,AI & Machine Learning,C119857082,Chile,CL,25
+1998,AI & Machine Learning,C119857082,Cameroon,CM,4
+1998,AI & Machine Learning,C119857082,China,CN,449
+1998,AI & Machine Learning,C119857082,Colombia,CO,10
+1998,AI & Machine Learning,C119857082,Costa Rica,CR,3
+1998,AI & Machine Learning,C119857082,Cuba,CU,2
+1998,AI & Machine Learning,C119857082,Cyprus,CY,12
+1998,AI & Machine Learning,C119857082,Czechia,CZ,71
+1998,AI & Machine Learning,C119857082,Germany,DE,853
+1998,AI & Machine Learning,C119857082,Denmark,DK,119
+1998,AI & Machine Learning,C119857082,Dominican Republic,DO,2
+1998,AI & Machine Learning,C119857082,Algeria,DZ,9
+1998,AI & Machine Learning,C119857082,Estonia,EE,5
+1998,AI & Machine Learning,C119857082,Egypt,EG,40
+1998,AI & Machine Learning,C119857082,Spain,ES,336
+1998,AI & Machine Learning,C119857082,Ethiopia,ET,1
+1998,AI & Machine Learning,C119857082,Finland,FI,87
+1998,AI & Machine Learning,C119857082,Fiji,FJ,1
+1998,AI & Machine Learning,C119857082,France,FR,641
+1998,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1721
+1998,AI & Machine Learning,C119857082,Georgia,GE,1
+1998,AI & Machine Learning,C119857082,Ghana,GH,7
+1998,AI & Machine Learning,C119857082,Greenland,GL,1
+1998,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+1998,AI & Machine Learning,C119857082,Greece,GR,132
+1998,AI & Machine Learning,C119857082,Guatemala,GT,1
+1998,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+1998,AI & Machine Learning,C119857082,Hong Kong,HK,161
+1998,AI & Machine Learning,C119857082,Honduras,HN,1
+1998,AI & Machine Learning,C119857082,Croatia,HR,17
+1998,AI & Machine Learning,C119857082,Hungary,HU,63
+1998,AI & Machine Learning,C119857082,Indonesia,ID,10
+1998,AI & Machine Learning,C119857082,Ireland,IE,58
+1998,AI & Machine Learning,C119857082,Israel,IL,194
+1998,AI & Machine Learning,C119857082,India,IN,200
+1998,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,17
+1998,AI & Machine Learning,C119857082,Iceland,IS,4
+1998,AI & Machine Learning,C119857082,Italy,IT,491
+1998,AI & Machine Learning,C119857082,Jamaica,JM,2
+1998,AI & Machine Learning,C119857082,Jordan,JO,9
+1998,AI & Machine Learning,C119857082,Japan,JP,823
+1998,AI & Machine Learning,C119857082,Kenya,KE,8
+1998,AI & Machine Learning,C119857082,Cambodia,KH,3
+1998,AI & Machine Learning,C119857082,"Korea, Republic of",KR,207
+1998,AI & Machine Learning,C119857082,Kuwait,KW,14
+1998,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+1998,AI & Machine Learning,C119857082,Lebanon,LB,7
+1998,AI & Machine Learning,C119857082,Sri Lanka,LK,4
+1998,AI & Machine Learning,C119857082,Lesotho,LS,1
+1998,AI & Machine Learning,C119857082,Lithuania,LT,9
+1998,AI & Machine Learning,C119857082,Luxembourg,LU,1
+1998,AI & Machine Learning,C119857082,Latvia,LV,15
+1998,AI & Machine Learning,C119857082,Morocco,MA,11
+1998,AI & Machine Learning,C119857082,Montenegro,ME,1
+1998,AI & Machine Learning,C119857082,North Macedonia,MK,2
+1998,AI & Machine Learning,C119857082,Myanmar,MM,1
+1998,AI & Machine Learning,C119857082,Mongolia,MN,6
+1998,AI & Machine Learning,C119857082,Macao,MO,1
+1998,AI & Machine Learning,C119857082,Mauritius,MU,1
+1998,AI & Machine Learning,C119857082,Mexico,MX,85
+1998,AI & Machine Learning,C119857082,Malaysia,MY,15
+1998,AI & Machine Learning,C119857082,Mozambique,MZ,3
+1998,AI & Machine Learning,C119857082,Namibia,NA,1
+1998,AI & Machine Learning,C119857082,Niger,NE,5
+1998,AI & Machine Learning,C119857082,Nigeria,NG,8
+1998,AI & Machine Learning,C119857082,Nicaragua,NI,3
+1998,AI & Machine Learning,C119857082,Netherlands,NL,354
+1998,AI & Machine Learning,C119857082,Norway,NO,89
+1998,AI & Machine Learning,C119857082,Nepal,NP,6
+1998,AI & Machine Learning,C119857082,New Zealand,NZ,82
+1998,AI & Machine Learning,C119857082,Oman,OM,7
+1998,AI & Machine Learning,C119857082,Panama,PA,2
+1998,AI & Machine Learning,C119857082,Philippines,PH,6
+1998,AI & Machine Learning,C119857082,Pakistan,PK,6
+1998,AI & Machine Learning,C119857082,Poland,PL,109
+1998,AI & Machine Learning,C119857082,Puerto Rico,PR,9
+1998,AI & Machine Learning,C119857082,Portugal,PT,56
+1998,AI & Machine Learning,C119857082,Qatar,QA,4
+1998,AI & Machine Learning,C119857082,Réunion,RE,1
+1998,AI & Machine Learning,C119857082,Romania,RO,37
+1998,AI & Machine Learning,C119857082,Serbia,RS,21
+1998,AI & Machine Learning,C119857082,Russian Federation,RU,245
+1998,AI & Machine Learning,C119857082,Saudi Arabia,SA,25
+1998,AI & Machine Learning,C119857082,Sweden,SE,197
+1998,AI & Machine Learning,C119857082,Singapore,SG,130
+1998,AI & Machine Learning,C119857082,Slovenia,SI,48
+1998,AI & Machine Learning,C119857082,Slovakia,SK,23
+1998,AI & Machine Learning,C119857082,Senegal,SN,1
+1998,AI & Machine Learning,C119857082,South Sudan,SS,5
+1998,AI & Machine Learning,C119857082,Eswatini,SZ,1
+1998,AI & Machine Learning,C119857082,Thailand,TH,27
+1998,AI & Machine Learning,C119857082,Tajikistan,TJ,5
+1998,AI & Machine Learning,C119857082,Tunisia,TN,13
+1998,AI & Machine Learning,C119857082,Turkey,TR,50
+1998,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,228
+1998,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,3
+1998,AI & Machine Learning,C119857082,Ukraine,UA,47
+1998,AI & Machine Learning,C119857082,Uganda,UG,1
+1998,AI & Machine Learning,C119857082,United States of America,US,5580
+1998,AI & Machine Learning,C119857082,Uruguay,UY,1
+1998,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1998,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,17
+1998,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,2
+1998,AI & Machine Learning,C119857082,Viet Nam,VN,10
+1998,AI & Machine Learning,C119857082,South Africa,ZA,61
+1998,AI & Machine Learning,C119857082,Zimbabwe,ZW,3
+1998,CRISPR & Genomics,C98108389,Austria,AT,1
+1998,CRISPR & Genomics,C98108389,Canada,CA,3
+1998,CRISPR & Genomics,C98108389,Czechia,CZ,1
+1998,CRISPR & Genomics,C98108389,Germany,DE,1
+1998,CRISPR & Genomics,C98108389,Denmark,DK,1
+1998,CRISPR & Genomics,C98108389,Spain,ES,1
+1998,CRISPR & Genomics,C98108389,France,FR,4
+1998,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,2
+1998,CRISPR & Genomics,C98108389,India,IN,1
+1998,CRISPR & Genomics,C98108389,Japan,JP,3
+1998,CRISPR & Genomics,C98108389,Netherlands,NL,1
+1998,CRISPR & Genomics,C98108389,Poland,PL,1
+1998,CRISPR & Genomics,C98108389,Russian Federation,RU,1
+1998,CRISPR & Genomics,C98108389,Slovakia,SK,2
+1998,CRISPR & Genomics,C98108389,"Taiwan, Province of China",TW,1
+1998,CRISPR & Genomics,C98108389,United States of America,US,24
+1998,Data Science & Big Data,C2522767166,Argentina,AR,4
+1998,Data Science & Big Data,C2522767166,Austria,AT,28
+1998,Data Science & Big Data,C2522767166,Australia,AU,156
+1998,Data Science & Big Data,C2522767166,Bosnia and Herzegovina,BA,1
+1998,Data Science & Big Data,C2522767166,Bangladesh,BD,2
+1998,Data Science & Big Data,C2522767166,Belgium,BE,57
+1998,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1998,Data Science & Big Data,C2522767166,Brazil,BR,22
+1998,Data Science & Big Data,C2522767166,Belarus,BY,1
+1998,Data Science & Big Data,C2522767166,Canada,CA,225
+1998,Data Science & Big Data,C2522767166,Congo,CG,1
+1998,Data Science & Big Data,C2522767166,Switzerland,CH,46
+1998,Data Science & Big Data,C2522767166,Chile,CL,2
+1998,Data Science & Big Data,C2522767166,China,CN,25
+1998,Data Science & Big Data,C2522767166,Colombia,CO,3
+1998,Data Science & Big Data,C2522767166,Cuba,CU,1
+1998,Data Science & Big Data,C2522767166,Cyprus,CY,2
+1998,Data Science & Big Data,C2522767166,Czechia,CZ,13
+1998,Data Science & Big Data,C2522767166,Germany,DE,205
+1998,Data Science & Big Data,C2522767166,Denmark,DK,28
+1998,Data Science & Big Data,C2522767166,Algeria,DZ,2
+1998,Data Science & Big Data,C2522767166,Estonia,EE,1
+1998,Data Science & Big Data,C2522767166,Egypt,EG,3
+1998,Data Science & Big Data,C2522767166,Spain,ES,35
+1998,Data Science & Big Data,C2522767166,Finland,FI,23
+1998,Data Science & Big Data,C2522767166,France,FR,125
+1998,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,866
+1998,Data Science & Big Data,C2522767166,Ghana,GH,1
+1998,Data Science & Big Data,C2522767166,Greece,GR,19
+1998,Data Science & Big Data,C2522767166,Hong Kong,HK,20
+1998,Data Science & Big Data,C2522767166,Croatia,HR,2
+1998,Data Science & Big Data,C2522767166,Hungary,HU,10
+1998,Data Science & Big Data,C2522767166,Ireland,IE,19
+1998,Data Science & Big Data,C2522767166,Israel,IL,20
+1998,Data Science & Big Data,C2522767166,India,IN,32
+1998,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,3
+1998,Data Science & Big Data,C2522767166,Iceland,IS,1
+1998,Data Science & Big Data,C2522767166,Italy,IT,81
+1998,Data Science & Big Data,C2522767166,Jordan,JO,1
+1998,Data Science & Big Data,C2522767166,Japan,JP,87
+1998,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,15
+1998,Data Science & Big Data,C2522767166,Sri Lanka,LK,4
+1998,Data Science & Big Data,C2522767166,Lithuania,LT,3
+1998,Data Science & Big Data,C2522767166,Latvia,LV,3
+1998,Data Science & Big Data,C2522767166,Morocco,MA,2
+1998,Data Science & Big Data,C2522767166,Mongolia,MN,1
+1998,Data Science & Big Data,C2522767166,Malta,MT,1
+1998,Data Science & Big Data,C2522767166,Mexico,MX,14
+1998,Data Science & Big Data,C2522767166,Malaysia,MY,2
+1998,Data Science & Big Data,C2522767166,Netherlands,NL,111
+1998,Data Science & Big Data,C2522767166,Norway,NO,23
+1998,Data Science & Big Data,C2522767166,Nepal,NP,2
+1998,Data Science & Big Data,C2522767166,New Zealand,NZ,29
+1998,Data Science & Big Data,C2522767166,Panama,PA,2
+1998,Data Science & Big Data,C2522767166,Peru,PE,1
+1998,Data Science & Big Data,C2522767166,Philippines,PH,1
+1998,Data Science & Big Data,C2522767166,Pakistan,PK,2
+1998,Data Science & Big Data,C2522767166,Poland,PL,18
+1998,Data Science & Big Data,C2522767166,Puerto Rico,PR,3
+1998,Data Science & Big Data,C2522767166,Portugal,PT,10
+1998,Data Science & Big Data,C2522767166,Qatar,QA,1
+1998,Data Science & Big Data,C2522767166,Romania,RO,1
+1998,Data Science & Big Data,C2522767166,Serbia,RS,1
+1998,Data Science & Big Data,C2522767166,Russian Federation,RU,19
+1998,Data Science & Big Data,C2522767166,Sweden,SE,40
+1998,Data Science & Big Data,C2522767166,Singapore,SG,30
+1998,Data Science & Big Data,C2522767166,Slovenia,SI,8
+1998,Data Science & Big Data,C2522767166,Slovakia,SK,1
+1998,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1998,Data Science & Big Data,C2522767166,Thailand,TH,1
+1998,Data Science & Big Data,C2522767166,Tunisia,TN,3
+1998,Data Science & Big Data,C2522767166,Turkey,TR,3
+1998,Data Science & Big Data,C2522767166,Trinidad and Tobago,TT,1
+1998,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,7
+1998,Data Science & Big Data,C2522767166,"Tanzania, United Republic of",TZ,1
+1998,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1998,Data Science & Big Data,C2522767166,United States of America,US,1648
+1998,Data Science & Big Data,C2522767166,Uzbekistan,UZ,1
+1998,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,3
+1998,Data Science & Big Data,C2522767166,Viet Nam,VN,1
+1998,Data Science & Big Data,C2522767166,South Africa,ZA,12
+1998,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1998,Infectious Diseases,C524204448,United Arab Emirates,AE,3
+1998,Infectious Diseases,C524204448,Argentina,AR,3
+1998,Infectious Diseases,C524204448,Austria,AT,4
+1998,Infectious Diseases,C524204448,Australia,AU,32
+1998,Infectious Diseases,C524204448,Bangladesh,BD,1
+1998,Infectious Diseases,C524204448,Belgium,BE,8
+1998,Infectious Diseases,C524204448,Bulgaria,BG,1
+1998,Infectious Diseases,C524204448,Brazil,BR,9
+1998,Infectious Diseases,C524204448,Canada,CA,64
+1998,Infectious Diseases,C524204448,Congo,CG,1
+1998,Infectious Diseases,C524204448,Switzerland,CH,15
+1998,Infectious Diseases,C524204448,Chile,CL,1
+1998,Infectious Diseases,C524204448,Cameroon,CM,1
+1998,Infectious Diseases,C524204448,China,CN,15
+1998,Infectious Diseases,C524204448,Costa Rica,CR,1
+1998,Infectious Diseases,C524204448,Czechia,CZ,3
+1998,Infectious Diseases,C524204448,Germany,DE,46
+1998,Infectious Diseases,C524204448,Denmark,DK,8
+1998,Infectious Diseases,C524204448,Egypt,EG,2
+1998,Infectious Diseases,C524204448,Spain,ES,18
+1998,Infectious Diseases,C524204448,Ethiopia,ET,2
+1998,Infectious Diseases,C524204448,Finland,FI,4
+1998,Infectious Diseases,C524204448,France,FR,49
+1998,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,136
+1998,Infectious Diseases,C524204448,Ghana,GH,1
+1998,Infectious Diseases,C524204448,Greece,GR,3
+1998,Infectious Diseases,C524204448,Hong Kong,HK,5
+1998,Infectious Diseases,C524204448,Croatia,HR,1
+1998,Infectious Diseases,C524204448,Hungary,HU,2
+1998,Infectious Diseases,C524204448,Indonesia,ID,1
+1998,Infectious Diseases,C524204448,Ireland,IE,1
+1998,Infectious Diseases,C524204448,Israel,IL,7
+1998,Infectious Diseases,C524204448,India,IN,2
+1998,Infectious Diseases,C524204448,Iceland,IS,2
+1998,Infectious Diseases,C524204448,Italy,IT,17
+1998,Infectious Diseases,C524204448,Jordan,JO,1
+1998,Infectious Diseases,C524204448,Japan,JP,41
+1998,Infectious Diseases,C524204448,Kenya,KE,2
+1998,Infectious Diseases,C524204448,"Korea, Republic of",KR,10
+1998,Infectious Diseases,C524204448,Kuwait,KW,1
+1998,Infectious Diseases,C524204448,Morocco,MA,2
+1998,Infectious Diseases,C524204448,Mongolia,MN,3
+1998,Infectious Diseases,C524204448,Malawi,MW,1
+1998,Infectious Diseases,C524204448,Mexico,MX,8
+1998,Infectious Diseases,C524204448,Malaysia,MY,2
+1998,Infectious Diseases,C524204448,Nigeria,NG,1
+1998,Infectious Diseases,C524204448,Netherlands,NL,37
+1998,Infectious Diseases,C524204448,Norway,NO,3
+1998,Infectious Diseases,C524204448,Nepal,NP,1
+1998,Infectious Diseases,C524204448,New Zealand,NZ,3
+1998,Infectious Diseases,C524204448,Pakistan,PK,1
+1998,Infectious Diseases,C524204448,Poland,PL,3
+1998,Infectious Diseases,C524204448,Portugal,PT,3
+1998,Infectious Diseases,C524204448,Romania,RO,1
+1998,Infectious Diseases,C524204448,Serbia,RS,2
+1998,Infectious Diseases,C524204448,Russian Federation,RU,9
+1998,Infectious Diseases,C524204448,Saudi Arabia,SA,2
+1998,Infectious Diseases,C524204448,Sweden,SE,18
+1998,Infectious Diseases,C524204448,Singapore,SG,9
+1998,Infectious Diseases,C524204448,Slovenia,SI,1
+1998,Infectious Diseases,C524204448,Slovakia,SK,4
+1998,Infectious Diseases,C524204448,Senegal,SN,1
+1998,Infectious Diseases,C524204448,Thailand,TH,3
+1998,Infectious Diseases,C524204448,Turkey,TR,2
+1998,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,6
+1998,Infectious Diseases,C524204448,Ukraine,UA,2
+1998,Infectious Diseases,C524204448,Uganda,UG,2
+1998,Infectious Diseases,C524204448,United States of America,US,474
+1998,Infectious Diseases,C524204448,Uruguay,UY,1
+1998,Infectious Diseases,C524204448,"Venezuela, Bolivarian Republic of",VE,1
+1998,Infectious Diseases,C524204448,Viet Nam,VN,2
+1998,Infectious Diseases,C524204448,South Africa,ZA,6
+1998,Infectious Diseases,C524204448,Zambia,ZM,1
+1998,Quantum Computing,C58053490,Argentina,AR,1
+1998,Quantum Computing,C58053490,Austria,AT,3
+1998,Quantum Computing,C58053490,Australia,AU,4
+1998,Quantum Computing,C58053490,Belgium,BE,1
+1998,Quantum Computing,C58053490,Brazil,BR,1
+1998,Quantum Computing,C58053490,Belarus,BY,1
+1998,Quantum Computing,C58053490,Canada,CA,7
+1998,Quantum Computing,C58053490,Switzerland,CH,4
+1998,Quantum Computing,C58053490,China,CN,10
+1998,Quantum Computing,C58053490,Germany,DE,10
+1998,Quantum Computing,C58053490,Spain,ES,3
+1998,Quantum Computing,C58053490,France,FR,8
+1998,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,29
+1998,Quantum Computing,C58053490,Greece,GR,1
+1998,Quantum Computing,C58053490,Hong Kong,HK,1
+1998,Quantum Computing,C58053490,Hungary,HU,5
+1998,Quantum Computing,C58053490,Israel,IL,6
+1998,Quantum Computing,C58053490,India,IN,3
+1998,Quantum Computing,C58053490,Italy,IT,10
+1998,Quantum Computing,C58053490,Japan,JP,14
+1998,Quantum Computing,C58053490,"Korea, Republic of",KR,1
+1998,Quantum Computing,C58053490,Latvia,LV,1
+1998,Quantum Computing,C58053490,Mexico,MX,2
+1998,Quantum Computing,C58053490,Netherlands,NL,6
+1998,Quantum Computing,C58053490,New Zealand,NZ,1
+1998,Quantum Computing,C58053490,Poland,PL,2
+1998,Quantum Computing,C58053490,Russian Federation,RU,4
+1998,Quantum Computing,C58053490,Slovakia,SK,1
+1998,Quantum Computing,C58053490,Turkey,TR,1
+1998,Quantum Computing,C58053490,"Taiwan, Province of China",TW,1
+1998,Quantum Computing,C58053490,United States of America,US,123
+1998,Quantum Computing,C58053490,South Africa,ZA,1
+1998,Renewable Energy,C188573790,United Arab Emirates,AE,1
+1998,Renewable Energy,C188573790,Argentina,AR,2
+1998,Renewable Energy,C188573790,Austria,AT,5
+1998,Renewable Energy,C188573790,Australia,AU,17
+1998,Renewable Energy,C188573790,Barbados,BB,1
+1998,Renewable Energy,C188573790,Belgium,BE,2
+1998,Renewable Energy,C188573790,Brazil,BR,6
+1998,Renewable Energy,C188573790,Belarus,BY,1
+1998,Renewable Energy,C188573790,Canada,CA,15
+1998,Renewable Energy,C188573790,Switzerland,CH,8
+1998,Renewable Energy,C188573790,China,CN,6
+1998,Renewable Energy,C188573790,Czechia,CZ,1
+1998,Renewable Energy,C188573790,Germany,DE,31
+1998,Renewable Energy,C188573790,Denmark,DK,9
+1998,Renewable Energy,C188573790,Egypt,EG,2
+1998,Renewable Energy,C188573790,Spain,ES,5
+1998,Renewable Energy,C188573790,Finland,FI,1
+1998,Renewable Energy,C188573790,France,FR,19
+1998,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,40
+1998,Renewable Energy,C188573790,Ghana,GH,1
+1998,Renewable Energy,C188573790,Greece,GR,8
+1998,Renewable Energy,C188573790,Hong Kong,HK,2
+1998,Renewable Energy,C188573790,Croatia,HR,1
+1998,Renewable Energy,C188573790,Ireland,IE,1
+1998,Renewable Energy,C188573790,Israel,IL,4
+1998,Renewable Energy,C188573790,India,IN,22
+1998,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,2
+1998,Renewable Energy,C188573790,Italy,IT,16
+1998,Renewable Energy,C188573790,Jordan,JO,3
+1998,Renewable Energy,C188573790,Japan,JP,22
+1998,Renewable Energy,C188573790,"Korea, Republic of",KR,1
+1998,Renewable Energy,C188573790,Sri Lanka,LK,1
+1998,Renewable Energy,C188573790,Libya,LY,1
+1998,Renewable Energy,C188573790,Morocco,MA,1
+1998,Renewable Energy,C188573790,Mongolia,MN,2
+1998,Renewable Energy,C188573790,Mexico,MX,2
+1998,Renewable Energy,C188573790,Malaysia,MY,1
+1998,Renewable Energy,C188573790,Niger,NE,1
+1998,Renewable Energy,C188573790,Netherlands,NL,13
+1998,Renewable Energy,C188573790,Norway,NO,4
+1998,Renewable Energy,C188573790,New Zealand,NZ,3
+1998,Renewable Energy,C188573790,Oman,OM,1
+1998,Renewable Energy,C188573790,Poland,PL,2
+1998,Renewable Energy,C188573790,Portugal,PT,3
+1998,Renewable Energy,C188573790,Romania,RO,3
+1998,Renewable Energy,C188573790,Serbia,RS,1
+1998,Renewable Energy,C188573790,Russian Federation,RU,1
+1998,Renewable Energy,C188573790,Saudi Arabia,SA,3
+1998,Renewable Energy,C188573790,Sudan,SD,1
+1998,Renewable Energy,C188573790,Sweden,SE,10
+1998,Renewable Energy,C188573790,Singapore,SG,1
+1998,Renewable Energy,C188573790,Slovakia,SK,1
+1998,Renewable Energy,C188573790,Tunisia,TN,2
+1998,Renewable Energy,C188573790,Turkey,TR,1
+1998,Renewable Energy,C188573790,Trinidad and Tobago,TT,1
+1998,Renewable Energy,C188573790,"Taiwan, Province of China",TW,4
+1998,Renewable Energy,C188573790,Ukraine,UA,1
+1998,Renewable Energy,C188573790,United States of America,US,129
+1998,Renewable Energy,C188573790,Yemen,YE,1
+1998,Renewable Energy,C188573790,South Africa,ZA,2
+1998,Renewable Energy,C188573790,Zambia,ZM,1
+1998,Robotics & Automation,C34413123,Austria,AT,1
+1998,Robotics & Automation,C34413123,Australia,AU,18
+1998,Robotics & Automation,C34413123,Belgium,BE,5
+1998,Robotics & Automation,C34413123,Burundi,BI,1
+1998,Robotics & Automation,C34413123,Brazil,BR,2
+1998,Robotics & Automation,C34413123,Canada,CA,12
+1998,Robotics & Automation,C34413123,Switzerland,CH,11
+1998,Robotics & Automation,C34413123,China,CN,6
+1998,Robotics & Automation,C34413123,Colombia,CO,1
+1998,Robotics & Automation,C34413123,Cyprus,CY,1
+1998,Robotics & Automation,C34413123,Czechia,CZ,1
+1998,Robotics & Automation,C34413123,Germany,DE,24
+1998,Robotics & Automation,C34413123,Denmark,DK,3
+1998,Robotics & Automation,C34413123,Algeria,DZ,1
+1998,Robotics & Automation,C34413123,Spain,ES,19
+1998,Robotics & Automation,C34413123,Finland,FI,1
+1998,Robotics & Automation,C34413123,Fiji,FJ,1
+1998,Robotics & Automation,C34413123,France,FR,25
+1998,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,26
+1998,Robotics & Automation,C34413123,Greece,GR,4
+1998,Robotics & Automation,C34413123,Hong Kong,HK,2
+1998,Robotics & Automation,C34413123,Hungary,HU,6
+1998,Robotics & Automation,C34413123,Ireland,IE,3
+1998,Robotics & Automation,C34413123,Israel,IL,8
+1998,Robotics & Automation,C34413123,India,IN,1
+1998,Robotics & Automation,C34413123,Italy,IT,22
+1998,Robotics & Automation,C34413123,Japan,JP,74
+1998,Robotics & Automation,C34413123,"Korea, Republic of",KR,2
+1998,Robotics & Automation,C34413123,Luxembourg,LU,1
+1998,Robotics & Automation,C34413123,Mexico,MX,3
+1998,Robotics & Automation,C34413123,Netherlands,NL,7
+1998,Robotics & Automation,C34413123,Norway,NO,2
+1998,Robotics & Automation,C34413123,Philippines,PH,1
+1998,Robotics & Automation,C34413123,Poland,PL,6
+1998,Robotics & Automation,C34413123,Portugal,PT,4
+1998,Robotics & Automation,C34413123,Serbia,RS,2
+1998,Robotics & Automation,C34413123,Sweden,SE,2
+1998,Robotics & Automation,C34413123,Slovenia,SI,5
+1998,Robotics & Automation,C34413123,Slovakia,SK,1
+1998,Robotics & Automation,C34413123,Thailand,TH,1
+1998,Robotics & Automation,C34413123,Turkey,TR,1
+1998,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,4
+1998,Robotics & Automation,C34413123,United States of America,US,177
+1998,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,1
+1998,Robotics & Automation,C34413123,Viet Nam,VN,1
+1998,Robotics & Automation,C34413123,South Africa,ZA,1
+1999,AI & Machine Learning,C119857082,United Arab Emirates,AE,5
+1999,AI & Machine Learning,C119857082,Albania,AL,3
+1999,AI & Machine Learning,C119857082,Armenia,AM,3
+1999,AI & Machine Learning,C119857082,Angola,AO,1
+1999,AI & Machine Learning,C119857082,Argentina,AR,30
+1999,AI & Machine Learning,C119857082,Austria,AT,94
+1999,AI & Machine Learning,C119857082,Australia,AU,559
+1999,AI & Machine Learning,C119857082,Azerbaijan,AZ,1
+1999,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,1
+1999,AI & Machine Learning,C119857082,Barbados,BB,1
+1999,AI & Machine Learning,C119857082,Bangladesh,BD,10
+1999,AI & Machine Learning,C119857082,Belgium,BE,190
+1999,AI & Machine Learning,C119857082,Bulgaria,BG,32
+1999,AI & Machine Learning,C119857082,Bahrain,BH,1
+1999,AI & Machine Learning,C119857082,Burundi,BI,1
+1999,AI & Machine Learning,C119857082,Benin,BJ,1
+1999,AI & Machine Learning,C119857082,Brunei Darussalam,BN,2
+1999,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,1
+1999,AI & Machine Learning,C119857082,Brazil,BR,178
+1999,AI & Machine Learning,C119857082,Belarus,BY,17
+1999,AI & Machine Learning,C119857082,Canada,CA,689
+1999,AI & Machine Learning,C119857082,Switzerland,CH,186
+1999,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+1999,AI & Machine Learning,C119857082,Chile,CL,24
+1999,AI & Machine Learning,C119857082,Cameroon,CM,6
+1999,AI & Machine Learning,C119857082,China,CN,672
+1999,AI & Machine Learning,C119857082,Colombia,CO,14
+1999,AI & Machine Learning,C119857082,Costa Rica,CR,4
+1999,AI & Machine Learning,C119857082,Cuba,CU,10
+1999,AI & Machine Learning,C119857082,Curaçao,CW,1
+1999,AI & Machine Learning,C119857082,Cyprus,CY,11
+1999,AI & Machine Learning,C119857082,Czechia,CZ,74
+1999,AI & Machine Learning,C119857082,Germany,DE,881
+1999,AI & Machine Learning,C119857082,Denmark,DK,89
+1999,AI & Machine Learning,C119857082,Algeria,DZ,2
+1999,AI & Machine Learning,C119857082,Ecuador,EC,2
+1999,AI & Machine Learning,C119857082,Estonia,EE,11
+1999,AI & Machine Learning,C119857082,Egypt,EG,48
+1999,AI & Machine Learning,C119857082,Eritrea,ER,2
+1999,AI & Machine Learning,C119857082,Spain,ES,400
+1999,AI & Machine Learning,C119857082,Finland,FI,101
+1999,AI & Machine Learning,C119857082,France,FR,702
+1999,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1847
+1999,AI & Machine Learning,C119857082,Grenada,GD,1
+1999,AI & Machine Learning,C119857082,Georgia,GE,3
+1999,AI & Machine Learning,C119857082,Ghana,GH,9
+1999,AI & Machine Learning,C119857082,Gambia,GM,1
+1999,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+1999,AI & Machine Learning,C119857082,Greece,GR,127
+1999,AI & Machine Learning,C119857082,Guatemala,GT,1
+1999,AI & Machine Learning,C119857082,Hong Kong,HK,199
+1999,AI & Machine Learning,C119857082,Honduras,HN,1
+1999,AI & Machine Learning,C119857082,Croatia,HR,13
+1999,AI & Machine Learning,C119857082,Hungary,HU,67
+1999,AI & Machine Learning,C119857082,Indonesia,ID,13
+1999,AI & Machine Learning,C119857082,Ireland,IE,45
+1999,AI & Machine Learning,C119857082,Israel,IL,177
+1999,AI & Machine Learning,C119857082,India,IN,235
+1999,AI & Machine Learning,C119857082,Iraq,IQ,3
+1999,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,36
+1999,AI & Machine Learning,C119857082,Iceland,IS,4
+1999,AI & Machine Learning,C119857082,Italy,IT,518
+1999,AI & Machine Learning,C119857082,Jamaica,JM,2
+1999,AI & Machine Learning,C119857082,Jordan,JO,11
+1999,AI & Machine Learning,C119857082,Japan,JP,973
+1999,AI & Machine Learning,C119857082,Kenya,KE,9
+1999,AI & Machine Learning,C119857082,Cambodia,KH,2
+1999,AI & Machine Learning,C119857082,"Korea, Republic of",KR,279
+1999,AI & Machine Learning,C119857082,Kuwait,KW,15
+1999,AI & Machine Learning,C119857082,Kazakhstan,KZ,2
+1999,AI & Machine Learning,C119857082,Lebanon,LB,4
+1999,AI & Machine Learning,C119857082,Sri Lanka,LK,7
+1999,AI & Machine Learning,C119857082,Lesotho,LS,1
+1999,AI & Machine Learning,C119857082,Lithuania,LT,10
+1999,AI & Machine Learning,C119857082,Luxembourg,LU,3
+1999,AI & Machine Learning,C119857082,Latvia,LV,13
+1999,AI & Machine Learning,C119857082,Morocco,MA,13
+1999,AI & Machine Learning,C119857082,Montenegro,ME,3
+1999,AI & Machine Learning,C119857082,Madagascar,MG,1
+1999,AI & Machine Learning,C119857082,North Macedonia,MK,1
+1999,AI & Machine Learning,C119857082,Myanmar,MM,3
+1999,AI & Machine Learning,C119857082,Mongolia,MN,1
+1999,AI & Machine Learning,C119857082,Macao,MO,3
+1999,AI & Machine Learning,C119857082,Malta,MT,4
+1999,AI & Machine Learning,C119857082,Malawi,MW,1
+1999,AI & Machine Learning,C119857082,Mexico,MX,77
+1999,AI & Machine Learning,C119857082,Malaysia,MY,19
+1999,AI & Machine Learning,C119857082,Mozambique,MZ,3
+1999,AI & Machine Learning,C119857082,Niger,NE,1
+1999,AI & Machine Learning,C119857082,Nigeria,NG,14
+1999,AI & Machine Learning,C119857082,Netherlands,NL,399
+1999,AI & Machine Learning,C119857082,Norway,NO,88
+1999,AI & Machine Learning,C119857082,Nepal,NP,2
+1999,AI & Machine Learning,C119857082,New Zealand,NZ,100
+1999,AI & Machine Learning,C119857082,Oman,OM,3
+1999,AI & Machine Learning,C119857082,Peru,PE,3
+1999,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+1999,AI & Machine Learning,C119857082,Philippines,PH,4
+1999,AI & Machine Learning,C119857082,Pakistan,PK,10
+1999,AI & Machine Learning,C119857082,Poland,PL,169
+1999,AI & Machine Learning,C119857082,Puerto Rico,PR,9
+1999,AI & Machine Learning,C119857082,"Palestine, State of",PS,1
+1999,AI & Machine Learning,C119857082,Portugal,PT,86
+1999,AI & Machine Learning,C119857082,Qatar,QA,6
+1999,AI & Machine Learning,C119857082,Réunion,RE,1
+1999,AI & Machine Learning,C119857082,Romania,RO,37
+1999,AI & Machine Learning,C119857082,Serbia,RS,16
+1999,AI & Machine Learning,C119857082,Russian Federation,RU,229
+1999,AI & Machine Learning,C119857082,Saudi Arabia,SA,35
+1999,AI & Machine Learning,C119857082,Sudan,SD,2
+1999,AI & Machine Learning,C119857082,Sweden,SE,229
+1999,AI & Machine Learning,C119857082,Singapore,SG,134
+1999,AI & Machine Learning,C119857082,Slovenia,SI,47
+1999,AI & Machine Learning,C119857082,Slovakia,SK,24
+1999,AI & Machine Learning,C119857082,Senegal,SN,1
+1999,AI & Machine Learning,C119857082,South Sudan,SS,3
+1999,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+1999,AI & Machine Learning,C119857082,Eswatini,SZ,1
+1999,AI & Machine Learning,C119857082,Thailand,TH,16
+1999,AI & Machine Learning,C119857082,Tajikistan,TJ,7
+1999,AI & Machine Learning,C119857082,Tunisia,TN,9
+1999,AI & Machine Learning,C119857082,Turkey,TR,68
+1999,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+1999,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,317
+1999,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,1
+1999,AI & Machine Learning,C119857082,Ukraine,UA,88
+1999,AI & Machine Learning,C119857082,Uganda,UG,1
+1999,AI & Machine Learning,C119857082,United States of America,US,6170
+1999,AI & Machine Learning,C119857082,Uruguay,UY,6
+1999,AI & Machine Learning,C119857082,Uzbekistan,UZ,2
+1999,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,15
+1999,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,7
+1999,AI & Machine Learning,C119857082,Viet Nam,VN,13
+1999,AI & Machine Learning,C119857082,Yemen,YE,1
+1999,AI & Machine Learning,C119857082,South Africa,ZA,70
+1999,AI & Machine Learning,C119857082,Zambia,ZM,1
+1999,AI & Machine Learning,C119857082,Zimbabwe,ZW,4
+1999,CRISPR & Genomics,C98108389,Austria,AT,1
+1999,CRISPR & Genomics,C98108389,Australia,AU,1
+1999,CRISPR & Genomics,C98108389,Canada,CA,2
+1999,CRISPR & Genomics,C98108389,Switzerland,CH,1
+1999,CRISPR & Genomics,C98108389,Germany,DE,4
+1999,CRISPR & Genomics,C98108389,France,FR,3
+1999,CRISPR & Genomics,C98108389,United Kingdom of Great Britain and Northern Ireland,GB,1
+1999,CRISPR & Genomics,C98108389,Japan,JP,1
+1999,CRISPR & Genomics,C98108389,Poland,PL,3
+1999,CRISPR & Genomics,C98108389,Russian Federation,RU,2
+1999,CRISPR & Genomics,C98108389,United States of America,US,15
+1999,Data Science & Big Data,C2522767166,United Arab Emirates,AE,1
+1999,Data Science & Big Data,C2522767166,Armenia,AM,1
+1999,Data Science & Big Data,C2522767166,Argentina,AR,5
+1999,Data Science & Big Data,C2522767166,Austria,AT,28
+1999,Data Science & Big Data,C2522767166,Australia,AU,177
+1999,Data Science & Big Data,C2522767166,Bosnia and Herzegovina,BA,2
+1999,Data Science & Big Data,C2522767166,Bangladesh,BD,3
+1999,Data Science & Big Data,C2522767166,Belgium,BE,40
+1999,Data Science & Big Data,C2522767166,Burkina Faso,BF,1
+1999,Data Science & Big Data,C2522767166,Bulgaria,BG,2
+1999,Data Science & Big Data,C2522767166,Brunei Darussalam,BN,1
+1999,Data Science & Big Data,C2522767166,Brazil,BR,29
+1999,Data Science & Big Data,C2522767166,Canada,CA,213
+1999,Data Science & Big Data,C2522767166,Switzerland,CH,62
+1999,Data Science & Big Data,C2522767166,Chile,CL,3
+1999,Data Science & Big Data,C2522767166,China,CN,51
+1999,Data Science & Big Data,C2522767166,Colombia,CO,4
+1999,Data Science & Big Data,C2522767166,Czechia,CZ,18
+1999,Data Science & Big Data,C2522767166,Germany,DE,229
+1999,Data Science & Big Data,C2522767166,Denmark,DK,31
+1999,Data Science & Big Data,C2522767166,Algeria,DZ,3
+1999,Data Science & Big Data,C2522767166,Ecuador,EC,1
+1999,Data Science & Big Data,C2522767166,Egypt,EG,4
+1999,Data Science & Big Data,C2522767166,Spain,ES,44
+1999,Data Science & Big Data,C2522767166,Finland,FI,31
+1999,Data Science & Big Data,C2522767166,Fiji,FJ,1
+1999,Data Science & Big Data,C2522767166,France,FR,143
+1999,Data Science & Big Data,C2522767166,United Kingdom of Great Britain and Northern Ireland,GB,877
+1999,Data Science & Big Data,C2522767166,Gibraltar,GI,2
+1999,Data Science & Big Data,C2522767166,Greece,GR,27
+1999,Data Science & Big Data,C2522767166,Guam,GU,1
+1999,Data Science & Big Data,C2522767166,Hong Kong,HK,14
+1999,Data Science & Big Data,C2522767166,Honduras,HN,1
+1999,Data Science & Big Data,C2522767166,Croatia,HR,4
+1999,Data Science & Big Data,C2522767166,Hungary,HU,13
+1999,Data Science & Big Data,C2522767166,Indonesia,ID,2
+1999,Data Science & Big Data,C2522767166,Ireland,IE,19
+1999,Data Science & Big Data,C2522767166,Israel,IL,22
+1999,Data Science & Big Data,C2522767166,India,IN,33
+1999,Data Science & Big Data,C2522767166,"Iran, Islamic Republic of",IR,2
+1999,Data Science & Big Data,C2522767166,Iceland,IS,1
+1999,Data Science & Big Data,C2522767166,Italy,IT,86
+1999,Data Science & Big Data,C2522767166,Japan,JP,82
+1999,Data Science & Big Data,C2522767166,Kenya,KE,1
+1999,Data Science & Big Data,C2522767166,Cambodia,KH,1
+1999,Data Science & Big Data,C2522767166,"Korea, Republic of",KR,7
+1999,Data Science & Big Data,C2522767166,Kuwait,KW,3
+1999,Data Science & Big Data,C2522767166,Lebanon,LB,1
+1999,Data Science & Big Data,C2522767166,Sri Lanka,LK,1
+1999,Data Science & Big Data,C2522767166,Lithuania,LT,1
+1999,Data Science & Big Data,C2522767166,Luxembourg,LU,1
+1999,Data Science & Big Data,C2522767166,Latvia,LV,2
+1999,Data Science & Big Data,C2522767166,Morocco,MA,2
+1999,Data Science & Big Data,C2522767166,North Macedonia,MK,1
+1999,Data Science & Big Data,C2522767166,Mongolia,MN,1
+1999,Data Science & Big Data,C2522767166,Malta,MT,2
+1999,Data Science & Big Data,C2522767166,Mauritius,MU,2
+1999,Data Science & Big Data,C2522767166,Mexico,MX,10
+1999,Data Science & Big Data,C2522767166,Malaysia,MY,2
+1999,Data Science & Big Data,C2522767166,Mozambique,MZ,2
+1999,Data Science & Big Data,C2522767166,Niger,NE,1
+1999,Data Science & Big Data,C2522767166,Nigeria,NG,1
+1999,Data Science & Big Data,C2522767166,Nicaragua,NI,1
+1999,Data Science & Big Data,C2522767166,Netherlands,NL,120
+1999,Data Science & Big Data,C2522767166,Norway,NO,26
+1999,Data Science & Big Data,C2522767166,New Zealand,NZ,29
+1999,Data Science & Big Data,C2522767166,Philippines,PH,5
+1999,Data Science & Big Data,C2522767166,Pakistan,PK,3
+1999,Data Science & Big Data,C2522767166,Poland,PL,18
+1999,Data Science & Big Data,C2522767166,Portugal,PT,14
+1999,Data Science & Big Data,C2522767166,Qatar,QA,3
+1999,Data Science & Big Data,C2522767166,Réunion,RE,2
+1999,Data Science & Big Data,C2522767166,Serbia,RS,1
+1999,Data Science & Big Data,C2522767166,Russian Federation,RU,20
+1999,Data Science & Big Data,C2522767166,Rwanda,RW,2
+1999,Data Science & Big Data,C2522767166,Saudi Arabia,SA,4
+1999,Data Science & Big Data,C2522767166,Sweden,SE,54
+1999,Data Science & Big Data,C2522767166,Singapore,SG,14
+1999,Data Science & Big Data,C2522767166,Slovenia,SI,15
+1999,Data Science & Big Data,C2522767166,Slovakia,SK,11
+1999,Data Science & Big Data,C2522767166,Somalia,SO,1
+1999,Data Science & Big Data,C2522767166,South Sudan,SS,1
+1999,Data Science & Big Data,C2522767166,Thailand,TH,4
+1999,Data Science & Big Data,C2522767166,Turkey,TR,4
+1999,Data Science & Big Data,C2522767166,"Taiwan, Province of China",TW,12
+1999,Data Science & Big Data,C2522767166,Ukraine,UA,2
+1999,Data Science & Big Data,C2522767166,Uganda,UG,4
+1999,Data Science & Big Data,C2522767166,United States of America,US,1990
+1999,Data Science & Big Data,C2522767166,"Venezuela, Bolivarian Republic of",VE,1
+1999,Data Science & Big Data,C2522767166,"Virgin Islands, British",VG,1
+1999,Data Science & Big Data,C2522767166,South Africa,ZA,20
+1999,Data Science & Big Data,C2522767166,Zambia,ZM,1
+1999,Data Science & Big Data,C2522767166,Zimbabwe,ZW,1
+1999,Infectious Diseases,C524204448,United Arab Emirates,AE,1
+1999,Infectious Diseases,C524204448,Argentina,AR,2
+1999,Infectious Diseases,C524204448,Austria,AT,6
+1999,Infectious Diseases,C524204448,Australia,AU,27
+1999,Infectious Diseases,C524204448,Bosnia and Herzegovina,BA,1
+1999,Infectious Diseases,C524204448,Bangladesh,BD,2
+1999,Infectious Diseases,C524204448,Belgium,BE,6
+1999,Infectious Diseases,C524204448,Bulgaria,BG,1
+1999,Infectious Diseases,C524204448,Brazil,BR,12
+1999,Infectious Diseases,C524204448,Canada,CA,48
+1999,Infectious Diseases,C524204448,"Congo, Democratic Republic of the",CD,2
+1999,Infectious Diseases,C524204448,Congo,CG,1
+1999,Infectious Diseases,C524204448,Switzerland,CH,13
+1999,Infectious Diseases,C524204448,Chile,CL,1
+1999,Infectious Diseases,C524204448,Cameroon,CM,1
+1999,Infectious Diseases,C524204448,China,CN,22
+1999,Infectious Diseases,C524204448,Colombia,CO,1
+1999,Infectious Diseases,C524204448,Cuba,CU,1
+1999,Infectious Diseases,C524204448,Czechia,CZ,3
+1999,Infectious Diseases,C524204448,Germany,DE,38
+1999,Infectious Diseases,C524204448,Denmark,DK,3
+1999,Infectious Diseases,C524204448,Spain,ES,21
+1999,Infectious Diseases,C524204448,Ethiopia,ET,1
+1999,Infectious Diseases,C524204448,Finland,FI,7
+1999,Infectious Diseases,C524204448,France,FR,55
+1999,Infectious Diseases,C524204448,United Kingdom of Great Britain and Northern Ireland,GB,152
+1999,Infectious Diseases,C524204448,Greece,GR,3
+1999,Infectious Diseases,C524204448,Guinea-Bissau,GW,1
+1999,Infectious Diseases,C524204448,Hong Kong,HK,11
+1999,Infectious Diseases,C524204448,Hungary,HU,2
+1999,Infectious Diseases,C524204448,Ireland,IE,6
+1999,Infectious Diseases,C524204448,Israel,IL,7
+1999,Infectious Diseases,C524204448,India,IN,14
+1999,Infectious Diseases,C524204448,"Iran, Islamic Republic of",IR,1
+1999,Infectious Diseases,C524204448,Italy,IT,19
+1999,Infectious Diseases,C524204448,Japan,JP,57
+1999,Infectious Diseases,C524204448,Kenya,KE,4
+1999,Infectious Diseases,C524204448,Cambodia,KH,1
+1999,Infectious Diseases,C524204448,"Korea, Republic of",KR,5
+1999,Infectious Diseases,C524204448,Lebanon,LB,2
+1999,Infectious Diseases,C524204448,Lithuania,LT,2
+1999,Infectious Diseases,C524204448,Morocco,MA,1
+1999,Infectious Diseases,C524204448,Madagascar,MG,1
+1999,Infectious Diseases,C524204448,Mongolia,MN,6
+1999,Infectious Diseases,C524204448,Mauritania,MR,1
+1999,Infectious Diseases,C524204448,Mexico,MX,4
+1999,Infectious Diseases,C524204448,Malaysia,MY,1
+1999,Infectious Diseases,C524204448,Nigeria,NG,1
+1999,Infectious Diseases,C524204448,Netherlands,NL,36
+1999,Infectious Diseases,C524204448,Norway,NO,9
+1999,Infectious Diseases,C524204448,Nepal,NP,2
+1999,Infectious Diseases,C524204448,New Zealand,NZ,5
+1999,Infectious Diseases,C524204448,Oman,OM,2
+1999,Infectious Diseases,C524204448,Pakistan,PK,4
+1999,Infectious Diseases,C524204448,Poland,PL,1
+1999,Infectious Diseases,C524204448,Portugal,PT,2
+1999,Infectious Diseases,C524204448,Qatar,QA,1
+1999,Infectious Diseases,C524204448,Romania,RO,1
+1999,Infectious Diseases,C524204448,Serbia,RS,1
+1999,Infectious Diseases,C524204448,Russian Federation,RU,8
+1999,Infectious Diseases,C524204448,Saudi Arabia,SA,4
+1999,Infectious Diseases,C524204448,Sweden,SE,15
+1999,Infectious Diseases,C524204448,Singapore,SG,4
+1999,Infectious Diseases,C524204448,Slovakia,SK,1
+1999,Infectious Diseases,C524204448,Senegal,SN,3
+1999,Infectious Diseases,C524204448,South Sudan,SS,1
+1999,Infectious Diseases,C524204448,Thailand,TH,3
+1999,Infectious Diseases,C524204448,Tonga,TO,1
+1999,Infectious Diseases,C524204448,Turkey,TR,3
+1999,Infectious Diseases,C524204448,"Taiwan, Province of China",TW,5
+1999,Infectious Diseases,C524204448,"Tanzania, United Republic of",TZ,3
+1999,Infectious Diseases,C524204448,Ukraine,UA,2
+1999,Infectious Diseases,C524204448,Uganda,UG,3
+1999,Infectious Diseases,C524204448,United States of America,US,486
+1999,Infectious Diseases,C524204448,Viet Nam,VN,2
+1999,Infectious Diseases,C524204448,South Africa,ZA,7
+1999,Infectious Diseases,C524204448,Zambia,ZM,2
+1999,Infectious Diseases,C524204448,Zimbabwe,ZW,1
+1999,Quantum Computing,C58053490,Armenia,AM,1
+1999,Quantum Computing,C58053490,Austria,AT,4
+1999,Quantum Computing,C58053490,Australia,AU,5
+1999,Quantum Computing,C58053490,Bulgaria,BG,1
+1999,Quantum Computing,C58053490,Brazil,BR,2
+1999,Quantum Computing,C58053490,Canada,CA,5
+1999,Quantum Computing,C58053490,Switzerland,CH,12
+1999,Quantum Computing,C58053490,China,CN,8
+1999,Quantum Computing,C58053490,Czechia,CZ,4
+1999,Quantum Computing,C58053490,Germany,DE,20
+1999,Quantum Computing,C58053490,Denmark,DK,1
+1999,Quantum Computing,C58053490,Spain,ES,2
+1999,Quantum Computing,C58053490,France,FR,7
+1999,Quantum Computing,C58053490,United Kingdom of Great Britain and Northern Ireland,GB,32
+1999,Quantum Computing,C58053490,Hong Kong,HK,2
+1999,Quantum Computing,C58053490,Hungary,HU,2
+1999,Quantum Computing,C58053490,Israel,IL,1
+1999,Quantum Computing,C58053490,India,IN,4
+1999,Quantum Computing,C58053490,Italy,IT,12
+1999,Quantum Computing,C58053490,Japan,JP,13
+1999,Quantum Computing,C58053490,"Korea, Republic of",KR,2
+1999,Quantum Computing,C58053490,Mexico,MX,2
+1999,Quantum Computing,C58053490,Netherlands,NL,4
+1999,Quantum Computing,C58053490,New Zealand,NZ,2
+1999,Quantum Computing,C58053490,Poland,PL,4
+1999,Quantum Computing,C58053490,Portugal,PT,1
+1999,Quantum Computing,C58053490,Serbia,RS,1
+1999,Quantum Computing,C58053490,Russian Federation,RU,14
+1999,Quantum Computing,C58053490,Slovakia,SK,3
+1999,Quantum Computing,C58053490,Turkey,TR,1
+1999,Quantum Computing,C58053490,United States of America,US,123
+1999,Quantum Computing,C58053490,"Venezuela, Bolivarian Republic of",VE,1
+1999,Renewable Energy,C188573790,Austria,AT,7
+1999,Renewable Energy,C188573790,Australia,AU,10
+1999,Renewable Energy,C188573790,Bangladesh,BD,1
+1999,Renewable Energy,C188573790,Belgium,BE,4
+1999,Renewable Energy,C188573790,Bulgaria,BG,1
+1999,Renewable Energy,C188573790,Bahrain,BH,2
+1999,Renewable Energy,C188573790,Brazil,BR,4
+1999,Renewable Energy,C188573790,Canada,CA,11
+1999,Renewable Energy,C188573790,Switzerland,CH,9
+1999,Renewable Energy,C188573790,China,CN,6
+1999,Renewable Energy,C188573790,Czechia,CZ,2
+1999,Renewable Energy,C188573790,Germany,DE,22
+1999,Renewable Energy,C188573790,Denmark,DK,13
+1999,Renewable Energy,C188573790,Egypt,EG,3
+1999,Renewable Energy,C188573790,Spain,ES,9
+1999,Renewable Energy,C188573790,Finland,FI,2
+1999,Renewable Energy,C188573790,France,FR,12
+1999,Renewable Energy,C188573790,United Kingdom of Great Britain and Northern Ireland,GB,36
+1999,Renewable Energy,C188573790,Greece,GR,9
+1999,Renewable Energy,C188573790,Hong Kong,HK,2
+1999,Renewable Energy,C188573790,Croatia,HR,1
+1999,Renewable Energy,C188573790,Hungary,HU,2
+1999,Renewable Energy,C188573790,Ireland,IE,2
+1999,Renewable Energy,C188573790,Israel,IL,5
+1999,Renewable Energy,C188573790,India,IN,19
+1999,Renewable Energy,C188573790,"Iran, Islamic Republic of",IR,2
+1999,Renewable Energy,C188573790,Italy,IT,15
+1999,Renewable Energy,C188573790,Jamaica,JM,1
+1999,Renewable Energy,C188573790,Jordan,JO,1
+1999,Renewable Energy,C188573790,Japan,JP,15
+1999,Renewable Energy,C188573790,Kenya,KE,1
+1999,Renewable Energy,C188573790,"Korea, Republic of",KR,2
+1999,Renewable Energy,C188573790,Lebanon,LB,2
+1999,Renewable Energy,C188573790,Sri Lanka,LK,1
+1999,Renewable Energy,C188573790,Lithuania,LT,3
+1999,Renewable Energy,C188573790,Latvia,LV,2
+1999,Renewable Energy,C188573790,Mexico,MX,3
+1999,Renewable Energy,C188573790,Malaysia,MY,5
+1999,Renewable Energy,C188573790,Netherlands,NL,14
+1999,Renewable Energy,C188573790,Norway,NO,2
+1999,Renewable Energy,C188573790,Nepal,NP,1
+1999,Renewable Energy,C188573790,New Zealand,NZ,1
+1999,Renewable Energy,C188573790,Oman,OM,1
+1999,Renewable Energy,C188573790,Poland,PL,2
+1999,Renewable Energy,C188573790,Portugal,PT,7
+1999,Renewable Energy,C188573790,Romania,RO,1
+1999,Renewable Energy,C188573790,Russian Federation,RU,5
+1999,Renewable Energy,C188573790,Saudi Arabia,SA,5
+1999,Renewable Energy,C188573790,Sweden,SE,12
+1999,Renewable Energy,C188573790,Singapore,SG,1
+1999,Renewable Energy,C188573790,Thailand,TH,1
+1999,Renewable Energy,C188573790,Tunisia,TN,3
+1999,Renewable Energy,C188573790,Turkey,TR,6
+1999,Renewable Energy,C188573790,Trinidad and Tobago,TT,1
+1999,Renewable Energy,C188573790,"Taiwan, Province of China",TW,2
+1999,Renewable Energy,C188573790,"Tanzania, United Republic of",TZ,1
+1999,Renewable Energy,C188573790,United States of America,US,131
+1999,Renewable Energy,C188573790,South Africa,ZA,2
+1999,Robotics & Automation,C34413123,Austria,AT,6
+1999,Robotics & Automation,C34413123,Australia,AU,9
+1999,Robotics & Automation,C34413123,Belgium,BE,8
+1999,Robotics & Automation,C34413123,Bulgaria,BG,1
+1999,Robotics & Automation,C34413123,Brazil,BR,4
+1999,Robotics & Automation,C34413123,Canada,CA,17
+1999,Robotics & Automation,C34413123,Switzerland,CH,4
+1999,Robotics & Automation,C34413123,Chile,CL,1
+1999,Robotics & Automation,C34413123,China,CN,3
+1999,Robotics & Automation,C34413123,Cuba,CU,2
+1999,Robotics & Automation,C34413123,Cyprus,CY,1
+1999,Robotics & Automation,C34413123,Czechia,CZ,1
+1999,Robotics & Automation,C34413123,Germany,DE,36
+1999,Robotics & Automation,C34413123,Denmark,DK,1
+1999,Robotics & Automation,C34413123,Algeria,DZ,1
+1999,Robotics & Automation,C34413123,Spain,ES,14
+1999,Robotics & Automation,C34413123,France,FR,17
+1999,Robotics & Automation,C34413123,United Kingdom of Great Britain and Northern Ireland,GB,26
+1999,Robotics & Automation,C34413123,Greece,GR,2
+1999,Robotics & Automation,C34413123,Hungary,HU,1
+1999,Robotics & Automation,C34413123,Ireland,IE,3
+1999,Robotics & Automation,C34413123,Israel,IL,3
+1999,Robotics & Automation,C34413123,India,IN,5
+1999,Robotics & Automation,C34413123,Italy,IT,25
+1999,Robotics & Automation,C34413123,Japan,JP,58
+1999,Robotics & Automation,C34413123,"Korea, Republic of",KR,3
+1999,Robotics & Automation,C34413123,Mexico,MX,2
+1999,Robotics & Automation,C34413123,Malaysia,MY,1
+1999,Robotics & Automation,C34413123,Netherlands,NL,1
+1999,Robotics & Automation,C34413123,Peru,PE,1
+1999,Robotics & Automation,C34413123,Poland,PL,14
+1999,Robotics & Automation,C34413123,Puerto Rico,PR,1
+1999,Robotics & Automation,C34413123,Portugal,PT,2
+1999,Robotics & Automation,C34413123,Réunion,RE,1
+1999,Robotics & Automation,C34413123,Romania,RO,1
+1999,Robotics & Automation,C34413123,Serbia,RS,2
+1999,Robotics & Automation,C34413123,Russian Federation,RU,4
+1999,Robotics & Automation,C34413123,Saudi Arabia,SA,1
+1999,Robotics & Automation,C34413123,Sweden,SE,8
+1999,Robotics & Automation,C34413123,Singapore,SG,3
+1999,Robotics & Automation,C34413123,Slovenia,SI,2
+1999,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,5
+1999,Robotics & Automation,C34413123,United States of America,US,182
+2000,AI & Machine Learning,C119857082,United Arab Emirates,AE,11
+2000,AI & Machine Learning,C119857082,Armenia,AM,4
+2000,AI & Machine Learning,C119857082,Angola,AO,2
+2000,AI & Machine Learning,C119857082,Argentina,AR,55
+2000,AI & Machine Learning,C119857082,Austria,AT,112
+2000,AI & Machine Learning,C119857082,Australia,AU,602
+2000,AI & Machine Learning,C119857082,Azerbaijan,AZ,4
+2000,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,2
+2000,AI & Machine Learning,C119857082,Barbados,BB,1
+2000,AI & Machine Learning,C119857082,Bangladesh,BD,14
+2000,AI & Machine Learning,C119857082,Belgium,BE,225
+2000,AI & Machine Learning,C119857082,Bulgaria,BG,28
+2000,AI & Machine Learning,C119857082,Bahrain,BH,4
+2000,AI & Machine Learning,C119857082,Burundi,BI,1
+2000,AI & Machine Learning,C119857082,Brunei Darussalam,BN,2
+2000,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,3
+2000,AI & Machine Learning,C119857082,Brazil,BR,205
+2000,AI & Machine Learning,C119857082,Belarus,BY,18
+2000,AI & Machine Learning,C119857082,Canada,CA,734
+2000,AI & Machine Learning,C119857082,Congo,CG,2
+2000,AI & Machine Learning,C119857082,Switzerland,CH,213
+2000,AI & Machine Learning,C119857082,Chile,CL,32
+2000,AI & Machine Learning,C119857082,Cameroon,CM,3
+2000,AI & Machine Learning,C119857082,China,CN,965
+2000,AI & Machine Learning,C119857082,Colombia,CO,13
+2000,AI & Machine Learning,C119857082,Costa Rica,CR,6
+2000,AI & Machine Learning,C119857082,Cuba,CU,9
+2000,AI & Machine Learning,C119857082,Cyprus,CY,15
+2000,AI & Machine Learning,C119857082,Czechia,CZ,95
+2000,AI & Machine Learning,C119857082,Germany,DE,973
+2000,AI & Machine Learning,C119857082,Denmark,DK,123
+2000,AI & Machine Learning,C119857082,Algeria,DZ,4
+2000,AI & Machine Learning,C119857082,Estonia,EE,3
+2000,AI & Machine Learning,C119857082,Egypt,EG,44
+2000,AI & Machine Learning,C119857082,Spain,ES,408
+2000,AI & Machine Learning,C119857082,Ethiopia,ET,15
+2000,AI & Machine Learning,C119857082,Finland,FI,108
+2000,AI & Machine Learning,C119857082,Fiji,FJ,1
+2000,AI & Machine Learning,C119857082,France,FR,782
+2000,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,2054
+2000,AI & Machine Learning,C119857082,Georgia,GE,1
+2000,AI & Machine Learning,C119857082,French Guiana,GF,2
+2000,AI & Machine Learning,C119857082,Ghana,GH,13
+2000,AI & Machine Learning,C119857082,Gambia,GM,1
+2000,AI & Machine Learning,C119857082,Guinea,GN,2
+2000,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+2000,AI & Machine Learning,C119857082,Greece,GR,134
+2000,AI & Machine Learning,C119857082,Guatemala,GT,2
+2000,AI & Machine Learning,C119857082,Hong Kong,HK,243
+2000,AI & Machine Learning,C119857082,Croatia,HR,20
+2000,AI & Machine Learning,C119857082,Hungary,HU,86
+2000,AI & Machine Learning,C119857082,Indonesia,ID,18
+2000,AI & Machine Learning,C119857082,Ireland,IE,63
+2000,AI & Machine Learning,C119857082,Israel,IL,195
+2000,AI & Machine Learning,C119857082,India,IN,241
+2000,AI & Machine Learning,C119857082,Iraq,IQ,1
+2000,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,37
+2000,AI & Machine Learning,C119857082,Iceland,IS,10
+2000,AI & Machine Learning,C119857082,Italy,IT,584
+2000,AI & Machine Learning,C119857082,Jamaica,JM,3
+2000,AI & Machine Learning,C119857082,Jordan,JO,8
+2000,AI & Machine Learning,C119857082,Japan,JP,995
+2000,AI & Machine Learning,C119857082,Kenya,KE,14
+2000,AI & Machine Learning,C119857082,Cambodia,KH,3
+2000,AI & Machine Learning,C119857082,"Korea, Republic of",KR,297
+2000,AI & Machine Learning,C119857082,Kuwait,KW,15
+2000,AI & Machine Learning,C119857082,Kazakhstan,KZ,4
+2000,AI & Machine Learning,C119857082,Lebanon,LB,5
+2000,AI & Machine Learning,C119857082,Sri Lanka,LK,2
+2000,AI & Machine Learning,C119857082,Liberia,LR,2
+2000,AI & Machine Learning,C119857082,Lithuania,LT,20
+2000,AI & Machine Learning,C119857082,Luxembourg,LU,1
+2000,AI & Machine Learning,C119857082,Latvia,LV,17
+2000,AI & Machine Learning,C119857082,Libya,LY,3
+2000,AI & Machine Learning,C119857082,Morocco,MA,17
+2000,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+2000,AI & Machine Learning,C119857082,Montenegro,ME,2
+2000,AI & Machine Learning,C119857082,North Macedonia,MK,10
+2000,AI & Machine Learning,C119857082,Myanmar,MM,4
+2000,AI & Machine Learning,C119857082,Mongolia,MN,2
+2000,AI & Machine Learning,C119857082,Malta,MT,5
+2000,AI & Machine Learning,C119857082,Mauritius,MU,2
+2000,AI & Machine Learning,C119857082,Malawi,MW,1
+2000,AI & Machine Learning,C119857082,Mexico,MX,109
+2000,AI & Machine Learning,C119857082,Malaysia,MY,27
+2000,AI & Machine Learning,C119857082,Mozambique,MZ,5
+2000,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2000,AI & Machine Learning,C119857082,Nigeria,NG,20
+2000,AI & Machine Learning,C119857082,Nicaragua,NI,2
+2000,AI & Machine Learning,C119857082,Netherlands,NL,446
+2000,AI & Machine Learning,C119857082,Norway,NO,118
+2000,AI & Machine Learning,C119857082,Nepal,NP,8
+2000,AI & Machine Learning,C119857082,New Zealand,NZ,95
+2000,AI & Machine Learning,C119857082,Oman,OM,4
+2000,AI & Machine Learning,C119857082,Peru,PE,4
+2000,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2000,AI & Machine Learning,C119857082,Philippines,PH,13
+2000,AI & Machine Learning,C119857082,Pakistan,PK,18
+2000,AI & Machine Learning,C119857082,Poland,PL,161
+2000,AI & Machine Learning,C119857082,Puerto Rico,PR,8
+2000,AI & Machine Learning,C119857082,Portugal,PT,97
+2000,AI & Machine Learning,C119857082,Qatar,QA,3
+2000,AI & Machine Learning,C119857082,Réunion,RE,2
+2000,AI & Machine Learning,C119857082,Romania,RO,47
+2000,AI & Machine Learning,C119857082,Serbia,RS,21
+2000,AI & Machine Learning,C119857082,Russian Federation,RU,313
+2000,AI & Machine Learning,C119857082,Rwanda,RW,2
+2000,AI & Machine Learning,C119857082,Saudi Arabia,SA,38
+2000,AI & Machine Learning,C119857082,Sudan,SD,4
+2000,AI & Machine Learning,C119857082,Sweden,SE,246
+2000,AI & Machine Learning,C119857082,Singapore,SG,182
+2000,AI & Machine Learning,C119857082,Slovenia,SI,53
+2000,AI & Machine Learning,C119857082,Slovakia,SK,42
+2000,AI & Machine Learning,C119857082,Senegal,SN,2
+2000,AI & Machine Learning,C119857082,Somalia,SO,1
+2000,AI & Machine Learning,C119857082,South Sudan,SS,2
+2000,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,1
+2000,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+2000,AI & Machine Learning,C119857082,Togo,TG,2
+2000,AI & Machine Learning,C119857082,Thailand,TH,22
+2000,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+2000,AI & Machine Learning,C119857082,Tunisia,TN,15
+2000,AI & Machine Learning,C119857082,Turkey,TR,82
+2000,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,2
+2000,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,344
+2000,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,4
+2000,AI & Machine Learning,C119857082,Ukraine,UA,80
+2000,AI & Machine Learning,C119857082,Uganda,UG,21
+2000,AI & Machine Learning,C119857082,United States of America,US,6811
+2000,AI & Machine Learning,C119857082,Uruguay,UY,3
+2000,AI & Machine Learning,C119857082,Uzbekistan,UZ,5
+2000,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,19
+2000,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,3
+2000,AI & Machine Learning,C119857082,Viet Nam,VN,24
+2000,AI & Machine Learning,C119857082,Yemen,YE,1
+2000,AI & Machine Learning,C119857082,South Africa,ZA,90
+2000,AI & Machine Learning,C119857082,Zambia,ZM,1
+2000,AI & Machine Learning,C119857082,Zimbabwe,ZW,5
 2000,CRISPR & Genomics,C98108389,Belgium,BE,1
 2000,CRISPR & Genomics,C98108389,Switzerland,CH,1
 2000,CRISPR & Genomics,C98108389,Germany,DE,4
@@ -541,171 +8031,154 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2000,Robotics & Automation,C34413123,Tunisia,TN,1
 2000,Robotics & Automation,C34413123,Turkey,TR,1
 2000,Robotics & Automation,C34413123,United States of America,US,138
-2001,AI & Machine Learning,C154945302,United Arab Emirates,AE,50
-2001,AI & Machine Learning,C154945302,Albania,AL,2
-2001,AI & Machine Learning,C154945302,Armenia,AM,22
-2001,AI & Machine Learning,C154945302,Argentina,AR,270
-2001,AI & Machine Learning,C154945302,Austria,AT,689
-2001,AI & Machine Learning,C154945302,Australia,AU,2801
-2001,AI & Machine Learning,C154945302,Azerbaijan,AZ,10
-2001,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,10
-2001,AI & Machine Learning,C154945302,Barbados,BB,4
-2001,AI & Machine Learning,C154945302,Bangladesh,BD,38
-2001,AI & Machine Learning,C154945302,Belgium,BE,1196
-2001,AI & Machine Learning,C154945302,Burkina Faso,BF,6
-2001,AI & Machine Learning,C154945302,Bulgaria,BG,184
-2001,AI & Machine Learning,C154945302,Bahrain,BH,8
-2001,AI & Machine Learning,C154945302,Burundi,BI,9
-2001,AI & Machine Learning,C154945302,Benin,BJ,11
-2001,AI & Machine Learning,C154945302,Brunei Darussalam,BN,12
-2001,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,8
-2001,AI & Machine Learning,C154945302,Brazil,BR,1127
-2001,AI & Machine Learning,C154945302,Bahamas,BS,1
-2001,AI & Machine Learning,C154945302,Botswana,BW,3
-2001,AI & Machine Learning,C154945302,Belarus,BY,83
-2001,AI & Machine Learning,C154945302,Canada,CA,3894
-2001,AI & Machine Learning,C154945302,Switzerland,CH,1299
-2001,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,7
-2001,AI & Machine Learning,C154945302,Chile,CL,148
-2001,AI & Machine Learning,C154945302,Cameroon,CM,15
-2001,AI & Machine Learning,C154945302,China,CN,6242
-2001,AI & Machine Learning,C154945302,Colombia,CO,90
-2001,AI & Machine Learning,C154945302,Costa Rica,CR,16
-2001,AI & Machine Learning,C154945302,Cuba,CU,44
-2001,AI & Machine Learning,C154945302,Curaçao,CW,1
-2001,AI & Machine Learning,C154945302,Cyprus,CY,49
-2001,AI & Machine Learning,C154945302,Czechia,CZ,519
-2001,AI & Machine Learning,C154945302,Germany,DE,6282
-2001,AI & Machine Learning,C154945302,Denmark,DK,624
-2001,AI & Machine Learning,C154945302,Dominican Republic,DO,2
-2001,AI & Machine Learning,C154945302,Algeria,DZ,69
-2001,AI & Machine Learning,C154945302,Ecuador,EC,5
-2001,AI & Machine Learning,C154945302,Estonia,EE,42
-2001,AI & Machine Learning,C154945302,Egypt,EG,235
-2001,AI & Machine Learning,C154945302,Spain,ES,2328
-2001,AI & Machine Learning,C154945302,Ethiopia,ET,21
-2001,AI & Machine Learning,C154945302,Finland,FI,708
-2001,AI & Machine Learning,C154945302,Fiji,FJ,2
-2001,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,2
-2001,AI & Machine Learning,C154945302,Faroe Islands,FO,1
-2001,AI & Machine Learning,C154945302,France,FR,4590
-2001,AI & Machine Learning,C154945302,Gabon,GA,1
-2001,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,8539
-2001,AI & Machine Learning,C154945302,Georgia,GE,8
-2001,AI & Machine Learning,C154945302,French Guiana,GF,2
-2001,AI & Machine Learning,C154945302,Ghana,GH,21
-2001,AI & Machine Learning,C154945302,Gibraltar,GI,1
-2001,AI & Machine Learning,C154945302,Guadeloupe,GP,10
-2001,AI & Machine Learning,C154945302,Greece,GR,756
-2001,AI & Machine Learning,C154945302,Guatemala,GT,1
-2001,AI & Machine Learning,C154945302,Guam,GU,2
-2001,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2001,AI & Machine Learning,C154945302,Hong Kong,HK,1154
-2001,AI & Machine Learning,C154945302,Honduras,HN,1
-2001,AI & Machine Learning,C154945302,Croatia,HR,72
-2001,AI & Machine Learning,C154945302,Hungary,HU,374
-2001,AI & Machine Learning,C154945302,Indonesia,ID,74
-2001,AI & Machine Learning,C154945302,Ireland,IE,298
-2001,AI & Machine Learning,C154945302,Israel,IL,1073
-2001,AI & Machine Learning,C154945302,India,IN,1170
-2001,AI & Machine Learning,C154945302,Iraq,IQ,3
-2001,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,182
-2001,AI & Machine Learning,C154945302,Iceland,IS,20
-2001,AI & Machine Learning,C154945302,Italy,IT,3323
-2001,AI & Machine Learning,C154945302,Jamaica,JM,7
-2001,AI & Machine Learning,C154945302,Jordan,JO,44
-2001,AI & Machine Learning,C154945302,Japan,JP,7598
-2001,AI & Machine Learning,C154945302,Kenya,KE,24
-2001,AI & Machine Learning,C154945302,Kyrgyzstan,KG,3
-2001,AI & Machine Learning,C154945302,Cambodia,KH,5
-2001,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,1
-2001,AI & Machine Learning,C154945302,"Korea, Republic of",KR,1885
-2001,AI & Machine Learning,C154945302,Kuwait,KW,60
-2001,AI & Machine Learning,C154945302,Kazakhstan,KZ,20
-2001,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,1
-2001,AI & Machine Learning,C154945302,Lebanon,LB,29
-2001,AI & Machine Learning,C154945302,Liechtenstein,LI,1
-2001,AI & Machine Learning,C154945302,Sri Lanka,LK,12
-2001,AI & Machine Learning,C154945302,Lesotho,LS,1
-2001,AI & Machine Learning,C154945302,Lithuania,LT,81
-2001,AI & Machine Learning,C154945302,Luxembourg,LU,34
-2001,AI & Machine Learning,C154945302,Latvia,LV,52
-2001,AI & Machine Learning,C154945302,Libya,LY,3
-2001,AI & Machine Learning,C154945302,Morocco,MA,76
-2001,AI & Machine Learning,C154945302,Monaco,MC,3
-2001,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,19
-2001,AI & Machine Learning,C154945302,Montenegro,ME,11
-2001,AI & Machine Learning,C154945302,Madagascar,MG,1
-2001,AI & Machine Learning,C154945302,North Macedonia,MK,39
-2001,AI & Machine Learning,C154945302,Mali,ML,3
-2001,AI & Machine Learning,C154945302,Myanmar,MM,37
-2001,AI & Machine Learning,C154945302,Mongolia,MN,5
-2001,AI & Machine Learning,C154945302,Macao,MO,11
-2001,AI & Machine Learning,C154945302,Martinique,MQ,1
-2001,AI & Machine Learning,C154945302,Malta,MT,26
-2001,AI & Machine Learning,C154945302,Mauritius,MU,7
-2001,AI & Machine Learning,C154945302,Maldives,MV,1
-2001,AI & Machine Learning,C154945302,Malawi,MW,14
-2001,AI & Machine Learning,C154945302,Mexico,MX,566
-2001,AI & Machine Learning,C154945302,Malaysia,MY,114
-2001,AI & Machine Learning,C154945302,Mozambique,MZ,11
-2001,AI & Machine Learning,C154945302,Namibia,NA,1
-2001,AI & Machine Learning,C154945302,Niger,NE,12
-2001,AI & Machine Learning,C154945302,Nigeria,NG,46
-2001,AI & Machine Learning,C154945302,Nicaragua,NI,2
-2001,AI & Machine Learning,C154945302,Netherlands,NL,2356
-2001,AI & Machine Learning,C154945302,Norway,NO,462
-2001,AI & Machine Learning,C154945302,Nepal,NP,11
-2001,AI & Machine Learning,C154945302,New Zealand,NZ,457
-2001,AI & Machine Learning,C154945302,Oman,OM,22
-2001,AI & Machine Learning,C154945302,Panama,PA,9
-2001,AI & Machine Learning,C154945302,Peru,PE,25
-2001,AI & Machine Learning,C154945302,French Polynesia,PF,1
-2001,AI & Machine Learning,C154945302,Philippines,PH,45
-2001,AI & Machine Learning,C154945302,Pakistan,PK,69
-2001,AI & Machine Learning,C154945302,Poland,PL,1034
-2001,AI & Machine Learning,C154945302,Puerto Rico,PR,34
-2001,AI & Machine Learning,C154945302,"Palestine, State of",PS,8
-2001,AI & Machine Learning,C154945302,Portugal,PT,517
-2001,AI & Machine Learning,C154945302,Paraguay,PY,2
-2001,AI & Machine Learning,C154945302,Qatar,QA,18
-2001,AI & Machine Learning,C154945302,Réunion,RE,2
-2001,AI & Machine Learning,C154945302,Romania,RO,246
-2001,AI & Machine Learning,C154945302,Serbia,RS,99
-2001,AI & Machine Learning,C154945302,Russian Federation,RU,1496
-2001,AI & Machine Learning,C154945302,Rwanda,RW,4
-2001,AI & Machine Learning,C154945302,Saudi Arabia,SA,128
-2001,AI & Machine Learning,C154945302,Sudan,SD,2
-2001,AI & Machine Learning,C154945302,Sweden,SE,1305
-2001,AI & Machine Learning,C154945302,Singapore,SG,914
-2001,AI & Machine Learning,C154945302,Slovenia,SI,241
-2001,AI & Machine Learning,C154945302,Slovakia,SK,179
-2001,AI & Machine Learning,C154945302,Sierra Leone,SL,1
-2001,AI & Machine Learning,C154945302,Senegal,SN,9
-2001,AI & Machine Learning,C154945302,South Sudan,SS,30
-2001,AI & Machine Learning,C154945302,El Salvador,SV,1
-2001,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,2
-2001,AI & Machine Learning,C154945302,Chad,TD,2
-2001,AI & Machine Learning,C154945302,Togo,TG,1
-2001,AI & Machine Learning,C154945302,Thailand,TH,115
-2001,AI & Machine Learning,C154945302,Tajikistan,TJ,19
-2001,AI & Machine Learning,C154945302,Tunisia,TN,65
-2001,AI & Machine Learning,C154945302,Turkey,TR,400
-2001,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,1
-2001,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,2130
-2001,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,10
-2001,AI & Machine Learning,C154945302,Ukraine,UA,342
-2001,AI & Machine Learning,C154945302,Uganda,UG,25
-2001,AI & Machine Learning,C154945302,United States of America,US,32390
-2001,AI & Machine Learning,C154945302,Uruguay,UY,33
-2001,AI & Machine Learning,C154945302,Uzbekistan,UZ,22
-2001,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,112
-2001,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,22
-2001,AI & Machine Learning,C154945302,Viet Nam,VN,105
-2001,AI & Machine Learning,C154945302,Yemen,YE,5
-2001,AI & Machine Learning,C154945302,South Africa,ZA,314
-2001,AI & Machine Learning,C154945302,Zambia,ZM,2
-2001,AI & Machine Learning,C154945302,Zimbabwe,ZW,15
+2001,AI & Machine Learning,C119857082,United Arab Emirates,AE,6
+2001,AI & Machine Learning,C119857082,Albania,AL,1
+2001,AI & Machine Learning,C119857082,Armenia,AM,5
+2001,AI & Machine Learning,C119857082,Angola,AO,1
+2001,AI & Machine Learning,C119857082,Argentina,AR,53
+2001,AI & Machine Learning,C119857082,Austria,AT,125
+2001,AI & Machine Learning,C119857082,Australia,AU,696
+2001,AI & Machine Learning,C119857082,Azerbaijan,AZ,2
+2001,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,3
+2001,AI & Machine Learning,C119857082,Bangladesh,BD,9
+2001,AI & Machine Learning,C119857082,Belgium,BE,255
+2001,AI & Machine Learning,C119857082,Burkina Faso,BF,2
+2001,AI & Machine Learning,C119857082,Bulgaria,BG,38
+2001,AI & Machine Learning,C119857082,Bahrain,BH,4
+2001,AI & Machine Learning,C119857082,Burundi,BI,3
+2001,AI & Machine Learning,C119857082,Benin,BJ,8
+2001,AI & Machine Learning,C119857082,Brunei Darussalam,BN,3
+2001,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,3
+2001,AI & Machine Learning,C119857082,Brazil,BR,210
+2001,AI & Machine Learning,C119857082,Bahamas,BS,1
+2001,AI & Machine Learning,C119857082,Botswana,BW,2
+2001,AI & Machine Learning,C119857082,Belarus,BY,17
+2001,AI & Machine Learning,C119857082,Belize,BZ,1
+2001,AI & Machine Learning,C119857082,Canada,CA,890
+2001,AI & Machine Learning,C119857082,Switzerland,CH,223
+2001,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,3
+2001,AI & Machine Learning,C119857082,Chile,CL,33
+2001,AI & Machine Learning,C119857082,Cameroon,CM,4
+2001,AI & Machine Learning,C119857082,China,CN,1371
+2001,AI & Machine Learning,C119857082,Colombia,CO,20
+2001,AI & Machine Learning,C119857082,Costa Rica,CR,4
+2001,AI & Machine Learning,C119857082,Cuba,CU,10
+2001,AI & Machine Learning,C119857082,Cyprus,CY,11
+2001,AI & Machine Learning,C119857082,Czechia,CZ,83
+2001,AI & Machine Learning,C119857082,Germany,DE,1055
+2001,AI & Machine Learning,C119857082,Denmark,DK,119
+2001,AI & Machine Learning,C119857082,Dominican Republic,DO,1
+2001,AI & Machine Learning,C119857082,Algeria,DZ,17
+2001,AI & Machine Learning,C119857082,Ecuador,EC,3
+2001,AI & Machine Learning,C119857082,Estonia,EE,12
+2001,AI & Machine Learning,C119857082,Egypt,EG,76
+2001,AI & Machine Learning,C119857082,Eritrea,ER,1
+2001,AI & Machine Learning,C119857082,Spain,ES,506
+2001,AI & Machine Learning,C119857082,Ethiopia,ET,10
+2001,AI & Machine Learning,C119857082,Finland,FI,134
+2001,AI & Machine Learning,C119857082,Fiji,FJ,2
+2001,AI & Machine Learning,C119857082,France,FR,801
+2001,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,1981
+2001,AI & Machine Learning,C119857082,Georgia,GE,4
+2001,AI & Machine Learning,C119857082,Ghana,GH,17
+2001,AI & Machine Learning,C119857082,Gibraltar,GI,1
+2001,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+2001,AI & Machine Learning,C119857082,Greece,GR,164
+2001,AI & Machine Learning,C119857082,Guatemala,GT,2
+2001,AI & Machine Learning,C119857082,Hong Kong,HK,293
+2001,AI & Machine Learning,C119857082,Honduras,HN,1
+2001,AI & Machine Learning,C119857082,Croatia,HR,18
+2001,AI & Machine Learning,C119857082,Hungary,HU,81
+2001,AI & Machine Learning,C119857082,Indonesia,ID,23
+2001,AI & Machine Learning,C119857082,Ireland,IE,71
+2001,AI & Machine Learning,C119857082,Israel,IL,191
+2001,AI & Machine Learning,C119857082,India,IN,248
+2001,AI & Machine Learning,C119857082,Iraq,IQ,2
+2001,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,48
+2001,AI & Machine Learning,C119857082,Iceland,IS,8
+2001,AI & Machine Learning,C119857082,Italy,IT,583
+2001,AI & Machine Learning,C119857082,Jamaica,JM,2
+2001,AI & Machine Learning,C119857082,Jordan,JO,5
+2001,AI & Machine Learning,C119857082,Japan,JP,1121
+2001,AI & Machine Learning,C119857082,Kenya,KE,22
+2001,AI & Machine Learning,C119857082,Kyrgyzstan,KG,1
+2001,AI & Machine Learning,C119857082,Cambodia,KH,2
+2001,AI & Machine Learning,C119857082,"Korea, Republic of",KR,319
+2001,AI & Machine Learning,C119857082,Kuwait,KW,16
+2001,AI & Machine Learning,C119857082,Kazakhstan,KZ,5
+2001,AI & Machine Learning,C119857082,Lebanon,LB,12
+2001,AI & Machine Learning,C119857082,Sri Lanka,LK,5
+2001,AI & Machine Learning,C119857082,Lithuania,LT,30
+2001,AI & Machine Learning,C119857082,Luxembourg,LU,4
+2001,AI & Machine Learning,C119857082,Latvia,LV,16
+2001,AI & Machine Learning,C119857082,Morocco,MA,11
+2001,AI & Machine Learning,C119857082,Monaco,MC,1
+2001,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+2001,AI & Machine Learning,C119857082,Montenegro,ME,2
+2001,AI & Machine Learning,C119857082,North Macedonia,MK,10
+2001,AI & Machine Learning,C119857082,Mali,ML,3
+2001,AI & Machine Learning,C119857082,Myanmar,MM,8
+2001,AI & Machine Learning,C119857082,Mongolia,MN,2
+2001,AI & Machine Learning,C119857082,Malta,MT,1
+2001,AI & Machine Learning,C119857082,Malawi,MW,7
+2001,AI & Machine Learning,C119857082,Mexico,MX,115
+2001,AI & Machine Learning,C119857082,Malaysia,MY,27
+2001,AI & Machine Learning,C119857082,Mozambique,MZ,1
+2001,AI & Machine Learning,C119857082,Namibia,NA,1
+2001,AI & Machine Learning,C119857082,Niger,NE,4
+2001,AI & Machine Learning,C119857082,Nigeria,NG,22
+2001,AI & Machine Learning,C119857082,Nicaragua,NI,2
+2001,AI & Machine Learning,C119857082,Netherlands,NL,503
+2001,AI & Machine Learning,C119857082,Norway,NO,145
+2001,AI & Machine Learning,C119857082,Nepal,NP,5
+2001,AI & Machine Learning,C119857082,New Zealand,NZ,115
+2001,AI & Machine Learning,C119857082,Oman,OM,7
+2001,AI & Machine Learning,C119857082,Panama,PA,3
+2001,AI & Machine Learning,C119857082,Peru,PE,6
+2001,AI & Machine Learning,C119857082,Papua New Guinea,PG,3
+2001,AI & Machine Learning,C119857082,Philippines,PH,8
+2001,AI & Machine Learning,C119857082,Pakistan,PK,16
+2001,AI & Machine Learning,C119857082,Poland,PL,174
+2001,AI & Machine Learning,C119857082,Puerto Rico,PR,8
+2001,AI & Machine Learning,C119857082,"Palestine, State of",PS,2
+2001,AI & Machine Learning,C119857082,Portugal,PT,122
+2001,AI & Machine Learning,C119857082,Paraguay,PY,1
+2001,AI & Machine Learning,C119857082,Qatar,QA,7
+2001,AI & Machine Learning,C119857082,Romania,RO,49
+2001,AI & Machine Learning,C119857082,Serbia,RS,18
+2001,AI & Machine Learning,C119857082,Russian Federation,RU,329
+2001,AI & Machine Learning,C119857082,Rwanda,RW,8
+2001,AI & Machine Learning,C119857082,Saudi Arabia,SA,29
+2001,AI & Machine Learning,C119857082,Sudan,SD,1
+2001,AI & Machine Learning,C119857082,Sweden,SE,241
+2001,AI & Machine Learning,C119857082,Singapore,SG,213
+2001,AI & Machine Learning,C119857082,Slovenia,SI,62
+2001,AI & Machine Learning,C119857082,Slovakia,SK,35
+2001,AI & Machine Learning,C119857082,Senegal,SN,14
+2001,AI & Machine Learning,C119857082,South Sudan,SS,5
+2001,AI & Machine Learning,C119857082,El Salvador,SV,1
+2001,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,3
+2001,AI & Machine Learning,C119857082,Thailand,TH,33
+2001,AI & Machine Learning,C119857082,Tajikistan,TJ,1
+2001,AI & Machine Learning,C119857082,Turkmenistan,TM,1
+2001,AI & Machine Learning,C119857082,Tunisia,TN,7
+2001,AI & Machine Learning,C119857082,Turkey,TR,80
+2001,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,1
+2001,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,402
+2001,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,2
+2001,AI & Machine Learning,C119857082,Ukraine,UA,79
+2001,AI & Machine Learning,C119857082,Uganda,UG,13
+2001,AI & Machine Learning,C119857082,United States of America,US,7270
+2001,AI & Machine Learning,C119857082,Uruguay,UY,5
+2001,AI & Machine Learning,C119857082,Uzbekistan,UZ,6
+2001,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,28
+2001,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,6
+2001,AI & Machine Learning,C119857082,Viet Nam,VN,29
+2001,AI & Machine Learning,C119857082,Samoa,WS,1
+2001,AI & Machine Learning,C119857082,Yemen,YE,1
+2001,AI & Machine Learning,C119857082,South Africa,ZA,88
+2001,AI & Machine Learning,C119857082,Zambia,ZM,1
+2001,AI & Machine Learning,C119857082,Zimbabwe,ZW,4
 2001,CRISPR & Genomics,C98108389,Austria,AT,1
 2001,CRISPR & Genomics,C98108389,Australia,AU,1
 2001,CRISPR & Genomics,C98108389,Brazil,BR,2
@@ -1084,184 +8557,151 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2001,Robotics & Automation,C34413123,United States of America,US,132
 2001,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,1
 2001,Robotics & Automation,C34413123,Viet Nam,VN,1
-2002,AI & Machine Learning,C154945302,United Arab Emirates,AE,102
-2002,AI & Machine Learning,C154945302,Afghanistan,AF,1
-2002,AI & Machine Learning,C154945302,Albania,AL,3
-2002,AI & Machine Learning,C154945302,Armenia,AM,29
-2002,AI & Machine Learning,C154945302,Angola,AO,2
-2002,AI & Machine Learning,C154945302,Argentina,AR,463
-2002,AI & Machine Learning,C154945302,Austria,AT,1292
-2002,AI & Machine Learning,C154945302,Australia,AU,6823
-2002,AI & Machine Learning,C154945302,Azerbaijan,AZ,17
-2002,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,19
-2002,AI & Machine Learning,C154945302,Barbados,BB,6
-2002,AI & Machine Learning,C154945302,Bangladesh,BD,76
-2002,AI & Machine Learning,C154945302,Belgium,BE,2396
-2002,AI & Machine Learning,C154945302,Burkina Faso,BF,5
-2002,AI & Machine Learning,C154945302,Bulgaria,BG,246
-2002,AI & Machine Learning,C154945302,Bahrain,BH,29
-2002,AI & Machine Learning,C154945302,Burundi,BI,8
-2002,AI & Machine Learning,C154945302,Benin,BJ,8
-2002,AI & Machine Learning,C154945302,Bermuda,BM,9
-2002,AI & Machine Learning,C154945302,Brunei Darussalam,BN,28
-2002,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,13
-2002,AI & Machine Learning,C154945302,Brazil,BR,3146
-2002,AI & Machine Learning,C154945302,Bhutan,BT,1
-2002,AI & Machine Learning,C154945302,Botswana,BW,8
-2002,AI & Machine Learning,C154945302,Belarus,BY,120
-2002,AI & Machine Learning,C154945302,Canada,CA,11141
-2002,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,3
-2002,AI & Machine Learning,C154945302,Congo,CG,1
-2002,AI & Machine Learning,C154945302,Switzerland,CH,2502
-2002,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,6
-2002,AI & Machine Learning,C154945302,Chile,CL,382
-2002,AI & Machine Learning,C154945302,Cameroon,CM,31
-2002,AI & Machine Learning,C154945302,China,CN,14411
-2002,AI & Machine Learning,C154945302,Colombia,CO,132
-2002,AI & Machine Learning,C154945302,Costa Rica,CR,14
-2002,AI & Machine Learning,C154945302,Cuba,CU,76
-2002,AI & Machine Learning,C154945302,Cyprus,CY,117
-2002,AI & Machine Learning,C154945302,Czechia,CZ,739
-2002,AI & Machine Learning,C154945302,Germany,DE,11699
-2002,AI & Machine Learning,C154945302,Denmark,DK,1051
-2002,AI & Machine Learning,C154945302,Dominica,DM,1
-2002,AI & Machine Learning,C154945302,Dominican Republic,DO,5
-2002,AI & Machine Learning,C154945302,Algeria,DZ,193
-2002,AI & Machine Learning,C154945302,Ecuador,EC,13
-2002,AI & Machine Learning,C154945302,Estonia,EE,54
-2002,AI & Machine Learning,C154945302,Egypt,EG,729
-2002,AI & Machine Learning,C154945302,Eritrea,ER,1
-2002,AI & Machine Learning,C154945302,Spain,ES,4811
-2002,AI & Machine Learning,C154945302,Ethiopia,ET,28
-2002,AI & Machine Learning,C154945302,Finland,FI,1661
-2002,AI & Machine Learning,C154945302,Fiji,FJ,4
-2002,AI & Machine Learning,C154945302,France,FR,11307
-2002,AI & Machine Learning,C154945302,Gabon,GA,1
-2002,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,14648
-2002,AI & Machine Learning,C154945302,Grenada,GD,5
-2002,AI & Machine Learning,C154945302,Georgia,GE,26
-2002,AI & Machine Learning,C154945302,French Guiana,GF,5
-2002,AI & Machine Learning,C154945302,Ghana,GH,27
-2002,AI & Machine Learning,C154945302,Greenland,GL,1
-2002,AI & Machine Learning,C154945302,Guadeloupe,GP,14
-2002,AI & Machine Learning,C154945302,Equatorial Guinea,GQ,4
-2002,AI & Machine Learning,C154945302,Greece,GR,1643
-2002,AI & Machine Learning,C154945302,Guatemala,GT,6
-2002,AI & Machine Learning,C154945302,Hong Kong,HK,3363
-2002,AI & Machine Learning,C154945302,Honduras,HN,4
-2002,AI & Machine Learning,C154945302,Croatia,HR,244
-2002,AI & Machine Learning,C154945302,Hungary,HU,932
-2002,AI & Machine Learning,C154945302,Indonesia,ID,121
-2002,AI & Machine Learning,C154945302,Ireland,IE,585
-2002,AI & Machine Learning,C154945302,Israel,IL,2207
-2002,AI & Machine Learning,C154945302,India,IN,2617
-2002,AI & Machine Learning,C154945302,Iraq,IQ,22
-2002,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,594
-2002,AI & Machine Learning,C154945302,Iceland,IS,51
-2002,AI & Machine Learning,C154945302,Italy,IT,8616
-2002,AI & Machine Learning,C154945302,Jamaica,JM,14
-2002,AI & Machine Learning,C154945302,Jordan,JO,82
-2002,AI & Machine Learning,C154945302,Japan,JP,21941
-2002,AI & Machine Learning,C154945302,Kenya,KE,37
-2002,AI & Machine Learning,C154945302,Kyrgyzstan,KG,2
-2002,AI & Machine Learning,C154945302,Cambodia,KH,19
-2002,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,2
-2002,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,1
-2002,AI & Machine Learning,C154945302,"Korea, Republic of",KR,5715
-2002,AI & Machine Learning,C154945302,Kuwait,KW,105
-2002,AI & Machine Learning,C154945302,Kazakhstan,KZ,15
-2002,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,1
-2002,AI & Machine Learning,C154945302,Lebanon,LB,70
-2002,AI & Machine Learning,C154945302,Saint Lucia,LC,1
-2002,AI & Machine Learning,C154945302,Liechtenstein,LI,3
-2002,AI & Machine Learning,C154945302,Sri Lanka,LK,28
-2002,AI & Machine Learning,C154945302,Liberia,LR,5
-2002,AI & Machine Learning,C154945302,Lesotho,LS,4
-2002,AI & Machine Learning,C154945302,Lithuania,LT,132
-2002,AI & Machine Learning,C154945302,Luxembourg,LU,36
-2002,AI & Machine Learning,C154945302,Latvia,LV,73
-2002,AI & Machine Learning,C154945302,Libya,LY,3
-2002,AI & Machine Learning,C154945302,Morocco,MA,140
-2002,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,15
-2002,AI & Machine Learning,C154945302,Montenegro,ME,30
-2002,AI & Machine Learning,C154945302,Madagascar,MG,4
-2002,AI & Machine Learning,C154945302,North Macedonia,MK,68
-2002,AI & Machine Learning,C154945302,Mali,ML,5
-2002,AI & Machine Learning,C154945302,Myanmar,MM,32
-2002,AI & Machine Learning,C154945302,Mongolia,MN,8
-2002,AI & Machine Learning,C154945302,Macao,MO,41
-2002,AI & Machine Learning,C154945302,Martinique,MQ,1
-2002,AI & Machine Learning,C154945302,Malta,MT,27
-2002,AI & Machine Learning,C154945302,Mauritius,MU,12
-2002,AI & Machine Learning,C154945302,Malawi,MW,5
-2002,AI & Machine Learning,C154945302,Mexico,MX,1275
-2002,AI & Machine Learning,C154945302,Malaysia,MY,415
-2002,AI & Machine Learning,C154945302,Mozambique,MZ,17
-2002,AI & Machine Learning,C154945302,Namibia,NA,3
-2002,AI & Machine Learning,C154945302,New Caledonia,NC,3
-2002,AI & Machine Learning,C154945302,Niger,NE,9
-2002,AI & Machine Learning,C154945302,Nigeria,NG,56
-2002,AI & Machine Learning,C154945302,Nicaragua,NI,5
-2002,AI & Machine Learning,C154945302,Netherlands,NL,4061
-2002,AI & Machine Learning,C154945302,Norway,NO,837
-2002,AI & Machine Learning,C154945302,Nepal,NP,15
-2002,AI & Machine Learning,C154945302,New Zealand,NZ,814
-2002,AI & Machine Learning,C154945302,Oman,OM,51
-2002,AI & Machine Learning,C154945302,Panama,PA,7
-2002,AI & Machine Learning,C154945302,Peru,PE,35
-2002,AI & Machine Learning,C154945302,Philippines,PH,58
-2002,AI & Machine Learning,C154945302,Pakistan,PK,105
-2002,AI & Machine Learning,C154945302,Poland,PL,1986
-2002,AI & Machine Learning,C154945302,Puerto Rico,PR,107
-2002,AI & Machine Learning,C154945302,"Palestine, State of",PS,9
-2002,AI & Machine Learning,C154945302,Portugal,PT,1343
-2002,AI & Machine Learning,C154945302,Paraguay,PY,4
-2002,AI & Machine Learning,C154945302,Qatar,QA,30
-2002,AI & Machine Learning,C154945302,Réunion,RE,15
-2002,AI & Machine Learning,C154945302,Romania,RO,587
-2002,AI & Machine Learning,C154945302,Serbia,RS,400
-2002,AI & Machine Learning,C154945302,Russian Federation,RU,2427
-2002,AI & Machine Learning,C154945302,Rwanda,RW,4
-2002,AI & Machine Learning,C154945302,Saudi Arabia,SA,339
-2002,AI & Machine Learning,C154945302,Solomon Islands,SB,1
-2002,AI & Machine Learning,C154945302,Seychelles,SC,1
-2002,AI & Machine Learning,C154945302,Sudan,SD,6
-2002,AI & Machine Learning,C154945302,Sweden,SE,2647
-2002,AI & Machine Learning,C154945302,Singapore,SG,2629
-2002,AI & Machine Learning,C154945302,Slovenia,SI,560
-2002,AI & Machine Learning,C154945302,Slovakia,SK,278
-2002,AI & Machine Learning,C154945302,Sierra Leone,SL,2
-2002,AI & Machine Learning,C154945302,Senegal,SN,10
-2002,AI & Machine Learning,C154945302,Somalia,SO,1
-2002,AI & Machine Learning,C154945302,South Sudan,SS,31
-2002,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,1
-2002,AI & Machine Learning,C154945302,El Salvador,SV,1
-2002,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,23
-2002,AI & Machine Learning,C154945302,Eswatini,SZ,1
-2002,AI & Machine Learning,C154945302,Chad,TD,1
-2002,AI & Machine Learning,C154945302,Togo,TG,3
-2002,AI & Machine Learning,C154945302,Thailand,TH,412
-2002,AI & Machine Learning,C154945302,Tajikistan,TJ,13
-2002,AI & Machine Learning,C154945302,Tunisia,TN,165
-2002,AI & Machine Learning,C154945302,Tonga,TO,1
-2002,AI & Machine Learning,C154945302,Turkey,TR,1160
-2002,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,7
-2002,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5422
-2002,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,20
-2002,AI & Machine Learning,C154945302,Ukraine,UA,551
-2002,AI & Machine Learning,C154945302,Uganda,UG,16
-2002,AI & Machine Learning,C154945302,United States of America,US,80259
-2002,AI & Machine Learning,C154945302,Uruguay,UY,37
-2002,AI & Machine Learning,C154945302,Uzbekistan,UZ,18
-2002,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,293
-2002,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,27
-2002,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,1
-2002,AI & Machine Learning,C154945302,Viet Nam,VN,129
-2002,AI & Machine Learning,C154945302,Vanuatu,VU,1
-2002,AI & Machine Learning,C154945302,Yemen,YE,6
-2002,AI & Machine Learning,C154945302,South Africa,ZA,761
-2002,AI & Machine Learning,C154945302,Zambia,ZM,6
-2002,AI & Machine Learning,C154945302,Zimbabwe,ZW,16
+2002,AI & Machine Learning,C119857082,United Arab Emirates,AE,23
+2002,AI & Machine Learning,C119857082,Armenia,AM,8
+2002,AI & Machine Learning,C119857082,Angola,AO,2
+2002,AI & Machine Learning,C119857082,Argentina,AR,99
+2002,AI & Machine Learning,C119857082,Austria,AT,194
+2002,AI & Machine Learning,C119857082,Australia,AU,1474
+2002,AI & Machine Learning,C119857082,Azerbaijan,AZ,4
+2002,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,9
+2002,AI & Machine Learning,C119857082,Bangladesh,BD,15
+2002,AI & Machine Learning,C119857082,Belgium,BE,394
+2002,AI & Machine Learning,C119857082,Bulgaria,BG,45
+2002,AI & Machine Learning,C119857082,Bahrain,BH,6
+2002,AI & Machine Learning,C119857082,Burundi,BI,1
+2002,AI & Machine Learning,C119857082,Bermuda,BM,2
+2002,AI & Machine Learning,C119857082,Brunei Darussalam,BN,13
+2002,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,4
+2002,AI & Machine Learning,C119857082,Brazil,BR,624
+2002,AI & Machine Learning,C119857082,Bhutan,BT,1
+2002,AI & Machine Learning,C119857082,Botswana,BW,2
+2002,AI & Machine Learning,C119857082,Belarus,BY,29
+2002,AI & Machine Learning,C119857082,Canada,CA,1905
+2002,AI & Machine Learning,C119857082,Congo,CG,2
+2002,AI & Machine Learning,C119857082,Switzerland,CH,412
+2002,AI & Machine Learning,C119857082,Chile,CL,82
+2002,AI & Machine Learning,C119857082,Cameroon,CM,8
+2002,AI & Machine Learning,C119857082,China,CN,2992
+2002,AI & Machine Learning,C119857082,Colombia,CO,35
+2002,AI & Machine Learning,C119857082,Costa Rica,CR,5
+2002,AI & Machine Learning,C119857082,Cuba,CU,13
+2002,AI & Machine Learning,C119857082,Cyprus,CY,32
+2002,AI & Machine Learning,C119857082,Czechia,CZ,115
+2002,AI & Machine Learning,C119857082,Germany,DE,1793
+2002,AI & Machine Learning,C119857082,Denmark,DK,224
+2002,AI & Machine Learning,C119857082,Algeria,DZ,28
+2002,AI & Machine Learning,C119857082,Ecuador,EC,8
+2002,AI & Machine Learning,C119857082,Estonia,EE,12
+2002,AI & Machine Learning,C119857082,Egypt,EG,144
+2002,AI & Machine Learning,C119857082,Spain,ES,972
+2002,AI & Machine Learning,C119857082,Ethiopia,ET,12
+2002,AI & Machine Learning,C119857082,Finland,FI,299
+2002,AI & Machine Learning,C119857082,Fiji,FJ,2
+2002,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2002,AI & Machine Learning,C119857082,France,FR,1687
+2002,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,3080
+2002,AI & Machine Learning,C119857082,Georgia,GE,3
+2002,AI & Machine Learning,C119857082,French Guiana,GF,2
+2002,AI & Machine Learning,C119857082,Ghana,GH,13
+2002,AI & Machine Learning,C119857082,Guadeloupe,GP,5
+2002,AI & Machine Learning,C119857082,Equatorial Guinea,GQ,2
+2002,AI & Machine Learning,C119857082,Greece,GR,341
+2002,AI & Machine Learning,C119857082,Guam,GU,2
+2002,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2002,AI & Machine Learning,C119857082,Hong Kong,HK,609
+2002,AI & Machine Learning,C119857082,Honduras,HN,3
+2002,AI & Machine Learning,C119857082,Croatia,HR,40
+2002,AI & Machine Learning,C119857082,Hungary,HU,164
+2002,AI & Machine Learning,C119857082,Indonesia,ID,31
+2002,AI & Machine Learning,C119857082,Ireland,IE,106
+2002,AI & Machine Learning,C119857082,Israel,IL,403
+2002,AI & Machine Learning,C119857082,India,IN,525
+2002,AI & Machine Learning,C119857082,Iraq,IQ,4
+2002,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,98
+2002,AI & Machine Learning,C119857082,Iceland,IS,9
+2002,AI & Machine Learning,C119857082,Italy,IT,1402
+2002,AI & Machine Learning,C119857082,Jamaica,JM,4
+2002,AI & Machine Learning,C119857082,Jordan,JO,19
+2002,AI & Machine Learning,C119857082,Japan,JP,3166
+2002,AI & Machine Learning,C119857082,Kenya,KE,16
+2002,AI & Machine Learning,C119857082,Cambodia,KH,3
+2002,AI & Machine Learning,C119857082,"Korea, Republic of",KR,904
+2002,AI & Machine Learning,C119857082,Kuwait,KW,29
+2002,AI & Machine Learning,C119857082,Kazakhstan,KZ,7
+2002,AI & Machine Learning,C119857082,Lebanon,LB,19
+2002,AI & Machine Learning,C119857082,Liechtenstein,LI,2
+2002,AI & Machine Learning,C119857082,Sri Lanka,LK,6
+2002,AI & Machine Learning,C119857082,Liberia,LR,1
+2002,AI & Machine Learning,C119857082,Lithuania,LT,35
+2002,AI & Machine Learning,C119857082,Luxembourg,LU,3
+2002,AI & Machine Learning,C119857082,Latvia,LV,17
+2002,AI & Machine Learning,C119857082,Morocco,MA,29
+2002,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,3
+2002,AI & Machine Learning,C119857082,Montenegro,ME,2
+2002,AI & Machine Learning,C119857082,North Macedonia,MK,14
+2002,AI & Machine Learning,C119857082,Mali,ML,2
+2002,AI & Machine Learning,C119857082,Myanmar,MM,7
+2002,AI & Machine Learning,C119857082,Mongolia,MN,1
+2002,AI & Machine Learning,C119857082,Macao,MO,7
+2002,AI & Machine Learning,C119857082,Malta,MT,5
+2002,AI & Machine Learning,C119857082,Mauritius,MU,3
+2002,AI & Machine Learning,C119857082,Malawi,MW,5
+2002,AI & Machine Learning,C119857082,Mexico,MX,260
+2002,AI & Machine Learning,C119857082,Malaysia,MY,81
+2002,AI & Machine Learning,C119857082,Mozambique,MZ,2
+2002,AI & Machine Learning,C119857082,Nigeria,NG,21
+2002,AI & Machine Learning,C119857082,Nicaragua,NI,3
+2002,AI & Machine Learning,C119857082,Netherlands,NL,737
+2002,AI & Machine Learning,C119857082,Norway,NO,184
+2002,AI & Machine Learning,C119857082,Nepal,NP,6
+2002,AI & Machine Learning,C119857082,New Zealand,NZ,207
+2002,AI & Machine Learning,C119857082,Oman,OM,8
+2002,AI & Machine Learning,C119857082,Panama,PA,1
+2002,AI & Machine Learning,C119857082,Peru,PE,3
+2002,AI & Machine Learning,C119857082,Philippines,PH,13
+2002,AI & Machine Learning,C119857082,Pakistan,PK,22
+2002,AI & Machine Learning,C119857082,Poland,PL,360
+2002,AI & Machine Learning,C119857082,Puerto Rico,PR,24
+2002,AI & Machine Learning,C119857082,"Palestine, State of",PS,5
+2002,AI & Machine Learning,C119857082,Portugal,PT,241
+2002,AI & Machine Learning,C119857082,Paraguay,PY,2
+2002,AI & Machine Learning,C119857082,Qatar,QA,3
+2002,AI & Machine Learning,C119857082,Réunion,RE,4
+2002,AI & Machine Learning,C119857082,Romania,RO,105
+2002,AI & Machine Learning,C119857082,Serbia,RS,69
+2002,AI & Machine Learning,C119857082,Russian Federation,RU,477
+2002,AI & Machine Learning,C119857082,Rwanda,RW,8
+2002,AI & Machine Learning,C119857082,Saudi Arabia,SA,87
+2002,AI & Machine Learning,C119857082,Sudan,SD,3
+2002,AI & Machine Learning,C119857082,Sweden,SE,430
+2002,AI & Machine Learning,C119857082,Singapore,SG,515
+2002,AI & Machine Learning,C119857082,Slovenia,SI,109
+2002,AI & Machine Learning,C119857082,Svalbard and Jan Mayen,SJ,1
+2002,AI & Machine Learning,C119857082,Slovakia,SK,42
+2002,AI & Machine Learning,C119857082,Senegal,SN,5
+2002,AI & Machine Learning,C119857082,South Sudan,SS,9
+2002,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,3
+2002,AI & Machine Learning,C119857082,Thailand,TH,85
+2002,AI & Machine Learning,C119857082,Tajikistan,TJ,4
+2002,AI & Machine Learning,C119857082,Tunisia,TN,22
+2002,AI & Machine Learning,C119857082,Turkey,TR,207
+2002,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,2
+2002,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1058
+2002,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,7
+2002,AI & Machine Learning,C119857082,Ukraine,UA,108
+2002,AI & Machine Learning,C119857082,Uganda,UG,11
+2002,AI & Machine Learning,C119857082,United States of America,US,14697
+2002,AI & Machine Learning,C119857082,Uruguay,UY,7
+2002,AI & Machine Learning,C119857082,Uzbekistan,UZ,6
+2002,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,61
+2002,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,6
+2002,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2002,AI & Machine Learning,C119857082,Viet Nam,VN,34
+2002,AI & Machine Learning,C119857082,Yemen,YE,1
+2002,AI & Machine Learning,C119857082,South Africa,ZA,177
+2002,AI & Machine Learning,C119857082,Zambia,ZM,1
+2002,AI & Machine Learning,C119857082,Zimbabwe,ZW,5
 2002,CRISPR & Genomics,C98108389,Australia,AU,2
 2002,CRISPR & Genomics,C98108389,Belgium,BE,1
 2002,CRISPR & Genomics,C98108389,Brazil,BR,1
@@ -1676,184 +9116,158 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2002,Robotics & Automation,C34413123,"Taiwan, Province of China",TW,9
 2002,Robotics & Automation,C34413123,United States of America,US,586
 2002,Robotics & Automation,C34413123,South Africa,ZA,1
-2003,AI & Machine Learning,C154945302,United Arab Emirates,AE,130
-2003,AI & Machine Learning,C154945302,Albania,AL,4
-2003,AI & Machine Learning,C154945302,Armenia,AM,28
-2003,AI & Machine Learning,C154945302,Angola,AO,1
-2003,AI & Machine Learning,C154945302,Argentina,AR,403
-2003,AI & Machine Learning,C154945302,American Samoa,AS,1
-2003,AI & Machine Learning,C154945302,Austria,AT,1104
-2003,AI & Machine Learning,C154945302,Australia,AU,4894
-2003,AI & Machine Learning,C154945302,Azerbaijan,AZ,21
-2003,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,23
-2003,AI & Machine Learning,C154945302,Barbados,BB,3
-2003,AI & Machine Learning,C154945302,Bangladesh,BD,61
-2003,AI & Machine Learning,C154945302,Belgium,BE,1957
-2003,AI & Machine Learning,C154945302,Burkina Faso,BF,6
-2003,AI & Machine Learning,C154945302,Bulgaria,BG,282
-2003,AI & Machine Learning,C154945302,Bahrain,BH,19
-2003,AI & Machine Learning,C154945302,Burundi,BI,22
-2003,AI & Machine Learning,C154945302,Benin,BJ,10
-2003,AI & Machine Learning,C154945302,Bermuda,BM,6
-2003,AI & Machine Learning,C154945302,Brunei Darussalam,BN,23
-2003,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,11
-2003,AI & Machine Learning,C154945302,Brazil,BR,2233
-2003,AI & Machine Learning,C154945302,Bahamas,BS,3
-2003,AI & Machine Learning,C154945302,Botswana,BW,9
-2003,AI & Machine Learning,C154945302,Belarus,BY,140
-2003,AI & Machine Learning,C154945302,Belize,BZ,3
-2003,AI & Machine Learning,C154945302,Canada,CA,7928
-2003,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,1
-2003,AI & Machine Learning,C154945302,Central African Republic,CF,1
-2003,AI & Machine Learning,C154945302,Congo,CG,1
-2003,AI & Machine Learning,C154945302,Switzerland,CH,2143
-2003,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,7
-2003,AI & Machine Learning,C154945302,Chile,CL,305
-2003,AI & Machine Learning,C154945302,Cameroon,CM,36
-2003,AI & Machine Learning,C154945302,China,CN,16250
-2003,AI & Machine Learning,C154945302,Colombia,CO,140
-2003,AI & Machine Learning,C154945302,Costa Rica,CR,16
-2003,AI & Machine Learning,C154945302,Cuba,CU,93
-2003,AI & Machine Learning,C154945302,Cabo Verde,CV,1
-2003,AI & Machine Learning,C154945302,Cyprus,CY,123
-2003,AI & Machine Learning,C154945302,Czechia,CZ,744
-2003,AI & Machine Learning,C154945302,Germany,DE,9342
-2003,AI & Machine Learning,C154945302,Denmark,DK,925
-2003,AI & Machine Learning,C154945302,Dominica,DM,1
-2003,AI & Machine Learning,C154945302,Dominican Republic,DO,5
-2003,AI & Machine Learning,C154945302,Algeria,DZ,140
-2003,AI & Machine Learning,C154945302,Ecuador,EC,12
-2003,AI & Machine Learning,C154945302,Estonia,EE,53
-2003,AI & Machine Learning,C154945302,Egypt,EG,519
-2003,AI & Machine Learning,C154945302,Spain,ES,4278
-2003,AI & Machine Learning,C154945302,Ethiopia,ET,18
-2003,AI & Machine Learning,C154945302,Finland,FI,1410
-2003,AI & Machine Learning,C154945302,Fiji,FJ,3
-2003,AI & Machine Learning,C154945302,Falkland Islands (Malvinas),FK,1
-2003,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,2
-2003,AI & Machine Learning,C154945302,France,FR,8333
-2003,AI & Machine Learning,C154945302,Gabon,GA,10
-2003,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,12588
-2003,AI & Machine Learning,C154945302,Georgia,GE,20
-2003,AI & Machine Learning,C154945302,French Guiana,GF,4
-2003,AI & Machine Learning,C154945302,Ghana,GH,25
-2003,AI & Machine Learning,C154945302,Greenland,GL,1
-2003,AI & Machine Learning,C154945302,Guadeloupe,GP,6
-2003,AI & Machine Learning,C154945302,Greece,GR,1295
-2003,AI & Machine Learning,C154945302,Guatemala,GT,2
-2003,AI & Machine Learning,C154945302,Guam,GU,1
-2003,AI & Machine Learning,C154945302,Guyana,GY,1
-2003,AI & Machine Learning,C154945302,Hong Kong,HK,2403
-2003,AI & Machine Learning,C154945302,Honduras,HN,3
-2003,AI & Machine Learning,C154945302,Croatia,HR,198
-2003,AI & Machine Learning,C154945302,Hungary,HU,710
-2003,AI & Machine Learning,C154945302,Indonesia,ID,143
-2003,AI & Machine Learning,C154945302,Ireland,IE,616
-2003,AI & Machine Learning,C154945302,Israel,IL,1724
-2003,AI & Machine Learning,C154945302,Isle of Man,IM,1
-2003,AI & Machine Learning,C154945302,India,IN,2146
-2003,AI & Machine Learning,C154945302,Iraq,IQ,13
-2003,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,565
-2003,AI & Machine Learning,C154945302,Iceland,IS,39
-2003,AI & Machine Learning,C154945302,Italy,IT,6248
-2003,AI & Machine Learning,C154945302,Jamaica,JM,10
-2003,AI & Machine Learning,C154945302,Jordan,JO,88
-2003,AI & Machine Learning,C154945302,Japan,JP,15934
-2003,AI & Machine Learning,C154945302,Kenya,KE,41
-2003,AI & Machine Learning,C154945302,Kyrgyzstan,KG,2
-2003,AI & Machine Learning,C154945302,Cambodia,KH,16
-2003,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,1
-2003,AI & Machine Learning,C154945302,"Korea, Republic of",KR,4126
-2003,AI & Machine Learning,C154945302,Kuwait,KW,91
-2003,AI & Machine Learning,C154945302,Cayman Islands,KY,1
-2003,AI & Machine Learning,C154945302,Kazakhstan,KZ,24
-2003,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,1
-2003,AI & Machine Learning,C154945302,Lebanon,LB,55
-2003,AI & Machine Learning,C154945302,Liechtenstein,LI,1
-2003,AI & Machine Learning,C154945302,Sri Lanka,LK,45
-2003,AI & Machine Learning,C154945302,Lesotho,LS,1
-2003,AI & Machine Learning,C154945302,Lithuania,LT,134
-2003,AI & Machine Learning,C154945302,Luxembourg,LU,23
-2003,AI & Machine Learning,C154945302,Latvia,LV,52
-2003,AI & Machine Learning,C154945302,Libya,LY,3
-2003,AI & Machine Learning,C154945302,Morocco,MA,121
-2003,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,37
-2003,AI & Machine Learning,C154945302,Montenegro,ME,34
-2003,AI & Machine Learning,C154945302,Madagascar,MG,1
-2003,AI & Machine Learning,C154945302,North Macedonia,MK,52
-2003,AI & Machine Learning,C154945302,Mali,ML,3
-2003,AI & Machine Learning,C154945302,Myanmar,MM,32
-2003,AI & Machine Learning,C154945302,Mongolia,MN,5
-2003,AI & Machine Learning,C154945302,Macao,MO,47
-2003,AI & Machine Learning,C154945302,Martinique,MQ,1
-2003,AI & Machine Learning,C154945302,Montserrat,MS,2
-2003,AI & Machine Learning,C154945302,Malta,MT,15
-2003,AI & Machine Learning,C154945302,Mauritius,MU,14
-2003,AI & Machine Learning,C154945302,Maldives,MV,2
-2003,AI & Machine Learning,C154945302,Malawi,MW,4
-2003,AI & Machine Learning,C154945302,Mexico,MX,1057
-2003,AI & Machine Learning,C154945302,Malaysia,MY,372
-2003,AI & Machine Learning,C154945302,Mozambique,MZ,16
-2003,AI & Machine Learning,C154945302,Namibia,NA,3
-2003,AI & Machine Learning,C154945302,New Caledonia,NC,1
-2003,AI & Machine Learning,C154945302,Niger,NE,12
-2003,AI & Machine Learning,C154945302,Nigeria,NG,69
-2003,AI & Machine Learning,C154945302,Nicaragua,NI,3
-2003,AI & Machine Learning,C154945302,Netherlands,NL,3630
-2003,AI & Machine Learning,C154945302,Norway,NO,697
-2003,AI & Machine Learning,C154945302,Nepal,NP,18
-2003,AI & Machine Learning,C154945302,New Zealand,NZ,702
-2003,AI & Machine Learning,C154945302,Oman,OM,41
-2003,AI & Machine Learning,C154945302,Panama,PA,6
-2003,AI & Machine Learning,C154945302,Peru,PE,29
-2003,AI & Machine Learning,C154945302,French Polynesia,PF,1
-2003,AI & Machine Learning,C154945302,Papua New Guinea,PG,1
-2003,AI & Machine Learning,C154945302,Philippines,PH,58
-2003,AI & Machine Learning,C154945302,Pakistan,PK,97
-2003,AI & Machine Learning,C154945302,Poland,PL,1824
-2003,AI & Machine Learning,C154945302,Puerto Rico,PR,60
-2003,AI & Machine Learning,C154945302,"Palestine, State of",PS,8
-2003,AI & Machine Learning,C154945302,Portugal,PT,975
-2003,AI & Machine Learning,C154945302,Paraguay,PY,3
-2003,AI & Machine Learning,C154945302,Qatar,QA,34
-2003,AI & Machine Learning,C154945302,Réunion,RE,8
-2003,AI & Machine Learning,C154945302,Romania,RO,490
-2003,AI & Machine Learning,C154945302,Serbia,RS,265
-2003,AI & Machine Learning,C154945302,Russian Federation,RU,2052
-2003,AI & Machine Learning,C154945302,Rwanda,RW,3
-2003,AI & Machine Learning,C154945302,Saudi Arabia,SA,227
-2003,AI & Machine Learning,C154945302,Sudan,SD,6
-2003,AI & Machine Learning,C154945302,Sweden,SE,2139
-2003,AI & Machine Learning,C154945302,Singapore,SG,1976
-2003,AI & Machine Learning,C154945302,Slovenia,SI,506
-2003,AI & Machine Learning,C154945302,Slovakia,SK,234
-2003,AI & Machine Learning,C154945302,Senegal,SN,17
-2003,AI & Machine Learning,C154945302,Somalia,SO,1
-2003,AI & Machine Learning,C154945302,South Sudan,SS,34
-2003,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,1
-2003,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,10
-2003,AI & Machine Learning,C154945302,Eswatini,SZ,2
-2003,AI & Machine Learning,C154945302,Togo,TG,1
-2003,AI & Machine Learning,C154945302,Thailand,TH,411
-2003,AI & Machine Learning,C154945302,Tajikistan,TJ,17
-2003,AI & Machine Learning,C154945302,Tunisia,TN,151
-2003,AI & Machine Learning,C154945302,Turkey,TR,1084
-2003,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,11
-2003,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,3882
-2003,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,22
-2003,AI & Machine Learning,C154945302,Ukraine,UA,499
-2003,AI & Machine Learning,C154945302,Uganda,UG,33
-2003,AI & Machine Learning,C154945302,United States of America,US,59544
-2003,AI & Machine Learning,C154945302,Uruguay,UY,33
-2003,AI & Machine Learning,C154945302,Uzbekistan,UZ,22
-2003,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,124
-2003,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,15
-2003,AI & Machine Learning,C154945302,Viet Nam,VN,137
-2003,AI & Machine Learning,C154945302,Kosovo,XK,2
-2003,AI & Machine Learning,C154945302,Yemen,YE,8
-2003,AI & Machine Learning,C154945302,South Africa,ZA,560
-2003,AI & Machine Learning,C154945302,Zambia,ZM,5
-2003,AI & Machine Learning,C154945302,Zimbabwe,ZW,15
+2003,AI & Machine Learning,C119857082,United Arab Emirates,AE,29
+2003,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2003,AI & Machine Learning,C119857082,Albania,AL,1
+2003,AI & Machine Learning,C119857082,Armenia,AM,3
+2003,AI & Machine Learning,C119857082,Angola,AO,1
+2003,AI & Machine Learning,C119857082,Argentina,AR,87
+2003,AI & Machine Learning,C119857082,Austria,AT,217
+2003,AI & Machine Learning,C119857082,Australia,AU,1157
+2003,AI & Machine Learning,C119857082,Azerbaijan,AZ,7
+2003,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,4
+2003,AI & Machine Learning,C119857082,Bangladesh,BD,14
+2003,AI & Machine Learning,C119857082,Belgium,BE,345
+2003,AI & Machine Learning,C119857082,Burkina Faso,BF,4
+2003,AI & Machine Learning,C119857082,Bulgaria,BG,53
+2003,AI & Machine Learning,C119857082,Bahrain,BH,1
+2003,AI & Machine Learning,C119857082,Burundi,BI,2
+2003,AI & Machine Learning,C119857082,Benin,BJ,3
+2003,AI & Machine Learning,C119857082,Bermuda,BM,5
+2003,AI & Machine Learning,C119857082,Brunei Darussalam,BN,11
+2003,AI & Machine Learning,C119857082,Brazil,BR,517
+2003,AI & Machine Learning,C119857082,Botswana,BW,1
+2003,AI & Machine Learning,C119857082,Belarus,BY,23
+2003,AI & Machine Learning,C119857082,Canada,CA,1621
+2003,AI & Machine Learning,C119857082,Congo,CG,2
+2003,AI & Machine Learning,C119857082,Switzerland,CH,378
+2003,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,2
+2003,AI & Machine Learning,C119857082,Chile,CL,64
+2003,AI & Machine Learning,C119857082,Cameroon,CM,16
+2003,AI & Machine Learning,C119857082,China,CN,3774
+2003,AI & Machine Learning,C119857082,Colombia,CO,33
+2003,AI & Machine Learning,C119857082,Costa Rica,CR,8
+2003,AI & Machine Learning,C119857082,Cuba,CU,20
+2003,AI & Machine Learning,C119857082,Cyprus,CY,27
+2003,AI & Machine Learning,C119857082,Czechia,CZ,122
+2003,AI & Machine Learning,C119857082,Germany,DE,1647
+2003,AI & Machine Learning,C119857082,Denmark,DK,201
+2003,AI & Machine Learning,C119857082,Dominican Republic,DO,6
+2003,AI & Machine Learning,C119857082,Algeria,DZ,31
+2003,AI & Machine Learning,C119857082,Ecuador,EC,7
+2003,AI & Machine Learning,C119857082,Estonia,EE,16
+2003,AI & Machine Learning,C119857082,Egypt,EG,105
+2003,AI & Machine Learning,C119857082,Spain,ES,897
+2003,AI & Machine Learning,C119857082,Ethiopia,ET,23
+2003,AI & Machine Learning,C119857082,Finland,FI,245
+2003,AI & Machine Learning,C119857082,Fiji,FJ,2
+2003,AI & Machine Learning,C119857082,France,FR,1416
+2003,AI & Machine Learning,C119857082,Gabon,GA,4
+2003,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,2895
+2003,AI & Machine Learning,C119857082,Georgia,GE,4
+2003,AI & Machine Learning,C119857082,French Guiana,GF,1
+2003,AI & Machine Learning,C119857082,Ghana,GH,14
+2003,AI & Machine Learning,C119857082,Greenland,GL,1
+2003,AI & Machine Learning,C119857082,Guadeloupe,GP,2
+2003,AI & Machine Learning,C119857082,Greece,GR,266
+2003,AI & Machine Learning,C119857082,Guatemala,GT,2
+2003,AI & Machine Learning,C119857082,Guam,GU,2
+2003,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2003,AI & Machine Learning,C119857082,Hong Kong,HK,593
+2003,AI & Machine Learning,C119857082,Honduras,HN,2
+2003,AI & Machine Learning,C119857082,Croatia,HR,37
+2003,AI & Machine Learning,C119857082,Hungary,HU,122
+2003,AI & Machine Learning,C119857082,Indonesia,ID,32
+2003,AI & Machine Learning,C119857082,Ireland,IE,131
+2003,AI & Machine Learning,C119857082,Israel,IL,334
+2003,AI & Machine Learning,C119857082,Isle of Man,IM,1
+2003,AI & Machine Learning,C119857082,India,IN,472
+2003,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,98
+2003,AI & Machine Learning,C119857082,Iceland,IS,10
+2003,AI & Machine Learning,C119857082,Italy,IT,1150
+2003,AI & Machine Learning,C119857082,Jamaica,JM,1
+2003,AI & Machine Learning,C119857082,Jordan,JO,15
+2003,AI & Machine Learning,C119857082,Japan,JP,2262
+2003,AI & Machine Learning,C119857082,Kenya,KE,24
+2003,AI & Machine Learning,C119857082,Kyrgyzstan,KG,1
+2003,AI & Machine Learning,C119857082,Cambodia,KH,6
+2003,AI & Machine Learning,C119857082,"Korea, Republic of",KR,725
+2003,AI & Machine Learning,C119857082,Kuwait,KW,26
+2003,AI & Machine Learning,C119857082,Cayman Islands,KY,1
+2003,AI & Machine Learning,C119857082,Kazakhstan,KZ,1
+2003,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,2
+2003,AI & Machine Learning,C119857082,Lebanon,LB,18
+2003,AI & Machine Learning,C119857082,Sri Lanka,LK,10
+2003,AI & Machine Learning,C119857082,Lithuania,LT,37
+2003,AI & Machine Learning,C119857082,Luxembourg,LU,5
+2003,AI & Machine Learning,C119857082,Latvia,LV,18
+2003,AI & Machine Learning,C119857082,Libya,LY,1
+2003,AI & Machine Learning,C119857082,Morocco,MA,35
+2003,AI & Machine Learning,C119857082,Monaco,MC,1
+2003,AI & Machine Learning,C119857082,Madagascar,MG,1
+2003,AI & Machine Learning,C119857082,North Macedonia,MK,7
+2003,AI & Machine Learning,C119857082,Mali,ML,1
+2003,AI & Machine Learning,C119857082,Myanmar,MM,6
+2003,AI & Machine Learning,C119857082,Mongolia,MN,2
+2003,AI & Machine Learning,C119857082,Macao,MO,6
+2003,AI & Machine Learning,C119857082,Mauritius,MU,2
+2003,AI & Machine Learning,C119857082,Maldives,MV,1
+2003,AI & Machine Learning,C119857082,Malawi,MW,4
+2003,AI & Machine Learning,C119857082,Mexico,MX,228
+2003,AI & Machine Learning,C119857082,Malaysia,MY,94
+2003,AI & Machine Learning,C119857082,Mozambique,MZ,4
+2003,AI & Machine Learning,C119857082,Namibia,NA,4
+2003,AI & Machine Learning,C119857082,Niger,NE,3
+2003,AI & Machine Learning,C119857082,Nigeria,NG,22
+2003,AI & Machine Learning,C119857082,Nicaragua,NI,3
+2003,AI & Machine Learning,C119857082,Netherlands,NL,727
+2003,AI & Machine Learning,C119857082,Norway,NO,160
+2003,AI & Machine Learning,C119857082,Nepal,NP,12
+2003,AI & Machine Learning,C119857082,New Zealand,NZ,191
+2003,AI & Machine Learning,C119857082,Oman,OM,13
+2003,AI & Machine Learning,C119857082,Panama,PA,2
+2003,AI & Machine Learning,C119857082,Peru,PE,4
+2003,AI & Machine Learning,C119857082,Philippines,PH,10
+2003,AI & Machine Learning,C119857082,Pakistan,PK,25
+2003,AI & Machine Learning,C119857082,Poland,PL,332
+2003,AI & Machine Learning,C119857082,Puerto Rico,PR,12
+2003,AI & Machine Learning,C119857082,"Palestine, State of",PS,3
+2003,AI & Machine Learning,C119857082,Portugal,PT,208
+2003,AI & Machine Learning,C119857082,Paraguay,PY,2
+2003,AI & Machine Learning,C119857082,Qatar,QA,10
+2003,AI & Machine Learning,C119857082,Réunion,RE,2
+2003,AI & Machine Learning,C119857082,Romania,RO,73
+2003,AI & Machine Learning,C119857082,Serbia,RS,55
+2003,AI & Machine Learning,C119857082,Russian Federation,RU,411
+2003,AI & Machine Learning,C119857082,Rwanda,RW,4
+2003,AI & Machine Learning,C119857082,Saudi Arabia,SA,40
+2003,AI & Machine Learning,C119857082,Sweden,SE,403
+2003,AI & Machine Learning,C119857082,Singapore,SG,392
+2003,AI & Machine Learning,C119857082,Slovenia,SI,113
+2003,AI & Machine Learning,C119857082,Slovakia,SK,43
+2003,AI & Machine Learning,C119857082,Senegal,SN,8
+2003,AI & Machine Learning,C119857082,Somalia,SO,1
+2003,AI & Machine Learning,C119857082,South Sudan,SS,6
+2003,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,3
+2003,AI & Machine Learning,C119857082,Thailand,TH,106
+2003,AI & Machine Learning,C119857082,Tajikistan,TJ,4
+2003,AI & Machine Learning,C119857082,Tunisia,TN,38
+2003,AI & Machine Learning,C119857082,Turkey,TR,241
+2003,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,775
+2003,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,16
+2003,AI & Machine Learning,C119857082,Ukraine,UA,110
+2003,AI & Machine Learning,C119857082,Uganda,UG,11
+2003,AI & Machine Learning,C119857082,United States of America,US,12334
+2003,AI & Machine Learning,C119857082,Uruguay,UY,7
+2003,AI & Machine Learning,C119857082,Uzbekistan,UZ,7
+2003,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,31
+2003,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,4
+2003,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2003,AI & Machine Learning,C119857082,Viet Nam,VN,44
+2003,AI & Machine Learning,C119857082,Yemen,YE,5
+2003,AI & Machine Learning,C119857082,South Africa,ZA,172
+2003,AI & Machine Learning,C119857082,Zambia,ZM,1
+2003,AI & Machine Learning,C119857082,Zimbabwe,ZW,3
 2003,CRISPR & Genomics,C98108389,Belgium,BE,1
 2003,CRISPR & Genomics,C98108389,Bulgaria,BG,1
 2003,CRISPR & Genomics,C98108389,Brazil,BR,1
@@ -2280,183 +9694,160 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2003,Robotics & Automation,C34413123,United States of America,US,399
 2003,Robotics & Automation,C34413123,Viet Nam,VN,2
 2003,Robotics & Automation,C34413123,South Africa,ZA,2
-2004,AI & Machine Learning,C154945302,United Arab Emirates,AE,143
-2004,AI & Machine Learning,C154945302,Afghanistan,AF,3
-2004,AI & Machine Learning,C154945302,Albania,AL,2
-2004,AI & Machine Learning,C154945302,Armenia,AM,33
-2004,AI & Machine Learning,C154945302,Angola,AO,4
-2004,AI & Machine Learning,C154945302,Argentina,AR,358
-2004,AI & Machine Learning,C154945302,American Samoa,AS,1
-2004,AI & Machine Learning,C154945302,Austria,AT,1137
-2004,AI & Machine Learning,C154945302,Australia,AU,4801
-2004,AI & Machine Learning,C154945302,Azerbaijan,AZ,33
-2004,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,20
-2004,AI & Machine Learning,C154945302,Barbados,BB,8
-2004,AI & Machine Learning,C154945302,Bangladesh,BD,71
-2004,AI & Machine Learning,C154945302,Belgium,BE,1946
-2004,AI & Machine Learning,C154945302,Burkina Faso,BF,5
-2004,AI & Machine Learning,C154945302,Bulgaria,BG,325
-2004,AI & Machine Learning,C154945302,Bahrain,BH,13
-2004,AI & Machine Learning,C154945302,Burundi,BI,17
-2004,AI & Machine Learning,C154945302,Benin,BJ,6
-2004,AI & Machine Learning,C154945302,Bermuda,BM,6
-2004,AI & Machine Learning,C154945302,Brunei Darussalam,BN,11
-2004,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,16
-2004,AI & Machine Learning,C154945302,Brazil,BR,2226
-2004,AI & Machine Learning,C154945302,Botswana,BW,11
-2004,AI & Machine Learning,C154945302,Belarus,BY,102
-2004,AI & Machine Learning,C154945302,Belize,BZ,4
-2004,AI & Machine Learning,C154945302,Canada,CA,7706
-2004,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,1
-2004,AI & Machine Learning,C154945302,Congo,CG,1
-2004,AI & Machine Learning,C154945302,Switzerland,CH,2138
-2004,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,4
-2004,AI & Machine Learning,C154945302,Chile,CL,337
-2004,AI & Machine Learning,C154945302,Cameroon,CM,42
-2004,AI & Machine Learning,C154945302,China,CN,26596
-2004,AI & Machine Learning,C154945302,Colombia,CO,184
-2004,AI & Machine Learning,C154945302,Costa Rica,CR,16
-2004,AI & Machine Learning,C154945302,Cuba,CU,96
-2004,AI & Machine Learning,C154945302,Curaçao,CW,1
-2004,AI & Machine Learning,C154945302,Cyprus,CY,146
-2004,AI & Machine Learning,C154945302,Czechia,CZ,836
-2004,AI & Machine Learning,C154945302,Germany,DE,9206
-2004,AI & Machine Learning,C154945302,Denmark,DK,940
-2004,AI & Machine Learning,C154945302,Dominican Republic,DO,10
-2004,AI & Machine Learning,C154945302,Algeria,DZ,201
-2004,AI & Machine Learning,C154945302,Ecuador,EC,7
-2004,AI & Machine Learning,C154945302,Estonia,EE,57
-2004,AI & Machine Learning,C154945302,Egypt,EG,372
-2004,AI & Machine Learning,C154945302,Eritrea,ER,2
-2004,AI & Machine Learning,C154945302,Spain,ES,4366
-2004,AI & Machine Learning,C154945302,Ethiopia,ET,27
-2004,AI & Machine Learning,C154945302,Finland,FI,1172
-2004,AI & Machine Learning,C154945302,Fiji,FJ,5
-2004,AI & Machine Learning,C154945302,Faroe Islands,FO,1
-2004,AI & Machine Learning,C154945302,France,FR,8263
-2004,AI & Machine Learning,C154945302,Gabon,GA,1
-2004,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,12444
-2004,AI & Machine Learning,C154945302,Grenada,GD,1
-2004,AI & Machine Learning,C154945302,Georgia,GE,20
-2004,AI & Machine Learning,C154945302,French Guiana,GF,3
-2004,AI & Machine Learning,C154945302,Ghana,GH,28
-2004,AI & Machine Learning,C154945302,Greenland,GL,2
-2004,AI & Machine Learning,C154945302,Gambia,GM,3
-2004,AI & Machine Learning,C154945302,Guadeloupe,GP,14
-2004,AI & Machine Learning,C154945302,Greece,GR,1336
-2004,AI & Machine Learning,C154945302,Guatemala,GT,5
-2004,AI & Machine Learning,C154945302,Guam,GU,2
-2004,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2004,AI & Machine Learning,C154945302,Hong Kong,HK,2458
-2004,AI & Machine Learning,C154945302,Honduras,HN,3
-2004,AI & Machine Learning,C154945302,Croatia,HR,225
-2004,AI & Machine Learning,C154945302,Hungary,HU,572
-2004,AI & Machine Learning,C154945302,Indonesia,ID,176
-2004,AI & Machine Learning,C154945302,Ireland,IE,786
-2004,AI & Machine Learning,C154945302,Israel,IL,1758
-2004,AI & Machine Learning,C154945302,India,IN,2456
-2004,AI & Machine Learning,C154945302,Iraq,IQ,17
-2004,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,953
-2004,AI & Machine Learning,C154945302,Iceland,IS,38
-2004,AI & Machine Learning,C154945302,Italy,IT,5839
-2004,AI & Machine Learning,C154945302,Jamaica,JM,24
-2004,AI & Machine Learning,C154945302,Jordan,JO,94
-2004,AI & Machine Learning,C154945302,Japan,JP,13423
-2004,AI & Machine Learning,C154945302,Kenya,KE,31
-2004,AI & Machine Learning,C154945302,Kyrgyzstan,KG,5
-2004,AI & Machine Learning,C154945302,Cambodia,KH,17
-2004,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,1
-2004,AI & Machine Learning,C154945302,"Korea, Republic of",KR,4122
-2004,AI & Machine Learning,C154945302,Kuwait,KW,70
-2004,AI & Machine Learning,C154945302,Cayman Islands,KY,3
-2004,AI & Machine Learning,C154945302,Kazakhstan,KZ,13
-2004,AI & Machine Learning,C154945302,Lebanon,LB,87
-2004,AI & Machine Learning,C154945302,Liechtenstein,LI,2
-2004,AI & Machine Learning,C154945302,Sri Lanka,LK,36
-2004,AI & Machine Learning,C154945302,Lesotho,LS,2
-2004,AI & Machine Learning,C154945302,Lithuania,LT,217
-2004,AI & Machine Learning,C154945302,Luxembourg,LU,54
-2004,AI & Machine Learning,C154945302,Latvia,LV,67
-2004,AI & Machine Learning,C154945302,Libya,LY,6
-2004,AI & Machine Learning,C154945302,Morocco,MA,116
-2004,AI & Machine Learning,C154945302,Monaco,MC,2
-2004,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,23
-2004,AI & Machine Learning,C154945302,Montenegro,ME,23
-2004,AI & Machine Learning,C154945302,North Macedonia,MK,53
-2004,AI & Machine Learning,C154945302,Mali,ML,5
-2004,AI & Machine Learning,C154945302,Myanmar,MM,19
-2004,AI & Machine Learning,C154945302,Mongolia,MN,17
-2004,AI & Machine Learning,C154945302,Macao,MO,56
-2004,AI & Machine Learning,C154945302,Northern Mariana Islands,MP,1
-2004,AI & Machine Learning,C154945302,Martinique,MQ,4
-2004,AI & Machine Learning,C154945302,Malta,MT,13
-2004,AI & Machine Learning,C154945302,Mauritius,MU,13
-2004,AI & Machine Learning,C154945302,Malawi,MW,8
-2004,AI & Machine Learning,C154945302,Mexico,MX,1340
-2004,AI & Machine Learning,C154945302,Malaysia,MY,514
-2004,AI & Machine Learning,C154945302,Mozambique,MZ,17
-2004,AI & Machine Learning,C154945302,Namibia,NA,3
-2004,AI & Machine Learning,C154945302,New Caledonia,NC,3
-2004,AI & Machine Learning,C154945302,Niger,NE,17
-2004,AI & Machine Learning,C154945302,Nigeria,NG,94
-2004,AI & Machine Learning,C154945302,Nicaragua,NI,4
-2004,AI & Machine Learning,C154945302,Netherlands,NL,3484
-2004,AI & Machine Learning,C154945302,Norway,NO,721
-2004,AI & Machine Learning,C154945302,Nepal,NP,29
-2004,AI & Machine Learning,C154945302,New Zealand,NZ,784
-2004,AI & Machine Learning,C154945302,Oman,OM,70
-2004,AI & Machine Learning,C154945302,Panama,PA,9
-2004,AI & Machine Learning,C154945302,Peru,PE,23
-2004,AI & Machine Learning,C154945302,French Polynesia,PF,1
-2004,AI & Machine Learning,C154945302,Papua New Guinea,PG,1
-2004,AI & Machine Learning,C154945302,Philippines,PH,84
-2004,AI & Machine Learning,C154945302,Pakistan,PK,142
-2004,AI & Machine Learning,C154945302,Poland,PL,1993
-2004,AI & Machine Learning,C154945302,Puerto Rico,PR,51
-2004,AI & Machine Learning,C154945302,"Palestine, State of",PS,16
-2004,AI & Machine Learning,C154945302,Portugal,PT,930
-2004,AI & Machine Learning,C154945302,Paraguay,PY,5
-2004,AI & Machine Learning,C154945302,Qatar,QA,40
-2004,AI & Machine Learning,C154945302,Réunion,RE,9
-2004,AI & Machine Learning,C154945302,Romania,RO,408
-2004,AI & Machine Learning,C154945302,Serbia,RS,217
-2004,AI & Machine Learning,C154945302,Russian Federation,RU,1928
-2004,AI & Machine Learning,C154945302,Rwanda,RW,2
-2004,AI & Machine Learning,C154945302,Saudi Arabia,SA,217
-2004,AI & Machine Learning,C154945302,Seychelles,SC,1
-2004,AI & Machine Learning,C154945302,Sudan,SD,8
-2004,AI & Machine Learning,C154945302,Sweden,SE,1932
-2004,AI & Machine Learning,C154945302,Singapore,SG,2205
-2004,AI & Machine Learning,C154945302,Slovenia,SI,543
-2004,AI & Machine Learning,C154945302,Slovakia,SK,229
-2004,AI & Machine Learning,C154945302,Senegal,SN,13
-2004,AI & Machine Learning,C154945302,South Sudan,SS,19
-2004,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,2
-2004,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,34
-2004,AI & Machine Learning,C154945302,Eswatini,SZ,2
-2004,AI & Machine Learning,C154945302,Chad,TD,1
-2004,AI & Machine Learning,C154945302,Thailand,TH,414
-2004,AI & Machine Learning,C154945302,Tajikistan,TJ,15
-2004,AI & Machine Learning,C154945302,Tunisia,TN,158
-2004,AI & Machine Learning,C154945302,Turkey,TR,1323
-2004,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,15
-2004,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,3799
-2004,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,22
-2004,AI & Machine Learning,C154945302,Ukraine,UA,582
-2004,AI & Machine Learning,C154945302,Uganda,UG,29
-2004,AI & Machine Learning,C154945302,United States of America,US,50980
-2004,AI & Machine Learning,C154945302,Uruguay,UY,46
-2004,AI & Machine Learning,C154945302,Uzbekistan,UZ,17
-2004,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,137
-2004,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,18
-2004,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,4
-2004,AI & Machine Learning,C154945302,Viet Nam,VN,138
-2004,AI & Machine Learning,C154945302,Vanuatu,VU,1
-2004,AI & Machine Learning,C154945302,Kosovo,XK,6
-2004,AI & Machine Learning,C154945302,Yemen,YE,11
-2004,AI & Machine Learning,C154945302,South Africa,ZA,418
-2004,AI & Machine Learning,C154945302,Zambia,ZM,5
-2004,AI & Machine Learning,C154945302,Zimbabwe,ZW,7
+2004,AI & Machine Learning,C119857082,United Arab Emirates,AE,34
+2004,AI & Machine Learning,C119857082,Afghanistan,AF,2
+2004,AI & Machine Learning,C119857082,Albania,AL,3
+2004,AI & Machine Learning,C119857082,Armenia,AM,6
+2004,AI & Machine Learning,C119857082,Argentina,AR,94
+2004,AI & Machine Learning,C119857082,Austria,AT,172
+2004,AI & Machine Learning,C119857082,Australia,AU,1164
+2004,AI & Machine Learning,C119857082,Azerbaijan,AZ,14
+2004,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,5
+2004,AI & Machine Learning,C119857082,Barbados,BB,2
+2004,AI & Machine Learning,C119857082,Bangladesh,BD,18
+2004,AI & Machine Learning,C119857082,Belgium,BE,418
+2004,AI & Machine Learning,C119857082,Burkina Faso,BF,2
+2004,AI & Machine Learning,C119857082,Bulgaria,BG,67
+2004,AI & Machine Learning,C119857082,Bahrain,BH,3
+2004,AI & Machine Learning,C119857082,Burundi,BI,3
+2004,AI & Machine Learning,C119857082,Benin,BJ,2
+2004,AI & Machine Learning,C119857082,Brunei Darussalam,BN,4
+2004,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,2
+2004,AI & Machine Learning,C119857082,Brazil,BR,456
+2004,AI & Machine Learning,C119857082,Bahamas,BS,1
+2004,AI & Machine Learning,C119857082,Botswana,BW,3
+2004,AI & Machine Learning,C119857082,Belarus,BY,29
+2004,AI & Machine Learning,C119857082,Belize,BZ,1
+2004,AI & Machine Learning,C119857082,Canada,CA,1689
+2004,AI & Machine Learning,C119857082,Congo,CG,1
+2004,AI & Machine Learning,C119857082,Switzerland,CH,397
+2004,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+2004,AI & Machine Learning,C119857082,Chile,CL,50
+2004,AI & Machine Learning,C119857082,Cameroon,CM,10
+2004,AI & Machine Learning,C119857082,China,CN,6659
+2004,AI & Machine Learning,C119857082,Colombia,CO,41
+2004,AI & Machine Learning,C119857082,Costa Rica,CR,3
+2004,AI & Machine Learning,C119857082,Cuba,CU,33
+2004,AI & Machine Learning,C119857082,Cyprus,CY,38
+2004,AI & Machine Learning,C119857082,Czechia,CZ,176
+2004,AI & Machine Learning,C119857082,Germany,DE,1562
+2004,AI & Machine Learning,C119857082,Denmark,DK,214
+2004,AI & Machine Learning,C119857082,Dominican Republic,DO,6
+2004,AI & Machine Learning,C119857082,Algeria,DZ,34
+2004,AI & Machine Learning,C119857082,Ecuador,EC,5
+2004,AI & Machine Learning,C119857082,Estonia,EE,12
+2004,AI & Machine Learning,C119857082,Egypt,EG,96
+2004,AI & Machine Learning,C119857082,Spain,ES,1006
+2004,AI & Machine Learning,C119857082,Ethiopia,ET,21
+2004,AI & Machine Learning,C119857082,Finland,FI,235
+2004,AI & Machine Learning,C119857082,Fiji,FJ,3
+2004,AI & Machine Learning,C119857082,France,FR,1449
+2004,AI & Machine Learning,C119857082,Gabon,GA,1
+2004,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,3000
+2004,AI & Machine Learning,C119857082,Grenada,GD,1
+2004,AI & Machine Learning,C119857082,Georgia,GE,1
+2004,AI & Machine Learning,C119857082,French Guiana,GF,2
+2004,AI & Machine Learning,C119857082,Ghana,GH,18
+2004,AI & Machine Learning,C119857082,Gambia,GM,3
+2004,AI & Machine Learning,C119857082,Guadeloupe,GP,3
+2004,AI & Machine Learning,C119857082,Greece,GR,340
+2004,AI & Machine Learning,C119857082,Guam,GU,3
+2004,AI & Machine Learning,C119857082,Hong Kong,HK,577
+2004,AI & Machine Learning,C119857082,Honduras,HN,1
+2004,AI & Machine Learning,C119857082,Croatia,HR,44
+2004,AI & Machine Learning,C119857082,Hungary,HU,118
+2004,AI & Machine Learning,C119857082,Indonesia,ID,49
+2004,AI & Machine Learning,C119857082,Ireland,IE,160
+2004,AI & Machine Learning,C119857082,Israel,IL,362
+2004,AI & Machine Learning,C119857082,India,IN,547
+2004,AI & Machine Learning,C119857082,Iraq,IQ,6
+2004,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,191
+2004,AI & Machine Learning,C119857082,Iceland,IS,11
+2004,AI & Machine Learning,C119857082,Italy,IT,1070
+2004,AI & Machine Learning,C119857082,Jamaica,JM,9
+2004,AI & Machine Learning,C119857082,Jordan,JO,22
+2004,AI & Machine Learning,C119857082,Japan,JP,1910
+2004,AI & Machine Learning,C119857082,Kenya,KE,27
+2004,AI & Machine Learning,C119857082,Cambodia,KH,8
+2004,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,1
+2004,AI & Machine Learning,C119857082,"Korea, Republic of",KR,782
+2004,AI & Machine Learning,C119857082,Kuwait,KW,19
+2004,AI & Machine Learning,C119857082,Kazakhstan,KZ,9
+2004,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,2
+2004,AI & Machine Learning,C119857082,Lebanon,LB,27
+2004,AI & Machine Learning,C119857082,Saint Lucia,LC,1
+2004,AI & Machine Learning,C119857082,Liechtenstein,LI,2
+2004,AI & Machine Learning,C119857082,Sri Lanka,LK,8
+2004,AI & Machine Learning,C119857082,Lithuania,LT,48
+2004,AI & Machine Learning,C119857082,Luxembourg,LU,10
+2004,AI & Machine Learning,C119857082,Latvia,LV,32
+2004,AI & Machine Learning,C119857082,Morocco,MA,35
+2004,AI & Machine Learning,C119857082,Monaco,MC,1
+2004,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,4
+2004,AI & Machine Learning,C119857082,Montenegro,ME,2
+2004,AI & Machine Learning,C119857082,North Macedonia,MK,21
+2004,AI & Machine Learning,C119857082,Mali,ML,1
+2004,AI & Machine Learning,C119857082,Myanmar,MM,5
+2004,AI & Machine Learning,C119857082,Mongolia,MN,8
+2004,AI & Machine Learning,C119857082,Macao,MO,15
+2004,AI & Machine Learning,C119857082,Martinique,MQ,2
+2004,AI & Machine Learning,C119857082,Malta,MT,4
+2004,AI & Machine Learning,C119857082,Malawi,MW,6
+2004,AI & Machine Learning,C119857082,Mexico,MX,249
+2004,AI & Machine Learning,C119857082,Malaysia,MY,80
+2004,AI & Machine Learning,C119857082,Mozambique,MZ,4
+2004,AI & Machine Learning,C119857082,Niger,NE,7
+2004,AI & Machine Learning,C119857082,Nigeria,NG,33
+2004,AI & Machine Learning,C119857082,Nicaragua,NI,1
+2004,AI & Machine Learning,C119857082,Netherlands,NL,766
+2004,AI & Machine Learning,C119857082,Norway,NO,177
+2004,AI & Machine Learning,C119857082,Nepal,NP,13
+2004,AI & Machine Learning,C119857082,New Zealand,NZ,193
+2004,AI & Machine Learning,C119857082,Oman,OM,11
+2004,AI & Machine Learning,C119857082,Peru,PE,3
+2004,AI & Machine Learning,C119857082,Philippines,PH,12
+2004,AI & Machine Learning,C119857082,Pakistan,PK,27
+2004,AI & Machine Learning,C119857082,Poland,PL,398
+2004,AI & Machine Learning,C119857082,Puerto Rico,PR,11
+2004,AI & Machine Learning,C119857082,"Palestine, State of",PS,3
+2004,AI & Machine Learning,C119857082,Portugal,PT,207
+2004,AI & Machine Learning,C119857082,Paraguay,PY,1
+2004,AI & Machine Learning,C119857082,Qatar,QA,11
+2004,AI & Machine Learning,C119857082,Réunion,RE,2
+2004,AI & Machine Learning,C119857082,Romania,RO,72
+2004,AI & Machine Learning,C119857082,Serbia,RS,48
+2004,AI & Machine Learning,C119857082,Russian Federation,RU,437
+2004,AI & Machine Learning,C119857082,Saudi Arabia,SA,54
+2004,AI & Machine Learning,C119857082,Seychelles,SC,1
+2004,AI & Machine Learning,C119857082,Sudan,SD,5
+2004,AI & Machine Learning,C119857082,Sweden,SE,370
+2004,AI & Machine Learning,C119857082,Singapore,SG,497
+2004,AI & Machine Learning,C119857082,Slovenia,SI,125
+2004,AI & Machine Learning,C119857082,Slovakia,SK,46
+2004,AI & Machine Learning,C119857082,Senegal,SN,3
+2004,AI & Machine Learning,C119857082,South Sudan,SS,8
+2004,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,7
+2004,AI & Machine Learning,C119857082,Eswatini,SZ,3
+2004,AI & Machine Learning,C119857082,Thailand,TH,84
+2004,AI & Machine Learning,C119857082,Tajikistan,TJ,4
+2004,AI & Machine Learning,C119857082,Turkmenistan,TM,5
+2004,AI & Machine Learning,C119857082,Tunisia,TN,36
+2004,AI & Machine Learning,C119857082,Turkey,TR,286
+2004,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,3
+2004,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,819
+2004,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,15
+2004,AI & Machine Learning,C119857082,Ukraine,UA,141
+2004,AI & Machine Learning,C119857082,Uganda,UG,12
+2004,AI & Machine Learning,C119857082,United States of America,US,11284
+2004,AI & Machine Learning,C119857082,Uruguay,UY,8
+2004,AI & Machine Learning,C119857082,Uzbekistan,UZ,1
+2004,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,37
+2004,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,13
+2004,AI & Machine Learning,C119857082,Viet Nam,VN,32
+2004,AI & Machine Learning,C119857082,Yemen,YE,2
+2004,AI & Machine Learning,C119857082,South Africa,ZA,141
+2004,AI & Machine Learning,C119857082,Zambia,ZM,4
+2004,AI & Machine Learning,C119857082,Zimbabwe,ZW,4
 2004,CRISPR & Genomics,C98108389,Austria,AT,1
 2004,CRISPR & Genomics,C98108389,Australia,AU,1
 2004,CRISPR & Genomics,C98108389,Canada,CA,3
@@ -2893,186 +10284,171 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2004,Robotics & Automation,C34413123,Uganda,UG,1
 2004,Robotics & Automation,C34413123,United States of America,US,297
 2004,Robotics & Automation,C34413123,Yemen,YE,1
-2005,AI & Machine Learning,C154945302,Andorra,AD,1
-2005,AI & Machine Learning,C154945302,United Arab Emirates,AE,155
-2005,AI & Machine Learning,C154945302,Albania,AL,8
-2005,AI & Machine Learning,C154945302,Armenia,AM,34
-2005,AI & Machine Learning,C154945302,Argentina,AR,407
-2005,AI & Machine Learning,C154945302,Austria,AT,1314
-2005,AI & Machine Learning,C154945302,Australia,AU,5767
-2005,AI & Machine Learning,C154945302,Azerbaijan,AZ,23
-2005,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,26
-2005,AI & Machine Learning,C154945302,Barbados,BB,3
-2005,AI & Machine Learning,C154945302,Bangladesh,BD,111
-2005,AI & Machine Learning,C154945302,Belgium,BE,2303
-2005,AI & Machine Learning,C154945302,Burkina Faso,BF,9
-2005,AI & Machine Learning,C154945302,Bulgaria,BG,302
-2005,AI & Machine Learning,C154945302,Bahrain,BH,18
-2005,AI & Machine Learning,C154945302,Burundi,BI,24
-2005,AI & Machine Learning,C154945302,Benin,BJ,8
-2005,AI & Machine Learning,C154945302,Bermuda,BM,5
-2005,AI & Machine Learning,C154945302,Brunei Darussalam,BN,16
-2005,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,16
-2005,AI & Machine Learning,C154945302,Brazil,BR,2454
-2005,AI & Machine Learning,C154945302,Bahamas,BS,2
-2005,AI & Machine Learning,C154945302,Botswana,BW,11
-2005,AI & Machine Learning,C154945302,Belarus,BY,140
-2005,AI & Machine Learning,C154945302,Belize,BZ,2
-2005,AI & Machine Learning,C154945302,Canada,CA,9170
-2005,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,4
-2005,AI & Machine Learning,C154945302,Congo,CG,5
-2005,AI & Machine Learning,C154945302,Switzerland,CH,2503
-2005,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,6
-2005,AI & Machine Learning,C154945302,Chile,CL,371
-2005,AI & Machine Learning,C154945302,Cameroon,CM,49
-2005,AI & Machine Learning,C154945302,China,CN,40721
-2005,AI & Machine Learning,C154945302,Colombia,CO,242
-2005,AI & Machine Learning,C154945302,Costa Rica,CR,24
-2005,AI & Machine Learning,C154945302,Cuba,CU,133
-2005,AI & Machine Learning,C154945302,Cabo Verde,CV,2
-2005,AI & Machine Learning,C154945302,Curaçao,CW,1
-2005,AI & Machine Learning,C154945302,Cyprus,CY,176
-2005,AI & Machine Learning,C154945302,Czechia,CZ,999
-2005,AI & Machine Learning,C154945302,Germany,DE,10642
-2005,AI & Machine Learning,C154945302,Denmark,DK,1073
-2005,AI & Machine Learning,C154945302,Dominica,DM,2
-2005,AI & Machine Learning,C154945302,Dominican Republic,DO,13
-2005,AI & Machine Learning,C154945302,Algeria,DZ,249
-2005,AI & Machine Learning,C154945302,Ecuador,EC,31
-2005,AI & Machine Learning,C154945302,Estonia,EE,76
-2005,AI & Machine Learning,C154945302,Egypt,EG,540
-2005,AI & Machine Learning,C154945302,Eritrea,ER,3
-2005,AI & Machine Learning,C154945302,Spain,ES,5078
-2005,AI & Machine Learning,C154945302,Ethiopia,ET,31
-2005,AI & Machine Learning,C154945302,Finland,FI,1433
-2005,AI & Machine Learning,C154945302,Fiji,FJ,10
-2005,AI & Machine Learning,C154945302,France,FR,10132
-2005,AI & Machine Learning,C154945302,Gabon,GA,3
-2005,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,14309
-2005,AI & Machine Learning,C154945302,Grenada,GD,1
-2005,AI & Machine Learning,C154945302,Georgia,GE,24
-2005,AI & Machine Learning,C154945302,French Guiana,GF,10
-2005,AI & Machine Learning,C154945302,Ghana,GH,40
-2005,AI & Machine Learning,C154945302,Gibraltar,GI,2
-2005,AI & Machine Learning,C154945302,Gambia,GM,2
-2005,AI & Machine Learning,C154945302,Guadeloupe,GP,18
-2005,AI & Machine Learning,C154945302,Greece,GR,1631
-2005,AI & Machine Learning,C154945302,Guatemala,GT,4
-2005,AI & Machine Learning,C154945302,Guam,GU,7
-2005,AI & Machine Learning,C154945302,Guyana,GY,1
-2005,AI & Machine Learning,C154945302,Hong Kong,HK,2673
-2005,AI & Machine Learning,C154945302,Honduras,HN,4
-2005,AI & Machine Learning,C154945302,Croatia,HR,224
-2005,AI & Machine Learning,C154945302,Haiti,HT,2
-2005,AI & Machine Learning,C154945302,Hungary,HU,726
-2005,AI & Machine Learning,C154945302,Indonesia,ID,205
-2005,AI & Machine Learning,C154945302,Ireland,IE,948
-2005,AI & Machine Learning,C154945302,Israel,IL,1797
-2005,AI & Machine Learning,C154945302,Isle of Man,IM,1
-2005,AI & Machine Learning,C154945302,India,IN,3335
-2005,AI & Machine Learning,C154945302,Iraq,IQ,63
-2005,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,1213
-2005,AI & Machine Learning,C154945302,Iceland,IS,41
-2005,AI & Machine Learning,C154945302,Italy,IT,6681
-2005,AI & Machine Learning,C154945302,Jamaica,JM,23
-2005,AI & Machine Learning,C154945302,Jordan,JO,144
-2005,AI & Machine Learning,C154945302,Japan,JP,15411
-2005,AI & Machine Learning,C154945302,Kenya,KE,54
-2005,AI & Machine Learning,C154945302,Kyrgyzstan,KG,3
-2005,AI & Machine Learning,C154945302,Cambodia,KH,20
-2005,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,8
-2005,AI & Machine Learning,C154945302,"Korea, Republic of",KR,5522
-2005,AI & Machine Learning,C154945302,Kuwait,KW,62
-2005,AI & Machine Learning,C154945302,Cayman Islands,KY,2
-2005,AI & Machine Learning,C154945302,Kazakhstan,KZ,23
-2005,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,1
-2005,AI & Machine Learning,C154945302,Lebanon,LB,94
-2005,AI & Machine Learning,C154945302,Liechtenstein,LI,3
-2005,AI & Machine Learning,C154945302,Sri Lanka,LK,57
-2005,AI & Machine Learning,C154945302,Lesotho,LS,1
-2005,AI & Machine Learning,C154945302,Lithuania,LT,251
-2005,AI & Machine Learning,C154945302,Luxembourg,LU,33
-2005,AI & Machine Learning,C154945302,Latvia,LV,118
-2005,AI & Machine Learning,C154945302,Libya,LY,11
-2005,AI & Machine Learning,C154945302,Morocco,MA,121
-2005,AI & Machine Learning,C154945302,Monaco,MC,2
-2005,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,27
-2005,AI & Machine Learning,C154945302,Montenegro,ME,26
-2005,AI & Machine Learning,C154945302,North Macedonia,MK,62
-2005,AI & Machine Learning,C154945302,Mali,ML,5
-2005,AI & Machine Learning,C154945302,Myanmar,MM,46
-2005,AI & Machine Learning,C154945302,Mongolia,MN,21
-2005,AI & Machine Learning,C154945302,Macao,MO,85
-2005,AI & Machine Learning,C154945302,Martinique,MQ,2
-2005,AI & Machine Learning,C154945302,Malta,MT,28
-2005,AI & Machine Learning,C154945302,Mauritius,MU,8
-2005,AI & Machine Learning,C154945302,Malawi,MW,10
-2005,AI & Machine Learning,C154945302,Mexico,MX,1442
-2005,AI & Machine Learning,C154945302,Malaysia,MY,577
-2005,AI & Machine Learning,C154945302,Mozambique,MZ,27
-2005,AI & Machine Learning,C154945302,Namibia,NA,1
-2005,AI & Machine Learning,C154945302,New Caledonia,NC,3
-2005,AI & Machine Learning,C154945302,Niger,NE,10
-2005,AI & Machine Learning,C154945302,Nigeria,NG,140
-2005,AI & Machine Learning,C154945302,Nicaragua,NI,6
-2005,AI & Machine Learning,C154945302,Netherlands,NL,4170
-2005,AI & Machine Learning,C154945302,Norway,NO,941
-2005,AI & Machine Learning,C154945302,Nepal,NP,25
-2005,AI & Machine Learning,C154945302,New Zealand,NZ,868
-2005,AI & Machine Learning,C154945302,Oman,OM,43
-2005,AI & Machine Learning,C154945302,Panama,PA,9
-2005,AI & Machine Learning,C154945302,Peru,PE,21
-2005,AI & Machine Learning,C154945302,French Polynesia,PF,1
-2005,AI & Machine Learning,C154945302,Papua New Guinea,PG,6
-2005,AI & Machine Learning,C154945302,Philippines,PH,80
-2005,AI & Machine Learning,C154945302,Pakistan,PK,307
-2005,AI & Machine Learning,C154945302,Poland,PL,2126
-2005,AI & Machine Learning,C154945302,Puerto Rico,PR,62
-2005,AI & Machine Learning,C154945302,"Palestine, State of",PS,18
-2005,AI & Machine Learning,C154945302,Portugal,PT,1154
-2005,AI & Machine Learning,C154945302,Paraguay,PY,12
-2005,AI & Machine Learning,C154945302,Qatar,QA,37
-2005,AI & Machine Learning,C154945302,Réunion,RE,12
-2005,AI & Machine Learning,C154945302,Romania,RO,571
-2005,AI & Machine Learning,C154945302,Serbia,RS,291
-2005,AI & Machine Learning,C154945302,Russian Federation,RU,2031
-2005,AI & Machine Learning,C154945302,Saudi Arabia,SA,227
-2005,AI & Machine Learning,C154945302,Sudan,SD,10
-2005,AI & Machine Learning,C154945302,Sweden,SE,2366
-2005,AI & Machine Learning,C154945302,Singapore,SG,2641
-2005,AI & Machine Learning,C154945302,Slovenia,SI,487
-2005,AI & Machine Learning,C154945302,Slovakia,SK,286
-2005,AI & Machine Learning,C154945302,Senegal,SN,12
-2005,AI & Machine Learning,C154945302,Somalia,SO,4
-2005,AI & Machine Learning,C154945302,South Sudan,SS,40
-2005,AI & Machine Learning,C154945302,El Salvador,SV,1
-2005,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,8
-2005,AI & Machine Learning,C154945302,Eswatini,SZ,1
-2005,AI & Machine Learning,C154945302,Chad,TD,1
-2005,AI & Machine Learning,C154945302,Togo,TG,1
-2005,AI & Machine Learning,C154945302,Thailand,TH,532
-2005,AI & Machine Learning,C154945302,Tajikistan,TJ,9
-2005,AI & Machine Learning,C154945302,Timor-Leste,TL,1
-2005,AI & Machine Learning,C154945302,Tunisia,TN,240
-2005,AI & Machine Learning,C154945302,Turkey,TR,1400
-2005,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,22
-2005,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,4915
-2005,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,37
-2005,AI & Machine Learning,C154945302,Ukraine,UA,434
-2005,AI & Machine Learning,C154945302,Uganda,UG,32
-2005,AI & Machine Learning,C154945302,United States of America,US,62035
-2005,AI & Machine Learning,C154945302,Uruguay,UY,38
-2005,AI & Machine Learning,C154945302,Uzbekistan,UZ,21
-2005,AI & Machine Learning,C154945302,Holy See,VA,1
-2005,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,185
-2005,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,29
-2005,AI & Machine Learning,C154945302,Viet Nam,VN,152
-2005,AI & Machine Learning,C154945302,Vanuatu,VU,2
-2005,AI & Machine Learning,C154945302,Kosovo,XK,4
-2005,AI & Machine Learning,C154945302,Yemen,YE,24
-2005,AI & Machine Learning,C154945302,South Africa,ZA,559
-2005,AI & Machine Learning,C154945302,Zambia,ZM,9
-2005,AI & Machine Learning,C154945302,Zimbabwe,ZW,10
+2005,AI & Machine Learning,C119857082,United Arab Emirates,AE,40
+2005,AI & Machine Learning,C119857082,Albania,AL,1
+2005,AI & Machine Learning,C119857082,Armenia,AM,5
+2005,AI & Machine Learning,C119857082,Argentina,AR,86
+2005,AI & Machine Learning,C119857082,Austria,AT,253
+2005,AI & Machine Learning,C119857082,Australia,AU,1581
+2005,AI & Machine Learning,C119857082,Azerbaijan,AZ,9
+2005,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,4
+2005,AI & Machine Learning,C119857082,Barbados,BB,1
+2005,AI & Machine Learning,C119857082,Bangladesh,BD,24
+2005,AI & Machine Learning,C119857082,Belgium,BE,502
+2005,AI & Machine Learning,C119857082,Burkina Faso,BF,4
+2005,AI & Machine Learning,C119857082,Bulgaria,BG,54
+2005,AI & Machine Learning,C119857082,Bahrain,BH,3
+2005,AI & Machine Learning,C119857082,Burundi,BI,7
+2005,AI & Machine Learning,C119857082,Benin,BJ,4
+2005,AI & Machine Learning,C119857082,Bermuda,BM,4
+2005,AI & Machine Learning,C119857082,Brunei Darussalam,BN,2
+2005,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,3
+2005,AI & Machine Learning,C119857082,Brazil,BR,577
+2005,AI & Machine Learning,C119857082,Botswana,BW,10
+2005,AI & Machine Learning,C119857082,Belarus,BY,24
+2005,AI & Machine Learning,C119857082,Belize,BZ,2
+2005,AI & Machine Learning,C119857082,Canada,CA,1992
+2005,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,2
+2005,AI & Machine Learning,C119857082,Congo,CG,2
+2005,AI & Machine Learning,C119857082,Switzerland,CH,464
+2005,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+2005,AI & Machine Learning,C119857082,Chile,CL,91
+2005,AI & Machine Learning,C119857082,Cameroon,CM,13
+2005,AI & Machine Learning,C119857082,China,CN,9810
+2005,AI & Machine Learning,C119857082,Colombia,CO,52
+2005,AI & Machine Learning,C119857082,Costa Rica,CR,5
+2005,AI & Machine Learning,C119857082,Cuba,CU,33
+2005,AI & Machine Learning,C119857082,Curaçao,CW,1
+2005,AI & Machine Learning,C119857082,Cyprus,CY,58
+2005,AI & Machine Learning,C119857082,Czechia,CZ,176
+2005,AI & Machine Learning,C119857082,Germany,DE,1887
+2005,AI & Machine Learning,C119857082,Denmark,DK,235
+2005,AI & Machine Learning,C119857082,Dominican Republic,DO,4
+2005,AI & Machine Learning,C119857082,Algeria,DZ,51
+2005,AI & Machine Learning,C119857082,Ecuador,EC,7
+2005,AI & Machine Learning,C119857082,Estonia,EE,25
+2005,AI & Machine Learning,C119857082,Egypt,EG,108
+2005,AI & Machine Learning,C119857082,Eritrea,ER,1
+2005,AI & Machine Learning,C119857082,Spain,ES,1137
+2005,AI & Machine Learning,C119857082,Ethiopia,ET,8
+2005,AI & Machine Learning,C119857082,Finland,FI,274
+2005,AI & Machine Learning,C119857082,Fiji,FJ,3
+2005,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2005,AI & Machine Learning,C119857082,France,FR,1663
+2005,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,4037
+2005,AI & Machine Learning,C119857082,Georgia,GE,4
+2005,AI & Machine Learning,C119857082,French Guiana,GF,2
+2005,AI & Machine Learning,C119857082,Ghana,GH,22
+2005,AI & Machine Learning,C119857082,Guadeloupe,GP,2
+2005,AI & Machine Learning,C119857082,Greece,GR,419
+2005,AI & Machine Learning,C119857082,Guatemala,GT,2
+2005,AI & Machine Learning,C119857082,Guyana,GY,1
+2005,AI & Machine Learning,C119857082,Hong Kong,HK,657
+2005,AI & Machine Learning,C119857082,Honduras,HN,1
+2005,AI & Machine Learning,C119857082,Croatia,HR,40
+2005,AI & Machine Learning,C119857082,Haiti,HT,1
+2005,AI & Machine Learning,C119857082,Hungary,HU,141
+2005,AI & Machine Learning,C119857082,Indonesia,ID,52
+2005,AI & Machine Learning,C119857082,Ireland,IE,232
+2005,AI & Machine Learning,C119857082,Israel,IL,375
+2005,AI & Machine Learning,C119857082,Isle of Man,IM,2
+2005,AI & Machine Learning,C119857082,India,IN,757
+2005,AI & Machine Learning,C119857082,Iraq,IQ,10
+2005,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,276
+2005,AI & Machine Learning,C119857082,Iceland,IS,9
+2005,AI & Machine Learning,C119857082,Italy,IT,1244
+2005,AI & Machine Learning,C119857082,Jamaica,JM,8
+2005,AI & Machine Learning,C119857082,Jordan,JO,39
+2005,AI & Machine Learning,C119857082,Japan,JP,2094
+2005,AI & Machine Learning,C119857082,Kenya,KE,23
+2005,AI & Machine Learning,C119857082,Kyrgyzstan,KG,1
+2005,AI & Machine Learning,C119857082,Cambodia,KH,2
+2005,AI & Machine Learning,C119857082,"Korea, Republic of",KR,959
+2005,AI & Machine Learning,C119857082,Kuwait,KW,23
+2005,AI & Machine Learning,C119857082,Kazakhstan,KZ,5
+2005,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,1
+2005,AI & Machine Learning,C119857082,Lebanon,LB,36
+2005,AI & Machine Learning,C119857082,Liechtenstein,LI,1
+2005,AI & Machine Learning,C119857082,Sri Lanka,LK,21
+2005,AI & Machine Learning,C119857082,Lesotho,LS,2
+2005,AI & Machine Learning,C119857082,Lithuania,LT,51
+2005,AI & Machine Learning,C119857082,Luxembourg,LU,13
+2005,AI & Machine Learning,C119857082,Latvia,LV,34
+2005,AI & Machine Learning,C119857082,Morocco,MA,33
+2005,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,1
+2005,AI & Machine Learning,C119857082,Montenegro,ME,3
+2005,AI & Machine Learning,C119857082,Madagascar,MG,2
+2005,AI & Machine Learning,C119857082,North Macedonia,MK,15
+2005,AI & Machine Learning,C119857082,Mali,ML,2
+2005,AI & Machine Learning,C119857082,Myanmar,MM,7
+2005,AI & Machine Learning,C119857082,Mongolia,MN,11
+2005,AI & Machine Learning,C119857082,Macao,MO,20
+2005,AI & Machine Learning,C119857082,Martinique,MQ,1
+2005,AI & Machine Learning,C119857082,Malta,MT,2
+2005,AI & Machine Learning,C119857082,Mauritius,MU,1
+2005,AI & Machine Learning,C119857082,Maldives,MV,1
+2005,AI & Machine Learning,C119857082,Malawi,MW,8
+2005,AI & Machine Learning,C119857082,Mexico,MX,311
+2005,AI & Machine Learning,C119857082,Malaysia,MY,149
+2005,AI & Machine Learning,C119857082,Mozambique,MZ,6
+2005,AI & Machine Learning,C119857082,Niger,NE,7
+2005,AI & Machine Learning,C119857082,Nigeria,NG,77
+2005,AI & Machine Learning,C119857082,Nicaragua,NI,1
+2005,AI & Machine Learning,C119857082,Netherlands,NL,963
+2005,AI & Machine Learning,C119857082,Norway,NO,232
+2005,AI & Machine Learning,C119857082,Nepal,NP,13
+2005,AI & Machine Learning,C119857082,New Zealand,NZ,259
+2005,AI & Machine Learning,C119857082,Oman,OM,17
+2005,AI & Machine Learning,C119857082,Panama,PA,11
+2005,AI & Machine Learning,C119857082,Peru,PE,6
+2005,AI & Machine Learning,C119857082,Papua New Guinea,PG,1
+2005,AI & Machine Learning,C119857082,Philippines,PH,16
+2005,AI & Machine Learning,C119857082,Pakistan,PK,57
+2005,AI & Machine Learning,C119857082,Poland,PL,427
+2005,AI & Machine Learning,C119857082,Puerto Rico,PR,8
+2005,AI & Machine Learning,C119857082,"Palestine, State of",PS,7
+2005,AI & Machine Learning,C119857082,Portugal,PT,251
+2005,AI & Machine Learning,C119857082,Paraguay,PY,6
+2005,AI & Machine Learning,C119857082,Qatar,QA,13
+2005,AI & Machine Learning,C119857082,Réunion,RE,5
+2005,AI & Machine Learning,C119857082,Romania,RO,116
+2005,AI & Machine Learning,C119857082,Serbia,RS,54
+2005,AI & Machine Learning,C119857082,Russian Federation,RU,442
+2005,AI & Machine Learning,C119857082,Rwanda,RW,6
+2005,AI & Machine Learning,C119857082,Saudi Arabia,SA,54
+2005,AI & Machine Learning,C119857082,Sudan,SD,1
+2005,AI & Machine Learning,C119857082,Sweden,SE,452
+2005,AI & Machine Learning,C119857082,Singapore,SG,581
+2005,AI & Machine Learning,C119857082,Slovenia,SI,119
+2005,AI & Machine Learning,C119857082,Slovakia,SK,69
+2005,AI & Machine Learning,C119857082,Sierra Leone,SL,1
+2005,AI & Machine Learning,C119857082,Senegal,SN,9
+2005,AI & Machine Learning,C119857082,South Sudan,SS,11
+2005,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+2005,AI & Machine Learning,C119857082,Eswatini,SZ,4
+2005,AI & Machine Learning,C119857082,Chad,TD,1
+2005,AI & Machine Learning,C119857082,Thailand,TH,128
+2005,AI & Machine Learning,C119857082,Tajikistan,TJ,6
+2005,AI & Machine Learning,C119857082,Turkmenistan,TM,3
+2005,AI & Machine Learning,C119857082,Tunisia,TN,46
+2005,AI & Machine Learning,C119857082,Turkey,TR,364
+2005,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,8
+2005,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1136
+2005,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,15
+2005,AI & Machine Learning,C119857082,Ukraine,UA,101
+2005,AI & Machine Learning,C119857082,Uganda,UG,16
+2005,AI & Machine Learning,C119857082,United States of America,US,13963
+2005,AI & Machine Learning,C119857082,Uruguay,UY,7
+2005,AI & Machine Learning,C119857082,Uzbekistan,UZ,5
+2005,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,44
+2005,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,13
+2005,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2005,AI & Machine Learning,C119857082,Viet Nam,VN,40
+2005,AI & Machine Learning,C119857082,Kosovo,XK,2
+2005,AI & Machine Learning,C119857082,Yemen,YE,5
+2005,AI & Machine Learning,C119857082,South Africa,ZA,170
+2005,AI & Machine Learning,C119857082,Zambia,ZM,1
+2005,AI & Machine Learning,C119857082,Zimbabwe,ZW,1
 2005,CRISPR & Genomics,C98108389,Australia,AU,8
 2005,CRISPR & Genomics,C98108389,Belgium,BE,1
 2005,CRISPR & Genomics,C98108389,Bulgaria,BG,1
@@ -3553,194 +10929,169 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2005,Robotics & Automation,C34413123,Uganda,UG,13
 2005,Robotics & Automation,C34413123,United States of America,US,435
 2005,Robotics & Automation,C34413123,South Africa,ZA,1
-2006,AI & Machine Learning,C154945302,Andorra,AD,1
-2006,AI & Machine Learning,C154945302,United Arab Emirates,AE,190
-2006,AI & Machine Learning,C154945302,Afghanistan,AF,3
-2006,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,1
-2006,AI & Machine Learning,C154945302,Albania,AL,7
-2006,AI & Machine Learning,C154945302,Armenia,AM,42
-2006,AI & Machine Learning,C154945302,Angola,AO,2
-2006,AI & Machine Learning,C154945302,Argentina,AR,536
-2006,AI & Machine Learning,C154945302,American Samoa,AS,2
-2006,AI & Machine Learning,C154945302,Austria,AT,1588
-2006,AI & Machine Learning,C154945302,Australia,AU,6459
-2006,AI & Machine Learning,C154945302,Azerbaijan,AZ,30
-2006,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,28
-2006,AI & Machine Learning,C154945302,Barbados,BB,1
-2006,AI & Machine Learning,C154945302,Bangladesh,BD,188
-2006,AI & Machine Learning,C154945302,Belgium,BE,2551
-2006,AI & Machine Learning,C154945302,Burkina Faso,BF,10
-2006,AI & Machine Learning,C154945302,Bulgaria,BG,317
-2006,AI & Machine Learning,C154945302,Bahrain,BH,26
-2006,AI & Machine Learning,C154945302,Burundi,BI,38
-2006,AI & Machine Learning,C154945302,Benin,BJ,12
-2006,AI & Machine Learning,C154945302,Bermuda,BM,3
-2006,AI & Machine Learning,C154945302,Brunei Darussalam,BN,30
-2006,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,28
-2006,AI & Machine Learning,C154945302,"Bonaire, Sint Eustatius and Saba",BQ,1
-2006,AI & Machine Learning,C154945302,Brazil,BR,3182
-2006,AI & Machine Learning,C154945302,Bahamas,BS,2
-2006,AI & Machine Learning,C154945302,Bhutan,BT,7
-2006,AI & Machine Learning,C154945302,Botswana,BW,19
-2006,AI & Machine Learning,C154945302,Belarus,BY,117
-2006,AI & Machine Learning,C154945302,Belize,BZ,1
-2006,AI & Machine Learning,C154945302,Canada,CA,10297
-2006,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,2
-2006,AI & Machine Learning,C154945302,Congo,CG,8
-2006,AI & Machine Learning,C154945302,Switzerland,CH,2894
-2006,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,8
-2006,AI & Machine Learning,C154945302,Chile,CL,523
-2006,AI & Machine Learning,C154945302,Cameroon,CM,47
-2006,AI & Machine Learning,C154945302,China,CN,57285
-2006,AI & Machine Learning,C154945302,Colombia,CO,340
-2006,AI & Machine Learning,C154945302,Costa Rica,CR,22
-2006,AI & Machine Learning,C154945302,Cuba,CU,146
-2006,AI & Machine Learning,C154945302,Cabo Verde,CV,2
-2006,AI & Machine Learning,C154945302,Cyprus,CY,192
-2006,AI & Machine Learning,C154945302,Czechia,CZ,1189
-2006,AI & Machine Learning,C154945302,Germany,DE,12008
-2006,AI & Machine Learning,C154945302,Denmark,DK,1198
-2006,AI & Machine Learning,C154945302,Dominican Republic,DO,14
-2006,AI & Machine Learning,C154945302,Algeria,DZ,363
-2006,AI & Machine Learning,C154945302,Ecuador,EC,24
-2006,AI & Machine Learning,C154945302,Estonia,EE,139
-2006,AI & Machine Learning,C154945302,Egypt,EG,777
-2006,AI & Machine Learning,C154945302,Spain,ES,6104
-2006,AI & Machine Learning,C154945302,Ethiopia,ET,42
-2006,AI & Machine Learning,C154945302,Finland,FI,1576
-2006,AI & Machine Learning,C154945302,Fiji,FJ,19
-2006,AI & Machine Learning,C154945302,Faroe Islands,FO,1
-2006,AI & Machine Learning,C154945302,France,FR,12014
-2006,AI & Machine Learning,C154945302,Gabon,GA,1
-2006,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,16267
-2006,AI & Machine Learning,C154945302,Georgia,GE,30
-2006,AI & Machine Learning,C154945302,French Guiana,GF,8
-2006,AI & Machine Learning,C154945302,Ghana,GH,46
-2006,AI & Machine Learning,C154945302,Gambia,GM,2
-2006,AI & Machine Learning,C154945302,Guinea,GN,1
-2006,AI & Machine Learning,C154945302,Guadeloupe,GP,22
-2006,AI & Machine Learning,C154945302,Greece,GR,2053
-2006,AI & Machine Learning,C154945302,Guatemala,GT,3
-2006,AI & Machine Learning,C154945302,Guam,GU,6
-2006,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2006,AI & Machine Learning,C154945302,Hong Kong,HK,2962
-2006,AI & Machine Learning,C154945302,Honduras,HN,1
-2006,AI & Machine Learning,C154945302,Croatia,HR,240
-2006,AI & Machine Learning,C154945302,Hungary,HU,828
-2006,AI & Machine Learning,C154945302,Indonesia,ID,203
-2006,AI & Machine Learning,C154945302,Ireland,IE,1168
-2006,AI & Machine Learning,C154945302,Israel,IL,2041
-2006,AI & Machine Learning,C154945302,India,IN,4168
-2006,AI & Machine Learning,C154945302,Iraq,IQ,86
-2006,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,1992
-2006,AI & Machine Learning,C154945302,Iceland,IS,67
-2006,AI & Machine Learning,C154945302,Italy,IT,7815
-2006,AI & Machine Learning,C154945302,Jersey,JE,1
-2006,AI & Machine Learning,C154945302,Jamaica,JM,13
-2006,AI & Machine Learning,C154945302,Jordan,JO,180
-2006,AI & Machine Learning,C154945302,Japan,JP,16296
-2006,AI & Machine Learning,C154945302,Kenya,KE,71
-2006,AI & Machine Learning,C154945302,Kyrgyzstan,KG,8
-2006,AI & Machine Learning,C154945302,Cambodia,KH,26
-2006,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,2
-2006,AI & Machine Learning,C154945302,"Korea, Republic of",KR,6274
-2006,AI & Machine Learning,C154945302,Kuwait,KW,82
-2006,AI & Machine Learning,C154945302,Cayman Islands,KY,2
-2006,AI & Machine Learning,C154945302,Kazakhstan,KZ,23
-2006,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,2
-2006,AI & Machine Learning,C154945302,Lebanon,LB,156
-2006,AI & Machine Learning,C154945302,Liechtenstein,LI,5
-2006,AI & Machine Learning,C154945302,Sri Lanka,LK,103
-2006,AI & Machine Learning,C154945302,Liberia,LR,2
-2006,AI & Machine Learning,C154945302,Lesotho,LS,1
-2006,AI & Machine Learning,C154945302,Lithuania,LT,260
-2006,AI & Machine Learning,C154945302,Luxembourg,LU,70
-2006,AI & Machine Learning,C154945302,Latvia,LV,116
-2006,AI & Machine Learning,C154945302,Libya,LY,8
-2006,AI & Machine Learning,C154945302,Morocco,MA,179
-2006,AI & Machine Learning,C154945302,Monaco,MC,3
-2006,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,33
-2006,AI & Machine Learning,C154945302,Montenegro,ME,30
-2006,AI & Machine Learning,C154945302,Madagascar,MG,2
-2006,AI & Machine Learning,C154945302,North Macedonia,MK,78
-2006,AI & Machine Learning,C154945302,Mali,ML,9
-2006,AI & Machine Learning,C154945302,Myanmar,MM,46
-2006,AI & Machine Learning,C154945302,Mongolia,MN,31
-2006,AI & Machine Learning,C154945302,Macao,MO,114
-2006,AI & Machine Learning,C154945302,Martinique,MQ,4
-2006,AI & Machine Learning,C154945302,Montserrat,MS,1
-2006,AI & Machine Learning,C154945302,Malta,MT,30
-2006,AI & Machine Learning,C154945302,Mauritius,MU,12
-2006,AI & Machine Learning,C154945302,Maldives,MV,4
-2006,AI & Machine Learning,C154945302,Malawi,MW,14
-2006,AI & Machine Learning,C154945302,Mexico,MX,1835
-2006,AI & Machine Learning,C154945302,Malaysia,MY,843
-2006,AI & Machine Learning,C154945302,Mozambique,MZ,30
-2006,AI & Machine Learning,C154945302,Namibia,NA,2
-2006,AI & Machine Learning,C154945302,New Caledonia,NC,1
-2006,AI & Machine Learning,C154945302,Niger,NE,15
-2006,AI & Machine Learning,C154945302,Nigeria,NG,92
-2006,AI & Machine Learning,C154945302,Nicaragua,NI,5
-2006,AI & Machine Learning,C154945302,Netherlands,NL,4474
-2006,AI & Machine Learning,C154945302,Norway,NO,1046
-2006,AI & Machine Learning,C154945302,Nepal,NP,27
-2006,AI & Machine Learning,C154945302,New Zealand,NZ,986
-2006,AI & Machine Learning,C154945302,Oman,OM,53
-2006,AI & Machine Learning,C154945302,Panama,PA,19
-2006,AI & Machine Learning,C154945302,Peru,PE,47
-2006,AI & Machine Learning,C154945302,French Polynesia,PF,5
-2006,AI & Machine Learning,C154945302,Papua New Guinea,PG,2
-2006,AI & Machine Learning,C154945302,Philippines,PH,76
-2006,AI & Machine Learning,C154945302,Pakistan,PK,403
-2006,AI & Machine Learning,C154945302,Poland,PL,2599
-2006,AI & Machine Learning,C154945302,Puerto Rico,PR,102
-2006,AI & Machine Learning,C154945302,"Palestine, State of",PS,21
-2006,AI & Machine Learning,C154945302,Portugal,PT,1424
-2006,AI & Machine Learning,C154945302,Paraguay,PY,8
-2006,AI & Machine Learning,C154945302,Qatar,QA,65
-2006,AI & Machine Learning,C154945302,Réunion,RE,12
-2006,AI & Machine Learning,C154945302,Romania,RO,872
-2006,AI & Machine Learning,C154945302,Serbia,RS,287
-2006,AI & Machine Learning,C154945302,Russian Federation,RU,2399
-2006,AI & Machine Learning,C154945302,Rwanda,RW,4
-2006,AI & Machine Learning,C154945302,Saudi Arabia,SA,243
-2006,AI & Machine Learning,C154945302,Sudan,SD,17
-2006,AI & Machine Learning,C154945302,Sweden,SE,2441
-2006,AI & Machine Learning,C154945302,Singapore,SG,2660
-2006,AI & Machine Learning,C154945302,Slovenia,SI,508
-2006,AI & Machine Learning,C154945302,Slovakia,SK,342
-2006,AI & Machine Learning,C154945302,Sierra Leone,SL,2
-2006,AI & Machine Learning,C154945302,Senegal,SN,14
-2006,AI & Machine Learning,C154945302,Somalia,SO,2
-2006,AI & Machine Learning,C154945302,South Sudan,SS,59
-2006,AI & Machine Learning,C154945302,El Salvador,SV,5
-2006,AI & Machine Learning,C154945302,Sint Maarten (Dutch part),SX,1
-2006,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,33
-2006,AI & Machine Learning,C154945302,Eswatini,SZ,3
-2006,AI & Machine Learning,C154945302,Chad,TD,1
-2006,AI & Machine Learning,C154945302,Togo,TG,1
-2006,AI & Machine Learning,C154945302,Thailand,TH,705
-2006,AI & Machine Learning,C154945302,Tajikistan,TJ,30
-2006,AI & Machine Learning,C154945302,Turkmenistan,TM,5
-2006,AI & Machine Learning,C154945302,Tunisia,TN,320
-2006,AI & Machine Learning,C154945302,Turkey,TR,2012
-2006,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,14
-2006,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5757
-2006,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,28
-2006,AI & Machine Learning,C154945302,Ukraine,UA,606
-2006,AI & Machine Learning,C154945302,Uganda,UG,35
-2006,AI & Machine Learning,C154945302,United States of America,US,61622
-2006,AI & Machine Learning,C154945302,Uruguay,UY,54
-2006,AI & Machine Learning,C154945302,Uzbekistan,UZ,25
-2006,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,201
-2006,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,40
-2006,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,7
-2006,AI & Machine Learning,C154945302,Viet Nam,VN,181
-2006,AI & Machine Learning,C154945302,Kosovo,XK,10
-2006,AI & Machine Learning,C154945302,Yemen,YE,21
-2006,AI & Machine Learning,C154945302,South Africa,ZA,622
-2006,AI & Machine Learning,C154945302,Zambia,ZM,5
-2006,AI & Machine Learning,C154945302,Zimbabwe,ZW,25
+2006,AI & Machine Learning,C119857082,United Arab Emirates,AE,59
+2006,AI & Machine Learning,C119857082,Afghanistan,AF,3
+2006,AI & Machine Learning,C119857082,Albania,AL,2
+2006,AI & Machine Learning,C119857082,Armenia,AM,6
+2006,AI & Machine Learning,C119857082,Argentina,AR,111
+2006,AI & Machine Learning,C119857082,Austria,AT,297
+2006,AI & Machine Learning,C119857082,Australia,AU,1821
+2006,AI & Machine Learning,C119857082,Azerbaijan,AZ,9
+2006,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,3
+2006,AI & Machine Learning,C119857082,Barbados,BB,3
+2006,AI & Machine Learning,C119857082,Bangladesh,BD,42
+2006,AI & Machine Learning,C119857082,Belgium,BE,547
+2006,AI & Machine Learning,C119857082,Burkina Faso,BF,4
+2006,AI & Machine Learning,C119857082,Bulgaria,BG,59
+2006,AI & Machine Learning,C119857082,Bahrain,BH,7
+2006,AI & Machine Learning,C119857082,Burundi,BI,10
+2006,AI & Machine Learning,C119857082,Benin,BJ,3
+2006,AI & Machine Learning,C119857082,Bermuda,BM,3
+2006,AI & Machine Learning,C119857082,Brunei Darussalam,BN,11
+2006,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,11
+2006,AI & Machine Learning,C119857082,"Bonaire, Sint Eustatius and Saba",BQ,1
+2006,AI & Machine Learning,C119857082,Brazil,BR,788
+2006,AI & Machine Learning,C119857082,Bahamas,BS,1
+2006,AI & Machine Learning,C119857082,Bhutan,BT,1
+2006,AI & Machine Learning,C119857082,Botswana,BW,9
+2006,AI & Machine Learning,C119857082,Belarus,BY,35
+2006,AI & Machine Learning,C119857082,Canada,CA,2428
+2006,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+2006,AI & Machine Learning,C119857082,Switzerland,CH,590
+2006,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,3
+2006,AI & Machine Learning,C119857082,Chile,CL,138
+2006,AI & Machine Learning,C119857082,Cameroon,CM,21
+2006,AI & Machine Learning,C119857082,China,CN,14006
+2006,AI & Machine Learning,C119857082,Colombia,CO,86
+2006,AI & Machine Learning,C119857082,Costa Rica,CR,7
+2006,AI & Machine Learning,C119857082,Cuba,CU,53
+2006,AI & Machine Learning,C119857082,Cyprus,CY,61
+2006,AI & Machine Learning,C119857082,Czechia,CZ,231
+2006,AI & Machine Learning,C119857082,Germany,DE,2210
+2006,AI & Machine Learning,C119857082,Denmark,DK,265
+2006,AI & Machine Learning,C119857082,Dominican Republic,DO,2
+2006,AI & Machine Learning,C119857082,Algeria,DZ,63
+2006,AI & Machine Learning,C119857082,Ecuador,EC,8
+2006,AI & Machine Learning,C119857082,Estonia,EE,40
+2006,AI & Machine Learning,C119857082,Egypt,EG,146
+2006,AI & Machine Learning,C119857082,Eritrea,ER,1
+2006,AI & Machine Learning,C119857082,Spain,ES,1443
+2006,AI & Machine Learning,C119857082,Ethiopia,ET,29
+2006,AI & Machine Learning,C119857082,Finland,FI,353
+2006,AI & Machine Learning,C119857082,Fiji,FJ,6
+2006,AI & Machine Learning,C119857082,France,FR,2098
+2006,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,4355
+2006,AI & Machine Learning,C119857082,Georgia,GE,1
+2006,AI & Machine Learning,C119857082,Ghana,GH,25
+2006,AI & Machine Learning,C119857082,Guadeloupe,GP,4
+2006,AI & Machine Learning,C119857082,Greece,GR,559
+2006,AI & Machine Learning,C119857082,Guatemala,GT,3
+2006,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2006,AI & Machine Learning,C119857082,Hong Kong,HK,793
+2006,AI & Machine Learning,C119857082,Honduras,HN,2
+2006,AI & Machine Learning,C119857082,Croatia,HR,43
+2006,AI & Machine Learning,C119857082,Hungary,HU,145
+2006,AI & Machine Learning,C119857082,Indonesia,ID,66
+2006,AI & Machine Learning,C119857082,Ireland,IE,246
+2006,AI & Machine Learning,C119857082,Israel,IL,454
+2006,AI & Machine Learning,C119857082,India,IN,922
+2006,AI & Machine Learning,C119857082,Iraq,IQ,14
+2006,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,485
+2006,AI & Machine Learning,C119857082,Iceland,IS,16
+2006,AI & Machine Learning,C119857082,Italy,IT,1557
+2006,AI & Machine Learning,C119857082,Jamaica,JM,10
+2006,AI & Machine Learning,C119857082,Jordan,JO,42
+2006,AI & Machine Learning,C119857082,Japan,JP,2448
+2006,AI & Machine Learning,C119857082,Kenya,KE,28
+2006,AI & Machine Learning,C119857082,Kyrgyzstan,KG,3
+2006,AI & Machine Learning,C119857082,Cambodia,KH,8
+2006,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1225
+2006,AI & Machine Learning,C119857082,Kuwait,KW,18
+2006,AI & Machine Learning,C119857082,Kazakhstan,KZ,9
+2006,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,1
+2006,AI & Machine Learning,C119857082,Lebanon,LB,40
+2006,AI & Machine Learning,C119857082,Liechtenstein,LI,1
+2006,AI & Machine Learning,C119857082,Sri Lanka,LK,22
+2006,AI & Machine Learning,C119857082,Lithuania,LT,67
+2006,AI & Machine Learning,C119857082,Luxembourg,LU,19
+2006,AI & Machine Learning,C119857082,Latvia,LV,50
+2006,AI & Machine Learning,C119857082,Libya,LY,1
+2006,AI & Machine Learning,C119857082,Morocco,MA,48
+2006,AI & Machine Learning,C119857082,Monaco,MC,2
+2006,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,5
+2006,AI & Machine Learning,C119857082,Montenegro,ME,3
+2006,AI & Machine Learning,C119857082,North Macedonia,MK,25
+2006,AI & Machine Learning,C119857082,Mali,ML,3
+2006,AI & Machine Learning,C119857082,Myanmar,MM,6
+2006,AI & Machine Learning,C119857082,Mongolia,MN,4
+2006,AI & Machine Learning,C119857082,Macao,MO,22
+2006,AI & Machine Learning,C119857082,Martinique,MQ,4
+2006,AI & Machine Learning,C119857082,Montserrat,MS,2
+2006,AI & Machine Learning,C119857082,Malta,MT,10
+2006,AI & Machine Learning,C119857082,Mauritius,MU,1
+2006,AI & Machine Learning,C119857082,Maldives,MV,1
+2006,AI & Machine Learning,C119857082,Malawi,MW,9
+2006,AI & Machine Learning,C119857082,Mexico,MX,385
+2006,AI & Machine Learning,C119857082,Malaysia,MY,192
+2006,AI & Machine Learning,C119857082,Mozambique,MZ,4
+2006,AI & Machine Learning,C119857082,Namibia,NA,1
+2006,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2006,AI & Machine Learning,C119857082,Niger,NE,6
+2006,AI & Machine Learning,C119857082,Nigeria,NG,74
+2006,AI & Machine Learning,C119857082,Nicaragua,NI,2
+2006,AI & Machine Learning,C119857082,Netherlands,NL,1079
+2006,AI & Machine Learning,C119857082,Norway,NO,266
+2006,AI & Machine Learning,C119857082,Nepal,NP,8
+2006,AI & Machine Learning,C119857082,New Zealand,NZ,273
+2006,AI & Machine Learning,C119857082,Oman,OM,21
+2006,AI & Machine Learning,C119857082,Panama,PA,5
+2006,AI & Machine Learning,C119857082,Peru,PE,4
+2006,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2006,AI & Machine Learning,C119857082,Philippines,PH,29
+2006,AI & Machine Learning,C119857082,Pakistan,PK,71
+2006,AI & Machine Learning,C119857082,Poland,PL,539
+2006,AI & Machine Learning,C119857082,Puerto Rico,PR,20
+2006,AI & Machine Learning,C119857082,"Palestine, State of",PS,3
+2006,AI & Machine Learning,C119857082,Portugal,PT,328
+2006,AI & Machine Learning,C119857082,Paraguay,PY,3
+2006,AI & Machine Learning,C119857082,Qatar,QA,23
+2006,AI & Machine Learning,C119857082,Réunion,RE,3
+2006,AI & Machine Learning,C119857082,Romania,RO,178
+2006,AI & Machine Learning,C119857082,Serbia,RS,75
+2006,AI & Machine Learning,C119857082,Russian Federation,RU,552
+2006,AI & Machine Learning,C119857082,Rwanda,RW,4
+2006,AI & Machine Learning,C119857082,Saudi Arabia,SA,69
+2006,AI & Machine Learning,C119857082,Sudan,SD,1
+2006,AI & Machine Learning,C119857082,Sweden,SE,523
+2006,AI & Machine Learning,C119857082,Singapore,SG,598
+2006,AI & Machine Learning,C119857082,Slovenia,SI,143
+2006,AI & Machine Learning,C119857082,Slovakia,SK,76
+2006,AI & Machine Learning,C119857082,Senegal,SN,15
+2006,AI & Machine Learning,C119857082,South Sudan,SS,14
+2006,AI & Machine Learning,C119857082,El Salvador,SV,2
+2006,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,1
+2006,AI & Machine Learning,C119857082,Eswatini,SZ,3
+2006,AI & Machine Learning,C119857082,Togo,TG,1
+2006,AI & Machine Learning,C119857082,Thailand,TH,172
+2006,AI & Machine Learning,C119857082,Tajikistan,TJ,9
+2006,AI & Machine Learning,C119857082,Tunisia,TN,73
+2006,AI & Machine Learning,C119857082,Turkey,TR,501
+2006,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,5
+2006,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1427
+2006,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,14
+2006,AI & Machine Learning,C119857082,Ukraine,UA,148
+2006,AI & Machine Learning,C119857082,Uganda,UG,19
+2006,AI & Machine Learning,C119857082,United States of America,US,14466
+2006,AI & Machine Learning,C119857082,Uruguay,UY,15
+2006,AI & Machine Learning,C119857082,Uzbekistan,UZ,9
+2006,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,49
+2006,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,14
+2006,AI & Machine Learning,C119857082,Viet Nam,VN,38
+2006,AI & Machine Learning,C119857082,Kosovo,XK,3
+2006,AI & Machine Learning,C119857082,Yemen,YE,2
+2006,AI & Machine Learning,C119857082,South Africa,ZA,210
+2006,AI & Machine Learning,C119857082,Zambia,ZM,2
+2006,AI & Machine Learning,C119857082,Zimbabwe,ZW,8
 2006,CRISPR & Genomics,C98108389,Austria,AT,2
 2006,CRISPR & Genomics,C98108389,Australia,AU,2
 2006,CRISPR & Genomics,C98108389,Belgium,BE,2
@@ -4235,196 +11586,172 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2006,Robotics & Automation,C34413123,United States of America,US,404
 2006,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,1
 2006,Robotics & Automation,C34413123,South Africa,ZA,1
-2007,AI & Machine Learning,C154945302,United Arab Emirates,AE,248
-2007,AI & Machine Learning,C154945302,Afghanistan,AF,3
-2007,AI & Machine Learning,C154945302,Albania,AL,9
-2007,AI & Machine Learning,C154945302,Armenia,AM,43
-2007,AI & Machine Learning,C154945302,Angola,AO,2
-2007,AI & Machine Learning,C154945302,Argentina,AR,569
-2007,AI & Machine Learning,C154945302,Austria,AT,1630
-2007,AI & Machine Learning,C154945302,Australia,AU,6560
-2007,AI & Machine Learning,C154945302,Azerbaijan,AZ,52
-2007,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,37
-2007,AI & Machine Learning,C154945302,Barbados,BB,2
-2007,AI & Machine Learning,C154945302,Bangladesh,BD,249
-2007,AI & Machine Learning,C154945302,Belgium,BE,2667
-2007,AI & Machine Learning,C154945302,Burkina Faso,BF,7
-2007,AI & Machine Learning,C154945302,Bulgaria,BG,338
-2007,AI & Machine Learning,C154945302,Bahrain,BH,20
-2007,AI & Machine Learning,C154945302,Burundi,BI,22
-2007,AI & Machine Learning,C154945302,Benin,BJ,13
-2007,AI & Machine Learning,C154945302,Bermuda,BM,8
-2007,AI & Machine Learning,C154945302,Brunei Darussalam,BN,35
-2007,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,32
-2007,AI & Machine Learning,C154945302,Brazil,BR,3231
-2007,AI & Machine Learning,C154945302,Bahamas,BS,1
-2007,AI & Machine Learning,C154945302,Bhutan,BT,4
-2007,AI & Machine Learning,C154945302,Botswana,BW,27
-2007,AI & Machine Learning,C154945302,Belarus,BY,146
-2007,AI & Machine Learning,C154945302,Belize,BZ,4
-2007,AI & Machine Learning,C154945302,Canada,CA,9974
-2007,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,6
-2007,AI & Machine Learning,C154945302,Central African Republic,CF,1
-2007,AI & Machine Learning,C154945302,Congo,CG,6
-2007,AI & Machine Learning,C154945302,Switzerland,CH,3107
-2007,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,5
-2007,AI & Machine Learning,C154945302,Chile,CL,479
-2007,AI & Machine Learning,C154945302,Cameroon,CM,51
-2007,AI & Machine Learning,C154945302,China,CN,68002
-2007,AI & Machine Learning,C154945302,Colombia,CO,499
-2007,AI & Machine Learning,C154945302,Costa Rica,CR,31
-2007,AI & Machine Learning,C154945302,Cuba,CU,187
-2007,AI & Machine Learning,C154945302,Curaçao,CW,1
-2007,AI & Machine Learning,C154945302,Cyprus,CY,224
-2007,AI & Machine Learning,C154945302,Czechia,CZ,1402
-2007,AI & Machine Learning,C154945302,Germany,DE,12529
-2007,AI & Machine Learning,C154945302,Djibouti,DJ,7
-2007,AI & Machine Learning,C154945302,Denmark,DK,1310
-2007,AI & Machine Learning,C154945302,Dominica,DM,1
-2007,AI & Machine Learning,C154945302,Dominican Republic,DO,12
-2007,AI & Machine Learning,C154945302,Algeria,DZ,397
-2007,AI & Machine Learning,C154945302,Ecuador,EC,39
-2007,AI & Machine Learning,C154945302,Estonia,EE,119
-2007,AI & Machine Learning,C154945302,Egypt,EG,609
-2007,AI & Machine Learning,C154945302,Eritrea,ER,6
-2007,AI & Machine Learning,C154945302,Spain,ES,6782
-2007,AI & Machine Learning,C154945302,Ethiopia,ET,29
-2007,AI & Machine Learning,C154945302,Finland,FI,1612
-2007,AI & Machine Learning,C154945302,Fiji,FJ,11
-2007,AI & Machine Learning,C154945302,France,FR,12453
-2007,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,16588
-2007,AI & Machine Learning,C154945302,Grenada,GD,1
-2007,AI & Machine Learning,C154945302,Georgia,GE,27
-2007,AI & Machine Learning,C154945302,French Guiana,GF,8
-2007,AI & Machine Learning,C154945302,Ghana,GH,74
-2007,AI & Machine Learning,C154945302,Gibraltar,GI,2
-2007,AI & Machine Learning,C154945302,Gambia,GM,4
-2007,AI & Machine Learning,C154945302,Guinea,GN,1
-2007,AI & Machine Learning,C154945302,Guadeloupe,GP,22
-2007,AI & Machine Learning,C154945302,Equatorial Guinea,GQ,2
-2007,AI & Machine Learning,C154945302,Greece,GR,2101
-2007,AI & Machine Learning,C154945302,Guatemala,GT,6
-2007,AI & Machine Learning,C154945302,Guam,GU,2
-2007,AI & Machine Learning,C154945302,Guyana,GY,1
-2007,AI & Machine Learning,C154945302,Hong Kong,HK,2519
-2007,AI & Machine Learning,C154945302,Honduras,HN,4
-2007,AI & Machine Learning,C154945302,Croatia,HR,303
-2007,AI & Machine Learning,C154945302,Haiti,HT,1
-2007,AI & Machine Learning,C154945302,Hungary,HU,840
-2007,AI & Machine Learning,C154945302,Indonesia,ID,281
-2007,AI & Machine Learning,C154945302,Ireland,IE,1178
-2007,AI & Machine Learning,C154945302,Israel,IL,1985
-2007,AI & Machine Learning,C154945302,Isle of Man,IM,1
-2007,AI & Machine Learning,C154945302,India,IN,4289
-2007,AI & Machine Learning,C154945302,Iraq,IQ,106
-2007,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,2429
-2007,AI & Machine Learning,C154945302,Iceland,IS,54
-2007,AI & Machine Learning,C154945302,Italy,IT,7776
-2007,AI & Machine Learning,C154945302,Jamaica,JM,21
-2007,AI & Machine Learning,C154945302,Jordan,JO,173
-2007,AI & Machine Learning,C154945302,Japan,JP,15433
-2007,AI & Machine Learning,C154945302,Kenya,KE,63
-2007,AI & Machine Learning,C154945302,Kyrgyzstan,KG,2
-2007,AI & Machine Learning,C154945302,Cambodia,KH,30
-2007,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,4
-2007,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,3
-2007,AI & Machine Learning,C154945302,"Korea, Republic of",KR,6199
-2007,AI & Machine Learning,C154945302,Kuwait,KW,81
-2007,AI & Machine Learning,C154945302,Cayman Islands,KY,1
-2007,AI & Machine Learning,C154945302,Kazakhstan,KZ,48
-2007,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,6
-2007,AI & Machine Learning,C154945302,Lebanon,LB,111
-2007,AI & Machine Learning,C154945302,Liechtenstein,LI,2
-2007,AI & Machine Learning,C154945302,Sri Lanka,LK,95
-2007,AI & Machine Learning,C154945302,Liberia,LR,1
-2007,AI & Machine Learning,C154945302,Lithuania,LT,223
-2007,AI & Machine Learning,C154945302,Luxembourg,LU,106
-2007,AI & Machine Learning,C154945302,Latvia,LV,105
-2007,AI & Machine Learning,C154945302,Libya,LY,18
-2007,AI & Machine Learning,C154945302,Morocco,MA,191
-2007,AI & Machine Learning,C154945302,Monaco,MC,4
-2007,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,32
-2007,AI & Machine Learning,C154945302,Montenegro,ME,29
-2007,AI & Machine Learning,C154945302,Madagascar,MG,3
-2007,AI & Machine Learning,C154945302,North Macedonia,MK,73
-2007,AI & Machine Learning,C154945302,Mali,ML,6
-2007,AI & Machine Learning,C154945302,Myanmar,MM,22
-2007,AI & Machine Learning,C154945302,Mongolia,MN,43
-2007,AI & Machine Learning,C154945302,Macao,MO,90
-2007,AI & Machine Learning,C154945302,Martinique,MQ,1
-2007,AI & Machine Learning,C154945302,Malta,MT,28
-2007,AI & Machine Learning,C154945302,Mauritius,MU,6
-2007,AI & Machine Learning,C154945302,Malawi,MW,8
-2007,AI & Machine Learning,C154945302,Mexico,MX,1894
-2007,AI & Machine Learning,C154945302,Malaysia,MY,927
-2007,AI & Machine Learning,C154945302,Mozambique,MZ,23
-2007,AI & Machine Learning,C154945302,Namibia,NA,5
-2007,AI & Machine Learning,C154945302,New Caledonia,NC,4
-2007,AI & Machine Learning,C154945302,Niger,NE,10
-2007,AI & Machine Learning,C154945302,Nigeria,NG,170
-2007,AI & Machine Learning,C154945302,Nicaragua,NI,7
-2007,AI & Machine Learning,C154945302,Netherlands,NL,4604
-2007,AI & Machine Learning,C154945302,Norway,NO,1273
-2007,AI & Machine Learning,C154945302,Nepal,NP,49
-2007,AI & Machine Learning,C154945302,New Zealand,NZ,1038
-2007,AI & Machine Learning,C154945302,Oman,OM,40
-2007,AI & Machine Learning,C154945302,Panama,PA,13
-2007,AI & Machine Learning,C154945302,Peru,PE,63
-2007,AI & Machine Learning,C154945302,French Polynesia,PF,1
-2007,AI & Machine Learning,C154945302,Papua New Guinea,PG,2
-2007,AI & Machine Learning,C154945302,Philippines,PH,90
-2007,AI & Machine Learning,C154945302,Pakistan,PK,430
-2007,AI & Machine Learning,C154945302,Poland,PL,2757
-2007,AI & Machine Learning,C154945302,Puerto Rico,PR,90
-2007,AI & Machine Learning,C154945302,"Palestine, State of",PS,27
-2007,AI & Machine Learning,C154945302,Portugal,PT,1529
-2007,AI & Machine Learning,C154945302,Paraguay,PY,8
-2007,AI & Machine Learning,C154945302,Qatar,QA,82
-2007,AI & Machine Learning,C154945302,Réunion,RE,13
-2007,AI & Machine Learning,C154945302,Romania,RO,1092
-2007,AI & Machine Learning,C154945302,Serbia,RS,291
-2007,AI & Machine Learning,C154945302,Russian Federation,RU,2472
-2007,AI & Machine Learning,C154945302,Rwanda,RW,6
-2007,AI & Machine Learning,C154945302,Saudi Arabia,SA,257
-2007,AI & Machine Learning,C154945302,Sudan,SD,8
-2007,AI & Machine Learning,C154945302,Sweden,SE,2547
-2007,AI & Machine Learning,C154945302,Singapore,SG,2294
-2007,AI & Machine Learning,C154945302,Slovenia,SI,510
-2007,AI & Machine Learning,C154945302,Slovakia,SK,358
-2007,AI & Machine Learning,C154945302,Sierra Leone,SL,4
-2007,AI & Machine Learning,C154945302,San Marino,SM,3
-2007,AI & Machine Learning,C154945302,Senegal,SN,19
-2007,AI & Machine Learning,C154945302,Somalia,SO,4
-2007,AI & Machine Learning,C154945302,South Sudan,SS,68
-2007,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,1
-2007,AI & Machine Learning,C154945302,El Salvador,SV,3
-2007,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,14
-2007,AI & Machine Learning,C154945302,Eswatini,SZ,1
-2007,AI & Machine Learning,C154945302,Turks and Caicos Islands,TC,2
-2007,AI & Machine Learning,C154945302,Togo,TG,3
-2007,AI & Machine Learning,C154945302,Thailand,TH,648
-2007,AI & Machine Learning,C154945302,Tajikistan,TJ,34
-2007,AI & Machine Learning,C154945302,Turkmenistan,TM,2
-2007,AI & Machine Learning,C154945302,Tunisia,TN,323
-2007,AI & Machine Learning,C154945302,Turkey,TR,2187
-2007,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,31
-2007,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5705
-2007,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,31
-2007,AI & Machine Learning,C154945302,Ukraine,UA,593
-2007,AI & Machine Learning,C154945302,Uganda,UG,42
-2007,AI & Machine Learning,C154945302,United States of America,US,59644
-2007,AI & Machine Learning,C154945302,Uruguay,UY,58
-2007,AI & Machine Learning,C154945302,Uzbekistan,UZ,20
-2007,AI & Machine Learning,C154945302,Holy See,VA,1
-2007,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,220
-2007,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,39
-2007,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,3
-2007,AI & Machine Learning,C154945302,Viet Nam,VN,236
-2007,AI & Machine Learning,C154945302,Kosovo,XK,5
-2007,AI & Machine Learning,C154945302,Yemen,YE,16
-2007,AI & Machine Learning,C154945302,South Africa,ZA,735
-2007,AI & Machine Learning,C154945302,Zambia,ZM,11
-2007,AI & Machine Learning,C154945302,Zimbabwe,ZW,26
+2007,AI & Machine Learning,C119857082,United Arab Emirates,AE,62
+2007,AI & Machine Learning,C119857082,Albania,AL,3
+2007,AI & Machine Learning,C119857082,Armenia,AM,6
+2007,AI & Machine Learning,C119857082,Argentina,AR,149
+2007,AI & Machine Learning,C119857082,Austria,AT,319
+2007,AI & Machine Learning,C119857082,Australia,AU,1790
+2007,AI & Machine Learning,C119857082,Azerbaijan,AZ,19
+2007,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,7
+2007,AI & Machine Learning,C119857082,Barbados,BB,3
+2007,AI & Machine Learning,C119857082,Bangladesh,BD,56
+2007,AI & Machine Learning,C119857082,Belgium,BE,600
+2007,AI & Machine Learning,C119857082,Bulgaria,BG,63
+2007,AI & Machine Learning,C119857082,Bahrain,BH,3
+2007,AI & Machine Learning,C119857082,Burundi,BI,7
+2007,AI & Machine Learning,C119857082,Benin,BJ,4
+2007,AI & Machine Learning,C119857082,Bermuda,BM,1
+2007,AI & Machine Learning,C119857082,Brunei Darussalam,BN,9
+2007,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,9
+2007,AI & Machine Learning,C119857082,Brazil,BR,821
+2007,AI & Machine Learning,C119857082,Botswana,BW,7
+2007,AI & Machine Learning,C119857082,Belarus,BY,43
+2007,AI & Machine Learning,C119857082,Canada,CA,2332
+2007,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+2007,AI & Machine Learning,C119857082,Congo,CG,2
+2007,AI & Machine Learning,C119857082,Switzerland,CH,724
+2007,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,3
+2007,AI & Machine Learning,C119857082,Chile,CL,143
+2007,AI & Machine Learning,C119857082,Cameroon,CM,24
+2007,AI & Machine Learning,C119857082,China,CN,16807
+2007,AI & Machine Learning,C119857082,Colombia,CO,101
+2007,AI & Machine Learning,C119857082,Costa Rica,CR,18
+2007,AI & Machine Learning,C119857082,Cuba,CU,45
+2007,AI & Machine Learning,C119857082,Cyprus,CY,65
+2007,AI & Machine Learning,C119857082,Czechia,CZ,238
+2007,AI & Machine Learning,C119857082,Germany,DE,2226
+2007,AI & Machine Learning,C119857082,Djibouti,DJ,4
+2007,AI & Machine Learning,C119857082,Denmark,DK,280
+2007,AI & Machine Learning,C119857082,Dominica,DM,1
+2007,AI & Machine Learning,C119857082,Dominican Republic,DO,2
+2007,AI & Machine Learning,C119857082,Algeria,DZ,75
+2007,AI & Machine Learning,C119857082,Ecuador,EC,9
+2007,AI & Machine Learning,C119857082,Estonia,EE,23
+2007,AI & Machine Learning,C119857082,Egypt,EG,158
+2007,AI & Machine Learning,C119857082,Eritrea,ER,1
+2007,AI & Machine Learning,C119857082,Spain,ES,1590
+2007,AI & Machine Learning,C119857082,Ethiopia,ET,19
+2007,AI & Machine Learning,C119857082,Finland,FI,390
+2007,AI & Machine Learning,C119857082,Fiji,FJ,7
+2007,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2007,AI & Machine Learning,C119857082,France,FR,2182
+2007,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,4745
+2007,AI & Machine Learning,C119857082,Georgia,GE,6
+2007,AI & Machine Learning,C119857082,French Guiana,GF,2
+2007,AI & Machine Learning,C119857082,Ghana,GH,49
+2007,AI & Machine Learning,C119857082,Gambia,GM,3
+2007,AI & Machine Learning,C119857082,Guadeloupe,GP,6
+2007,AI & Machine Learning,C119857082,Greece,GR,532
+2007,AI & Machine Learning,C119857082,Guatemala,GT,4
+2007,AI & Machine Learning,C119857082,Hong Kong,HK,649
+2007,AI & Machine Learning,C119857082,Honduras,HN,3
+2007,AI & Machine Learning,C119857082,Croatia,HR,57
+2007,AI & Machine Learning,C119857082,Hungary,HU,186
+2007,AI & Machine Learning,C119857082,Indonesia,ID,89
+2007,AI & Machine Learning,C119857082,Ireland,IE,295
+2007,AI & Machine Learning,C119857082,Israel,IL,426
+2007,AI & Machine Learning,C119857082,India,IN,1080
+2007,AI & Machine Learning,C119857082,Iraq,IQ,16
+2007,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,612
+2007,AI & Machine Learning,C119857082,Iceland,IS,11
+2007,AI & Machine Learning,C119857082,Italy,IT,1638
+2007,AI & Machine Learning,C119857082,Jamaica,JM,11
+2007,AI & Machine Learning,C119857082,Jordan,JO,40
+2007,AI & Machine Learning,C119857082,Japan,JP,2252
+2007,AI & Machine Learning,C119857082,Kenya,KE,34
+2007,AI & Machine Learning,C119857082,Kyrgyzstan,KG,2
+2007,AI & Machine Learning,C119857082,Cambodia,KH,11
+2007,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,2
+2007,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,1
+2007,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1140
+2007,AI & Machine Learning,C119857082,Kuwait,KW,26
+2007,AI & Machine Learning,C119857082,Kazakhstan,KZ,20
+2007,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,3
+2007,AI & Machine Learning,C119857082,Lebanon,LB,39
+2007,AI & Machine Learning,C119857082,Liechtenstein,LI,3
+2007,AI & Machine Learning,C119857082,Sri Lanka,LK,22
+2007,AI & Machine Learning,C119857082,Lithuania,LT,72
+2007,AI & Machine Learning,C119857082,Luxembourg,LU,30
+2007,AI & Machine Learning,C119857082,Latvia,LV,60
+2007,AI & Machine Learning,C119857082,Morocco,MA,56
+2007,AI & Machine Learning,C119857082,Monaco,MC,2
+2007,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,5
+2007,AI & Machine Learning,C119857082,Montenegro,ME,1
+2007,AI & Machine Learning,C119857082,Madagascar,MG,4
+2007,AI & Machine Learning,C119857082,North Macedonia,MK,21
+2007,AI & Machine Learning,C119857082,Myanmar,MM,6
+2007,AI & Machine Learning,C119857082,Mongolia,MN,8
+2007,AI & Machine Learning,C119857082,Macao,MO,16
+2007,AI & Machine Learning,C119857082,Martinique,MQ,2
+2007,AI & Machine Learning,C119857082,Malta,MT,7
+2007,AI & Machine Learning,C119857082,Mauritius,MU,4
+2007,AI & Machine Learning,C119857082,Malawi,MW,9
+2007,AI & Machine Learning,C119857082,Mexico,MX,442
+2007,AI & Machine Learning,C119857082,Malaysia,MY,241
+2007,AI & Machine Learning,C119857082,Mozambique,MZ,6
+2007,AI & Machine Learning,C119857082,Namibia,NA,2
+2007,AI & Machine Learning,C119857082,New Caledonia,NC,2
+2007,AI & Machine Learning,C119857082,Niger,NE,6
+2007,AI & Machine Learning,C119857082,Nigeria,NG,52
+2007,AI & Machine Learning,C119857082,Nicaragua,NI,2
+2007,AI & Machine Learning,C119857082,Netherlands,NL,1146
+2007,AI & Machine Learning,C119857082,Norway,NO,333
+2007,AI & Machine Learning,C119857082,Nepal,NP,10
+2007,AI & Machine Learning,C119857082,New Zealand,NZ,315
+2007,AI & Machine Learning,C119857082,Oman,OM,18
+2007,AI & Machine Learning,C119857082,Panama,PA,2
+2007,AI & Machine Learning,C119857082,Peru,PE,15
+2007,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2007,AI & Machine Learning,C119857082,Philippines,PH,19
+2007,AI & Machine Learning,C119857082,Pakistan,PK,100
+2007,AI & Machine Learning,C119857082,Poland,PL,581
+2007,AI & Machine Learning,C119857082,Puerto Rico,PR,16
+2007,AI & Machine Learning,C119857082,"Palestine, State of",PS,6
+2007,AI & Machine Learning,C119857082,Portugal,PT,372
+2007,AI & Machine Learning,C119857082,Paraguay,PY,2
+2007,AI & Machine Learning,C119857082,Qatar,QA,13
+2007,AI & Machine Learning,C119857082,Réunion,RE,3
+2007,AI & Machine Learning,C119857082,Romania,RO,231
+2007,AI & Machine Learning,C119857082,Serbia,RS,57
+2007,AI & Machine Learning,C119857082,Russian Federation,RU,559
+2007,AI & Machine Learning,C119857082,Rwanda,RW,4
+2007,AI & Machine Learning,C119857082,Saudi Arabia,SA,65
+2007,AI & Machine Learning,C119857082,Sudan,SD,2
+2007,AI & Machine Learning,C119857082,Sweden,SE,586
+2007,AI & Machine Learning,C119857082,Singapore,SG,532
+2007,AI & Machine Learning,C119857082,Slovenia,SI,146
+2007,AI & Machine Learning,C119857082,Slovakia,SK,67
+2007,AI & Machine Learning,C119857082,Sierra Leone,SL,3
+2007,AI & Machine Learning,C119857082,San Marino,SM,1
+2007,AI & Machine Learning,C119857082,Senegal,SN,10
+2007,AI & Machine Learning,C119857082,Somalia,SO,1
+2007,AI & Machine Learning,C119857082,South Sudan,SS,22
+2007,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,2
+2007,AI & Machine Learning,C119857082,El Salvador,SV,1
+2007,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,5
+2007,AI & Machine Learning,C119857082,Turks and Caicos Islands,TC,2
+2007,AI & Machine Learning,C119857082,Thailand,TH,175
+2007,AI & Machine Learning,C119857082,Tajikistan,TJ,5
+2007,AI & Machine Learning,C119857082,Tunisia,TN,58
+2007,AI & Machine Learning,C119857082,Turkey,TR,512
+2007,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,10
+2007,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1419
+2007,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,10
+2007,AI & Machine Learning,C119857082,Ukraine,UA,143
+2007,AI & Machine Learning,C119857082,Uganda,UG,25
+2007,AI & Machine Learning,C119857082,United States of America,US,14922
+2007,AI & Machine Learning,C119857082,Uruguay,UY,15
+2007,AI & Machine Learning,C119857082,Uzbekistan,UZ,5
+2007,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,46
+2007,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,9
+2007,AI & Machine Learning,C119857082,Viet Nam,VN,61
+2007,AI & Machine Learning,C119857082,Samoa,WS,1
+2007,AI & Machine Learning,C119857082,Kosovo,XK,1
+2007,AI & Machine Learning,C119857082,Yemen,YE,4
+2007,AI & Machine Learning,C119857082,South Africa,ZA,242
+2007,AI & Machine Learning,C119857082,Zambia,ZM,4
+2007,AI & Machine Learning,C119857082,Zimbabwe,ZW,8
 2007,CRISPR & Genomics,C98108389,Argentina,AR,1
 2007,CRISPR & Genomics,C98108389,Austria,AT,1
 2007,CRISPR & Genomics,C98108389,Australia,AU,4
@@ -4931,193 +12258,178 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2007,Robotics & Automation,C34413123,Viet Nam,VN,1
 2007,Robotics & Automation,C34413123,South Africa,ZA,1
 2007,Robotics & Automation,C34413123,Zimbabwe,ZW,1
-2008,AI & Machine Learning,C154945302,United Arab Emirates,AE,260
-2008,AI & Machine Learning,C154945302,Afghanistan,AF,1
-2008,AI & Machine Learning,C154945302,Albania,AL,15
-2008,AI & Machine Learning,C154945302,Armenia,AM,56
-2008,AI & Machine Learning,C154945302,Angola,AO,1
-2008,AI & Machine Learning,C154945302,Argentina,AR,625
-2008,AI & Machine Learning,C154945302,American Samoa,AS,2
-2008,AI & Machine Learning,C154945302,Austria,AT,1921
-2008,AI & Machine Learning,C154945302,Australia,AU,6947
-2008,AI & Machine Learning,C154945302,Azerbaijan,AZ,59
-2008,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,48
-2008,AI & Machine Learning,C154945302,Barbados,BB,7
-2008,AI & Machine Learning,C154945302,Bangladesh,BD,300
-2008,AI & Machine Learning,C154945302,Belgium,BE,2870
-2008,AI & Machine Learning,C154945302,Burkina Faso,BF,14
-2008,AI & Machine Learning,C154945302,Bulgaria,BG,392
-2008,AI & Machine Learning,C154945302,Bahrain,BH,18
-2008,AI & Machine Learning,C154945302,Burundi,BI,29
-2008,AI & Machine Learning,C154945302,Benin,BJ,9
-2008,AI & Machine Learning,C154945302,Bermuda,BM,4
-2008,AI & Machine Learning,C154945302,Brunei Darussalam,BN,29
-2008,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,25
-2008,AI & Machine Learning,C154945302,Brazil,BR,3581
-2008,AI & Machine Learning,C154945302,Bahamas,BS,9
-2008,AI & Machine Learning,C154945302,Bhutan,BT,2
-2008,AI & Machine Learning,C154945302,Botswana,BW,21
-2008,AI & Machine Learning,C154945302,Belarus,BY,126
-2008,AI & Machine Learning,C154945302,Belize,BZ,2
-2008,AI & Machine Learning,C154945302,Canada,CA,10441
-2008,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,3
-2008,AI & Machine Learning,C154945302,Congo,CG,4
-2008,AI & Machine Learning,C154945302,Switzerland,CH,3222
-2008,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,13
-2008,AI & Machine Learning,C154945302,Chile,CL,584
-2008,AI & Machine Learning,C154945302,Cameroon,CM,61
-2008,AI & Machine Learning,C154945302,China,CN,82933
-2008,AI & Machine Learning,C154945302,Colombia,CO,446
-2008,AI & Machine Learning,C154945302,Costa Rica,CR,50
-2008,AI & Machine Learning,C154945302,Cuba,CU,169
-2008,AI & Machine Learning,C154945302,Cabo Verde,CV,4
-2008,AI & Machine Learning,C154945302,Curaçao,CW,2
-2008,AI & Machine Learning,C154945302,Cyprus,CY,249
-2008,AI & Machine Learning,C154945302,Czechia,CZ,1449
-2008,AI & Machine Learning,C154945302,Germany,DE,13828
-2008,AI & Machine Learning,C154945302,Denmark,DK,1463
-2008,AI & Machine Learning,C154945302,Dominican Republic,DO,7
-2008,AI & Machine Learning,C154945302,Algeria,DZ,484
-2008,AI & Machine Learning,C154945302,Ecuador,EC,43
-2008,AI & Machine Learning,C154945302,Estonia,EE,149
-2008,AI & Machine Learning,C154945302,Egypt,EG,839
-2008,AI & Machine Learning,C154945302,Eritrea,ER,1
-2008,AI & Machine Learning,C154945302,Spain,ES,7002
-2008,AI & Machine Learning,C154945302,Ethiopia,ET,49
-2008,AI & Machine Learning,C154945302,Finland,FI,1641
-2008,AI & Machine Learning,C154945302,Fiji,FJ,14
-2008,AI & Machine Learning,C154945302,Faroe Islands,FO,1
-2008,AI & Machine Learning,C154945302,France,FR,13515
-2008,AI & Machine Learning,C154945302,Gabon,GA,1
-2008,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,17511
-2008,AI & Machine Learning,C154945302,Grenada,GD,5
-2008,AI & Machine Learning,C154945302,Georgia,GE,34
-2008,AI & Machine Learning,C154945302,French Guiana,GF,8
-2008,AI & Machine Learning,C154945302,Ghana,GH,60
-2008,AI & Machine Learning,C154945302,Gibraltar,GI,3
-2008,AI & Machine Learning,C154945302,Greenland,GL,1
-2008,AI & Machine Learning,C154945302,Gambia,GM,2
-2008,AI & Machine Learning,C154945302,Guadeloupe,GP,20
-2008,AI & Machine Learning,C154945302,Equatorial Guinea,GQ,1
-2008,AI & Machine Learning,C154945302,Greece,GR,2254
-2008,AI & Machine Learning,C154945302,Guatemala,GT,14
-2008,AI & Machine Learning,C154945302,Guam,GU,3
-2008,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2008,AI & Machine Learning,C154945302,Hong Kong,HK,2800
-2008,AI & Machine Learning,C154945302,Honduras,HN,6
-2008,AI & Machine Learning,C154945302,Croatia,HR,348
-2008,AI & Machine Learning,C154945302,Hungary,HU,835
-2008,AI & Machine Learning,C154945302,Indonesia,ID,343
-2008,AI & Machine Learning,C154945302,Ireland,IE,1278
-2008,AI & Machine Learning,C154945302,Israel,IL,2178
-2008,AI & Machine Learning,C154945302,India,IN,4986
-2008,AI & Machine Learning,C154945302,Iraq,IQ,132
-2008,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,3325
-2008,AI & Machine Learning,C154945302,Iceland,IS,89
-2008,AI & Machine Learning,C154945302,Italy,IT,8354
-2008,AI & Machine Learning,C154945302,Jamaica,JM,18
-2008,AI & Machine Learning,C154945302,Jordan,JO,223
-2008,AI & Machine Learning,C154945302,Japan,JP,15914
-2008,AI & Machine Learning,C154945302,Kenya,KE,63
-2008,AI & Machine Learning,C154945302,Kyrgyzstan,KG,7
-2008,AI & Machine Learning,C154945302,Cambodia,KH,21
-2008,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,2
-2008,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,2
-2008,AI & Machine Learning,C154945302,"Korea, Republic of",KR,6550
-2008,AI & Machine Learning,C154945302,Kuwait,KW,136
-2008,AI & Machine Learning,C154945302,Cayman Islands,KY,5
-2008,AI & Machine Learning,C154945302,Kazakhstan,KZ,34
-2008,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,5
-2008,AI & Machine Learning,C154945302,Lebanon,LB,150
-2008,AI & Machine Learning,C154945302,Liechtenstein,LI,5
-2008,AI & Machine Learning,C154945302,Sri Lanka,LK,95
-2008,AI & Machine Learning,C154945302,Liberia,LR,1
-2008,AI & Machine Learning,C154945302,Lithuania,LT,264
-2008,AI & Machine Learning,C154945302,Luxembourg,LU,124
-2008,AI & Machine Learning,C154945302,Latvia,LV,165
-2008,AI & Machine Learning,C154945302,Libya,LY,18
-2008,AI & Machine Learning,C154945302,Morocco,MA,227
-2008,AI & Machine Learning,C154945302,Monaco,MC,4
-2008,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,41
-2008,AI & Machine Learning,C154945302,Montenegro,ME,38
-2008,AI & Machine Learning,C154945302,Madagascar,MG,8
-2008,AI & Machine Learning,C154945302,North Macedonia,MK,94
-2008,AI & Machine Learning,C154945302,Mali,ML,10
-2008,AI & Machine Learning,C154945302,Myanmar,MM,45
-2008,AI & Machine Learning,C154945302,Mongolia,MN,46
-2008,AI & Machine Learning,C154945302,Macao,MO,133
-2008,AI & Machine Learning,C154945302,Martinique,MQ,3
-2008,AI & Machine Learning,C154945302,Mauritania,MR,1
-2008,AI & Machine Learning,C154945302,Malta,MT,56
-2008,AI & Machine Learning,C154945302,Mauritius,MU,10
-2008,AI & Machine Learning,C154945302,Maldives,MV,5
-2008,AI & Machine Learning,C154945302,Malawi,MW,23
-2008,AI & Machine Learning,C154945302,Mexico,MX,1940
-2008,AI & Machine Learning,C154945302,Malaysia,MY,1548
-2008,AI & Machine Learning,C154945302,Mozambique,MZ,22
-2008,AI & Machine Learning,C154945302,Namibia,NA,3
-2008,AI & Machine Learning,C154945302,New Caledonia,NC,7
-2008,AI & Machine Learning,C154945302,Niger,NE,15
-2008,AI & Machine Learning,C154945302,Nigeria,NG,113
-2008,AI & Machine Learning,C154945302,Nicaragua,NI,12
-2008,AI & Machine Learning,C154945302,Netherlands,NL,5099
-2008,AI & Machine Learning,C154945302,Norway,NO,1367
-2008,AI & Machine Learning,C154945302,Nepal,NP,43
-2008,AI & Machine Learning,C154945302,New Zealand,NZ,1153
-2008,AI & Machine Learning,C154945302,Oman,OM,49
-2008,AI & Machine Learning,C154945302,Panama,PA,21
-2008,AI & Machine Learning,C154945302,Peru,PE,64
-2008,AI & Machine Learning,C154945302,French Polynesia,PF,5
-2008,AI & Machine Learning,C154945302,Papua New Guinea,PG,1
-2008,AI & Machine Learning,C154945302,Philippines,PH,116
-2008,AI & Machine Learning,C154945302,Pakistan,PK,529
-2008,AI & Machine Learning,C154945302,Poland,PL,3089
-2008,AI & Machine Learning,C154945302,Puerto Rico,PR,98
-2008,AI & Machine Learning,C154945302,"Palestine, State of",PS,22
-2008,AI & Machine Learning,C154945302,Portugal,PT,1749
-2008,AI & Machine Learning,C154945302,Palau,PW,1
-2008,AI & Machine Learning,C154945302,Paraguay,PY,7
-2008,AI & Machine Learning,C154945302,Qatar,QA,110
-2008,AI & Machine Learning,C154945302,Réunion,RE,14
-2008,AI & Machine Learning,C154945302,Romania,RO,1625
-2008,AI & Machine Learning,C154945302,Serbia,RS,382
-2008,AI & Machine Learning,C154945302,Russian Federation,RU,2777
-2008,AI & Machine Learning,C154945302,Rwanda,RW,7
-2008,AI & Machine Learning,C154945302,Saudi Arabia,SA,313
-2008,AI & Machine Learning,C154945302,Sudan,SD,14
-2008,AI & Machine Learning,C154945302,Sweden,SE,2682
-2008,AI & Machine Learning,C154945302,Singapore,SG,2499
-2008,AI & Machine Learning,C154945302,Slovenia,SI,550
-2008,AI & Machine Learning,C154945302,Slovakia,SK,442
-2008,AI & Machine Learning,C154945302,San Marino,SM,2
-2008,AI & Machine Learning,C154945302,Senegal,SN,14
-2008,AI & Machine Learning,C154945302,Somalia,SO,1
-2008,AI & Machine Learning,C154945302,South Sudan,SS,63
-2008,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,1
-2008,AI & Machine Learning,C154945302,El Salvador,SV,3
-2008,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,44
-2008,AI & Machine Learning,C154945302,Togo,TG,1
-2008,AI & Machine Learning,C154945302,Thailand,TH,857
-2008,AI & Machine Learning,C154945302,Tajikistan,TJ,122
-2008,AI & Machine Learning,C154945302,Tunisia,TN,431
-2008,AI & Machine Learning,C154945302,Turkey,TR,2295
-2008,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,31
-2008,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,6226
-2008,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,42
-2008,AI & Machine Learning,C154945302,Ukraine,UA,635
-2008,AI & Machine Learning,C154945302,Uganda,UG,47
-2008,AI & Machine Learning,C154945302,United States of America,US,62602
-2008,AI & Machine Learning,C154945302,Uruguay,UY,60
-2008,AI & Machine Learning,C154945302,Uzbekistan,UZ,28
-2008,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,202
-2008,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,47
-2008,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,1
-2008,AI & Machine Learning,C154945302,Viet Nam,VN,321
-2008,AI & Machine Learning,C154945302,Kosovo,XK,6
-2008,AI & Machine Learning,C154945302,Yemen,YE,24
-2008,AI & Machine Learning,C154945302,South Africa,ZA,773
-2008,AI & Machine Learning,C154945302,Zambia,ZM,6
-2008,AI & Machine Learning,C154945302,Zimbabwe,ZW,32
+2008,AI & Machine Learning,C119857082,United Arab Emirates,AE,75
+2008,AI & Machine Learning,C119857082,Albania,AL,8
+2008,AI & Machine Learning,C119857082,Armenia,AM,9
+2008,AI & Machine Learning,C119857082,Argentina,AR,138
+2008,AI & Machine Learning,C119857082,American Samoa,AS,3
+2008,AI & Machine Learning,C119857082,Austria,AT,358
+2008,AI & Machine Learning,C119857082,Australia,AU,2074
+2008,AI & Machine Learning,C119857082,Azerbaijan,AZ,9
+2008,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,9
+2008,AI & Machine Learning,C119857082,Bangladesh,BD,85
+2008,AI & Machine Learning,C119857082,Belgium,BE,672
+2008,AI & Machine Learning,C119857082,Burkina Faso,BF,2
+2008,AI & Machine Learning,C119857082,Bulgaria,BG,80
+2008,AI & Machine Learning,C119857082,Bahrain,BH,2
+2008,AI & Machine Learning,C119857082,Burundi,BI,10
+2008,AI & Machine Learning,C119857082,Benin,BJ,2
+2008,AI & Machine Learning,C119857082,Bermuda,BM,2
+2008,AI & Machine Learning,C119857082,Brunei Darussalam,BN,5
+2008,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,8
+2008,AI & Machine Learning,C119857082,Brazil,BR,919
+2008,AI & Machine Learning,C119857082,Bahamas,BS,1
+2008,AI & Machine Learning,C119857082,Bhutan,BT,1
+2008,AI & Machine Learning,C119857082,Botswana,BW,9
+2008,AI & Machine Learning,C119857082,Belarus,BY,30
+2008,AI & Machine Learning,C119857082,Belize,BZ,1
+2008,AI & Machine Learning,C119857082,Canada,CA,2569
+2008,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+2008,AI & Machine Learning,C119857082,Congo,CG,2
+2008,AI & Machine Learning,C119857082,Switzerland,CH,728
+2008,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,7
+2008,AI & Machine Learning,C119857082,Chile,CL,141
+2008,AI & Machine Learning,C119857082,Cameroon,CM,19
+2008,AI & Machine Learning,C119857082,China,CN,20514
+2008,AI & Machine Learning,C119857082,Colombia,CO,99
+2008,AI & Machine Learning,C119857082,Costa Rica,CR,9
+2008,AI & Machine Learning,C119857082,Cuba,CU,49
+2008,AI & Machine Learning,C119857082,Curaçao,CW,1
+2008,AI & Machine Learning,C119857082,Cyprus,CY,69
+2008,AI & Machine Learning,C119857082,Czechia,CZ,275
+2008,AI & Machine Learning,C119857082,Germany,DE,2533
+2008,AI & Machine Learning,C119857082,Denmark,DK,377
+2008,AI & Machine Learning,C119857082,Dominican Republic,DO,1
+2008,AI & Machine Learning,C119857082,Algeria,DZ,106
+2008,AI & Machine Learning,C119857082,Ecuador,EC,7
+2008,AI & Machine Learning,C119857082,Estonia,EE,32
+2008,AI & Machine Learning,C119857082,Egypt,EG,177
+2008,AI & Machine Learning,C119857082,Eritrea,ER,1
+2008,AI & Machine Learning,C119857082,Spain,ES,1681
+2008,AI & Machine Learning,C119857082,Ethiopia,ET,22
+2008,AI & Machine Learning,C119857082,Finland,FI,385
+2008,AI & Machine Learning,C119857082,Fiji,FJ,11
+2008,AI & Machine Learning,C119857082,Faroe Islands,FO,1
+2008,AI & Machine Learning,C119857082,France,FR,2516
+2008,AI & Machine Learning,C119857082,Gabon,GA,1
+2008,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,4903
+2008,AI & Machine Learning,C119857082,Grenada,GD,3
+2008,AI & Machine Learning,C119857082,Georgia,GE,5
+2008,AI & Machine Learning,C119857082,French Guiana,GF,3
+2008,AI & Machine Learning,C119857082,Ghana,GH,38
+2008,AI & Machine Learning,C119857082,Guadeloupe,GP,4
+2008,AI & Machine Learning,C119857082,Greece,GR,587
+2008,AI & Machine Learning,C119857082,Guatemala,GT,2
+2008,AI & Machine Learning,C119857082,Guam,GU,1
+2008,AI & Machine Learning,C119857082,Hong Kong,HK,787
+2008,AI & Machine Learning,C119857082,Honduras,HN,4
+2008,AI & Machine Learning,C119857082,Croatia,HR,67
+2008,AI & Machine Learning,C119857082,Hungary,HU,189
+2008,AI & Machine Learning,C119857082,Indonesia,ID,99
+2008,AI & Machine Learning,C119857082,Ireland,IE,286
+2008,AI & Machine Learning,C119857082,Israel,IL,469
+2008,AI & Machine Learning,C119857082,India,IN,1275
+2008,AI & Machine Learning,C119857082,Iraq,IQ,31
+2008,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,864
+2008,AI & Machine Learning,C119857082,Iceland,IS,25
+2008,AI & Machine Learning,C119857082,Italy,IT,1842
+2008,AI & Machine Learning,C119857082,Jamaica,JM,11
+2008,AI & Machine Learning,C119857082,Jordan,JO,59
+2008,AI & Machine Learning,C119857082,Japan,JP,2421
+2008,AI & Machine Learning,C119857082,Kenya,KE,47
+2008,AI & Machine Learning,C119857082,Kyrgyzstan,KG,4
+2008,AI & Machine Learning,C119857082,Cambodia,KH,8
+2008,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,1
+2008,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1235
+2008,AI & Machine Learning,C119857082,Kuwait,KW,47
+2008,AI & Machine Learning,C119857082,Kazakhstan,KZ,12
+2008,AI & Machine Learning,C119857082,Lebanon,LB,42
+2008,AI & Machine Learning,C119857082,Liechtenstein,LI,3
+2008,AI & Machine Learning,C119857082,Sri Lanka,LK,36
+2008,AI & Machine Learning,C119857082,Liberia,LR,1
+2008,AI & Machine Learning,C119857082,Lithuania,LT,63
+2008,AI & Machine Learning,C119857082,Luxembourg,LU,26
+2008,AI & Machine Learning,C119857082,Latvia,LV,67
+2008,AI & Machine Learning,C119857082,Libya,LY,4
+2008,AI & Machine Learning,C119857082,Morocco,MA,56
+2008,AI & Machine Learning,C119857082,Monaco,MC,2
+2008,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,9
+2008,AI & Machine Learning,C119857082,Montenegro,ME,4
+2008,AI & Machine Learning,C119857082,Madagascar,MG,2
+2008,AI & Machine Learning,C119857082,North Macedonia,MK,27
+2008,AI & Machine Learning,C119857082,Mali,ML,4
+2008,AI & Machine Learning,C119857082,Myanmar,MM,6
+2008,AI & Machine Learning,C119857082,Mongolia,MN,12
+2008,AI & Machine Learning,C119857082,Macao,MO,42
+2008,AI & Machine Learning,C119857082,Martinique,MQ,2
+2008,AI & Machine Learning,C119857082,Malta,MT,7
+2008,AI & Machine Learning,C119857082,Mauritius,MU,6
+2008,AI & Machine Learning,C119857082,Malawi,MW,8
+2008,AI & Machine Learning,C119857082,Mexico,MX,443
+2008,AI & Machine Learning,C119857082,Malaysia,MY,408
+2008,AI & Machine Learning,C119857082,Mozambique,MZ,8
+2008,AI & Machine Learning,C119857082,New Caledonia,NC,2
+2008,AI & Machine Learning,C119857082,Niger,NE,7
+2008,AI & Machine Learning,C119857082,Nigeria,NG,73
+2008,AI & Machine Learning,C119857082,Nicaragua,NI,1
+2008,AI & Machine Learning,C119857082,Netherlands,NL,1219
+2008,AI & Machine Learning,C119857082,Norway,NO,387
+2008,AI & Machine Learning,C119857082,Nepal,NP,14
+2008,AI & Machine Learning,C119857082,New Zealand,NZ,383
+2008,AI & Machine Learning,C119857082,Oman,OM,21
+2008,AI & Machine Learning,C119857082,Panama,PA,5
+2008,AI & Machine Learning,C119857082,Peru,PE,13
+2008,AI & Machine Learning,C119857082,French Polynesia,PF,2
+2008,AI & Machine Learning,C119857082,Papua New Guinea,PG,3
+2008,AI & Machine Learning,C119857082,Philippines,PH,24
+2008,AI & Machine Learning,C119857082,Pakistan,PK,124
+2008,AI & Machine Learning,C119857082,Poland,PL,671
+2008,AI & Machine Learning,C119857082,Puerto Rico,PR,20
+2008,AI & Machine Learning,C119857082,"Palestine, State of",PS,3
+2008,AI & Machine Learning,C119857082,Portugal,PT,405
+2008,AI & Machine Learning,C119857082,Paraguay,PY,6
+2008,AI & Machine Learning,C119857082,Qatar,QA,22
+2008,AI & Machine Learning,C119857082,Réunion,RE,2
+2008,AI & Machine Learning,C119857082,Romania,RO,308
+2008,AI & Machine Learning,C119857082,Serbia,RS,76
+2008,AI & Machine Learning,C119857082,Russian Federation,RU,578
+2008,AI & Machine Learning,C119857082,Rwanda,RW,5
+2008,AI & Machine Learning,C119857082,Saudi Arabia,SA,78
+2008,AI & Machine Learning,C119857082,Sudan,SD,3
+2008,AI & Machine Learning,C119857082,Sweden,SE,589
+2008,AI & Machine Learning,C119857082,Singapore,SG,602
+2008,AI & Machine Learning,C119857082,Slovenia,SI,146
+2008,AI & Machine Learning,C119857082,Slovakia,SK,93
+2008,AI & Machine Learning,C119857082,Sierra Leone,SL,1
+2008,AI & Machine Learning,C119857082,San Marino,SM,2
+2008,AI & Machine Learning,C119857082,Senegal,SN,6
+2008,AI & Machine Learning,C119857082,South Sudan,SS,16
+2008,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,1
+2008,AI & Machine Learning,C119857082,El Salvador,SV,1
+2008,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,12
+2008,AI & Machine Learning,C119857082,Eswatini,SZ,2
+2008,AI & Machine Learning,C119857082,Thailand,TH,225
+2008,AI & Machine Learning,C119857082,Tajikistan,TJ,25
+2008,AI & Machine Learning,C119857082,Tunisia,TN,91
+2008,AI & Machine Learning,C119857082,Tonga,TO,1
+2008,AI & Machine Learning,C119857082,Turkey,TR,629
+2008,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,12
+2008,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1590
+2008,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,21
+2008,AI & Machine Learning,C119857082,Ukraine,UA,170
+2008,AI & Machine Learning,C119857082,Uganda,UG,21
+2008,AI & Machine Learning,C119857082,United States of America,US,15802
+2008,AI & Machine Learning,C119857082,Uruguay,UY,9
+2008,AI & Machine Learning,C119857082,Uzbekistan,UZ,12
+2008,AI & Machine Learning,C119857082,Holy See,VA,1
+2008,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,34
+2008,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,5
+2008,AI & Machine Learning,C119857082,Viet Nam,VN,87
+2008,AI & Machine Learning,C119857082,Kosovo,XK,2
+2008,AI & Machine Learning,C119857082,Yemen,YE,6
+2008,AI & Machine Learning,C119857082,South Africa,ZA,237
+2008,AI & Machine Learning,C119857082,Zambia,ZM,5
+2008,AI & Machine Learning,C119857082,Zimbabwe,ZW,8
 2008,CRISPR & Genomics,C98108389,Austria,AT,1
 2008,CRISPR & Genomics,C98108389,Australia,AU,3
 2008,CRISPR & Genomics,C98108389,Belarus,BY,1
@@ -5663,201 +12975,175 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2008,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,3
 2008,Robotics & Automation,C34413123,Viet Nam,VN,1
 2008,Robotics & Automation,C34413123,South Africa,ZA,2
-2009,AI & Machine Learning,C154945302,United Arab Emirates,AE,276
-2009,AI & Machine Learning,C154945302,Afghanistan,AF,3
-2009,AI & Machine Learning,C154945302,Albania,AL,7
-2009,AI & Machine Learning,C154945302,Armenia,AM,42
-2009,AI & Machine Learning,C154945302,Angola,AO,2
-2009,AI & Machine Learning,C154945302,Argentina,AR,657
-2009,AI & Machine Learning,C154945302,Austria,AT,2089
-2009,AI & Machine Learning,C154945302,Australia,AU,7352
-2009,AI & Machine Learning,C154945302,Azerbaijan,AZ,81
-2009,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,47
-2009,AI & Machine Learning,C154945302,Barbados,BB,3
-2009,AI & Machine Learning,C154945302,Bangladesh,BD,306
-2009,AI & Machine Learning,C154945302,Belgium,BE,3249
-2009,AI & Machine Learning,C154945302,Burkina Faso,BF,15
-2009,AI & Machine Learning,C154945302,Bulgaria,BG,429
-2009,AI & Machine Learning,C154945302,Bahrain,BH,30
-2009,AI & Machine Learning,C154945302,Burundi,BI,38
-2009,AI & Machine Learning,C154945302,Benin,BJ,15
-2009,AI & Machine Learning,C154945302,Bermuda,BM,4
-2009,AI & Machine Learning,C154945302,Brunei Darussalam,BN,38
-2009,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,28
-2009,AI & Machine Learning,C154945302,Brazil,BR,3958
-2009,AI & Machine Learning,C154945302,Bahamas,BS,2
-2009,AI & Machine Learning,C154945302,Bhutan,BT,1
-2009,AI & Machine Learning,C154945302,Botswana,BW,26
-2009,AI & Machine Learning,C154945302,Belarus,BY,130
-2009,AI & Machine Learning,C154945302,Belize,BZ,4
-2009,AI & Machine Learning,C154945302,Canada,CA,11287
-2009,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,8
-2009,AI & Machine Learning,C154945302,Congo,CG,5
-2009,AI & Machine Learning,C154945302,Switzerland,CH,3531
-2009,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,22
-2009,AI & Machine Learning,C154945302,Chile,CL,599
-2009,AI & Machine Learning,C154945302,Cameroon,CM,48
-2009,AI & Machine Learning,C154945302,China,CN,96211
-2009,AI & Machine Learning,C154945302,Colombia,CO,626
-2009,AI & Machine Learning,C154945302,Costa Rica,CR,53
-2009,AI & Machine Learning,C154945302,Cuba,CU,152
-2009,AI & Machine Learning,C154945302,Curaçao,CW,2
-2009,AI & Machine Learning,C154945302,Cyprus,CY,300
-2009,AI & Machine Learning,C154945302,Czechia,CZ,1733
-2009,AI & Machine Learning,C154945302,Germany,DE,15237
-2009,AI & Machine Learning,C154945302,Djibouti,DJ,3
-2009,AI & Machine Learning,C154945302,Denmark,DK,1655
-2009,AI & Machine Learning,C154945302,Dominican Republic,DO,14
-2009,AI & Machine Learning,C154945302,Algeria,DZ,494
-2009,AI & Machine Learning,C154945302,Ecuador,EC,56
-2009,AI & Machine Learning,C154945302,Estonia,EE,159
-2009,AI & Machine Learning,C154945302,Egypt,EG,889
-2009,AI & Machine Learning,C154945302,Eritrea,ER,3
-2009,AI & Machine Learning,C154945302,Spain,ES,8128
-2009,AI & Machine Learning,C154945302,Ethiopia,ET,46
-2009,AI & Machine Learning,C154945302,Finland,FI,1834
-2009,AI & Machine Learning,C154945302,Fiji,FJ,11
-2009,AI & Machine Learning,C154945302,France,FR,14012
-2009,AI & Machine Learning,C154945302,Gabon,GA,3
-2009,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,18331
-2009,AI & Machine Learning,C154945302,Grenada,GD,3
-2009,AI & Machine Learning,C154945302,Georgia,GE,48
-2009,AI & Machine Learning,C154945302,French Guiana,GF,3
-2009,AI & Machine Learning,C154945302,Ghana,GH,65
-2009,AI & Machine Learning,C154945302,Gambia,GM,2
-2009,AI & Machine Learning,C154945302,Guinea,GN,1
-2009,AI & Machine Learning,C154945302,Guadeloupe,GP,24
-2009,AI & Machine Learning,C154945302,Greece,GR,2334
-2009,AI & Machine Learning,C154945302,Guatemala,GT,18
-2009,AI & Machine Learning,C154945302,Guam,GU,2
-2009,AI & Machine Learning,C154945302,Guyana,GY,1
-2009,AI & Machine Learning,C154945302,Hong Kong,HK,3082
-2009,AI & Machine Learning,C154945302,Honduras,HN,1
-2009,AI & Machine Learning,C154945302,Croatia,HR,417
-2009,AI & Machine Learning,C154945302,Haiti,HT,1
-2009,AI & Machine Learning,C154945302,Hungary,HU,911
-2009,AI & Machine Learning,C154945302,Indonesia,ID,529
-2009,AI & Machine Learning,C154945302,Ireland,IE,1401
-2009,AI & Machine Learning,C154945302,Israel,IL,2058
-2009,AI & Machine Learning,C154945302,India,IN,6336
-2009,AI & Machine Learning,C154945302,Iraq,IQ,202
-2009,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,3790
-2009,AI & Machine Learning,C154945302,Iceland,IS,129
-2009,AI & Machine Learning,C154945302,Italy,IT,9187
-2009,AI & Machine Learning,C154945302,Jamaica,JM,23
-2009,AI & Machine Learning,C154945302,Jordan,JO,243
-2009,AI & Machine Learning,C154945302,Japan,JP,16761
-2009,AI & Machine Learning,C154945302,Kenya,KE,64
-2009,AI & Machine Learning,C154945302,Kyrgyzstan,KG,5
-2009,AI & Machine Learning,C154945302,Cambodia,KH,22
-2009,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,1
-2009,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,3
-2009,AI & Machine Learning,C154945302,"Korea, Republic of",KR,7110
-2009,AI & Machine Learning,C154945302,Kuwait,KW,155
-2009,AI & Machine Learning,C154945302,Cayman Islands,KY,4
-2009,AI & Machine Learning,C154945302,Kazakhstan,KZ,35
-2009,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,3
-2009,AI & Machine Learning,C154945302,Lebanon,LB,165
-2009,AI & Machine Learning,C154945302,Liechtenstein,LI,9
-2009,AI & Machine Learning,C154945302,Sri Lanka,LK,112
-2009,AI & Machine Learning,C154945302,Liberia,LR,4
-2009,AI & Machine Learning,C154945302,Lesotho,LS,2
-2009,AI & Machine Learning,C154945302,Lithuania,LT,304
-2009,AI & Machine Learning,C154945302,Luxembourg,LU,192
-2009,AI & Machine Learning,C154945302,Latvia,LV,169
-2009,AI & Machine Learning,C154945302,Libya,LY,33
-2009,AI & Machine Learning,C154945302,Morocco,MA,254
-2009,AI & Machine Learning,C154945302,Monaco,MC,1
-2009,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,38
-2009,AI & Machine Learning,C154945302,Montenegro,ME,27
-2009,AI & Machine Learning,C154945302,Madagascar,MG,5
-2009,AI & Machine Learning,C154945302,North Macedonia,MK,97
-2009,AI & Machine Learning,C154945302,Mali,ML,6
-2009,AI & Machine Learning,C154945302,Myanmar,MM,58
-2009,AI & Machine Learning,C154945302,Mongolia,MN,43
-2009,AI & Machine Learning,C154945302,Macao,MO,144
-2009,AI & Machine Learning,C154945302,Martinique,MQ,3
-2009,AI & Machine Learning,C154945302,Mauritania,MR,1
-2009,AI & Machine Learning,C154945302,Montserrat,MS,1
-2009,AI & Machine Learning,C154945302,Malta,MT,41
-2009,AI & Machine Learning,C154945302,Mauritius,MU,8
-2009,AI & Machine Learning,C154945302,Maldives,MV,3
-2009,AI & Machine Learning,C154945302,Malawi,MW,14
-2009,AI & Machine Learning,C154945302,Mexico,MX,2029
-2009,AI & Machine Learning,C154945302,Malaysia,MY,2114
-2009,AI & Machine Learning,C154945302,Mozambique,MZ,24
-2009,AI & Machine Learning,C154945302,Namibia,NA,4
-2009,AI & Machine Learning,C154945302,New Caledonia,NC,1
-2009,AI & Machine Learning,C154945302,Niger,NE,15
-2009,AI & Machine Learning,C154945302,Nigeria,NG,187
-2009,AI & Machine Learning,C154945302,Nicaragua,NI,9
-2009,AI & Machine Learning,C154945302,Netherlands,NL,5677
-2009,AI & Machine Learning,C154945302,Norway,NO,1457
-2009,AI & Machine Learning,C154945302,Nepal,NP,54
-2009,AI & Machine Learning,C154945302,New Zealand,NZ,1301
-2009,AI & Machine Learning,C154945302,Oman,OM,89
-2009,AI & Machine Learning,C154945302,Panama,PA,28
-2009,AI & Machine Learning,C154945302,Peru,PE,58
-2009,AI & Machine Learning,C154945302,French Polynesia,PF,3
-2009,AI & Machine Learning,C154945302,Papua New Guinea,PG,1
-2009,AI & Machine Learning,C154945302,Philippines,PH,135
-2009,AI & Machine Learning,C154945302,Pakistan,PK,680
-2009,AI & Machine Learning,C154945302,Poland,PL,3020
-2009,AI & Machine Learning,C154945302,Puerto Rico,PR,112
-2009,AI & Machine Learning,C154945302,"Palestine, State of",PS,18
-2009,AI & Machine Learning,C154945302,Portugal,PT,1988
-2009,AI & Machine Learning,C154945302,Palau,PW,1
-2009,AI & Machine Learning,C154945302,Paraguay,PY,11
-2009,AI & Machine Learning,C154945302,Qatar,QA,125
-2009,AI & Machine Learning,C154945302,Réunion,RE,21
-2009,AI & Machine Learning,C154945302,Romania,RO,1644
-2009,AI & Machine Learning,C154945302,Serbia,RS,449
-2009,AI & Machine Learning,C154945302,Russian Federation,RU,2859
-2009,AI & Machine Learning,C154945302,Rwanda,RW,5
-2009,AI & Machine Learning,C154945302,Saudi Arabia,SA,496
-2009,AI & Machine Learning,C154945302,Seychelles,SC,1
-2009,AI & Machine Learning,C154945302,Sudan,SD,13
-2009,AI & Machine Learning,C154945302,Sweden,SE,2851
-2009,AI & Machine Learning,C154945302,Singapore,SG,2774
-2009,AI & Machine Learning,C154945302,Slovenia,SI,640
-2009,AI & Machine Learning,C154945302,Slovakia,SK,456
-2009,AI & Machine Learning,C154945302,Sierra Leone,SL,2
-2009,AI & Machine Learning,C154945302,San Marino,SM,1
-2009,AI & Machine Learning,C154945302,Senegal,SN,26
-2009,AI & Machine Learning,C154945302,Somalia,SO,3
-2009,AI & Machine Learning,C154945302,South Sudan,SS,55
-2009,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,3
-2009,AI & Machine Learning,C154945302,El Salvador,SV,5
-2009,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,18
-2009,AI & Machine Learning,C154945302,Eswatini,SZ,1
-2009,AI & Machine Learning,C154945302,Chad,TD,2
-2009,AI & Machine Learning,C154945302,Togo,TG,2
-2009,AI & Machine Learning,C154945302,Thailand,TH,1023
-2009,AI & Machine Learning,C154945302,Tajikistan,TJ,116
-2009,AI & Machine Learning,C154945302,Timor-Leste,TL,1
-2009,AI & Machine Learning,C154945302,Turkmenistan,TM,1
-2009,AI & Machine Learning,C154945302,Tunisia,TN,543
-2009,AI & Machine Learning,C154945302,Tonga,TO,1
-2009,AI & Machine Learning,C154945302,Turkey,TR,2738
-2009,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,64
-2009,AI & Machine Learning,C154945302,Tuvalu,TV,1
-2009,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,6495
-2009,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,48
-2009,AI & Machine Learning,C154945302,Ukraine,UA,620
-2009,AI & Machine Learning,C154945302,Uganda,UG,46
-2009,AI & Machine Learning,C154945302,United States of America,US,64844
-2009,AI & Machine Learning,C154945302,Uruguay,UY,57
-2009,AI & Machine Learning,C154945302,Uzbekistan,UZ,45
-2009,AI & Machine Learning,C154945302,Holy See,VA,2
-2009,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,191
-2009,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,42
-2009,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,1
-2009,AI & Machine Learning,C154945302,Viet Nam,VN,370
-2009,AI & Machine Learning,C154945302,Kosovo,XK,11
-2009,AI & Machine Learning,C154945302,Yemen,YE,19
-2009,AI & Machine Learning,C154945302,South Africa,ZA,877
-2009,AI & Machine Learning,C154945302,Zambia,ZM,7
-2009,AI & Machine Learning,C154945302,Zimbabwe,ZW,26
+2009,AI & Machine Learning,C119857082,United Arab Emirates,AE,92
+2009,AI & Machine Learning,C119857082,Afghanistan,AF,2
+2009,AI & Machine Learning,C119857082,Armenia,AM,8
+2009,AI & Machine Learning,C119857082,Angola,AO,1
+2009,AI & Machine Learning,C119857082,Argentina,AR,151
+2009,AI & Machine Learning,C119857082,Austria,AT,434
+2009,AI & Machine Learning,C119857082,Australia,AU,2214
+2009,AI & Machine Learning,C119857082,Azerbaijan,AZ,20
+2009,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,11
+2009,AI & Machine Learning,C119857082,Barbados,BB,1
+2009,AI & Machine Learning,C119857082,Bangladesh,BD,102
+2009,AI & Machine Learning,C119857082,Belgium,BE,720
+2009,AI & Machine Learning,C119857082,Burkina Faso,BF,4
+2009,AI & Machine Learning,C119857082,Bulgaria,BG,103
+2009,AI & Machine Learning,C119857082,Bahrain,BH,20
+2009,AI & Machine Learning,C119857082,Burundi,BI,9
+2009,AI & Machine Learning,C119857082,Benin,BJ,4
+2009,AI & Machine Learning,C119857082,Bermuda,BM,1
+2009,AI & Machine Learning,C119857082,Brunei Darussalam,BN,9
+2009,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,13
+2009,AI & Machine Learning,C119857082,Brazil,BR,1004
+2009,AI & Machine Learning,C119857082,Bahamas,BS,2
+2009,AI & Machine Learning,C119857082,Botswana,BW,6
+2009,AI & Machine Learning,C119857082,Belarus,BY,32
+2009,AI & Machine Learning,C119857082,Belize,BZ,2
+2009,AI & Machine Learning,C119857082,Canada,CA,2785
+2009,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,3
+2009,AI & Machine Learning,C119857082,Congo,CG,3
+2009,AI & Machine Learning,C119857082,Switzerland,CH,837
+2009,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,1
+2009,AI & Machine Learning,C119857082,Chile,CL,141
+2009,AI & Machine Learning,C119857082,Cameroon,CM,18
+2009,AI & Machine Learning,C119857082,China,CN,23735
+2009,AI & Machine Learning,C119857082,Colombia,CO,123
+2009,AI & Machine Learning,C119857082,Costa Rica,CR,14
+2009,AI & Machine Learning,C119857082,Cuba,CU,39
+2009,AI & Machine Learning,C119857082,Curaçao,CW,1
+2009,AI & Machine Learning,C119857082,Cyprus,CY,92
+2009,AI & Machine Learning,C119857082,Czechia,CZ,316
+2009,AI & Machine Learning,C119857082,Germany,DE,2888
+2009,AI & Machine Learning,C119857082,Denmark,DK,387
+2009,AI & Machine Learning,C119857082,Dominican Republic,DO,4
+2009,AI & Machine Learning,C119857082,Algeria,DZ,85
+2009,AI & Machine Learning,C119857082,Ecuador,EC,11
+2009,AI & Machine Learning,C119857082,Estonia,EE,43
+2009,AI & Machine Learning,C119857082,Egypt,EG,203
+2009,AI & Machine Learning,C119857082,Spain,ES,1938
+2009,AI & Machine Learning,C119857082,Ethiopia,ET,31
+2009,AI & Machine Learning,C119857082,Finland,FI,462
+2009,AI & Machine Learning,C119857082,Fiji,FJ,9
+2009,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2009,AI & Machine Learning,C119857082,France,FR,2637
+2009,AI & Machine Learning,C119857082,Gabon,GA,2
+2009,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,5242
+2009,AI & Machine Learning,C119857082,Georgia,GE,10
+2009,AI & Machine Learning,C119857082,Ghana,GH,60
+2009,AI & Machine Learning,C119857082,Gambia,GM,3
+2009,AI & Machine Learning,C119857082,Guadeloupe,GP,2
+2009,AI & Machine Learning,C119857082,Greece,GR,659
+2009,AI & Machine Learning,C119857082,Guatemala,GT,4
+2009,AI & Machine Learning,C119857082,Hong Kong,HK,748
+2009,AI & Machine Learning,C119857082,Honduras,HN,2
+2009,AI & Machine Learning,C119857082,Croatia,HR,92
+2009,AI & Machine Learning,C119857082,Hungary,HU,204
+2009,AI & Machine Learning,C119857082,Indonesia,ID,150
+2009,AI & Machine Learning,C119857082,Ireland,IE,320
+2009,AI & Machine Learning,C119857082,Israel,IL,460
+2009,AI & Machine Learning,C119857082,India,IN,1570
+2009,AI & Machine Learning,C119857082,Iraq,IQ,40
+2009,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,1030
+2009,AI & Machine Learning,C119857082,Iceland,IS,40
+2009,AI & Machine Learning,C119857082,Italy,IT,2056
+2009,AI & Machine Learning,C119857082,Jersey,JE,1
+2009,AI & Machine Learning,C119857082,Jamaica,JM,7
+2009,AI & Machine Learning,C119857082,Jordan,JO,50
+2009,AI & Machine Learning,C119857082,Japan,JP,2552
+2009,AI & Machine Learning,C119857082,Kenya,KE,30
+2009,AI & Machine Learning,C119857082,Kyrgyzstan,KG,1
+2009,AI & Machine Learning,C119857082,Cambodia,KH,9
+2009,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1343
+2009,AI & Machine Learning,C119857082,Kuwait,KW,42
+2009,AI & Machine Learning,C119857082,Cayman Islands,KY,1
+2009,AI & Machine Learning,C119857082,Kazakhstan,KZ,15
+2009,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,1
+2009,AI & Machine Learning,C119857082,Lebanon,LB,59
+2009,AI & Machine Learning,C119857082,Liechtenstein,LI,8
+2009,AI & Machine Learning,C119857082,Sri Lanka,LK,38
+2009,AI & Machine Learning,C119857082,Lesotho,LS,1
+2009,AI & Machine Learning,C119857082,Lithuania,LT,59
+2009,AI & Machine Learning,C119857082,Luxembourg,LU,33
+2009,AI & Machine Learning,C119857082,Latvia,LV,56
+2009,AI & Machine Learning,C119857082,Libya,LY,9
+2009,AI & Machine Learning,C119857082,Morocco,MA,64
+2009,AI & Machine Learning,C119857082,Monaco,MC,3
+2009,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,12
+2009,AI & Machine Learning,C119857082,Montenegro,ME,3
+2009,AI & Machine Learning,C119857082,Madagascar,MG,1
+2009,AI & Machine Learning,C119857082,North Macedonia,MK,32
+2009,AI & Machine Learning,C119857082,Mali,ML,3
+2009,AI & Machine Learning,C119857082,Myanmar,MM,12
+2009,AI & Machine Learning,C119857082,Mongolia,MN,7
+2009,AI & Machine Learning,C119857082,Macao,MO,33
+2009,AI & Machine Learning,C119857082,Mauritania,MR,1
+2009,AI & Machine Learning,C119857082,Malta,MT,9
+2009,AI & Machine Learning,C119857082,Mauritius,MU,5
+2009,AI & Machine Learning,C119857082,Malawi,MW,7
+2009,AI & Machine Learning,C119857082,Mexico,MX,451
+2009,AI & Machine Learning,C119857082,Malaysia,MY,559
+2009,AI & Machine Learning,C119857082,Mozambique,MZ,7
+2009,AI & Machine Learning,C119857082,Namibia,NA,8
+2009,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2009,AI & Machine Learning,C119857082,Niger,NE,7
+2009,AI & Machine Learning,C119857082,Nigeria,NG,79
+2009,AI & Machine Learning,C119857082,Nicaragua,NI,4
+2009,AI & Machine Learning,C119857082,Netherlands,NL,1395
+2009,AI & Machine Learning,C119857082,Norway,NO,405
+2009,AI & Machine Learning,C119857082,Nepal,NP,7
+2009,AI & Machine Learning,C119857082,New Zealand,NZ,395
+2009,AI & Machine Learning,C119857082,Oman,OM,25
+2009,AI & Machine Learning,C119857082,Panama,PA,4
+2009,AI & Machine Learning,C119857082,Peru,PE,19
+2009,AI & Machine Learning,C119857082,French Polynesia,PF,2
+2009,AI & Machine Learning,C119857082,Philippines,PH,32
+2009,AI & Machine Learning,C119857082,Pakistan,PK,164
+2009,AI & Machine Learning,C119857082,Poland,PL,658
+2009,AI & Machine Learning,C119857082,Puerto Rico,PR,28
+2009,AI & Machine Learning,C119857082,"Palestine, State of",PS,5
+2009,AI & Machine Learning,C119857082,Portugal,PT,455
+2009,AI & Machine Learning,C119857082,Paraguay,PY,3
+2009,AI & Machine Learning,C119857082,Qatar,QA,33
+2009,AI & Machine Learning,C119857082,Réunion,RE,8
+2009,AI & Machine Learning,C119857082,Romania,RO,296
+2009,AI & Machine Learning,C119857082,Serbia,RS,106
+2009,AI & Machine Learning,C119857082,Russian Federation,RU,590
+2009,AI & Machine Learning,C119857082,Rwanda,RW,10
+2009,AI & Machine Learning,C119857082,Saudi Arabia,SA,131
+2009,AI & Machine Learning,C119857082,Sudan,SD,2
+2009,AI & Machine Learning,C119857082,Sweden,SE,679
+2009,AI & Machine Learning,C119857082,Singapore,SG,643
+2009,AI & Machine Learning,C119857082,Slovenia,SI,145
+2009,AI & Machine Learning,C119857082,Slovakia,SK,107
+2009,AI & Machine Learning,C119857082,Senegal,SN,9
+2009,AI & Machine Learning,C119857082,Somalia,SO,1
+2009,AI & Machine Learning,C119857082,South Sudan,SS,13
+2009,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,2
+2009,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,5
+2009,AI & Machine Learning,C119857082,Eswatini,SZ,2
+2009,AI & Machine Learning,C119857082,Togo,TG,1
+2009,AI & Machine Learning,C119857082,Thailand,TH,251
+2009,AI & Machine Learning,C119857082,Tajikistan,TJ,35
+2009,AI & Machine Learning,C119857082,Turkmenistan,TM,1
+2009,AI & Machine Learning,C119857082,Tunisia,TN,123
+2009,AI & Machine Learning,C119857082,Turkey,TR,681
+2009,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,11
+2009,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1624
+2009,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,25
+2009,AI & Machine Learning,C119857082,Ukraine,UA,140
+2009,AI & Machine Learning,C119857082,Uganda,UG,21
+2009,AI & Machine Learning,C119857082,United States of America,US,16578
+2009,AI & Machine Learning,C119857082,Uruguay,UY,20
+2009,AI & Machine Learning,C119857082,Uzbekistan,UZ,11
+2009,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,46
+2009,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,12
+2009,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2009,AI & Machine Learning,C119857082,Viet Nam,VN,88
+2009,AI & Machine Learning,C119857082,Yemen,YE,10
+2009,AI & Machine Learning,C119857082,South Africa,ZA,321
+2009,AI & Machine Learning,C119857082,Zambia,ZM,9
+2009,AI & Machine Learning,C119857082,Zimbabwe,ZW,17
 2009,CRISPR & Genomics,C98108389,Albania,AL,1
 2009,CRISPR & Genomics,C98108389,Austria,AT,1
 2009,CRISPR & Genomics,C98108389,Australia,AU,1
@@ -6425,199 +13711,177 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2009,Robotics & Automation,C34413123,United States of America,US,433
 2009,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,2
 2009,Robotics & Automation,C34413123,South Africa,ZA,3
-2010,AI & Machine Learning,C154945302,United Arab Emirates,AE,304
-2010,AI & Machine Learning,C154945302,Afghanistan,AF,3
-2010,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,3
-2010,AI & Machine Learning,C154945302,Albania,AL,26
-2010,AI & Machine Learning,C154945302,Armenia,AM,41
-2010,AI & Machine Learning,C154945302,Angola,AO,4
-2010,AI & Machine Learning,C154945302,Argentina,AR,757
-2010,AI & Machine Learning,C154945302,Austria,AT,2184
-2010,AI & Machine Learning,C154945302,Australia,AU,8061
-2010,AI & Machine Learning,C154945302,Azerbaijan,AZ,67
-2010,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,76
-2010,AI & Machine Learning,C154945302,Barbados,BB,2
-2010,AI & Machine Learning,C154945302,Bangladesh,BD,388
-2010,AI & Machine Learning,C154945302,Belgium,BE,3575
-2010,AI & Machine Learning,C154945302,Burkina Faso,BF,24
-2010,AI & Machine Learning,C154945302,Bulgaria,BG,445
-2010,AI & Machine Learning,C154945302,Bahrain,BH,36
-2010,AI & Machine Learning,C154945302,Burundi,BI,50
-2010,AI & Machine Learning,C154945302,Benin,BJ,14
-2010,AI & Machine Learning,C154945302,Bermuda,BM,4
-2010,AI & Machine Learning,C154945302,Brunei Darussalam,BN,33
-2010,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,38
-2010,AI & Machine Learning,C154945302,Brazil,BR,4287
-2010,AI & Machine Learning,C154945302,Bahamas,BS,4
-2010,AI & Machine Learning,C154945302,Bhutan,BT,2
-2010,AI & Machine Learning,C154945302,Botswana,BW,22
-2010,AI & Machine Learning,C154945302,Belarus,BY,121
-2010,AI & Machine Learning,C154945302,Belize,BZ,6
-2010,AI & Machine Learning,C154945302,Canada,CA,12200
-2010,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,11
-2010,AI & Machine Learning,C154945302,Central African Republic,CF,1
-2010,AI & Machine Learning,C154945302,Congo,CG,4
-2010,AI & Machine Learning,C154945302,Switzerland,CH,3998
-2010,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,10
-2010,AI & Machine Learning,C154945302,Chile,CL,664
-2010,AI & Machine Learning,C154945302,Cameroon,CM,42
-2010,AI & Machine Learning,C154945302,China,CN,106077
-2010,AI & Machine Learning,C154945302,Colombia,CO,764
-2010,AI & Machine Learning,C154945302,Costa Rica,CR,57
-2010,AI & Machine Learning,C154945302,Cuba,CU,185
-2010,AI & Machine Learning,C154945302,Cabo Verde,CV,2
-2010,AI & Machine Learning,C154945302,Curaçao,CW,2
-2010,AI & Machine Learning,C154945302,Cyprus,CY,312
-2010,AI & Machine Learning,C154945302,Czechia,CZ,1778
-2010,AI & Machine Learning,C154945302,Germany,DE,16889
-2010,AI & Machine Learning,C154945302,Djibouti,DJ,3
-2010,AI & Machine Learning,C154945302,Denmark,DK,1793
-2010,AI & Machine Learning,C154945302,Dominica,DM,1
-2010,AI & Machine Learning,C154945302,Dominican Republic,DO,15
-2010,AI & Machine Learning,C154945302,Algeria,DZ,574
-2010,AI & Machine Learning,C154945302,Ecuador,EC,63
-2010,AI & Machine Learning,C154945302,Estonia,EE,191
-2010,AI & Machine Learning,C154945302,Egypt,EG,1084
-2010,AI & Machine Learning,C154945302,Spain,ES,8668
-2010,AI & Machine Learning,C154945302,Ethiopia,ET,42
-2010,AI & Machine Learning,C154945302,Finland,FI,1911
-2010,AI & Machine Learning,C154945302,Fiji,FJ,10
-2010,AI & Machine Learning,C154945302,Faroe Islands,FO,2
-2010,AI & Machine Learning,C154945302,France,FR,15305
-2010,AI & Machine Learning,C154945302,Gabon,GA,4
-2010,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,19803
-2010,AI & Machine Learning,C154945302,Grenada,GD,3
-2010,AI & Machine Learning,C154945302,Georgia,GE,33
-2010,AI & Machine Learning,C154945302,Ghana,GH,82
-2010,AI & Machine Learning,C154945302,Greenland,GL,3
-2010,AI & Machine Learning,C154945302,Gambia,GM,1
-2010,AI & Machine Learning,C154945302,Guadeloupe,GP,27
-2010,AI & Machine Learning,C154945302,Greece,GR,2333
-2010,AI & Machine Learning,C154945302,Guatemala,GT,10
-2010,AI & Machine Learning,C154945302,Guam,GU,5
-2010,AI & Machine Learning,C154945302,Guinea-Bissau,GW,3
-2010,AI & Machine Learning,C154945302,Guyana,GY,4
-2010,AI & Machine Learning,C154945302,Hong Kong,HK,3220
-2010,AI & Machine Learning,C154945302,Honduras,HN,5
-2010,AI & Machine Learning,C154945302,Croatia,HR,424
-2010,AI & Machine Learning,C154945302,Haiti,HT,2
-2010,AI & Machine Learning,C154945302,Hungary,HU,1012
-2010,AI & Machine Learning,C154945302,Indonesia,ID,687
-2010,AI & Machine Learning,C154945302,Ireland,IE,1487
-2010,AI & Machine Learning,C154945302,Israel,IL,2355
-2010,AI & Machine Learning,C154945302,Isle of Man,IM,2
-2010,AI & Machine Learning,C154945302,India,IN,8333
-2010,AI & Machine Learning,C154945302,Iraq,IQ,313
-2010,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,4870
-2010,AI & Machine Learning,C154945302,Iceland,IS,145
-2010,AI & Machine Learning,C154945302,Italy,IT,9508
-2010,AI & Machine Learning,C154945302,Jamaica,JM,24
-2010,AI & Machine Learning,C154945302,Jordan,JO,308
-2010,AI & Machine Learning,C154945302,Japan,JP,17450
-2010,AI & Machine Learning,C154945302,Kenya,KE,71
-2010,AI & Machine Learning,C154945302,Kyrgyzstan,KG,6
-2010,AI & Machine Learning,C154945302,Cambodia,KH,28
-2010,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,1
-2010,AI & Machine Learning,C154945302,"Korea, Republic of",KR,7606
-2010,AI & Machine Learning,C154945302,Kuwait,KW,146
-2010,AI & Machine Learning,C154945302,Cayman Islands,KY,3
-2010,AI & Machine Learning,C154945302,Kazakhstan,KZ,44
-2010,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,5
-2010,AI & Machine Learning,C154945302,Lebanon,LB,170
-2010,AI & Machine Learning,C154945302,Liechtenstein,LI,8
-2010,AI & Machine Learning,C154945302,Sri Lanka,LK,123
-2010,AI & Machine Learning,C154945302,Liberia,LR,3
-2010,AI & Machine Learning,C154945302,Lesotho,LS,2
-2010,AI & Machine Learning,C154945302,Lithuania,LT,312
-2010,AI & Machine Learning,C154945302,Luxembourg,LU,207
-2010,AI & Machine Learning,C154945302,Latvia,LV,214
-2010,AI & Machine Learning,C154945302,Libya,LY,40
-2010,AI & Machine Learning,C154945302,Morocco,MA,267
-2010,AI & Machine Learning,C154945302,Monaco,MC,2
-2010,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,46
-2010,AI & Machine Learning,C154945302,Montenegro,ME,45
-2010,AI & Machine Learning,C154945302,Madagascar,MG,2
-2010,AI & Machine Learning,C154945302,North Macedonia,MK,137
-2010,AI & Machine Learning,C154945302,Mali,ML,8
-2010,AI & Machine Learning,C154945302,Myanmar,MM,50
-2010,AI & Machine Learning,C154945302,Mongolia,MN,73
-2010,AI & Machine Learning,C154945302,Macao,MO,163
-2010,AI & Machine Learning,C154945302,Martinique,MQ,1
-2010,AI & Machine Learning,C154945302,Mauritania,MR,2
-2010,AI & Machine Learning,C154945302,Montserrat,MS,1
-2010,AI & Machine Learning,C154945302,Malta,MT,57
-2010,AI & Machine Learning,C154945302,Mauritius,MU,20
-2010,AI & Machine Learning,C154945302,Maldives,MV,3
-2010,AI & Machine Learning,C154945302,Malawi,MW,16
-2010,AI & Machine Learning,C154945302,Mexico,MX,2272
-2010,AI & Machine Learning,C154945302,Malaysia,MY,2622
-2010,AI & Machine Learning,C154945302,Mozambique,MZ,30
-2010,AI & Machine Learning,C154945302,Namibia,NA,6
-2010,AI & Machine Learning,C154945302,New Caledonia,NC,3
-2010,AI & Machine Learning,C154945302,Niger,NE,12
-2010,AI & Machine Learning,C154945302,Nigeria,NG,200
-2010,AI & Machine Learning,C154945302,Nicaragua,NI,14
-2010,AI & Machine Learning,C154945302,Netherlands,NL,6116
-2010,AI & Machine Learning,C154945302,Norway,NO,1587
-2010,AI & Machine Learning,C154945302,Nepal,NP,94
-2010,AI & Machine Learning,C154945302,New Zealand,NZ,1297
-2010,AI & Machine Learning,C154945302,Oman,OM,95
-2010,AI & Machine Learning,C154945302,Panama,PA,22
-2010,AI & Machine Learning,C154945302,Peru,PE,93
-2010,AI & Machine Learning,C154945302,French Polynesia,PF,6
-2010,AI & Machine Learning,C154945302,Papua New Guinea,PG,3
-2010,AI & Machine Learning,C154945302,Philippines,PH,154
-2010,AI & Machine Learning,C154945302,Pakistan,PK,771
-2010,AI & Machine Learning,C154945302,Poland,PL,3442
-2010,AI & Machine Learning,C154945302,Puerto Rico,PR,110
-2010,AI & Machine Learning,C154945302,"Palestine, State of",PS,42
-2010,AI & Machine Learning,C154945302,Portugal,PT,2156
-2010,AI & Machine Learning,C154945302,Paraguay,PY,13
-2010,AI & Machine Learning,C154945302,Qatar,QA,172
-2010,AI & Machine Learning,C154945302,Réunion,RE,21
-2010,AI & Machine Learning,C154945302,Romania,RO,2010
-2010,AI & Machine Learning,C154945302,Serbia,RS,560
-2010,AI & Machine Learning,C154945302,Russian Federation,RU,2995
-2010,AI & Machine Learning,C154945302,Rwanda,RW,7
-2010,AI & Machine Learning,C154945302,Saudi Arabia,SA,747
-2010,AI & Machine Learning,C154945302,Seychelles,SC,1
-2010,AI & Machine Learning,C154945302,Sudan,SD,47
-2010,AI & Machine Learning,C154945302,Sweden,SE,3167
-2010,AI & Machine Learning,C154945302,Singapore,SG,2951
-2010,AI & Machine Learning,C154945302,Slovenia,SI,694
-2010,AI & Machine Learning,C154945302,Slovakia,SK,552
-2010,AI & Machine Learning,C154945302,Sierra Leone,SL,2
-2010,AI & Machine Learning,C154945302,Senegal,SN,14
-2010,AI & Machine Learning,C154945302,Somalia,SO,3
-2010,AI & Machine Learning,C154945302,South Sudan,SS,55
-2010,AI & Machine Learning,C154945302,El Salvador,SV,4
-2010,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,43
-2010,AI & Machine Learning,C154945302,Eswatini,SZ,1
-2010,AI & Machine Learning,C154945302,Togo,TG,3
-2010,AI & Machine Learning,C154945302,Thailand,TH,1138
-2010,AI & Machine Learning,C154945302,Tajikistan,TJ,111
-2010,AI & Machine Learning,C154945302,Turkmenistan,TM,1
-2010,AI & Machine Learning,C154945302,Tunisia,TN,643
-2010,AI & Machine Learning,C154945302,Tonga,TO,1
-2010,AI & Machine Learning,C154945302,Turkey,TR,2932
-2010,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,41
-2010,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,7164
-2010,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,49
-2010,AI & Machine Learning,C154945302,Ukraine,UA,693
-2010,AI & Machine Learning,C154945302,Uganda,UG,40
-2010,AI & Machine Learning,C154945302,United States of America,US,71408
-2010,AI & Machine Learning,C154945302,Uruguay,UY,90
-2010,AI & Machine Learning,C154945302,Uzbekistan,UZ,48
-2010,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,212
-2010,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,51
-2010,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,3
-2010,AI & Machine Learning,C154945302,Viet Nam,VN,406
-2010,AI & Machine Learning,C154945302,Vanuatu,VU,1
-2010,AI & Machine Learning,C154945302,Kosovo,XK,9
-2010,AI & Machine Learning,C154945302,Yemen,YE,42
-2010,AI & Machine Learning,C154945302,South Africa,ZA,1041
-2010,AI & Machine Learning,C154945302,Zambia,ZM,6
-2010,AI & Machine Learning,C154945302,Zimbabwe,ZW,36
+2010,AI & Machine Learning,C119857082,United Arab Emirates,AE,126
+2010,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,2
+2010,AI & Machine Learning,C119857082,Albania,AL,7
+2010,AI & Machine Learning,C119857082,Armenia,AM,5
+2010,AI & Machine Learning,C119857082,Argentina,AR,149
+2010,AI & Machine Learning,C119857082,Austria,AT,471
+2010,AI & Machine Learning,C119857082,Australia,AU,2435
+2010,AI & Machine Learning,C119857082,Azerbaijan,AZ,15
+2010,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,11
+2010,AI & Machine Learning,C119857082,Barbados,BB,5
+2010,AI & Machine Learning,C119857082,Bangladesh,BD,96
+2010,AI & Machine Learning,C119857082,Belgium,BE,791
+2010,AI & Machine Learning,C119857082,Burkina Faso,BF,9
+2010,AI & Machine Learning,C119857082,Bulgaria,BG,101
+2010,AI & Machine Learning,C119857082,Bahrain,BH,5
+2010,AI & Machine Learning,C119857082,Burundi,BI,13
+2010,AI & Machine Learning,C119857082,Benin,BJ,8
+2010,AI & Machine Learning,C119857082,Bermuda,BM,1
+2010,AI & Machine Learning,C119857082,Brunei Darussalam,BN,12
+2010,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,9
+2010,AI & Machine Learning,C119857082,Brazil,BR,1130
+2010,AI & Machine Learning,C119857082,Bhutan,BT,1
+2010,AI & Machine Learning,C119857082,Botswana,BW,14
+2010,AI & Machine Learning,C119857082,Belarus,BY,33
+2010,AI & Machine Learning,C119857082,Belize,BZ,2
+2010,AI & Machine Learning,C119857082,Canada,CA,2810
+2010,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,2
+2010,AI & Machine Learning,C119857082,Congo,CG,1
+2010,AI & Machine Learning,C119857082,Switzerland,CH,859
+2010,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,5
+2010,AI & Machine Learning,C119857082,Chile,CL,163
+2010,AI & Machine Learning,C119857082,Cameroon,CM,15
+2010,AI & Machine Learning,C119857082,China,CN,25820
+2010,AI & Machine Learning,C119857082,Colombia,CO,158
+2010,AI & Machine Learning,C119857082,Costa Rica,CR,14
+2010,AI & Machine Learning,C119857082,Cuba,CU,52
+2010,AI & Machine Learning,C119857082,Cyprus,CY,85
+2010,AI & Machine Learning,C119857082,Czechia,CZ,355
+2010,AI & Machine Learning,C119857082,Germany,DE,3119
+2010,AI & Machine Learning,C119857082,Denmark,DK,447
+2010,AI & Machine Learning,C119857082,Dominican Republic,DO,5
+2010,AI & Machine Learning,C119857082,Algeria,DZ,105
+2010,AI & Machine Learning,C119857082,Ecuador,EC,10
+2010,AI & Machine Learning,C119857082,Estonia,EE,44
+2010,AI & Machine Learning,C119857082,Egypt,EG,251
+2010,AI & Machine Learning,C119857082,Spain,ES,2096
+2010,AI & Machine Learning,C119857082,Ethiopia,ET,39
+2010,AI & Machine Learning,C119857082,Finland,FI,551
+2010,AI & Machine Learning,C119857082,Fiji,FJ,9
+2010,AI & Machine Learning,C119857082,Faroe Islands,FO,1
+2010,AI & Machine Learning,C119857082,France,FR,2907
+2010,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,5552
+2010,AI & Machine Learning,C119857082,Grenada,GD,1
+2010,AI & Machine Learning,C119857082,Georgia,GE,4
+2010,AI & Machine Learning,C119857082,Ghana,GH,43
+2010,AI & Machine Learning,C119857082,Gibraltar,GI,1
+2010,AI & Machine Learning,C119857082,Greenland,GL,1
+2010,AI & Machine Learning,C119857082,Gambia,GM,1
+2010,AI & Machine Learning,C119857082,Guadeloupe,GP,11
+2010,AI & Machine Learning,C119857082,Greece,GR,618
+2010,AI & Machine Learning,C119857082,Guatemala,GT,3
+2010,AI & Machine Learning,C119857082,Guam,GU,5
+2010,AI & Machine Learning,C119857082,Guyana,GY,1
+2010,AI & Machine Learning,C119857082,Hong Kong,HK,878
+2010,AI & Machine Learning,C119857082,Honduras,HN,1
+2010,AI & Machine Learning,C119857082,Croatia,HR,104
+2010,AI & Machine Learning,C119857082,Hungary,HU,216
+2010,AI & Machine Learning,C119857082,Indonesia,ID,221
+2010,AI & Machine Learning,C119857082,Ireland,IE,379
+2010,AI & Machine Learning,C119857082,Israel,IL,476
+2010,AI & Machine Learning,C119857082,India,IN,2062
+2010,AI & Machine Learning,C119857082,Iraq,IQ,49
+2010,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,1374
+2010,AI & Machine Learning,C119857082,Iceland,IS,59
+2010,AI & Machine Learning,C119857082,Italy,IT,2181
+2010,AI & Machine Learning,C119857082,Jersey,JE,1
+2010,AI & Machine Learning,C119857082,Jamaica,JM,8
+2010,AI & Machine Learning,C119857082,Jordan,JO,82
+2010,AI & Machine Learning,C119857082,Japan,JP,2582
+2010,AI & Machine Learning,C119857082,Kenya,KE,24
+2010,AI & Machine Learning,C119857082,Kyrgyzstan,KG,1
+2010,AI & Machine Learning,C119857082,Cambodia,KH,7
+2010,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1534
+2010,AI & Machine Learning,C119857082,Kuwait,KW,45
+2010,AI & Machine Learning,C119857082,Kazakhstan,KZ,14
+2010,AI & Machine Learning,C119857082,Lebanon,LB,61
+2010,AI & Machine Learning,C119857082,Liechtenstein,LI,1
+2010,AI & Machine Learning,C119857082,Sri Lanka,LK,42
+2010,AI & Machine Learning,C119857082,Lesotho,LS,1
+2010,AI & Machine Learning,C119857082,Lithuania,LT,76
+2010,AI & Machine Learning,C119857082,Luxembourg,LU,41
+2010,AI & Machine Learning,C119857082,Latvia,LV,69
+2010,AI & Machine Learning,C119857082,Libya,LY,9
+2010,AI & Machine Learning,C119857082,Morocco,MA,60
+2010,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,8
+2010,AI & Machine Learning,C119857082,Montenegro,ME,2
+2010,AI & Machine Learning,C119857082,North Macedonia,MK,55
+2010,AI & Machine Learning,C119857082,Myanmar,MM,18
+2010,AI & Machine Learning,C119857082,Mongolia,MN,19
+2010,AI & Machine Learning,C119857082,Macao,MO,57
+2010,AI & Machine Learning,C119857082,Martinique,MQ,1
+2010,AI & Machine Learning,C119857082,Mauritania,MR,1
+2010,AI & Machine Learning,C119857082,Malta,MT,16
+2010,AI & Machine Learning,C119857082,Mauritius,MU,6
+2010,AI & Machine Learning,C119857082,Malawi,MW,7
+2010,AI & Machine Learning,C119857082,Mexico,MX,461
+2010,AI & Machine Learning,C119857082,Malaysia,MY,727
+2010,AI & Machine Learning,C119857082,Mozambique,MZ,13
+2010,AI & Machine Learning,C119857082,Namibia,NA,1
+2010,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2010,AI & Machine Learning,C119857082,Niger,NE,8
+2010,AI & Machine Learning,C119857082,Nigeria,NG,123
+2010,AI & Machine Learning,C119857082,Nicaragua,NI,1
+2010,AI & Machine Learning,C119857082,Netherlands,NL,1524
+2010,AI & Machine Learning,C119857082,Norway,NO,461
+2010,AI & Machine Learning,C119857082,Nepal,NP,27
+2010,AI & Machine Learning,C119857082,New Zealand,NZ,433
+2010,AI & Machine Learning,C119857082,Oman,OM,28
+2010,AI & Machine Learning,C119857082,Panama,PA,5
+2010,AI & Machine Learning,C119857082,Peru,PE,23
+2010,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2010,AI & Machine Learning,C119857082,Philippines,PH,39
+2010,AI & Machine Learning,C119857082,Pakistan,PK,181
+2010,AI & Machine Learning,C119857082,Poland,PL,727
+2010,AI & Machine Learning,C119857082,Puerto Rico,PR,33
+2010,AI & Machine Learning,C119857082,"Palestine, State of",PS,16
+2010,AI & Machine Learning,C119857082,Portugal,PT,555
+2010,AI & Machine Learning,C119857082,Palau,PW,1
+2010,AI & Machine Learning,C119857082,Paraguay,PY,2
+2010,AI & Machine Learning,C119857082,Qatar,QA,37
+2010,AI & Machine Learning,C119857082,Réunion,RE,5
+2010,AI & Machine Learning,C119857082,Romania,RO,421
+2010,AI & Machine Learning,C119857082,Serbia,RS,102
+2010,AI & Machine Learning,C119857082,Russian Federation,RU,658
+2010,AI & Machine Learning,C119857082,Rwanda,RW,3
+2010,AI & Machine Learning,C119857082,Saudi Arabia,SA,176
+2010,AI & Machine Learning,C119857082,Seychelles,SC,1
+2010,AI & Machine Learning,C119857082,Sudan,SD,10
+2010,AI & Machine Learning,C119857082,Sweden,SE,785
+2010,AI & Machine Learning,C119857082,Singapore,SG,670
+2010,AI & Machine Learning,C119857082,Slovenia,SI,174
+2010,AI & Machine Learning,C119857082,Slovakia,SK,116
+2010,AI & Machine Learning,C119857082,Senegal,SN,14
+2010,AI & Machine Learning,C119857082,Somalia,SO,3
+2010,AI & Machine Learning,C119857082,South Sudan,SS,11
+2010,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,2
+2010,AI & Machine Learning,C119857082,El Salvador,SV,2
+2010,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,11
+2010,AI & Machine Learning,C119857082,Eswatini,SZ,1
+2010,AI & Machine Learning,C119857082,Thailand,TH,286
+2010,AI & Machine Learning,C119857082,Tajikistan,TJ,31
+2010,AI & Machine Learning,C119857082,Turkmenistan,TM,1
+2010,AI & Machine Learning,C119857082,Tunisia,TN,145
+2010,AI & Machine Learning,C119857082,Turkey,TR,772
+2010,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,9
+2010,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1859
+2010,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,18
+2010,AI & Machine Learning,C119857082,Ukraine,UA,153
+2010,AI & Machine Learning,C119857082,Uganda,UG,35
+2010,AI & Machine Learning,C119857082,United States of America,US,18089
+2010,AI & Machine Learning,C119857082,Uruguay,UY,21
+2010,AI & Machine Learning,C119857082,Uzbekistan,UZ,13
+2010,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,36
+2010,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,13
+2010,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2010,AI & Machine Learning,C119857082,Viet Nam,VN,100
+2010,AI & Machine Learning,C119857082,Kosovo,XK,1
+2010,AI & Machine Learning,C119857082,Yemen,YE,13
+2010,AI & Machine Learning,C119857082,South Africa,ZA,340
+2010,AI & Machine Learning,C119857082,Zambia,ZM,1
+2010,AI & Machine Learning,C119857082,Zimbabwe,ZW,10
 2010,CRISPR & Genomics,C98108389,United Arab Emirates,AE,2
 2010,CRISPR & Genomics,C98108389,Argentina,AR,2
 2010,CRISPR & Genomics,C98108389,Austria,AT,1
@@ -7237,201 +14501,181 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2010,Robotics & Automation,C34413123,Viet Nam,VN,1
 2010,Robotics & Automation,C34413123,Kosovo,XK,1
 2010,Robotics & Automation,C34413123,South Africa,ZA,5
-2011,AI & Machine Learning,C154945302,Andorra,AD,1
-2011,AI & Machine Learning,C154945302,United Arab Emirates,AE,399
-2011,AI & Machine Learning,C154945302,Afghanistan,AF,4
-2011,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,3
-2011,AI & Machine Learning,C154945302,Albania,AL,50
-2011,AI & Machine Learning,C154945302,Armenia,AM,69
-2011,AI & Machine Learning,C154945302,Angola,AO,1
-2011,AI & Machine Learning,C154945302,Argentina,AR,795
-2011,AI & Machine Learning,C154945302,Austria,AT,2546
-2011,AI & Machine Learning,C154945302,Australia,AU,8934
-2011,AI & Machine Learning,C154945302,Azerbaijan,AZ,89
-2011,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,98
-2011,AI & Machine Learning,C154945302,Barbados,BB,5
-2011,AI & Machine Learning,C154945302,Bangladesh,BD,429
-2011,AI & Machine Learning,C154945302,Belgium,BE,3606
-2011,AI & Machine Learning,C154945302,Burkina Faso,BF,9
-2011,AI & Machine Learning,C154945302,Bulgaria,BG,437
-2011,AI & Machine Learning,C154945302,Bahrain,BH,56
-2011,AI & Machine Learning,C154945302,Burundi,BI,39
-2011,AI & Machine Learning,C154945302,Benin,BJ,9
-2011,AI & Machine Learning,C154945302,Bermuda,BM,2
-2011,AI & Machine Learning,C154945302,Brunei Darussalam,BN,23
-2011,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,35
-2011,AI & Machine Learning,C154945302,Brazil,BR,4706
-2011,AI & Machine Learning,C154945302,Bahamas,BS,5
-2011,AI & Machine Learning,C154945302,Botswana,BW,36
-2011,AI & Machine Learning,C154945302,Belarus,BY,160
-2011,AI & Machine Learning,C154945302,Belize,BZ,4
-2011,AI & Machine Learning,C154945302,Canada,CA,12138
-2011,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,7
-2011,AI & Machine Learning,C154945302,Central African Republic,CF,1
-2011,AI & Machine Learning,C154945302,Congo,CG,4
-2011,AI & Machine Learning,C154945302,Switzerland,CH,4216
-2011,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,16
-2011,AI & Machine Learning,C154945302,Chile,CL,722
-2011,AI & Machine Learning,C154945302,Cameroon,CM,59
-2011,AI & Machine Learning,C154945302,China,CN,107535
-2011,AI & Machine Learning,C154945302,Colombia,CO,865
-2011,AI & Machine Learning,C154945302,Costa Rica,CR,79
-2011,AI & Machine Learning,C154945302,Cuba,CU,216
-2011,AI & Machine Learning,C154945302,Cabo Verde,CV,3
-2011,AI & Machine Learning,C154945302,Curaçao,CW,2
-2011,AI & Machine Learning,C154945302,Cyprus,CY,310
-2011,AI & Machine Learning,C154945302,Czechia,CZ,2136
-2011,AI & Machine Learning,C154945302,Germany,DE,17441
-2011,AI & Machine Learning,C154945302,Djibouti,DJ,1
-2011,AI & Machine Learning,C154945302,Denmark,DK,2165
-2011,AI & Machine Learning,C154945302,Dominica,DM,1
-2011,AI & Machine Learning,C154945302,Dominican Republic,DO,17
-2011,AI & Machine Learning,C154945302,Algeria,DZ,763
-2011,AI & Machine Learning,C154945302,Ecuador,EC,57
-2011,AI & Machine Learning,C154945302,Estonia,EE,219
-2011,AI & Machine Learning,C154945302,Egypt,EG,1169
-2011,AI & Machine Learning,C154945302,Eritrea,ER,2
-2011,AI & Machine Learning,C154945302,Spain,ES,9588
-2011,AI & Machine Learning,C154945302,Ethiopia,ET,57
-2011,AI & Machine Learning,C154945302,Finland,FI,2037
-2011,AI & Machine Learning,C154945302,Fiji,FJ,14
-2011,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,1
-2011,AI & Machine Learning,C154945302,Faroe Islands,FO,2
-2011,AI & Machine Learning,C154945302,France,FR,15937
-2011,AI & Machine Learning,C154945302,Gabon,GA,8
-2011,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,19935
-2011,AI & Machine Learning,C154945302,Grenada,GD,3
-2011,AI & Machine Learning,C154945302,Georgia,GE,45
-2011,AI & Machine Learning,C154945302,French Guiana,GF,2
-2011,AI & Machine Learning,C154945302,Ghana,GH,81
-2011,AI & Machine Learning,C154945302,Greenland,GL,2
-2011,AI & Machine Learning,C154945302,Gambia,GM,1
-2011,AI & Machine Learning,C154945302,Guadeloupe,GP,19
-2011,AI & Machine Learning,C154945302,Greece,GR,2446
-2011,AI & Machine Learning,C154945302,Guatemala,GT,12
-2011,AI & Machine Learning,C154945302,Guam,GU,4
-2011,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2011,AI & Machine Learning,C154945302,Guyana,GY,2
-2011,AI & Machine Learning,C154945302,Hong Kong,HK,3184
-2011,AI & Machine Learning,C154945302,Honduras,HN,7
-2011,AI & Machine Learning,C154945302,Croatia,HR,472
-2011,AI & Machine Learning,C154945302,Hungary,HU,1066
-2011,AI & Machine Learning,C154945302,Indonesia,ID,1044
-2011,AI & Machine Learning,C154945302,Ireland,IE,1574
-2011,AI & Machine Learning,C154945302,Israel,IL,2302
-2011,AI & Machine Learning,C154945302,India,IN,10420
-2011,AI & Machine Learning,C154945302,Iraq,IQ,269
-2011,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,6173
-2011,AI & Machine Learning,C154945302,Iceland,IS,140
-2011,AI & Machine Learning,C154945302,Italy,IT,10210
-2011,AI & Machine Learning,C154945302,Jamaica,JM,40
-2011,AI & Machine Learning,C154945302,Jordan,JO,346
-2011,AI & Machine Learning,C154945302,Japan,JP,17417
-2011,AI & Machine Learning,C154945302,Kenya,KE,107
-2011,AI & Machine Learning,C154945302,Kyrgyzstan,KG,6
-2011,AI & Machine Learning,C154945302,Cambodia,KH,45
-2011,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,1
-2011,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,3
-2011,AI & Machine Learning,C154945302,"Korea, Republic of",KR,8965
-2011,AI & Machine Learning,C154945302,Kuwait,KW,148
-2011,AI & Machine Learning,C154945302,Cayman Islands,KY,5
-2011,AI & Machine Learning,C154945302,Kazakhstan,KZ,58
-2011,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,6
-2011,AI & Machine Learning,C154945302,Lebanon,LB,218
-2011,AI & Machine Learning,C154945302,Liechtenstein,LI,16
-2011,AI & Machine Learning,C154945302,Sri Lanka,LK,152
-2011,AI & Machine Learning,C154945302,Liberia,LR,3
-2011,AI & Machine Learning,C154945302,Lesotho,LS,1
-2011,AI & Machine Learning,C154945302,Lithuania,LT,324
-2011,AI & Machine Learning,C154945302,Luxembourg,LU,248
-2011,AI & Machine Learning,C154945302,Latvia,LV,244
-2011,AI & Machine Learning,C154945302,Libya,LY,19
-2011,AI & Machine Learning,C154945302,Morocco,MA,388
-2011,AI & Machine Learning,C154945302,Monaco,MC,5
-2011,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,46
-2011,AI & Machine Learning,C154945302,Montenegro,ME,39
-2011,AI & Machine Learning,C154945302,Madagascar,MG,5
-2011,AI & Machine Learning,C154945302,North Macedonia,MK,171
-2011,AI & Machine Learning,C154945302,Mali,ML,12
-2011,AI & Machine Learning,C154945302,Myanmar,MM,65
-2011,AI & Machine Learning,C154945302,Mongolia,MN,118
-2011,AI & Machine Learning,C154945302,Macao,MO,241
-2011,AI & Machine Learning,C154945302,Northern Mariana Islands,MP,1
-2011,AI & Machine Learning,C154945302,Martinique,MQ,5
-2011,AI & Machine Learning,C154945302,Malta,MT,47
-2011,AI & Machine Learning,C154945302,Mauritius,MU,18
-2011,AI & Machine Learning,C154945302,Maldives,MV,1
-2011,AI & Machine Learning,C154945302,Malawi,MW,22
-2011,AI & Machine Learning,C154945302,Mexico,MX,2472
-2011,AI & Machine Learning,C154945302,Malaysia,MY,3318
-2011,AI & Machine Learning,C154945302,Mozambique,MZ,27
-2011,AI & Machine Learning,C154945302,Namibia,NA,13
-2011,AI & Machine Learning,C154945302,New Caledonia,NC,6
-2011,AI & Machine Learning,C154945302,Niger,NE,12
-2011,AI & Machine Learning,C154945302,Nigeria,NG,272
-2011,AI & Machine Learning,C154945302,Nicaragua,NI,12
-2011,AI & Machine Learning,C154945302,Netherlands,NL,6159
-2011,AI & Machine Learning,C154945302,Norway,NO,1708
-2011,AI & Machine Learning,C154945302,Nepal,NP,115
-2011,AI & Machine Learning,C154945302,Niue,NU,1
-2011,AI & Machine Learning,C154945302,New Zealand,NZ,1555
-2011,AI & Machine Learning,C154945302,Oman,OM,103
-2011,AI & Machine Learning,C154945302,Panama,PA,28
-2011,AI & Machine Learning,C154945302,Peru,PE,80
-2011,AI & Machine Learning,C154945302,French Polynesia,PF,8
-2011,AI & Machine Learning,C154945302,Papua New Guinea,PG,1
-2011,AI & Machine Learning,C154945302,Philippines,PH,153
-2011,AI & Machine Learning,C154945302,Pakistan,PK,835
-2011,AI & Machine Learning,C154945302,Poland,PL,3713
-2011,AI & Machine Learning,C154945302,Puerto Rico,PR,102
-2011,AI & Machine Learning,C154945302,"Palestine, State of",PS,73
-2011,AI & Machine Learning,C154945302,Portugal,PT,2399
-2011,AI & Machine Learning,C154945302,Paraguay,PY,20
-2011,AI & Machine Learning,C154945302,Qatar,QA,260
-2011,AI & Machine Learning,C154945302,Réunion,RE,15
-2011,AI & Machine Learning,C154945302,Romania,RO,1938
-2011,AI & Machine Learning,C154945302,Serbia,RS,724
-2011,AI & Machine Learning,C154945302,Russian Federation,RU,3354
-2011,AI & Machine Learning,C154945302,Rwanda,RW,8
-2011,AI & Machine Learning,C154945302,Saudi Arabia,SA,998
-2011,AI & Machine Learning,C154945302,Sudan,SD,49
-2011,AI & Machine Learning,C154945302,Sweden,SE,3575
-2011,AI & Machine Learning,C154945302,Singapore,SG,3063
-2011,AI & Machine Learning,C154945302,Slovenia,SI,731
-2011,AI & Machine Learning,C154945302,Slovakia,SK,674
-2011,AI & Machine Learning,C154945302,Sierra Leone,SL,2
-2011,AI & Machine Learning,C154945302,Senegal,SN,26
-2011,AI & Machine Learning,C154945302,Somalia,SO,6
-2011,AI & Machine Learning,C154945302,South Sudan,SS,67
-2011,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,2
-2011,AI & Machine Learning,C154945302,El Salvador,SV,5
-2011,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,41
-2011,AI & Machine Learning,C154945302,Eswatini,SZ,3
-2011,AI & Machine Learning,C154945302,Togo,TG,6
-2011,AI & Machine Learning,C154945302,Thailand,TH,1107
-2011,AI & Machine Learning,C154945302,Tajikistan,TJ,111
-2011,AI & Machine Learning,C154945302,Tunisia,TN,836
-2011,AI & Machine Learning,C154945302,Turkey,TR,3088
-2011,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,31
-2011,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,7180
-2011,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,55
-2011,AI & Machine Learning,C154945302,Ukraine,UA,750
-2011,AI & Machine Learning,C154945302,Uganda,UG,72
-2011,AI & Machine Learning,C154945302,United States of America,US,72634
-2011,AI & Machine Learning,C154945302,Uruguay,UY,87
-2011,AI & Machine Learning,C154945302,Uzbekistan,UZ,26
-2011,AI & Machine Learning,C154945302,Holy See,VA,1
-2011,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,175
-2011,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,37
-2011,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,1
-2011,AI & Machine Learning,C154945302,Viet Nam,VN,473
-2011,AI & Machine Learning,C154945302,Vanuatu,VU,1
-2011,AI & Machine Learning,C154945302,Samoa,WS,2
-2011,AI & Machine Learning,C154945302,Kosovo,XK,19
-2011,AI & Machine Learning,C154945302,Yemen,YE,82
-2011,AI & Machine Learning,C154945302,South Africa,ZA,1335
-2011,AI & Machine Learning,C154945302,Zambia,ZM,9
-2011,AI & Machine Learning,C154945302,Zimbabwe,ZW,52
+2011,AI & Machine Learning,C119857082,United Arab Emirates,AE,141
+2011,AI & Machine Learning,C119857082,Afghanistan,AF,2
+2011,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2011,AI & Machine Learning,C119857082,Albania,AL,13
+2011,AI & Machine Learning,C119857082,Armenia,AM,8
+2011,AI & Machine Learning,C119857082,Angola,AO,1
+2011,AI & Machine Learning,C119857082,Argentina,AR,187
+2011,AI & Machine Learning,C119857082,Austria,AT,501
+2011,AI & Machine Learning,C119857082,Australia,AU,2697
+2011,AI & Machine Learning,C119857082,Azerbaijan,AZ,23
+2011,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,15
+2011,AI & Machine Learning,C119857082,Barbados,BB,2
+2011,AI & Machine Learning,C119857082,Bangladesh,BD,133
+2011,AI & Machine Learning,C119857082,Belgium,BE,891
+2011,AI & Machine Learning,C119857082,Burkina Faso,BF,5
+2011,AI & Machine Learning,C119857082,Bulgaria,BG,84
+2011,AI & Machine Learning,C119857082,Bahrain,BH,21
+2011,AI & Machine Learning,C119857082,Burundi,BI,7
+2011,AI & Machine Learning,C119857082,Benin,BJ,3
+2011,AI & Machine Learning,C119857082,Brunei Darussalam,BN,6
+2011,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,10
+2011,AI & Machine Learning,C119857082,Brazil,BR,1240
+2011,AI & Machine Learning,C119857082,Bahamas,BS,1
+2011,AI & Machine Learning,C119857082,Botswana,BW,19
+2011,AI & Machine Learning,C119857082,Belarus,BY,32
+2011,AI & Machine Learning,C119857082,Belize,BZ,1
+2011,AI & Machine Learning,C119857082,Canada,CA,3038
+2011,AI & Machine Learning,C119857082,Congo,CG,2
+2011,AI & Machine Learning,C119857082,Switzerland,CH,1037
+2011,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,5
+2011,AI & Machine Learning,C119857082,Chile,CL,192
+2011,AI & Machine Learning,C119857082,Cameroon,CM,19
+2011,AI & Machine Learning,C119857082,China,CN,26223
+2011,AI & Machine Learning,C119857082,Colombia,CO,195
+2011,AI & Machine Learning,C119857082,Costa Rica,CR,17
+2011,AI & Machine Learning,C119857082,Cuba,CU,55
+2011,AI & Machine Learning,C119857082,Cabo Verde,CV,3
+2011,AI & Machine Learning,C119857082,Curaçao,CW,1
+2011,AI & Machine Learning,C119857082,Cyprus,CY,99
+2011,AI & Machine Learning,C119857082,Czechia,CZ,406
+2011,AI & Machine Learning,C119857082,Germany,DE,3597
+2011,AI & Machine Learning,C119857082,Denmark,DK,459
+2011,AI & Machine Learning,C119857082,Dominican Republic,DO,7
+2011,AI & Machine Learning,C119857082,Algeria,DZ,158
+2011,AI & Machine Learning,C119857082,Ecuador,EC,14
+2011,AI & Machine Learning,C119857082,Estonia,EE,46
+2011,AI & Machine Learning,C119857082,Egypt,EG,269
+2011,AI & Machine Learning,C119857082,Eritrea,ER,1
+2011,AI & Machine Learning,C119857082,Spain,ES,2512
+2011,AI & Machine Learning,C119857082,Ethiopia,ET,54
+2011,AI & Machine Learning,C119857082,Finland,FI,524
+2011,AI & Machine Learning,C119857082,Fiji,FJ,11
+2011,AI & Machine Learning,C119857082,Faroe Islands,FO,1
+2011,AI & Machine Learning,C119857082,France,FR,3246
+2011,AI & Machine Learning,C119857082,Gabon,GA,3
+2011,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,6001
+2011,AI & Machine Learning,C119857082,Georgia,GE,8
+2011,AI & Machine Learning,C119857082,French Guiana,GF,2
+2011,AI & Machine Learning,C119857082,Ghana,GH,42
+2011,AI & Machine Learning,C119857082,Guinea,GN,1
+2011,AI & Machine Learning,C119857082,Guadeloupe,GP,2
+2011,AI & Machine Learning,C119857082,Greece,GR,692
+2011,AI & Machine Learning,C119857082,Guatemala,GT,2
+2011,AI & Machine Learning,C119857082,Guam,GU,1
+2011,AI & Machine Learning,C119857082,Hong Kong,HK,899
+2011,AI & Machine Learning,C119857082,Honduras,HN,7
+2011,AI & Machine Learning,C119857082,Croatia,HR,101
+2011,AI & Machine Learning,C119857082,Hungary,HU,232
+2011,AI & Machine Learning,C119857082,Indonesia,ID,302
+2011,AI & Machine Learning,C119857082,Ireland,IE,399
+2011,AI & Machine Learning,C119857082,Israel,IL,480
+2011,AI & Machine Learning,C119857082,India,IN,2524
+2011,AI & Machine Learning,C119857082,Iraq,IQ,60
+2011,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,1768
+2011,AI & Machine Learning,C119857082,Iceland,IS,57
+2011,AI & Machine Learning,C119857082,Italy,IT,2326
+2011,AI & Machine Learning,C119857082,Jamaica,JM,9
+2011,AI & Machine Learning,C119857082,Jordan,JO,109
+2011,AI & Machine Learning,C119857082,Japan,JP,2577
+2011,AI & Machine Learning,C119857082,Kenya,KE,58
+2011,AI & Machine Learning,C119857082,Kyrgyzstan,KG,2
+2011,AI & Machine Learning,C119857082,Cambodia,KH,16
+2011,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,1
+2011,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1768
+2011,AI & Machine Learning,C119857082,Kuwait,KW,44
+2011,AI & Machine Learning,C119857082,Cayman Islands,KY,2
+2011,AI & Machine Learning,C119857082,Kazakhstan,KZ,30
+2011,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,2
+2011,AI & Machine Learning,C119857082,Lebanon,LB,88
+2011,AI & Machine Learning,C119857082,Liechtenstein,LI,7
+2011,AI & Machine Learning,C119857082,Sri Lanka,LK,53
+2011,AI & Machine Learning,C119857082,Liberia,LR,1
+2011,AI & Machine Learning,C119857082,Lithuania,LT,82
+2011,AI & Machine Learning,C119857082,Luxembourg,LU,55
+2011,AI & Machine Learning,C119857082,Latvia,LV,81
+2011,AI & Machine Learning,C119857082,Libya,LY,10
+2011,AI & Machine Learning,C119857082,Morocco,MA,96
+2011,AI & Machine Learning,C119857082,Monaco,MC,3
+2011,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,9
+2011,AI & Machine Learning,C119857082,Montenegro,ME,7
+2011,AI & Machine Learning,C119857082,North Macedonia,MK,37
+2011,AI & Machine Learning,C119857082,Mali,ML,5
+2011,AI & Machine Learning,C119857082,Myanmar,MM,16
+2011,AI & Machine Learning,C119857082,Mongolia,MN,21
+2011,AI & Machine Learning,C119857082,Macao,MO,72
+2011,AI & Machine Learning,C119857082,Malta,MT,14
+2011,AI & Machine Learning,C119857082,Mauritius,MU,9
+2011,AI & Machine Learning,C119857082,Maldives,MV,1
+2011,AI & Machine Learning,C119857082,Malawi,MW,9
+2011,AI & Machine Learning,C119857082,Mexico,MX,522
+2011,AI & Machine Learning,C119857082,Malaysia,MY,969
+2011,AI & Machine Learning,C119857082,Mozambique,MZ,9
+2011,AI & Machine Learning,C119857082,Namibia,NA,8
+2011,AI & Machine Learning,C119857082,New Caledonia,NC,2
+2011,AI & Machine Learning,C119857082,Niger,NE,5
+2011,AI & Machine Learning,C119857082,Nigeria,NG,140
+2011,AI & Machine Learning,C119857082,Nicaragua,NI,6
+2011,AI & Machine Learning,C119857082,Netherlands,NL,1641
+2011,AI & Machine Learning,C119857082,Norway,NO,502
+2011,AI & Machine Learning,C119857082,Nepal,NP,31
+2011,AI & Machine Learning,C119857082,New Zealand,NZ,517
+2011,AI & Machine Learning,C119857082,Oman,OM,38
+2011,AI & Machine Learning,C119857082,Panama,PA,4
+2011,AI & Machine Learning,C119857082,Peru,PE,27
+2011,AI & Machine Learning,C119857082,French Polynesia,PF,2
+2011,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+2011,AI & Machine Learning,C119857082,Philippines,PH,50
+2011,AI & Machine Learning,C119857082,Pakistan,PK,220
+2011,AI & Machine Learning,C119857082,Poland,PL,810
+2011,AI & Machine Learning,C119857082,Puerto Rico,PR,31
+2011,AI & Machine Learning,C119857082,"Palestine, State of",PS,20
+2011,AI & Machine Learning,C119857082,Portugal,PT,699
+2011,AI & Machine Learning,C119857082,Paraguay,PY,2
+2011,AI & Machine Learning,C119857082,Qatar,QA,52
+2011,AI & Machine Learning,C119857082,Réunion,RE,7
+2011,AI & Machine Learning,C119857082,Romania,RO,378
+2011,AI & Machine Learning,C119857082,Serbia,RS,154
+2011,AI & Machine Learning,C119857082,Russian Federation,RU,769
+2011,AI & Machine Learning,C119857082,Rwanda,RW,3
+2011,AI & Machine Learning,C119857082,Saudi Arabia,SA,262
+2011,AI & Machine Learning,C119857082,Sudan,SD,9
+2011,AI & Machine Learning,C119857082,Sweden,SE,917
+2011,AI & Machine Learning,C119857082,Singapore,SG,728
+2011,AI & Machine Learning,C119857082,Slovenia,SI,172
+2011,AI & Machine Learning,C119857082,Slovakia,SK,118
+2011,AI & Machine Learning,C119857082,Sierra Leone,SL,3
+2011,AI & Machine Learning,C119857082,Senegal,SN,14
+2011,AI & Machine Learning,C119857082,Somalia,SO,3
+2011,AI & Machine Learning,C119857082,South Sudan,SS,13
+2011,AI & Machine Learning,C119857082,El Salvador,SV,2
+2011,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,12
+2011,AI & Machine Learning,C119857082,Eswatini,SZ,4
+2011,AI & Machine Learning,C119857082,Togo,TG,3
+2011,AI & Machine Learning,C119857082,Thailand,TH,310
+2011,AI & Machine Learning,C119857082,Tajikistan,TJ,25
+2011,AI & Machine Learning,C119857082,Turkmenistan,TM,8
+2011,AI & Machine Learning,C119857082,Tunisia,TN,221
+2011,AI & Machine Learning,C119857082,Turkey,TR,817
+2011,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,8
+2011,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1839
+2011,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,41
+2011,AI & Machine Learning,C119857082,Ukraine,UA,189
+2011,AI & Machine Learning,C119857082,Uganda,UG,40
+2011,AI & Machine Learning,C119857082,United States of America,US,19673
+2011,AI & Machine Learning,C119857082,Uruguay,UY,28
+2011,AI & Machine Learning,C119857082,Uzbekistan,UZ,3
+2011,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,38
+2011,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,10
+2011,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2011,AI & Machine Learning,C119857082,Viet Nam,VN,128
+2011,AI & Machine Learning,C119857082,Kosovo,XK,3
+2011,AI & Machine Learning,C119857082,Yemen,YE,33
+2011,AI & Machine Learning,C119857082,South Africa,ZA,469
+2011,AI & Machine Learning,C119857082,Zambia,ZM,8
+2011,AI & Machine Learning,C119857082,Zimbabwe,ZW,16
 2011,CRISPR & Genomics,C98108389,United Arab Emirates,AE,1
 2011,CRISPR & Genomics,C98108389,Argentina,AR,1
 2011,CRISPR & Genomics,C98108389,Austria,AT,3
@@ -8044,201 +15288,192 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2011,Robotics & Automation,C34413123,Viet Nam,VN,3
 2011,Robotics & Automation,C34413123,Yemen,YE,1
 2011,Robotics & Automation,C34413123,South Africa,ZA,6
-2012,AI & Machine Learning,C154945302,Andorra,AD,1
-2012,AI & Machine Learning,C154945302,United Arab Emirates,AE,468
-2012,AI & Machine Learning,C154945302,Afghanistan,AF,4
-2012,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,3
-2012,AI & Machine Learning,C154945302,Albania,AL,45
-2012,AI & Machine Learning,C154945302,Armenia,AM,59
-2012,AI & Machine Learning,C154945302,Angola,AO,9
-2012,AI & Machine Learning,C154945302,Argentina,AR,834
-2012,AI & Machine Learning,C154945302,American Samoa,AS,1
-2012,AI & Machine Learning,C154945302,Austria,AT,2543
-2012,AI & Machine Learning,C154945302,Australia,AU,9697
-2012,AI & Machine Learning,C154945302,Azerbaijan,AZ,148
-2012,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,129
-2012,AI & Machine Learning,C154945302,Barbados,BB,7
-2012,AI & Machine Learning,C154945302,Bangladesh,BD,609
-2012,AI & Machine Learning,C154945302,Belgium,BE,3857
-2012,AI & Machine Learning,C154945302,Burkina Faso,BF,29
-2012,AI & Machine Learning,C154945302,Bulgaria,BG,469
-2012,AI & Machine Learning,C154945302,Bahrain,BH,52
-2012,AI & Machine Learning,C154945302,Burundi,BI,45
-2012,AI & Machine Learning,C154945302,Benin,BJ,19
-2012,AI & Machine Learning,C154945302,Bermuda,BM,3
-2012,AI & Machine Learning,C154945302,Brunei Darussalam,BN,43
-2012,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,39
-2012,AI & Machine Learning,C154945302,Brazil,BR,5223
-2012,AI & Machine Learning,C154945302,Bahamas,BS,4
-2012,AI & Machine Learning,C154945302,Botswana,BW,44
-2012,AI & Machine Learning,C154945302,Belarus,BY,133
-2012,AI & Machine Learning,C154945302,Belize,BZ,1
-2012,AI & Machine Learning,C154945302,Canada,CA,12204
-2012,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,8
-2012,AI & Machine Learning,C154945302,Congo,CG,2
-2012,AI & Machine Learning,C154945302,Switzerland,CH,4522
-2012,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,16
-2012,AI & Machine Learning,C154945302,Chile,CL,774
-2012,AI & Machine Learning,C154945302,Cameroon,CM,79
-2012,AI & Machine Learning,C154945302,China,CN,96799
-2012,AI & Machine Learning,C154945302,Colombia,CO,998
-2012,AI & Machine Learning,C154945302,Costa Rica,CR,109
-2012,AI & Machine Learning,C154945302,Cuba,CU,261
-2012,AI & Machine Learning,C154945302,Curaçao,CW,2
-2012,AI & Machine Learning,C154945302,Cyprus,CY,362
-2012,AI & Machine Learning,C154945302,Czechia,CZ,2262
-2012,AI & Machine Learning,C154945302,Germany,DE,18981
-2012,AI & Machine Learning,C154945302,Djibouti,DJ,1
-2012,AI & Machine Learning,C154945302,Denmark,DK,2426
-2012,AI & Machine Learning,C154945302,Dominica,DM,1
-2012,AI & Machine Learning,C154945302,Dominican Republic,DO,15
-2012,AI & Machine Learning,C154945302,Algeria,DZ,921
-2012,AI & Machine Learning,C154945302,Ecuador,EC,103
-2012,AI & Machine Learning,C154945302,Estonia,EE,217
-2012,AI & Machine Learning,C154945302,Egypt,EG,1521
-2012,AI & Machine Learning,C154945302,Spain,ES,9662
-2012,AI & Machine Learning,C154945302,Ethiopia,ET,77
-2012,AI & Machine Learning,C154945302,Finland,FI,2253
-2012,AI & Machine Learning,C154945302,Fiji,FJ,25
-2012,AI & Machine Learning,C154945302,Faroe Islands,FO,3
-2012,AI & Machine Learning,C154945302,France,FR,17139
-2012,AI & Machine Learning,C154945302,Gabon,GA,5
-2012,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,20877
-2012,AI & Machine Learning,C154945302,Grenada,GD,8
-2012,AI & Machine Learning,C154945302,Georgia,GE,74
-2012,AI & Machine Learning,C154945302,Ghana,GH,121
-2012,AI & Machine Learning,C154945302,Greenland,GL,3
-2012,AI & Machine Learning,C154945302,Guinea,GN,2
-2012,AI & Machine Learning,C154945302,Guadeloupe,GP,29
-2012,AI & Machine Learning,C154945302,Equatorial Guinea,GQ,1
-2012,AI & Machine Learning,C154945302,Greece,GR,2343
-2012,AI & Machine Learning,C154945302,Guatemala,GT,18
-2012,AI & Machine Learning,C154945302,Guam,GU,6
-2012,AI & Machine Learning,C154945302,Guinea-Bissau,GW,2
-2012,AI & Machine Learning,C154945302,Guyana,GY,2
-2012,AI & Machine Learning,C154945302,Hong Kong,HK,3147
-2012,AI & Machine Learning,C154945302,Honduras,HN,3
-2012,AI & Machine Learning,C154945302,Croatia,HR,543
-2012,AI & Machine Learning,C154945302,Hungary,HU,1155
-2012,AI & Machine Learning,C154945302,Indonesia,ID,1391
-2012,AI & Machine Learning,C154945302,Ireland,IE,1529
-2012,AI & Machine Learning,C154945302,Israel,IL,2414
-2012,AI & Machine Learning,C154945302,India,IN,13661
-2012,AI & Machine Learning,C154945302,Iraq,IQ,367
-2012,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,6467
-2012,AI & Machine Learning,C154945302,Iceland,IS,110
-2012,AI & Machine Learning,C154945302,Italy,IT,10799
-2012,AI & Machine Learning,C154945302,Jamaica,JM,32
-2012,AI & Machine Learning,C154945302,Jordan,JO,406
-2012,AI & Machine Learning,C154945302,Japan,JP,17860
-2012,AI & Machine Learning,C154945302,Kenya,KE,107
-2012,AI & Machine Learning,C154945302,Kyrgyzstan,KG,6
-2012,AI & Machine Learning,C154945302,Cambodia,KH,46
-2012,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,2
-2012,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,13
-2012,AI & Machine Learning,C154945302,"Korea, Republic of",KR,9418
-2012,AI & Machine Learning,C154945302,Kuwait,KW,123
-2012,AI & Machine Learning,C154945302,Cayman Islands,KY,2
-2012,AI & Machine Learning,C154945302,Kazakhstan,KZ,97
-2012,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,7
-2012,AI & Machine Learning,C154945302,Lebanon,LB,273
-2012,AI & Machine Learning,C154945302,Liechtenstein,LI,11
-2012,AI & Machine Learning,C154945302,Sri Lanka,LK,149
-2012,AI & Machine Learning,C154945302,Liberia,LR,3
-2012,AI & Machine Learning,C154945302,Lesotho,LS,1
-2012,AI & Machine Learning,C154945302,Lithuania,LT,429
-2012,AI & Machine Learning,C154945302,Luxembourg,LU,282
-2012,AI & Machine Learning,C154945302,Latvia,LV,277
-2012,AI & Machine Learning,C154945302,Libya,LY,38
-2012,AI & Machine Learning,C154945302,Morocco,MA,558
-2012,AI & Machine Learning,C154945302,Monaco,MC,9
-2012,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,41
-2012,AI & Machine Learning,C154945302,Montenegro,ME,64
-2012,AI & Machine Learning,C154945302,Madagascar,MG,12
-2012,AI & Machine Learning,C154945302,North Macedonia,MK,165
-2012,AI & Machine Learning,C154945302,Mali,ML,16
-2012,AI & Machine Learning,C154945302,Myanmar,MM,53
-2012,AI & Machine Learning,C154945302,Mongolia,MN,121
-2012,AI & Machine Learning,C154945302,Macao,MO,283
-2012,AI & Machine Learning,C154945302,Martinique,MQ,4
-2012,AI & Machine Learning,C154945302,Mauritania,MR,4
-2012,AI & Machine Learning,C154945302,Malta,MT,96
-2012,AI & Machine Learning,C154945302,Mauritius,MU,21
-2012,AI & Machine Learning,C154945302,Maldives,MV,5
-2012,AI & Machine Learning,C154945302,Malawi,MW,21
-2012,AI & Machine Learning,C154945302,Mexico,MX,2527
-2012,AI & Machine Learning,C154945302,Malaysia,MY,3676
-2012,AI & Machine Learning,C154945302,Mozambique,MZ,27
-2012,AI & Machine Learning,C154945302,Namibia,NA,9
-2012,AI & Machine Learning,C154945302,New Caledonia,NC,5
-2012,AI & Machine Learning,C154945302,Niger,NE,17
-2012,AI & Machine Learning,C154945302,Nigeria,NG,342
-2012,AI & Machine Learning,C154945302,Nicaragua,NI,12
-2012,AI & Machine Learning,C154945302,Netherlands,NL,6578
-2012,AI & Machine Learning,C154945302,Norway,NO,1967
-2012,AI & Machine Learning,C154945302,Nepal,NP,178
-2012,AI & Machine Learning,C154945302,New Zealand,NZ,1514
-2012,AI & Machine Learning,C154945302,Oman,OM,147
-2012,AI & Machine Learning,C154945302,Panama,PA,39
-2012,AI & Machine Learning,C154945302,Peru,PE,92
-2012,AI & Machine Learning,C154945302,French Polynesia,PF,7
-2012,AI & Machine Learning,C154945302,Papua New Guinea,PG,3
-2012,AI & Machine Learning,C154945302,Philippines,PH,245
-2012,AI & Machine Learning,C154945302,Pakistan,PK,1106
-2012,AI & Machine Learning,C154945302,Poland,PL,4120
-2012,AI & Machine Learning,C154945302,Puerto Rico,PR,105
-2012,AI & Machine Learning,C154945302,"Palestine, State of",PS,74
-2012,AI & Machine Learning,C154945302,Portugal,PT,2732
-2012,AI & Machine Learning,C154945302,Palau,PW,2
-2012,AI & Machine Learning,C154945302,Paraguay,PY,19
-2012,AI & Machine Learning,C154945302,Qatar,QA,350
-2012,AI & Machine Learning,C154945302,Réunion,RE,21
-2012,AI & Machine Learning,C154945302,Romania,RO,2233
-2012,AI & Machine Learning,C154945302,Serbia,RS,866
-2012,AI & Machine Learning,C154945302,Russian Federation,RU,3509
-2012,AI & Machine Learning,C154945302,Rwanda,RW,13
-2012,AI & Machine Learning,C154945302,Saudi Arabia,SA,1277
-2012,AI & Machine Learning,C154945302,Seychelles,SC,2
-2012,AI & Machine Learning,C154945302,Sudan,SD,52
-2012,AI & Machine Learning,C154945302,Sweden,SE,3803
-2012,AI & Machine Learning,C154945302,Singapore,SG,3190
-2012,AI & Machine Learning,C154945302,Slovenia,SI,747
-2012,AI & Machine Learning,C154945302,Svalbard and Jan Mayen,SJ,1
-2012,AI & Machine Learning,C154945302,Slovakia,SK,797
-2012,AI & Machine Learning,C154945302,Senegal,SN,29
-2012,AI & Machine Learning,C154945302,Somalia,SO,3
-2012,AI & Machine Learning,C154945302,Suriname,SR,1
-2012,AI & Machine Learning,C154945302,South Sudan,SS,65
-2012,AI & Machine Learning,C154945302,El Salvador,SV,8
-2012,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,38
-2012,AI & Machine Learning,C154945302,Eswatini,SZ,3
-2012,AI & Machine Learning,C154945302,Chad,TD,1
-2012,AI & Machine Learning,C154945302,Togo,TG,2
-2012,AI & Machine Learning,C154945302,Thailand,TH,1215
-2012,AI & Machine Learning,C154945302,Tajikistan,TJ,106
-2012,AI & Machine Learning,C154945302,Turkmenistan,TM,1
-2012,AI & Machine Learning,C154945302,Tunisia,TN,973
-2012,AI & Machine Learning,C154945302,Tonga,TO,1
-2012,AI & Machine Learning,C154945302,Turkey,TR,3330
-2012,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,27
-2012,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,6913
-2012,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,58
-2012,AI & Machine Learning,C154945302,Ukraine,UA,918
-2012,AI & Machine Learning,C154945302,Uganda,UG,67
-2012,AI & Machine Learning,C154945302,United States of America,US,73138
-2012,AI & Machine Learning,C154945302,Uruguay,UY,111
-2012,AI & Machine Learning,C154945302,Uzbekistan,UZ,41
-2012,AI & Machine Learning,C154945302,Holy See,VA,2
-2012,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,170
-2012,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,44
-2012,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,2
-2012,AI & Machine Learning,C154945302,Viet Nam,VN,608
-2012,AI & Machine Learning,C154945302,Samoa,WS,1
-2012,AI & Machine Learning,C154945302,Kosovo,XK,23
-2012,AI & Machine Learning,C154945302,Yemen,YE,88
-2012,AI & Machine Learning,C154945302,South Africa,ZA,1445
-2012,AI & Machine Learning,C154945302,Zambia,ZM,10
-2012,AI & Machine Learning,C154945302,Zimbabwe,ZW,46
+2012,AI & Machine Learning,C119857082,United Arab Emirates,AE,147
+2012,AI & Machine Learning,C119857082,Afghanistan,AF,3
+2012,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2012,AI & Machine Learning,C119857082,Albania,AL,13
+2012,AI & Machine Learning,C119857082,Armenia,AM,9
+2012,AI & Machine Learning,C119857082,Angola,AO,3
+2012,AI & Machine Learning,C119857082,Argentina,AR,178
+2012,AI & Machine Learning,C119857082,American Samoa,AS,2
+2012,AI & Machine Learning,C119857082,Austria,AT,580
+2012,AI & Machine Learning,C119857082,Australia,AU,3035
+2012,AI & Machine Learning,C119857082,Azerbaijan,AZ,33
+2012,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,33
+2012,AI & Machine Learning,C119857082,Barbados,BB,2
+2012,AI & Machine Learning,C119857082,Bangladesh,BD,151
+2012,AI & Machine Learning,C119857082,Belgium,BE,1041
+2012,AI & Machine Learning,C119857082,Burkina Faso,BF,10
+2012,AI & Machine Learning,C119857082,Bulgaria,BG,107
+2012,AI & Machine Learning,C119857082,Bahrain,BH,19
+2012,AI & Machine Learning,C119857082,Burundi,BI,13
+2012,AI & Machine Learning,C119857082,Benin,BJ,4
+2012,AI & Machine Learning,C119857082,Bermuda,BM,1
+2012,AI & Machine Learning,C119857082,Brunei Darussalam,BN,11
+2012,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,6
+2012,AI & Machine Learning,C119857082,Brazil,BR,1389
+2012,AI & Machine Learning,C119857082,Botswana,BW,12
+2012,AI & Machine Learning,C119857082,Belarus,BY,40
+2012,AI & Machine Learning,C119857082,Belize,BZ,1
+2012,AI & Machine Learning,C119857082,Canada,CA,3317
+2012,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,1
+2012,AI & Machine Learning,C119857082,Congo,CG,1
+2012,AI & Machine Learning,C119857082,Switzerland,CH,1034
+2012,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,7
+2012,AI & Machine Learning,C119857082,Chile,CL,190
+2012,AI & Machine Learning,C119857082,Cameroon,CM,26
+2012,AI & Machine Learning,C119857082,China,CN,22850
+2012,AI & Machine Learning,C119857082,Colombia,CO,214
+2012,AI & Machine Learning,C119857082,Costa Rica,CR,26
+2012,AI & Machine Learning,C119857082,Cuba,CU,61
+2012,AI & Machine Learning,C119857082,Curaçao,CW,2
+2012,AI & Machine Learning,C119857082,Cyprus,CY,89
+2012,AI & Machine Learning,C119857082,Czechia,CZ,421
+2012,AI & Machine Learning,C119857082,Germany,DE,3765
+2012,AI & Machine Learning,C119857082,Denmark,DK,527
+2012,AI & Machine Learning,C119857082,Dominica,DM,1
+2012,AI & Machine Learning,C119857082,Dominican Republic,DO,3
+2012,AI & Machine Learning,C119857082,Algeria,DZ,183
+2012,AI & Machine Learning,C119857082,Ecuador,EC,16
+2012,AI & Machine Learning,C119857082,Estonia,EE,79
+2012,AI & Machine Learning,C119857082,Egypt,EG,355
+2012,AI & Machine Learning,C119857082,Spain,ES,2436
+2012,AI & Machine Learning,C119857082,Ethiopia,ET,44
+2012,AI & Machine Learning,C119857082,Finland,FI,626
+2012,AI & Machine Learning,C119857082,Fiji,FJ,13
+2012,AI & Machine Learning,C119857082,France,FR,3459
+2012,AI & Machine Learning,C119857082,Gabon,GA,3
+2012,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,6266
+2012,AI & Machine Learning,C119857082,Georgia,GE,14
+2012,AI & Machine Learning,C119857082,Ghana,GH,64
+2012,AI & Machine Learning,C119857082,Greenland,GL,2
+2012,AI & Machine Learning,C119857082,Gambia,GM,3
+2012,AI & Machine Learning,C119857082,Guadeloupe,GP,6
+2012,AI & Machine Learning,C119857082,Greece,GR,630
+2012,AI & Machine Learning,C119857082,Guatemala,GT,5
+2012,AI & Machine Learning,C119857082,Guam,GU,3
+2012,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2012,AI & Machine Learning,C119857082,Guyana,GY,1
+2012,AI & Machine Learning,C119857082,Hong Kong,HK,847
+2012,AI & Machine Learning,C119857082,Honduras,HN,2
+2012,AI & Machine Learning,C119857082,Croatia,HR,128
+2012,AI & Machine Learning,C119857082,Hungary,HU,260
+2012,AI & Machine Learning,C119857082,Indonesia,ID,393
+2012,AI & Machine Learning,C119857082,Ireland,IE,410
+2012,AI & Machine Learning,C119857082,Israel,IL,558
+2012,AI & Machine Learning,C119857082,Isle of Man,IM,2
+2012,AI & Machine Learning,C119857082,India,IN,3301
+2012,AI & Machine Learning,C119857082,Iraq,IQ,63
+2012,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,1936
+2012,AI & Machine Learning,C119857082,Iceland,IS,62
+2012,AI & Machine Learning,C119857082,Italy,IT,2563
+2012,AI & Machine Learning,C119857082,Jamaica,JM,26
+2012,AI & Machine Learning,C119857082,Jordan,JO,128
+2012,AI & Machine Learning,C119857082,Japan,JP,2744
+2012,AI & Machine Learning,C119857082,Kenya,KE,64
+2012,AI & Machine Learning,C119857082,Kyrgyzstan,KG,3
+2012,AI & Machine Learning,C119857082,Cambodia,KH,14
+2012,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,4
+2012,AI & Machine Learning,C119857082,"Korea, Republic of",KR,1902
+2012,AI & Machine Learning,C119857082,Kuwait,KW,38
+2012,AI & Machine Learning,C119857082,Kazakhstan,KZ,36
+2012,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,2
+2012,AI & Machine Learning,C119857082,Lebanon,LB,65
+2012,AI & Machine Learning,C119857082,Liechtenstein,LI,5
+2012,AI & Machine Learning,C119857082,Sri Lanka,LK,61
+2012,AI & Machine Learning,C119857082,Lesotho,LS,2
+2012,AI & Machine Learning,C119857082,Lithuania,LT,126
+2012,AI & Machine Learning,C119857082,Luxembourg,LU,77
+2012,AI & Machine Learning,C119857082,Latvia,LV,75
+2012,AI & Machine Learning,C119857082,Libya,LY,11
+2012,AI & Machine Learning,C119857082,Morocco,MA,140
+2012,AI & Machine Learning,C119857082,Monaco,MC,4
+2012,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,12
+2012,AI & Machine Learning,C119857082,Montenegro,ME,10
+2012,AI & Machine Learning,C119857082,Madagascar,MG,2
+2012,AI & Machine Learning,C119857082,North Macedonia,MK,52
+2012,AI & Machine Learning,C119857082,Mali,ML,1
+2012,AI & Machine Learning,C119857082,Myanmar,MM,15
+2012,AI & Machine Learning,C119857082,Mongolia,MN,38
+2012,AI & Machine Learning,C119857082,Macao,MO,88
+2012,AI & Machine Learning,C119857082,Martinique,MQ,3
+2012,AI & Machine Learning,C119857082,Mauritania,MR,1
+2012,AI & Machine Learning,C119857082,Malta,MT,17
+2012,AI & Machine Learning,C119857082,Mauritius,MU,9
+2012,AI & Machine Learning,C119857082,Maldives,MV,1
+2012,AI & Machine Learning,C119857082,Malawi,MW,22
+2012,AI & Machine Learning,C119857082,Mexico,MX,576
+2012,AI & Machine Learning,C119857082,Malaysia,MY,1062
+2012,AI & Machine Learning,C119857082,Mozambique,MZ,7
+2012,AI & Machine Learning,C119857082,Namibia,NA,1
+2012,AI & Machine Learning,C119857082,New Caledonia,NC,3
+2012,AI & Machine Learning,C119857082,Niger,NE,2
+2012,AI & Machine Learning,C119857082,Nigeria,NG,201
+2012,AI & Machine Learning,C119857082,Nicaragua,NI,4
+2012,AI & Machine Learning,C119857082,Netherlands,NL,1812
+2012,AI & Machine Learning,C119857082,Norway,NO,554
+2012,AI & Machine Learning,C119857082,Nepal,NP,53
+2012,AI & Machine Learning,C119857082,New Zealand,NZ,489
+2012,AI & Machine Learning,C119857082,Oman,OM,41
+2012,AI & Machine Learning,C119857082,Panama,PA,6
+2012,AI & Machine Learning,C119857082,Peru,PE,30
+2012,AI & Machine Learning,C119857082,French Polynesia,PF,4
+2012,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+2012,AI & Machine Learning,C119857082,Philippines,PH,73
+2012,AI & Machine Learning,C119857082,Pakistan,PK,295
+2012,AI & Machine Learning,C119857082,Poland,PL,886
+2012,AI & Machine Learning,C119857082,Puerto Rico,PR,29
+2012,AI & Machine Learning,C119857082,"Palestine, State of",PS,29
+2012,AI & Machine Learning,C119857082,Portugal,PT,697
+2012,AI & Machine Learning,C119857082,Palau,PW,1
+2012,AI & Machine Learning,C119857082,Paraguay,PY,5
+2012,AI & Machine Learning,C119857082,Qatar,QA,72
+2012,AI & Machine Learning,C119857082,Réunion,RE,2
+2012,AI & Machine Learning,C119857082,Romania,RO,453
+2012,AI & Machine Learning,C119857082,Serbia,RS,213
+2012,AI & Machine Learning,C119857082,Russian Federation,RU,816
+2012,AI & Machine Learning,C119857082,Rwanda,RW,6
+2012,AI & Machine Learning,C119857082,Saudi Arabia,SA,349
+2012,AI & Machine Learning,C119857082,Sudan,SD,14
+2012,AI & Machine Learning,C119857082,Sweden,SE,945
+2012,AI & Machine Learning,C119857082,Singapore,SG,816
+2012,AI & Machine Learning,C119857082,Slovenia,SI,224
+2012,AI & Machine Learning,C119857082,Slovakia,SK,160
+2012,AI & Machine Learning,C119857082,San Marino,SM,2
+2012,AI & Machine Learning,C119857082,Senegal,SN,14
+2012,AI & Machine Learning,C119857082,South Sudan,SS,17
+2012,AI & Machine Learning,C119857082,El Salvador,SV,1
+2012,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,11
+2012,AI & Machine Learning,C119857082,Eswatini,SZ,2
+2012,AI & Machine Learning,C119857082,Chad,TD,1
+2012,AI & Machine Learning,C119857082,Togo,TG,2
+2012,AI & Machine Learning,C119857082,Thailand,TH,335
+2012,AI & Machine Learning,C119857082,Tajikistan,TJ,17
+2012,AI & Machine Learning,C119857082,Timor-Leste,TL,1
+2012,AI & Machine Learning,C119857082,Turkmenistan,TM,7
+2012,AI & Machine Learning,C119857082,Tunisia,TN,239
+2012,AI & Machine Learning,C119857082,Tonga,TO,1
+2012,AI & Machine Learning,C119857082,Turkey,TR,930
+2012,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,16
+2012,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1775
+2012,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,32
+2012,AI & Machine Learning,C119857082,Ukraine,UA,163
+2012,AI & Machine Learning,C119857082,Uganda,UG,39
+2012,AI & Machine Learning,C119857082,United States of America,US,20040
+2012,AI & Machine Learning,C119857082,Uruguay,UY,35
+2012,AI & Machine Learning,C119857082,Uzbekistan,UZ,5
+2012,AI & Machine Learning,C119857082,Holy See,VA,1
+2012,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,24
+2012,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,7
+2012,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2012,AI & Machine Learning,C119857082,Viet Nam,VN,165
+2012,AI & Machine Learning,C119857082,Vanuatu,VU,1
+2012,AI & Machine Learning,C119857082,Samoa,WS,1
+2012,AI & Machine Learning,C119857082,Kosovo,XK,1
+2012,AI & Machine Learning,C119857082,Yemen,YE,26
+2012,AI & Machine Learning,C119857082,South Africa,ZA,539
+2012,AI & Machine Learning,C119857082,Zambia,ZM,5
+2012,AI & Machine Learning,C119857082,Zimbabwe,ZW,33
 2012,CRISPR & Genomics,C98108389,Austria,AT,3
 2012,CRISPR & Genomics,C98108389,Australia,AU,8
 2012,CRISPR & Genomics,C98108389,Burkina Faso,BF,1
@@ -8882,206 +16117,188 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2012,Robotics & Automation,C34413123,Viet Nam,VN,2
 2012,Robotics & Automation,C34413123,South Africa,ZA,8
 2012,Robotics & Automation,C34413123,Zimbabwe,ZW,1
-2013,AI & Machine Learning,C154945302,United Arab Emirates,AE,551
-2013,AI & Machine Learning,C154945302,Afghanistan,AF,6
-2013,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,1
-2013,AI & Machine Learning,C154945302,Albania,AL,105
-2013,AI & Machine Learning,C154945302,Armenia,AM,74
-2013,AI & Machine Learning,C154945302,Angola,AO,6
-2013,AI & Machine Learning,C154945302,Argentina,AR,930
-2013,AI & Machine Learning,C154945302,American Samoa,AS,2
-2013,AI & Machine Learning,C154945302,Austria,AT,2812
-2013,AI & Machine Learning,C154945302,Australia,AU,10331
-2013,AI & Machine Learning,C154945302,Åland Islands,AX,2
-2013,AI & Machine Learning,C154945302,Azerbaijan,AZ,85
-2013,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,153
-2013,AI & Machine Learning,C154945302,Barbados,BB,9
-2013,AI & Machine Learning,C154945302,Bangladesh,BD,684
-2013,AI & Machine Learning,C154945302,Belgium,BE,4028
-2013,AI & Machine Learning,C154945302,Burkina Faso,BF,24
-2013,AI & Machine Learning,C154945302,Bulgaria,BG,521
-2013,AI & Machine Learning,C154945302,Bahrain,BH,48
-2013,AI & Machine Learning,C154945302,Burundi,BI,60
-2013,AI & Machine Learning,C154945302,Benin,BJ,26
-2013,AI & Machine Learning,C154945302,Bermuda,BM,10
-2013,AI & Machine Learning,C154945302,Brunei Darussalam,BN,32
-2013,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,34
-2013,AI & Machine Learning,C154945302,Brazil,BR,5868
-2013,AI & Machine Learning,C154945302,Bahamas,BS,4
-2013,AI & Machine Learning,C154945302,Bhutan,BT,9
-2013,AI & Machine Learning,C154945302,Botswana,BW,54
-2013,AI & Machine Learning,C154945302,Belarus,BY,185
-2013,AI & Machine Learning,C154945302,Belize,BZ,2
-2013,AI & Machine Learning,C154945302,Canada,CA,12623
-2013,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,6
-2013,AI & Machine Learning,C154945302,Congo,CG,14
-2013,AI & Machine Learning,C154945302,Switzerland,CH,4850
-2013,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,19
-2013,AI & Machine Learning,C154945302,Chile,CL,900
-2013,AI & Machine Learning,C154945302,Cameroon,CM,97
-2013,AI & Machine Learning,C154945302,China,CN,94792
-2013,AI & Machine Learning,C154945302,Colombia,CO,1165
-2013,AI & Machine Learning,C154945302,Costa Rica,CR,107
-2013,AI & Machine Learning,C154945302,Cuba,CU,284
-2013,AI & Machine Learning,C154945302,Curaçao,CW,2
-2013,AI & Machine Learning,C154945302,Cyprus,CY,423
-2013,AI & Machine Learning,C154945302,Czechia,CZ,2433
-2013,AI & Machine Learning,C154945302,Germany,DE,19105
-2013,AI & Machine Learning,C154945302,Djibouti,DJ,2
-2013,AI & Machine Learning,C154945302,Denmark,DK,2632
-2013,AI & Machine Learning,C154945302,Dominican Republic,DO,16
-2013,AI & Machine Learning,C154945302,Algeria,DZ,1310
-2013,AI & Machine Learning,C154945302,Ecuador,EC,102
-2013,AI & Machine Learning,C154945302,Estonia,EE,284
-2013,AI & Machine Learning,C154945302,Egypt,EG,1685
-2013,AI & Machine Learning,C154945302,Eritrea,ER,3
-2013,AI & Machine Learning,C154945302,Spain,ES,9937
-2013,AI & Machine Learning,C154945302,Ethiopia,ET,84
-2013,AI & Machine Learning,C154945302,Finland,FI,2486
-2013,AI & Machine Learning,C154945302,Fiji,FJ,43
-2013,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,1
-2013,AI & Machine Learning,C154945302,Faroe Islands,FO,3
-2013,AI & Machine Learning,C154945302,France,FR,18193
-2013,AI & Machine Learning,C154945302,Gabon,GA,8
-2013,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,22618
-2013,AI & Machine Learning,C154945302,Grenada,GD,3
-2013,AI & Machine Learning,C154945302,Georgia,GE,51
-2013,AI & Machine Learning,C154945302,French Guiana,GF,4
-2013,AI & Machine Learning,C154945302,Ghana,GH,147
-2013,AI & Machine Learning,C154945302,Greenland,GL,2
-2013,AI & Machine Learning,C154945302,Gambia,GM,3
-2013,AI & Machine Learning,C154945302,Guinea,GN,1
-2013,AI & Machine Learning,C154945302,Guadeloupe,GP,28
-2013,AI & Machine Learning,C154945302,Greece,GR,2429
-2013,AI & Machine Learning,C154945302,Guatemala,GT,16
-2013,AI & Machine Learning,C154945302,Guam,GU,5
-2013,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2013,AI & Machine Learning,C154945302,Guyana,GY,3
-2013,AI & Machine Learning,C154945302,Hong Kong,HK,3158
-2013,AI & Machine Learning,C154945302,Honduras,HN,8
-2013,AI & Machine Learning,C154945302,Croatia,HR,538
-2013,AI & Machine Learning,C154945302,Haiti,HT,1
-2013,AI & Machine Learning,C154945302,Hungary,HU,1155
-2013,AI & Machine Learning,C154945302,Indonesia,ID,1916
-2013,AI & Machine Learning,C154945302,Ireland,IE,1558
-2013,AI & Machine Learning,C154945302,Israel,IL,2596
-2013,AI & Machine Learning,C154945302,India,IN,15013
-2013,AI & Machine Learning,C154945302,Iraq,IQ,493
-2013,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,6629
-2013,AI & Machine Learning,C154945302,Iceland,IS,149
-2013,AI & Machine Learning,C154945302,Italy,IT,11616
-2013,AI & Machine Learning,C154945302,Jersey,JE,1
-2013,AI & Machine Learning,C154945302,Jamaica,JM,40
-2013,AI & Machine Learning,C154945302,Jordan,JO,436
-2013,AI & Machine Learning,C154945302,Japan,JP,17779
-2013,AI & Machine Learning,C154945302,Kenya,KE,156
-2013,AI & Machine Learning,C154945302,Kyrgyzstan,KG,8
-2013,AI & Machine Learning,C154945302,Cambodia,KH,64
-2013,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,4
-2013,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,10
-2013,AI & Machine Learning,C154945302,"Korea, Republic of",KR,10073
-2013,AI & Machine Learning,C154945302,Kuwait,KW,141
-2013,AI & Machine Learning,C154945302,Cayman Islands,KY,1
-2013,AI & Machine Learning,C154945302,Kazakhstan,KZ,137
-2013,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,7
-2013,AI & Machine Learning,C154945302,Lebanon,LB,288
-2013,AI & Machine Learning,C154945302,Liechtenstein,LI,12
-2013,AI & Machine Learning,C154945302,Sri Lanka,LK,233
-2013,AI & Machine Learning,C154945302,Liberia,LR,4
-2013,AI & Machine Learning,C154945302,Lesotho,LS,1
-2013,AI & Machine Learning,C154945302,Lithuania,LT,411
-2013,AI & Machine Learning,C154945302,Luxembourg,LU,347
-2013,AI & Machine Learning,C154945302,Latvia,LV,290
-2013,AI & Machine Learning,C154945302,Libya,LY,59
-2013,AI & Machine Learning,C154945302,Morocco,MA,566
-2013,AI & Machine Learning,C154945302,Monaco,MC,5
-2013,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,48
-2013,AI & Machine Learning,C154945302,Montenegro,ME,75
-2013,AI & Machine Learning,C154945302,Madagascar,MG,11
-2013,AI & Machine Learning,C154945302,North Macedonia,MK,186
-2013,AI & Machine Learning,C154945302,Mali,ML,15
-2013,AI & Machine Learning,C154945302,Myanmar,MM,63
-2013,AI & Machine Learning,C154945302,Mongolia,MN,206
-2013,AI & Machine Learning,C154945302,Macao,MO,377
-2013,AI & Machine Learning,C154945302,Martinique,MQ,6
-2013,AI & Machine Learning,C154945302,Montserrat,MS,2
-2013,AI & Machine Learning,C154945302,Malta,MT,95
-2013,AI & Machine Learning,C154945302,Mauritius,MU,37
-2013,AI & Machine Learning,C154945302,Maldives,MV,5
-2013,AI & Machine Learning,C154945302,Malawi,MW,27
-2013,AI & Machine Learning,C154945302,Mexico,MX,2817
-2013,AI & Machine Learning,C154945302,Malaysia,MY,4114
-2013,AI & Machine Learning,C154945302,Mozambique,MZ,42
-2013,AI & Machine Learning,C154945302,Namibia,NA,22
-2013,AI & Machine Learning,C154945302,New Caledonia,NC,10
-2013,AI & Machine Learning,C154945302,Niger,NE,11
-2013,AI & Machine Learning,C154945302,Nigeria,NG,519
-2013,AI & Machine Learning,C154945302,Nicaragua,NI,14
-2013,AI & Machine Learning,C154945302,Netherlands,NL,6750
-2013,AI & Machine Learning,C154945302,Norway,NO,2057
-2013,AI & Machine Learning,C154945302,Nepal,NP,203
-2013,AI & Machine Learning,C154945302,New Zealand,NZ,1683
-2013,AI & Machine Learning,C154945302,Oman,OM,155
-2013,AI & Machine Learning,C154945302,Panama,PA,34
-2013,AI & Machine Learning,C154945302,Peru,PE,124
-2013,AI & Machine Learning,C154945302,French Polynesia,PF,7
-2013,AI & Machine Learning,C154945302,Papua New Guinea,PG,4
-2013,AI & Machine Learning,C154945302,Philippines,PH,241
-2013,AI & Machine Learning,C154945302,Pakistan,PK,1346
-2013,AI & Machine Learning,C154945302,Poland,PL,5069
-2013,AI & Machine Learning,C154945302,Puerto Rico,PR,106
-2013,AI & Machine Learning,C154945302,"Palestine, State of",PS,82
-2013,AI & Machine Learning,C154945302,Portugal,PT,3002
-2013,AI & Machine Learning,C154945302,Paraguay,PY,23
-2013,AI & Machine Learning,C154945302,Qatar,QA,493
-2013,AI & Machine Learning,C154945302,Réunion,RE,20
-2013,AI & Machine Learning,C154945302,Romania,RO,2292
-2013,AI & Machine Learning,C154945302,Serbia,RS,787
-2013,AI & Machine Learning,C154945302,Russian Federation,RU,4300
-2013,AI & Machine Learning,C154945302,Rwanda,RW,7
-2013,AI & Machine Learning,C154945302,Saudi Arabia,SA,1685
-2013,AI & Machine Learning,C154945302,Sudan,SD,100
-2013,AI & Machine Learning,C154945302,Sweden,SE,4068
-2013,AI & Machine Learning,C154945302,Singapore,SG,3354
-2013,AI & Machine Learning,C154945302,Slovenia,SI,791
-2013,AI & Machine Learning,C154945302,Slovakia,SK,1037
-2013,AI & Machine Learning,C154945302,Sierra Leone,SL,1
-2013,AI & Machine Learning,C154945302,San Marino,SM,3
-2013,AI & Machine Learning,C154945302,Senegal,SN,29
-2013,AI & Machine Learning,C154945302,Somalia,SO,6
-2013,AI & Machine Learning,C154945302,South Sudan,SS,72
-2013,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,5
-2013,AI & Machine Learning,C154945302,El Salvador,SV,10
-2013,AI & Machine Learning,C154945302,Sint Maarten (Dutch part),SX,1
-2013,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,38
-2013,AI & Machine Learning,C154945302,Eswatini,SZ,1
-2013,AI & Machine Learning,C154945302,Chad,TD,4
-2013,AI & Machine Learning,C154945302,Togo,TG,6
-2013,AI & Machine Learning,C154945302,Thailand,TH,1267
-2013,AI & Machine Learning,C154945302,Tajikistan,TJ,104
-2013,AI & Machine Learning,C154945302,Timor-Leste,TL,1
-2013,AI & Machine Learning,C154945302,Turkmenistan,TM,1
-2013,AI & Machine Learning,C154945302,Tunisia,TN,1281
-2013,AI & Machine Learning,C154945302,Turkey,TR,3709
-2013,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,28
-2013,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,7096
-2013,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,60
-2013,AI & Machine Learning,C154945302,Ukraine,UA,1226
-2013,AI & Machine Learning,C154945302,Uganda,UG,59
-2013,AI & Machine Learning,C154945302,United States of America,US,76578
-2013,AI & Machine Learning,C154945302,Uruguay,UY,119
-2013,AI & Machine Learning,C154945302,Uzbekistan,UZ,38
-2013,AI & Machine Learning,C154945302,Saint Vincent and the Grenadines,VC,1
-2013,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,195
-2013,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,38
-2013,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,6
-2013,AI & Machine Learning,C154945302,Viet Nam,VN,778
-2013,AI & Machine Learning,C154945302,Vanuatu,VU,1
-2013,AI & Machine Learning,C154945302,Kosovo,XK,32
-2013,AI & Machine Learning,C154945302,Yemen,YE,129
-2013,AI & Machine Learning,C154945302,South Africa,ZA,1525
-2013,AI & Machine Learning,C154945302,Zambia,ZM,8
-2013,AI & Machine Learning,C154945302,Zimbabwe,ZW,119
+2013,AI & Machine Learning,C119857082,United Arab Emirates,AE,157
+2013,AI & Machine Learning,C119857082,Afghanistan,AF,3
+2013,AI & Machine Learning,C119857082,Albania,AL,32
+2013,AI & Machine Learning,C119857082,Armenia,AM,15
+2013,AI & Machine Learning,C119857082,Angola,AO,1
+2013,AI & Machine Learning,C119857082,Argentina,AR,213
+2013,AI & Machine Learning,C119857082,American Samoa,AS,3
+2013,AI & Machine Learning,C119857082,Austria,AT,620
+2013,AI & Machine Learning,C119857082,Australia,AU,3206
+2013,AI & Machine Learning,C119857082,Azerbaijan,AZ,29
+2013,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,42
+2013,AI & Machine Learning,C119857082,Barbados,BB,4
+2013,AI & Machine Learning,C119857082,Bangladesh,BD,161
+2013,AI & Machine Learning,C119857082,Belgium,BE,1041
+2013,AI & Machine Learning,C119857082,Burkina Faso,BF,7
+2013,AI & Machine Learning,C119857082,Bulgaria,BG,122
+2013,AI & Machine Learning,C119857082,Bahrain,BH,13
+2013,AI & Machine Learning,C119857082,Burundi,BI,20
+2013,AI & Machine Learning,C119857082,Benin,BJ,17
+2013,AI & Machine Learning,C119857082,Bermuda,BM,3
+2013,AI & Machine Learning,C119857082,Brunei Darussalam,BN,15
+2013,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,16
+2013,AI & Machine Learning,C119857082,Brazil,BR,1536
+2013,AI & Machine Learning,C119857082,Bhutan,BT,5
+2013,AI & Machine Learning,C119857082,Botswana,BW,15
+2013,AI & Machine Learning,C119857082,Belarus,BY,41
+2013,AI & Machine Learning,C119857082,Canada,CA,3380
+2013,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,3
+2013,AI & Machine Learning,C119857082,Congo,CG,2
+2013,AI & Machine Learning,C119857082,Switzerland,CH,1147
+2013,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,12
+2013,AI & Machine Learning,C119857082,Chile,CL,207
+2013,AI & Machine Learning,C119857082,Cameroon,CM,27
+2013,AI & Machine Learning,C119857082,China,CN,22027
+2013,AI & Machine Learning,C119857082,Colombia,CO,262
+2013,AI & Machine Learning,C119857082,Costa Rica,CR,29
+2013,AI & Machine Learning,C119857082,Cuba,CU,92
+2013,AI & Machine Learning,C119857082,Curaçao,CW,1
+2013,AI & Machine Learning,C119857082,Cyprus,CY,125
+2013,AI & Machine Learning,C119857082,Czechia,CZ,463
+2013,AI & Machine Learning,C119857082,Germany,DE,3848
+2013,AI & Machine Learning,C119857082,Denmark,DK,559
+2013,AI & Machine Learning,C119857082,Dominican Republic,DO,9
+2013,AI & Machine Learning,C119857082,Algeria,DZ,281
+2013,AI & Machine Learning,C119857082,Ecuador,EC,24
+2013,AI & Machine Learning,C119857082,Estonia,EE,65
+2013,AI & Machine Learning,C119857082,Egypt,EG,429
+2013,AI & Machine Learning,C119857082,Spain,ES,2641
+2013,AI & Machine Learning,C119857082,Ethiopia,ET,81
+2013,AI & Machine Learning,C119857082,Finland,FI,757
+2013,AI & Machine Learning,C119857082,Fiji,FJ,13
+2013,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2013,AI & Machine Learning,C119857082,Faroe Islands,FO,1
+2013,AI & Machine Learning,C119857082,France,FR,3784
+2013,AI & Machine Learning,C119857082,Gabon,GA,2
+2013,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,6862
+2013,AI & Machine Learning,C119857082,Grenada,GD,1
+2013,AI & Machine Learning,C119857082,Georgia,GE,8
+2013,AI & Machine Learning,C119857082,French Guiana,GF,2
+2013,AI & Machine Learning,C119857082,Ghana,GH,85
+2013,AI & Machine Learning,C119857082,Gibraltar,GI,2
+2013,AI & Machine Learning,C119857082,Greenland,GL,2
+2013,AI & Machine Learning,C119857082,Guadeloupe,GP,8
+2013,AI & Machine Learning,C119857082,Greece,GR,669
+2013,AI & Machine Learning,C119857082,Guatemala,GT,5
+2013,AI & Machine Learning,C119857082,Guam,GU,5
+2013,AI & Machine Learning,C119857082,Hong Kong,HK,959
+2013,AI & Machine Learning,C119857082,Honduras,HN,6
+2013,AI & Machine Learning,C119857082,Croatia,HR,140
+2013,AI & Machine Learning,C119857082,Hungary,HU,247
+2013,AI & Machine Learning,C119857082,Indonesia,ID,507
+2013,AI & Machine Learning,C119857082,Ireland,IE,442
+2013,AI & Machine Learning,C119857082,Israel,IL,662
+2013,AI & Machine Learning,C119857082,India,IN,3502
+2013,AI & Machine Learning,C119857082,Iraq,IQ,117
+2013,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2086
+2013,AI & Machine Learning,C119857082,Iceland,IS,59
+2013,AI & Machine Learning,C119857082,Italy,IT,2650
+2013,AI & Machine Learning,C119857082,Jamaica,JM,15
+2013,AI & Machine Learning,C119857082,Jordan,JO,119
+2013,AI & Machine Learning,C119857082,Japan,JP,2730
+2013,AI & Machine Learning,C119857082,Kenya,KE,80
+2013,AI & Machine Learning,C119857082,Kyrgyzstan,KG,1
+2013,AI & Machine Learning,C119857082,Cambodia,KH,16
+2013,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,2
+2013,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2126
+2013,AI & Machine Learning,C119857082,Kuwait,KW,51
+2013,AI & Machine Learning,C119857082,Cayman Islands,KY,2
+2013,AI & Machine Learning,C119857082,Kazakhstan,KZ,55
+2013,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,2
+2013,AI & Machine Learning,C119857082,Lebanon,LB,88
+2013,AI & Machine Learning,C119857082,Liechtenstein,LI,4
+2013,AI & Machine Learning,C119857082,Sri Lanka,LK,65
+2013,AI & Machine Learning,C119857082,Liberia,LR,1
+2013,AI & Machine Learning,C119857082,Lithuania,LT,101
+2013,AI & Machine Learning,C119857082,Luxembourg,LU,99
+2013,AI & Machine Learning,C119857082,Latvia,LV,90
+2013,AI & Machine Learning,C119857082,Libya,LY,11
+2013,AI & Machine Learning,C119857082,Morocco,MA,154
+2013,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,17
+2013,AI & Machine Learning,C119857082,Montenegro,ME,17
+2013,AI & Machine Learning,C119857082,Madagascar,MG,3
+2013,AI & Machine Learning,C119857082,North Macedonia,MK,61
+2013,AI & Machine Learning,C119857082,Mali,ML,5
+2013,AI & Machine Learning,C119857082,Myanmar,MM,8
+2013,AI & Machine Learning,C119857082,Mongolia,MN,56
+2013,AI & Machine Learning,C119857082,Macao,MO,106
+2013,AI & Machine Learning,C119857082,Northern Mariana Islands,MP,1
+2013,AI & Machine Learning,C119857082,Martinique,MQ,2
+2013,AI & Machine Learning,C119857082,Montserrat,MS,1
+2013,AI & Machine Learning,C119857082,Malta,MT,25
+2013,AI & Machine Learning,C119857082,Mauritius,MU,6
+2013,AI & Machine Learning,C119857082,Maldives,MV,1
+2013,AI & Machine Learning,C119857082,Malawi,MW,24
+2013,AI & Machine Learning,C119857082,Mexico,MX,598
+2013,AI & Machine Learning,C119857082,Malaysia,MY,1207
+2013,AI & Machine Learning,C119857082,Mozambique,MZ,9
+2013,AI & Machine Learning,C119857082,Namibia,NA,10
+2013,AI & Machine Learning,C119857082,New Caledonia,NC,4
+2013,AI & Machine Learning,C119857082,Niger,NE,7
+2013,AI & Machine Learning,C119857082,Nigeria,NG,251
+2013,AI & Machine Learning,C119857082,Nicaragua,NI,6
+2013,AI & Machine Learning,C119857082,Netherlands,NL,1863
+2013,AI & Machine Learning,C119857082,Norway,NO,566
+2013,AI & Machine Learning,C119857082,Nepal,NP,53
+2013,AI & Machine Learning,C119857082,New Zealand,NZ,541
+2013,AI & Machine Learning,C119857082,Oman,OM,39
+2013,AI & Machine Learning,C119857082,Panama,PA,6
+2013,AI & Machine Learning,C119857082,Peru,PE,26
+2013,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+2013,AI & Machine Learning,C119857082,Philippines,PH,66
+2013,AI & Machine Learning,C119857082,Pakistan,PK,355
+2013,AI & Machine Learning,C119857082,Poland,PL,1162
+2013,AI & Machine Learning,C119857082,Puerto Rico,PR,33
+2013,AI & Machine Learning,C119857082,"Palestine, State of",PS,30
+2013,AI & Machine Learning,C119857082,Portugal,PT,798
+2013,AI & Machine Learning,C119857082,Palau,PW,1
+2013,AI & Machine Learning,C119857082,Paraguay,PY,8
+2013,AI & Machine Learning,C119857082,Qatar,QA,104
+2013,AI & Machine Learning,C119857082,Réunion,RE,6
+2013,AI & Machine Learning,C119857082,Romania,RO,497
+2013,AI & Machine Learning,C119857082,Serbia,RS,219
+2013,AI & Machine Learning,C119857082,Russian Federation,RU,947
+2013,AI & Machine Learning,C119857082,Rwanda,RW,10
+2013,AI & Machine Learning,C119857082,Saudi Arabia,SA,518
+2013,AI & Machine Learning,C119857082,Sudan,SD,27
+2013,AI & Machine Learning,C119857082,Sweden,SE,1047
+2013,AI & Machine Learning,C119857082,Singapore,SG,862
+2013,AI & Machine Learning,C119857082,Slovenia,SI,196
+2013,AI & Machine Learning,C119857082,Svalbard and Jan Mayen,SJ,2
+2013,AI & Machine Learning,C119857082,Slovakia,SK,199
+2013,AI & Machine Learning,C119857082,Sierra Leone,SL,2
+2013,AI & Machine Learning,C119857082,San Marino,SM,1
+2013,AI & Machine Learning,C119857082,Senegal,SN,15
+2013,AI & Machine Learning,C119857082,Somalia,SO,1
+2013,AI & Machine Learning,C119857082,South Sudan,SS,19
+2013,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,2
+2013,AI & Machine Learning,C119857082,El Salvador,SV,1
+2013,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,11
+2013,AI & Machine Learning,C119857082,Togo,TG,4
+2013,AI & Machine Learning,C119857082,Thailand,TH,393
+2013,AI & Machine Learning,C119857082,Tajikistan,TJ,23
+2013,AI & Machine Learning,C119857082,Turkmenistan,TM,1
+2013,AI & Machine Learning,C119857082,Tunisia,TN,323
+2013,AI & Machine Learning,C119857082,Turkey,TR,956
+2013,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,9
+2013,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1788
+2013,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,38
+2013,AI & Machine Learning,C119857082,Ukraine,UA,256
+2013,AI & Machine Learning,C119857082,Uganda,UG,53
+2013,AI & Machine Learning,C119857082,United States of America,US,21343
+2013,AI & Machine Learning,C119857082,Uruguay,UY,33
+2013,AI & Machine Learning,C119857082,Uzbekistan,UZ,3
+2013,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,42
+2013,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,6
+2013,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,3
+2013,AI & Machine Learning,C119857082,Viet Nam,VN,224
+2013,AI & Machine Learning,C119857082,Kosovo,XK,6
+2013,AI & Machine Learning,C119857082,Yemen,YE,41
+2013,AI & Machine Learning,C119857082,South Africa,ZA,609
+2013,AI & Machine Learning,C119857082,Zambia,ZM,3
+2013,AI & Machine Learning,C119857082,Zimbabwe,ZW,31
 2013,CRISPR & Genomics,C98108389,Austria,AT,5
 2013,CRISPR & Genomics,C98108389,Australia,AU,10
 2013,CRISPR & Genomics,C98108389,Bangladesh,BD,2
@@ -9739,206 +16956,194 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2013,Robotics & Automation,C34413123,Kosovo,XK,1
 2013,Robotics & Automation,C34413123,South Africa,ZA,4
 2013,Robotics & Automation,C34413123,Zimbabwe,ZW,1
-2014,AI & Machine Learning,C154945302,United Arab Emirates,AE,573
-2014,AI & Machine Learning,C154945302,Afghanistan,AF,5
-2014,AI & Machine Learning,C154945302,Albania,AL,127
-2014,AI & Machine Learning,C154945302,Armenia,AM,62
-2014,AI & Machine Learning,C154945302,Angola,AO,7
-2014,AI & Machine Learning,C154945302,Argentina,AR,970
-2014,AI & Machine Learning,C154945302,American Samoa,AS,3
-2014,AI & Machine Learning,C154945302,Austria,AT,2847
-2014,AI & Machine Learning,C154945302,Australia,AU,10907
-2014,AI & Machine Learning,C154945302,Aruba,AW,2
-2014,AI & Machine Learning,C154945302,Azerbaijan,AZ,100
-2014,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,176
-2014,AI & Machine Learning,C154945302,Barbados,BB,6
-2014,AI & Machine Learning,C154945302,Bangladesh,BD,1022
-2014,AI & Machine Learning,C154945302,Belgium,BE,3976
-2014,AI & Machine Learning,C154945302,Burkina Faso,BF,21
-2014,AI & Machine Learning,C154945302,Bulgaria,BG,591
-2014,AI & Machine Learning,C154945302,Bahrain,BH,65
-2014,AI & Machine Learning,C154945302,Burundi,BI,69
-2014,AI & Machine Learning,C154945302,Benin,BJ,22
-2014,AI & Machine Learning,C154945302,Bermuda,BM,1
-2014,AI & Machine Learning,C154945302,Brunei Darussalam,BN,50
-2014,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,44
-2014,AI & Machine Learning,C154945302,Brazil,BR,6249
-2014,AI & Machine Learning,C154945302,Bahamas,BS,1
-2014,AI & Machine Learning,C154945302,Bhutan,BT,3
-2014,AI & Machine Learning,C154945302,Botswana,BW,34
-2014,AI & Machine Learning,C154945302,Belarus,BY,235
-2014,AI & Machine Learning,C154945302,Belize,BZ,1
-2014,AI & Machine Learning,C154945302,Canada,CA,13349
-2014,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,9
-2014,AI & Machine Learning,C154945302,Central African Republic,CF,2
-2014,AI & Machine Learning,C154945302,Congo,CG,4
-2014,AI & Machine Learning,C154945302,Switzerland,CH,4981
-2014,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,25
-2014,AI & Machine Learning,C154945302,Chile,CL,962
-2014,AI & Machine Learning,C154945302,Cameroon,CM,108
-2014,AI & Machine Learning,C154945302,China,CN,90579
-2014,AI & Machine Learning,C154945302,Colombia,CO,1170
-2014,AI & Machine Learning,C154945302,Costa Rica,CR,95
-2014,AI & Machine Learning,C154945302,Cuba,CU,272
-2014,AI & Machine Learning,C154945302,Cabo Verde,CV,1
-2014,AI & Machine Learning,C154945302,Curaçao,CW,2
-2014,AI & Machine Learning,C154945302,Cyprus,CY,427
-2014,AI & Machine Learning,C154945302,Czechia,CZ,2840
-2014,AI & Machine Learning,C154945302,Germany,DE,19915
-2014,AI & Machine Learning,C154945302,Djibouti,DJ,2
-2014,AI & Machine Learning,C154945302,Denmark,DK,2822
-2014,AI & Machine Learning,C154945302,Dominica,DM,1
-2014,AI & Machine Learning,C154945302,Dominican Republic,DO,20
-2014,AI & Machine Learning,C154945302,Algeria,DZ,1379
-2014,AI & Machine Learning,C154945302,Ecuador,EC,197
-2014,AI & Machine Learning,C154945302,Estonia,EE,307
-2014,AI & Machine Learning,C154945302,Egypt,EG,1897
-2014,AI & Machine Learning,C154945302,Spain,ES,9840
-2014,AI & Machine Learning,C154945302,Ethiopia,ET,137
-2014,AI & Machine Learning,C154945302,Finland,FI,2622
-2014,AI & Machine Learning,C154945302,Fiji,FJ,67
-2014,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,1
-2014,AI & Machine Learning,C154945302,Faroe Islands,FO,5
-2014,AI & Machine Learning,C154945302,France,FR,18743
-2014,AI & Machine Learning,C154945302,Gabon,GA,15
-2014,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,23489
-2014,AI & Machine Learning,C154945302,Grenada,GD,5
-2014,AI & Machine Learning,C154945302,Georgia,GE,52
-2014,AI & Machine Learning,C154945302,French Guiana,GF,3
-2014,AI & Machine Learning,C154945302,Ghana,GH,175
-2014,AI & Machine Learning,C154945302,Gibraltar,GI,3
-2014,AI & Machine Learning,C154945302,Greenland,GL,6
-2014,AI & Machine Learning,C154945302,Gambia,GM,6
-2014,AI & Machine Learning,C154945302,Guadeloupe,GP,24
-2014,AI & Machine Learning,C154945302,Equatorial Guinea,GQ,1
-2014,AI & Machine Learning,C154945302,Greece,GR,2698
-2014,AI & Machine Learning,C154945302,Guatemala,GT,17
-2014,AI & Machine Learning,C154945302,Guam,GU,2
-2014,AI & Machine Learning,C154945302,Guyana,GY,3
-2014,AI & Machine Learning,C154945302,Hong Kong,HK,3404
-2014,AI & Machine Learning,C154945302,Honduras,HN,4
-2014,AI & Machine Learning,C154945302,Croatia,HR,636
-2014,AI & Machine Learning,C154945302,Hungary,HU,1258
-2014,AI & Machine Learning,C154945302,Indonesia,ID,2417
-2014,AI & Machine Learning,C154945302,Ireland,IE,1652
-2014,AI & Machine Learning,C154945302,Israel,IL,2702
-2014,AI & Machine Learning,C154945302,Isle of Man,IM,1
-2014,AI & Machine Learning,C154945302,India,IN,18521
-2014,AI & Machine Learning,C154945302,Iraq,IQ,536
-2014,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,7346
-2014,AI & Machine Learning,C154945302,Iceland,IS,157
-2014,AI & Machine Learning,C154945302,Italy,IT,11990
-2014,AI & Machine Learning,C154945302,Jersey,JE,1
-2014,AI & Machine Learning,C154945302,Jamaica,JM,35
-2014,AI & Machine Learning,C154945302,Jordan,JO,495
-2014,AI & Machine Learning,C154945302,Japan,JP,17539
-2014,AI & Machine Learning,C154945302,Kenya,KE,200
-2014,AI & Machine Learning,C154945302,Kyrgyzstan,KG,5
-2014,AI & Machine Learning,C154945302,Cambodia,KH,62
-2014,AI & Machine Learning,C154945302,Kiribati,KI,1
-2014,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,6
-2014,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,20
-2014,AI & Machine Learning,C154945302,"Korea, Republic of",KR,10305
-2014,AI & Machine Learning,C154945302,Kuwait,KW,169
-2014,AI & Machine Learning,C154945302,Cayman Islands,KY,4
-2014,AI & Machine Learning,C154945302,Kazakhstan,KZ,247
-2014,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,8
-2014,AI & Machine Learning,C154945302,Lebanon,LB,317
-2014,AI & Machine Learning,C154945302,Saint Lucia,LC,1
-2014,AI & Machine Learning,C154945302,Liechtenstein,LI,13
-2014,AI & Machine Learning,C154945302,Sri Lanka,LK,239
-2014,AI & Machine Learning,C154945302,Liberia,LR,2
-2014,AI & Machine Learning,C154945302,Lesotho,LS,4
-2014,AI & Machine Learning,C154945302,Lithuania,LT,468
-2014,AI & Machine Learning,C154945302,Luxembourg,LU,399
-2014,AI & Machine Learning,C154945302,Latvia,LV,320
-2014,AI & Machine Learning,C154945302,Libya,LY,61
-2014,AI & Machine Learning,C154945302,Morocco,MA,805
-2014,AI & Machine Learning,C154945302,Monaco,MC,1
-2014,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,77
-2014,AI & Machine Learning,C154945302,Montenegro,ME,71
-2014,AI & Machine Learning,C154945302,Madagascar,MG,15
-2014,AI & Machine Learning,C154945302,North Macedonia,MK,218
-2014,AI & Machine Learning,C154945302,Mali,ML,14
-2014,AI & Machine Learning,C154945302,Myanmar,MM,71
-2014,AI & Machine Learning,C154945302,Mongolia,MN,284
-2014,AI & Machine Learning,C154945302,Macao,MO,474
-2014,AI & Machine Learning,C154945302,Martinique,MQ,2
-2014,AI & Machine Learning,C154945302,Mauritania,MR,1
-2014,AI & Machine Learning,C154945302,Montserrat,MS,3
-2014,AI & Machine Learning,C154945302,Malta,MT,109
-2014,AI & Machine Learning,C154945302,Mauritius,MU,26
-2014,AI & Machine Learning,C154945302,Maldives,MV,3
-2014,AI & Machine Learning,C154945302,Malawi,MW,20
-2014,AI & Machine Learning,C154945302,Mexico,MX,2883
-2014,AI & Machine Learning,C154945302,Malaysia,MY,4830
-2014,AI & Machine Learning,C154945302,Mozambique,MZ,48
-2014,AI & Machine Learning,C154945302,Namibia,NA,29
-2014,AI & Machine Learning,C154945302,New Caledonia,NC,8
-2014,AI & Machine Learning,C154945302,Niger,NE,19
-2014,AI & Machine Learning,C154945302,Nigeria,NG,605
-2014,AI & Machine Learning,C154945302,Nicaragua,NI,13
-2014,AI & Machine Learning,C154945302,Netherlands,NL,7032
-2014,AI & Machine Learning,C154945302,Norway,NO,2218
-2014,AI & Machine Learning,C154945302,Nepal,NP,272
-2014,AI & Machine Learning,C154945302,New Zealand,NZ,1670
-2014,AI & Machine Learning,C154945302,Oman,OM,177
-2014,AI & Machine Learning,C154945302,Panama,PA,29
-2014,AI & Machine Learning,C154945302,Peru,PE,179
-2014,AI & Machine Learning,C154945302,French Polynesia,PF,8
-2014,AI & Machine Learning,C154945302,Papua New Guinea,PG,15
-2014,AI & Machine Learning,C154945302,Philippines,PH,292
-2014,AI & Machine Learning,C154945302,Pakistan,PK,1596
-2014,AI & Machine Learning,C154945302,Poland,PL,5597
-2014,AI & Machine Learning,C154945302,Puerto Rico,PR,120
-2014,AI & Machine Learning,C154945302,"Palestine, State of",PS,79
-2014,AI & Machine Learning,C154945302,Portugal,PT,3147
-2014,AI & Machine Learning,C154945302,Paraguay,PY,22
-2014,AI & Machine Learning,C154945302,Qatar,QA,612
-2014,AI & Machine Learning,C154945302,Réunion,RE,28
-2014,AI & Machine Learning,C154945302,Romania,RO,2423
-2014,AI & Machine Learning,C154945302,Serbia,RS,964
-2014,AI & Machine Learning,C154945302,Russian Federation,RU,5729
-2014,AI & Machine Learning,C154945302,Rwanda,RW,35
-2014,AI & Machine Learning,C154945302,Saudi Arabia,SA,2102
-2014,AI & Machine Learning,C154945302,Sudan,SD,80
-2014,AI & Machine Learning,C154945302,Sweden,SE,4461
-2014,AI & Machine Learning,C154945302,Singapore,SG,3630
-2014,AI & Machine Learning,C154945302,Slovenia,SI,818
-2014,AI & Machine Learning,C154945302,Svalbard and Jan Mayen,SJ,2
-2014,AI & Machine Learning,C154945302,Slovakia,SK,1179
-2014,AI & Machine Learning,C154945302,Senegal,SN,68
-2014,AI & Machine Learning,C154945302,Somalia,SO,4
-2014,AI & Machine Learning,C154945302,Suriname,SR,3
-2014,AI & Machine Learning,C154945302,South Sudan,SS,62
-2014,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,4
-2014,AI & Machine Learning,C154945302,El Salvador,SV,5
-2014,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,36
-2014,AI & Machine Learning,C154945302,Eswatini,SZ,3
-2014,AI & Machine Learning,C154945302,Chad,TD,2
-2014,AI & Machine Learning,C154945302,Togo,TG,2
-2014,AI & Machine Learning,C154945302,Thailand,TH,1615
-2014,AI & Machine Learning,C154945302,Tajikistan,TJ,111
-2014,AI & Machine Learning,C154945302,Turkmenistan,TM,1
-2014,AI & Machine Learning,C154945302,Tunisia,TN,1410
-2014,AI & Machine Learning,C154945302,Tonga,TO,1
-2014,AI & Machine Learning,C154945302,Turkey,TR,3858
-2014,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,29
-2014,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,6420
-2014,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,73
-2014,AI & Machine Learning,C154945302,Ukraine,UA,1292
-2014,AI & Machine Learning,C154945302,Uganda,UG,94
-2014,AI & Machine Learning,C154945302,United States of America,US,78448
-2014,AI & Machine Learning,C154945302,Uruguay,UY,127
-2014,AI & Machine Learning,C154945302,Uzbekistan,UZ,45
-2014,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,171
-2014,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,106
-2014,AI & Machine Learning,C154945302,Viet Nam,VN,906
-2014,AI & Machine Learning,C154945302,Kosovo,XK,25
-2014,AI & Machine Learning,C154945302,Yemen,YE,146
-2014,AI & Machine Learning,C154945302,South Africa,ZA,1846
-2014,AI & Machine Learning,C154945302,Zambia,ZM,22
-2014,AI & Machine Learning,C154945302,Zimbabwe,ZW,76
+2014,AI & Machine Learning,C119857082,United Arab Emirates,AE,192
+2014,AI & Machine Learning,C119857082,Afghanistan,AF,4
+2014,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2014,AI & Machine Learning,C119857082,Albania,AL,35
+2014,AI & Machine Learning,C119857082,Armenia,AM,21
+2014,AI & Machine Learning,C119857082,Angola,AO,2
+2014,AI & Machine Learning,C119857082,Argentina,AR,249
+2014,AI & Machine Learning,C119857082,American Samoa,AS,1
+2014,AI & Machine Learning,C119857082,Austria,AT,605
+2014,AI & Machine Learning,C119857082,Australia,AU,3551
+2014,AI & Machine Learning,C119857082,Aruba,AW,1
+2014,AI & Machine Learning,C119857082,Azerbaijan,AZ,29
+2014,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,49
+2014,AI & Machine Learning,C119857082,Barbados,BB,5
+2014,AI & Machine Learning,C119857082,Bangladesh,BD,245
+2014,AI & Machine Learning,C119857082,Belgium,BE,1126
+2014,AI & Machine Learning,C119857082,Burkina Faso,BF,15
+2014,AI & Machine Learning,C119857082,Bulgaria,BG,155
+2014,AI & Machine Learning,C119857082,Bahrain,BH,18
+2014,AI & Machine Learning,C119857082,Burundi,BI,19
+2014,AI & Machine Learning,C119857082,Benin,BJ,16
+2014,AI & Machine Learning,C119857082,Bermuda,BM,1
+2014,AI & Machine Learning,C119857082,Brunei Darussalam,BN,11
+2014,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,14
+2014,AI & Machine Learning,C119857082,Brazil,BR,1676
+2014,AI & Machine Learning,C119857082,Bahamas,BS,2
+2014,AI & Machine Learning,C119857082,Botswana,BW,16
+2014,AI & Machine Learning,C119857082,Belarus,BY,55
+2014,AI & Machine Learning,C119857082,Canada,CA,3490
+2014,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,3
+2014,AI & Machine Learning,C119857082,Central African Republic,CF,1
+2014,AI & Machine Learning,C119857082,Congo,CG,4
+2014,AI & Machine Learning,C119857082,Switzerland,CH,1208
+2014,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,10
+2014,AI & Machine Learning,C119857082,Chile,CL,283
+2014,AI & Machine Learning,C119857082,Cameroon,CM,47
+2014,AI & Machine Learning,C119857082,China,CN,21683
+2014,AI & Machine Learning,C119857082,Colombia,CO,268
+2014,AI & Machine Learning,C119857082,Costa Rica,CR,21
+2014,AI & Machine Learning,C119857082,Cuba,CU,70
+2014,AI & Machine Learning,C119857082,Curaçao,CW,1
+2014,AI & Machine Learning,C119857082,Cyprus,CY,103
+2014,AI & Machine Learning,C119857082,Czechia,CZ,620
+2014,AI & Machine Learning,C119857082,Germany,DE,4085
+2014,AI & Machine Learning,C119857082,Denmark,DK,656
+2014,AI & Machine Learning,C119857082,Dominican Republic,DO,5
+2014,AI & Machine Learning,C119857082,Algeria,DZ,307
+2014,AI & Machine Learning,C119857082,Ecuador,EC,45
+2014,AI & Machine Learning,C119857082,Estonia,EE,86
+2014,AI & Machine Learning,C119857082,Egypt,EG,483
+2014,AI & Machine Learning,C119857082,Spain,ES,2665
+2014,AI & Machine Learning,C119857082,Ethiopia,ET,109
+2014,AI & Machine Learning,C119857082,Finland,FI,744
+2014,AI & Machine Learning,C119857082,Fiji,FJ,16
+2014,AI & Machine Learning,C119857082,France,FR,4039
+2014,AI & Machine Learning,C119857082,Gabon,GA,10
+2014,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,7081
+2014,AI & Machine Learning,C119857082,Georgia,GE,14
+2014,AI & Machine Learning,C119857082,Ghana,GH,110
+2014,AI & Machine Learning,C119857082,Gambia,GM,2
+2014,AI & Machine Learning,C119857082,Guadeloupe,GP,6
+2014,AI & Machine Learning,C119857082,Greece,GR,809
+2014,AI & Machine Learning,C119857082,Guatemala,GT,7
+2014,AI & Machine Learning,C119857082,Guam,GU,1
+2014,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2014,AI & Machine Learning,C119857082,Guyana,GY,1
+2014,AI & Machine Learning,C119857082,Hong Kong,HK,1022
+2014,AI & Machine Learning,C119857082,Honduras,HN,1
+2014,AI & Machine Learning,C119857082,Croatia,HR,150
+2014,AI & Machine Learning,C119857082,Haiti,HT,3
+2014,AI & Machine Learning,C119857082,Hungary,HU,297
+2014,AI & Machine Learning,C119857082,Indonesia,ID,699
+2014,AI & Machine Learning,C119857082,Ireland,IE,492
+2014,AI & Machine Learning,C119857082,Israel,IL,692
+2014,AI & Machine Learning,C119857082,India,IN,4604
+2014,AI & Machine Learning,C119857082,Iraq,IQ,106
+2014,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2195
+2014,AI & Machine Learning,C119857082,Iceland,IS,56
+2014,AI & Machine Learning,C119857082,Italy,IT,2925
+2014,AI & Machine Learning,C119857082,Jamaica,JM,13
+2014,AI & Machine Learning,C119857082,Jordan,JO,161
+2014,AI & Machine Learning,C119857082,Japan,JP,2885
+2014,AI & Machine Learning,C119857082,Kenya,KE,102
+2014,AI & Machine Learning,C119857082,Kyrgyzstan,KG,7
+2014,AI & Machine Learning,C119857082,Cambodia,KH,18
+2014,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,1
+2014,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,2
+2014,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2222
+2014,AI & Machine Learning,C119857082,Kuwait,KW,53
+2014,AI & Machine Learning,C119857082,Cayman Islands,KY,2
+2014,AI & Machine Learning,C119857082,Kazakhstan,KZ,70
+2014,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,2
+2014,AI & Machine Learning,C119857082,Lebanon,LB,97
+2014,AI & Machine Learning,C119857082,Liechtenstein,LI,5
+2014,AI & Machine Learning,C119857082,Sri Lanka,LK,83
+2014,AI & Machine Learning,C119857082,Lithuania,LT,160
+2014,AI & Machine Learning,C119857082,Luxembourg,LU,115
+2014,AI & Machine Learning,C119857082,Latvia,LV,88
+2014,AI & Machine Learning,C119857082,Libya,LY,18
+2014,AI & Machine Learning,C119857082,Morocco,MA,209
+2014,AI & Machine Learning,C119857082,Monaco,MC,2
+2014,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,14
+2014,AI & Machine Learning,C119857082,Montenegro,ME,12
+2014,AI & Machine Learning,C119857082,Madagascar,MG,10
+2014,AI & Machine Learning,C119857082,North Macedonia,MK,72
+2014,AI & Machine Learning,C119857082,Mali,ML,10
+2014,AI & Machine Learning,C119857082,Myanmar,MM,14
+2014,AI & Machine Learning,C119857082,Mongolia,MN,54
+2014,AI & Machine Learning,C119857082,Macao,MO,136
+2014,AI & Machine Learning,C119857082,Northern Mariana Islands,MP,1
+2014,AI & Machine Learning,C119857082,Montserrat,MS,1
+2014,AI & Machine Learning,C119857082,Malta,MT,26
+2014,AI & Machine Learning,C119857082,Mauritius,MU,9
+2014,AI & Machine Learning,C119857082,Maldives,MV,2
+2014,AI & Machine Learning,C119857082,Malawi,MW,15
+2014,AI & Machine Learning,C119857082,Mexico,MX,668
+2014,AI & Machine Learning,C119857082,Malaysia,MY,1446
+2014,AI & Machine Learning,C119857082,Mozambique,MZ,13
+2014,AI & Machine Learning,C119857082,Namibia,NA,12
+2014,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2014,AI & Machine Learning,C119857082,Niger,NE,9
+2014,AI & Machine Learning,C119857082,Nigeria,NG,323
+2014,AI & Machine Learning,C119857082,Nicaragua,NI,5
+2014,AI & Machine Learning,C119857082,Netherlands,NL,1995
+2014,AI & Machine Learning,C119857082,Norway,NO,703
+2014,AI & Machine Learning,C119857082,Nepal,NP,75
+2014,AI & Machine Learning,C119857082,New Zealand,NZ,553
+2014,AI & Machine Learning,C119857082,Oman,OM,74
+2014,AI & Machine Learning,C119857082,Panama,PA,8
+2014,AI & Machine Learning,C119857082,Peru,PE,45
+2014,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2014,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+2014,AI & Machine Learning,C119857082,Philippines,PH,119
+2014,AI & Machine Learning,C119857082,Pakistan,PK,429
+2014,AI & Machine Learning,C119857082,Poland,PL,1243
+2014,AI & Machine Learning,C119857082,Puerto Rico,PR,34
+2014,AI & Machine Learning,C119857082,"Palestine, State of",PS,25
+2014,AI & Machine Learning,C119857082,Portugal,PT,907
+2014,AI & Machine Learning,C119857082,Palau,PW,1
+2014,AI & Machine Learning,C119857082,Paraguay,PY,7
+2014,AI & Machine Learning,C119857082,Qatar,QA,160
+2014,AI & Machine Learning,C119857082,Réunion,RE,4
+2014,AI & Machine Learning,C119857082,Romania,RO,538
+2014,AI & Machine Learning,C119857082,Serbia,RS,245
+2014,AI & Machine Learning,C119857082,Russian Federation,RU,1214
+2014,AI & Machine Learning,C119857082,Rwanda,RW,25
+2014,AI & Machine Learning,C119857082,Saudi Arabia,SA,605
+2014,AI & Machine Learning,C119857082,Seychelles,SC,1
+2014,AI & Machine Learning,C119857082,Sudan,SD,35
+2014,AI & Machine Learning,C119857082,Sweden,SE,1165
+2014,AI & Machine Learning,C119857082,Singapore,SG,939
+2014,AI & Machine Learning,C119857082,Slovenia,SI,248
+2014,AI & Machine Learning,C119857082,Slovakia,SK,238
+2014,AI & Machine Learning,C119857082,San Marino,SM,2
+2014,AI & Machine Learning,C119857082,Senegal,SN,40
+2014,AI & Machine Learning,C119857082,Somalia,SO,3
+2014,AI & Machine Learning,C119857082,South Sudan,SS,22
+2014,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,2
+2014,AI & Machine Learning,C119857082,El Salvador,SV,1
+2014,AI & Machine Learning,C119857082,Sint Maarten (Dutch part),SX,1
+2014,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,8
+2014,AI & Machine Learning,C119857082,Eswatini,SZ,1
+2014,AI & Machine Learning,C119857082,Togo,TG,1
+2014,AI & Machine Learning,C119857082,Thailand,TH,475
+2014,AI & Machine Learning,C119857082,Tajikistan,TJ,31
+2014,AI & Machine Learning,C119857082,Turkmenistan,TM,7
+2014,AI & Machine Learning,C119857082,Tunisia,TN,342
+2014,AI & Machine Learning,C119857082,Turkey,TR,1077
+2014,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,13
+2014,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1767
+2014,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,61
+2014,AI & Machine Learning,C119857082,Ukraine,UA,281
+2014,AI & Machine Learning,C119857082,Uganda,UG,62
+2014,AI & Machine Learning,C119857082,United States of America,US,22426
+2014,AI & Machine Learning,C119857082,Uruguay,UY,29
+2014,AI & Machine Learning,C119857082,Uzbekistan,UZ,16
+2014,AI & Machine Learning,C119857082,Holy See,VA,1
+2014,AI & Machine Learning,C119857082,Saint Vincent and the Grenadines,VC,1
+2014,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,33
+2014,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,15
+2014,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,2
+2014,AI & Machine Learning,C119857082,Viet Nam,VN,261
+2014,AI & Machine Learning,C119857082,Vanuatu,VU,1
+2014,AI & Machine Learning,C119857082,Kosovo,XK,8
+2014,AI & Machine Learning,C119857082,Yemen,YE,43
+2014,AI & Machine Learning,C119857082,South Africa,ZA,816
+2014,AI & Machine Learning,C119857082,Zambia,ZM,17
+2014,AI & Machine Learning,C119857082,Zimbabwe,ZW,35
 2014,CRISPR & Genomics,C98108389,United Arab Emirates,AE,2
 2014,CRISPR & Genomics,C98108389,Argentina,AR,1
 2014,CRISPR & Genomics,C98108389,Austria,AT,5
@@ -10624,206 +17829,192 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2014,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,4
 2014,Robotics & Automation,C34413123,South Africa,ZA,9
 2014,Robotics & Automation,C34413123,Zimbabwe,ZW,1
-2015,AI & Machine Learning,C154945302,United Arab Emirates,AE,772
-2015,AI & Machine Learning,C154945302,Afghanistan,AF,6
-2015,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,5
-2015,AI & Machine Learning,C154945302,Albania,AL,112
-2015,AI & Machine Learning,C154945302,Armenia,AM,80
-2015,AI & Machine Learning,C154945302,Angola,AO,5
-2015,AI & Machine Learning,C154945302,Argentina,AR,1041
-2015,AI & Machine Learning,C154945302,American Samoa,AS,3
-2015,AI & Machine Learning,C154945302,Austria,AT,2966
-2015,AI & Machine Learning,C154945302,Australia,AU,11082
-2015,AI & Machine Learning,C154945302,Aruba,AW,7
-2015,AI & Machine Learning,C154945302,Åland Islands,AX,1
-2015,AI & Machine Learning,C154945302,Azerbaijan,AZ,137
-2015,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,157
-2015,AI & Machine Learning,C154945302,Barbados,BB,7
-2015,AI & Machine Learning,C154945302,Bangladesh,BD,998
-2015,AI & Machine Learning,C154945302,Belgium,BE,4345
-2015,AI & Machine Learning,C154945302,Burkina Faso,BF,19
-2015,AI & Machine Learning,C154945302,Bulgaria,BG,593
-2015,AI & Machine Learning,C154945302,Bahrain,BH,59
-2015,AI & Machine Learning,C154945302,Burundi,BI,71
-2015,AI & Machine Learning,C154945302,Benin,BJ,32
-2015,AI & Machine Learning,C154945302,Bermuda,BM,1
-2015,AI & Machine Learning,C154945302,Brunei Darussalam,BN,62
-2015,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,43
-2015,AI & Machine Learning,C154945302,Brazil,BR,7191
-2015,AI & Machine Learning,C154945302,Bahamas,BS,8
-2015,AI & Machine Learning,C154945302,Bhutan,BT,5
-2015,AI & Machine Learning,C154945302,Botswana,BW,43
-2015,AI & Machine Learning,C154945302,Belarus,BY,213
-2015,AI & Machine Learning,C154945302,Canada,CA,13257
-2015,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,14
-2015,AI & Machine Learning,C154945302,Congo,CG,2
-2015,AI & Machine Learning,C154945302,Switzerland,CH,5367
-2015,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,23
-2015,AI & Machine Learning,C154945302,Chile,CL,1156
-2015,AI & Machine Learning,C154945302,Cameroon,CM,110
-2015,AI & Machine Learning,C154945302,China,CN,79032
-2015,AI & Machine Learning,C154945302,Colombia,CO,1339
-2015,AI & Machine Learning,C154945302,Costa Rica,CR,109
-2015,AI & Machine Learning,C154945302,Cuba,CU,310
-2015,AI & Machine Learning,C154945302,Cabo Verde,CV,1
-2015,AI & Machine Learning,C154945302,Curaçao,CW,3
-2015,AI & Machine Learning,C154945302,Cyprus,CY,412
-2015,AI & Machine Learning,C154945302,Czechia,CZ,2965
-2015,AI & Machine Learning,C154945302,Germany,DE,20505
-2015,AI & Machine Learning,C154945302,Djibouti,DJ,1
-2015,AI & Machine Learning,C154945302,Denmark,DK,3030
-2015,AI & Machine Learning,C154945302,Dominica,DM,2
-2015,AI & Machine Learning,C154945302,Dominican Republic,DO,17
-2015,AI & Machine Learning,C154945302,Algeria,DZ,1701
-2015,AI & Machine Learning,C154945302,Ecuador,EC,327
-2015,AI & Machine Learning,C154945302,Estonia,EE,305
-2015,AI & Machine Learning,C154945302,Egypt,EG,2069
-2015,AI & Machine Learning,C154945302,Spain,ES,10131
-2015,AI & Machine Learning,C154945302,Ethiopia,ET,159
-2015,AI & Machine Learning,C154945302,Finland,FI,2711
-2015,AI & Machine Learning,C154945302,Fiji,FJ,64
-2015,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,2
-2015,AI & Machine Learning,C154945302,Faroe Islands,FO,5
-2015,AI & Machine Learning,C154945302,France,FR,19315
-2015,AI & Machine Learning,C154945302,Gabon,GA,4
-2015,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,24643
-2015,AI & Machine Learning,C154945302,Grenada,GD,3
-2015,AI & Machine Learning,C154945302,Georgia,GE,53
-2015,AI & Machine Learning,C154945302,French Guiana,GF,4
-2015,AI & Machine Learning,C154945302,Ghana,GH,175
-2015,AI & Machine Learning,C154945302,Gibraltar,GI,4
-2015,AI & Machine Learning,C154945302,Greenland,GL,6
-2015,AI & Machine Learning,C154945302,Gambia,GM,5
-2015,AI & Machine Learning,C154945302,Guadeloupe,GP,17
-2015,AI & Machine Learning,C154945302,Greece,GR,2660
-2015,AI & Machine Learning,C154945302,Guatemala,GT,23
-2015,AI & Machine Learning,C154945302,Guam,GU,2
-2015,AI & Machine Learning,C154945302,Guinea-Bissau,GW,1
-2015,AI & Machine Learning,C154945302,Hong Kong,HK,3563
-2015,AI & Machine Learning,C154945302,Honduras,HN,8
-2015,AI & Machine Learning,C154945302,Croatia,HR,603
-2015,AI & Machine Learning,C154945302,Haiti,HT,5
-2015,AI & Machine Learning,C154945302,Hungary,HU,1241
-2015,AI & Machine Learning,C154945302,Indonesia,ID,3671
-2015,AI & Machine Learning,C154945302,Ireland,IE,1700
-2015,AI & Machine Learning,C154945302,Israel,IL,2614
-2015,AI & Machine Learning,C154945302,India,IN,20279
-2015,AI & Machine Learning,C154945302,Iraq,IQ,582
-2015,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,8051
-2015,AI & Machine Learning,C154945302,Iceland,IS,179
-2015,AI & Machine Learning,C154945302,Italy,IT,12969
-2015,AI & Machine Learning,C154945302,Jersey,JE,1
-2015,AI & Machine Learning,C154945302,Jamaica,JM,32
-2015,AI & Machine Learning,C154945302,Jordan,JO,512
-2015,AI & Machine Learning,C154945302,Japan,JP,17772
-2015,AI & Machine Learning,C154945302,Kenya,KE,191
-2015,AI & Machine Learning,C154945302,Kyrgyzstan,KG,10
-2015,AI & Machine Learning,C154945302,Cambodia,KH,57
-2015,AI & Machine Learning,C154945302,Kiribati,KI,1
-2015,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,7
-2015,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,11
-2015,AI & Machine Learning,C154945302,"Korea, Republic of",KR,10283
-2015,AI & Machine Learning,C154945302,Kuwait,KW,214
-2015,AI & Machine Learning,C154945302,Cayman Islands,KY,4
-2015,AI & Machine Learning,C154945302,Kazakhstan,KZ,321
-2015,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,9
-2015,AI & Machine Learning,C154945302,Lebanon,LB,373
-2015,AI & Machine Learning,C154945302,Liechtenstein,LI,17
-2015,AI & Machine Learning,C154945302,Sri Lanka,LK,262
-2015,AI & Machine Learning,C154945302,Liberia,LR,4
-2015,AI & Machine Learning,C154945302,Lesotho,LS,3
-2015,AI & Machine Learning,C154945302,Lithuania,LT,461
-2015,AI & Machine Learning,C154945302,Luxembourg,LU,474
-2015,AI & Machine Learning,C154945302,Latvia,LV,391
-2015,AI & Machine Learning,C154945302,Libya,LY,64
-2015,AI & Machine Learning,C154945302,Morocco,MA,882
-2015,AI & Machine Learning,C154945302,Monaco,MC,8
-2015,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,76
-2015,AI & Machine Learning,C154945302,Montenegro,ME,85
-2015,AI & Machine Learning,C154945302,Madagascar,MG,9
-2015,AI & Machine Learning,C154945302,North Macedonia,MK,242
-2015,AI & Machine Learning,C154945302,Mali,ML,16
-2015,AI & Machine Learning,C154945302,Myanmar,MM,84
-2015,AI & Machine Learning,C154945302,Mongolia,MN,180
-2015,AI & Machine Learning,C154945302,Macao,MO,501
-2015,AI & Machine Learning,C154945302,Martinique,MQ,2
-2015,AI & Machine Learning,C154945302,Mauritania,MR,1
-2015,AI & Machine Learning,C154945302,Montserrat,MS,1
-2015,AI & Machine Learning,C154945302,Malta,MT,123
-2015,AI & Machine Learning,C154945302,Mauritius,MU,35
-2015,AI & Machine Learning,C154945302,Maldives,MV,4
-2015,AI & Machine Learning,C154945302,Malawi,MW,16
-2015,AI & Machine Learning,C154945302,Mexico,MX,2875
-2015,AI & Machine Learning,C154945302,Malaysia,MY,4800
-2015,AI & Machine Learning,C154945302,Mozambique,MZ,46
-2015,AI & Machine Learning,C154945302,Namibia,NA,32
-2015,AI & Machine Learning,C154945302,New Caledonia,NC,5
-2015,AI & Machine Learning,C154945302,Niger,NE,17
-2015,AI & Machine Learning,C154945302,Nigeria,NG,610
-2015,AI & Machine Learning,C154945302,Nicaragua,NI,16
-2015,AI & Machine Learning,C154945302,Netherlands,NL,7013
-2015,AI & Machine Learning,C154945302,Norway,NO,2261
-2015,AI & Machine Learning,C154945302,Nepal,NP,234
-2015,AI & Machine Learning,C154945302,New Zealand,NZ,1723
-2015,AI & Machine Learning,C154945302,Oman,OM,218
-2015,AI & Machine Learning,C154945302,Panama,PA,45
-2015,AI & Machine Learning,C154945302,Peru,PE,186
-2015,AI & Machine Learning,C154945302,French Polynesia,PF,9
-2015,AI & Machine Learning,C154945302,Papua New Guinea,PG,7
-2015,AI & Machine Learning,C154945302,Philippines,PH,365
-2015,AI & Machine Learning,C154945302,Pakistan,PK,1671
-2015,AI & Machine Learning,C154945302,Poland,PL,6113
-2015,AI & Machine Learning,C154945302,Puerto Rico,PR,131
-2015,AI & Machine Learning,C154945302,"Palestine, State of",PS,85
-2015,AI & Machine Learning,C154945302,Portugal,PT,3313
-2015,AI & Machine Learning,C154945302,Palau,PW,2
-2015,AI & Machine Learning,C154945302,Paraguay,PY,35
-2015,AI & Machine Learning,C154945302,Qatar,QA,621
-2015,AI & Machine Learning,C154945302,Réunion,RE,22
-2015,AI & Machine Learning,C154945302,Romania,RO,2589
-2015,AI & Machine Learning,C154945302,Serbia,RS,1012
-2015,AI & Machine Learning,C154945302,Russian Federation,RU,7525
-2015,AI & Machine Learning,C154945302,Rwanda,RW,14
-2015,AI & Machine Learning,C154945302,Saudi Arabia,SA,2370
-2015,AI & Machine Learning,C154945302,Seychelles,SC,1
-2015,AI & Machine Learning,C154945302,Sudan,SD,105
-2015,AI & Machine Learning,C154945302,Sweden,SE,4575
-2015,AI & Machine Learning,C154945302,Singapore,SG,3806
-2015,AI & Machine Learning,C154945302,Slovenia,SI,842
-2015,AI & Machine Learning,C154945302,Slovakia,SK,1156
-2015,AI & Machine Learning,C154945302,Sierra Leone,SL,3
-2015,AI & Machine Learning,C154945302,Senegal,SN,54
-2015,AI & Machine Learning,C154945302,Somalia,SO,8
-2015,AI & Machine Learning,C154945302,South Sudan,SS,93
-2015,AI & Machine Learning,C154945302,El Salvador,SV,11
-2015,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,31
-2015,AI & Machine Learning,C154945302,Eswatini,SZ,3
-2015,AI & Machine Learning,C154945302,Chad,TD,4
-2015,AI & Machine Learning,C154945302,Togo,TG,6
-2015,AI & Machine Learning,C154945302,Thailand,TH,1462
-2015,AI & Machine Learning,C154945302,Tajikistan,TJ,96
-2015,AI & Machine Learning,C154945302,Timor-Leste,TL,2
-2015,AI & Machine Learning,C154945302,Turkmenistan,TM,2
-2015,AI & Machine Learning,C154945302,Tunisia,TN,1540
-2015,AI & Machine Learning,C154945302,Turkey,TR,4534
-2015,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,25
-2015,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5838
-2015,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,71
-2015,AI & Machine Learning,C154945302,Ukraine,UA,1411
-2015,AI & Machine Learning,C154945302,Uganda,UG,64
-2015,AI & Machine Learning,C154945302,United States of America,US,80589
-2015,AI & Machine Learning,C154945302,Uruguay,UY,156
-2015,AI & Machine Learning,C154945302,Uzbekistan,UZ,57
-2015,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,183
-2015,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,77
-2015,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,2
-2015,AI & Machine Learning,C154945302,Viet Nam,VN,1072
-2015,AI & Machine Learning,C154945302,Vanuatu,VU,3
-2015,AI & Machine Learning,C154945302,Kosovo,XK,29
-2015,AI & Machine Learning,C154945302,Yemen,YE,103
-2015,AI & Machine Learning,C154945302,South Africa,ZA,1747
-2015,AI & Machine Learning,C154945302,Zambia,ZM,23
-2015,AI & Machine Learning,C154945302,Zimbabwe,ZW,63
+2015,AI & Machine Learning,C119857082,United Arab Emirates,AE,256
+2015,AI & Machine Learning,C119857082,Afghanistan,AF,2
+2015,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,2
+2015,AI & Machine Learning,C119857082,Albania,AL,41
+2015,AI & Machine Learning,C119857082,Armenia,AM,19
+2015,AI & Machine Learning,C119857082,Angola,AO,4
+2015,AI & Machine Learning,C119857082,Argentina,AR,242
+2015,AI & Machine Learning,C119857082,Austria,AT,720
+2015,AI & Machine Learning,C119857082,Australia,AU,3713
+2015,AI & Machine Learning,C119857082,Azerbaijan,AZ,33
+2015,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,42
+2015,AI & Machine Learning,C119857082,Barbados,BB,2
+2015,AI & Machine Learning,C119857082,Bangladesh,BD,249
+2015,AI & Machine Learning,C119857082,Belgium,BE,1203
+2015,AI & Machine Learning,C119857082,Burkina Faso,BF,10
+2015,AI & Machine Learning,C119857082,Bulgaria,BG,139
+2015,AI & Machine Learning,C119857082,Bahrain,BH,19
+2015,AI & Machine Learning,C119857082,Burundi,BI,13
+2015,AI & Machine Learning,C119857082,Benin,BJ,20
+2015,AI & Machine Learning,C119857082,Bermuda,BM,1
+2015,AI & Machine Learning,C119857082,Brunei Darussalam,BN,13
+2015,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,13
+2015,AI & Machine Learning,C119857082,Brazil,BR,2011
+2015,AI & Machine Learning,C119857082,Bahamas,BS,2
+2015,AI & Machine Learning,C119857082,Bhutan,BT,3
+2015,AI & Machine Learning,C119857082,Botswana,BW,22
+2015,AI & Machine Learning,C119857082,Belarus,BY,37
+2015,AI & Machine Learning,C119857082,Belize,BZ,1
+2015,AI & Machine Learning,C119857082,Canada,CA,3786
+2015,AI & Machine Learning,C119857082,Central African Republic,CF,2
+2015,AI & Machine Learning,C119857082,Congo,CG,3
+2015,AI & Machine Learning,C119857082,Switzerland,CH,1331
+2015,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,18
+2015,AI & Machine Learning,C119857082,Chile,CL,300
+2015,AI & Machine Learning,C119857082,Cameroon,CM,36
+2015,AI & Machine Learning,C119857082,China,CN,19479
+2015,AI & Machine Learning,C119857082,Colombia,CO,316
+2015,AI & Machine Learning,C119857082,Costa Rica,CR,38
+2015,AI & Machine Learning,C119857082,Cuba,CU,92
+2015,AI & Machine Learning,C119857082,Cabo Verde,CV,1
+2015,AI & Machine Learning,C119857082,Curaçao,CW,1
+2015,AI & Machine Learning,C119857082,Cyprus,CY,135
+2015,AI & Machine Learning,C119857082,Czechia,CZ,650
+2015,AI & Machine Learning,C119857082,Germany,DE,4512
+2015,AI & Machine Learning,C119857082,Denmark,DK,691
+2015,AI & Machine Learning,C119857082,Dominican Republic,DO,2
+2015,AI & Machine Learning,C119857082,Algeria,DZ,393
+2015,AI & Machine Learning,C119857082,Ecuador,EC,85
+2015,AI & Machine Learning,C119857082,Estonia,EE,77
+2015,AI & Machine Learning,C119857082,Egypt,EG,587
+2015,AI & Machine Learning,C119857082,Spain,ES,2835
+2015,AI & Machine Learning,C119857082,Ethiopia,ET,112
+2015,AI & Machine Learning,C119857082,Finland,FI,826
+2015,AI & Machine Learning,C119857082,Fiji,FJ,21
+2015,AI & Machine Learning,C119857082,Faroe Islands,FO,2
+2015,AI & Machine Learning,C119857082,France,FR,4228
+2015,AI & Machine Learning,C119857082,Gabon,GA,1
+2015,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,7836
+2015,AI & Machine Learning,C119857082,Grenada,GD,2
+2015,AI & Machine Learning,C119857082,Georgia,GE,16
+2015,AI & Machine Learning,C119857082,French Guiana,GF,1
+2015,AI & Machine Learning,C119857082,Ghana,GH,128
+2015,AI & Machine Learning,C119857082,Greenland,GL,1
+2015,AI & Machine Learning,C119857082,Guadeloupe,GP,5
+2015,AI & Machine Learning,C119857082,Greece,GR,809
+2015,AI & Machine Learning,C119857082,Guatemala,GT,7
+2015,AI & Machine Learning,C119857082,Guam,GU,2
+2015,AI & Machine Learning,C119857082,Hong Kong,HK,1022
+2015,AI & Machine Learning,C119857082,Honduras,HN,4
+2015,AI & Machine Learning,C119857082,Croatia,HR,157
+2015,AI & Machine Learning,C119857082,Haiti,HT,1
+2015,AI & Machine Learning,C119857082,Hungary,HU,292
+2015,AI & Machine Learning,C119857082,Indonesia,ID,956
+2015,AI & Machine Learning,C119857082,Ireland,IE,487
+2015,AI & Machine Learning,C119857082,Israel,IL,613
+2015,AI & Machine Learning,C119857082,Isle of Man,IM,1
+2015,AI & Machine Learning,C119857082,India,IN,5038
+2015,AI & Machine Learning,C119857082,Iraq,IQ,131
+2015,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2501
+2015,AI & Machine Learning,C119857082,Iceland,IS,64
+2015,AI & Machine Learning,C119857082,Italy,IT,3097
+2015,AI & Machine Learning,C119857082,Jamaica,JM,13
+2015,AI & Machine Learning,C119857082,Jordan,JO,186
+2015,AI & Machine Learning,C119857082,Japan,JP,2897
+2015,AI & Machine Learning,C119857082,Kenya,KE,132
+2015,AI & Machine Learning,C119857082,Kyrgyzstan,KG,5
+2015,AI & Machine Learning,C119857082,Cambodia,KH,17
+2015,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,3
+2015,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2316
+2015,AI & Machine Learning,C119857082,Kuwait,KW,57
+2015,AI & Machine Learning,C119857082,Cayman Islands,KY,1
+2015,AI & Machine Learning,C119857082,Kazakhstan,KZ,84
+2015,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,5
+2015,AI & Machine Learning,C119857082,Lebanon,LB,120
+2015,AI & Machine Learning,C119857082,Liechtenstein,LI,4
+2015,AI & Machine Learning,C119857082,Sri Lanka,LK,68
+2015,AI & Machine Learning,C119857082,Lesotho,LS,1
+2015,AI & Machine Learning,C119857082,Lithuania,LT,139
+2015,AI & Machine Learning,C119857082,Luxembourg,LU,122
+2015,AI & Machine Learning,C119857082,Latvia,LV,134
+2015,AI & Machine Learning,C119857082,Libya,LY,12
+2015,AI & Machine Learning,C119857082,Morocco,MA,223
+2015,AI & Machine Learning,C119857082,Monaco,MC,5
+2015,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,19
+2015,AI & Machine Learning,C119857082,Montenegro,ME,21
+2015,AI & Machine Learning,C119857082,Madagascar,MG,2
+2015,AI & Machine Learning,C119857082,North Macedonia,MK,70
+2015,AI & Machine Learning,C119857082,Mali,ML,8
+2015,AI & Machine Learning,C119857082,Myanmar,MM,24
+2015,AI & Machine Learning,C119857082,Mongolia,MN,51
+2015,AI & Machine Learning,C119857082,Macao,MO,149
+2015,AI & Machine Learning,C119857082,Mauritania,MR,3
+2015,AI & Machine Learning,C119857082,Malta,MT,25
+2015,AI & Machine Learning,C119857082,Mauritius,MU,12
+2015,AI & Machine Learning,C119857082,Malawi,MW,10
+2015,AI & Machine Learning,C119857082,Mexico,MX,735
+2015,AI & Machine Learning,C119857082,Malaysia,MY,1529
+2015,AI & Machine Learning,C119857082,Mozambique,MZ,14
+2015,AI & Machine Learning,C119857082,Namibia,NA,11
+2015,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2015,AI & Machine Learning,C119857082,Niger,NE,12
+2015,AI & Machine Learning,C119857082,Nigeria,NG,317
+2015,AI & Machine Learning,C119857082,Nicaragua,NI,5
+2015,AI & Machine Learning,C119857082,Netherlands,NL,2071
+2015,AI & Machine Learning,C119857082,Norway,NO,694
+2015,AI & Machine Learning,C119857082,Nepal,NP,62
+2015,AI & Machine Learning,C119857082,New Zealand,NZ,576
+2015,AI & Machine Learning,C119857082,Oman,OM,78
+2015,AI & Machine Learning,C119857082,Panama,PA,12
+2015,AI & Machine Learning,C119857082,Peru,PE,41
+2015,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+2015,AI & Machine Learning,C119857082,Philippines,PH,122
+2015,AI & Machine Learning,C119857082,Pakistan,PK,479
+2015,AI & Machine Learning,C119857082,Poland,PL,1463
+2015,AI & Machine Learning,C119857082,Puerto Rico,PR,44
+2015,AI & Machine Learning,C119857082,"Palestine, State of",PS,26
+2015,AI & Machine Learning,C119857082,Portugal,PT,906
+2015,AI & Machine Learning,C119857082,Paraguay,PY,12
+2015,AI & Machine Learning,C119857082,Qatar,QA,156
+2015,AI & Machine Learning,C119857082,Réunion,RE,1
+2015,AI & Machine Learning,C119857082,Romania,RO,591
+2015,AI & Machine Learning,C119857082,Serbia,RS,273
+2015,AI & Machine Learning,C119857082,Russian Federation,RU,1756
+2015,AI & Machine Learning,C119857082,Rwanda,RW,10
+2015,AI & Machine Learning,C119857082,Saudi Arabia,SA,736
+2015,AI & Machine Learning,C119857082,Seychelles,SC,1
+2015,AI & Machine Learning,C119857082,Sudan,SD,36
+2015,AI & Machine Learning,C119857082,Sweden,SE,1237
+2015,AI & Machine Learning,C119857082,Singapore,SG,1069
+2015,AI & Machine Learning,C119857082,Slovenia,SI,245
+2015,AI & Machine Learning,C119857082,Slovakia,SK,246
+2015,AI & Machine Learning,C119857082,Sierra Leone,SL,2
+2015,AI & Machine Learning,C119857082,San Marino,SM,1
+2015,AI & Machine Learning,C119857082,Senegal,SN,32
+2015,AI & Machine Learning,C119857082,Somalia,SO,1
+2015,AI & Machine Learning,C119857082,South Sudan,SS,26
+2015,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,2
+2015,AI & Machine Learning,C119857082,El Salvador,SV,1
+2015,AI & Machine Learning,C119857082,Sint Maarten (Dutch part),SX,1
+2015,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,9
+2015,AI & Machine Learning,C119857082,Eswatini,SZ,2
+2015,AI & Machine Learning,C119857082,Turks and Caicos Islands,TC,1
+2015,AI & Machine Learning,C119857082,Togo,TG,3
+2015,AI & Machine Learning,C119857082,Thailand,TH,462
+2015,AI & Machine Learning,C119857082,Tajikistan,TJ,26
+2015,AI & Machine Learning,C119857082,Turkmenistan,TM,3
+2015,AI & Machine Learning,C119857082,Tunisia,TN,394
+2015,AI & Machine Learning,C119857082,Turkey,TR,1270
+2015,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,10
+2015,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1632
+2015,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,58
+2015,AI & Machine Learning,C119857082,Ukraine,UA,324
+2015,AI & Machine Learning,C119857082,Uganda,UG,51
+2015,AI & Machine Learning,C119857082,United States of America,US,23959
+2015,AI & Machine Learning,C119857082,Uruguay,UY,36
+2015,AI & Machine Learning,C119857082,Uzbekistan,UZ,15
+2015,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,42
+2015,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,13
+2015,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,1
+2015,AI & Machine Learning,C119857082,Viet Nam,VN,299
+2015,AI & Machine Learning,C119857082,Vanuatu,VU,1
+2015,AI & Machine Learning,C119857082,Kosovo,XK,14
+2015,AI & Machine Learning,C119857082,Yemen,YE,31
+2015,AI & Machine Learning,C119857082,South Africa,ZA,706
+2015,AI & Machine Learning,C119857082,Zambia,ZM,14
+2015,AI & Machine Learning,C119857082,Zimbabwe,ZW,38
 2015,CRISPR & Genomics,C98108389,United Arab Emirates,AE,1
 2015,CRISPR & Genomics,C98108389,Armenia,AM,1
 2015,CRISPR & Genomics,C98108389,Argentina,AR,3
@@ -11520,206 +18711,198 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2015,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,1
 2015,Robotics & Automation,C34413123,Viet Nam,VN,2
 2015,Robotics & Automation,C34413123,South Africa,ZA,12
-2016,AI & Machine Learning,C154945302,Andorra,AD,3
-2016,AI & Machine Learning,C154945302,United Arab Emirates,AE,819
-2016,AI & Machine Learning,C154945302,Afghanistan,AF,20
-2016,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,1
-2016,AI & Machine Learning,C154945302,Albania,AL,77
-2016,AI & Machine Learning,C154945302,Armenia,AM,72
-2016,AI & Machine Learning,C154945302,Angola,AO,12
-2016,AI & Machine Learning,C154945302,Argentina,AR,1208
-2016,AI & Machine Learning,C154945302,American Samoa,AS,1
-2016,AI & Machine Learning,C154945302,Austria,AT,3234
-2016,AI & Machine Learning,C154945302,Australia,AU,11684
-2016,AI & Machine Learning,C154945302,Åland Islands,AX,1
-2016,AI & Machine Learning,C154945302,Azerbaijan,AZ,167
-2016,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,191
-2016,AI & Machine Learning,C154945302,Barbados,BB,7
-2016,AI & Machine Learning,C154945302,Bangladesh,BD,946
-2016,AI & Machine Learning,C154945302,Belgium,BE,4341
-2016,AI & Machine Learning,C154945302,Burkina Faso,BF,25
-2016,AI & Machine Learning,C154945302,Bulgaria,BG,614
-2016,AI & Machine Learning,C154945302,Bahrain,BH,48
-2016,AI & Machine Learning,C154945302,Burundi,BI,78
-2016,AI & Machine Learning,C154945302,Benin,BJ,35
-2016,AI & Machine Learning,C154945302,Bermuda,BM,2
-2016,AI & Machine Learning,C154945302,Brunei Darussalam,BN,61
-2016,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,52
-2016,AI & Machine Learning,C154945302,Brazil,BR,7279
-2016,AI & Machine Learning,C154945302,Bahamas,BS,7
-2016,AI & Machine Learning,C154945302,Bhutan,BT,6
-2016,AI & Machine Learning,C154945302,Botswana,BW,45
-2016,AI & Machine Learning,C154945302,Belarus,BY,231
-2016,AI & Machine Learning,C154945302,Belize,BZ,2
-2016,AI & Machine Learning,C154945302,Canada,CA,13774
-2016,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,13
-2016,AI & Machine Learning,C154945302,Congo,CG,6
-2016,AI & Machine Learning,C154945302,Switzerland,CH,5212
-2016,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,46
-2016,AI & Machine Learning,C154945302,Chile,CL,1240
-2016,AI & Machine Learning,C154945302,Cameroon,CM,134
-2016,AI & Machine Learning,C154945302,China,CN,70746
-2016,AI & Machine Learning,C154945302,Colombia,CO,1245
-2016,AI & Machine Learning,C154945302,Costa Rica,CR,160
-2016,AI & Machine Learning,C154945302,Cuba,CU,282
-2016,AI & Machine Learning,C154945302,Cabo Verde,CV,4
-2016,AI & Machine Learning,C154945302,Curaçao,CW,8
-2016,AI & Machine Learning,C154945302,Cyprus,CY,520
-2016,AI & Machine Learning,C154945302,Czechia,CZ,3181
-2016,AI & Machine Learning,C154945302,Germany,DE,21567
-2016,AI & Machine Learning,C154945302,Djibouti,DJ,1
-2016,AI & Machine Learning,C154945302,Denmark,DK,3255
-2016,AI & Machine Learning,C154945302,Dominica,DM,1
-2016,AI & Machine Learning,C154945302,Dominican Republic,DO,30
-2016,AI & Machine Learning,C154945302,Algeria,DZ,1663
-2016,AI & Machine Learning,C154945302,Ecuador,EC,441
-2016,AI & Machine Learning,C154945302,Estonia,EE,306
-2016,AI & Machine Learning,C154945302,Egypt,EG,2292
-2016,AI & Machine Learning,C154945302,Eritrea,ER,3
-2016,AI & Machine Learning,C154945302,Spain,ES,9910
-2016,AI & Machine Learning,C154945302,Ethiopia,ET,156
-2016,AI & Machine Learning,C154945302,Finland,FI,2799
-2016,AI & Machine Learning,C154945302,Fiji,FJ,63
-2016,AI & Machine Learning,C154945302,Faroe Islands,FO,4
-2016,AI & Machine Learning,C154945302,France,FR,19243
-2016,AI & Machine Learning,C154945302,Gabon,GA,3
-2016,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,26210
-2016,AI & Machine Learning,C154945302,Grenada,GD,6
-2016,AI & Machine Learning,C154945302,Georgia,GE,74
-2016,AI & Machine Learning,C154945302,French Guiana,GF,8
-2016,AI & Machine Learning,C154945302,Ghana,GH,200
-2016,AI & Machine Learning,C154945302,Gibraltar,GI,1
-2016,AI & Machine Learning,C154945302,Greenland,GL,5
-2016,AI & Machine Learning,C154945302,Gambia,GM,2
-2016,AI & Machine Learning,C154945302,Guadeloupe,GP,16
-2016,AI & Machine Learning,C154945302,Greece,GR,2693
-2016,AI & Machine Learning,C154945302,Guatemala,GT,25
-2016,AI & Machine Learning,C154945302,Guam,GU,8
-2016,AI & Machine Learning,C154945302,Guyana,GY,5
-2016,AI & Machine Learning,C154945302,Hong Kong,HK,3583
-2016,AI & Machine Learning,C154945302,Honduras,HN,11
-2016,AI & Machine Learning,C154945302,Croatia,HR,654
-2016,AI & Machine Learning,C154945302,Haiti,HT,2
-2016,AI & Machine Learning,C154945302,Hungary,HU,1240
-2016,AI & Machine Learning,C154945302,Indonesia,ID,5543
-2016,AI & Machine Learning,C154945302,Ireland,IE,1938
-2016,AI & Machine Learning,C154945302,Israel,IL,2908
-2016,AI & Machine Learning,C154945302,Isle of Man,IM,2
-2016,AI & Machine Learning,C154945302,India,IN,23970
-2016,AI & Machine Learning,C154945302,Iraq,IQ,712
-2016,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,8272
-2016,AI & Machine Learning,C154945302,Iceland,IS,164
-2016,AI & Machine Learning,C154945302,Italy,IT,13141
-2016,AI & Machine Learning,C154945302,Jamaica,JM,24
-2016,AI & Machine Learning,C154945302,Jordan,JO,578
-2016,AI & Machine Learning,C154945302,Japan,JP,17852
-2016,AI & Machine Learning,C154945302,Kenya,KE,230
-2016,AI & Machine Learning,C154945302,Kyrgyzstan,KG,13
-2016,AI & Machine Learning,C154945302,Cambodia,KH,56
-2016,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,7
-2016,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,9
-2016,AI & Machine Learning,C154945302,"Korea, Republic of",KR,9778
-2016,AI & Machine Learning,C154945302,Kuwait,KW,191
-2016,AI & Machine Learning,C154945302,Cayman Islands,KY,3
-2016,AI & Machine Learning,C154945302,Kazakhstan,KZ,347
-2016,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,7
-2016,AI & Machine Learning,C154945302,Lebanon,LB,391
-2016,AI & Machine Learning,C154945302,Liechtenstein,LI,18
-2016,AI & Machine Learning,C154945302,Sri Lanka,LK,266
-2016,AI & Machine Learning,C154945302,Liberia,LR,4
-2016,AI & Machine Learning,C154945302,Lesotho,LS,4
-2016,AI & Machine Learning,C154945302,Lithuania,LT,442
-2016,AI & Machine Learning,C154945302,Luxembourg,LU,449
-2016,AI & Machine Learning,C154945302,Latvia,LV,277
-2016,AI & Machine Learning,C154945302,Libya,LY,80
-2016,AI & Machine Learning,C154945302,Morocco,MA,1265
-2016,AI & Machine Learning,C154945302,Monaco,MC,2
-2016,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,72
-2016,AI & Machine Learning,C154945302,Montenegro,ME,82
-2016,AI & Machine Learning,C154945302,Madagascar,MG,13
-2016,AI & Machine Learning,C154945302,North Macedonia,MK,224
-2016,AI & Machine Learning,C154945302,Mali,ML,25
-2016,AI & Machine Learning,C154945302,Myanmar,MM,77
-2016,AI & Machine Learning,C154945302,Mongolia,MN,89
-2016,AI & Machine Learning,C154945302,Macao,MO,600
-2016,AI & Machine Learning,C154945302,Martinique,MQ,5
-2016,AI & Machine Learning,C154945302,Montserrat,MS,1
-2016,AI & Machine Learning,C154945302,Malta,MT,138
-2016,AI & Machine Learning,C154945302,Mauritius,MU,31
-2016,AI & Machine Learning,C154945302,Maldives,MV,4
-2016,AI & Machine Learning,C154945302,Malawi,MW,27
-2016,AI & Machine Learning,C154945302,Mexico,MX,3023
-2016,AI & Machine Learning,C154945302,Malaysia,MY,4482
-2016,AI & Machine Learning,C154945302,Mozambique,MZ,42
-2016,AI & Machine Learning,C154945302,Namibia,NA,42
-2016,AI & Machine Learning,C154945302,New Caledonia,NC,7
-2016,AI & Machine Learning,C154945302,Niger,NE,13
-2016,AI & Machine Learning,C154945302,Nigeria,NG,705
-2016,AI & Machine Learning,C154945302,Nicaragua,NI,18
-2016,AI & Machine Learning,C154945302,Netherlands,NL,7564
-2016,AI & Machine Learning,C154945302,Norway,NO,2525
-2016,AI & Machine Learning,C154945302,Nepal,NP,261
-2016,AI & Machine Learning,C154945302,New Zealand,NZ,1862
-2016,AI & Machine Learning,C154945302,Oman,OM,203
-2016,AI & Machine Learning,C154945302,Panama,PA,33
-2016,AI & Machine Learning,C154945302,Peru,PE,255
-2016,AI & Machine Learning,C154945302,French Polynesia,PF,10
-2016,AI & Machine Learning,C154945302,Papua New Guinea,PG,9
-2016,AI & Machine Learning,C154945302,Philippines,PH,404
-2016,AI & Machine Learning,C154945302,Pakistan,PK,1866
-2016,AI & Machine Learning,C154945302,Poland,PL,6595
-2016,AI & Machine Learning,C154945302,Puerto Rico,PR,123
-2016,AI & Machine Learning,C154945302,"Palestine, State of",PS,109
-2016,AI & Machine Learning,C154945302,Portugal,PT,3176
-2016,AI & Machine Learning,C154945302,Palau,PW,4
-2016,AI & Machine Learning,C154945302,Paraguay,PY,56
-2016,AI & Machine Learning,C154945302,Qatar,QA,688
-2016,AI & Machine Learning,C154945302,Réunion,RE,31
-2016,AI & Machine Learning,C154945302,Romania,RO,2320
-2016,AI & Machine Learning,C154945302,Serbia,RS,1021
-2016,AI & Machine Learning,C154945302,Russian Federation,RU,8730
-2016,AI & Machine Learning,C154945302,Rwanda,RW,13
-2016,AI & Machine Learning,C154945302,Saudi Arabia,SA,2340
-2016,AI & Machine Learning,C154945302,Seychelles,SC,1
-2016,AI & Machine Learning,C154945302,Sudan,SD,115
-2016,AI & Machine Learning,C154945302,Sweden,SE,4613
-2016,AI & Machine Learning,C154945302,Singapore,SG,4088
-2016,AI & Machine Learning,C154945302,Slovenia,SI,791
-2016,AI & Machine Learning,C154945302,Svalbard and Jan Mayen,SJ,2
-2016,AI & Machine Learning,C154945302,Slovakia,SK,1128
-2016,AI & Machine Learning,C154945302,Sierra Leone,SL,3
-2016,AI & Machine Learning,C154945302,San Marino,SM,1
-2016,AI & Machine Learning,C154945302,Senegal,SN,36
-2016,AI & Machine Learning,C154945302,Somalia,SO,2
-2016,AI & Machine Learning,C154945302,South Sudan,SS,97
-2016,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,4
-2016,AI & Machine Learning,C154945302,El Salvador,SV,14
-2016,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,41
-2016,AI & Machine Learning,C154945302,Eswatini,SZ,7
-2016,AI & Machine Learning,C154945302,Togo,TG,5
-2016,AI & Machine Learning,C154945302,Thailand,TH,1633
-2016,AI & Machine Learning,C154945302,Tajikistan,TJ,84
-2016,AI & Machine Learning,C154945302,Tunisia,TN,1769
-2016,AI & Machine Learning,C154945302,Turkey,TR,5028
-2016,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,40
-2016,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5470
-2016,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,83
-2016,AI & Machine Learning,C154945302,Ukraine,UA,1783
-2016,AI & Machine Learning,C154945302,Uganda,UG,89
-2016,AI & Machine Learning,C154945302,United States of America,US,82223
-2016,AI & Machine Learning,C154945302,Uruguay,UY,145
-2016,AI & Machine Learning,C154945302,Uzbekistan,UZ,71
-2016,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,168
-2016,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,61
-2016,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,4
-2016,AI & Machine Learning,C154945302,Viet Nam,VN,1296
-2016,AI & Machine Learning,C154945302,Vanuatu,VU,2
-2016,AI & Machine Learning,C154945302,Samoa,WS,2
-2016,AI & Machine Learning,C154945302,Kosovo,XK,52
-2016,AI & Machine Learning,C154945302,Yemen,YE,107
-2016,AI & Machine Learning,C154945302,South Africa,ZA,2062
-2016,AI & Machine Learning,C154945302,Zambia,ZM,23
-2016,AI & Machine Learning,C154945302,Zimbabwe,ZW,49
+2016,AI & Machine Learning,C119857082,Andorra,AD,1
+2016,AI & Machine Learning,C119857082,United Arab Emirates,AE,283
+2016,AI & Machine Learning,C119857082,Afghanistan,AF,5
+2016,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2016,AI & Machine Learning,C119857082,Albania,AL,24
+2016,AI & Machine Learning,C119857082,Armenia,AM,17
+2016,AI & Machine Learning,C119857082,Angola,AO,1
+2016,AI & Machine Learning,C119857082,Argentina,AR,249
+2016,AI & Machine Learning,C119857082,Austria,AT,750
+2016,AI & Machine Learning,C119857082,Australia,AU,4055
+2016,AI & Machine Learning,C119857082,Aruba,AW,1
+2016,AI & Machine Learning,C119857082,Azerbaijan,AZ,52
+2016,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,57
+2016,AI & Machine Learning,C119857082,Barbados,BB,9
+2016,AI & Machine Learning,C119857082,Bangladesh,BD,294
+2016,AI & Machine Learning,C119857082,Belgium,BE,1217
+2016,AI & Machine Learning,C119857082,Burkina Faso,BF,9
+2016,AI & Machine Learning,C119857082,Bulgaria,BG,148
+2016,AI & Machine Learning,C119857082,Bahrain,BH,19
+2016,AI & Machine Learning,C119857082,Burundi,BI,18
+2016,AI & Machine Learning,C119857082,Benin,BJ,14
+2016,AI & Machine Learning,C119857082,Bermuda,BM,1
+2016,AI & Machine Learning,C119857082,Brunei Darussalam,BN,16
+2016,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,20
+2016,AI & Machine Learning,C119857082,Brazil,BR,2146
+2016,AI & Machine Learning,C119857082,Bhutan,BT,3
+2016,AI & Machine Learning,C119857082,Botswana,BW,26
+2016,AI & Machine Learning,C119857082,Belarus,BY,57
+2016,AI & Machine Learning,C119857082,Belize,BZ,1
+2016,AI & Machine Learning,C119857082,Canada,CA,4051
+2016,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,5
+2016,AI & Machine Learning,C119857082,Congo,CG,6
+2016,AI & Machine Learning,C119857082,Switzerland,CH,1354
+2016,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,17
+2016,AI & Machine Learning,C119857082,Chile,CL,312
+2016,AI & Machine Learning,C119857082,Cameroon,CM,45
+2016,AI & Machine Learning,C119857082,China,CN,17264
+2016,AI & Machine Learning,C119857082,Colombia,CO,306
+2016,AI & Machine Learning,C119857082,Costa Rica,CR,43
+2016,AI & Machine Learning,C119857082,Cuba,CU,70
+2016,AI & Machine Learning,C119857082,Cabo Verde,CV,3
+2016,AI & Machine Learning,C119857082,Curaçao,CW,2
+2016,AI & Machine Learning,C119857082,Cyprus,CY,172
+2016,AI & Machine Learning,C119857082,Czechia,CZ,685
+2016,AI & Machine Learning,C119857082,Germany,DE,4856
+2016,AI & Machine Learning,C119857082,Denmark,DK,712
+2016,AI & Machine Learning,C119857082,Dominica,DM,3
+2016,AI & Machine Learning,C119857082,Dominican Republic,DO,5
+2016,AI & Machine Learning,C119857082,Algeria,DZ,393
+2016,AI & Machine Learning,C119857082,Ecuador,EC,129
+2016,AI & Machine Learning,C119857082,Estonia,EE,100
+2016,AI & Machine Learning,C119857082,Egypt,EG,653
+2016,AI & Machine Learning,C119857082,Eritrea,ER,4
+2016,AI & Machine Learning,C119857082,Spain,ES,2954
+2016,AI & Machine Learning,C119857082,Ethiopia,ET,140
+2016,AI & Machine Learning,C119857082,Finland,FI,845
+2016,AI & Machine Learning,C119857082,Fiji,FJ,27
+2016,AI & Machine Learning,C119857082,Faroe Islands,FO,3
+2016,AI & Machine Learning,C119857082,France,FR,4497
+2016,AI & Machine Learning,C119857082,Gabon,GA,1
+2016,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,8206
+2016,AI & Machine Learning,C119857082,Grenada,GD,2
+2016,AI & Machine Learning,C119857082,Georgia,GE,24
+2016,AI & Machine Learning,C119857082,French Guiana,GF,1
+2016,AI & Machine Learning,C119857082,Ghana,GH,138
+2016,AI & Machine Learning,C119857082,Gambia,GM,4
+2016,AI & Machine Learning,C119857082,Guadeloupe,GP,5
+2016,AI & Machine Learning,C119857082,Greece,GR,798
+2016,AI & Machine Learning,C119857082,Guatemala,GT,11
+2016,AI & Machine Learning,C119857082,Guam,GU,2
+2016,AI & Machine Learning,C119857082,Guinea-Bissau,GW,2
+2016,AI & Machine Learning,C119857082,Hong Kong,HK,1084
+2016,AI & Machine Learning,C119857082,Honduras,HN,2
+2016,AI & Machine Learning,C119857082,Croatia,HR,185
+2016,AI & Machine Learning,C119857082,Haiti,HT,1
+2016,AI & Machine Learning,C119857082,Hungary,HU,345
+2016,AI & Machine Learning,C119857082,Indonesia,ID,1439
+2016,AI & Machine Learning,C119857082,Ireland,IE,538
+2016,AI & Machine Learning,C119857082,Israel,IL,712
+2016,AI & Machine Learning,C119857082,India,IN,6164
+2016,AI & Machine Learning,C119857082,Iraq,IQ,163
+2016,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,2814
+2016,AI & Machine Learning,C119857082,Iceland,IS,85
+2016,AI & Machine Learning,C119857082,Italy,IT,3276
+2016,AI & Machine Learning,C119857082,Jamaica,JM,21
+2016,AI & Machine Learning,C119857082,Jordan,JO,193
+2016,AI & Machine Learning,C119857082,Japan,JP,3035
+2016,AI & Machine Learning,C119857082,Kenya,KE,159
+2016,AI & Machine Learning,C119857082,Kyrgyzstan,KG,4
+2016,AI & Machine Learning,C119857082,Cambodia,KH,12
+2016,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,4
+2016,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,1
+2016,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2415
+2016,AI & Machine Learning,C119857082,Kuwait,KW,74
+2016,AI & Machine Learning,C119857082,Kazakhstan,KZ,87
+2016,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,4
+2016,AI & Machine Learning,C119857082,Lebanon,LB,129
+2016,AI & Machine Learning,C119857082,Liechtenstein,LI,7
+2016,AI & Machine Learning,C119857082,Sri Lanka,LK,94
+2016,AI & Machine Learning,C119857082,Lesotho,LS,2
+2016,AI & Machine Learning,C119857082,Lithuania,LT,119
+2016,AI & Machine Learning,C119857082,Luxembourg,LU,139
+2016,AI & Machine Learning,C119857082,Latvia,LV,92
+2016,AI & Machine Learning,C119857082,Libya,LY,19
+2016,AI & Machine Learning,C119857082,Morocco,MA,370
+2016,AI & Machine Learning,C119857082,Monaco,MC,3
+2016,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,21
+2016,AI & Machine Learning,C119857082,Montenegro,ME,19
+2016,AI & Machine Learning,C119857082,Madagascar,MG,4
+2016,AI & Machine Learning,C119857082,North Macedonia,MK,79
+2016,AI & Machine Learning,C119857082,Mali,ML,6
+2016,AI & Machine Learning,C119857082,Myanmar,MM,17
+2016,AI & Machine Learning,C119857082,Mongolia,MN,23
+2016,AI & Machine Learning,C119857082,Macao,MO,188
+2016,AI & Machine Learning,C119857082,Martinique,MQ,1
+2016,AI & Machine Learning,C119857082,Mauritania,MR,2
+2016,AI & Machine Learning,C119857082,Malta,MT,22
+2016,AI & Machine Learning,C119857082,Mauritius,MU,14
+2016,AI & Machine Learning,C119857082,Maldives,MV,1
+2016,AI & Machine Learning,C119857082,Malawi,MW,14
+2016,AI & Machine Learning,C119857082,Mexico,MX,764
+2016,AI & Machine Learning,C119857082,Malaysia,MY,1569
+2016,AI & Machine Learning,C119857082,Mozambique,MZ,8
+2016,AI & Machine Learning,C119857082,Namibia,NA,25
+2016,AI & Machine Learning,C119857082,New Caledonia,NC,5
+2016,AI & Machine Learning,C119857082,Niger,NE,5
+2016,AI & Machine Learning,C119857082,Nigeria,NG,357
+2016,AI & Machine Learning,C119857082,Nicaragua,NI,1
+2016,AI & Machine Learning,C119857082,Netherlands,NL,2185
+2016,AI & Machine Learning,C119857082,Norway,NO,751
+2016,AI & Machine Learning,C119857082,Nepal,NP,75
+2016,AI & Machine Learning,C119857082,New Zealand,NZ,717
+2016,AI & Machine Learning,C119857082,Oman,OM,80
+2016,AI & Machine Learning,C119857082,Panama,PA,7
+2016,AI & Machine Learning,C119857082,Peru,PE,77
+2016,AI & Machine Learning,C119857082,French Polynesia,PF,2
+2016,AI & Machine Learning,C119857082,Papua New Guinea,PG,3
+2016,AI & Machine Learning,C119857082,Philippines,PH,135
+2016,AI & Machine Learning,C119857082,Pakistan,PK,602
+2016,AI & Machine Learning,C119857082,Poland,PL,1533
+2016,AI & Machine Learning,C119857082,Puerto Rico,PR,43
+2016,AI & Machine Learning,C119857082,"Palestine, State of",PS,23
+2016,AI & Machine Learning,C119857082,Portugal,PT,944
+2016,AI & Machine Learning,C119857082,Palau,PW,1
+2016,AI & Machine Learning,C119857082,Paraguay,PY,11
+2016,AI & Machine Learning,C119857082,Qatar,QA,189
+2016,AI & Machine Learning,C119857082,Réunion,RE,6
+2016,AI & Machine Learning,C119857082,Romania,RO,527
+2016,AI & Machine Learning,C119857082,Serbia,RS,269
+2016,AI & Machine Learning,C119857082,Russian Federation,RU,1943
+2016,AI & Machine Learning,C119857082,Rwanda,RW,5
+2016,AI & Machine Learning,C119857082,Saudi Arabia,SA,782
+2016,AI & Machine Learning,C119857082,Solomon Islands,SB,1
+2016,AI & Machine Learning,C119857082,Sudan,SD,34
+2016,AI & Machine Learning,C119857082,Sweden,SE,1316
+2016,AI & Machine Learning,C119857082,Singapore,SG,1061
+2016,AI & Machine Learning,C119857082,Slovenia,SI,241
+2016,AI & Machine Learning,C119857082,Slovakia,SK,223
+2016,AI & Machine Learning,C119857082,Sierra Leone,SL,4
+2016,AI & Machine Learning,C119857082,Senegal,SN,15
+2016,AI & Machine Learning,C119857082,Somalia,SO,3
+2016,AI & Machine Learning,C119857082,Suriname,SR,2
+2016,AI & Machine Learning,C119857082,South Sudan,SS,26
+2016,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,1
+2016,AI & Machine Learning,C119857082,El Salvador,SV,2
+2016,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,17
+2016,AI & Machine Learning,C119857082,Eswatini,SZ,5
+2016,AI & Machine Learning,C119857082,Chad,TD,3
+2016,AI & Machine Learning,C119857082,Togo,TG,5
+2016,AI & Machine Learning,C119857082,Thailand,TH,539
+2016,AI & Machine Learning,C119857082,Tajikistan,TJ,19
+2016,AI & Machine Learning,C119857082,Turkmenistan,TM,3
+2016,AI & Machine Learning,C119857082,Tunisia,TN,448
+2016,AI & Machine Learning,C119857082,Turkey,TR,1515
+2016,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,11
+2016,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1560
+2016,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,58
+2016,AI & Machine Learning,C119857082,Ukraine,UA,391
+2016,AI & Machine Learning,C119857082,Uganda,UG,54
+2016,AI & Machine Learning,C119857082,United States of America,US,25133
+2016,AI & Machine Learning,C119857082,Uruguay,UY,39
+2016,AI & Machine Learning,C119857082,Uzbekistan,UZ,23
+2016,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,37
+2016,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,13
+2016,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,2
+2016,AI & Machine Learning,C119857082,Viet Nam,VN,443
+2016,AI & Machine Learning,C119857082,Samoa,WS,1
+2016,AI & Machine Learning,C119857082,Kosovo,XK,14
+2016,AI & Machine Learning,C119857082,Yemen,YE,40
+2016,AI & Machine Learning,C119857082,South Africa,ZA,815
+2016,AI & Machine Learning,C119857082,Zambia,ZM,6
+2016,AI & Machine Learning,C119857082,Zimbabwe,ZW,24
 2016,CRISPR & Genomics,C98108389,United Arab Emirates,AE,1
 2016,CRISPR & Genomics,C98108389,Argentina,AR,2
 2016,CRISPR & Genomics,C98108389,Austria,AT,14
@@ -12436,206 +19619,195 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2016,Robotics & Automation,C34413123,"Venezuela, Bolivarian Republic of",VE,1
 2016,Robotics & Automation,C34413123,Viet Nam,VN,6
 2016,Robotics & Automation,C34413123,South Africa,ZA,10
-2017,AI & Machine Learning,C154945302,Andorra,AD,1
-2017,AI & Machine Learning,C154945302,United Arab Emirates,AE,1036
-2017,AI & Machine Learning,C154945302,Afghanistan,AF,10
-2017,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,3
-2017,AI & Machine Learning,C154945302,Albania,AL,107
-2017,AI & Machine Learning,C154945302,Armenia,AM,97
-2017,AI & Machine Learning,C154945302,Angola,AO,6
-2017,AI & Machine Learning,C154945302,Argentina,AR,1104
-2017,AI & Machine Learning,C154945302,Austria,AT,3334
-2017,AI & Machine Learning,C154945302,Australia,AU,12316
-2017,AI & Machine Learning,C154945302,Azerbaijan,AZ,170
-2017,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,226
-2017,AI & Machine Learning,C154945302,Barbados,BB,3
-2017,AI & Machine Learning,C154945302,Bangladesh,BD,1217
-2017,AI & Machine Learning,C154945302,Belgium,BE,4254
-2017,AI & Machine Learning,C154945302,Burkina Faso,BF,30
-2017,AI & Machine Learning,C154945302,Bulgaria,BG,765
-2017,AI & Machine Learning,C154945302,Bahrain,BH,70
-2017,AI & Machine Learning,C154945302,Burundi,BI,91
-2017,AI & Machine Learning,C154945302,Benin,BJ,36
-2017,AI & Machine Learning,C154945302,Bermuda,BM,1
-2017,AI & Machine Learning,C154945302,Brunei Darussalam,BN,53
-2017,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,70
-2017,AI & Machine Learning,C154945302,Brazil,BR,7761
-2017,AI & Machine Learning,C154945302,Bahamas,BS,6
-2017,AI & Machine Learning,C154945302,Bhutan,BT,9
-2017,AI & Machine Learning,C154945302,Botswana,BW,60
-2017,AI & Machine Learning,C154945302,Belarus,BY,297
-2017,AI & Machine Learning,C154945302,Belize,BZ,4
-2017,AI & Machine Learning,C154945302,Canada,CA,14304
-2017,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,16
-2017,AI & Machine Learning,C154945302,Congo,CG,9
-2017,AI & Machine Learning,C154945302,Switzerland,CH,5846
-2017,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,47
-2017,AI & Machine Learning,C154945302,Chile,CL,1268
-2017,AI & Machine Learning,C154945302,Cameroon,CM,181
-2017,AI & Machine Learning,C154945302,China,CN,80337
-2017,AI & Machine Learning,C154945302,Colombia,CO,1553
-2017,AI & Machine Learning,C154945302,Costa Rica,CR,127
-2017,AI & Machine Learning,C154945302,Cuba,CU,285
-2017,AI & Machine Learning,C154945302,Cabo Verde,CV,1
-2017,AI & Machine Learning,C154945302,Curaçao,CW,7
-2017,AI & Machine Learning,C154945302,Cyprus,CY,664
-2017,AI & Machine Learning,C154945302,Czechia,CZ,3034
-2017,AI & Machine Learning,C154945302,Germany,DE,22168
-2017,AI & Machine Learning,C154945302,Djibouti,DJ,2
-2017,AI & Machine Learning,C154945302,Denmark,DK,3395
-2017,AI & Machine Learning,C154945302,Dominica,DM,1
-2017,AI & Machine Learning,C154945302,Dominican Republic,DO,15
-2017,AI & Machine Learning,C154945302,Algeria,DZ,1838
-2017,AI & Machine Learning,C154945302,Ecuador,EC,746
-2017,AI & Machine Learning,C154945302,Estonia,EE,359
-2017,AI & Machine Learning,C154945302,Egypt,EG,2523
-2017,AI & Machine Learning,C154945302,Spain,ES,10780
-2017,AI & Machine Learning,C154945302,Ethiopia,ET,253
-2017,AI & Machine Learning,C154945302,Finland,FI,2835
-2017,AI & Machine Learning,C154945302,Fiji,FJ,55
-2017,AI & Machine Learning,C154945302,Faroe Islands,FO,3
-2017,AI & Machine Learning,C154945302,France,FR,19323
-2017,AI & Machine Learning,C154945302,Gabon,GA,6
-2017,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,27149
-2017,AI & Machine Learning,C154945302,Grenada,GD,8
-2017,AI & Machine Learning,C154945302,Georgia,GE,101
-2017,AI & Machine Learning,C154945302,French Guiana,GF,6
-2017,AI & Machine Learning,C154945302,Ghana,GH,235
-2017,AI & Machine Learning,C154945302,Gibraltar,GI,3
-2017,AI & Machine Learning,C154945302,Greenland,GL,6
-2017,AI & Machine Learning,C154945302,Gambia,GM,6
-2017,AI & Machine Learning,C154945302,Guinea,GN,2
-2017,AI & Machine Learning,C154945302,Guadeloupe,GP,15
-2017,AI & Machine Learning,C154945302,Equatorial Guinea,GQ,2
-2017,AI & Machine Learning,C154945302,Greece,GR,2683
-2017,AI & Machine Learning,C154945302,Guatemala,GT,36
-2017,AI & Machine Learning,C154945302,Guam,GU,7
-2017,AI & Machine Learning,C154945302,Guyana,GY,2
-2017,AI & Machine Learning,C154945302,Hong Kong,HK,4178
-2017,AI & Machine Learning,C154945302,Honduras,HN,11
-2017,AI & Machine Learning,C154945302,Croatia,HR,658
-2017,AI & Machine Learning,C154945302,Haiti,HT,3
-2017,AI & Machine Learning,C154945302,Hungary,HU,1280
-2017,AI & Machine Learning,C154945302,Indonesia,ID,9148
-2017,AI & Machine Learning,C154945302,Ireland,IE,1802
-2017,AI & Machine Learning,C154945302,Israel,IL,2940
-2017,AI & Machine Learning,C154945302,India,IN,26116
-2017,AI & Machine Learning,C154945302,Iraq,IQ,960
-2017,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,9345
-2017,AI & Machine Learning,C154945302,Iceland,IS,196
-2017,AI & Machine Learning,C154945302,Italy,IT,13688
-2017,AI & Machine Learning,C154945302,Jamaica,JM,36
-2017,AI & Machine Learning,C154945302,Jordan,JO,662
-2017,AI & Machine Learning,C154945302,Japan,JP,18164
-2017,AI & Machine Learning,C154945302,Kenya,KE,259
-2017,AI & Machine Learning,C154945302,Kyrgyzstan,KG,22
-2017,AI & Machine Learning,C154945302,Cambodia,KH,45
-2017,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,6
-2017,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,11
-2017,AI & Machine Learning,C154945302,"Korea, Republic of",KR,9537
-2017,AI & Machine Learning,C154945302,Kuwait,KW,211
-2017,AI & Machine Learning,C154945302,Kazakhstan,KZ,383
-2017,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,6
-2017,AI & Machine Learning,C154945302,Lebanon,LB,427
-2017,AI & Machine Learning,C154945302,Saint Lucia,LC,2
-2017,AI & Machine Learning,C154945302,Liechtenstein,LI,16
-2017,AI & Machine Learning,C154945302,Sri Lanka,LK,368
-2017,AI & Machine Learning,C154945302,Lithuania,LT,500
-2017,AI & Machine Learning,C154945302,Luxembourg,LU,485
-2017,AI & Machine Learning,C154945302,Latvia,LV,352
-2017,AI & Machine Learning,C154945302,Libya,LY,93
-2017,AI & Machine Learning,C154945302,Morocco,MA,1403
-2017,AI & Machine Learning,C154945302,Monaco,MC,9
-2017,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,93
-2017,AI & Machine Learning,C154945302,Montenegro,ME,86
-2017,AI & Machine Learning,C154945302,Madagascar,MG,9
-2017,AI & Machine Learning,C154945302,North Macedonia,MK,258
-2017,AI & Machine Learning,C154945302,Mali,ML,38
-2017,AI & Machine Learning,C154945302,Myanmar,MM,105
-2017,AI & Machine Learning,C154945302,Mongolia,MN,83
-2017,AI & Machine Learning,C154945302,Macao,MO,596
-2017,AI & Machine Learning,C154945302,Martinique,MQ,4
-2017,AI & Machine Learning,C154945302,Mauritania,MR,2
-2017,AI & Machine Learning,C154945302,Montserrat,MS,6
-2017,AI & Machine Learning,C154945302,Malta,MT,157
-2017,AI & Machine Learning,C154945302,Mauritius,MU,52
-2017,AI & Machine Learning,C154945302,Maldives,MV,2
-2017,AI & Machine Learning,C154945302,Malawi,MW,18
-2017,AI & Machine Learning,C154945302,Mexico,MX,3135
-2017,AI & Machine Learning,C154945302,Malaysia,MY,5006
-2017,AI & Machine Learning,C154945302,Mozambique,MZ,53
-2017,AI & Machine Learning,C154945302,Namibia,NA,35
-2017,AI & Machine Learning,C154945302,New Caledonia,NC,7
-2017,AI & Machine Learning,C154945302,Niger,NE,12
-2017,AI & Machine Learning,C154945302,Nigeria,NG,876
-2017,AI & Machine Learning,C154945302,Nicaragua,NI,25
-2017,AI & Machine Learning,C154945302,Netherlands,NL,7917
-2017,AI & Machine Learning,C154945302,Norway,NO,2746
-2017,AI & Machine Learning,C154945302,Nepal,NP,293
-2017,AI & Machine Learning,C154945302,New Zealand,NZ,2003
-2017,AI & Machine Learning,C154945302,Oman,OM,251
-2017,AI & Machine Learning,C154945302,Panama,PA,47
-2017,AI & Machine Learning,C154945302,Peru,PE,324
-2017,AI & Machine Learning,C154945302,French Polynesia,PF,10
-2017,AI & Machine Learning,C154945302,Papua New Guinea,PG,14
-2017,AI & Machine Learning,C154945302,Philippines,PH,577
-2017,AI & Machine Learning,C154945302,Pakistan,PK,2556
-2017,AI & Machine Learning,C154945302,Poland,PL,6929
-2017,AI & Machine Learning,C154945302,Puerto Rico,PR,132
-2017,AI & Machine Learning,C154945302,"Palestine, State of",PS,141
-2017,AI & Machine Learning,C154945302,Portugal,PT,3359
-2017,AI & Machine Learning,C154945302,Palau,PW,4
-2017,AI & Machine Learning,C154945302,Paraguay,PY,62
-2017,AI & Machine Learning,C154945302,Qatar,QA,703
-2017,AI & Machine Learning,C154945302,Réunion,RE,36
-2017,AI & Machine Learning,C154945302,Romania,RO,2606
-2017,AI & Machine Learning,C154945302,Serbia,RS,1068
-2017,AI & Machine Learning,C154945302,Russian Federation,RU,10314
-2017,AI & Machine Learning,C154945302,Rwanda,RW,28
-2017,AI & Machine Learning,C154945302,Saudi Arabia,SA,2715
-2017,AI & Machine Learning,C154945302,Seychelles,SC,3
-2017,AI & Machine Learning,C154945302,Sudan,SD,142
-2017,AI & Machine Learning,C154945302,Sweden,SE,4762
-2017,AI & Machine Learning,C154945302,Singapore,SG,4190
-2017,AI & Machine Learning,C154945302,Slovenia,SI,796
-2017,AI & Machine Learning,C154945302,Svalbard and Jan Mayen,SJ,4
-2017,AI & Machine Learning,C154945302,Slovakia,SK,1097
-2017,AI & Machine Learning,C154945302,Sierra Leone,SL,6
-2017,AI & Machine Learning,C154945302,San Marino,SM,6
-2017,AI & Machine Learning,C154945302,Senegal,SN,58
-2017,AI & Machine Learning,C154945302,Somalia,SO,3
-2017,AI & Machine Learning,C154945302,South Sudan,SS,77
-2017,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,4
-2017,AI & Machine Learning,C154945302,El Salvador,SV,17
-2017,AI & Machine Learning,C154945302,Sint Maarten (Dutch part),SX,2
-2017,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,39
-2017,AI & Machine Learning,C154945302,Eswatini,SZ,3
-2017,AI & Machine Learning,C154945302,Turks and Caicos Islands,TC,4
-2017,AI & Machine Learning,C154945302,Chad,TD,7
-2017,AI & Machine Learning,C154945302,Togo,TG,10
-2017,AI & Machine Learning,C154945302,Thailand,TH,1889
-2017,AI & Machine Learning,C154945302,Tajikistan,TJ,80
-2017,AI & Machine Learning,C154945302,Timor-Leste,TL,3
-2017,AI & Machine Learning,C154945302,Tunisia,TN,2042
-2017,AI & Machine Learning,C154945302,Tonga,TO,3
-2017,AI & Machine Learning,C154945302,Turkey,TR,5638
-2017,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,32
-2017,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5389
-2017,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,72
-2017,AI & Machine Learning,C154945302,Ukraine,UA,2282
-2017,AI & Machine Learning,C154945302,Uganda,UG,89
-2017,AI & Machine Learning,C154945302,United States of America,US,86337
-2017,AI & Machine Learning,C154945302,Uruguay,UY,138
-2017,AI & Machine Learning,C154945302,Uzbekistan,UZ,71
-2017,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,163
-2017,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,55
-2017,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,5
-2017,AI & Machine Learning,C154945302,Viet Nam,VN,1352
-2017,AI & Machine Learning,C154945302,Kosovo,XK,85
-2017,AI & Machine Learning,C154945302,Yemen,YE,97
-2017,AI & Machine Learning,C154945302,South Africa,ZA,2107
-2017,AI & Machine Learning,C154945302,Zambia,ZM,35
-2017,AI & Machine Learning,C154945302,Zimbabwe,ZW,57
+2017,AI & Machine Learning,C119857082,United Arab Emirates,AE,370
+2017,AI & Machine Learning,C119857082,Afghanistan,AF,2
+2017,AI & Machine Learning,C119857082,Albania,AL,33
+2017,AI & Machine Learning,C119857082,Armenia,AM,22
+2017,AI & Machine Learning,C119857082,Angola,AO,6
+2017,AI & Machine Learning,C119857082,Argentina,AR,293
+2017,AI & Machine Learning,C119857082,Austria,AT,831
+2017,AI & Machine Learning,C119857082,Australia,AU,4560
+2017,AI & Machine Learning,C119857082,Azerbaijan,AZ,33
+2017,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,75
+2017,AI & Machine Learning,C119857082,Barbados,BB,5
+2017,AI & Machine Learning,C119857082,Bangladesh,BD,385
+2017,AI & Machine Learning,C119857082,Belgium,BE,1315
+2017,AI & Machine Learning,C119857082,Burkina Faso,BF,13
+2017,AI & Machine Learning,C119857082,Bulgaria,BG,211
+2017,AI & Machine Learning,C119857082,Bahrain,BH,36
+2017,AI & Machine Learning,C119857082,Burundi,BI,18
+2017,AI & Machine Learning,C119857082,Benin,BJ,19
+2017,AI & Machine Learning,C119857082,Brunei Darussalam,BN,32
+2017,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,21
+2017,AI & Machine Learning,C119857082,Brazil,BR,2420
+2017,AI & Machine Learning,C119857082,Bahamas,BS,3
+2017,AI & Machine Learning,C119857082,Bhutan,BT,3
+2017,AI & Machine Learning,C119857082,Botswana,BW,27
+2017,AI & Machine Learning,C119857082,Belarus,BY,69
+2017,AI & Machine Learning,C119857082,Canada,CA,4352
+2017,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,4
+2017,AI & Machine Learning,C119857082,Congo,CG,2
+2017,AI & Machine Learning,C119857082,Switzerland,CH,1534
+2017,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,24
+2017,AI & Machine Learning,C119857082,Chile,CL,368
+2017,AI & Machine Learning,C119857082,Cameroon,CM,66
+2017,AI & Machine Learning,C119857082,China,CN,20759
+2017,AI & Machine Learning,C119857082,Colombia,CO,421
+2017,AI & Machine Learning,C119857082,Costa Rica,CR,38
+2017,AI & Machine Learning,C119857082,Cuba,CU,92
+2017,AI & Machine Learning,C119857082,Cabo Verde,CV,1
+2017,AI & Machine Learning,C119857082,Curaçao,CW,2
+2017,AI & Machine Learning,C119857082,Cyprus,CY,208
+2017,AI & Machine Learning,C119857082,Czechia,CZ,731
+2017,AI & Machine Learning,C119857082,Germany,DE,5295
+2017,AI & Machine Learning,C119857082,Denmark,DK,817
+2017,AI & Machine Learning,C119857082,Dominica,DM,1
+2017,AI & Machine Learning,C119857082,Dominican Republic,DO,7
+2017,AI & Machine Learning,C119857082,Algeria,DZ,478
+2017,AI & Machine Learning,C119857082,Ecuador,EC,169
+2017,AI & Machine Learning,C119857082,Estonia,EE,132
+2017,AI & Machine Learning,C119857082,Egypt,EG,721
+2017,AI & Machine Learning,C119857082,Eritrea,ER,2
+2017,AI & Machine Learning,C119857082,Spain,ES,3265
+2017,AI & Machine Learning,C119857082,Ethiopia,ET,164
+2017,AI & Machine Learning,C119857082,Finland,FI,963
+2017,AI & Machine Learning,C119857082,Fiji,FJ,24
+2017,AI & Machine Learning,C119857082,France,FR,4584
+2017,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,9009
+2017,AI & Machine Learning,C119857082,Grenada,GD,6
+2017,AI & Machine Learning,C119857082,Georgia,GE,44
+2017,AI & Machine Learning,C119857082,French Guiana,GF,1
+2017,AI & Machine Learning,C119857082,Ghana,GH,159
+2017,AI & Machine Learning,C119857082,Greenland,GL,2
+2017,AI & Machine Learning,C119857082,Gambia,GM,4
+2017,AI & Machine Learning,C119857082,Guinea,GN,1
+2017,AI & Machine Learning,C119857082,Guadeloupe,GP,1
+2017,AI & Machine Learning,C119857082,Greece,GR,846
+2017,AI & Machine Learning,C119857082,Guatemala,GT,3
+2017,AI & Machine Learning,C119857082,Guam,GU,1
+2017,AI & Machine Learning,C119857082,Guyana,GY,1
+2017,AI & Machine Learning,C119857082,Hong Kong,HK,1337
+2017,AI & Machine Learning,C119857082,Honduras,HN,7
+2017,AI & Machine Learning,C119857082,Croatia,HR,190
+2017,AI & Machine Learning,C119857082,Haiti,HT,1
+2017,AI & Machine Learning,C119857082,Hungary,HU,340
+2017,AI & Machine Learning,C119857082,Indonesia,ID,2429
+2017,AI & Machine Learning,C119857082,Ireland,IE,584
+2017,AI & Machine Learning,C119857082,Israel,IL,780
+2017,AI & Machine Learning,C119857082,India,IN,7089
+2017,AI & Machine Learning,C119857082,Iraq,IQ,222
+2017,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3160
+2017,AI & Machine Learning,C119857082,Iceland,IS,69
+2017,AI & Machine Learning,C119857082,Italy,IT,3744
+2017,AI & Machine Learning,C119857082,Jamaica,JM,25
+2017,AI & Machine Learning,C119857082,Jordan,JO,241
+2017,AI & Machine Learning,C119857082,Japan,JP,3468
+2017,AI & Machine Learning,C119857082,Kenya,KE,196
+2017,AI & Machine Learning,C119857082,Kyrgyzstan,KG,10
+2017,AI & Machine Learning,C119857082,Cambodia,KH,22
+2017,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,2
+2017,AI & Machine Learning,C119857082,"Korea, Republic of",KR,2533
+2017,AI & Machine Learning,C119857082,Kuwait,KW,72
+2017,AI & Machine Learning,C119857082,Cayman Islands,KY,2
+2017,AI & Machine Learning,C119857082,Kazakhstan,KZ,110
+2017,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,10
+2017,AI & Machine Learning,C119857082,Lebanon,LB,117
+2017,AI & Machine Learning,C119857082,Liechtenstein,LI,12
+2017,AI & Machine Learning,C119857082,Sri Lanka,LK,116
+2017,AI & Machine Learning,C119857082,Lesotho,LS,1
+2017,AI & Machine Learning,C119857082,Lithuania,LT,157
+2017,AI & Machine Learning,C119857082,Luxembourg,LU,122
+2017,AI & Machine Learning,C119857082,Latvia,LV,103
+2017,AI & Machine Learning,C119857082,Libya,LY,24
+2017,AI & Machine Learning,C119857082,Morocco,MA,384
+2017,AI & Machine Learning,C119857082,Monaco,MC,1
+2017,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,25
+2017,AI & Machine Learning,C119857082,Montenegro,ME,17
+2017,AI & Machine Learning,C119857082,Madagascar,MG,7
+2017,AI & Machine Learning,C119857082,North Macedonia,MK,67
+2017,AI & Machine Learning,C119857082,Mali,ML,11
+2017,AI & Machine Learning,C119857082,Myanmar,MM,26
+2017,AI & Machine Learning,C119857082,Mongolia,MN,30
+2017,AI & Machine Learning,C119857082,Macao,MO,178
+2017,AI & Machine Learning,C119857082,Martinique,MQ,3
+2017,AI & Machine Learning,C119857082,Mauritania,MR,1
+2017,AI & Machine Learning,C119857082,Malta,MT,56
+2017,AI & Machine Learning,C119857082,Mauritius,MU,32
+2017,AI & Machine Learning,C119857082,Maldives,MV,3
+2017,AI & Machine Learning,C119857082,Malawi,MW,15
+2017,AI & Machine Learning,C119857082,Mexico,MX,780
+2017,AI & Machine Learning,C119857082,Malaysia,MY,1732
+2017,AI & Machine Learning,C119857082,Mozambique,MZ,14
+2017,AI & Machine Learning,C119857082,Namibia,NA,18
+2017,AI & Machine Learning,C119857082,New Caledonia,NC,1
+2017,AI & Machine Learning,C119857082,Niger,NE,6
+2017,AI & Machine Learning,C119857082,Nigeria,NG,400
+2017,AI & Machine Learning,C119857082,Nicaragua,NI,11
+2017,AI & Machine Learning,C119857082,Netherlands,NL,2421
+2017,AI & Machine Learning,C119857082,Norway,NO,954
+2017,AI & Machine Learning,C119857082,Nepal,NP,92
+2017,AI & Machine Learning,C119857082,New Zealand,NZ,726
+2017,AI & Machine Learning,C119857082,Oman,OM,104
+2017,AI & Machine Learning,C119857082,Panama,PA,8
+2017,AI & Machine Learning,C119857082,Peru,PE,85
+2017,AI & Machine Learning,C119857082,Papua New Guinea,PG,2
+2017,AI & Machine Learning,C119857082,Philippines,PH,188
+2017,AI & Machine Learning,C119857082,Pakistan,PK,883
+2017,AI & Machine Learning,C119857082,Poland,PL,1856
+2017,AI & Machine Learning,C119857082,Puerto Rico,PR,49
+2017,AI & Machine Learning,C119857082,"Palestine, State of",PS,56
+2017,AI & Machine Learning,C119857082,Portugal,PT,1053
+2017,AI & Machine Learning,C119857082,Palau,PW,1
+2017,AI & Machine Learning,C119857082,Paraguay,PY,19
+2017,AI & Machine Learning,C119857082,Qatar,QA,168
+2017,AI & Machine Learning,C119857082,Réunion,RE,9
+2017,AI & Machine Learning,C119857082,Romania,RO,612
+2017,AI & Machine Learning,C119857082,Serbia,RS,318
+2017,AI & Machine Learning,C119857082,Russian Federation,RU,2362
+2017,AI & Machine Learning,C119857082,Rwanda,RW,12
+2017,AI & Machine Learning,C119857082,Saudi Arabia,SA,900
+2017,AI & Machine Learning,C119857082,Seychelles,SC,2
+2017,AI & Machine Learning,C119857082,Sudan,SD,36
+2017,AI & Machine Learning,C119857082,Sweden,SE,1366
+2017,AI & Machine Learning,C119857082,Singapore,SG,1207
+2017,AI & Machine Learning,C119857082,Slovenia,SI,236
+2017,AI & Machine Learning,C119857082,Svalbard and Jan Mayen,SJ,1
+2017,AI & Machine Learning,C119857082,Slovakia,SK,257
+2017,AI & Machine Learning,C119857082,Sierra Leone,SL,4
+2017,AI & Machine Learning,C119857082,San Marino,SM,2
+2017,AI & Machine Learning,C119857082,Senegal,SN,21
+2017,AI & Machine Learning,C119857082,Somalia,SO,5
+2017,AI & Machine Learning,C119857082,Suriname,SR,1
+2017,AI & Machine Learning,C119857082,South Sudan,SS,28
+2017,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,1
+2017,AI & Machine Learning,C119857082,El Salvador,SV,1
+2017,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,9
+2017,AI & Machine Learning,C119857082,Eswatini,SZ,4
+2017,AI & Machine Learning,C119857082,Togo,TG,2
+2017,AI & Machine Learning,C119857082,Thailand,TH,614
+2017,AI & Machine Learning,C119857082,Tajikistan,TJ,26
+2017,AI & Machine Learning,C119857082,Turkmenistan,TM,2
+2017,AI & Machine Learning,C119857082,Tunisia,TN,543
+2017,AI & Machine Learning,C119857082,Tonga,TO,2
+2017,AI & Machine Learning,C119857082,Turkey,TR,1768
+2017,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,16
+2017,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1628
+2017,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,68
+2017,AI & Machine Learning,C119857082,Ukraine,UA,520
+2017,AI & Machine Learning,C119857082,Uganda,UG,72
+2017,AI & Machine Learning,C119857082,United States of America,US,27755
+2017,AI & Machine Learning,C119857082,Uruguay,UY,42
+2017,AI & Machine Learning,C119857082,Uzbekistan,UZ,22
+2017,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,34
+2017,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,12
+2017,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,2
+2017,AI & Machine Learning,C119857082,Viet Nam,VN,430
+2017,AI & Machine Learning,C119857082,Samoa,WS,1
+2017,AI & Machine Learning,C119857082,Kosovo,XK,20
+2017,AI & Machine Learning,C119857082,Yemen,YE,37
+2017,AI & Machine Learning,C119857082,South Africa,ZA,916
+2017,AI & Machine Learning,C119857082,Zambia,ZM,21
+2017,AI & Machine Learning,C119857082,Zimbabwe,ZW,38
 2017,CRISPR & Genomics,C98108389,United Arab Emirates,AE,1
 2017,CRISPR & Genomics,C98108389,Argentina,AR,6
 2017,CRISPR & Genomics,C98108389,Austria,AT,35
@@ -13387,206 +20559,204 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2017,Robotics & Automation,C34413123,Kosovo,XK,1
 2017,Robotics & Automation,C34413123,Yemen,YE,1
 2017,Robotics & Automation,C34413123,South Africa,ZA,9
-2018,AI & Machine Learning,C154945302,Andorra,AD,2
-2018,AI & Machine Learning,C154945302,United Arab Emirates,AE,1303
-2018,AI & Machine Learning,C154945302,Afghanistan,AF,27
-2018,AI & Machine Learning,C154945302,Albania,AL,121
-2018,AI & Machine Learning,C154945302,Armenia,AM,109
-2018,AI & Machine Learning,C154945302,Angola,AO,8
-2018,AI & Machine Learning,C154945302,Argentina,AR,1249
-2018,AI & Machine Learning,C154945302,American Samoa,AS,2
-2018,AI & Machine Learning,C154945302,Austria,AT,3647
-2018,AI & Machine Learning,C154945302,Australia,AU,13504
-2018,AI & Machine Learning,C154945302,Azerbaijan,AZ,236
-2018,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,317
-2018,AI & Machine Learning,C154945302,Barbados,BB,8
-2018,AI & Machine Learning,C154945302,Bangladesh,BD,1443
-2018,AI & Machine Learning,C154945302,Belgium,BE,4813
-2018,AI & Machine Learning,C154945302,Burkina Faso,BF,33
-2018,AI & Machine Learning,C154945302,Bulgaria,BG,916
-2018,AI & Machine Learning,C154945302,Bahrain,BH,102
-2018,AI & Machine Learning,C154945302,Burundi,BI,76
-2018,AI & Machine Learning,C154945302,Benin,BJ,56
-2018,AI & Machine Learning,C154945302,Brunei Darussalam,BN,63
-2018,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,69
-2018,AI & Machine Learning,C154945302,Brazil,BR,9224
-2018,AI & Machine Learning,C154945302,Bahamas,BS,2
-2018,AI & Machine Learning,C154945302,Bhutan,BT,11
-2018,AI & Machine Learning,C154945302,Botswana,BW,64
-2018,AI & Machine Learning,C154945302,Belarus,BY,289
-2018,AI & Machine Learning,C154945302,Belize,BZ,3
-2018,AI & Machine Learning,C154945302,Canada,CA,15898
-2018,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,17
-2018,AI & Machine Learning,C154945302,Central African Republic,CF,2
-2018,AI & Machine Learning,C154945302,Congo,CG,8
-2018,AI & Machine Learning,C154945302,Switzerland,CH,6344
-2018,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,52
-2018,AI & Machine Learning,C154945302,Chile,CL,1494
-2018,AI & Machine Learning,C154945302,Cameroon,CM,207
-2018,AI & Machine Learning,C154945302,China,CN,99403
-2018,AI & Machine Learning,C154945302,Colombia,CO,1679
-2018,AI & Machine Learning,C154945302,Costa Rica,CR,165
-2018,AI & Machine Learning,C154945302,Cuba,CU,328
-2018,AI & Machine Learning,C154945302,Cabo Verde,CV,2
-2018,AI & Machine Learning,C154945302,Curaçao,CW,4
-2018,AI & Machine Learning,C154945302,Cyprus,CY,631
-2018,AI & Machine Learning,C154945302,Czechia,CZ,3134
-2018,AI & Machine Learning,C154945302,Germany,DE,24491
-2018,AI & Machine Learning,C154945302,Denmark,DK,3643
-2018,AI & Machine Learning,C154945302,Dominica,DM,3
-2018,AI & Machine Learning,C154945302,Dominican Republic,DO,37
-2018,AI & Machine Learning,C154945302,Algeria,DZ,2456
-2018,AI & Machine Learning,C154945302,Ecuador,EC,847
-2018,AI & Machine Learning,C154945302,Estonia,EE,385
-2018,AI & Machine Learning,C154945302,Egypt,EG,2843
-2018,AI & Machine Learning,C154945302,Spain,ES,11611
-2018,AI & Machine Learning,C154945302,Ethiopia,ET,335
-2018,AI & Machine Learning,C154945302,Finland,FI,3158
-2018,AI & Machine Learning,C154945302,Fiji,FJ,63
-2018,AI & Machine Learning,C154945302,Faroe Islands,FO,12
-2018,AI & Machine Learning,C154945302,France,FR,20640
-2018,AI & Machine Learning,C154945302,Gabon,GA,7
-2018,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,30330
-2018,AI & Machine Learning,C154945302,Grenada,GD,6
-2018,AI & Machine Learning,C154945302,Georgia,GE,88
-2018,AI & Machine Learning,C154945302,French Guiana,GF,2
-2018,AI & Machine Learning,C154945302,Ghana,GH,302
-2018,AI & Machine Learning,C154945302,Gibraltar,GI,2
-2018,AI & Machine Learning,C154945302,Greenland,GL,3
-2018,AI & Machine Learning,C154945302,Gambia,GM,8
-2018,AI & Machine Learning,C154945302,Guadeloupe,GP,30
-2018,AI & Machine Learning,C154945302,Greece,GR,2968
-2018,AI & Machine Learning,C154945302,Guatemala,GT,43
-2018,AI & Machine Learning,C154945302,Guam,GU,4
-2018,AI & Machine Learning,C154945302,Guyana,GY,2
-2018,AI & Machine Learning,C154945302,Hong Kong,HK,4611
-2018,AI & Machine Learning,C154945302,Honduras,HN,21
-2018,AI & Machine Learning,C154945302,Croatia,HR,801
-2018,AI & Machine Learning,C154945302,Haiti,HT,3
-2018,AI & Machine Learning,C154945302,Hungary,HU,1603
-2018,AI & Machine Learning,C154945302,Indonesia,ID,13970
-2018,AI & Machine Learning,C154945302,Ireland,IE,2003
-2018,AI & Machine Learning,C154945302,Israel,IL,3170
-2018,AI & Machine Learning,C154945302,India,IN,30796
-2018,AI & Machine Learning,C154945302,Iraq,IQ,1323
-2018,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,9464
-2018,AI & Machine Learning,C154945302,Iceland,IS,190
-2018,AI & Machine Learning,C154945302,Italy,IT,14760
-2018,AI & Machine Learning,C154945302,Jersey,JE,2
-2018,AI & Machine Learning,C154945302,Jamaica,JM,39
-2018,AI & Machine Learning,C154945302,Jordan,JO,825
-2018,AI & Machine Learning,C154945302,Japan,JP,20105
-2018,AI & Machine Learning,C154945302,Kenya,KE,307
-2018,AI & Machine Learning,C154945302,Kyrgyzstan,KG,25
-2018,AI & Machine Learning,C154945302,Cambodia,KH,49
-2018,AI & Machine Learning,C154945302,Kiribati,KI,3
-2018,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,7
-2018,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,16
-2018,AI & Machine Learning,C154945302,"Korea, Republic of",KR,10922
-2018,AI & Machine Learning,C154945302,Kuwait,KW,256
-2018,AI & Machine Learning,C154945302,Cayman Islands,KY,7
-2018,AI & Machine Learning,C154945302,Kazakhstan,KZ,534
-2018,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,14
-2018,AI & Machine Learning,C154945302,Lebanon,LB,534
-2018,AI & Machine Learning,C154945302,Saint Lucia,LC,4
-2018,AI & Machine Learning,C154945302,Liechtenstein,LI,20
-2018,AI & Machine Learning,C154945302,Sri Lanka,LK,414
-2018,AI & Machine Learning,C154945302,Lesotho,LS,4
-2018,AI & Machine Learning,C154945302,Lithuania,LT,521
-2018,AI & Machine Learning,C154945302,Luxembourg,LU,495
-2018,AI & Machine Learning,C154945302,Latvia,LV,323
-2018,AI & Machine Learning,C154945302,Libya,LY,87
-2018,AI & Machine Learning,C154945302,Morocco,MA,1736
-2018,AI & Machine Learning,C154945302,Monaco,MC,9
-2018,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,84
-2018,AI & Machine Learning,C154945302,Montenegro,ME,95
-2018,AI & Machine Learning,C154945302,Saint Martin (French part),MF,3
-2018,AI & Machine Learning,C154945302,Madagascar,MG,16
-2018,AI & Machine Learning,C154945302,North Macedonia,MK,267
-2018,AI & Machine Learning,C154945302,Mali,ML,21
-2018,AI & Machine Learning,C154945302,Myanmar,MM,159
-2018,AI & Machine Learning,C154945302,Mongolia,MN,93
-2018,AI & Machine Learning,C154945302,Macao,MO,692
-2018,AI & Machine Learning,C154945302,Martinique,MQ,5
-2018,AI & Machine Learning,C154945302,Mauritania,MR,8
-2018,AI & Machine Learning,C154945302,Malta,MT,191
-2018,AI & Machine Learning,C154945302,Mauritius,MU,51
-2018,AI & Machine Learning,C154945302,Maldives,MV,3
-2018,AI & Machine Learning,C154945302,Malawi,MW,23
-2018,AI & Machine Learning,C154945302,Mexico,MX,3758
-2018,AI & Machine Learning,C154945302,Malaysia,MY,5688
-2018,AI & Machine Learning,C154945302,Mozambique,MZ,65
-2018,AI & Machine Learning,C154945302,Namibia,NA,36
-2018,AI & Machine Learning,C154945302,New Caledonia,NC,4
-2018,AI & Machine Learning,C154945302,Niger,NE,17
-2018,AI & Machine Learning,C154945302,Nigeria,NG,1047
-2018,AI & Machine Learning,C154945302,Nicaragua,NI,18
-2018,AI & Machine Learning,C154945302,Netherlands,NL,8966
-2018,AI & Machine Learning,C154945302,Norway,NO,3034
-2018,AI & Machine Learning,C154945302,Nepal,NP,299
-2018,AI & Machine Learning,C154945302,Niue,NU,2
-2018,AI & Machine Learning,C154945302,New Zealand,NZ,2109
-2018,AI & Machine Learning,C154945302,Oman,OM,286
-2018,AI & Machine Learning,C154945302,Panama,PA,61
-2018,AI & Machine Learning,C154945302,Peru,PE,420
-2018,AI & Machine Learning,C154945302,French Polynesia,PF,15
-2018,AI & Machine Learning,C154945302,Papua New Guinea,PG,20
-2018,AI & Machine Learning,C154945302,Philippines,PH,731
-2018,AI & Machine Learning,C154945302,Pakistan,PK,3129
-2018,AI & Machine Learning,C154945302,Poland,PL,7274
-2018,AI & Machine Learning,C154945302,Puerto Rico,PR,141
-2018,AI & Machine Learning,C154945302,"Palestine, State of",PS,127
-2018,AI & Machine Learning,C154945302,Portugal,PT,3686
-2018,AI & Machine Learning,C154945302,Palau,PW,3
-2018,AI & Machine Learning,C154945302,Paraguay,PY,56
-2018,AI & Machine Learning,C154945302,Qatar,QA,776
-2018,AI & Machine Learning,C154945302,Réunion,RE,20
-2018,AI & Machine Learning,C154945302,Romania,RO,2662
-2018,AI & Machine Learning,C154945302,Serbia,RS,1112
-2018,AI & Machine Learning,C154945302,Russian Federation,RU,13084
-2018,AI & Machine Learning,C154945302,Rwanda,RW,33
-2018,AI & Machine Learning,C154945302,Saudi Arabia,SA,3108
-2018,AI & Machine Learning,C154945302,Sudan,SD,171
-2018,AI & Machine Learning,C154945302,Sweden,SE,4996
-2018,AI & Machine Learning,C154945302,Singapore,SG,4536
-2018,AI & Machine Learning,C154945302,Slovenia,SI,869
-2018,AI & Machine Learning,C154945302,Svalbard and Jan Mayen,SJ,2
-2018,AI & Machine Learning,C154945302,Slovakia,SK,1218
-2018,AI & Machine Learning,C154945302,Sierra Leone,SL,9
-2018,AI & Machine Learning,C154945302,San Marino,SM,8
-2018,AI & Machine Learning,C154945302,Senegal,SN,87
-2018,AI & Machine Learning,C154945302,Somalia,SO,10
-2018,AI & Machine Learning,C154945302,South Sudan,SS,117
-2018,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,2
-2018,AI & Machine Learning,C154945302,El Salvador,SV,18
-2018,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,48
-2018,AI & Machine Learning,C154945302,Eswatini,SZ,6
-2018,AI & Machine Learning,C154945302,Chad,TD,4
-2018,AI & Machine Learning,C154945302,Togo,TG,11
-2018,AI & Machine Learning,C154945302,Thailand,TH,2119
-2018,AI & Machine Learning,C154945302,Tajikistan,TJ,97
-2018,AI & Machine Learning,C154945302,Timor-Leste,TL,11
-2018,AI & Machine Learning,C154945302,Turkmenistan,TM,5
-2018,AI & Machine Learning,C154945302,Tunisia,TN,1888
-2018,AI & Machine Learning,C154945302,Turkey,TR,6129
-2018,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,29
-2018,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,5646
-2018,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,113
-2018,AI & Machine Learning,C154945302,Ukraine,UA,2973
-2018,AI & Machine Learning,C154945302,Uganda,UG,110
-2018,AI & Machine Learning,C154945302,United States of America,US,97562
-2018,AI & Machine Learning,C154945302,Uruguay,UY,159
-2018,AI & Machine Learning,C154945302,Uzbekistan,UZ,87
-2018,AI & Machine Learning,C154945302,Holy See,VA,5
-2018,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,150
-2018,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,77
-2018,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,4
-2018,AI & Machine Learning,C154945302,Viet Nam,VN,1775
-2018,AI & Machine Learning,C154945302,Kosovo,XK,90
-2018,AI & Machine Learning,C154945302,Yemen,YE,164
-2018,AI & Machine Learning,C154945302,South Africa,ZA,2175
-2018,AI & Machine Learning,C154945302,Zambia,ZM,41
-2018,AI & Machine Learning,C154945302,Zimbabwe,ZW,77
+2018,AI & Machine Learning,C119857082,United Arab Emirates,AE,487
+2018,AI & Machine Learning,C119857082,Afghanistan,AF,10
+2018,AI & Machine Learning,C119857082,Albania,AL,42
+2018,AI & Machine Learning,C119857082,Armenia,AM,30
+2018,AI & Machine Learning,C119857082,Angola,AO,6
+2018,AI & Machine Learning,C119857082,Argentina,AR,332
+2018,AI & Machine Learning,C119857082,American Samoa,AS,1
+2018,AI & Machine Learning,C119857082,Austria,AT,1005
+2018,AI & Machine Learning,C119857082,Australia,AU,5075
+2018,AI & Machine Learning,C119857082,Azerbaijan,AZ,59
+2018,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,89
+2018,AI & Machine Learning,C119857082,Barbados,BB,4
+2018,AI & Machine Learning,C119857082,Bangladesh,BD,467
+2018,AI & Machine Learning,C119857082,Belgium,BE,1359
+2018,AI & Machine Learning,C119857082,Burkina Faso,BF,19
+2018,AI & Machine Learning,C119857082,Bulgaria,BG,242
+2018,AI & Machine Learning,C119857082,Bahrain,BH,44
+2018,AI & Machine Learning,C119857082,Burundi,BI,28
+2018,AI & Machine Learning,C119857082,Benin,BJ,16
+2018,AI & Machine Learning,C119857082,Bermuda,BM,1
+2018,AI & Machine Learning,C119857082,Brunei Darussalam,BN,23
+2018,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,26
+2018,AI & Machine Learning,C119857082,Brazil,BR,2964
+2018,AI & Machine Learning,C119857082,Bahamas,BS,1
+2018,AI & Machine Learning,C119857082,Bhutan,BT,4
+2018,AI & Machine Learning,C119857082,Botswana,BW,16
+2018,AI & Machine Learning,C119857082,Belarus,BY,74
+2018,AI & Machine Learning,C119857082,Belize,BZ,1
+2018,AI & Machine Learning,C119857082,Canada,CA,5057
+2018,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,7
+2018,AI & Machine Learning,C119857082,Congo,CG,5
+2018,AI & Machine Learning,C119857082,Switzerland,CH,1870
+2018,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,32
+2018,AI & Machine Learning,C119857082,Chile,CL,473
+2018,AI & Machine Learning,C119857082,Cameroon,CM,73
+2018,AI & Machine Learning,C119857082,China,CN,26999
+2018,AI & Machine Learning,C119857082,Colombia,CO,501
+2018,AI & Machine Learning,C119857082,Costa Rica,CR,45
+2018,AI & Machine Learning,C119857082,Cuba,CU,100
+2018,AI & Machine Learning,C119857082,Curaçao,CW,3
+2018,AI & Machine Learning,C119857082,Cyprus,CY,241
+2018,AI & Machine Learning,C119857082,Czechia,CZ,745
+2018,AI & Machine Learning,C119857082,Germany,DE,6026
+2018,AI & Machine Learning,C119857082,Djibouti,DJ,1
+2018,AI & Machine Learning,C119857082,Denmark,DK,888
+2018,AI & Machine Learning,C119857082,Dominica,DM,1
+2018,AI & Machine Learning,C119857082,Dominican Republic,DO,13
+2018,AI & Machine Learning,C119857082,Algeria,DZ,593
+2018,AI & Machine Learning,C119857082,Ecuador,EC,206
+2018,AI & Machine Learning,C119857082,Estonia,EE,114
+2018,AI & Machine Learning,C119857082,Egypt,EG,863
+2018,AI & Machine Learning,C119857082,Eritrea,ER,4
+2018,AI & Machine Learning,C119857082,Spain,ES,3617
+2018,AI & Machine Learning,C119857082,Ethiopia,ET,238
+2018,AI & Machine Learning,C119857082,Finland,FI,1042
+2018,AI & Machine Learning,C119857082,Fiji,FJ,28
+2018,AI & Machine Learning,C119857082,Faroe Islands,FO,4
+2018,AI & Machine Learning,C119857082,France,FR,5168
+2018,AI & Machine Learning,C119857082,Gabon,GA,4
+2018,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,10158
+2018,AI & Machine Learning,C119857082,Grenada,GD,2
+2018,AI & Machine Learning,C119857082,Georgia,GE,44
+2018,AI & Machine Learning,C119857082,French Guiana,GF,1
+2018,AI & Machine Learning,C119857082,Ghana,GH,234
+2018,AI & Machine Learning,C119857082,Gambia,GM,2
+2018,AI & Machine Learning,C119857082,Guinea,GN,2
+2018,AI & Machine Learning,C119857082,Guadeloupe,GP,3
+2018,AI & Machine Learning,C119857082,Greece,GR,925
+2018,AI & Machine Learning,C119857082,Guatemala,GT,13
+2018,AI & Machine Learning,C119857082,Guam,GU,8
+2018,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2018,AI & Machine Learning,C119857082,Guyana,GY,8
+2018,AI & Machine Learning,C119857082,Hong Kong,HK,1567
+2018,AI & Machine Learning,C119857082,Honduras,HN,9
+2018,AI & Machine Learning,C119857082,Croatia,HR,217
+2018,AI & Machine Learning,C119857082,Haiti,HT,4
+2018,AI & Machine Learning,C119857082,Hungary,HU,408
+2018,AI & Machine Learning,C119857082,Indonesia,ID,3865
+2018,AI & Machine Learning,C119857082,Ireland,IE,671
+2018,AI & Machine Learning,C119857082,Israel,IL,910
+2018,AI & Machine Learning,C119857082,Isle of Man,IM,1
+2018,AI & Machine Learning,C119857082,India,IN,8967
+2018,AI & Machine Learning,C119857082,Iraq,IQ,332
+2018,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3269
+2018,AI & Machine Learning,C119857082,Iceland,IS,75
+2018,AI & Machine Learning,C119857082,Italy,IT,4071
+2018,AI & Machine Learning,C119857082,Jamaica,JM,10
+2018,AI & Machine Learning,C119857082,Jordan,JO,355
+2018,AI & Machine Learning,C119857082,Japan,JP,3854
+2018,AI & Machine Learning,C119857082,Kenya,KE,209
+2018,AI & Machine Learning,C119857082,Kyrgyzstan,KG,12
+2018,AI & Machine Learning,C119857082,Cambodia,KH,31
+2018,AI & Machine Learning,C119857082,Kiribati,KI,2
+2018,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,2
+2018,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,6
+2018,AI & Machine Learning,C119857082,"Korea, Republic of",KR,3070
+2018,AI & Machine Learning,C119857082,Kuwait,KW,93
+2018,AI & Machine Learning,C119857082,Cayman Islands,KY,1
+2018,AI & Machine Learning,C119857082,Kazakhstan,KZ,166
+2018,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,8
+2018,AI & Machine Learning,C119857082,Lebanon,LB,176
+2018,AI & Machine Learning,C119857082,Liechtenstein,LI,11
+2018,AI & Machine Learning,C119857082,Sri Lanka,LK,159
+2018,AI & Machine Learning,C119857082,Liberia,LR,2
+2018,AI & Machine Learning,C119857082,Lesotho,LS,3
+2018,AI & Machine Learning,C119857082,Lithuania,LT,171
+2018,AI & Machine Learning,C119857082,Luxembourg,LU,145
+2018,AI & Machine Learning,C119857082,Latvia,LV,88
+2018,AI & Machine Learning,C119857082,Libya,LY,21
+2018,AI & Machine Learning,C119857082,Morocco,MA,534
+2018,AI & Machine Learning,C119857082,Monaco,MC,4
+2018,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,25
+2018,AI & Machine Learning,C119857082,Montenegro,ME,22
+2018,AI & Machine Learning,C119857082,Madagascar,MG,6
+2018,AI & Machine Learning,C119857082,North Macedonia,MK,106
+2018,AI & Machine Learning,C119857082,Mali,ML,9
+2018,AI & Machine Learning,C119857082,Myanmar,MM,33
+2018,AI & Machine Learning,C119857082,Mongolia,MN,28
+2018,AI & Machine Learning,C119857082,Macao,MO,220
+2018,AI & Machine Learning,C119857082,Northern Mariana Islands,MP,1
+2018,AI & Machine Learning,C119857082,Martinique,MQ,2
+2018,AI & Machine Learning,C119857082,Mauritania,MR,3
+2018,AI & Machine Learning,C119857082,Malta,MT,50
+2018,AI & Machine Learning,C119857082,Mauritius,MU,35
+2018,AI & Machine Learning,C119857082,Maldives,MV,2
+2018,AI & Machine Learning,C119857082,Malawi,MW,21
+2018,AI & Machine Learning,C119857082,Mexico,MX,971
+2018,AI & Machine Learning,C119857082,Malaysia,MY,2052
+2018,AI & Machine Learning,C119857082,Mozambique,MZ,35
+2018,AI & Machine Learning,C119857082,Namibia,NA,22
+2018,AI & Machine Learning,C119857082,New Caledonia,NC,2
+2018,AI & Machine Learning,C119857082,Niger,NE,5
+2018,AI & Machine Learning,C119857082,Nigeria,NG,616
+2018,AI & Machine Learning,C119857082,Nicaragua,NI,6
+2018,AI & Machine Learning,C119857082,Netherlands,NL,2854
+2018,AI & Machine Learning,C119857082,Norway,NO,1004
+2018,AI & Machine Learning,C119857082,Nepal,NP,100
+2018,AI & Machine Learning,C119857082,New Zealand,NZ,801
+2018,AI & Machine Learning,C119857082,Oman,OM,112
+2018,AI & Machine Learning,C119857082,Panama,PA,15
+2018,AI & Machine Learning,C119857082,Peru,PE,124
+2018,AI & Machine Learning,C119857082,French Polynesia,PF,5
+2018,AI & Machine Learning,C119857082,Papua New Guinea,PG,4
+2018,AI & Machine Learning,C119857082,Philippines,PH,268
+2018,AI & Machine Learning,C119857082,Pakistan,PK,1061
+2018,AI & Machine Learning,C119857082,Poland,PL,1911
+2018,AI & Machine Learning,C119857082,Puerto Rico,PR,49
+2018,AI & Machine Learning,C119857082,"Palestine, State of",PS,59
+2018,AI & Machine Learning,C119857082,Portugal,PT,1217
+2018,AI & Machine Learning,C119857082,Palau,PW,2
+2018,AI & Machine Learning,C119857082,Paraguay,PY,14
+2018,AI & Machine Learning,C119857082,Qatar,QA,221
+2018,AI & Machine Learning,C119857082,Réunion,RE,9
+2018,AI & Machine Learning,C119857082,Romania,RO,649
+2018,AI & Machine Learning,C119857082,Serbia,RS,290
+2018,AI & Machine Learning,C119857082,Russian Federation,RU,3026
+2018,AI & Machine Learning,C119857082,Rwanda,RW,14
+2018,AI & Machine Learning,C119857082,Saudi Arabia,SA,1130
+2018,AI & Machine Learning,C119857082,Seychelles,SC,1
+2018,AI & Machine Learning,C119857082,Sudan,SD,40
+2018,AI & Machine Learning,C119857082,Sweden,SE,1604
+2018,AI & Machine Learning,C119857082,Singapore,SG,1423
+2018,AI & Machine Learning,C119857082,Slovenia,SI,265
+2018,AI & Machine Learning,C119857082,Svalbard and Jan Mayen,SJ,1
+2018,AI & Machine Learning,C119857082,Slovakia,SK,291
+2018,AI & Machine Learning,C119857082,Sierra Leone,SL,5
+2018,AI & Machine Learning,C119857082,San Marino,SM,1
+2018,AI & Machine Learning,C119857082,Senegal,SN,36
+2018,AI & Machine Learning,C119857082,Somalia,SO,4
+2018,AI & Machine Learning,C119857082,South Sudan,SS,38
+2018,AI & Machine Learning,C119857082,El Salvador,SV,7
+2018,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,13
+2018,AI & Machine Learning,C119857082,Eswatini,SZ,2
+2018,AI & Machine Learning,C119857082,Togo,TG,5
+2018,AI & Machine Learning,C119857082,Thailand,TH,740
+2018,AI & Machine Learning,C119857082,Tajikistan,TJ,30
+2018,AI & Machine Learning,C119857082,Timor-Leste,TL,4
+2018,AI & Machine Learning,C119857082,Turkmenistan,TM,1
+2018,AI & Machine Learning,C119857082,Tunisia,TN,509
+2018,AI & Machine Learning,C119857082,Tonga,TO,2
+2018,AI & Machine Learning,C119857082,Turkey,TR,1885
+2018,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,20
+2018,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,1789
+2018,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,71
+2018,AI & Machine Learning,C119857082,Ukraine,UA,779
+2018,AI & Machine Learning,C119857082,Uganda,UG,74
+2018,AI & Machine Learning,C119857082,United States of America,US,32268
+2018,AI & Machine Learning,C119857082,Uruguay,UY,52
+2018,AI & Machine Learning,C119857082,Uzbekistan,UZ,20
+2018,AI & Machine Learning,C119857082,Holy See,VA,2
+2018,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,43
+2018,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,30
+2018,AI & Machine Learning,C119857082,Viet Nam,VN,691
+2018,AI & Machine Learning,C119857082,Kosovo,XK,31
+2018,AI & Machine Learning,C119857082,Yemen,YE,59
+2018,AI & Machine Learning,C119857082,South Africa,ZA,989
+2018,AI & Machine Learning,C119857082,Zambia,ZM,24
+2018,AI & Machine Learning,C119857082,Zimbabwe,ZW,30
 2018,CRISPR & Genomics,C98108389,United Arab Emirates,AE,3
 2018,CRISPR & Genomics,C98108389,Argentina,AR,5
 2018,CRISPR & Genomics,C98108389,Austria,AT,32
@@ -14368,206 +21538,202 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2018,Robotics & Automation,C34413123,Viet Nam,VN,5
 2018,Robotics & Automation,C34413123,Kosovo,XK,1
 2018,Robotics & Automation,C34413123,South Africa,ZA,12
-2019,AI & Machine Learning,C154945302,Andorra,AD,3
-2019,AI & Machine Learning,C154945302,United Arab Emirates,AE,1757
-2019,AI & Machine Learning,C154945302,Afghanistan,AF,34
-2019,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,7
-2019,AI & Machine Learning,C154945302,Albania,AL,94
-2019,AI & Machine Learning,C154945302,Armenia,AM,105
-2019,AI & Machine Learning,C154945302,Angola,AO,12
-2019,AI & Machine Learning,C154945302,Argentina,AR,1188
-2019,AI & Machine Learning,C154945302,American Samoa,AS,2
-2019,AI & Machine Learning,C154945302,Austria,AT,3982
-2019,AI & Machine Learning,C154945302,Australia,AU,15164
-2019,AI & Machine Learning,C154945302,Aruba,AW,2
-2019,AI & Machine Learning,C154945302,Azerbaijan,AZ,223
-2019,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,333
-2019,AI & Machine Learning,C154945302,Barbados,BB,12
-2019,AI & Machine Learning,C154945302,Bangladesh,BD,2218
-2019,AI & Machine Learning,C154945302,Belgium,BE,5147
-2019,AI & Machine Learning,C154945302,Burkina Faso,BF,43
-2019,AI & Machine Learning,C154945302,Bulgaria,BG,1130
-2019,AI & Machine Learning,C154945302,Bahrain,BH,116
-2019,AI & Machine Learning,C154945302,Burundi,BI,97
-2019,AI & Machine Learning,C154945302,Benin,BJ,47
-2019,AI & Machine Learning,C154945302,Bermuda,BM,2
-2019,AI & Machine Learning,C154945302,Brunei Darussalam,BN,63
-2019,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,72
-2019,AI & Machine Learning,C154945302,Brazil,BR,9922
-2019,AI & Machine Learning,C154945302,Bahamas,BS,5
-2019,AI & Machine Learning,C154945302,Bhutan,BT,19
-2019,AI & Machine Learning,C154945302,Botswana,BW,56
-2019,AI & Machine Learning,C154945302,Belarus,BY,467
-2019,AI & Machine Learning,C154945302,Belize,BZ,5
-2019,AI & Machine Learning,C154945302,Canada,CA,17664
-2019,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,20
-2019,AI & Machine Learning,C154945302,Central African Republic,CF,2
-2019,AI & Machine Learning,C154945302,Congo,CG,13
-2019,AI & Machine Learning,C154945302,Switzerland,CH,7231
-2019,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,63
-2019,AI & Machine Learning,C154945302,Chile,CL,1544
-2019,AI & Machine Learning,C154945302,Cameroon,CM,232
-2019,AI & Machine Learning,C154945302,China,CN,121511
-2019,AI & Machine Learning,C154945302,Colombia,CO,1992
-2019,AI & Machine Learning,C154945302,Costa Rica,CR,195
-2019,AI & Machine Learning,C154945302,Cuba,CU,353
-2019,AI & Machine Learning,C154945302,Cabo Verde,CV,2
-2019,AI & Machine Learning,C154945302,Curaçao,CW,5
-2019,AI & Machine Learning,C154945302,Cyprus,CY,718
-2019,AI & Machine Learning,C154945302,Czechia,CZ,3359
-2019,AI & Machine Learning,C154945302,Germany,DE,27977
-2019,AI & Machine Learning,C154945302,Djibouti,DJ,2
-2019,AI & Machine Learning,C154945302,Denmark,DK,4442
-2019,AI & Machine Learning,C154945302,Dominican Republic,DO,54
-2019,AI & Machine Learning,C154945302,Algeria,DZ,2242
-2019,AI & Machine Learning,C154945302,Ecuador,EC,856
-2019,AI & Machine Learning,C154945302,Estonia,EE,541
-2019,AI & Machine Learning,C154945302,Egypt,EG,3407
-2019,AI & Machine Learning,C154945302,Spain,ES,12599
-2019,AI & Machine Learning,C154945302,Ethiopia,ET,443
-2019,AI & Machine Learning,C154945302,Finland,FI,3578
-2019,AI & Machine Learning,C154945302,Fiji,FJ,75
-2019,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,2
-2019,AI & Machine Learning,C154945302,Faroe Islands,FO,11
-2019,AI & Machine Learning,C154945302,France,FR,21714
-2019,AI & Machine Learning,C154945302,Gabon,GA,7
-2019,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,33355
-2019,AI & Machine Learning,C154945302,Grenada,GD,8
-2019,AI & Machine Learning,C154945302,Georgia,GE,96
-2019,AI & Machine Learning,C154945302,French Guiana,GF,14
-2019,AI & Machine Learning,C154945302,Ghana,GH,513
-2019,AI & Machine Learning,C154945302,Gibraltar,GI,3
-2019,AI & Machine Learning,C154945302,Greenland,GL,4
-2019,AI & Machine Learning,C154945302,Gambia,GM,3
-2019,AI & Machine Learning,C154945302,Guadeloupe,GP,17
-2019,AI & Machine Learning,C154945302,Greece,GR,3145
-2019,AI & Machine Learning,C154945302,Guatemala,GT,47
-2019,AI & Machine Learning,C154945302,Guam,GU,8
-2019,AI & Machine Learning,C154945302,Guyana,GY,3
-2019,AI & Machine Learning,C154945302,Hong Kong,HK,5495
-2019,AI & Machine Learning,C154945302,Honduras,HN,31
-2019,AI & Machine Learning,C154945302,Croatia,HR,845
-2019,AI & Machine Learning,C154945302,Haiti,HT,8
-2019,AI & Machine Learning,C154945302,Hungary,HU,2894
-2019,AI & Machine Learning,C154945302,Indonesia,ID,18110
-2019,AI & Machine Learning,C154945302,Ireland,IE,2367
-2019,AI & Machine Learning,C154945302,Israel,IL,3754
-2019,AI & Machine Learning,C154945302,Isle of Man,IM,2
-2019,AI & Machine Learning,C154945302,India,IN,31573
-2019,AI & Machine Learning,C154945302,Iraq,IQ,1930
-2019,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,10432
-2019,AI & Machine Learning,C154945302,Iceland,IS,199
-2019,AI & Machine Learning,C154945302,Italy,IT,19236
-2019,AI & Machine Learning,C154945302,Jamaica,JM,69
-2019,AI & Machine Learning,C154945302,Jordan,JO,1049
-2019,AI & Machine Learning,C154945302,Japan,JP,21149
-2019,AI & Machine Learning,C154945302,Kenya,KE,410
-2019,AI & Machine Learning,C154945302,Kyrgyzstan,KG,51
-2019,AI & Machine Learning,C154945302,Cambodia,KH,57
-2019,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,8
-2019,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,15
-2019,AI & Machine Learning,C154945302,"Korea, Republic of",KR,12382
-2019,AI & Machine Learning,C154945302,Kuwait,KW,303
-2019,AI & Machine Learning,C154945302,Cayman Islands,KY,31
-2019,AI & Machine Learning,C154945302,Kazakhstan,KZ,663
-2019,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,13
-2019,AI & Machine Learning,C154945302,Lebanon,LB,538
-2019,AI & Machine Learning,C154945302,Liechtenstein,LI,17
-2019,AI & Machine Learning,C154945302,Sri Lanka,LK,534
-2019,AI & Machine Learning,C154945302,Liberia,LR,3
-2019,AI & Machine Learning,C154945302,Lesotho,LS,8
-2019,AI & Machine Learning,C154945302,Lithuania,LT,582
-2019,AI & Machine Learning,C154945302,Luxembourg,LU,541
-2019,AI & Machine Learning,C154945302,Latvia,LV,394
-2019,AI & Machine Learning,C154945302,Libya,LY,92
-2019,AI & Machine Learning,C154945302,Morocco,MA,1881
-2019,AI & Machine Learning,C154945302,Monaco,MC,14
-2019,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,107
-2019,AI & Machine Learning,C154945302,Montenegro,ME,93
-2019,AI & Machine Learning,C154945302,Madagascar,MG,41
-2019,AI & Machine Learning,C154945302,North Macedonia,MK,276
-2019,AI & Machine Learning,C154945302,Mali,ML,35
-2019,AI & Machine Learning,C154945302,Myanmar,MM,207
-2019,AI & Machine Learning,C154945302,Mongolia,MN,105
-2019,AI & Machine Learning,C154945302,Macao,MO,815
-2019,AI & Machine Learning,C154945302,Martinique,MQ,5
-2019,AI & Machine Learning,C154945302,Mauritania,MR,9
-2019,AI & Machine Learning,C154945302,Montserrat,MS,2
-2019,AI & Machine Learning,C154945302,Malta,MT,186
-2019,AI & Machine Learning,C154945302,Mauritius,MU,74
-2019,AI & Machine Learning,C154945302,Maldives,MV,7
-2019,AI & Machine Learning,C154945302,Malawi,MW,32
-2019,AI & Machine Learning,C154945302,Mexico,MX,4239
-2019,AI & Machine Learning,C154945302,Malaysia,MY,5783
-2019,AI & Machine Learning,C154945302,Mozambique,MZ,89
-2019,AI & Machine Learning,C154945302,Namibia,NA,34
-2019,AI & Machine Learning,C154945302,New Caledonia,NC,4
-2019,AI & Machine Learning,C154945302,Niger,NE,19
-2019,AI & Machine Learning,C154945302,Nigeria,NG,1575
-2019,AI & Machine Learning,C154945302,Nicaragua,NI,24
-2019,AI & Machine Learning,C154945302,Netherlands,NL,10274
-2019,AI & Machine Learning,C154945302,Norway,NO,3466
-2019,AI & Machine Learning,C154945302,Nepal,NP,388
-2019,AI & Machine Learning,C154945302,New Zealand,NZ,2302
-2019,AI & Machine Learning,C154945302,Oman,OM,310
-2019,AI & Machine Learning,C154945302,Panama,PA,74
-2019,AI & Machine Learning,C154945302,Peru,PE,523
-2019,AI & Machine Learning,C154945302,French Polynesia,PF,10
-2019,AI & Machine Learning,C154945302,Papua New Guinea,PG,24
-2019,AI & Machine Learning,C154945302,Philippines,PH,1009
-2019,AI & Machine Learning,C154945302,Pakistan,PK,4051
-2019,AI & Machine Learning,C154945302,Poland,PL,7094
-2019,AI & Machine Learning,C154945302,Puerto Rico,PR,160
-2019,AI & Machine Learning,C154945302,"Palestine, State of",PS,197
-2019,AI & Machine Learning,C154945302,Portugal,PT,4242
-2019,AI & Machine Learning,C154945302,Paraguay,PY,71
-2019,AI & Machine Learning,C154945302,Qatar,QA,786
-2019,AI & Machine Learning,C154945302,Réunion,RE,36
-2019,AI & Machine Learning,C154945302,Romania,RO,2916
-2019,AI & Machine Learning,C154945302,Serbia,RS,1273
-2019,AI & Machine Learning,C154945302,Russian Federation,RU,16383
-2019,AI & Machine Learning,C154945302,Rwanda,RW,61
-2019,AI & Machine Learning,C154945302,Saudi Arabia,SA,4187
-2019,AI & Machine Learning,C154945302,Sudan,SD,203
-2019,AI & Machine Learning,C154945302,Sweden,SE,5642
-2019,AI & Machine Learning,C154945302,Singapore,SG,5210
-2019,AI & Machine Learning,C154945302,Slovenia,SI,957
-2019,AI & Machine Learning,C154945302,Slovakia,SK,1340
-2019,AI & Machine Learning,C154945302,Sierra Leone,SL,10
-2019,AI & Machine Learning,C154945302,San Marino,SM,6
-2019,AI & Machine Learning,C154945302,Senegal,SN,88
-2019,AI & Machine Learning,C154945302,Somalia,SO,10
-2019,AI & Machine Learning,C154945302,South Sudan,SS,138
-2019,AI & Machine Learning,C154945302,El Salvador,SV,18
-2019,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,103
-2019,AI & Machine Learning,C154945302,Eswatini,SZ,13
-2019,AI & Machine Learning,C154945302,Turks and Caicos Islands,TC,4
-2019,AI & Machine Learning,C154945302,Chad,TD,4
-2019,AI & Machine Learning,C154945302,Togo,TG,13
-2019,AI & Machine Learning,C154945302,Thailand,TH,2265
-2019,AI & Machine Learning,C154945302,Tajikistan,TJ,178
-2019,AI & Machine Learning,C154945302,Timor-Leste,TL,5
-2019,AI & Machine Learning,C154945302,Turkmenistan,TM,5
-2019,AI & Machine Learning,C154945302,Tunisia,TN,1798
-2019,AI & Machine Learning,C154945302,Turkey,TR,6812
-2019,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,36
-2019,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,6562
-2019,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,118
-2019,AI & Machine Learning,C154945302,Ukraine,UA,3984
-2019,AI & Machine Learning,C154945302,Uganda,UG,125
-2019,AI & Machine Learning,C154945302,United States of America,US,112801
-2019,AI & Machine Learning,C154945302,Uruguay,UY,179
-2019,AI & Machine Learning,C154945302,Uzbekistan,UZ,279
-2019,AI & Machine Learning,C154945302,Holy See,VA,4
-2019,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,169
-2019,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,80
-2019,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,4
-2019,AI & Machine Learning,C154945302,Viet Nam,VN,2580
-2019,AI & Machine Learning,C154945302,Kosovo,XK,72
-2019,AI & Machine Learning,C154945302,Yemen,YE,225
-2019,AI & Machine Learning,C154945302,South Africa,ZA,2443
-2019,AI & Machine Learning,C154945302,Zambia,ZM,59
-2019,AI & Machine Learning,C154945302,Zimbabwe,ZW,76
+2019,AI & Machine Learning,C119857082,United Arab Emirates,AE,689
+2019,AI & Machine Learning,C119857082,Afghanistan,AF,20
+2019,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2019,AI & Machine Learning,C119857082,Albania,AL,28
+2019,AI & Machine Learning,C119857082,Armenia,AM,29
+2019,AI & Machine Learning,C119857082,Angola,AO,6
+2019,AI & Machine Learning,C119857082,Argentina,AR,331
+2019,AI & Machine Learning,C119857082,American Samoa,AS,4
+2019,AI & Machine Learning,C119857082,Austria,AT,1092
+2019,AI & Machine Learning,C119857082,Australia,AU,5784
+2019,AI & Machine Learning,C119857082,Azerbaijan,AZ,56
+2019,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,97
+2019,AI & Machine Learning,C119857082,Barbados,BB,5
+2019,AI & Machine Learning,C119857082,Bangladesh,BD,903
+2019,AI & Machine Learning,C119857082,Belgium,BE,1524
+2019,AI & Machine Learning,C119857082,Burkina Faso,BF,18
+2019,AI & Machine Learning,C119857082,Bulgaria,BG,284
+2019,AI & Machine Learning,C119857082,Bahrain,BH,74
+2019,AI & Machine Learning,C119857082,Burundi,BI,32
+2019,AI & Machine Learning,C119857082,Benin,BJ,30
+2019,AI & Machine Learning,C119857082,Bermuda,BM,1
+2019,AI & Machine Learning,C119857082,Brunei Darussalam,BN,35
+2019,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,26
+2019,AI & Machine Learning,C119857082,Brazil,BR,3262
+2019,AI & Machine Learning,C119857082,Bahamas,BS,2
+2019,AI & Machine Learning,C119857082,Bhutan,BT,7
+2019,AI & Machine Learning,C119857082,Botswana,BW,30
+2019,AI & Machine Learning,C119857082,Belarus,BY,122
+2019,AI & Machine Learning,C119857082,Belize,BZ,4
+2019,AI & Machine Learning,C119857082,Canada,CA,6057
+2019,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,12
+2019,AI & Machine Learning,C119857082,Central African Republic,CF,1
+2019,AI & Machine Learning,C119857082,Congo,CG,1
+2019,AI & Machine Learning,C119857082,Switzerland,CH,2052
+2019,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,43
+2019,AI & Machine Learning,C119857082,Chile,CL,504
+2019,AI & Machine Learning,C119857082,Cameroon,CM,78
+2019,AI & Machine Learning,C119857082,China,CN,34582
+2019,AI & Machine Learning,C119857082,Colombia,CO,572
+2019,AI & Machine Learning,C119857082,Costa Rica,CR,60
+2019,AI & Machine Learning,C119857082,Cuba,CU,96
+2019,AI & Machine Learning,C119857082,Cyprus,CY,285
+2019,AI & Machine Learning,C119857082,Czechia,CZ,812
+2019,AI & Machine Learning,C119857082,Germany,DE,7349
+2019,AI & Machine Learning,C119857082,Denmark,DK,1088
+2019,AI & Machine Learning,C119857082,Dominican Republic,DO,22
+2019,AI & Machine Learning,C119857082,Algeria,DZ,616
+2019,AI & Machine Learning,C119857082,Ecuador,EC,254
+2019,AI & Machine Learning,C119857082,Estonia,EE,169
+2019,AI & Machine Learning,C119857082,Egypt,EG,1052
+2019,AI & Machine Learning,C119857082,Eritrea,ER,3
+2019,AI & Machine Learning,C119857082,Spain,ES,4149
+2019,AI & Machine Learning,C119857082,Ethiopia,ET,396
+2019,AI & Machine Learning,C119857082,Finland,FI,1175
+2019,AI & Machine Learning,C119857082,Fiji,FJ,33
+2019,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2019,AI & Machine Learning,C119857082,Faroe Islands,FO,3
+2019,AI & Machine Learning,C119857082,France,FR,5727
+2019,AI & Machine Learning,C119857082,Gabon,GA,3
+2019,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,11592
+2019,AI & Machine Learning,C119857082,Grenada,GD,2
+2019,AI & Machine Learning,C119857082,Georgia,GE,53
+2019,AI & Machine Learning,C119857082,French Guiana,GF,2
+2019,AI & Machine Learning,C119857082,Ghana,GH,328
+2019,AI & Machine Learning,C119857082,Gibraltar,GI,1
+2019,AI & Machine Learning,C119857082,Greenland,GL,4
+2019,AI & Machine Learning,C119857082,Gambia,GM,1
+2019,AI & Machine Learning,C119857082,Guinea,GN,1
+2019,AI & Machine Learning,C119857082,Guadeloupe,GP,2
+2019,AI & Machine Learning,C119857082,Equatorial Guinea,GQ,1
+2019,AI & Machine Learning,C119857082,Greece,GR,1073
+2019,AI & Machine Learning,C119857082,Guatemala,GT,9
+2019,AI & Machine Learning,C119857082,Guam,GU,6
+2019,AI & Machine Learning,C119857082,Hong Kong,HK,1881
+2019,AI & Machine Learning,C119857082,Honduras,HN,20
+2019,AI & Machine Learning,C119857082,Croatia,HR,253
+2019,AI & Machine Learning,C119857082,Haiti,HT,5
+2019,AI & Machine Learning,C119857082,Hungary,HU,514
+2019,AI & Machine Learning,C119857082,Indonesia,ID,5162
+2019,AI & Machine Learning,C119857082,Ireland,IE,816
+2019,AI & Machine Learning,C119857082,Israel,IL,1095
+2019,AI & Machine Learning,C119857082,Isle of Man,IM,1
+2019,AI & Machine Learning,C119857082,India,IN,10121
+2019,AI & Machine Learning,C119857082,Iraq,IQ,534
+2019,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3769
+2019,AI & Machine Learning,C119857082,Iceland,IS,56
+2019,AI & Machine Learning,C119857082,Italy,IT,4717
+2019,AI & Machine Learning,C119857082,Jamaica,JM,36
+2019,AI & Machine Learning,C119857082,Jordan,JO,471
+2019,AI & Machine Learning,C119857082,Japan,JP,4422
+2019,AI & Machine Learning,C119857082,Kenya,KE,301
+2019,AI & Machine Learning,C119857082,Kyrgyzstan,KG,14
+2019,AI & Machine Learning,C119857082,Cambodia,KH,29
+2019,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,2
+2019,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,7
+2019,AI & Machine Learning,C119857082,"Korea, Republic of",KR,3791
+2019,AI & Machine Learning,C119857082,Kuwait,KW,119
+2019,AI & Machine Learning,C119857082,Cayman Islands,KY,11
+2019,AI & Machine Learning,C119857082,Kazakhstan,KZ,227
+2019,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,7
+2019,AI & Machine Learning,C119857082,Lebanon,LB,204
+2019,AI & Machine Learning,C119857082,Saint Lucia,LC,1
+2019,AI & Machine Learning,C119857082,Liechtenstein,LI,6
+2019,AI & Machine Learning,C119857082,Sri Lanka,LK,211
+2019,AI & Machine Learning,C119857082,Liberia,LR,1
+2019,AI & Machine Learning,C119857082,Lesotho,LS,4
+2019,AI & Machine Learning,C119857082,Lithuania,LT,192
+2019,AI & Machine Learning,C119857082,Luxembourg,LU,171
+2019,AI & Machine Learning,C119857082,Latvia,LV,113
+2019,AI & Machine Learning,C119857082,Libya,LY,39
+2019,AI & Machine Learning,C119857082,Morocco,MA,610
+2019,AI & Machine Learning,C119857082,Monaco,MC,9
+2019,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,41
+2019,AI & Machine Learning,C119857082,Montenegro,ME,19
+2019,AI & Machine Learning,C119857082,Madagascar,MG,19
+2019,AI & Machine Learning,C119857082,North Macedonia,MK,94
+2019,AI & Machine Learning,C119857082,Mali,ML,7
+2019,AI & Machine Learning,C119857082,Myanmar,MM,64
+2019,AI & Machine Learning,C119857082,Mongolia,MN,36
+2019,AI & Machine Learning,C119857082,Macao,MO,288
+2019,AI & Machine Learning,C119857082,Martinique,MQ,5
+2019,AI & Machine Learning,C119857082,Mauritania,MR,1
+2019,AI & Machine Learning,C119857082,Malta,MT,46
+2019,AI & Machine Learning,C119857082,Mauritius,MU,27
+2019,AI & Machine Learning,C119857082,Maldives,MV,3
+2019,AI & Machine Learning,C119857082,Malawi,MW,22
+2019,AI & Machine Learning,C119857082,Mexico,MX,1099
+2019,AI & Machine Learning,C119857082,Malaysia,MY,2375
+2019,AI & Machine Learning,C119857082,Mozambique,MZ,24
+2019,AI & Machine Learning,C119857082,Namibia,NA,17
+2019,AI & Machine Learning,C119857082,New Caledonia,NC,2
+2019,AI & Machine Learning,C119857082,Niger,NE,15
+2019,AI & Machine Learning,C119857082,Nigeria,NG,847
+2019,AI & Machine Learning,C119857082,Nicaragua,NI,12
+2019,AI & Machine Learning,C119857082,Netherlands,NL,3306
+2019,AI & Machine Learning,C119857082,Norway,NO,1256
+2019,AI & Machine Learning,C119857082,Nepal,NP,142
+2019,AI & Machine Learning,C119857082,New Zealand,NZ,876
+2019,AI & Machine Learning,C119857082,Oman,OM,151
+2019,AI & Machine Learning,C119857082,Panama,PA,23
+2019,AI & Machine Learning,C119857082,Peru,PE,183
+2019,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2019,AI & Machine Learning,C119857082,Papua New Guinea,PG,10
+2019,AI & Machine Learning,C119857082,Philippines,PH,386
+2019,AI & Machine Learning,C119857082,Pakistan,PK,1641
+2019,AI & Machine Learning,C119857082,Poland,PL,2017
+2019,AI & Machine Learning,C119857082,Puerto Rico,PR,56
+2019,AI & Machine Learning,C119857082,"Palestine, State of",PS,86
+2019,AI & Machine Learning,C119857082,Portugal,PT,1473
+2019,AI & Machine Learning,C119857082,Paraguay,PY,13
+2019,AI & Machine Learning,C119857082,Qatar,QA,298
+2019,AI & Machine Learning,C119857082,Réunion,RE,9
+2019,AI & Machine Learning,C119857082,Romania,RO,754
+2019,AI & Machine Learning,C119857082,Serbia,RS,357
+2019,AI & Machine Learning,C119857082,Russian Federation,RU,4034
+2019,AI & Machine Learning,C119857082,Rwanda,RW,28
+2019,AI & Machine Learning,C119857082,Saudi Arabia,SA,1606
+2019,AI & Machine Learning,C119857082,Solomon Islands,SB,1
+2019,AI & Machine Learning,C119857082,Sudan,SD,49
+2019,AI & Machine Learning,C119857082,Sweden,SE,1874
+2019,AI & Machine Learning,C119857082,Singapore,SG,1711
+2019,AI & Machine Learning,C119857082,Slovenia,SI,316
+2019,AI & Machine Learning,C119857082,Slovakia,SK,349
+2019,AI & Machine Learning,C119857082,Sierra Leone,SL,6
+2019,AI & Machine Learning,C119857082,Senegal,SN,43
+2019,AI & Machine Learning,C119857082,Somalia,SO,5
+2019,AI & Machine Learning,C119857082,South Sudan,SS,50
+2019,AI & Machine Learning,C119857082,El Salvador,SV,7
+2019,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,24
+2019,AI & Machine Learning,C119857082,Eswatini,SZ,11
+2019,AI & Machine Learning,C119857082,Turks and Caicos Islands,TC,4
+2019,AI & Machine Learning,C119857082,Chad,TD,2
+2019,AI & Machine Learning,C119857082,Togo,TG,10
+2019,AI & Machine Learning,C119857082,Thailand,TH,842
+2019,AI & Machine Learning,C119857082,Tajikistan,TJ,55
+2019,AI & Machine Learning,C119857082,Timor-Leste,TL,3
+2019,AI & Machine Learning,C119857082,Tunisia,TN,553
+2019,AI & Machine Learning,C119857082,Turkey,TR,2263
+2019,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,24
+2019,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,2182
+2019,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,103
+2019,AI & Machine Learning,C119857082,Ukraine,UA,1094
+2019,AI & Machine Learning,C119857082,Uganda,UG,94
+2019,AI & Machine Learning,C119857082,United States of America,US,37655
+2019,AI & Machine Learning,C119857082,Uruguay,UY,55
+2019,AI & Machine Learning,C119857082,Uzbekistan,UZ,68
+2019,AI & Machine Learning,C119857082,Holy See,VA,1
+2019,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,44
+2019,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,37
+2019,AI & Machine Learning,C119857082,Viet Nam,VN,1113
+2019,AI & Machine Learning,C119857082,Samoa,WS,1
+2019,AI & Machine Learning,C119857082,Kosovo,XK,35
+2019,AI & Machine Learning,C119857082,Yemen,YE,85
+2019,AI & Machine Learning,C119857082,South Africa,ZA,1168
+2019,AI & Machine Learning,C119857082,Zambia,ZM,40
+2019,AI & Machine Learning,C119857082,Zimbabwe,ZW,40
 2019,CRISPR & Genomics,C98108389,Argentina,AR,10
 2019,CRISPR & Genomics,C98108389,Austria,AT,33
 2019,CRISPR & Genomics,C98108389,Australia,AU,98
@@ -15381,206 +22547,206 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2019,Robotics & Automation,C34413123,Kosovo,XK,1
 2019,Robotics & Automation,C34413123,Yemen,YE,2
 2019,Robotics & Automation,C34413123,South Africa,ZA,17
-2020,AI & Machine Learning,C154945302,United Arab Emirates,AE,2158
-2020,AI & Machine Learning,C154945302,Afghanistan,AF,54
-2020,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,7
-2020,AI & Machine Learning,C154945302,Albania,AL,89
-2020,AI & Machine Learning,C154945302,Armenia,AM,122
-2020,AI & Machine Learning,C154945302,Angola,AO,11
-2020,AI & Machine Learning,C154945302,Argentina,AR,1423
-2020,AI & Machine Learning,C154945302,Austria,AT,4584
-2020,AI & Machine Learning,C154945302,Australia,AU,16714
-2020,AI & Machine Learning,C154945302,Aruba,AW,5
-2020,AI & Machine Learning,C154945302,Azerbaijan,AZ,276
-2020,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,313
-2020,AI & Machine Learning,C154945302,Barbados,BB,12
-2020,AI & Machine Learning,C154945302,Bangladesh,BD,2491
-2020,AI & Machine Learning,C154945302,Belgium,BE,5224
-2020,AI & Machine Learning,C154945302,Burkina Faso,BF,57
-2020,AI & Machine Learning,C154945302,Bulgaria,BG,1221
-2020,AI & Machine Learning,C154945302,Bahrain,BH,185
-2020,AI & Machine Learning,C154945302,Burundi,BI,131
-2020,AI & Machine Learning,C154945302,Benin,BJ,63
-2020,AI & Machine Learning,C154945302,Bermuda,BM,3
-2020,AI & Machine Learning,C154945302,Brunei Darussalam,BN,90
-2020,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,93
-2020,AI & Machine Learning,C154945302,Brazil,BR,11004
-2020,AI & Machine Learning,C154945302,Bahamas,BS,5
-2020,AI & Machine Learning,C154945302,Bhutan,BT,14
-2020,AI & Machine Learning,C154945302,Botswana,BW,81
-2020,AI & Machine Learning,C154945302,Belarus,BY,459
-2020,AI & Machine Learning,C154945302,Belize,BZ,2
-2020,AI & Machine Learning,C154945302,Canada,CA,20066
-2020,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,35
-2020,AI & Machine Learning,C154945302,Congo,CG,10
-2020,AI & Machine Learning,C154945302,Switzerland,CH,8267
-2020,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,62
-2020,AI & Machine Learning,C154945302,Chile,CL,1832
-2020,AI & Machine Learning,C154945302,Cameroon,CM,313
-2020,AI & Machine Learning,C154945302,China,CN,135706
-2020,AI & Machine Learning,C154945302,Colombia,CO,2570
-2020,AI & Machine Learning,C154945302,Costa Rica,CR,615
-2020,AI & Machine Learning,C154945302,Cuba,CU,394
-2020,AI & Machine Learning,C154945302,Cabo Verde,CV,4
-2020,AI & Machine Learning,C154945302,Curaçao,CW,4
-2020,AI & Machine Learning,C154945302,Cyprus,CY,829
-2020,AI & Machine Learning,C154945302,Czechia,CZ,3537
-2020,AI & Machine Learning,C154945302,Germany,DE,29837
-2020,AI & Machine Learning,C154945302,Denmark,DK,4375
-2020,AI & Machine Learning,C154945302,Dominican Republic,DO,69
-2020,AI & Machine Learning,C154945302,Algeria,DZ,2345
-2020,AI & Machine Learning,C154945302,Ecuador,EC,953
-2020,AI & Machine Learning,C154945302,Estonia,EE,591
-2020,AI & Machine Learning,C154945302,Egypt,EG,4167
-2020,AI & Machine Learning,C154945302,Eritrea,ER,10
-2020,AI & Machine Learning,C154945302,Spain,ES,13578
-2020,AI & Machine Learning,C154945302,Ethiopia,ET,656
-2020,AI & Machine Learning,C154945302,Finland,FI,3999
-2020,AI & Machine Learning,C154945302,Fiji,FJ,100
-2020,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,2
-2020,AI & Machine Learning,C154945302,Faroe Islands,FO,10
-2020,AI & Machine Learning,C154945302,France,FR,20930
-2020,AI & Machine Learning,C154945302,Gabon,GA,9
-2020,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,36847
-2020,AI & Machine Learning,C154945302,Grenada,GD,12
-2020,AI & Machine Learning,C154945302,Georgia,GE,125
-2020,AI & Machine Learning,C154945302,French Guiana,GF,12
-2020,AI & Machine Learning,C154945302,Ghana,GH,551
-2020,AI & Machine Learning,C154945302,Gibraltar,GI,3
-2020,AI & Machine Learning,C154945302,Greenland,GL,11
-2020,AI & Machine Learning,C154945302,Gambia,GM,10
-2020,AI & Machine Learning,C154945302,Guadeloupe,GP,15
-2020,AI & Machine Learning,C154945302,Greece,GR,3751
-2020,AI & Machine Learning,C154945302,Guatemala,GT,55
-2020,AI & Machine Learning,C154945302,Guam,GU,8
-2020,AI & Machine Learning,C154945302,Guinea-Bissau,GW,4
-2020,AI & Machine Learning,C154945302,Guyana,GY,7
-2020,AI & Machine Learning,C154945302,Hong Kong,HK,6171
-2020,AI & Machine Learning,C154945302,Honduras,HN,105
-2020,AI & Machine Learning,C154945302,Croatia,HR,991
-2020,AI & Machine Learning,C154945302,Haiti,HT,5
-2020,AI & Machine Learning,C154945302,Hungary,HU,1969
-2020,AI & Machine Learning,C154945302,Indonesia,ID,21218
-2020,AI & Machine Learning,C154945302,Ireland,IE,2700
-2020,AI & Machine Learning,C154945302,Israel,IL,4237
-2020,AI & Machine Learning,C154945302,India,IN,40926
-2020,AI & Machine Learning,C154945302,Iraq,IQ,2672
-2020,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,11534
-2020,AI & Machine Learning,C154945302,Iceland,IS,225
-2020,AI & Machine Learning,C154945302,Italy,IT,18101
-2020,AI & Machine Learning,C154945302,Jersey,JE,2
-2020,AI & Machine Learning,C154945302,Jamaica,JM,52
-2020,AI & Machine Learning,C154945302,Jordan,JO,1144
-2020,AI & Machine Learning,C154945302,Japan,JP,21463
-2020,AI & Machine Learning,C154945302,Kenya,KE,526
-2020,AI & Machine Learning,C154945302,Kyrgyzstan,KG,88
-2020,AI & Machine Learning,C154945302,Cambodia,KH,103
-2020,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,17
-2020,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,13
-2020,AI & Machine Learning,C154945302,"Korea, Republic of",KR,14414
-2020,AI & Machine Learning,C154945302,Kuwait,KW,375
-2020,AI & Machine Learning,C154945302,Cayman Islands,KY,66
-2020,AI & Machine Learning,C154945302,Kazakhstan,KZ,785
-2020,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,18
-2020,AI & Machine Learning,C154945302,Lebanon,LB,596
-2020,AI & Machine Learning,C154945302,Liechtenstein,LI,15
-2020,AI & Machine Learning,C154945302,Sri Lanka,LK,639
-2020,AI & Machine Learning,C154945302,Liberia,LR,6
-2020,AI & Machine Learning,C154945302,Lesotho,LS,5
-2020,AI & Machine Learning,C154945302,Lithuania,LT,628
-2020,AI & Machine Learning,C154945302,Luxembourg,LU,520
-2020,AI & Machine Learning,C154945302,Latvia,LV,475
-2020,AI & Machine Learning,C154945302,Libya,LY,135
-2020,AI & Machine Learning,C154945302,Morocco,MA,2217
-2020,AI & Machine Learning,C154945302,Monaco,MC,15
-2020,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,116
-2020,AI & Machine Learning,C154945302,Montenegro,ME,121
-2020,AI & Machine Learning,C154945302,Madagascar,MG,31
-2020,AI & Machine Learning,C154945302,North Macedonia,MK,363
-2020,AI & Machine Learning,C154945302,Mali,ML,28
-2020,AI & Machine Learning,C154945302,Myanmar,MM,227
-2020,AI & Machine Learning,C154945302,Mongolia,MN,145
-2020,AI & Machine Learning,C154945302,Macao,MO,1090
-2020,AI & Machine Learning,C154945302,Martinique,MQ,8
-2020,AI & Machine Learning,C154945302,Mauritania,MR,7
-2020,AI & Machine Learning,C154945302,Malta,MT,214
-2020,AI & Machine Learning,C154945302,Mauritius,MU,71
-2020,AI & Machine Learning,C154945302,Maldives,MV,19
-2020,AI & Machine Learning,C154945302,Malawi,MW,56
-2020,AI & Machine Learning,C154945302,Mexico,MX,4420
-2020,AI & Machine Learning,C154945302,Malaysia,MY,5978
-2020,AI & Machine Learning,C154945302,Mozambique,MZ,86
-2020,AI & Machine Learning,C154945302,Namibia,NA,43
-2020,AI & Machine Learning,C154945302,New Caledonia,NC,12
-2020,AI & Machine Learning,C154945302,Niger,NE,27
-2020,AI & Machine Learning,C154945302,Nigeria,NG,1945
-2020,AI & Machine Learning,C154945302,Nicaragua,NI,38
-2020,AI & Machine Learning,C154945302,Netherlands,NL,10768
-2020,AI & Machine Learning,C154945302,Norway,NO,4153
-2020,AI & Machine Learning,C154945302,Nepal,NP,500
-2020,AI & Machine Learning,C154945302,New Zealand,NZ,2677
-2020,AI & Machine Learning,C154945302,Oman,OM,394
-2020,AI & Machine Learning,C154945302,Panama,PA,67
-2020,AI & Machine Learning,C154945302,Peru,PE,707
-2020,AI & Machine Learning,C154945302,French Polynesia,PF,5
-2020,AI & Machine Learning,C154945302,Papua New Guinea,PG,16
-2020,AI & Machine Learning,C154945302,Philippines,PH,995
-2020,AI & Machine Learning,C154945302,Pakistan,PK,4857
-2020,AI & Machine Learning,C154945302,Poland,PL,7189
-2020,AI & Machine Learning,C154945302,Puerto Rico,PR,298
-2020,AI & Machine Learning,C154945302,"Palestine, State of",PS,186
-2020,AI & Machine Learning,C154945302,Portugal,PT,4270
-2020,AI & Machine Learning,C154945302,Palau,PW,5
-2020,AI & Machine Learning,C154945302,Paraguay,PY,62
-2020,AI & Machine Learning,C154945302,Qatar,QA,942
-2020,AI & Machine Learning,C154945302,Réunion,RE,30
-2020,AI & Machine Learning,C154945302,Romania,RO,3137
-2020,AI & Machine Learning,C154945302,Serbia,RS,1257
-2020,AI & Machine Learning,C154945302,Russian Federation,RU,18835
-2020,AI & Machine Learning,C154945302,Rwanda,RW,71
-2020,AI & Machine Learning,C154945302,Saudi Arabia,SA,5898
-2020,AI & Machine Learning,C154945302,Seychelles,SC,3
-2020,AI & Machine Learning,C154945302,Sudan,SD,192
-2020,AI & Machine Learning,C154945302,Sweden,SE,6362
-2020,AI & Machine Learning,C154945302,Singapore,SG,5900
-2020,AI & Machine Learning,C154945302,Slovenia,SI,1086
-2020,AI & Machine Learning,C154945302,Slovakia,SK,1418
-2020,AI & Machine Learning,C154945302,Sierra Leone,SL,15
-2020,AI & Machine Learning,C154945302,San Marino,SM,3
-2020,AI & Machine Learning,C154945302,Senegal,SN,116
-2020,AI & Machine Learning,C154945302,Somalia,SO,10
-2020,AI & Machine Learning,C154945302,South Sudan,SS,271
-2020,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,3
-2020,AI & Machine Learning,C154945302,El Salvador,SV,28
-2020,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,128
-2020,AI & Machine Learning,C154945302,Eswatini,SZ,25
-2020,AI & Machine Learning,C154945302,Turks and Caicos Islands,TC,5
-2020,AI & Machine Learning,C154945302,Chad,TD,5
-2020,AI & Machine Learning,C154945302,Togo,TG,17
-2020,AI & Machine Learning,C154945302,Thailand,TH,2208
-2020,AI & Machine Learning,C154945302,Tajikistan,TJ,237
-2020,AI & Machine Learning,C154945302,Timor-Leste,TL,10
-2020,AI & Machine Learning,C154945302,Turkmenistan,TM,6
-2020,AI & Machine Learning,C154945302,Tunisia,TN,1936
-2020,AI & Machine Learning,C154945302,Tonga,TO,4
-2020,AI & Machine Learning,C154945302,Turkey,TR,7663
-2020,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,53
-2020,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,7317
-2020,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,165
-2020,AI & Machine Learning,C154945302,Ukraine,UA,4692
-2020,AI & Machine Learning,C154945302,Uganda,UG,178
-2020,AI & Machine Learning,C154945302,United States of America,US,124398
-2020,AI & Machine Learning,C154945302,Uruguay,UY,227
-2020,AI & Machine Learning,C154945302,Uzbekistan,UZ,573
-2020,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,143
-2020,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,82
-2020,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,7
-2020,AI & Machine Learning,C154945302,Viet Nam,VN,3532
-2020,AI & Machine Learning,C154945302,Kosovo,XK,66
-2020,AI & Machine Learning,C154945302,Yemen,YE,297
-2020,AI & Machine Learning,C154945302,South Africa,ZA,2846
-2020,AI & Machine Learning,C154945302,Zambia,ZM,79
-2020,AI & Machine Learning,C154945302,Zimbabwe,ZW,98
+2020,AI & Machine Learning,C119857082,United Arab Emirates,AE,1007
+2020,AI & Machine Learning,C119857082,Afghanistan,AF,26
+2020,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,1
+2020,AI & Machine Learning,C119857082,Albania,AL,51
+2020,AI & Machine Learning,C119857082,Armenia,AM,29
+2020,AI & Machine Learning,C119857082,Angola,AO,4
+2020,AI & Machine Learning,C119857082,Argentina,AR,360
+2020,AI & Machine Learning,C119857082,American Samoa,AS,1
+2020,AI & Machine Learning,C119857082,Austria,AT,1325
+2020,AI & Machine Learning,C119857082,Australia,AU,6906
+2020,AI & Machine Learning,C119857082,Azerbaijan,AZ,95
+2020,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,124
+2020,AI & Machine Learning,C119857082,Barbados,BB,6
+2020,AI & Machine Learning,C119857082,Bangladesh,BD,1177
+2020,AI & Machine Learning,C119857082,Belgium,BE,1765
+2020,AI & Machine Learning,C119857082,Burkina Faso,BF,36
+2020,AI & Machine Learning,C119857082,Bulgaria,BG,315
+2020,AI & Machine Learning,C119857082,Bahrain,BH,108
+2020,AI & Machine Learning,C119857082,Burundi,BI,48
+2020,AI & Machine Learning,C119857082,Benin,BJ,43
+2020,AI & Machine Learning,C119857082,Bermuda,BM,2
+2020,AI & Machine Learning,C119857082,Brunei Darussalam,BN,45
+2020,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,34
+2020,AI & Machine Learning,C119857082,Brazil,BR,3940
+2020,AI & Machine Learning,C119857082,Bahamas,BS,4
+2020,AI & Machine Learning,C119857082,Bhutan,BT,12
+2020,AI & Machine Learning,C119857082,Botswana,BW,49
+2020,AI & Machine Learning,C119857082,Belarus,BY,131
+2020,AI & Machine Learning,C119857082,Belize,BZ,3
+2020,AI & Machine Learning,C119857082,Canada,CA,7159
+2020,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,18
+2020,AI & Machine Learning,C119857082,Congo,CG,4
+2020,AI & Machine Learning,C119857082,Switzerland,CH,2640
+2020,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,53
+2020,AI & Machine Learning,C119857082,Chile,CL,658
+2020,AI & Machine Learning,C119857082,Cameroon,CM,104
+2020,AI & Machine Learning,C119857082,China,CN,41535
+2020,AI & Machine Learning,C119857082,Colombia,CO,731
+2020,AI & Machine Learning,C119857082,Costa Rica,CR,60
+2020,AI & Machine Learning,C119857082,Cuba,CU,100
+2020,AI & Machine Learning,C119857082,Cabo Verde,CV,2
+2020,AI & Machine Learning,C119857082,Cyprus,CY,387
+2020,AI & Machine Learning,C119857082,Czechia,CZ,924
+2020,AI & Machine Learning,C119857082,Germany,DE,8641
+2020,AI & Machine Learning,C119857082,Djibouti,DJ,3
+2020,AI & Machine Learning,C119857082,Denmark,DK,1192
+2020,AI & Machine Learning,C119857082,Dominican Republic,DO,22
+2020,AI & Machine Learning,C119857082,Algeria,DZ,734
+2020,AI & Machine Learning,C119857082,Ecuador,EC,281
+2020,AI & Machine Learning,C119857082,Estonia,EE,185
+2020,AI & Machine Learning,C119857082,Egypt,EG,1423
+2020,AI & Machine Learning,C119857082,Eritrea,ER,4
+2020,AI & Machine Learning,C119857082,Spain,ES,4582
+2020,AI & Machine Learning,C119857082,Ethiopia,ET,572
+2020,AI & Machine Learning,C119857082,Finland,FI,1341
+2020,AI & Machine Learning,C119857082,Fiji,FJ,46
+2020,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2020,AI & Machine Learning,C119857082,Faroe Islands,FO,4
+2020,AI & Machine Learning,C119857082,France,FR,6116
+2020,AI & Machine Learning,C119857082,Gabon,GA,4
+2020,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,13693
+2020,AI & Machine Learning,C119857082,Grenada,GD,3
+2020,AI & Machine Learning,C119857082,Georgia,GE,58
+2020,AI & Machine Learning,C119857082,French Guiana,GF,1
+2020,AI & Machine Learning,C119857082,Ghana,GH,414
+2020,AI & Machine Learning,C119857082,Gibraltar,GI,1
+2020,AI & Machine Learning,C119857082,Greenland,GL,2
+2020,AI & Machine Learning,C119857082,Gambia,GM,7
+2020,AI & Machine Learning,C119857082,Guinea,GN,2
+2020,AI & Machine Learning,C119857082,Guadeloupe,GP,3
+2020,AI & Machine Learning,C119857082,Greece,GR,1333
+2020,AI & Machine Learning,C119857082,Guatemala,GT,16
+2020,AI & Machine Learning,C119857082,Guam,GU,8
+2020,AI & Machine Learning,C119857082,Guinea-Bissau,GW,4
+2020,AI & Machine Learning,C119857082,Guyana,GY,4
+2020,AI & Machine Learning,C119857082,Hong Kong,HK,2257
+2020,AI & Machine Learning,C119857082,Honduras,HN,38
+2020,AI & Machine Learning,C119857082,Croatia,HR,348
+2020,AI & Machine Learning,C119857082,Haiti,HT,2
+2020,AI & Machine Learning,C119857082,Hungary,HU,686
+2020,AI & Machine Learning,C119857082,Indonesia,ID,6441
+2020,AI & Machine Learning,C119857082,Ireland,IE,941
+2020,AI & Machine Learning,C119857082,Israel,IL,1353
+2020,AI & Machine Learning,C119857082,Isle of Man,IM,1
+2020,AI & Machine Learning,C119857082,India,IN,14271
+2020,AI & Machine Learning,C119857082,Iraq,IQ,837
+2020,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,4607
+2020,AI & Machine Learning,C119857082,Iceland,IS,110
+2020,AI & Machine Learning,C119857082,Italy,IT,5786
+2020,AI & Machine Learning,C119857082,Jersey,JE,1
+2020,AI & Machine Learning,C119857082,Jamaica,JM,31
+2020,AI & Machine Learning,C119857082,Jordan,JO,523
+2020,AI & Machine Learning,C119857082,Japan,JP,4936
+2020,AI & Machine Learning,C119857082,Kenya,KE,325
+2020,AI & Machine Learning,C119857082,Kyrgyzstan,KG,26
+2020,AI & Machine Learning,C119857082,Cambodia,KH,45
+2020,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,4
+2020,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,4
+2020,AI & Machine Learning,C119857082,"Korea, Republic of",KR,4706
+2020,AI & Machine Learning,C119857082,Kuwait,KW,160
+2020,AI & Machine Learning,C119857082,Cayman Islands,KY,28
+2020,AI & Machine Learning,C119857082,Kazakhstan,KZ,253
+2020,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,12
+2020,AI & Machine Learning,C119857082,Lebanon,LB,240
+2020,AI & Machine Learning,C119857082,Saint Lucia,LC,1
+2020,AI & Machine Learning,C119857082,Liechtenstein,LI,9
+2020,AI & Machine Learning,C119857082,Sri Lanka,LK,279
+2020,AI & Machine Learning,C119857082,Liberia,LR,1
+2020,AI & Machine Learning,C119857082,Lesotho,LS,5
+2020,AI & Machine Learning,C119857082,Lithuania,LT,189
+2020,AI & Machine Learning,C119857082,Luxembourg,LU,174
+2020,AI & Machine Learning,C119857082,Latvia,LV,150
+2020,AI & Machine Learning,C119857082,Libya,LY,49
+2020,AI & Machine Learning,C119857082,Morocco,MA,848
+2020,AI & Machine Learning,C119857082,Monaco,MC,9
+2020,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,36
+2020,AI & Machine Learning,C119857082,Montenegro,ME,30
+2020,AI & Machine Learning,C119857082,Madagascar,MG,11
+2020,AI & Machine Learning,C119857082,North Macedonia,MK,162
+2020,AI & Machine Learning,C119857082,Mali,ML,11
+2020,AI & Machine Learning,C119857082,Myanmar,MM,79
+2020,AI & Machine Learning,C119857082,Mongolia,MN,44
+2020,AI & Machine Learning,C119857082,Macao,MO,433
+2020,AI & Machine Learning,C119857082,Martinique,MQ,5
+2020,AI & Machine Learning,C119857082,Mauritania,MR,3
+2020,AI & Machine Learning,C119857082,Malta,MT,58
+2020,AI & Machine Learning,C119857082,Mauritius,MU,34
+2020,AI & Machine Learning,C119857082,Maldives,MV,5
+2020,AI & Machine Learning,C119857082,Malawi,MW,36
+2020,AI & Machine Learning,C119857082,Mexico,MX,1350
+2020,AI & Machine Learning,C119857082,Malaysia,MY,2745
+2020,AI & Machine Learning,C119857082,Mozambique,MZ,43
+2020,AI & Machine Learning,C119857082,Namibia,NA,34
+2020,AI & Machine Learning,C119857082,New Caledonia,NC,6
+2020,AI & Machine Learning,C119857082,Niger,NE,11
+2020,AI & Machine Learning,C119857082,Nigeria,NG,1201
+2020,AI & Machine Learning,C119857082,Nicaragua,NI,7
+2020,AI & Machine Learning,C119857082,Netherlands,NL,3710
+2020,AI & Machine Learning,C119857082,Norway,NO,1526
+2020,AI & Machine Learning,C119857082,Nepal,NP,219
+2020,AI & Machine Learning,C119857082,New Zealand,NZ,1107
+2020,AI & Machine Learning,C119857082,Oman,OM,224
+2020,AI & Machine Learning,C119857082,Panama,PA,18
+2020,AI & Machine Learning,C119857082,Peru,PE,254
+2020,AI & Machine Learning,C119857082,French Polynesia,PF,2
+2020,AI & Machine Learning,C119857082,Papua New Guinea,PG,12
+2020,AI & Machine Learning,C119857082,Philippines,PH,423
+2020,AI & Machine Learning,C119857082,Pakistan,PK,2257
+2020,AI & Machine Learning,C119857082,Poland,PL,2305
+2020,AI & Machine Learning,C119857082,Puerto Rico,PR,86
+2020,AI & Machine Learning,C119857082,"Palestine, State of",PS,82
+2020,AI & Machine Learning,C119857082,Portugal,PT,1647
+2020,AI & Machine Learning,C119857082,Paraguay,PY,17
+2020,AI & Machine Learning,C119857082,Qatar,QA,367
+2020,AI & Machine Learning,C119857082,Réunion,RE,15
+2020,AI & Machine Learning,C119857082,Romania,RO,948
+2020,AI & Machine Learning,C119857082,Serbia,RS,360
+2020,AI & Machine Learning,C119857082,Russian Federation,RU,4907
+2020,AI & Machine Learning,C119857082,Rwanda,RW,45
+2020,AI & Machine Learning,C119857082,Saudi Arabia,SA,2466
+2020,AI & Machine Learning,C119857082,Sudan,SD,67
+2020,AI & Machine Learning,C119857082,Sweden,SE,2192
+2020,AI & Machine Learning,C119857082,Singapore,SG,2100
+2020,AI & Machine Learning,C119857082,Slovenia,SI,396
+2020,AI & Machine Learning,C119857082,Slovakia,SK,447
+2020,AI & Machine Learning,C119857082,Sierra Leone,SL,8
+2020,AI & Machine Learning,C119857082,Senegal,SN,49
+2020,AI & Machine Learning,C119857082,Somalia,SO,8
+2020,AI & Machine Learning,C119857082,South Sudan,SS,81
+2020,AI & Machine Learning,C119857082,El Salvador,SV,6
+2020,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,40
+2020,AI & Machine Learning,C119857082,Eswatini,SZ,19
+2020,AI & Machine Learning,C119857082,Turks and Caicos Islands,TC,2
+2020,AI & Machine Learning,C119857082,Chad,TD,3
+2020,AI & Machine Learning,C119857082,Togo,TG,7
+2020,AI & Machine Learning,C119857082,Thailand,TH,946
+2020,AI & Machine Learning,C119857082,Tajikistan,TJ,74
+2020,AI & Machine Learning,C119857082,Timor-Leste,TL,4
+2020,AI & Machine Learning,C119857082,Turkmenistan,TM,3
+2020,AI & Machine Learning,C119857082,Tunisia,TN,646
+2020,AI & Machine Learning,C119857082,Tonga,TO,2
+2020,AI & Machine Learning,C119857082,Turkey,TR,2847
+2020,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,26
+2020,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,2659
+2020,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,124
+2020,AI & Machine Learning,C119857082,Ukraine,UA,1286
+2020,AI & Machine Learning,C119857082,Uganda,UG,115
+2020,AI & Machine Learning,C119857082,United States of America,US,43656
+2020,AI & Machine Learning,C119857082,Uruguay,UY,74
+2020,AI & Machine Learning,C119857082,Uzbekistan,UZ,131
+2020,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,41
+2020,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,32
+2020,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,3
+2020,AI & Machine Learning,C119857082,Viet Nam,VN,1696
+2020,AI & Machine Learning,C119857082,Samoa,WS,2
+2020,AI & Machine Learning,C119857082,Kosovo,XK,25
+2020,AI & Machine Learning,C119857082,Yemen,YE,130
+2020,AI & Machine Learning,C119857082,South Africa,ZA,1370
+2020,AI & Machine Learning,C119857082,Zambia,ZM,58
+2020,AI & Machine Learning,C119857082,Zimbabwe,ZW,63
 2020,CRISPR & Genomics,C98108389,United Arab Emirates,AE,1
 2020,CRISPR & Genomics,C98108389,Afghanistan,AF,1
 2020,CRISPR & Genomics,C98108389,Armenia,AM,2
@@ -16443,206 +23609,206 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2020,Robotics & Automation,C34413123,Yemen,YE,2
 2020,Robotics & Automation,C34413123,South Africa,ZA,15
 2020,Robotics & Automation,C34413123,Zimbabwe,ZW,2
-2021,AI & Machine Learning,C154945302,United Arab Emirates,AE,2713
-2021,AI & Machine Learning,C154945302,Afghanistan,AF,61
-2021,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,15
-2021,AI & Machine Learning,C154945302,Albania,AL,128
-2021,AI & Machine Learning,C154945302,Armenia,AM,149
-2021,AI & Machine Learning,C154945302,Angola,AO,12
-2021,AI & Machine Learning,C154945302,Argentina,AR,1401
-2021,AI & Machine Learning,C154945302,Austria,AT,5091
-2021,AI & Machine Learning,C154945302,Australia,AU,17632
-2021,AI & Machine Learning,C154945302,Azerbaijan,AZ,382
-2021,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,323
-2021,AI & Machine Learning,C154945302,Barbados,BB,14
-2021,AI & Machine Learning,C154945302,Bangladesh,BD,3509
-2021,AI & Machine Learning,C154945302,Belgium,BE,5812
-2021,AI & Machine Learning,C154945302,Burkina Faso,BF,45
-2021,AI & Machine Learning,C154945302,Bulgaria,BG,1363
-2021,AI & Machine Learning,C154945302,Bahrain,BH,254
-2021,AI & Machine Learning,C154945302,Burundi,BI,149
-2021,AI & Machine Learning,C154945302,Benin,BJ,81
-2021,AI & Machine Learning,C154945302,Bermuda,BM,2
-2021,AI & Machine Learning,C154945302,Brunei Darussalam,BN,127
-2021,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,97
-2021,AI & Machine Learning,C154945302,Brazil,BR,11200
-2021,AI & Machine Learning,C154945302,Bahamas,BS,13
-2021,AI & Machine Learning,C154945302,Bhutan,BT,44
-2021,AI & Machine Learning,C154945302,Botswana,BW,102
-2021,AI & Machine Learning,C154945302,Belarus,BY,478
-2021,AI & Machine Learning,C154945302,Belize,BZ,2
-2021,AI & Machine Learning,C154945302,Canada,CA,22603
-2021,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,35
-2021,AI & Machine Learning,C154945302,Central African Republic,CF,3
-2021,AI & Machine Learning,C154945302,Congo,CG,13
-2021,AI & Machine Learning,C154945302,Switzerland,CH,9170
-2021,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,78
-2021,AI & Machine Learning,C154945302,Chile,CL,2055
-2021,AI & Machine Learning,C154945302,Cameroon,CM,369
-2021,AI & Machine Learning,C154945302,China,CN,164422
-2021,AI & Machine Learning,C154945302,Colombia,CO,2080
-2021,AI & Machine Learning,C154945302,Costa Rica,CR,234
-2021,AI & Machine Learning,C154945302,Cuba,CU,395
-2021,AI & Machine Learning,C154945302,Cabo Verde,CV,2
-2021,AI & Machine Learning,C154945302,Curaçao,CW,2
-2021,AI & Machine Learning,C154945302,Cyprus,CY,1078
-2021,AI & Machine Learning,C154945302,Czechia,CZ,3810
-2021,AI & Machine Learning,C154945302,Germany,DE,33145
-2021,AI & Machine Learning,C154945302,Djibouti,DJ,4
-2021,AI & Machine Learning,C154945302,Denmark,DK,4930
-2021,AI & Machine Learning,C154945302,Dominican Republic,DO,52
-2021,AI & Machine Learning,C154945302,Algeria,DZ,2527
-2021,AI & Machine Learning,C154945302,Ecuador,EC,1013
-2021,AI & Machine Learning,C154945302,Estonia,EE,678
-2021,AI & Machine Learning,C154945302,Egypt,EG,4998
-2021,AI & Machine Learning,C154945302,Eritrea,ER,11
-2021,AI & Machine Learning,C154945302,Spain,ES,14329
-2021,AI & Machine Learning,C154945302,Ethiopia,ET,838
-2021,AI & Machine Learning,C154945302,Finland,FI,4202
-2021,AI & Machine Learning,C154945302,Fiji,FJ,106
-2021,AI & Machine Learning,C154945302,Faroe Islands,FO,23
-2021,AI & Machine Learning,C154945302,France,FR,22125
-2021,AI & Machine Learning,C154945302,Gabon,GA,19
-2021,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,39397
-2021,AI & Machine Learning,C154945302,Grenada,GD,10
-2021,AI & Machine Learning,C154945302,Georgia,GE,175
-2021,AI & Machine Learning,C154945302,French Guiana,GF,18
-2021,AI & Machine Learning,C154945302,Ghana,GH,598
-2021,AI & Machine Learning,C154945302,Gibraltar,GI,7
-2021,AI & Machine Learning,C154945302,Greenland,GL,16
-2021,AI & Machine Learning,C154945302,Gambia,GM,17
-2021,AI & Machine Learning,C154945302,Guinea,GN,4
-2021,AI & Machine Learning,C154945302,Guadeloupe,GP,17
-2021,AI & Machine Learning,C154945302,Greece,GR,4207
-2021,AI & Machine Learning,C154945302,Guatemala,GT,59
-2021,AI & Machine Learning,C154945302,Guam,GU,8
-2021,AI & Machine Learning,C154945302,Guinea-Bissau,GW,4
-2021,AI & Machine Learning,C154945302,Guyana,GY,6
-2021,AI & Machine Learning,C154945302,Hong Kong,HK,7081
-2021,AI & Machine Learning,C154945302,Honduras,HN,44
-2021,AI & Machine Learning,C154945302,Croatia,HR,1150
-2021,AI & Machine Learning,C154945302,Haiti,HT,5
-2021,AI & Machine Learning,C154945302,Hungary,HU,2108
-2021,AI & Machine Learning,C154945302,Indonesia,ID,24171
-2021,AI & Machine Learning,C154945302,Ireland,IE,2936
-2021,AI & Machine Learning,C154945302,Israel,IL,4770
-2021,AI & Machine Learning,C154945302,India,IN,50017
-2021,AI & Machine Learning,C154945302,Iraq,IQ,3532
-2021,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,12068
-2021,AI & Machine Learning,C154945302,Iceland,IS,256
-2021,AI & Machine Learning,C154945302,Italy,IT,20482
-2021,AI & Machine Learning,C154945302,Jamaica,JM,69
-2021,AI & Machine Learning,C154945302,Jordan,JO,1288
-2021,AI & Machine Learning,C154945302,Japan,JP,21610
-2021,AI & Machine Learning,C154945302,Kenya,KE,462
-2021,AI & Machine Learning,C154945302,Kyrgyzstan,KG,121
-2021,AI & Machine Learning,C154945302,Cambodia,KH,115
-2021,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,18
-2021,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,31
-2021,AI & Machine Learning,C154945302,"Korea, Republic of",KR,16166
-2021,AI & Machine Learning,C154945302,Kuwait,KW,376
-2021,AI & Machine Learning,C154945302,Cayman Islands,KY,99
-2021,AI & Machine Learning,C154945302,Kazakhstan,KZ,994
-2021,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,10
-2021,AI & Machine Learning,C154945302,Lebanon,LB,568
-2021,AI & Machine Learning,C154945302,Saint Lucia,LC,3
-2021,AI & Machine Learning,C154945302,Liechtenstein,LI,29
-2021,AI & Machine Learning,C154945302,Sri Lanka,LK,902
-2021,AI & Machine Learning,C154945302,Liberia,LR,4
-2021,AI & Machine Learning,C154945302,Lesotho,LS,12
-2021,AI & Machine Learning,C154945302,Lithuania,LT,704
-2021,AI & Machine Learning,C154945302,Luxembourg,LU,656
-2021,AI & Machine Learning,C154945302,Latvia,LV,493
-2021,AI & Machine Learning,C154945302,Libya,LY,223
-2021,AI & Machine Learning,C154945302,Morocco,MA,2260
-2021,AI & Machine Learning,C154945302,Monaco,MC,19
-2021,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,134
-2021,AI & Machine Learning,C154945302,Montenegro,ME,125
-2021,AI & Machine Learning,C154945302,Madagascar,MG,42
-2021,AI & Machine Learning,C154945302,North Macedonia,MK,343
-2021,AI & Machine Learning,C154945302,Mali,ML,46
-2021,AI & Machine Learning,C154945302,Myanmar,MM,137
-2021,AI & Machine Learning,C154945302,Mongolia,MN,190
-2021,AI & Machine Learning,C154945302,Macao,MO,1330
-2021,AI & Machine Learning,C154945302,Martinique,MQ,7
-2021,AI & Machine Learning,C154945302,Mauritania,MR,13
-2021,AI & Machine Learning,C154945302,Malta,MT,244
-2021,AI & Machine Learning,C154945302,Mauritius,MU,74
-2021,AI & Machine Learning,C154945302,Maldives,MV,11
-2021,AI & Machine Learning,C154945302,Malawi,MW,64
-2021,AI & Machine Learning,C154945302,Mexico,MX,4477
-2021,AI & Machine Learning,C154945302,Malaysia,MY,7986
-2021,AI & Machine Learning,C154945302,Mozambique,MZ,129
-2021,AI & Machine Learning,C154945302,Namibia,NA,66
-2021,AI & Machine Learning,C154945302,New Caledonia,NC,16
-2021,AI & Machine Learning,C154945302,Niger,NE,26
-2021,AI & Machine Learning,C154945302,Nigeria,NG,2317
-2021,AI & Machine Learning,C154945302,Nicaragua,NI,27
-2021,AI & Machine Learning,C154945302,Netherlands,NL,11521
-2021,AI & Machine Learning,C154945302,Norway,NO,4612
-2021,AI & Machine Learning,C154945302,Nepal,NP,646
-2021,AI & Machine Learning,C154945302,New Zealand,NZ,2595
-2021,AI & Machine Learning,C154945302,Oman,OM,502
-2021,AI & Machine Learning,C154945302,Panama,PA,82
-2021,AI & Machine Learning,C154945302,Peru,PE,936
-2021,AI & Machine Learning,C154945302,French Polynesia,PF,13
-2021,AI & Machine Learning,C154945302,Papua New Guinea,PG,43
-2021,AI & Machine Learning,C154945302,Philippines,PH,1319
-2021,AI & Machine Learning,C154945302,Pakistan,PK,6082
-2021,AI & Machine Learning,C154945302,Poland,PL,7735
-2021,AI & Machine Learning,C154945302,Puerto Rico,PR,204
-2021,AI & Machine Learning,C154945302,"Palestine, State of",PS,256
-2021,AI & Machine Learning,C154945302,Portugal,PT,4925
-2021,AI & Machine Learning,C154945302,Palau,PW,7
-2021,AI & Machine Learning,C154945302,Paraguay,PY,103
-2021,AI & Machine Learning,C154945302,Qatar,QA,1043
-2021,AI & Machine Learning,C154945302,Réunion,RE,36
-2021,AI & Machine Learning,C154945302,Romania,RO,3233
-2021,AI & Machine Learning,C154945302,Serbia,RS,1413
-2021,AI & Machine Learning,C154945302,Russian Federation,RU,20707
-2021,AI & Machine Learning,C154945302,Rwanda,RW,124
-2021,AI & Machine Learning,C154945302,Saudi Arabia,SA,7521
-2021,AI & Machine Learning,C154945302,Sudan,SD,269
-2021,AI & Machine Learning,C154945302,Sweden,SE,6745
-2021,AI & Machine Learning,C154945302,Singapore,SG,6271
-2021,AI & Machine Learning,C154945302,Slovenia,SI,1207
-2021,AI & Machine Learning,C154945302,Slovakia,SK,1464
-2021,AI & Machine Learning,C154945302,Sierra Leone,SL,13
-2021,AI & Machine Learning,C154945302,San Marino,SM,4
-2021,AI & Machine Learning,C154945302,Senegal,SN,99
-2021,AI & Machine Learning,C154945302,Somalia,SO,17
-2021,AI & Machine Learning,C154945302,Suriname,SR,3
-2021,AI & Machine Learning,C154945302,South Sudan,SS,205
-2021,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,4
-2021,AI & Machine Learning,C154945302,El Salvador,SV,32
-2021,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,142
-2021,AI & Machine Learning,C154945302,Eswatini,SZ,16
-2021,AI & Machine Learning,C154945302,Turks and Caicos Islands,TC,3
-2021,AI & Machine Learning,C154945302,Chad,TD,10
-2021,AI & Machine Learning,C154945302,Togo,TG,17
-2021,AI & Machine Learning,C154945302,Thailand,TH,2739
-2021,AI & Machine Learning,C154945302,Tajikistan,TJ,260
-2021,AI & Machine Learning,C154945302,Turkmenistan,TM,7
-2021,AI & Machine Learning,C154945302,Tunisia,TN,1914
-2021,AI & Machine Learning,C154945302,Turkey,TR,9472
-2021,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,68
-2021,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,8162
-2021,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,200
-2021,AI & Machine Learning,C154945302,Ukraine,UA,4733
-2021,AI & Machine Learning,C154945302,Uganda,UG,196
-2021,AI & Machine Learning,C154945302,United States of America,US,120283
-2021,AI & Machine Learning,C154945302,Uruguay,UY,247
-2021,AI & Machine Learning,C154945302,Uzbekistan,UZ,1118
-2021,AI & Machine Learning,C154945302,Holy See,VA,5
-2021,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,165
-2021,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,103
-2021,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,3
-2021,AI & Machine Learning,C154945302,Viet Nam,VN,3766
-2021,AI & Machine Learning,C154945302,Kosovo,XK,61
-2021,AI & Machine Learning,C154945302,Yemen,YE,459
-2021,AI & Machine Learning,C154945302,South Africa,ZA,3071
-2021,AI & Machine Learning,C154945302,Zambia,ZM,79
-2021,AI & Machine Learning,C154945302,Zimbabwe,ZW,130
+2021,AI & Machine Learning,C119857082,Andorra,AD,3
+2021,AI & Machine Learning,C119857082,United Arab Emirates,AE,1309
+2021,AI & Machine Learning,C119857082,Afghanistan,AF,33
+2021,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,6
+2021,AI & Machine Learning,C119857082,Albania,AL,57
+2021,AI & Machine Learning,C119857082,Armenia,AM,49
+2021,AI & Machine Learning,C119857082,Angola,AO,5
+2021,AI & Machine Learning,C119857082,Argentina,AR,384
+2021,AI & Machine Learning,C119857082,American Samoa,AS,1
+2021,AI & Machine Learning,C119857082,Austria,AT,1583
+2021,AI & Machine Learning,C119857082,Australia,AU,7379
+2021,AI & Machine Learning,C119857082,Aruba,AW,1
+2021,AI & Machine Learning,C119857082,Azerbaijan,AZ,121
+2021,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,107
+2021,AI & Machine Learning,C119857082,Barbados,BB,6
+2021,AI & Machine Learning,C119857082,Bangladesh,BD,1798
+2021,AI & Machine Learning,C119857082,Belgium,BE,1984
+2021,AI & Machine Learning,C119857082,Burkina Faso,BF,27
+2021,AI & Machine Learning,C119857082,Bulgaria,BG,366
+2021,AI & Machine Learning,C119857082,Bahrain,BH,135
+2021,AI & Machine Learning,C119857082,Burundi,BI,45
+2021,AI & Machine Learning,C119857082,Benin,BJ,31
+2021,AI & Machine Learning,C119857082,Bermuda,BM,1
+2021,AI & Machine Learning,C119857082,Brunei Darussalam,BN,66
+2021,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,31
+2021,AI & Machine Learning,C119857082,Brazil,BR,4281
+2021,AI & Machine Learning,C119857082,Bahamas,BS,5
+2021,AI & Machine Learning,C119857082,Bhutan,BT,20
+2021,AI & Machine Learning,C119857082,Botswana,BW,65
+2021,AI & Machine Learning,C119857082,Belarus,BY,141
+2021,AI & Machine Learning,C119857082,Canada,CA,8402
+2021,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,18
+2021,AI & Machine Learning,C119857082,Central African Republic,CF,4
+2021,AI & Machine Learning,C119857082,Congo,CG,6
+2021,AI & Machine Learning,C119857082,Switzerland,CH,3100
+2021,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,37
+2021,AI & Machine Learning,C119857082,Chile,CL,726
+2021,AI & Machine Learning,C119857082,Cameroon,CM,158
+2021,AI & Machine Learning,C119857082,China,CN,51451
+2021,AI & Machine Learning,C119857082,Colombia,CO,718
+2021,AI & Machine Learning,C119857082,Costa Rica,CR,84
+2021,AI & Machine Learning,C119857082,Cuba,CU,102
+2021,AI & Machine Learning,C119857082,Cabo Verde,CV,1
+2021,AI & Machine Learning,C119857082,Curaçao,CW,2
+2021,AI & Machine Learning,C119857082,Cyprus,CY,485
+2021,AI & Machine Learning,C119857082,Czechia,CZ,1111
+2021,AI & Machine Learning,C119857082,Germany,DE,10107
+2021,AI & Machine Learning,C119857082,Denmark,DK,1409
+2021,AI & Machine Learning,C119857082,Dominican Republic,DO,14
+2021,AI & Machine Learning,C119857082,Algeria,DZ,908
+2021,AI & Machine Learning,C119857082,Ecuador,EC,311
+2021,AI & Machine Learning,C119857082,Estonia,EE,263
+2021,AI & Machine Learning,C119857082,Egypt,EG,1870
+2021,AI & Machine Learning,C119857082,Eritrea,ER,3
+2021,AI & Machine Learning,C119857082,Spain,ES,5235
+2021,AI & Machine Learning,C119857082,Ethiopia,ET,711
+2021,AI & Machine Learning,C119857082,Finland,FI,1523
+2021,AI & Machine Learning,C119857082,Fiji,FJ,50
+2021,AI & Machine Learning,C119857082,Falkland Islands (Malvinas),FK,1
+2021,AI & Machine Learning,C119857082,Faroe Islands,FO,7
+2021,AI & Machine Learning,C119857082,France,FR,6613
+2021,AI & Machine Learning,C119857082,Gabon,GA,9
+2021,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,14882
+2021,AI & Machine Learning,C119857082,Grenada,GD,5
+2021,AI & Machine Learning,C119857082,Georgia,GE,67
+2021,AI & Machine Learning,C119857082,French Guiana,GF,3
+2021,AI & Machine Learning,C119857082,Ghana,GH,509
+2021,AI & Machine Learning,C119857082,Gibraltar,GI,2
+2021,AI & Machine Learning,C119857082,Greenland,GL,2
+2021,AI & Machine Learning,C119857082,Gambia,GM,11
+2021,AI & Machine Learning,C119857082,Guinea,GN,2
+2021,AI & Machine Learning,C119857082,Guadeloupe,GP,5
+2021,AI & Machine Learning,C119857082,Greece,GR,1585
+2021,AI & Machine Learning,C119857082,Guatemala,GT,32
+2021,AI & Machine Learning,C119857082,Guam,GU,9
+2021,AI & Machine Learning,C119857082,Guinea-Bissau,GW,3
+2021,AI & Machine Learning,C119857082,Guyana,GY,7
+2021,AI & Machine Learning,C119857082,Hong Kong,HK,2584
+2021,AI & Machine Learning,C119857082,Honduras,HN,13
+2021,AI & Machine Learning,C119857082,Croatia,HR,336
+2021,AI & Machine Learning,C119857082,Haiti,HT,1
+2021,AI & Machine Learning,C119857082,Hungary,HU,723
+2021,AI & Machine Learning,C119857082,Indonesia,ID,8056
+2021,AI & Machine Learning,C119857082,Ireland,IE,1190
+2021,AI & Machine Learning,C119857082,Israel,IL,1558
+2021,AI & Machine Learning,C119857082,India,IN,19220
+2021,AI & Machine Learning,C119857082,Iraq,IQ,1238
+2021,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,4961
+2021,AI & Machine Learning,C119857082,Iceland,IS,91
+2021,AI & Machine Learning,C119857082,Italy,IT,6689
+2021,AI & Machine Learning,C119857082,Jersey,JE,1
+2021,AI & Machine Learning,C119857082,Jamaica,JM,29
+2021,AI & Machine Learning,C119857082,Jordan,JO,680
+2021,AI & Machine Learning,C119857082,Japan,JP,5497
+2021,AI & Machine Learning,C119857082,Kenya,KE,400
+2021,AI & Machine Learning,C119857082,Kyrgyzstan,KG,35
+2021,AI & Machine Learning,C119857082,Cambodia,KH,53
+2021,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,4
+2021,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,5
+2021,AI & Machine Learning,C119857082,"Korea, Republic of",KR,5807
+2021,AI & Machine Learning,C119857082,Kuwait,KW,190
+2021,AI & Machine Learning,C119857082,Cayman Islands,KY,35
+2021,AI & Machine Learning,C119857082,Kazakhstan,KZ,423
+2021,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,7
+2021,AI & Machine Learning,C119857082,Lebanon,LB,272
+2021,AI & Machine Learning,C119857082,Liechtenstein,LI,14
+2021,AI & Machine Learning,C119857082,Sri Lanka,LK,427
+2021,AI & Machine Learning,C119857082,Liberia,LR,4
+2021,AI & Machine Learning,C119857082,Lesotho,LS,6
+2021,AI & Machine Learning,C119857082,Lithuania,LT,247
+2021,AI & Machine Learning,C119857082,Luxembourg,LU,215
+2021,AI & Machine Learning,C119857082,Latvia,LV,167
+2021,AI & Machine Learning,C119857082,Libya,LY,65
+2021,AI & Machine Learning,C119857082,Morocco,MA,961
+2021,AI & Machine Learning,C119857082,Monaco,MC,11
+2021,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,44
+2021,AI & Machine Learning,C119857082,Montenegro,ME,51
+2021,AI & Machine Learning,C119857082,Madagascar,MG,15
+2021,AI & Machine Learning,C119857082,North Macedonia,MK,155
+2021,AI & Machine Learning,C119857082,Mali,ML,19
+2021,AI & Machine Learning,C119857082,Myanmar,MM,50
+2021,AI & Machine Learning,C119857082,Mongolia,MN,56
+2021,AI & Machine Learning,C119857082,Macao,MO,521
+2021,AI & Machine Learning,C119857082,Northern Mariana Islands,MP,1
+2021,AI & Machine Learning,C119857082,Martinique,MQ,3
+2021,AI & Machine Learning,C119857082,Mauritania,MR,6
+2021,AI & Machine Learning,C119857082,Malta,MT,91
+2021,AI & Machine Learning,C119857082,Mauritius,MU,30
+2021,AI & Machine Learning,C119857082,Maldives,MV,7
+2021,AI & Machine Learning,C119857082,Malawi,MW,43
+2021,AI & Machine Learning,C119857082,Mexico,MX,1377
+2021,AI & Machine Learning,C119857082,Malaysia,MY,3710
+2021,AI & Machine Learning,C119857082,Mozambique,MZ,48
+2021,AI & Machine Learning,C119857082,Namibia,NA,38
+2021,AI & Machine Learning,C119857082,New Caledonia,NC,7
+2021,AI & Machine Learning,C119857082,Niger,NE,9
+2021,AI & Machine Learning,C119857082,Nigeria,NG,1478
+2021,AI & Machine Learning,C119857082,Nicaragua,NI,7
+2021,AI & Machine Learning,C119857082,Netherlands,NL,4155
+2021,AI & Machine Learning,C119857082,Norway,NO,1756
+2021,AI & Machine Learning,C119857082,Nepal,NP,281
+2021,AI & Machine Learning,C119857082,New Zealand,NZ,1108
+2021,AI & Machine Learning,C119857082,Oman,OM,267
+2021,AI & Machine Learning,C119857082,Panama,PA,17
+2021,AI & Machine Learning,C119857082,Peru,PE,356
+2021,AI & Machine Learning,C119857082,French Polynesia,PF,1
+2021,AI & Machine Learning,C119857082,Papua New Guinea,PG,16
+2021,AI & Machine Learning,C119857082,Philippines,PH,514
+2021,AI & Machine Learning,C119857082,Pakistan,PK,3069
+2021,AI & Machine Learning,C119857082,Poland,PL,2530
+2021,AI & Machine Learning,C119857082,Puerto Rico,PR,86
+2021,AI & Machine Learning,C119857082,"Palestine, State of",PS,118
+2021,AI & Machine Learning,C119857082,Portugal,PT,1952
+2021,AI & Machine Learning,C119857082,Paraguay,PY,29
+2021,AI & Machine Learning,C119857082,Qatar,QA,418
+2021,AI & Machine Learning,C119857082,Réunion,RE,18
+2021,AI & Machine Learning,C119857082,Romania,RO,1071
+2021,AI & Machine Learning,C119857082,Serbia,RS,454
+2021,AI & Machine Learning,C119857082,Russian Federation,RU,5652
+2021,AI & Machine Learning,C119857082,Rwanda,RW,68
+2021,AI & Machine Learning,C119857082,Saudi Arabia,SA,3509
+2021,AI & Machine Learning,C119857082,Seychelles,SC,3
+2021,AI & Machine Learning,C119857082,Sudan,SD,85
+2021,AI & Machine Learning,C119857082,Sweden,SE,2440
+2021,AI & Machine Learning,C119857082,Singapore,SG,2288
+2021,AI & Machine Learning,C119857082,Slovenia,SI,400
+2021,AI & Machine Learning,C119857082,Slovakia,SK,527
+2021,AI & Machine Learning,C119857082,Sierra Leone,SL,3
+2021,AI & Machine Learning,C119857082,Senegal,SN,53
+2021,AI & Machine Learning,C119857082,Somalia,SO,10
+2021,AI & Machine Learning,C119857082,Suriname,SR,2
+2021,AI & Machine Learning,C119857082,South Sudan,SS,74
+2021,AI & Machine Learning,C119857082,El Salvador,SV,8
+2021,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,43
+2021,AI & Machine Learning,C119857082,Eswatini,SZ,11
+2021,AI & Machine Learning,C119857082,Chad,TD,7
+2021,AI & Machine Learning,C119857082,Togo,TG,18
+2021,AI & Machine Learning,C119857082,Thailand,TH,1167
+2021,AI & Machine Learning,C119857082,Tajikistan,TJ,68
+2021,AI & Machine Learning,C119857082,Timor-Leste,TL,2
+2021,AI & Machine Learning,C119857082,Tunisia,TN,710
+2021,AI & Machine Learning,C119857082,Turkey,TR,3662
+2021,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,36
+2021,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,3111
+2021,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,156
+2021,AI & Machine Learning,C119857082,Ukraine,UA,1451
+2021,AI & Machine Learning,C119857082,Uganda,UG,164
+2021,AI & Machine Learning,C119857082,United States of America,US,46079
+2021,AI & Machine Learning,C119857082,Uruguay,UY,98
+2021,AI & Machine Learning,C119857082,Uzbekistan,UZ,252
+2021,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,41
+2021,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,42
+2021,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,4
+2021,AI & Machine Learning,C119857082,Viet Nam,VN,1748
+2021,AI & Machine Learning,C119857082,Samoa,WS,3
+2021,AI & Machine Learning,C119857082,Kosovo,XK,37
+2021,AI & Machine Learning,C119857082,Yemen,YE,212
+2021,AI & Machine Learning,C119857082,South Africa,ZA,1579
+2021,AI & Machine Learning,C119857082,Zambia,ZM,55
+2021,AI & Machine Learning,C119857082,Zimbabwe,ZW,80
 2021,CRISPR & Genomics,C98108389,United Arab Emirates,AE,14
 2021,CRISPR & Genomics,C98108389,Afghanistan,AF,1
 2021,CRISPR & Genomics,C98108389,Argentina,AR,16
@@ -17534,206 +24700,206 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2021,Robotics & Automation,C34413123,Kosovo,XK,1
 2021,Robotics & Automation,C34413123,South Africa,ZA,30
 2021,Robotics & Automation,C34413123,Zimbabwe,ZW,1
-2022,AI & Machine Learning,C154945302,United Arab Emirates,AE,3541
-2022,AI & Machine Learning,C154945302,Afghanistan,AF,119
-2022,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,26
-2022,AI & Machine Learning,C154945302,Albania,AL,171
-2022,AI & Machine Learning,C154945302,Armenia,AM,190
-2022,AI & Machine Learning,C154945302,Angola,AO,13
-2022,AI & Machine Learning,C154945302,Argentina,AR,1274
-2022,AI & Machine Learning,C154945302,Austria,AT,4989
-2022,AI & Machine Learning,C154945302,Australia,AU,16829
-2022,AI & Machine Learning,C154945302,Aruba,AW,3
-2022,AI & Machine Learning,C154945302,Azerbaijan,AZ,383
-2022,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,340
-2022,AI & Machine Learning,C154945302,Barbados,BB,20
-2022,AI & Machine Learning,C154945302,Bangladesh,BD,3605
-2022,AI & Machine Learning,C154945302,Belgium,BE,5447
-2022,AI & Machine Learning,C154945302,Burkina Faso,BF,65
-2022,AI & Machine Learning,C154945302,Bulgaria,BG,1413
-2022,AI & Machine Learning,C154945302,Bahrain,BH,355
-2022,AI & Machine Learning,C154945302,Burundi,BI,125
-2022,AI & Machine Learning,C154945302,Benin,BJ,100
-2022,AI & Machine Learning,C154945302,Bermuda,BM,7
-2022,AI & Machine Learning,C154945302,Brunei Darussalam,BN,228
-2022,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,77
-2022,AI & Machine Learning,C154945302,Brazil,BR,10529
-2022,AI & Machine Learning,C154945302,Bahamas,BS,15
-2022,AI & Machine Learning,C154945302,Bhutan,BT,41
-2022,AI & Machine Learning,C154945302,Botswana,BW,107
-2022,AI & Machine Learning,C154945302,Belarus,BY,491
-2022,AI & Machine Learning,C154945302,Belize,BZ,4
-2022,AI & Machine Learning,C154945302,Canada,CA,20589
-2022,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,68
-2022,AI & Machine Learning,C154945302,Central African Republic,CF,4
-2022,AI & Machine Learning,C154945302,Congo,CG,19
-2022,AI & Machine Learning,C154945302,Switzerland,CH,8686
-2022,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,68
-2022,AI & Machine Learning,C154945302,Chile,CL,1914
-2022,AI & Machine Learning,C154945302,Cameroon,CM,384
-2022,AI & Machine Learning,C154945302,China,CN,194099
-2022,AI & Machine Learning,C154945302,Colombia,CO,1903
-2022,AI & Machine Learning,C154945302,Costa Rica,CR,215
-2022,AI & Machine Learning,C154945302,Cuba,CU,212
-2022,AI & Machine Learning,C154945302,Cabo Verde,CV,6
-2022,AI & Machine Learning,C154945302,Curaçao,CW,7
-2022,AI & Machine Learning,C154945302,Cyprus,CY,1039
-2022,AI & Machine Learning,C154945302,Czechia,CZ,3592
-2022,AI & Machine Learning,C154945302,Germany,DE,31590
-2022,AI & Machine Learning,C154945302,Djibouti,DJ,3
-2022,AI & Machine Learning,C154945302,Denmark,DK,4660
-2022,AI & Machine Learning,C154945302,Dominican Republic,DO,58
-2022,AI & Machine Learning,C154945302,Algeria,DZ,2808
-2022,AI & Machine Learning,C154945302,Ecuador,EC,972
-2022,AI & Machine Learning,C154945302,Estonia,EE,668
-2022,AI & Machine Learning,C154945302,Egypt,EG,5528
-2022,AI & Machine Learning,C154945302,Eritrea,ER,3
-2022,AI & Machine Learning,C154945302,Spain,ES,14346
-2022,AI & Machine Learning,C154945302,Ethiopia,ET,1295
-2022,AI & Machine Learning,C154945302,Finland,FI,4102
-2022,AI & Machine Learning,C154945302,Fiji,FJ,96
-2022,AI & Machine Learning,C154945302,"Micronesia, Federated States of",FM,3
-2022,AI & Machine Learning,C154945302,Faroe Islands,FO,29
-2022,AI & Machine Learning,C154945302,France,FR,22462
-2022,AI & Machine Learning,C154945302,Gabon,GA,19
-2022,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,36649
-2022,AI & Machine Learning,C154945302,Grenada,GD,14
-2022,AI & Machine Learning,C154945302,Georgia,GE,196
-2022,AI & Machine Learning,C154945302,French Guiana,GF,10
-2022,AI & Machine Learning,C154945302,Ghana,GH,766
-2022,AI & Machine Learning,C154945302,Greenland,GL,8
-2022,AI & Machine Learning,C154945302,Gambia,GM,11
-2022,AI & Machine Learning,C154945302,Guinea,GN,5
-2022,AI & Machine Learning,C154945302,Guadeloupe,GP,10
-2022,AI & Machine Learning,C154945302,Greece,GR,4231
-2022,AI & Machine Learning,C154945302,Guatemala,GT,50
-2022,AI & Machine Learning,C154945302,Guam,GU,6
-2022,AI & Machine Learning,C154945302,Guyana,GY,8
-2022,AI & Machine Learning,C154945302,Hong Kong,HK,7694
-2022,AI & Machine Learning,C154945302,Honduras,HN,48
-2022,AI & Machine Learning,C154945302,Croatia,HR,1120
-2022,AI & Machine Learning,C154945302,Haiti,HT,6
-2022,AI & Machine Learning,C154945302,Hungary,HU,2519
-2022,AI & Machine Learning,C154945302,Indonesia,ID,25810
-2022,AI & Machine Learning,C154945302,Ireland,IE,2819
-2022,AI & Machine Learning,C154945302,Israel,IL,3813
-2022,AI & Machine Learning,C154945302,India,IN,60018
-2022,AI & Machine Learning,C154945302,Iraq,IQ,4224
-2022,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,10761
-2022,AI & Machine Learning,C154945302,Iceland,IS,268
-2022,AI & Machine Learning,C154945302,Italy,IT,20532
-2022,AI & Machine Learning,C154945302,Jersey,JE,4
-2022,AI & Machine Learning,C154945302,Jamaica,JM,45
-2022,AI & Machine Learning,C154945302,Jordan,JO,1695
-2022,AI & Machine Learning,C154945302,Japan,JP,21450
-2022,AI & Machine Learning,C154945302,Kenya,KE,522
-2022,AI & Machine Learning,C154945302,Kyrgyzstan,KG,157
-2022,AI & Machine Learning,C154945302,Cambodia,KH,148
-2022,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,28
-2022,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,40
-2022,AI & Machine Learning,C154945302,"Korea, Republic of",KR,17231
-2022,AI & Machine Learning,C154945302,Kuwait,KW,472
-2022,AI & Machine Learning,C154945302,Cayman Islands,KY,84
-2022,AI & Machine Learning,C154945302,Kazakhstan,KZ,1037
-2022,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,20
-2022,AI & Machine Learning,C154945302,Lebanon,LB,696
-2022,AI & Machine Learning,C154945302,Liechtenstein,LI,35
-2022,AI & Machine Learning,C154945302,Sri Lanka,LK,889
-2022,AI & Machine Learning,C154945302,Liberia,LR,24
-2022,AI & Machine Learning,C154945302,Lesotho,LS,11
-2022,AI & Machine Learning,C154945302,Lithuania,LT,709
-2022,AI & Machine Learning,C154945302,Luxembourg,LU,703
-2022,AI & Machine Learning,C154945302,Latvia,LV,436
-2022,AI & Machine Learning,C154945302,Libya,LY,198
-2022,AI & Machine Learning,C154945302,Morocco,MA,2760
-2022,AI & Machine Learning,C154945302,Monaco,MC,17
-2022,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,204
-2022,AI & Machine Learning,C154945302,Montenegro,ME,155
-2022,AI & Machine Learning,C154945302,Madagascar,MG,28
-2022,AI & Machine Learning,C154945302,North Macedonia,MK,378
-2022,AI & Machine Learning,C154945302,Mali,ML,40
-2022,AI & Machine Learning,C154945302,Myanmar,MM,120
-2022,AI & Machine Learning,C154945302,Mongolia,MN,232
-2022,AI & Machine Learning,C154945302,Macao,MO,1771
-2022,AI & Machine Learning,C154945302,Martinique,MQ,3
-2022,AI & Machine Learning,C154945302,Mauritania,MR,16
-2022,AI & Machine Learning,C154945302,Malta,MT,259
-2022,AI & Machine Learning,C154945302,Mauritius,MU,114
-2022,AI & Machine Learning,C154945302,Maldives,MV,16
-2022,AI & Machine Learning,C154945302,Malawi,MW,79
-2022,AI & Machine Learning,C154945302,Mexico,MX,4213
-2022,AI & Machine Learning,C154945302,Malaysia,MY,8403
-2022,AI & Machine Learning,C154945302,Mozambique,MZ,94
-2022,AI & Machine Learning,C154945302,Namibia,NA,39
-2022,AI & Machine Learning,C154945302,New Caledonia,NC,19
-2022,AI & Machine Learning,C154945302,Niger,NE,23
-2022,AI & Machine Learning,C154945302,Nigeria,NG,2568
-2022,AI & Machine Learning,C154945302,Nicaragua,NI,37
-2022,AI & Machine Learning,C154945302,Netherlands,NL,11259
-2022,AI & Machine Learning,C154945302,Norway,NO,4711
-2022,AI & Machine Learning,C154945302,Nepal,NP,870
-2022,AI & Machine Learning,C154945302,New Zealand,NZ,2395
-2022,AI & Machine Learning,C154945302,Oman,OM,558
-2022,AI & Machine Learning,C154945302,Panama,PA,71
-2022,AI & Machine Learning,C154945302,Peru,PE,892
-2022,AI & Machine Learning,C154945302,French Polynesia,PF,7
-2022,AI & Machine Learning,C154945302,Papua New Guinea,PG,32
-2022,AI & Machine Learning,C154945302,Philippines,PH,1712
-2022,AI & Machine Learning,C154945302,Pakistan,PK,6936
-2022,AI & Machine Learning,C154945302,Poland,PL,7341
-2022,AI & Machine Learning,C154945302,Puerto Rico,PR,205
-2022,AI & Machine Learning,C154945302,"Palestine, State of",PS,251
-2022,AI & Machine Learning,C154945302,Portugal,PT,4932
-2022,AI & Machine Learning,C154945302,Palau,PW,6
-2022,AI & Machine Learning,C154945302,Paraguay,PY,65
-2022,AI & Machine Learning,C154945302,Qatar,QA,1146
-2022,AI & Machine Learning,C154945302,Réunion,RE,40
-2022,AI & Machine Learning,C154945302,Romania,RO,3247
-2022,AI & Machine Learning,C154945302,Serbia,RS,1611
-2022,AI & Machine Learning,C154945302,Russian Federation,RU,16953
-2022,AI & Machine Learning,C154945302,Rwanda,RW,147
-2022,AI & Machine Learning,C154945302,Saudi Arabia,SA,9693
-2022,AI & Machine Learning,C154945302,Seychelles,SC,9
-2022,AI & Machine Learning,C154945302,Sudan,SD,258
-2022,AI & Machine Learning,C154945302,Sweden,SE,6671
-2022,AI & Machine Learning,C154945302,Singapore,SG,6395
-2022,AI & Machine Learning,C154945302,Slovenia,SI,1054
-2022,AI & Machine Learning,C154945302,Slovakia,SK,1491
-2022,AI & Machine Learning,C154945302,Sierra Leone,SL,24
-2022,AI & Machine Learning,C154945302,Senegal,SN,132
-2022,AI & Machine Learning,C154945302,Somalia,SO,28
-2022,AI & Machine Learning,C154945302,Suriname,SR,4
-2022,AI & Machine Learning,C154945302,South Sudan,SS,284
-2022,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,4
-2022,AI & Machine Learning,C154945302,El Salvador,SV,57
-2022,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,149
-2022,AI & Machine Learning,C154945302,Eswatini,SZ,25
-2022,AI & Machine Learning,C154945302,Chad,TD,9
-2022,AI & Machine Learning,C154945302,Togo,TG,30
-2022,AI & Machine Learning,C154945302,Thailand,TH,3181
-2022,AI & Machine Learning,C154945302,Tajikistan,TJ,261
-2022,AI & Machine Learning,C154945302,Timor-Leste,TL,9
-2022,AI & Machine Learning,C154945302,Turkmenistan,TM,10
-2022,AI & Machine Learning,C154945302,Tunisia,TN,2171
-2022,AI & Machine Learning,C154945302,Turkey,TR,10361
-2022,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,56
-2022,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,8309
-2022,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,268
-2022,AI & Machine Learning,C154945302,Ukraine,UA,4213
-2022,AI & Machine Learning,C154945302,Uganda,UG,228
-2022,AI & Machine Learning,C154945302,United States of America,US,111017
-2022,AI & Machine Learning,C154945302,Uruguay,UY,230
-2022,AI & Machine Learning,C154945302,Uzbekistan,UZ,896
-2022,AI & Machine Learning,C154945302,Holy See,VA,4
-2022,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,143
-2022,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,110
-2022,AI & Machine Learning,C154945302,Viet Nam,VN,4062
-2022,AI & Machine Learning,C154945302,Samoa,WS,4
-2022,AI & Machine Learning,C154945302,Kosovo,XK,75
-2022,AI & Machine Learning,C154945302,Yemen,YE,499
-2022,AI & Machine Learning,C154945302,South Africa,ZA,3358
-2022,AI & Machine Learning,C154945302,Zambia,ZM,96
-2022,AI & Machine Learning,C154945302,Zimbabwe,ZW,179
+2022,AI & Machine Learning,C119857082,Andorra,AD,3
+2022,AI & Machine Learning,C119857082,United Arab Emirates,AE,1703
+2022,AI & Machine Learning,C119857082,Afghanistan,AF,52
+2022,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,11
+2022,AI & Machine Learning,C119857082,Albania,AL,60
+2022,AI & Machine Learning,C119857082,Armenia,AM,50
+2022,AI & Machine Learning,C119857082,Angola,AO,6
+2022,AI & Machine Learning,C119857082,Argentina,AR,397
+2022,AI & Machine Learning,C119857082,Austria,AT,1554
+2022,AI & Machine Learning,C119857082,Australia,AU,7227
+2022,AI & Machine Learning,C119857082,Aruba,AW,1
+2022,AI & Machine Learning,C119857082,Azerbaijan,AZ,129
+2022,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,162
+2022,AI & Machine Learning,C119857082,Barbados,BB,6
+2022,AI & Machine Learning,C119857082,Bangladesh,BD,1927
+2022,AI & Machine Learning,C119857082,Belgium,BE,1827
+2022,AI & Machine Learning,C119857082,Burkina Faso,BF,41
+2022,AI & Machine Learning,C119857082,Bulgaria,BG,391
+2022,AI & Machine Learning,C119857082,Bahrain,BH,207
+2022,AI & Machine Learning,C119857082,Burundi,BI,34
+2022,AI & Machine Learning,C119857082,Benin,BJ,49
+2022,AI & Machine Learning,C119857082,Bermuda,BM,3
+2022,AI & Machine Learning,C119857082,Brunei Darussalam,BN,118
+2022,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,41
+2022,AI & Machine Learning,C119857082,Brazil,BR,3958
+2022,AI & Machine Learning,C119857082,Bahamas,BS,7
+2022,AI & Machine Learning,C119857082,Bhutan,BT,28
+2022,AI & Machine Learning,C119857082,Botswana,BW,57
+2022,AI & Machine Learning,C119857082,Belarus,BY,135
+2022,AI & Machine Learning,C119857082,Belize,BZ,1
+2022,AI & Machine Learning,C119857082,Canada,CA,7768
+2022,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,34
+2022,AI & Machine Learning,C119857082,Central African Republic,CF,3
+2022,AI & Machine Learning,C119857082,Congo,CG,10
+2022,AI & Machine Learning,C119857082,Switzerland,CH,2836
+2022,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,51
+2022,AI & Machine Learning,C119857082,Chile,CL,653
+2022,AI & Machine Learning,C119857082,Cameroon,CM,165
+2022,AI & Machine Learning,C119857082,China,CN,63046
+2022,AI & Machine Learning,C119857082,Colombia,CO,698
+2022,AI & Machine Learning,C119857082,Costa Rica,CR,60
+2022,AI & Machine Learning,C119857082,Cuba,CU,56
+2022,AI & Machine Learning,C119857082,Cabo Verde,CV,4
+2022,AI & Machine Learning,C119857082,Curaçao,CW,3
+2022,AI & Machine Learning,C119857082,Cyprus,CY,515
+2022,AI & Machine Learning,C119857082,Czechia,CZ,1060
+2022,AI & Machine Learning,C119857082,Germany,DE,9728
+2022,AI & Machine Learning,C119857082,Djibouti,DJ,5
+2022,AI & Machine Learning,C119857082,Denmark,DK,1412
+2022,AI & Machine Learning,C119857082,Dominican Republic,DO,16
+2022,AI & Machine Learning,C119857082,Algeria,DZ,1036
+2022,AI & Machine Learning,C119857082,Ecuador,EC,351
+2022,AI & Machine Learning,C119857082,Estonia,EE,218
+2022,AI & Machine Learning,C119857082,Egypt,EG,2431
+2022,AI & Machine Learning,C119857082,Eritrea,ER,1
+2022,AI & Machine Learning,C119857082,Spain,ES,5217
+2022,AI & Machine Learning,C119857082,Ethiopia,ET,1041
+2022,AI & Machine Learning,C119857082,Finland,FI,1566
+2022,AI & Machine Learning,C119857082,Fiji,FJ,51
+2022,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,1
+2022,AI & Machine Learning,C119857082,Faroe Islands,FO,4
+2022,AI & Machine Learning,C119857082,France,FR,6684
+2022,AI & Machine Learning,C119857082,Gabon,GA,10
+2022,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,14115
+2022,AI & Machine Learning,C119857082,Grenada,GD,6
+2022,AI & Machine Learning,C119857082,Georgia,GE,85
+2022,AI & Machine Learning,C119857082,French Guiana,GF,3
+2022,AI & Machine Learning,C119857082,Ghana,GH,604
+2022,AI & Machine Learning,C119857082,Gibraltar,GI,2
+2022,AI & Machine Learning,C119857082,Gambia,GM,10
+2022,AI & Machine Learning,C119857082,Guinea,GN,3
+2022,AI & Machine Learning,C119857082,Guadeloupe,GP,3
+2022,AI & Machine Learning,C119857082,Greece,GR,1633
+2022,AI & Machine Learning,C119857082,Guatemala,GT,11
+2022,AI & Machine Learning,C119857082,Guam,GU,2
+2022,AI & Machine Learning,C119857082,Guinea-Bissau,GW,1
+2022,AI & Machine Learning,C119857082,Guyana,GY,3
+2022,AI & Machine Learning,C119857082,Hong Kong,HK,2806
+2022,AI & Machine Learning,C119857082,Honduras,HN,10
+2022,AI & Machine Learning,C119857082,Croatia,HR,392
+2022,AI & Machine Learning,C119857082,Haiti,HT,1
+2022,AI & Machine Learning,C119857082,Hungary,HU,911
+2022,AI & Machine Learning,C119857082,Indonesia,ID,9160
+2022,AI & Machine Learning,C119857082,Ireland,IE,1155
+2022,AI & Machine Learning,C119857082,Israel,IL,1177
+2022,AI & Machine Learning,C119857082,India,IN,25155
+2022,AI & Machine Learning,C119857082,Iraq,IQ,1558
+2022,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,4669
+2022,AI & Machine Learning,C119857082,Iceland,IS,95
+2022,AI & Machine Learning,C119857082,Italy,IT,6793
+2022,AI & Machine Learning,C119857082,Jamaica,JM,22
+2022,AI & Machine Learning,C119857082,Jordan,JO,946
+2022,AI & Machine Learning,C119857082,Japan,JP,5356
+2022,AI & Machine Learning,C119857082,Kenya,KE,396
+2022,AI & Machine Learning,C119857082,Kyrgyzstan,KG,48
+2022,AI & Machine Learning,C119857082,Cambodia,KH,78
+2022,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,8
+2022,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,9
+2022,AI & Machine Learning,C119857082,"Korea, Republic of",KR,6327
+2022,AI & Machine Learning,C119857082,Kuwait,KW,228
+2022,AI & Machine Learning,C119857082,Cayman Islands,KY,30
+2022,AI & Machine Learning,C119857082,Kazakhstan,KZ,436
+2022,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,8
+2022,AI & Machine Learning,C119857082,Lebanon,LB,365
+2022,AI & Machine Learning,C119857082,Saint Lucia,LC,2
+2022,AI & Machine Learning,C119857082,Liechtenstein,LI,17
+2022,AI & Machine Learning,C119857082,Sri Lanka,LK,427
+2022,AI & Machine Learning,C119857082,Liberia,LR,15
+2022,AI & Machine Learning,C119857082,Lesotho,LS,13
+2022,AI & Machine Learning,C119857082,Lithuania,LT,270
+2022,AI & Machine Learning,C119857082,Luxembourg,LU,260
+2022,AI & Machine Learning,C119857082,Latvia,LV,161
+2022,AI & Machine Learning,C119857082,Libya,LY,70
+2022,AI & Machine Learning,C119857082,Morocco,MA,1204
+2022,AI & Machine Learning,C119857082,Monaco,MC,11
+2022,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,77
+2022,AI & Machine Learning,C119857082,Montenegro,ME,52
+2022,AI & Machine Learning,C119857082,Madagascar,MG,12
+2022,AI & Machine Learning,C119857082,North Macedonia,MK,159
+2022,AI & Machine Learning,C119857082,Mali,ML,21
+2022,AI & Machine Learning,C119857082,Myanmar,MM,44
+2022,AI & Machine Learning,C119857082,Mongolia,MN,73
+2022,AI & Machine Learning,C119857082,Macao,MO,713
+2022,AI & Machine Learning,C119857082,Martinique,MQ,3
+2022,AI & Machine Learning,C119857082,Mauritania,MR,5
+2022,AI & Machine Learning,C119857082,Malta,MT,93
+2022,AI & Machine Learning,C119857082,Mauritius,MU,62
+2022,AI & Machine Learning,C119857082,Maldives,MV,7
+2022,AI & Machine Learning,C119857082,Malawi,MW,54
+2022,AI & Machine Learning,C119857082,Mexico,MX,1399
+2022,AI & Machine Learning,C119857082,Malaysia,MY,4179
+2022,AI & Machine Learning,C119857082,Mozambique,MZ,34
+2022,AI & Machine Learning,C119857082,Namibia,NA,30
+2022,AI & Machine Learning,C119857082,New Caledonia,NC,7
+2022,AI & Machine Learning,C119857082,Niger,NE,20
+2022,AI & Machine Learning,C119857082,Nigeria,NG,1538
+2022,AI & Machine Learning,C119857082,Nicaragua,NI,12
+2022,AI & Machine Learning,C119857082,Netherlands,NL,3982
+2022,AI & Machine Learning,C119857082,Norway,NO,1791
+2022,AI & Machine Learning,C119857082,Nepal,NP,411
+2022,AI & Machine Learning,C119857082,New Zealand,NZ,1010
+2022,AI & Machine Learning,C119857082,Oman,OM,321
+2022,AI & Machine Learning,C119857082,Panama,PA,25
+2022,AI & Machine Learning,C119857082,Peru,PE,385
+2022,AI & Machine Learning,C119857082,French Polynesia,PF,4
+2022,AI & Machine Learning,C119857082,Papua New Guinea,PG,12
+2022,AI & Machine Learning,C119857082,Philippines,PH,821
+2022,AI & Machine Learning,C119857082,Pakistan,PK,3556
+2022,AI & Machine Learning,C119857082,Poland,PL,2448
+2022,AI & Machine Learning,C119857082,Puerto Rico,PR,98
+2022,AI & Machine Learning,C119857082,"Palestine, State of",PS,132
+2022,AI & Machine Learning,C119857082,Portugal,PT,1965
+2022,AI & Machine Learning,C119857082,Paraguay,PY,18
+2022,AI & Machine Learning,C119857082,Qatar,QA,505
+2022,AI & Machine Learning,C119857082,Réunion,RE,19
+2022,AI & Machine Learning,C119857082,Romania,RO,1099
+2022,AI & Machine Learning,C119857082,Serbia,RS,535
+2022,AI & Machine Learning,C119857082,Russian Federation,RU,4658
+2022,AI & Machine Learning,C119857082,Rwanda,RW,80
+2022,AI & Machine Learning,C119857082,Saudi Arabia,SA,4975
+2022,AI & Machine Learning,C119857082,Seychelles,SC,2
+2022,AI & Machine Learning,C119857082,Sudan,SD,101
+2022,AI & Machine Learning,C119857082,Sweden,SE,2392
+2022,AI & Machine Learning,C119857082,Singapore,SG,2451
+2022,AI & Machine Learning,C119857082,Slovenia,SI,389
+2022,AI & Machine Learning,C119857082,Slovakia,SK,467
+2022,AI & Machine Learning,C119857082,Sierra Leone,SL,6
+2022,AI & Machine Learning,C119857082,San Marino,SM,2
+2022,AI & Machine Learning,C119857082,Senegal,SN,70
+2022,AI & Machine Learning,C119857082,Somalia,SO,17
+2022,AI & Machine Learning,C119857082,South Sudan,SS,113
+2022,AI & Machine Learning,C119857082,El Salvador,SV,13
+2022,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,53
+2022,AI & Machine Learning,C119857082,Eswatini,SZ,18
+2022,AI & Machine Learning,C119857082,Chad,TD,3
+2022,AI & Machine Learning,C119857082,Togo,TG,20
+2022,AI & Machine Learning,C119857082,Thailand,TH,1495
+2022,AI & Machine Learning,C119857082,Tajikistan,TJ,72
+2022,AI & Machine Learning,C119857082,Timor-Leste,TL,3
+2022,AI & Machine Learning,C119857082,Turkmenistan,TM,4
+2022,AI & Machine Learning,C119857082,Tunisia,TN,861
+2022,AI & Machine Learning,C119857082,Turkey,TR,4239
+2022,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,38
+2022,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,3200
+2022,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,262
+2022,AI & Machine Learning,C119857082,Ukraine,UA,1205
+2022,AI & Machine Learning,C119857082,Uganda,UG,173
+2022,AI & Machine Learning,C119857082,United States of America,US,41530
+2022,AI & Machine Learning,C119857082,Uruguay,UY,64
+2022,AI & Machine Learning,C119857082,Uzbekistan,UZ,197
+2022,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,55
+2022,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,48
+2022,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,2
+2022,AI & Machine Learning,C119857082,Viet Nam,VN,1893
+2022,AI & Machine Learning,C119857082,Samoa,WS,2
+2022,AI & Machine Learning,C119857082,Kosovo,XK,50
+2022,AI & Machine Learning,C119857082,Yemen,YE,251
+2022,AI & Machine Learning,C119857082,South Africa,ZA,1785
+2022,AI & Machine Learning,C119857082,Zambia,ZM,79
+2022,AI & Machine Learning,C119857082,Zimbabwe,ZW,108
 2022,CRISPR & Genomics,C98108389,United Arab Emirates,AE,10
 2022,CRISPR & Genomics,C98108389,Armenia,AM,2
 2022,CRISPR & Genomics,C98108389,Argentina,AR,15
@@ -18633,206 +25799,206 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2022,Robotics & Automation,C34413123,Yemen,YE,3
 2022,Robotics & Automation,C34413123,South Africa,ZA,29
 2022,Robotics & Automation,C34413123,Zambia,ZM,1
-2023,AI & Machine Learning,C154945302,Andorra,AD,3
-2023,AI & Machine Learning,C154945302,United Arab Emirates,AE,4530
-2023,AI & Machine Learning,C154945302,Afghanistan,AF,134
-2023,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,30
-2023,AI & Machine Learning,C154945302,Albania,AL,204
-2023,AI & Machine Learning,C154945302,Armenia,AM,251
-2023,AI & Machine Learning,C154945302,Angola,AO,9
-2023,AI & Machine Learning,C154945302,Argentina,AR,1393
-2023,AI & Machine Learning,C154945302,Austria,AT,5344
-2023,AI & Machine Learning,C154945302,Australia,AU,18274
-2023,AI & Machine Learning,C154945302,Azerbaijan,AZ,505
-2023,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,410
-2023,AI & Machine Learning,C154945302,Barbados,BB,21
-2023,AI & Machine Learning,C154945302,Bangladesh,BD,4304
-2023,AI & Machine Learning,C154945302,Belgium,BE,5943
-2023,AI & Machine Learning,C154945302,Burkina Faso,BF,75
-2023,AI & Machine Learning,C154945302,Bulgaria,BG,1440
-2023,AI & Machine Learning,C154945302,Bahrain,BH,315
-2023,AI & Machine Learning,C154945302,Burundi,BI,146
-2023,AI & Machine Learning,C154945302,Benin,BJ,112
-2023,AI & Machine Learning,C154945302,Brunei Darussalam,BN,214
-2023,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,114
-2023,AI & Machine Learning,C154945302,Brazil,BR,11097
-2023,AI & Machine Learning,C154945302,Bahamas,BS,4
-2023,AI & Machine Learning,C154945302,Bhutan,BT,32
-2023,AI & Machine Learning,C154945302,Botswana,BW,163
-2023,AI & Machine Learning,C154945302,Belarus,BY,457
-2023,AI & Machine Learning,C154945302,Canada,CA,22347
-2023,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,81
-2023,AI & Machine Learning,C154945302,Central African Republic,CF,7
-2023,AI & Machine Learning,C154945302,Congo,CG,63
-2023,AI & Machine Learning,C154945302,Switzerland,CH,9248
-2023,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,82
-2023,AI & Machine Learning,C154945302,Chile,CL,2139
-2023,AI & Machine Learning,C154945302,Cameroon,CM,429
-2023,AI & Machine Learning,C154945302,China,CN,225882
-2023,AI & Machine Learning,C154945302,Colombia,CO,2154
-2023,AI & Machine Learning,C154945302,Costa Rica,CR,212
-2023,AI & Machine Learning,C154945302,Cuba,CU,209
-2023,AI & Machine Learning,C154945302,Cabo Verde,CV,6
-2023,AI & Machine Learning,C154945302,Curaçao,CW,7
-2023,AI & Machine Learning,C154945302,Cyprus,CY,1159
-2023,AI & Machine Learning,C154945302,Czechia,CZ,3815
-2023,AI & Machine Learning,C154945302,Germany,DE,34984
-2023,AI & Machine Learning,C154945302,Djibouti,DJ,7
-2023,AI & Machine Learning,C154945302,Denmark,DK,5121
-2023,AI & Machine Learning,C154945302,Dominica,DM,5
-2023,AI & Machine Learning,C154945302,Dominican Republic,DO,68
-2023,AI & Machine Learning,C154945302,Algeria,DZ,2916
-2023,AI & Machine Learning,C154945302,Ecuador,EC,1204
-2023,AI & Machine Learning,C154945302,Estonia,EE,711
-2023,AI & Machine Learning,C154945302,Egypt,EG,5949
-2023,AI & Machine Learning,C154945302,Spain,ES,15760
-2023,AI & Machine Learning,C154945302,Ethiopia,ET,1144
-2023,AI & Machine Learning,C154945302,Finland,FI,4361
-2023,AI & Machine Learning,C154945302,Fiji,FJ,111
-2023,AI & Machine Learning,C154945302,Faroe Islands,FO,20
-2023,AI & Machine Learning,C154945302,France,FR,23865
-2023,AI & Machine Learning,C154945302,Gabon,GA,16
-2023,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,40760
-2023,AI & Machine Learning,C154945302,Grenada,GD,10
-2023,AI & Machine Learning,C154945302,Georgia,GE,217
-2023,AI & Machine Learning,C154945302,French Guiana,GF,12
-2023,AI & Machine Learning,C154945302,Ghana,GH,747
-2023,AI & Machine Learning,C154945302,Gibraltar,GI,5
-2023,AI & Machine Learning,C154945302,Greenland,GL,8
-2023,AI & Machine Learning,C154945302,Gambia,GM,23
-2023,AI & Machine Learning,C154945302,Guinea,GN,13
-2023,AI & Machine Learning,C154945302,Guadeloupe,GP,21
-2023,AI & Machine Learning,C154945302,Greece,GR,4649
-2023,AI & Machine Learning,C154945302,Guatemala,GT,76
-2023,AI & Machine Learning,C154945302,Guam,GU,6
-2023,AI & Machine Learning,C154945302,Guyana,GY,14
-2023,AI & Machine Learning,C154945302,Hong Kong,HK,9691
-2023,AI & Machine Learning,C154945302,Honduras,HN,65
-2023,AI & Machine Learning,C154945302,Croatia,HR,1123
-2023,AI & Machine Learning,C154945302,Haiti,HT,4
-2023,AI & Machine Learning,C154945302,Hungary,HU,2477
-2023,AI & Machine Learning,C154945302,Indonesia,ID,33155
-2023,AI & Machine Learning,C154945302,Ireland,IE,3388
-2023,AI & Machine Learning,C154945302,Israel,IL,3994
-2023,AI & Machine Learning,C154945302,India,IN,71639
-2023,AI & Machine Learning,C154945302,Iraq,IQ,5075
-2023,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,10522
-2023,AI & Machine Learning,C154945302,Iceland,IS,289
-2023,AI & Machine Learning,C154945302,Italy,IT,22676
-2023,AI & Machine Learning,C154945302,Jamaica,JM,56
-2023,AI & Machine Learning,C154945302,Jordan,JO,2187
-2023,AI & Machine Learning,C154945302,Japan,JP,22297
-2023,AI & Machine Learning,C154945302,Kenya,KE,624
-2023,AI & Machine Learning,C154945302,Kyrgyzstan,KG,95
-2023,AI & Machine Learning,C154945302,Cambodia,KH,230
-2023,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,35
-2023,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,60
-2023,AI & Machine Learning,C154945302,"Korea, Republic of",KR,19373
-2023,AI & Machine Learning,C154945302,Kuwait,KW,581
-2023,AI & Machine Learning,C154945302,Cayman Islands,KY,115
-2023,AI & Machine Learning,C154945302,Kazakhstan,KZ,1338
-2023,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,23
-2023,AI & Machine Learning,C154945302,Lebanon,LB,1332
-2023,AI & Machine Learning,C154945302,Saint Lucia,LC,4
-2023,AI & Machine Learning,C154945302,Liechtenstein,LI,31
-2023,AI & Machine Learning,C154945302,Sri Lanka,LK,896
-2023,AI & Machine Learning,C154945302,Liberia,LR,12
-2023,AI & Machine Learning,C154945302,Lesotho,LS,25
-2023,AI & Machine Learning,C154945302,Lithuania,LT,825
-2023,AI & Machine Learning,C154945302,Luxembourg,LU,766
-2023,AI & Machine Learning,C154945302,Latvia,LV,483
-2023,AI & Machine Learning,C154945302,Libya,LY,267
-2023,AI & Machine Learning,C154945302,Morocco,MA,3149
-2023,AI & Machine Learning,C154945302,Monaco,MC,17
-2023,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,239
-2023,AI & Machine Learning,C154945302,Montenegro,ME,166
-2023,AI & Machine Learning,C154945302,Saint Martin (French part),MF,5
-2023,AI & Machine Learning,C154945302,Madagascar,MG,46
-2023,AI & Machine Learning,C154945302,North Macedonia,MK,375
-2023,AI & Machine Learning,C154945302,Mali,ML,28
-2023,AI & Machine Learning,C154945302,Myanmar,MM,174
-2023,AI & Machine Learning,C154945302,Mongolia,MN,262
-2023,AI & Machine Learning,C154945302,Macao,MO,2185
-2023,AI & Machine Learning,C154945302,Martinique,MQ,5
-2023,AI & Machine Learning,C154945302,Mauritania,MR,19
-2023,AI & Machine Learning,C154945302,Montserrat,MS,3
-2023,AI & Machine Learning,C154945302,Malta,MT,238
-2023,AI & Machine Learning,C154945302,Mauritius,MU,104
-2023,AI & Machine Learning,C154945302,Maldives,MV,30
-2023,AI & Machine Learning,C154945302,Malawi,MW,85
-2023,AI & Machine Learning,C154945302,Mexico,MX,4728
-2023,AI & Machine Learning,C154945302,Malaysia,MY,9004
-2023,AI & Machine Learning,C154945302,Mozambique,MZ,148
-2023,AI & Machine Learning,C154945302,Namibia,NA,92
-2023,AI & Machine Learning,C154945302,New Caledonia,NC,10
-2023,AI & Machine Learning,C154945302,Niger,NE,24
-2023,AI & Machine Learning,C154945302,Nigeria,NG,2673
-2023,AI & Machine Learning,C154945302,Nicaragua,NI,40
-2023,AI & Machine Learning,C154945302,Netherlands,NL,12292
-2023,AI & Machine Learning,C154945302,Norway,NO,5331
-2023,AI & Machine Learning,C154945302,Nepal,NP,1191
-2023,AI & Machine Learning,C154945302,New Zealand,NZ,2486
-2023,AI & Machine Learning,C154945302,Oman,OM,746
-2023,AI & Machine Learning,C154945302,Panama,PA,69
-2023,AI & Machine Learning,C154945302,Peru,PE,1101
-2023,AI & Machine Learning,C154945302,French Polynesia,PF,15
-2023,AI & Machine Learning,C154945302,Papua New Guinea,PG,26
-2023,AI & Machine Learning,C154945302,Philippines,PH,2077
-2023,AI & Machine Learning,C154945302,Pakistan,PK,7355
-2023,AI & Machine Learning,C154945302,Poland,PL,8181
-2023,AI & Machine Learning,C154945302,Puerto Rico,PR,268
-2023,AI & Machine Learning,C154945302,"Palestine, State of",PS,278
-2023,AI & Machine Learning,C154945302,Portugal,PT,5362
-2023,AI & Machine Learning,C154945302,Palau,PW,11
-2023,AI & Machine Learning,C154945302,Paraguay,PY,97
-2023,AI & Machine Learning,C154945302,Qatar,QA,1331
-2023,AI & Machine Learning,C154945302,Réunion,RE,74
-2023,AI & Machine Learning,C154945302,Romania,RO,3384
-2023,AI & Machine Learning,C154945302,Serbia,RS,1634
-2023,AI & Machine Learning,C154945302,Russian Federation,RU,15467
-2023,AI & Machine Learning,C154945302,Rwanda,RW,223
-2023,AI & Machine Learning,C154945302,Saudi Arabia,SA,10378
-2023,AI & Machine Learning,C154945302,Sudan,SD,256
-2023,AI & Machine Learning,C154945302,Sweden,SE,7197
-2023,AI & Machine Learning,C154945302,Singapore,SG,7572
-2023,AI & Machine Learning,C154945302,Slovenia,SI,1220
-2023,AI & Machine Learning,C154945302,Slovakia,SK,1476
-2023,AI & Machine Learning,C154945302,Sierra Leone,SL,13
-2023,AI & Machine Learning,C154945302,San Marino,SM,6
-2023,AI & Machine Learning,C154945302,Senegal,SN,170
-2023,AI & Machine Learning,C154945302,Somalia,SO,40
-2023,AI & Machine Learning,C154945302,South Sudan,SS,324
-2023,AI & Machine Learning,C154945302,El Salvador,SV,47
-2023,AI & Machine Learning,C154945302,Sint Maarten (Dutch part),SX,6
-2023,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,122
-2023,AI & Machine Learning,C154945302,Eswatini,SZ,17
-2023,AI & Machine Learning,C154945302,Chad,TD,12
-2023,AI & Machine Learning,C154945302,Togo,TG,23
-2023,AI & Machine Learning,C154945302,Thailand,TH,3451
-2023,AI & Machine Learning,C154945302,Tajikistan,TJ,236
-2023,AI & Machine Learning,C154945302,Timor-Leste,TL,12
-2023,AI & Machine Learning,C154945302,Tunisia,TN,2238
-2023,AI & Machine Learning,C154945302,Tonga,TO,4
-2023,AI & Machine Learning,C154945302,Turkey,TR,11491
-2023,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,71
-2023,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,8765
-2023,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,321
-2023,AI & Machine Learning,C154945302,Ukraine,UA,4720
-2023,AI & Machine Learning,C154945302,Uganda,UG,291
-2023,AI & Machine Learning,C154945302,United States of America,US,120391
-2023,AI & Machine Learning,C154945302,Uruguay,UY,228
-2023,AI & Machine Learning,C154945302,Uzbekistan,UZ,1309
-2023,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,152
-2023,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,15
-2023,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,4
-2023,AI & Machine Learning,C154945302,Viet Nam,VN,4420
-2023,AI & Machine Learning,C154945302,Samoa,WS,6
-2023,AI & Machine Learning,C154945302,Kosovo,XK,116
-2023,AI & Machine Learning,C154945302,Yemen,YE,621
-2023,AI & Machine Learning,C154945302,Mayotte,YT,5
-2023,AI & Machine Learning,C154945302,South Africa,ZA,3704
-2023,AI & Machine Learning,C154945302,Zambia,ZM,159
-2023,AI & Machine Learning,C154945302,Zimbabwe,ZW,231
+2023,AI & Machine Learning,C119857082,Andorra,AD,1
+2023,AI & Machine Learning,C119857082,United Arab Emirates,AE,2154
+2023,AI & Machine Learning,C119857082,Afghanistan,AF,73
+2023,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,7
+2023,AI & Machine Learning,C119857082,Albania,AL,92
+2023,AI & Machine Learning,C119857082,Armenia,AM,87
+2023,AI & Machine Learning,C119857082,Angola,AO,4
+2023,AI & Machine Learning,C119857082,Argentina,AR,432
+2023,AI & Machine Learning,C119857082,Austria,AT,1643
+2023,AI & Machine Learning,C119857082,Australia,AU,7593
+2023,AI & Machine Learning,C119857082,Azerbaijan,AZ,180
+2023,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,138
+2023,AI & Machine Learning,C119857082,Barbados,BB,5
+2023,AI & Machine Learning,C119857082,Bangladesh,BD,2271
+2023,AI & Machine Learning,C119857082,Belgium,BE,1989
+2023,AI & Machine Learning,C119857082,Burkina Faso,BF,42
+2023,AI & Machine Learning,C119857082,Bulgaria,BG,459
+2023,AI & Machine Learning,C119857082,Bahrain,BH,160
+2023,AI & Machine Learning,C119857082,Burundi,BI,55
+2023,AI & Machine Learning,C119857082,Benin,BJ,76
+2023,AI & Machine Learning,C119857082,Bermuda,BM,1
+2023,AI & Machine Learning,C119857082,Brunei Darussalam,BN,105
+2023,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,39
+2023,AI & Machine Learning,C119857082,Brazil,BR,4300
+2023,AI & Machine Learning,C119857082,Bahamas,BS,2
+2023,AI & Machine Learning,C119857082,Bhutan,BT,17
+2023,AI & Machine Learning,C119857082,Botswana,BW,67
+2023,AI & Machine Learning,C119857082,Belarus,BY,130
+2023,AI & Machine Learning,C119857082,Belize,BZ,2
+2023,AI & Machine Learning,C119857082,Canada,CA,8449
+2023,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,44
+2023,AI & Machine Learning,C119857082,Central African Republic,CF,2
+2023,AI & Machine Learning,C119857082,Congo,CG,16
+2023,AI & Machine Learning,C119857082,Switzerland,CH,3144
+2023,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,48
+2023,AI & Machine Learning,C119857082,Chile,CL,797
+2023,AI & Machine Learning,C119857082,Cameroon,CM,184
+2023,AI & Machine Learning,C119857082,China,CN,73248
+2023,AI & Machine Learning,C119857082,Colombia,CO,831
+2023,AI & Machine Learning,C119857082,Costa Rica,CR,79
+2023,AI & Machine Learning,C119857082,Cuba,CU,65
+2023,AI & Machine Learning,C119857082,Cabo Verde,CV,3
+2023,AI & Machine Learning,C119857082,Curaçao,CW,4
+2023,AI & Machine Learning,C119857082,Cyprus,CY,589
+2023,AI & Machine Learning,C119857082,Czechia,CZ,1269
+2023,AI & Machine Learning,C119857082,Germany,DE,11095
+2023,AI & Machine Learning,C119857082,Djibouti,DJ,3
+2023,AI & Machine Learning,C119857082,Denmark,DK,1587
+2023,AI & Machine Learning,C119857082,Dominican Republic,DO,25
+2023,AI & Machine Learning,C119857082,Algeria,DZ,1152
+2023,AI & Machine Learning,C119857082,Ecuador,EC,441
+2023,AI & Machine Learning,C119857082,Estonia,EE,303
+2023,AI & Machine Learning,C119857082,Egypt,EG,2584
+2023,AI & Machine Learning,C119857082,Eritrea,ER,3
+2023,AI & Machine Learning,C119857082,Spain,ES,5812
+2023,AI & Machine Learning,C119857082,Ethiopia,ET,929
+2023,AI & Machine Learning,C119857082,Finland,FI,1620
+2023,AI & Machine Learning,C119857082,Fiji,FJ,58
+2023,AI & Machine Learning,C119857082,"Micronesia, Federated States of",FM,2
+2023,AI & Machine Learning,C119857082,Faroe Islands,FO,3
+2023,AI & Machine Learning,C119857082,France,FR,7351
+2023,AI & Machine Learning,C119857082,Gabon,GA,4
+2023,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,15796
+2023,AI & Machine Learning,C119857082,Grenada,GD,5
+2023,AI & Machine Learning,C119857082,Georgia,GE,83
+2023,AI & Machine Learning,C119857082,French Guiana,GF,4
+2023,AI & Machine Learning,C119857082,Ghana,GH,660
+2023,AI & Machine Learning,C119857082,Gibraltar,GI,2
+2023,AI & Machine Learning,C119857082,Greenland,GL,1
+2023,AI & Machine Learning,C119857082,Gambia,GM,18
+2023,AI & Machine Learning,C119857082,Guinea,GN,3
+2023,AI & Machine Learning,C119857082,Guadeloupe,GP,11
+2023,AI & Machine Learning,C119857082,Equatorial Guinea,GQ,1
+2023,AI & Machine Learning,C119857082,Greece,GR,1767
+2023,AI & Machine Learning,C119857082,Guatemala,GT,27
+2023,AI & Machine Learning,C119857082,Guam,GU,6
+2023,AI & Machine Learning,C119857082,Guinea-Bissau,GW,2
+2023,AI & Machine Learning,C119857082,Guyana,GY,12
+2023,AI & Machine Learning,C119857082,Hong Kong,HK,3572
+2023,AI & Machine Learning,C119857082,Honduras,HN,14
+2023,AI & Machine Learning,C119857082,Croatia,HR,445
+2023,AI & Machine Learning,C119857082,Haiti,HT,1
+2023,AI & Machine Learning,C119857082,Hungary,HU,1030
+2023,AI & Machine Learning,C119857082,Indonesia,ID,11971
+2023,AI & Machine Learning,C119857082,Ireland,IE,1324
+2023,AI & Machine Learning,C119857082,Israel,IL,1230
+2023,AI & Machine Learning,C119857082,India,IN,31088
+2023,AI & Machine Learning,C119857082,Iraq,IQ,2033
+2023,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,4648
+2023,AI & Machine Learning,C119857082,Iceland,IS,132
+2023,AI & Machine Learning,C119857082,Italy,IT,7609
+2023,AI & Machine Learning,C119857082,Jamaica,JM,28
+2023,AI & Machine Learning,C119857082,Jordan,JO,1255
+2023,AI & Machine Learning,C119857082,Japan,JP,5881
+2023,AI & Machine Learning,C119857082,Kenya,KE,488
+2023,AI & Machine Learning,C119857082,Kyrgyzstan,KG,45
+2023,AI & Machine Learning,C119857082,Cambodia,KH,108
+2023,AI & Machine Learning,C119857082,Kiribati,KI,1
+2023,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,5
+2023,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,21
+2023,AI & Machine Learning,C119857082,"Korea, Republic of",KR,7121
+2023,AI & Machine Learning,C119857082,Kuwait,KW,307
+2023,AI & Machine Learning,C119857082,Cayman Islands,KY,44
+2023,AI & Machine Learning,C119857082,Kazakhstan,KZ,562
+2023,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,17
+2023,AI & Machine Learning,C119857082,Lebanon,LB,712
+2023,AI & Machine Learning,C119857082,Saint Lucia,LC,6
+2023,AI & Machine Learning,C119857082,Liechtenstein,LI,13
+2023,AI & Machine Learning,C119857082,Sri Lanka,LK,442
+2023,AI & Machine Learning,C119857082,Liberia,LR,9
+2023,AI & Machine Learning,C119857082,Lesotho,LS,14
+2023,AI & Machine Learning,C119857082,Lithuania,LT,326
+2023,AI & Machine Learning,C119857082,Luxembourg,LU,271
+2023,AI & Machine Learning,C119857082,Latvia,LV,166
+2023,AI & Machine Learning,C119857082,Libya,LY,115
+2023,AI & Machine Learning,C119857082,Morocco,MA,1504
+2023,AI & Machine Learning,C119857082,Monaco,MC,8
+2023,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,88
+2023,AI & Machine Learning,C119857082,Montenegro,ME,53
+2023,AI & Machine Learning,C119857082,Saint Martin (French part),MF,1
+2023,AI & Machine Learning,C119857082,Madagascar,MG,32
+2023,AI & Machine Learning,C119857082,North Macedonia,MK,159
+2023,AI & Machine Learning,C119857082,Mali,ML,12
+2023,AI & Machine Learning,C119857082,Myanmar,MM,75
+2023,AI & Machine Learning,C119857082,Mongolia,MN,88
+2023,AI & Machine Learning,C119857082,Macao,MO,895
+2023,AI & Machine Learning,C119857082,Mauritania,MR,12
+2023,AI & Machine Learning,C119857082,Malta,MT,80
+2023,AI & Machine Learning,C119857082,Mauritius,MU,68
+2023,AI & Machine Learning,C119857082,Maldives,MV,12
+2023,AI & Machine Learning,C119857082,Malawi,MW,89
+2023,AI & Machine Learning,C119857082,Mexico,MX,1509
+2023,AI & Machine Learning,C119857082,Malaysia,MY,4624
+2023,AI & Machine Learning,C119857082,Mozambique,MZ,44
+2023,AI & Machine Learning,C119857082,Namibia,NA,49
+2023,AI & Machine Learning,C119857082,Niger,NE,15
+2023,AI & Machine Learning,C119857082,Nigeria,NG,1708
+2023,AI & Machine Learning,C119857082,Nicaragua,NI,13
+2023,AI & Machine Learning,C119857082,Netherlands,NL,4445
+2023,AI & Machine Learning,C119857082,Norway,NO,2055
+2023,AI & Machine Learning,C119857082,Nepal,NP,575
+2023,AI & Machine Learning,C119857082,New Zealand,NZ,1060
+2023,AI & Machine Learning,C119857082,Oman,OM,416
+2023,AI & Machine Learning,C119857082,Panama,PA,26
+2023,AI & Machine Learning,C119857082,Peru,PE,470
+2023,AI & Machine Learning,C119857082,French Polynesia,PF,4
+2023,AI & Machine Learning,C119857082,Papua New Guinea,PG,15
+2023,AI & Machine Learning,C119857082,Philippines,PH,905
+2023,AI & Machine Learning,C119857082,Pakistan,PK,3877
+2023,AI & Machine Learning,C119857082,Poland,PL,2765
+2023,AI & Machine Learning,C119857082,Puerto Rico,PR,119
+2023,AI & Machine Learning,C119857082,"Palestine, State of",PS,162
+2023,AI & Machine Learning,C119857082,Portugal,PT,2223
+2023,AI & Machine Learning,C119857082,Paraguay,PY,29
+2023,AI & Machine Learning,C119857082,Qatar,QA,581
+2023,AI & Machine Learning,C119857082,Réunion,RE,8
+2023,AI & Machine Learning,C119857082,Romania,RO,1210
+2023,AI & Machine Learning,C119857082,Serbia,RS,590
+2023,AI & Machine Learning,C119857082,Russian Federation,RU,4590
+2023,AI & Machine Learning,C119857082,Rwanda,RW,107
+2023,AI & Machine Learning,C119857082,Saudi Arabia,SA,5609
+2023,AI & Machine Learning,C119857082,Sudan,SD,97
+2023,AI & Machine Learning,C119857082,Sweden,SE,2609
+2023,AI & Machine Learning,C119857082,Singapore,SG,2766
+2023,AI & Machine Learning,C119857082,Slovenia,SI,425
+2023,AI & Machine Learning,C119857082,Svalbard and Jan Mayen,SJ,3
+2023,AI & Machine Learning,C119857082,Slovakia,SK,493
+2023,AI & Machine Learning,C119857082,Sierra Leone,SL,11
+2023,AI & Machine Learning,C119857082,Senegal,SN,90
+2023,AI & Machine Learning,C119857082,Somalia,SO,28
+2023,AI & Machine Learning,C119857082,South Sudan,SS,154
+2023,AI & Machine Learning,C119857082,El Salvador,SV,11
+2023,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,41
+2023,AI & Machine Learning,C119857082,Eswatini,SZ,16
+2023,AI & Machine Learning,C119857082,Chad,TD,3
+2023,AI & Machine Learning,C119857082,Togo,TG,21
+2023,AI & Machine Learning,C119857082,Thailand,TH,1733
+2023,AI & Machine Learning,C119857082,Tajikistan,TJ,83
+2023,AI & Machine Learning,C119857082,Timor-Leste,TL,16
+2023,AI & Machine Learning,C119857082,Turkmenistan,TM,4
+2023,AI & Machine Learning,C119857082,Tunisia,TN,979
+2023,AI & Machine Learning,C119857082,Turkey,TR,4765
+2023,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,38
+2023,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,3231
+2023,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,280
+2023,AI & Machine Learning,C119857082,Ukraine,UA,1357
+2023,AI & Machine Learning,C119857082,Uganda,UG,252
+2023,AI & Machine Learning,C119857082,United States of America,US,45385
+2023,AI & Machine Learning,C119857082,Uruguay,UY,95
+2023,AI & Machine Learning,C119857082,Uzbekistan,UZ,339
+2023,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,57
+2023,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,5
+2023,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,3
+2023,AI & Machine Learning,C119857082,Viet Nam,VN,2153
+2023,AI & Machine Learning,C119857082,Vanuatu,VU,2
+2023,AI & Machine Learning,C119857082,Kosovo,XK,73
+2023,AI & Machine Learning,C119857082,Yemen,YE,301
+2023,AI & Machine Learning,C119857082,South Africa,ZA,1878
+2023,AI & Machine Learning,C119857082,Zambia,ZM,101
+2023,AI & Machine Learning,C119857082,Zimbabwe,ZW,141
 2023,CRISPR & Genomics,C98108389,United Arab Emirates,AE,19
 2023,CRISPR & Genomics,C98108389,Antigua and Barbuda,AG,1
 2023,CRISPR & Genomics,C98108389,Armenia,AM,2
@@ -19759,206 +26925,206 @@ window.CSV_DATA = `year,topic_name,subfield_id,country_name,country_code,publica
 2023,Robotics & Automation,C34413123,Yemen,YE,1
 2023,Robotics & Automation,C34413123,South Africa,ZA,30
 2023,Robotics & Automation,C34413123,Zimbabwe,ZW,8
-2024,AI & Machine Learning,C154945302,United Arab Emirates,AE,4600
-2024,AI & Machine Learning,C154945302,Afghanistan,AF,182
-2024,AI & Machine Learning,C154945302,Antigua and Barbuda,AG,65
-2024,AI & Machine Learning,C154945302,Albania,AL,183
-2024,AI & Machine Learning,C154945302,Armenia,AM,230
-2024,AI & Machine Learning,C154945302,Angola,AO,10
-2024,AI & Machine Learning,C154945302,Argentina,AR,1168
-2024,AI & Machine Learning,C154945302,Austria,AT,4318
-2024,AI & Machine Learning,C154945302,Australia,AU,16284
-2024,AI & Machine Learning,C154945302,Azerbaijan,AZ,700
-2024,AI & Machine Learning,C154945302,Bosnia and Herzegovina,BA,360
-2024,AI & Machine Learning,C154945302,Barbados,BB,14
-2024,AI & Machine Learning,C154945302,Bangladesh,BD,5086
-2024,AI & Machine Learning,C154945302,Belgium,BE,4973
-2024,AI & Machine Learning,C154945302,Burkina Faso,BF,76
-2024,AI & Machine Learning,C154945302,Bulgaria,BG,1204
-2024,AI & Machine Learning,C154945302,Bahrain,BH,458
-2024,AI & Machine Learning,C154945302,Burundi,BI,127
-2024,AI & Machine Learning,C154945302,Benin,BJ,125
-2024,AI & Machine Learning,C154945302,Bermuda,BM,4
-2024,AI & Machine Learning,C154945302,Brunei Darussalam,BN,209
-2024,AI & Machine Learning,C154945302,"Bolivia, Plurinational State of",BO,107
-2024,AI & Machine Learning,C154945302,Brazil,BR,9546
-2024,AI & Machine Learning,C154945302,Bahamas,BS,13
-2024,AI & Machine Learning,C154945302,Bhutan,BT,23
-2024,AI & Machine Learning,C154945302,Botswana,BW,155
-2024,AI & Machine Learning,C154945302,Belarus,BY,432
-2024,AI & Machine Learning,C154945302,Belize,BZ,3
-2024,AI & Machine Learning,C154945302,Canada,CA,19236
-2024,AI & Machine Learning,C154945302,"Congo, Democratic Republic of the",CD,90
-2024,AI & Machine Learning,C154945302,Central African Republic,CF,7
-2024,AI & Machine Learning,C154945302,Congo,CG,15
-2024,AI & Machine Learning,C154945302,Switzerland,CH,7476
-2024,AI & Machine Learning,C154945302,Côte d'Ivoire,CI,89
-2024,AI & Machine Learning,C154945302,Chile,CL,1941
-2024,AI & Machine Learning,C154945302,Cameroon,CM,414
-2024,AI & Machine Learning,C154945302,China,CN,236207
-2024,AI & Machine Learning,C154945302,Colombia,CO,1913
-2024,AI & Machine Learning,C154945302,Costa Rica,CR,209
-2024,AI & Machine Learning,C154945302,Cuba,CU,146
-2024,AI & Machine Learning,C154945302,Cabo Verde,CV,4
-2024,AI & Machine Learning,C154945302,Curaçao,CW,8
-2024,AI & Machine Learning,C154945302,Cyprus,CY,1013
-2024,AI & Machine Learning,C154945302,Czechia,CZ,3225
-2024,AI & Machine Learning,C154945302,Germany,DE,28478
-2024,AI & Machine Learning,C154945302,Djibouti,DJ,8
-2024,AI & Machine Learning,C154945302,Denmark,DK,4499
-2024,AI & Machine Learning,C154945302,Dominican Republic,DO,45
-2024,AI & Machine Learning,C154945302,Algeria,DZ,3219
-2024,AI & Machine Learning,C154945302,Ecuador,EC,1123
-2024,AI & Machine Learning,C154945302,Estonia,EE,575
-2024,AI & Machine Learning,C154945302,Egypt,EG,5527
-2024,AI & Machine Learning,C154945302,Eritrea,ER,14
-2024,AI & Machine Learning,C154945302,Spain,ES,13465
-2024,AI & Machine Learning,C154945302,Ethiopia,ET,1211
-2024,AI & Machine Learning,C154945302,Finland,FI,3642
-2024,AI & Machine Learning,C154945302,Fiji,FJ,90
-2024,AI & Machine Learning,C154945302,Faroe Islands,FO,18
-2024,AI & Machine Learning,C154945302,France,FR,21373
-2024,AI & Machine Learning,C154945302,Gabon,GA,11
-2024,AI & Machine Learning,C154945302,United Kingdom of Great Britain and Northern Ireland,GB,36098
-2024,AI & Machine Learning,C154945302,Grenada,GD,12
-2024,AI & Machine Learning,C154945302,Georgia,GE,191
-2024,AI & Machine Learning,C154945302,French Guiana,GF,8
-2024,AI & Machine Learning,C154945302,Ghana,GH,720
-2024,AI & Machine Learning,C154945302,Greenland,GL,5
-2024,AI & Machine Learning,C154945302,Gambia,GM,23
-2024,AI & Machine Learning,C154945302,Guinea,GN,4
-2024,AI & Machine Learning,C154945302,Guadeloupe,GP,14
-2024,AI & Machine Learning,C154945302,Greece,GR,3817
-2024,AI & Machine Learning,C154945302,Guatemala,GT,66
-2024,AI & Machine Learning,C154945302,Guam,GU,11
-2024,AI & Machine Learning,C154945302,Guyana,GY,12
-2024,AI & Machine Learning,C154945302,Hong Kong,HK,9968
-2024,AI & Machine Learning,C154945302,Honduras,HN,49
-2024,AI & Machine Learning,C154945302,Croatia,HR,933
-2024,AI & Machine Learning,C154945302,Haiti,HT,6
-2024,AI & Machine Learning,C154945302,Hungary,HU,2350
-2024,AI & Machine Learning,C154945302,Indonesia,ID,25802
-2024,AI & Machine Learning,C154945302,Ireland,IE,2987
-2024,AI & Machine Learning,C154945302,Israel,IL,3171
-2024,AI & Machine Learning,C154945302,India,IN,76351
-2024,AI & Machine Learning,C154945302,Iraq,IQ,5242
-2024,AI & Machine Learning,C154945302,"Iran, Islamic Republic of",IR,9812
-2024,AI & Machine Learning,C154945302,Iceland,IS,225
-2024,AI & Machine Learning,C154945302,Italy,IT,20041
-2024,AI & Machine Learning,C154945302,Jamaica,JM,36
-2024,AI & Machine Learning,C154945302,Jordan,JO,2473
-2024,AI & Machine Learning,C154945302,Japan,JP,21298
-2024,AI & Machine Learning,C154945302,Kenya,KE,500
-2024,AI & Machine Learning,C154945302,Kyrgyzstan,KG,163
-2024,AI & Machine Learning,C154945302,Cambodia,KH,292
-2024,AI & Machine Learning,C154945302,Saint Kitts and Nevis,KN,52
-2024,AI & Machine Learning,C154945302,"Korea, Democratic People's Republic of",KP,74
-2024,AI & Machine Learning,C154945302,"Korea, Republic of",KR,18269
-2024,AI & Machine Learning,C154945302,Kuwait,KW,724
-2024,AI & Machine Learning,C154945302,Cayman Islands,KY,25
-2024,AI & Machine Learning,C154945302,Kazakhstan,KZ,1325
-2024,AI & Machine Learning,C154945302,Lao People's Democratic Republic,LA,27
-2024,AI & Machine Learning,C154945302,Lebanon,LB,1190
-2024,AI & Machine Learning,C154945302,Saint Lucia,LC,6
-2024,AI & Machine Learning,C154945302,Liechtenstein,LI,31
-2024,AI & Machine Learning,C154945302,Sri Lanka,LK,801
-2024,AI & Machine Learning,C154945302,Liberia,LR,16
-2024,AI & Machine Learning,C154945302,Lesotho,LS,14
-2024,AI & Machine Learning,C154945302,Lithuania,LT,690
-2024,AI & Machine Learning,C154945302,Luxembourg,LU,665
-2024,AI & Machine Learning,C154945302,Latvia,LV,370
-2024,AI & Machine Learning,C154945302,Libya,LY,259
-2024,AI & Machine Learning,C154945302,Morocco,MA,3571
-2024,AI & Machine Learning,C154945302,Monaco,MC,10
-2024,AI & Machine Learning,C154945302,"Moldova, Republic of",MD,128
-2024,AI & Machine Learning,C154945302,Montenegro,ME,231
-2024,AI & Machine Learning,C154945302,Madagascar,MG,34
-2024,AI & Machine Learning,C154945302,North Macedonia,MK,372
-2024,AI & Machine Learning,C154945302,Mali,ML,21
-2024,AI & Machine Learning,C154945302,Myanmar,MM,186
-2024,AI & Machine Learning,C154945302,Mongolia,MN,287
-2024,AI & Machine Learning,C154945302,Macao,MO,2516
-2024,AI & Machine Learning,C154945302,Martinique,MQ,6
-2024,AI & Machine Learning,C154945302,Mauritania,MR,25
-2024,AI & Machine Learning,C154945302,Malta,MT,184
-2024,AI & Machine Learning,C154945302,Mauritius,MU,118
-2024,AI & Machine Learning,C154945302,Maldives,MV,32
-2024,AI & Machine Learning,C154945302,Malawi,MW,108
-2024,AI & Machine Learning,C154945302,Mexico,MX,4229
-2024,AI & Machine Learning,C154945302,Malaysia,MY,9331
-2024,AI & Machine Learning,C154945302,Mozambique,MZ,107
-2024,AI & Machine Learning,C154945302,Namibia,NA,75
-2024,AI & Machine Learning,C154945302,New Caledonia,NC,13
-2024,AI & Machine Learning,C154945302,Niger,NE,24
-2024,AI & Machine Learning,C154945302,Nigeria,NG,2949
-2024,AI & Machine Learning,C154945302,Nicaragua,NI,31
-2024,AI & Machine Learning,C154945302,Netherlands,NL,9923
-2024,AI & Machine Learning,C154945302,Norway,NO,4211
-2024,AI & Machine Learning,C154945302,Nepal,NP,1218
-2024,AI & Machine Learning,C154945302,New Zealand,NZ,2096
-2024,AI & Machine Learning,C154945302,Oman,OM,944
-2024,AI & Machine Learning,C154945302,Panama,PA,86
-2024,AI & Machine Learning,C154945302,Peru,PE,1019
-2024,AI & Machine Learning,C154945302,French Polynesia,PF,10
-2024,AI & Machine Learning,C154945302,Papua New Guinea,PG,27
-2024,AI & Machine Learning,C154945302,Philippines,PH,2086
-2024,AI & Machine Learning,C154945302,Pakistan,PK,7105
-2024,AI & Machine Learning,C154945302,Poland,PL,6721
-2024,AI & Machine Learning,C154945302,Puerto Rico,PR,286
-2024,AI & Machine Learning,C154945302,"Palestine, State of",PS,303
-2024,AI & Machine Learning,C154945302,Portugal,PT,4320
-2024,AI & Machine Learning,C154945302,Palau,PW,10
-2024,AI & Machine Learning,C154945302,Paraguay,PY,101
-2024,AI & Machine Learning,C154945302,Qatar,QA,1194
-2024,AI & Machine Learning,C154945302,Réunion,RE,41
-2024,AI & Machine Learning,C154945302,Romania,RO,2834
-2024,AI & Machine Learning,C154945302,Serbia,RS,1492
-2024,AI & Machine Learning,C154945302,Russian Federation,RU,11746
-2024,AI & Machine Learning,C154945302,Rwanda,RW,185
-2024,AI & Machine Learning,C154945302,Saudi Arabia,SA,10904
-2024,AI & Machine Learning,C154945302,Seychelles,SC,3
-2024,AI & Machine Learning,C154945302,Sudan,SD,229
-2024,AI & Machine Learning,C154945302,Sweden,SE,5961
-2024,AI & Machine Learning,C154945302,Singapore,SG,6987
-2024,AI & Machine Learning,C154945302,Slovenia,SI,1091
-2024,AI & Machine Learning,C154945302,Svalbard and Jan Mayen,SJ,3
-2024,AI & Machine Learning,C154945302,Slovakia,SK,1256
-2024,AI & Machine Learning,C154945302,Sierra Leone,SL,26
-2024,AI & Machine Learning,C154945302,San Marino,SM,5
-2024,AI & Machine Learning,C154945302,Senegal,SN,109
-2024,AI & Machine Learning,C154945302,Somalia,SO,50
-2024,AI & Machine Learning,C154945302,South Sudan,SS,387
-2024,AI & Machine Learning,C154945302,Sao Tome and Principe,ST,4
-2024,AI & Machine Learning,C154945302,El Salvador,SV,48
-2024,AI & Machine Learning,C154945302,Sint Maarten (Dutch part),SX,3
-2024,AI & Machine Learning,C154945302,Syrian Arab Republic,SY,144
-2024,AI & Machine Learning,C154945302,Eswatini,SZ,19
-2024,AI & Machine Learning,C154945302,Turks and Caicos Islands,TC,5
-2024,AI & Machine Learning,C154945302,Chad,TD,11
-2024,AI & Machine Learning,C154945302,Togo,TG,34
-2024,AI & Machine Learning,C154945302,Thailand,TH,3508
-2024,AI & Machine Learning,C154945302,Tajikistan,TJ,250
-2024,AI & Machine Learning,C154945302,Timor-Leste,TL,10
-2024,AI & Machine Learning,C154945302,Turkmenistan,TM,7
-2024,AI & Machine Learning,C154945302,Tunisia,TN,2124
-2024,AI & Machine Learning,C154945302,Turkey,TR,10895
-2024,AI & Machine Learning,C154945302,Trinidad and Tobago,TT,57
-2024,AI & Machine Learning,C154945302,"Taiwan, Province of China",TW,7799
-2024,AI & Machine Learning,C154945302,"Tanzania, United Republic of",TZ,339
-2024,AI & Machine Learning,C154945302,Ukraine,UA,3560
-2024,AI & Machine Learning,C154945302,Uganda,UG,337
-2024,AI & Machine Learning,C154945302,United States of America,US,107432
-2024,AI & Machine Learning,C154945302,Uruguay,UY,183
-2024,AI & Machine Learning,C154945302,Uzbekistan,UZ,1165
-2024,AI & Machine Learning,C154945302,"Venezuela, Bolivarian Republic of",VE,135
-2024,AI & Machine Learning,C154945302,"Virgin Islands, British",VG,7
-2024,AI & Machine Learning,C154945302,"Virgin Islands, U.S.",VI,6
-2024,AI & Machine Learning,C154945302,Viet Nam,VN,4359
-2024,AI & Machine Learning,C154945302,Kosovo,XK,95
-2024,AI & Machine Learning,C154945302,Yemen,YE,544
-2024,AI & Machine Learning,C154945302,South Africa,ZA,3226
-2024,AI & Machine Learning,C154945302,Zambia,ZM,124
-2024,AI & Machine Learning,C154945302,Zimbabwe,ZW,217
+2024,AI & Machine Learning,C119857082,United Arab Emirates,AE,1573
+2024,AI & Machine Learning,C119857082,Afghanistan,AF,84
+2024,AI & Machine Learning,C119857082,Antigua and Barbuda,AG,12
+2024,AI & Machine Learning,C119857082,Albania,AL,59
+2024,AI & Machine Learning,C119857082,Armenia,AM,49
+2024,AI & Machine Learning,C119857082,Angola,AO,5
+2024,AI & Machine Learning,C119857082,Argentina,AR,289
+2024,AI & Machine Learning,C119857082,American Samoa,AS,1
+2024,AI & Machine Learning,C119857082,Austria,AT,1062
+2024,AI & Machine Learning,C119857082,Australia,AU,5053
+2024,AI & Machine Learning,C119857082,Azerbaijan,AZ,188
+2024,AI & Machine Learning,C119857082,Bosnia and Herzegovina,BA,93
+2024,AI & Machine Learning,C119857082,Barbados,BB,1
+2024,AI & Machine Learning,C119857082,Bangladesh,BD,2017
+2024,AI & Machine Learning,C119857082,Belgium,BE,1420
+2024,AI & Machine Learning,C119857082,Burkina Faso,BF,38
+2024,AI & Machine Learning,C119857082,Bulgaria,BG,277
+2024,AI & Machine Learning,C119857082,Bahrain,BH,182
+2024,AI & Machine Learning,C119857082,Burundi,BI,32
+2024,AI & Machine Learning,C119857082,Benin,BJ,51
+2024,AI & Machine Learning,C119857082,Brunei Darussalam,BN,76
+2024,AI & Machine Learning,C119857082,"Bolivia, Plurinational State of",BO,38
+2024,AI & Machine Learning,C119857082,Brazil,BR,2895
+2024,AI & Machine Learning,C119857082,Bahamas,BS,2
+2024,AI & Machine Learning,C119857082,Bhutan,BT,7
+2024,AI & Machine Learning,C119857082,Botswana,BW,60
+2024,AI & Machine Learning,C119857082,Belarus,BY,104
+2024,AI & Machine Learning,C119857082,Belize,BZ,3
+2024,AI & Machine Learning,C119857082,Canada,CA,5605
+2024,AI & Machine Learning,C119857082,"Congo, Democratic Republic of the",CD,30
+2024,AI & Machine Learning,C119857082,Central African Republic,CF,2
+2024,AI & Machine Learning,C119857082,Congo,CG,7
+2024,AI & Machine Learning,C119857082,Switzerland,CH,1961
+2024,AI & Machine Learning,C119857082,Côte d'Ivoire,CI,34
+2024,AI & Machine Learning,C119857082,Chile,CL,538
+2024,AI & Machine Learning,C119857082,Cameroon,CM,154
+2024,AI & Machine Learning,C119857082,China,CN,56665
+2024,AI & Machine Learning,C119857082,Colombia,CO,566
+2024,AI & Machine Learning,C119857082,Costa Rica,CR,69
+2024,AI & Machine Learning,C119857082,Cuba,CU,32
+2024,AI & Machine Learning,C119857082,Cabo Verde,CV,2
+2024,AI & Machine Learning,C119857082,Curaçao,CW,2
+2024,AI & Machine Learning,C119857082,Cyprus,CY,396
+2024,AI & Machine Learning,C119857082,Czechia,CZ,812
+2024,AI & Machine Learning,C119857082,Germany,DE,6718
+2024,AI & Machine Learning,C119857082,Djibouti,DJ,3
+2024,AI & Machine Learning,C119857082,Denmark,DK,1231
+2024,AI & Machine Learning,C119857082,Dominican Republic,DO,14
+2024,AI & Machine Learning,C119857082,Algeria,DZ,985
+2024,AI & Machine Learning,C119857082,Ecuador,EC,330
+2024,AI & Machine Learning,C119857082,Estonia,EE,170
+2024,AI & Machine Learning,C119857082,Egypt,EG,2035
+2024,AI & Machine Learning,C119857082,Eritrea,ER,3
+2024,AI & Machine Learning,C119857082,Spain,ES,4013
+2024,AI & Machine Learning,C119857082,Ethiopia,ET,861
+2024,AI & Machine Learning,C119857082,Finland,FI,1015
+2024,AI & Machine Learning,C119857082,Fiji,FJ,41
+2024,AI & Machine Learning,C119857082,Faroe Islands,FO,2
+2024,AI & Machine Learning,C119857082,France,FR,5296
+2024,AI & Machine Learning,C119857082,Gabon,GA,3
+2024,AI & Machine Learning,C119857082,United Kingdom of Great Britain and Northern Ireland,GB,10522
+2024,AI & Machine Learning,C119857082,Grenada,GD,5
+2024,AI & Machine Learning,C119857082,Georgia,GE,69
+2024,AI & Machine Learning,C119857082,French Guiana,GF,3
+2024,AI & Machine Learning,C119857082,Ghana,GH,446
+2024,AI & Machine Learning,C119857082,Greenland,GL,1
+2024,AI & Machine Learning,C119857082,Gambia,GM,6
+2024,AI & Machine Learning,C119857082,Guinea,GN,1
+2024,AI & Machine Learning,C119857082,Guadeloupe,GP,6
+2024,AI & Machine Learning,C119857082,Equatorial Guinea,GQ,1
+2024,AI & Machine Learning,C119857082,Greece,GR,1110
+2024,AI & Machine Learning,C119857082,Guatemala,GT,16
+2024,AI & Machine Learning,C119857082,Guam,GU,11
+2024,AI & Machine Learning,C119857082,Guyana,GY,8
+2024,AI & Machine Learning,C119857082,Hong Kong,HK,2492
+2024,AI & Machine Learning,C119857082,Honduras,HN,14
+2024,AI & Machine Learning,C119857082,Croatia,HR,235
+2024,AI & Machine Learning,C119857082,Haiti,HT,6
+2024,AI & Machine Learning,C119857082,Hungary,HU,774
+2024,AI & Machine Learning,C119857082,Indonesia,ID,7371
+2024,AI & Machine Learning,C119857082,Ireland,IE,876
+2024,AI & Machine Learning,C119857082,Israel,IL,778
+2024,AI & Machine Learning,C119857082,Isle of Man,IM,2
+2024,AI & Machine Learning,C119857082,India,IN,25328
+2024,AI & Machine Learning,C119857082,Iraq,IQ,1694
+2024,AI & Machine Learning,C119857082,"Iran, Islamic Republic of",IR,3614
+2024,AI & Machine Learning,C119857082,Iceland,IS,94
+2024,AI & Machine Learning,C119857082,Italy,IT,5025
+2024,AI & Machine Learning,C119857082,Jamaica,JM,16
+2024,AI & Machine Learning,C119857082,Jordan,JO,1076
+2024,AI & Machine Learning,C119857082,Japan,JP,4289
+2024,AI & Machine Learning,C119857082,Kenya,KE,323
+2024,AI & Machine Learning,C119857082,Kyrgyzstan,KG,41
+2024,AI & Machine Learning,C119857082,Cambodia,KH,96
+2024,AI & Machine Learning,C119857082,Kiribati,KI,1
+2024,AI & Machine Learning,C119857082,Saint Kitts and Nevis,KN,9
+2024,AI & Machine Learning,C119857082,"Korea, Democratic People's Republic of",KP,23
+2024,AI & Machine Learning,C119857082,"Korea, Republic of",KR,5142
+2024,AI & Machine Learning,C119857082,Kuwait,KW,323
+2024,AI & Machine Learning,C119857082,Cayman Islands,KY,9
+2024,AI & Machine Learning,C119857082,Kazakhstan,KZ,440
+2024,AI & Machine Learning,C119857082,Lao People's Democratic Republic,LA,8
+2024,AI & Machine Learning,C119857082,Lebanon,LB,489
+2024,AI & Machine Learning,C119857082,Saint Lucia,LC,3
+2024,AI & Machine Learning,C119857082,Liechtenstein,LI,5
+2024,AI & Machine Learning,C119857082,Sri Lanka,LK,287
+2024,AI & Machine Learning,C119857082,Liberia,LR,9
+2024,AI & Machine Learning,C119857082,Lesotho,LS,5
+2024,AI & Machine Learning,C119857082,Lithuania,LT,211
+2024,AI & Machine Learning,C119857082,Luxembourg,LU,179
+2024,AI & Machine Learning,C119857082,Latvia,LV,104
+2024,AI & Machine Learning,C119857082,Libya,LY,80
+2024,AI & Machine Learning,C119857082,Morocco,MA,1294
+2024,AI & Machine Learning,C119857082,Monaco,MC,2
+2024,AI & Machine Learning,C119857082,"Moldova, Republic of",MD,51
+2024,AI & Machine Learning,C119857082,Montenegro,ME,57
+2024,AI & Machine Learning,C119857082,Madagascar,MG,15
+2024,AI & Machine Learning,C119857082,North Macedonia,MK,108
+2024,AI & Machine Learning,C119857082,Mali,ML,16
+2024,AI & Machine Learning,C119857082,Myanmar,MM,69
+2024,AI & Machine Learning,C119857082,Mongolia,MN,90
+2024,AI & Machine Learning,C119857082,Macao,MO,668
+2024,AI & Machine Learning,C119857082,Martinique,MQ,5
+2024,AI & Machine Learning,C119857082,Mauritania,MR,10
+2024,AI & Machine Learning,C119857082,Malta,MT,50
+2024,AI & Machine Learning,C119857082,Mauritius,MU,44
+2024,AI & Machine Learning,C119857082,Maldives,MV,13
+2024,AI & Machine Learning,C119857082,Malawi,MW,58
+2024,AI & Machine Learning,C119857082,Mexico,MX,1124
+2024,AI & Machine Learning,C119857082,Malaysia,MY,3440
+2024,AI & Machine Learning,C119857082,Mozambique,MZ,35
+2024,AI & Machine Learning,C119857082,Namibia,NA,37
+2024,AI & Machine Learning,C119857082,New Caledonia,NC,4
+2024,AI & Machine Learning,C119857082,Niger,NE,15
+2024,AI & Machine Learning,C119857082,Nigeria,NG,1341
+2024,AI & Machine Learning,C119857082,Nicaragua,NI,11
+2024,AI & Machine Learning,C119857082,Netherlands,NL,2751
+2024,AI & Machine Learning,C119857082,Norway,NO,1287
+2024,AI & Machine Learning,C119857082,Nepal,NP,484
+2024,AI & Machine Learning,C119857082,Niue,NU,1
+2024,AI & Machine Learning,C119857082,New Zealand,NZ,678
+2024,AI & Machine Learning,C119857082,Oman,OM,395
+2024,AI & Machine Learning,C119857082,Panama,PA,21
+2024,AI & Machine Learning,C119857082,Peru,PE,350
+2024,AI & Machine Learning,C119857082,French Polynesia,PF,3
+2024,AI & Machine Learning,C119857082,Papua New Guinea,PG,10
+2024,AI & Machine Learning,C119857082,Philippines,PH,702
+2024,AI & Machine Learning,C119857082,Pakistan,PK,2843
+2024,AI & Machine Learning,C119857082,Poland,PL,1923
+2024,AI & Machine Learning,C119857082,Puerto Rico,PR,108
+2024,AI & Machine Learning,C119857082,"Palestine, State of",PS,121
+2024,AI & Machine Learning,C119857082,Portugal,PT,1319
+2024,AI & Machine Learning,C119857082,Palau,PW,1
+2024,AI & Machine Learning,C119857082,Paraguay,PY,24
+2024,AI & Machine Learning,C119857082,Qatar,QA,404
+2024,AI & Machine Learning,C119857082,Réunion,RE,17
+2024,AI & Machine Learning,C119857082,Romania,RO,741
+2024,AI & Machine Learning,C119857082,Serbia,RS,412
+2024,AI & Machine Learning,C119857082,Russian Federation,RU,2743
+2024,AI & Machine Learning,C119857082,Rwanda,RW,104
+2024,AI & Machine Learning,C119857082,Saudi Arabia,SA,4625
+2024,AI & Machine Learning,C119857082,Sudan,SD,78
+2024,AI & Machine Learning,C119857082,Sweden,SE,1731
+2024,AI & Machine Learning,C119857082,Singapore,SG,1677
+2024,AI & Machine Learning,C119857082,Slovenia,SI,321
+2024,AI & Machine Learning,C119857082,Slovakia,SK,342
+2024,AI & Machine Learning,C119857082,Sierra Leone,SL,13
+2024,AI & Machine Learning,C119857082,Senegal,SN,35
+2024,AI & Machine Learning,C119857082,Somalia,SO,24
+2024,AI & Machine Learning,C119857082,South Sudan,SS,119
+2024,AI & Machine Learning,C119857082,Sao Tome and Principe,ST,1
+2024,AI & Machine Learning,C119857082,El Salvador,SV,12
+2024,AI & Machine Learning,C119857082,Syrian Arab Republic,SY,53
+2024,AI & Machine Learning,C119857082,Eswatini,SZ,9
+2024,AI & Machine Learning,C119857082,Chad,TD,2
+2024,AI & Machine Learning,C119857082,Togo,TG,19
+2024,AI & Machine Learning,C119857082,Thailand,TH,1239
+2024,AI & Machine Learning,C119857082,Tajikistan,TJ,61
+2024,AI & Machine Learning,C119857082,Timor-Leste,TL,7
+2024,AI & Machine Learning,C119857082,Turkmenistan,TM,3
+2024,AI & Machine Learning,C119857082,Tunisia,TN,673
+2024,AI & Machine Learning,C119857082,Turkey,TR,3815
+2024,AI & Machine Learning,C119857082,Trinidad and Tobago,TT,18
+2024,AI & Machine Learning,C119857082,"Taiwan, Province of China",TW,2190
+2024,AI & Machine Learning,C119857082,"Tanzania, United Republic of",TZ,171
+2024,AI & Machine Learning,C119857082,Ukraine,UA,834
+2024,AI & Machine Learning,C119857082,Uganda,UG,182
+2024,AI & Machine Learning,C119857082,United States of America,US,30815
+2024,AI & Machine Learning,C119857082,Uruguay,UY,47
+2024,AI & Machine Learning,C119857082,Uzbekistan,UZ,280
+2024,AI & Machine Learning,C119857082,"Venezuela, Bolivarian Republic of",VE,33
+2024,AI & Machine Learning,C119857082,"Virgin Islands, British",VG,3
+2024,AI & Machine Learning,C119857082,"Virgin Islands, U.S.",VI,3
+2024,AI & Machine Learning,C119857082,Viet Nam,VN,1417
+2024,AI & Machine Learning,C119857082,Vanuatu,VU,2
+2024,AI & Machine Learning,C119857082,Kosovo,XK,46
+2024,AI & Machine Learning,C119857082,Yemen,YE,211
+2024,AI & Machine Learning,C119857082,South Africa,ZA,1267
+2024,AI & Machine Learning,C119857082,Zambia,ZM,75
+2024,AI & Machine Learning,C119857082,Zimbabwe,ZW,78
 2024,CRISPR & Genomics,C98108389,United Arab Emirates,AE,22
 2024,CRISPR & Genomics,C98108389,Afghanistan,AF,1
 2024,CRISPR & Genomics,C98108389,Antigua and Barbuda,AG,1

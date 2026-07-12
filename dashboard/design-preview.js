@@ -1,10 +1,10 @@
 /* Minimal design-variant mockups — Module 2 & 5 (sample data only) */
 (function () {
   const BG = "#0f172a";
-  const Q1 = "#6366f1";
-  const Q4 = "#fb7185";
-  const PREMIER = "#3b82f6";
-  const STATE = "#a855f7";
+  const Q1 = "#0072B2";
+  const Q4 = "#D55E00";
+  const PREMIER = "#0072B2";
+  const STATE = "#E69F00";
   const MUTED = "#64748b";
 
   const M2_YEARS = [1996, 2005, 2010, 2015, 2020, 2024];
@@ -107,7 +107,7 @@
     const x = d3.scalePoint().domain(M2_YEARS).range([pad, w - pad]);
     const y = d3.scaleLinear().domain([0, 1]).range([h - pad, pad]);
     const stack = d3.stack().keys(["q1", "q2", "q3", "q4"])(data);
-    const colors = [Q1, "#22d3ee", "#fbbf24", Q4];
+    const colors = [Q1, "#56B4E9", "#E69F00", Q4];
     stack.forEach((layer, i) => {
       svg
         .append("path")
