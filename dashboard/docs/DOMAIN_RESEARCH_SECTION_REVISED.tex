@@ -1,0 +1,54 @@
+\section{Domain Research and Data Acquisition}
+The foundation of any robust visual analytics system lies in the quality, breadth, and integrity of its underlying data. Exploring the economics of global research required acquisition across two distinct domains: (i)~country-level macroeconomic indicators of R\&D effort and wealth, and (ii)~bibliometric indicators of publication volume, citation impact, venue quality, and collaboration networks. Modules~1--5 sit in these two buckets. Throughout the project we enforce a one-metric--one-owner discipline so that each displayed series is traced to a single declared source rather than mixed across providers. Data were acquired via APIs and bulk downloads offline; the shipped dashboard loads \textbf{static} bundled extracts, not live World Bank or OpenAlex calls at page load.
+
+\subsection{Macroeconomic Data: Sourcing R\&D Spending}
+National GERD reporting standards vary widely, so we pursued a \textbf{tripartite acquisition}---World Bank WDI, UNESCO UIS BDDS, and OECD MSTI---and archived all three under the vault. Acquisition of three archives does \emph{not} imply three equal live pillars. Live Module~1 GERD follows a locked, gated hierarchy with World Bank as the operational base; OECD fills only eligible missing country--years; UNESCO BDDS is acquired reference and does not drive the live GERD dial.
+
+\subsubsection{World Bank WDI (operational base for Module~1)}
+Primary GERD as a share of GDP is the World Bank WDI series \texttt{GB.XPD.RSDV.GD.ZS} (static extract). Upstream, this WDI series is UIS-origin; our live file nonetheless treats World Bank as the operational base. Module~1 also uses \texttt{NY.GDP.PCAP.PP.CD} (GDP per capita, PPP) for the wealth axis and \texttt{IP.JRN.ARTC.SC} (scientific journal articles) for bubble size, with SCImago Country Rank Documents as fallback---never OpenAlex country totals. Country H-index is owned solely by SCImago Country Rank (\texttt{scimago\_country\_rank\_1996\_2024.csv}); an old stub value (H$=$53) is quarantined and must not be cited.
+\begin{itemize}
+    \item \textbf{Coverage}: About \textbf{156} countries have at least one GERD observation; typical recent years cover roughly 80--130 countries, and official 2024 cells remain sparse.
+    \item \textbf{Temporal window}: Primarily \textbf{1996--2023}, with sparse official \textbf{2024}; the dashboard display window is \textbf{1996--2024} with documented last-observation carry (LOCF) where needed.
+    \item \textbf{Advantage}: Broadest country panel for the live UMAP feature set, delivered as a static vault extract rather than a browser-side API.
+\end{itemize}
+
+\subsubsection{Live GERD hierarchy (gated merge + display LOCF)}
+A written merge rule is locked and implemented (\texttt{gerd\_pct\_gdp\_hierarchical.csv}). It is \emph{not} the older guide's OECD\,$>$\,UIS\,$>$\,World Bank preference order:
+\begin{enumerate}
+    \item \textbf{World Bank first}: if a WB GERD cell exists for a country--year, use it (source label \texttt{WB}).
+    \item \textbf{UIS identity}: on overlaps, UNESCO UIS GERD matches World Bank (match rate 1.0) and adds \textbf{zero} extra country--years; UIS therefore cannot extend coverage beyond WB (e.g., India after 2020).
+    \item \textbf{OECD hole-fill}: true WB holes are filled from OECD MSTI only for countries that pass an overlap-consistency gate; ineligible conflict countries keep WB-only series. Example of a gated fill: USA 2024 from OECD.
+    \item \textbf{River vs.\ display}: otherwise leave the river cell missing. The pool may apply tagged display LOCF so later chart years remain aligned (e.g., India 2021--2024 carried from WB 2020 as \texttt{LOCF:WB:y2020}).
+\end{enumerate}
+PPP-aware wealth already uses World Bank \texttt{NY.GDP.PCAP.PP.CD}; we do not apply a separate OECD-PPP GERD normalization step in shipped Module~1.
+
+\subsubsection{UNESCO UIS BDDS (acquired reference)}
+UNESCO UIS Bulk Data Download Service STI / R\&D archives (e.g., SCN-SDG / SCN-OPRI / SCIARCHIVE zips) are on disk under \texttt{raw\_vault/06\_unesco\_uis/}. Sector GERD columns in our project extract are \texttt{GERD\_Sector\_Gov}, \texttt{GERD\_Sector\_HE}, and \texttt{GERD\_Sector\_Biz}---HERD / BERD / GOVERD \emph{equivalents}, not those exact brochure tokens in our CSV. Sector series were acquired for reference and possible future work; \textbf{shipped Module~1 charts use total GERD \% of GDP only} and do not plot sector breakdowns.
+
+\subsubsection{OECD MSTI (reference + gated hole-fill)}
+OECD Main Science and Technology Indicators provide a high-quality archive for many advanced economies. Our on-disk extract covers \textbf{1995--2024} (not a brochure claim of coverage back to 1981). Coverage comprises 38 OECD members plus several partner economies in the extract (e.g., China, Russia, Singapore, South Africa, Taiwan); \textbf{India (\texttt{IND}) is not present} in our OECD file. Live use is \textbf{reference plus gated hole-fill} for eligible missing WB years---not an equal primary for every Module~1 field or country.
+
+\subsection{Bibliometric Data: Sourcing Academic Output}
+To measure the ``knowledge'' side of the paradox we combine OpenAlex with SCImago products. The English word ``publications'' is intentionally overloaded across modules: each tap reads a different owned river (Module~1 article/Documents counts; Module~2 publisher-country quartile documents; Module~3 concept$\times$country$\times$year volumes; Module~4 domestic vs.\ international citation means; Module~5 institution works and edges). Those series must not be silently mixed.
+
+\subsubsection{OpenAlex (Modules~3, 4, and~5)}
+OpenAlex powers three bibliometric modules and does \textbf{not} set Module~1 country bubble size:
+\begin{itemize}
+    \item \textbf{Module~3 (topic chronology)}: the live default is an L3 set of exactly seven OpenAlex concept IDs---Infectious disease (\texttt{C524204448}), Robotics (\texttt{C34413123}), Quantum computer (\texttt{C58053490}), CRISPR (\texttt{C98108389}), Energy storage (\texttt{C73916439}), Photovoltaics (\texttt{C542589376}), and Supervised learning (\texttt{C136389625}). Mega-AI (\texttt{C154945302}) and ASJC 2500 are forbidden as primary lanes. The shared honesty window begins around 1974; we do not impose hard ``field birth'' milestone floors.
+    \item \textbf{Module~4 (collaboration premium)}: domestic vs.\ international mean citations per paper for \textbf{73} countries over \textbf{2010--2024} (\texttt{VIZ4\_META.n\_countries} in \texttt{viz4\_data.js}).
+    \item \textbf{Module~5 (institution networks)}: Indian institution works and co-authorship edges for the geospatial network.
+\end{itemize}
+
+\subsubsection{SCImago Journal \& Country Rank}
+SCImago (Scopus-backed) supplies two complementary products:
+\begin{itemize}
+    \item \textbf{Country Rank}: cumulative country H-index (and Documents fallback for Module~1 size) merged into the G1 panel---the sole owner of the Module~1 H-index encoding.
+    \item \textbf{Journal Rank (quartiles)}: yearly journalrank aggregates produce publisher-\textbf{country} Q1--Q4 document mixes (\texttt{q1\_q4\_country\_year.csv}) for Module~2. This is a venue-geography / quality-mix metric (where journals are published), not author nationality or a direct measure of researcher migration; any ``brain drain'' reading is narrative only, not the metric definition.
+\end{itemize}
+
+\subsection{Localized Data: The Indian Ecosystem}
+For the localized micro-analysis of India (Module~5), we required domestic datasets absent from global country aggregates.
+\begin{itemize}
+    \item \textbf{National Institutional Ranking Framework (NIRF)}: ranking (and related funding/patent) extracts annotate Indian higher-education nodes, with season / carry footnotes as documented in the G5 river notes.
+    \item \textbf{Geospatial basemap}: \texttt{india\_outline.geojson} rendered with Leaflet in Module~5 (institution coordinates over the outline), rather than a pure D3 geographic projection for the basemap.
+\end{itemize}

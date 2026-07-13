@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C2522767166",
+    "wikidata":  "https://www.wikidata.org/wiki/Q2374463",
+    "display_name":  "Data science",
+    "level":  1,
+    "description":  "interdisciplinary field of study focused on deriving knowledge and insights from data",
+    "works_count":  2928092,
+    "cited_by_count":  29758031,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C2522767166",
+                "wikidata":  "https://www.wikidata.org/wiki/Q2374463",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/data_science",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/4/45/PIA23792-1600x1200%281%29.jpg",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/PIA23792-1600x1200%281%29.jpg/100px-PIA23792-1600x1200%281%29.jpg",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:2522767166",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-09-30T00:00:00"
+}

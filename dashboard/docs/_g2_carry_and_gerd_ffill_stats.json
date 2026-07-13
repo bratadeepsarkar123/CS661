@@ -1,0 +1,860 @@
+{
+  "built_at": "2026-07-12T15:16:58.970161+00:00",
+  "g2_country_years_total": 2705,
+  "g2_country_years_matched": 2612,
+  "g2_countries": 129,
+  "unmatched_countries": [
+    "Cuba",
+    "Monaco",
+    "New Caledonia",
+    "Taiwan",
+    "Vatican City State"
+  ],
+  "unmatched_expected": [
+    "Cuba",
+    "Monaco",
+    "New Caledonia",
+    "Taiwan",
+    "Vatican City State"
+  ],
+  "h_prior_year_carry": {
+    "country_years": 15,
+    "countries": 3,
+    "country_list": [
+      "BTN",
+      "LBN",
+      "VEN"
+    ],
+    "by_g2_year": {
+      "2012": 1,
+      "2013": 1,
+      "2014": 1,
+      "2015": 1,
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 3
+    },
+    "top_examples": [
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2024,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2023,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2022,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2021,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2020,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2019,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2018,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2017,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2016,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2015,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2014,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2013,
+        "h_from_year": 2011,
+        "h": 306.0
+      },
+      {
+        "country": "Bhutan",
+        "iso3": "BTN",
+        "g2_year": 2024,
+        "h_from_year": 2023,
+        "h": 82.0
+      },
+      {
+        "country": "Lebanon",
+        "iso3": "LBN",
+        "g2_year": 2024,
+        "h_from_year": 2023,
+        "h": 353.0
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2012,
+        "h_from_year": 2011,
+        "h": 306.0
+      }
+    ]
+  },
+  "gdp_prior_year_carry": {
+    "country_years": 15,
+    "countries": 3,
+    "country_list": [
+      "BTN",
+      "LBN",
+      "VEN"
+    ],
+    "by_g2_year": {
+      "2012": 1,
+      "2013": 1,
+      "2014": 1,
+      "2015": 1,
+      "2016": 1,
+      "2017": 1,
+      "2018": 1,
+      "2019": 1,
+      "2020": 1,
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 3
+    },
+    "top_examples": [
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2024,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2023,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2022,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2021,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2020,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2019,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2018,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2017,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2016,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2015,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2014,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2013,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      },
+      {
+        "country": "Bhutan",
+        "iso3": "BTN",
+        "g2_year": 2024,
+        "gdp_from_year": 2023,
+        "gdp": 16215.1520073153
+      },
+      {
+        "country": "Lebanon",
+        "iso3": "LBN",
+        "g2_year": 2024,
+        "gdp_from_year": 2023,
+        "gdp": 12574.8329116403
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2012,
+        "gdp_from_year": 2011,
+        "gdp": 21241.4350725543
+      }
+    ]
+  },
+  "gerd_locf_pool": {
+    "country_years": 1066,
+    "countries": 105,
+    "country_list": [
+      "AGO",
+      "ALB",
+      "AND",
+      "ARE",
+      "ARG",
+      "AUS",
+      "BDI",
+      "BFA",
+      "BHR",
+      "BIH",
+      "BMU",
+      "BOL",
+      "BRA",
+      "BRN",
+      "BWA",
+      "CHE",
+      "CHL",
+      "CIV",
+      "COD",
+      "COG",
+      "COL",
+      "CPV",
+      "CRI",
+      "CYP",
+      "DZA",
+      "ECU",
+      "EGY",
+      "ETH",
+      "GAB",
+      "GBR",
+      "GEO",
+      "GHA",
+      "GMB",
+      "GRC",
+      "GRL",
+      "GTM",
+      "HND",
+      "IDN",
+      "IND",
+      "IRN",
+      "IRQ",
+      "ISL",
+      "ISR",
+      "JAM",
+      "JOR",
+      "KEN",
+      "KHM",
+      "KWT",
+      "LAO",
+      "LCA",
+      "LKA",
+      "LSO",
+      "LUX",
+      "MAR",
+      "MDA",
+      "MDG",
+      "MLI",
+      "MLT",
+      "MMR",
+      "MNE",
+      "MNG",
+      "MOZ",
+      "MRT",
+      "MUS",
+      "MWI",
+      "MYS",
+      "NAM",
+      "NGA",
+      "NIC",
+      "NOR",
+      "NPL",
+      "NZL",
+      "PAK",
+      "PER",
+      "PHL",
+      "PNG",
+      "PRI",
+      "PRY",
+      "PSE",
+      "QAT",
+      "RWA",
+      "SAU",
+      "SDN",
+      "SEN",
+      "SGP",
+      "SLV",
+      "SWE",
+      "SWZ",
+      "SYC",
+      "TCD",
+      "TGO",
+      "THA",
+      "TJK",
+      "TKM",
+      "TTO",
+      "TUN",
+      "TUR",
+      "TZA",
+      "UGA",
+      "URY",
+      "VCT",
+      "VIR",
+      "VNM",
+      "ZAF",
+      "ZMB"
+    ],
+    "by_year": {
+      "1997": 4,
+      "1998": 13,
+      "1999": 13,
+      "2000": 14,
+      "2001": 14,
+      "2002": 14,
+      "2003": 21,
+      "2004": 21,
+      "2005": 26,
+      "2006": 32,
+      "2007": 31,
+      "2008": 33,
+      "2009": 36,
+      "2010": 40,
+      "2011": 44,
+      "2012": 51,
+      "2013": 42,
+      "2014": 47,
+      "2015": 38,
+      "2016": 53,
+      "2017": 48,
+      "2018": 52,
+      "2019": 49,
+      "2020": 59,
+      "2021": 58,
+      "2022": 65,
+      "2023": 63,
+      "2024": 85
+    },
+    "top_examples": [
+      {
+        "Country_Code": "IND",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "Country_Code": "IND",
+        "Year": 2023,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "Country_Code": "IND",
+        "Year": 2022,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "Country_Code": "IND",
+        "Year": 2021,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016"
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.19997,
+        "GERD_Source": "LOCF:WB:y2022"
+      },
+      {
+        "Country_Code": "AND",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.15818,
+        "GERD_Source": "LOCF:WB:y2022"
+      },
+      {
+        "Country_Code": "ARE",
+        "Year": 2024,
+        "GERD_Percent_GDP": 1.49469,
+        "GERD_Source": "LOCF:WB:y2021"
+      },
+      {
+        "Country_Code": "ARG",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.60111,
+        "GERD_Source": "LOCF:WB:y2023"
+      },
+      {
+        "Country_Code": "AUS",
+        "Year": 2024,
+        "GERD_Percent_GDP": 1.85783,
+        "GERD_Source": "LOCF:WB:y2021"
+      },
+      {
+        "Country_Code": "BDI",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.21312,
+        "GERD_Source": "LOCF:WB:y2018"
+      },
+      {
+        "Country_Code": "BMU",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.22546,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "Country_Code": "BOL",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.06308,
+        "GERD_Source": "LOCF:WB:y2021"
+      },
+      {
+        "Country_Code": "BRA",
+        "Year": 2024,
+        "GERD_Percent_GDP": 1.1938,
+        "GERD_Source": "LOCF:WB:y2023"
+      },
+      {
+        "Country_Code": "BRN",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.27764,
+        "GERD_Source": "LOCF:WB:y2018"
+      },
+      {
+        "Country_Code": "BWA",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.561,
+        "GERD_Source": "LOCF:WB:y2013"
+      },
+      {
+        "Country_Code": "CHE",
+        "Year": 2024,
+        "GERD_Percent_GDP": 3.22178,
+        "GERD_Source": "LOCF:WB:y2023"
+      },
+      {
+        "Country_Code": "CHL",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.39205,
+        "GERD_Source": "LOCF:WB:y2022"
+      },
+      {
+        "Country_Code": "CIV",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.06975,
+        "GERD_Source": "LOCF:WB:y2016"
+      },
+      {
+        "Country_Code": "COD",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.40638,
+        "GERD_Source": "LOCF:WB:y2015"
+      }
+    ]
+  },
+  "gerd_locf_g2_join_display": {
+    "country_years": 497,
+    "countries": 73,
+    "country_list": [
+      "ALB",
+      "ARE",
+      "ARG",
+      "AUS",
+      "BHR",
+      "BIH",
+      "BOL",
+      "BRA",
+      "BRN",
+      "BTN",
+      "CHE",
+      "CHL",
+      "COL",
+      "CRI",
+      "CYP",
+      "DZA",
+      "ECU",
+      "EGY",
+      "ETH",
+      "GBR",
+      "GEO",
+      "GHA",
+      "GRC",
+      "IDN",
+      "IND",
+      "IRN",
+      "IRQ",
+      "ISL",
+      "ISR",
+      "JAM",
+      "JOR",
+      "KEN",
+      "KWT",
+      "LKA",
+      "LUX",
+      "MAR",
+      "MDA",
+      "MLI",
+      "MLT",
+      "MNE",
+      "MNG",
+      "MWI",
+      "MYS",
+      "NAM",
+      "NGA",
+      "NOR",
+      "NPL",
+      "NZL",
+      "PAK",
+      "PER",
+      "PHL",
+      "PNG",
+      "PRI",
+      "PRY",
+      "PSE",
+      "QAT",
+      "RWA",
+      "SAU",
+      "SDN",
+      "SEN",
+      "SGP",
+      "SWE",
+      "THA",
+      "TJK",
+      "TTO",
+      "TUN",
+      "TUR",
+      "TZA",
+      "UGA",
+      "URY",
+      "VEN",
+      "VNM",
+      "ZAF"
+    ],
+    "by_g2_year": {
+      "1999": 6,
+      "2000": 6,
+      "2001": 8,
+      "2002": 11,
+      "2003": 9,
+      "2004": 7,
+      "2005": 10,
+      "2006": 10,
+      "2007": 10,
+      "2008": 13,
+      "2009": 14,
+      "2010": 14,
+      "2011": 20,
+      "2012": 27,
+      "2013": 18,
+      "2014": 24,
+      "2015": 17,
+      "2016": 24,
+      "2017": 23,
+      "2018": 22,
+      "2019": 21,
+      "2020": 29,
+      "2021": 28,
+      "2022": 36,
+      "2023": 34,
+      "2024": 56
+    },
+    "top_examples": [
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2024,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2023,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2022,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2021,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2020,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2019,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2018,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2017,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2016,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2015,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2014,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2013,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Bhutan",
+        "iso3": "BTN",
+        "g2_year": 2024,
+        "rd_from_year": 2023,
+        "rd": 0.10787
+      },
+      {
+        "country": "Venezuela",
+        "iso3": "VEN",
+        "g2_year": 2012,
+        "rd_from_year": 2011,
+        "rd": 0.15296
+      },
+      {
+        "country": "Albania",
+        "iso3": "ALB",
+        "g2_year": 2024,
+        "rd_from_year": 2024,
+        "rd": 0.19997
+      }
+    ]
+  },
+  "india_gerd_2015_2024": [
+    {
+      "year": 2015,
+      "GERD_Percent_GDP": 0.6931,
+      "GERD_Source": "WB"
+    },
+    {
+      "year": 2016,
+      "GERD_Percent_GDP": 0.66984,
+      "GERD_Source": "WB"
+    },
+    {
+      "year": 2017,
+      "GERD_Percent_GDP": 0.66603,
+      "GERD_Source": "WB"
+    },
+    {
+      "year": 2018,
+      "GERD_Percent_GDP": 0.66001,
+      "GERD_Source": "WB"
+    },
+    {
+      "year": 2019,
+      "GERD_Percent_GDP": 0.65942,
+      "GERD_Source": "WB"
+    },
+    {
+      "year": 2020,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "WB"
+    },
+    {
+      "year": 2021,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "LOCF:WB:y2020"
+    },
+    {
+      "year": 2022,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "LOCF:WB:y2020"
+    },
+    {
+      "year": 2023,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "LOCF:WB:y2020"
+    },
+    {
+      "year": 2024,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "LOCF:WB:y2020"
+    }
+  ],
+  "india_2022_join": {
+    "exact_row": true,
+    "h": 1001.0,
+    "gdp": 9207.12743040145,
+    "rd": 0.64558,
+    "h_from_year": 2022,
+    "gdp_from_year": 2022,
+    "rd_from_year": 2022,
+    "h_carry": false,
+    "gdp_carry": false,
+    "rd_locf": true
+  },
+  "unmatched_status": {
+    "Cuba": {
+      "iso3": "CUB",
+      "in_panel": true,
+      "in_viz1": false,
+      "why": "Panel has SCImago H + GERD but GDP_Per_Capita_PPP is empty for all years \u2192 UMAP FEATURES dropna excludes CUB from viz1_data.js",
+      "action": "left unmatched (no invent; GDP hole blocks G1 pool)"
+    },
+    "Monaco": {
+      "iso3": "MCO",
+      "in_panel": true,
+      "in_viz1": false,
+      "why": "Panel has SCImago H; GDP PPP missing almost all years; GERD only 2004\u20132005 \u2192 not UMAP-ready",
+      "action": "left unmatched"
+    },
+    "New Caledonia": {
+      "iso3": "NCL",
+      "in_panel": true,
+      "in_viz1": false,
+      "why": "Panel has SCImago H + docs; no GDP PPP and no GERD \u2192 dropped from VIZ1",
+      "action": "left unmatched"
+    },
+    "Taiwan": {
+      "iso3": "TWN",
+      "in_panel": false,
+      "in_viz1": false,
+      "why": "Not in g1_features_panel (WB ISO3 panel omits Taiwan). SCImago has Taiwan H=784; OECD hierarchical GERD exists for TWN; no WB GDP PPP in panel",
+      "action": "left unmatched \u2014 needs special panel ISO/name path; do not invent H (H exists in SCImago but G1 join path absent)"
+    },
+    "Vatican City State": {
+      "iso3": "VAT",
+      "in_panel": false,
+      "in_viz1": false,
+      "why": "No panel row; no hierarchical GERD; SCImago H exists (tiny) but no WB GDP/GERD",
+      "action": "left unmatched"
+    }
+  }
+}

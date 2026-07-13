@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C188573790",
+    "wikidata":  "https://www.wikidata.org/wiki/Q12705",
+    "display_name":  "Renewable energy",
+    "level":  2,
+    "description":  "energy that is collected from renewable resources",
+    "works_count":  1304233,
+    "cited_by_count":  9501555,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C188573790",
+                "wikidata":  "https://www.wikidata.org/wiki/Q12705",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/renewable_energy",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/d/db/2011-_Renewable_energy_capacity_-_International_Energy_Agency.svg",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/2011-_Renewable_energy_capacity_-_International_Energy_Agency.svg/100px-2011-_Renewable_energy_capacity_-_International_Energy_Agency.svg.png",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:188573790",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-06-24T00:00:00"
+}

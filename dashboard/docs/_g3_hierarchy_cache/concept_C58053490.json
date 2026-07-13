@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C58053490",
+    "wikidata":  "https://www.wikidata.org/wiki/Q176555",
+    "display_name":  "Quantum computer",
+    "level":  3,
+    "description":  "theoretical computation device relying on quantum mechanics",
+    "works_count":  183386,
+    "cited_by_count":  2142085,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C58053490",
+                "wikidata":  "https://www.wikidata.org/wiki/Q176555",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/quantum_computer",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/6/60/IBM_Q_system_%28Fraunhofer_2%29.jpg",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/IBM_Q_system_%28Fraunhofer_2%29.jpg/100px-IBM_Q_system_%28Fraunhofer_2%29.jpg",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:58053490",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-06-24T00:00:00"
+}

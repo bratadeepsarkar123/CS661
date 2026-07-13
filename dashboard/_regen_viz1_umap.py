@@ -85,10 +85,20 @@ def impute_gerd(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def validate_h(df: pd.DataFrame) -> None:
+    """H_Index is OpenAlex cohort H when merged; else SCImago stock fallback.
+
+    See dashboard/docs/G1_CUSTOM_YEARLY_H.md — do not assert SCImago ~3388 on H_Index.
+    """
     usa = float(df.loc[(df.Country_Code == "USA") & (df.Year == 2022), "H_Index"].iloc[0])
     irl = float(df.loc[(df.Country_Code == "IRL") & (df.Year == 2022), "H_Index"].iloc[0])
     assert irl < usa, f"Ireland H ({irl}) must not exceed USA ({usa})"
-    assert 3000 <= usa <= 4000, f"USA H expected ~3388 scale, got {usa}"
+    # Cohort H is typically hundreds–low thousands; stock SCImago USA is ~3388.
+    assert 50 <= usa <= 4000, f"USA H out of plausible range: {usa}"
+    if "H_Index_Yearly" in df.columns:
+        u10 = df.loc[(df.Country_Code == "USA") & (df.Year == 2010), "H_Index_Yearly"]
+        u20 = df.loc[(df.Country_Code == "USA") & (df.Year == 2020), "H_Index_Yearly"]
+        if len(u10) and len(u20) and pd.notna(u10.iloc[0]) and pd.notna(u20.iloc[0]):
+            assert float(u10.iloc[0]) != float(u20.iloc[0]), "USA yearly H must differ 2010 vs 2020"
 
 
 def scale_features(g: pd.DataFrame) -> np.ndarray:
@@ -270,20 +280,27 @@ def main() -> None:
         region = region_by_code.get(code) or r.get("SCImago_Region") or "Other"
         if not isinstance(region, str) or not str(region).strip() or str(region).lower() == "nan":
             region = "Other"
-        new_viz_rows.append(
-            {
-                "Country_Code": code,
-                "Country_Name": name,
-                "Year": int(r["Year"]),
-                "Region": region,
-                "Total_Docs": float(r["Total_Docs"]),
-                "H_Index": float(r["H_Index"]),
-                "GERD_Percent_GDP": float(r["GERD_Percent_GDP"]),
-                "GDP_Per_Capita_PPP": float(r["GDP_Per_Capita_PPP"]),
-                "x": x,
-                "y": y,
-            }
-        )
+        row_out = {
+            "Country_Code": code,
+            "Country_Name": name,
+            "Year": int(r["Year"]),
+            "Region": region,
+            "Total_Docs": float(r["Total_Docs"]),
+            "H_Index": float(r["H_Index"]),
+            "GERD_Percent_GDP": float(r["GERD_Percent_GDP"]),
+            "GDP_Per_Capita_PPP": float(r["GDP_Per_Capita_PPP"]),
+            "x": x,
+            "y": y,
+        }
+        if "GERD_Source" in ready.columns and pd.notna(r.get("GERD_Source")):
+            row_out["GERD_Source"] = str(r["GERD_Source"])
+        if "H_Index_SCImago" in ready.columns and pd.notna(r.get("H_Index_SCImago")):
+            row_out["H_Index_SCImago"] = float(r["H_Index_SCImago"])
+        if "H_Index_Yearly" in ready.columns and pd.notna(r.get("H_Index_Yearly")):
+            row_out["H_Index_Yearly"] = float(r["H_Index_Yearly"])
+        if "H_Index_Display_Source" in ready.columns and pd.notna(r.get("H_Index_Display_Source")):
+            row_out["H_Index_Display_Source"] = str(r["H_Index_Display_Source"])
+        new_viz_rows.append(row_out)
 
     updated = len(new_viz_rows)
     print(f"pool rows written: {updated} (incomplete rows dropped)")
@@ -306,7 +323,8 @@ def main() -> None:
         raise KeyError((code, year))
 
     a, b = find(after, "USA", 2022), find(before, "USA", 2022)
-    assert float(a["H_Index"]) == 3388.0
+    # H_Index is cohort yearly when merged; SCImago stock lives in H_Index_SCImago.
+    assert float(a["H_Index"]) > 0
     xs = [r["x"] for r in after]
     ys = [r["y"] for r in after]
 
@@ -321,11 +339,13 @@ def main() -> None:
         "procrustes": "reflection_aware",
         "temporal_ema": TEMPORAL_EMA,
         "blend_to_prev": BLEND_TO_PREV,
+        "h_index_policy": "H_Index = OpenAlex cohort W1 when present else SCImago stock; see G1_CUSTOM_YEARLY_H.md",
         "gerd_policy": "ffill+bfill Country_Code → region-year median → year median; docs coalesce WB→SCImago only (never OA; WB/Total_Docs zeros treated as NA)",
         "years_embedded": years_done,
         "xy_updated": updated,
         "xy_kept_old": 0,
         "USA_2022_H": float(a["H_Index"]),
+        "USA_2022_H_SCImago": a.get("H_Index_SCImago"),
         "USA_2022_xy_before_backup": [b["x"], b["y"]],
         "USA_2022_xy_after": [a["x"], a["y"]],
         "coord_extent": {"x": [min(xs), max(xs)], "y": [min(ys), max(ys)]},

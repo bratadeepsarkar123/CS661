@@ -1,4 +1,9 @@
-"""POOL fix: backup + regenerate pool data files from river sources."""
+"""DEPRECATED for live rebuilds — use dashboard/_river_to_pool_rebuild.py instead.
+
+POOL fix (legacy): backup + regenerate pool data files from river sources.
+G4 section below only rebuilt the *latest* year into VIZ4_DATA (regresses multi-year).
+New script rebuilds VIZ4_BY_YEAR for all years and refuses stub H rivers.
+"""
 from __future__ import annotations
 
 import csv

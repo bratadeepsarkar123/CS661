@@ -1,0 +1,26 @@
+{
+  "year_min": 1974,
+  "year_max": 2024,
+  "rows": 25063,
+  "topic_start_years": {
+    "Infectious Diseases": 1974,
+    "Renewable Energy": 1974,
+    "AI & Machine Learning": 1980,
+    "Robotics & Automation": 1980,
+    "Quantum Computing": 1994,
+    "Data Science & Big Data": 2001,
+    "CRISPR & Genomics": 2012
+  },
+  "AI_primary": "C119857082",
+  "Quantum_primary": "C58053490",
+  "USA_2022_AI": 41530,
+  "India_2022_AI": 25155,
+  "honesty_1974": {
+    "Infectious Diseases": 117,
+    "Renewable Energy": 58,
+    "CRISPR & Genomics": 0,
+    "Data Science & Big Data": 0,
+    "AI & Machine Learning": 0
+  },
+  "bytes": 1357449
+}

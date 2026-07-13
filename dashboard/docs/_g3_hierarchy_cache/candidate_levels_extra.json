@@ -1,0 +1,268 @@
+﻿[
+    {
+        "query":  "Pattern recognition",
+        "name":  "Pattern recognition (psychology)",
+        "id":  "C153180895",
+        "level":  2,
+        "works":  3183596
+    },
+    {
+        "query":  "Computer security",
+        "name":  "Computer security",
+        "id":  "C38652104",
+        "level":  1,
+        "works":  5741285
+    },
+    {
+        "query":  "Internet of Things",
+        "name":  "Internet of Things",
+        "id":  "C81860439",
+        "level":  2,
+        "works":  334009
+    },
+    {
+        "query":  "Blockchain",
+        "name":  "Blockchain",
+        "id":  "C2779687700",
+        "level":  2,
+        "works":  121118
+    },
+    {
+        "query":  "Photonics",
+        "name":  "Photonics",
+        "id":  "C20788544",
+        "level":  2,
+        "works":  236489
+    },
+    {
+        "query":  "Neuroscience",
+        "name":  "Neuroscience",
+        "id":  "C169760540",
+        "level":  1,
+        "works":  6358333
+    },
+    {
+        "query":  "Biotechnology",
+        "name":  "Biotechnology",
+        "id":  "C150903083",
+        "level":  1,
+        "works":  2295638
+    },
+    {
+        "query":  "Bioinformatics",
+        "name":  "Bioinformatics",
+        "id":  "C60644358",
+        "level":  1,
+        "works":  1585912
+    },
+    {
+        "query":  "Oncology",
+        "name":  "Oncology",
+        "id":  "C143998085",
+        "level":  1,
+        "works":  2723794
+    },
+    {
+        "query":  "Cardiology",
+        "name":  "Cardiology",
+        "id":  "C164705383",
+        "level":  1,
+        "works":  4233017
+    },
+    {
+        "query":  "Immunology",
+        "name":  "Immunology",
+        "id":  "C203014093",
+        "level":  1,
+        "works":  7298110
+    },
+    {
+        "query":  "Virology",
+        "name":  "Virology",
+        "id":  "C159047783",
+        "level":  1,
+        "works":  4345769
+    },
+    {
+        "query":  "Epidemiology",
+        "name":  "Epidemiology",
+        "id":  "C107130276",
+        "level":  2,
+        "works":  1374117
+    },
+    {
+        "query":  "Gene editing",
+        "name":  null,
+        "id":  "",
+        "level":  null,
+        "works":  null
+    },
+    {
+        "query":  "Synthetic biology",
+        "name":  "Synthetic biology",
+        "id":  "C191908910",
+        "level":  2,
+        "works":  45162
+    },
+    {
+        "query":  "Molecular biology",
+        "name":  "Molecular biology",
+        "id":  "C153911025",
+        "level":  1,
+        "works":  4937652
+    },
+    {
+        "query":  "Genomics",
+        "name":  "Genomics",
+        "id":  "C189206191",
+        "level":  4,
+        "works":  359719
+    },
+    {
+        "query":  "Pharmacogenomics",
+        "name":  "Pharmacogenomics",
+        "id":  "C170734499",
+        "level":  2,
+        "works":  24718
+    },
+    {
+        "query":  "Optoelectronics",
+        "name":  "Optoelectronics",
+        "id":  "C49040817",
+        "level":  1,
+        "works":  5286837
+    },
+    {
+        "query":  "Nanomedicine",
+        "name":  "Nanomedicine",
+        "id":  "C15083742",
+        "level":  3,
+        "works":  56083
+    },
+    {
+        "query":  "Metamaterial",
+        "name":  "Metamaterial",
+        "id":  "C110367647",
+        "level":  2,
+        "works":  101097
+    },
+    {
+        "query":  "Spintronics",
+        "name":  "Spintronics",
+        "id":  "C207999682",
+        "level":  3,
+        "works":  48715
+    },
+    {
+        "query":  "Graphene",
+        "name":  "Graphene",
+        "id":  "C30080830",
+        "level":  2,
+        "works":  405246
+    },
+    {
+        "query":  "Perovskite solar cell",
+        "name":  "Perovskite solar cell",
+        "id":  "C2780089039",
+        "level":  3,
+        "works":  16288
+    },
+    {
+        "query":  "Fuel cell",
+        "name":  "Fuel cells",
+        "id":  "C2987658370",
+        "level":  2,
+        "works":  137592
+    },
+    {
+        "query":  "Smart grid",
+        "name":  "Smart grid",
+        "id":  "C10558101",
+        "level":  2,
+        "works":  104079
+    },
+    {
+        "query":  "Electric vehicle",
+        "name":  "Electric vehicle",
+        "id":  "C2776422217",
+        "level":  3,
+        "works":  115499
+    },
+    {
+        "query":  "5G",
+        "name":  null,
+        "id":  "",
+        "level":  null,
+        "works":  null
+    },
+    {
+        "query":  "Edge computing",
+        "name":  "Edge computing",
+        "id":  "C2778456923",
+        "level":  3,
+        "works":  58014
+    },
+    {
+        "query":  "Federated learning",
+        "name":  "Federated learning",
+        "id":  "C2992525071",
+        "level":  2,
+        "works":  23539
+    },
+    {
+        "query":  "Transfer learning",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Convolutional neural network",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Support vector machine",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Random forest",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Decision tree",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Clustering",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Dimensionality reduction",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    },
+    {
+        "query":  "Feature selection",
+        "name":  "Transfer of learning",
+        "id":  "C150899416",
+        "level":  2,
+        "works":  101569
+    }
+]

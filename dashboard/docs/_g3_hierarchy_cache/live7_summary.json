@@ -1,0 +1,51 @@
+﻿[
+    {
+        "id":  "C119857082",
+        "name":  "Machine learning",
+        "level":  1,
+        "works":  5136981,
+        "ancestors":  ""
+    },
+    {
+        "id":  "C98108389",
+        "name":  "CRISPR",
+        "level":  3,
+        "works":  80557,
+        "ancestors":  ""
+    },
+    {
+        "id":  "C2522767166",
+        "name":  "Data science",
+        "level":  1,
+        "works":  2928092,
+        "ancestors":  ""
+    },
+    {
+        "id":  "C58053490",
+        "name":  "Quantum computer",
+        "level":  3,
+        "works":  183386,
+        "ancestors":  ""
+    },
+    {
+        "id":  "C34413123",
+        "name":  "Robotics",
+        "level":  3,
+        "works":  226765,
+        "ancestors":  ""
+    },
+    {
+        "id":  "C524204448",
+        "name":  "Infectious disease (medical specialty)",
+        "level":  3,
+        "works":  1387454,
+        "ancestors":  ""
+    },
+    {
+        "id":  "C188573790",
+        "name":  "Renewable energy",
+        "level":  2,
+        "works":  1304233,
+        "ancestors":  ""
+    }
+]

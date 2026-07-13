@@ -1,0 +1,345 @@
+﻿[
+    {
+        "query":  "Machine learning",
+        "name":  "Machine learning",
+        "id":  "C119857082",
+        "level":  1,
+        "works":  5136981
+    },
+    {
+        "query":  "Data science",
+        "name":  "Data science",
+        "id":  "C2522767166",
+        "level":  1,
+        "works":  2928092
+    },
+    {
+        "query":  "Artificial intelligence",
+        "name":  "Artificial intelligence",
+        "id":  "C154945302",
+        "level":  1,
+        "works":  36423145
+    },
+    {
+        "query":  "Computer vision",
+        "name":  "Computer vision",
+        "id":  "C31972630",
+        "level":  1,
+        "works":  5568386
+    },
+    {
+        "query":  "Natural language processing",
+        "name":  "Natural language processing",
+        "id":  "C204321447",
+        "level":  1,
+        "works":  2212456
+    },
+    {
+        "query":  "Deep learning",
+        "name":  "Deep learning",
+        "id":  "C108583219",
+        "level":  2,
+        "works":  739214
+    },
+    {
+        "query":  "Pattern recognition",
+        "name":  "Pattern recognition (psychology)",
+        "id":  "C153180895",
+        "level":  2,
+        "works":  3183596
+    },
+    {
+        "query":  "Neural network",
+        "name":  "Artificial neural network",
+        "id":  "C50644808",
+        "level":  2,
+        "works":  2062283
+    },
+    {
+        "query":  "Reinforcement learning",
+        "name":  "Reinforcement learning",
+        "id":  "C97541855",
+        "level":  2,
+        "works":  221408
+    },
+    {
+        "query":  "Supervised learning",
+        "name":  "Supervised learning",
+        "id":  "C136389625",
+        "level":  3,
+        "works":  87711
+    },
+    {
+        "query":  "Big data",
+        "name":  "Big data",
+        "id":  "C75684735",
+        "level":  2,
+        "works":  469464
+    },
+    {
+        "query":  "Data mining",
+        "name":  "Data mining",
+        "id":  "C124101348",
+        "level":  1,
+        "works":  10736137
+    },
+    {
+        "query":  "Statistics",
+        "name":  "Statistics",
+        "id":  "C105795698",
+        "level":  1,
+        "works":  12113363
+    },
+    {
+        "query":  "Computer science",
+        "name":  "Computer science",
+        "id":  "C41008148",
+        "level":  0,
+        "works":  175276843
+    },
+    {
+        "query":  "Information retrieval",
+        "name":  "Information retrieval",
+        "id":  "C23123220",
+        "level":  1,
+        "works":  7794357
+    },
+    {
+        "query":  "Renewable energy",
+        "name":  "Renewable energy",
+        "id":  "C188573790",
+        "level":  2,
+        "works":  1304233
+    },
+    {
+        "query":  "Climate change",
+        "name":  "Climate change",
+        "id":  "C132651083",
+        "level":  2,
+        "works":  1855679
+    },
+    {
+        "query":  "Nanotechnology",
+        "name":  "Nanotechnology",
+        "id":  "C171250308",
+        "level":  1,
+        "works":  6372149
+    },
+    {
+        "query":  "Sustainable development",
+        "name":  "Sustainable development",
+        "id":  "C552854447",
+        "level":  2,
+        "works":  1002553
+    },
+    {
+        "query":  "Energy storage",
+        "name":  "Energy storage",
+        "id":  "C73916439",
+        "level":  3,
+        "works":  278984
+    },
+    {
+        "query":  "Solar energy",
+        "name":  "Solar energy",
+        "id":  "C541104983",
+        "level":  2,
+        "works":  430696
+    },
+    {
+        "query":  "Wind power",
+        "name":  "Wind power",
+        "id":  "C78600449",
+        "level":  2,
+        "works":  384717
+    },
+    {
+        "query":  "Photovoltaics",
+        "name":  "Photovoltaics",
+        "id":  "C542589376",
+        "level":  3,
+        "works":  94183
+    },
+    {
+        "query":  "Biofuel",
+        "name":  "Biofuel",
+        "id":  "C53991642",
+        "level":  2,
+        "works":  217709
+    },
+    {
+        "query":  "Hydrogen economy",
+        "name":  "Hydrogen economy",
+        "id":  "C39380314",
+        "level":  4,
+        "works":  18437
+    },
+    {
+        "query":  "Robotics",
+        "name":  "Robotics",
+        "id":  "C34413123",
+        "level":  3,
+        "works":  226765
+    },
+    {
+        "query":  "Automation",
+        "name":  "Automation",
+        "id":  "C115901376",
+        "level":  2,
+        "works":  720309
+    },
+    {
+        "query":  "Quantum computer",
+        "name":  "Quantum computer",
+        "id":  "C58053490",
+        "level":  3,
+        "works":  183386
+    },
+    {
+        "query":  "Quantum information",
+        "name":  "Quantum information",
+        "id":  "C169699857",
+        "level":  3,
+        "works":  122561
+    },
+    {
+        "query":  "Quantum information science",
+        "name":  "Quantum information science",
+        "id":  "C5320026",
+        "level":  4,
+        "works":  45883
+    },
+    {
+        "query":  "CRISPR",
+        "name":  "CRISPR",
+        "id":  "C98108389",
+        "level":  3,
+        "works":  80557
+    },
+    {
+        "query":  "Genomics",
+        "name":  "Genomics",
+        "id":  "C189206191",
+        "level":  4,
+        "works":  359719
+    },
+    {
+        "query":  "Synthetic biology",
+        "name":  "Synthetic biology",
+        "id":  "C191908910",
+        "level":  2,
+        "works":  45162
+    },
+    {
+        "query":  "Molecular biology",
+        "name":  "Molecular biology",
+        "id":  "C153911025",
+        "level":  1,
+        "works":  4937652
+    },
+    {
+        "query":  "Infectious disease",
+        "name":  "Infectious disease (medical specialty)",
+        "id":  "C524204448",
+        "level":  3,
+        "works":  1387454
+    },
+    {
+        "query":  "Oncology",
+        "name":  "Oncology",
+        "id":  "C143998085",
+        "level":  1,
+        "works":  2723794
+    },
+    {
+        "query":  "Cardiology",
+        "name":  "Cardiology",
+        "id":  "C164705383",
+        "level":  1,
+        "works":  4233017
+    },
+    {
+        "query":  "Immunology",
+        "name":  "Immunology",
+        "id":  "C203014093",
+        "level":  1,
+        "works":  7298110
+    },
+    {
+        "query":  "Virology",
+        "name":  "Virology",
+        "id":  "C159047783",
+        "level":  1,
+        "works":  4345769
+    },
+    {
+        "query":  "Epidemiology",
+        "name":  "Epidemiology",
+        "id":  "C107130276",
+        "level":  2,
+        "works":  1374117
+    },
+    {
+        "query":  "Blockchain",
+        "name":  "Blockchain",
+        "id":  "C2779687700",
+        "level":  2,
+        "works":  121118
+    },
+    {
+        "query":  "Internet of Things",
+        "name":  "Internet of Things",
+        "id":  "C81860439",
+        "level":  2,
+        "works":  334009
+    },
+    {
+        "query":  "Photonics",
+        "name":  "Photonics",
+        "id":  "C20788544",
+        "level":  2,
+        "works":  236489
+    },
+    {
+        "query":  "Optoelectronics",
+        "name":  "Optoelectronics",
+        "id":  "C49040817",
+        "level":  1,
+        "works":  5286837
+    },
+    {
+        "query":  "Neuroscience",
+        "name":  "Neuroscience",
+        "id":  "C169760540",
+        "level":  1,
+        "works":  6358333
+    },
+    {
+        "query":  "Materials science",
+        "name":  "Materials science",
+        "id":  "C192562407",
+        "level":  0,
+        "works":  62986571
+    },
+    {
+        "query":  "Biotechnology",
+        "name":  "Biotechnology",
+        "id":  "C150903083",
+        "level":  1,
+        "works":  2295638
+    },
+    {
+        "query":  "Bioinformatics",
+        "name":  "Bioinformatics",
+        "id":  "C60644358",
+        "level":  1,
+        "works":  1585912
+    },
+    {
+        "query":  "Pharmacogenomics",
+        "name":  "Pharmacogenomics",
+        "id":  "C170734499",
+        "level":  2,
+        "works":  24718
+    }
+]

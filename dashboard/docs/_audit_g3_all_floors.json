@@ -1,0 +1,719 @@
+{
+  "decisions": [
+    {
+      "topic": "Infectious Diseases",
+      "concept_id": "C524204448",
+      "old_floor": 1974,
+      "raw_year_before_floor": 135,
+      "raw_year_at_floor": 117,
+      "year_before": 1973,
+      "year_at": 1974,
+      "pre5_years": [],
+      "pre5_vals": [],
+      "pre5_mean": 0,
+      "action": "keep",
+      "new_floor": 1974,
+      "reason": "already at shared scrubber start 1974"
+    },
+    {
+      "topic": "Renewable Energy",
+      "concept_id": "C188573790",
+      "old_floor": 1974,
+      "raw_year_before_floor": 51,
+      "raw_year_at_floor": 58,
+      "year_before": 1973,
+      "year_at": 1974,
+      "pre5_years": [],
+      "pre5_vals": [],
+      "pre5_mean": 0,
+      "action": "keep",
+      "new_floor": 1974,
+      "reason": "already at shared scrubber start 1974"
+    },
+    {
+      "topic": "AI & Machine Learning",
+      "concept_id": "C119857082",
+      "old_floor": 1974,
+      "raw_year_before_floor": 2084,
+      "raw_year_at_floor": 2267,
+      "year_before": 1973,
+      "year_at": 1974,
+      "pre5_years": [],
+      "pre5_vals": [],
+      "pre5_mean": 0,
+      "action": "keep",
+      "new_floor": 1974,
+      "reason": "already at shared scrubber start 1974"
+    },
+    {
+      "topic": "Robotics & Automation",
+      "concept_id": "C34413123",
+      "old_floor": 1980,
+      "raw_year_before_floor": 14,
+      "raw_year_at_floor": 11,
+      "year_before": 1979,
+      "year_at": 1980,
+      "pre5_years": [
+        1975,
+        1976,
+        1977,
+        1978,
+        1979
+      ],
+      "pre5_vals": [
+        7,
+        3,
+        8,
+        7,
+        14
+      ],
+      "pre5_mean": 7.8,
+      "action": "keep",
+      "new_floor": 1980,
+      "reason": "raw before floor weak or discontinuous: 1979=14, 1980=11, pre5 mean=8 nonzero=5/5"
+    },
+    {
+      "topic": "Quantum Computing",
+      "concept_id": "C58053490",
+      "old_floor": 1994,
+      "raw_year_before_floor": 62,
+      "raw_year_at_floor": 80,
+      "year_before": 1993,
+      "year_at": 1994,
+      "pre5_years": [
+        1989,
+        1990,
+        1991,
+        1992,
+        1993
+      ],
+      "pre5_vals": [
+        40,
+        29,
+        53,
+        82,
+        62
+      ],
+      "pre5_mean": 53.2,
+      "action": "keep",
+      "new_floor": 1994,
+      "reason": "raw before floor weak or discontinuous: 1993=62, 1994=80, pre5 mean=53 nonzero=5/5"
+    },
+    {
+      "topic": "Data Science & Big Data",
+      "concept_id": "C2522767166",
+      "old_floor": 2001,
+      "raw_year_before_floor": 5883,
+      "raw_year_at_floor": 6534,
+      "year_before": 2000,
+      "year_at": 2001,
+      "pre5_years": [
+        1996,
+        1997,
+        1998,
+        1999,
+        2000
+      ],
+      "pre5_vals": [
+        3647,
+        4045,
+        4208,
+        4740,
+        5883
+      ],
+      "pre5_mean": 4504.6,
+      "action": "soften_to_1974",
+      "new_floor": 1974,
+      "reason": "raw continuous/substantial before floor: 2000=5883, 2001=6534, pre5 mean=4505 nonzero=5/5"
+    },
+    {
+      "topic": "CRISPR & Genomics",
+      "concept_id": "C98108389",
+      "old_floor": 2012,
+      "raw_year_before_floor": 269,
+      "raw_year_at_floor": 386,
+      "year_before": 2011,
+      "year_at": 2012,
+      "pre5_years": [
+        2007,
+        2008,
+        2009,
+        2010,
+        2011
+      ],
+      "pre5_vals": [
+        124,
+        136,
+        155,
+        192,
+        269
+      ],
+      "pre5_mean": 175.2,
+      "action": "soften_to_1974",
+      "new_floor": 1974,
+      "reason": "raw continuous/substantial before floor: 2011=269, 2012=386, pre5 mean=175 nonzero=5/5"
+    }
+  ],
+  "series": {
+    "C524204448": [
+      {
+        "year": 1970,
+        "raw_global": 196,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1971,
+        "raw_global": 105,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1972,
+        "raw_global": 117,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1973,
+        "raw_global": 135,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1974,
+        "raw_global": 117,
+        "pool_global": 117,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1975,
+        "raw_global": 149,
+        "pool_global": 149,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1976,
+        "raw_global": 142,
+        "pool_global": 142,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1977,
+        "raw_global": 148,
+        "pool_global": 148,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1978,
+        "raw_global": 181,
+        "pool_global": 181,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1979,
+        "raw_global": 220,
+        "pool_global": 220,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1980,
+        "raw_global": 267,
+        "pool_global": 267,
+        "floor_zeroed": false
+      }
+    ],
+    "C188573790": [
+      {
+        "year": 1970,
+        "raw_global": 59,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1971,
+        "raw_global": 22,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1972,
+        "raw_global": 24,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1973,
+        "raw_global": 51,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1974,
+        "raw_global": 58,
+        "pool_global": 58,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1975,
+        "raw_global": 67,
+        "pool_global": 67,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1976,
+        "raw_global": 80,
+        "pool_global": 80,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1977,
+        "raw_global": 124,
+        "pool_global": 124,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1978,
+        "raw_global": 160,
+        "pool_global": 160,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1979,
+        "raw_global": 221,
+        "pool_global": 221,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1980,
+        "raw_global": 257,
+        "pool_global": 257,
+        "floor_zeroed": false
+      }
+    ],
+    "C119857082": [
+      {
+        "year": 1970,
+        "raw_global": 2006,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1971,
+        "raw_global": 1748,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1972,
+        "raw_global": 2034,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1973,
+        "raw_global": 2084,
+        "pool_global": 0,
+        "floor_zeroed": true
+      },
+      {
+        "year": 1974,
+        "raw_global": 2267,
+        "pool_global": 2267,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1975,
+        "raw_global": 2436,
+        "pool_global": 2436,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1976,
+        "raw_global": 2628,
+        "pool_global": 2628,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1977,
+        "raw_global": 2956,
+        "pool_global": 2956,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1978,
+        "raw_global": 2963,
+        "pool_global": 2963,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1979,
+        "raw_global": 3182,
+        "pool_global": 3182,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1980,
+        "raw_global": 3396,
+        "pool_global": 3396,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1981,
+        "raw_global": 3836,
+        "pool_global": 3836,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1982,
+        "raw_global": 3921,
+        "pool_global": 3921,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1983,
+        "raw_global": 4244,
+        "pool_global": 4244,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1984,
+        "raw_global": 4516,
+        "pool_global": 4516,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1985,
+        "raw_global": 4897,
+        "pool_global": 4897,
+        "floor_zeroed": false
+      }
+    ],
+    "C34413123": [
+      {
+        "year": 1974,
+        "raw_global": 2,
+        "pool_global": 2,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1975,
+        "raw_global": 7,
+        "pool_global": 7,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1976,
+        "raw_global": 3,
+        "pool_global": 3,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1977,
+        "raw_global": 8,
+        "pool_global": 8,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1978,
+        "raw_global": 7,
+        "pool_global": 7,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1979,
+        "raw_global": 14,
+        "pool_global": 14,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1980,
+        "raw_global": 11,
+        "pool_global": 11,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1981,
+        "raw_global": 21,
+        "pool_global": 21,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1982,
+        "raw_global": 42,
+        "pool_global": 42,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1983,
+        "raw_global": 102,
+        "pool_global": 102,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1984,
+        "raw_global": 100,
+        "pool_global": 100,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1985,
+        "raw_global": 130,
+        "pool_global": 130,
+        "floor_zeroed": false
+      }
+    ],
+    "C58053490": [
+      {
+        "year": 1985,
+        "raw_global": 34,
+        "pool_global": 34,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1986,
+        "raw_global": 28,
+        "pool_global": 28,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1987,
+        "raw_global": 35,
+        "pool_global": 35,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1988,
+        "raw_global": 33,
+        "pool_global": 33,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1989,
+        "raw_global": 40,
+        "pool_global": 40,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1990,
+        "raw_global": 29,
+        "pool_global": 29,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1991,
+        "raw_global": 53,
+        "pool_global": 53,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1992,
+        "raw_global": 82,
+        "pool_global": 82,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1993,
+        "raw_global": 62,
+        "pool_global": 62,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1994,
+        "raw_global": 80,
+        "pool_global": 80,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1995,
+        "raw_global": 102,
+        "pool_global": 102,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1996,
+        "raw_global": 154,
+        "pool_global": 154,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1997,
+        "raw_global": 174,
+        "pool_global": 174,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1998,
+        "raw_global": 266,
+        "pool_global": 266,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1999,
+        "raw_global": 296,
+        "pool_global": 296,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2000,
+        "raw_global": 483,
+        "pool_global": 483,
+        "floor_zeroed": false
+      }
+    ],
+    "C2522767166": [
+      {
+        "year": 1995,
+        "raw_global": 3270,
+        "pool_global": 3270,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1996,
+        "raw_global": 3647,
+        "pool_global": 3647,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1997,
+        "raw_global": 4045,
+        "pool_global": 4045,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1998,
+        "raw_global": 4208,
+        "pool_global": 4208,
+        "floor_zeroed": false
+      },
+      {
+        "year": 1999,
+        "raw_global": 4740,
+        "pool_global": 4740,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2000,
+        "raw_global": 5883,
+        "pool_global": 5883,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2001,
+        "raw_global": 6534,
+        "pool_global": 6534,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2002,
+        "raw_global": 9901,
+        "pool_global": 9901,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2003,
+        "raw_global": 10199,
+        "pool_global": 10199,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2004,
+        "raw_global": 11346,
+        "pool_global": 11346,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2005,
+        "raw_global": 14372,
+        "pool_global": 14372,
+        "floor_zeroed": false
+      }
+    ],
+    "C98108389": [
+      {
+        "year": 2005,
+        "raw_global": 92,
+        "pool_global": 92,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2006,
+        "raw_global": 111,
+        "pool_global": 111,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2007,
+        "raw_global": 124,
+        "pool_global": 124,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2008,
+        "raw_global": 136,
+        "pool_global": 136,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2009,
+        "raw_global": 155,
+        "pool_global": 155,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2010,
+        "raw_global": 192,
+        "pool_global": 192,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2011,
+        "raw_global": 269,
+        "pool_global": 269,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2012,
+        "raw_global": 386,
+        "pool_global": 386,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2013,
+        "raw_global": 736,
+        "pool_global": 736,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2014,
+        "raw_global": 1125,
+        "pool_global": 1125,
+        "floor_zeroed": false
+      },
+      {
+        "year": 2015,
+        "raw_global": 1886,
+        "pool_global": 1886,
+        "floor_zeroed": false
+      }
+    ]
+  },
+  "names": {
+    "C98108389": "CRISPR",
+    "C524204448": "Infectious disease (medical specialty)",
+    "C2522767166": "Data science",
+    "C188573790": "Renewable energy",
+    "C34413123": "Robotics",
+    "C58053490": "Quantum computer",
+    "C119857082": "Machine learning"
+  },
+  "proposed_floors": {
+    "Infectious Diseases": 1974,
+    "Renewable Energy": 1974,
+    "AI & Machine Learning": 1974,
+    "Robotics & Automation": 1980,
+    "Quantum Computing": 1994,
+    "Data Science & Big Data": 1974,
+    "CRISPR & Genomics": 1974
+  }
+}

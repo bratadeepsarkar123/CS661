@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C119857082",
+    "wikidata":  "https://www.wikidata.org/wiki/Q2539",
+    "display_name":  "Machine learning",
+    "level":  1,
+    "description":  "scientific study of algorithms and statistical models that computer systems use to perform tasks without explicit instructions",
+    "works_count":  5136981,
+    "cited_by_count":  82827821,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C119857082",
+                "wikidata":  "https://www.wikidata.org/wiki/Q2539",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/machine_learning",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/f/fe/Kernel_Machine.svg",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Kernel_Machine.svg/100px-Kernel_Machine.svg.png",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:119857082",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-06-24T00:00:00"
+}

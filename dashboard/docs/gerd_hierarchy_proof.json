@@ -1,0 +1,399 @@
+{
+  "built_at": "2026-07-12T13:28:38.774236+00:00",
+  "tol_pp": 0.05,
+  "policy": "WB base where present; OECD fills true WB holes only if ALL country overlaps match within 0.05 pp; UIS\u2261WB so no extra years; OECD-only isos use OECD; no everlasting forward-fill; H-index untouched (SCImago).",
+  "overlap": {
+    "WB_vs_OECD": {
+      "n_overlap": 1159,
+      "n_match": 1117,
+      "match_rate": 0.963762,
+      "n_conflicts": 42
+    },
+    "WB_vs_UIS": {
+      "n_overlap": 2467,
+      "n_match": 2467,
+      "match_rate": 1.0,
+      "n_conflicts": 0
+    },
+    "OECD_vs_UIS": {
+      "n_overlap": 1159,
+      "n_match": 1117,
+      "match_rate": 0.963762,
+      "n_conflicts": 42
+    }
+  },
+  "eligible_oecd_n": 39,
+  "eligible_uis_n": 156,
+  "oecd_only_isos": [
+    "TWN"
+  ],
+  "ineligible_oecd_isos": [
+    "AUS",
+    "CAN",
+    "CHE",
+    "GBR",
+    "ISR",
+    "RUS",
+    "TUR"
+  ],
+  "fill_counts": {
+    "WB": 3198,
+    "UIS": 0,
+    "OECD": 65,
+    "OECD_ONLY": 30
+  },
+  "skipped_oecd_holes_ineligible": 8,
+  "merged_rows": 3293,
+  "india_2015_2024": [
+    {
+      "Country_Code": "IND",
+      "Year": 2015,
+      "GERD_Percent_GDP": 0.6931,
+      "GERD_Source": "WB",
+      "GERD_WB": 0.6931,
+      "GERD_UIS": 0.6931,
+      "GERD_OECD": NaN
+    },
+    {
+      "Country_Code": "IND",
+      "Year": 2016,
+      "GERD_Percent_GDP": 0.66984,
+      "GERD_Source": "WB",
+      "GERD_WB": 0.66984,
+      "GERD_UIS": 0.66984,
+      "GERD_OECD": NaN
+    },
+    {
+      "Country_Code": "IND",
+      "Year": 2017,
+      "GERD_Percent_GDP": 0.66603,
+      "GERD_Source": "WB",
+      "GERD_WB": 0.66603,
+      "GERD_UIS": 0.66603,
+      "GERD_OECD": NaN
+    },
+    {
+      "Country_Code": "IND",
+      "Year": 2018,
+      "GERD_Percent_GDP": 0.66001,
+      "GERD_Source": "WB",
+      "GERD_WB": 0.66001,
+      "GERD_UIS": 0.66001,
+      "GERD_OECD": NaN
+    },
+    {
+      "Country_Code": "IND",
+      "Year": 2019,
+      "GERD_Percent_GDP": 0.65942,
+      "GERD_Source": "WB",
+      "GERD_WB": 0.65942,
+      "GERD_UIS": 0.65942,
+      "GERD_OECD": NaN
+    },
+    {
+      "Country_Code": "IND",
+      "Year": 2020,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "WB",
+      "GERD_WB": 0.64558,
+      "GERD_UIS": 0.64558,
+      "GERD_OECD": NaN
+    }
+  ],
+  "india_missing_years": [
+    2021,
+    2022,
+    2023,
+    2024
+  ],
+  "usa_2015_2024": [
+    {
+      "Country_Code": "USA",
+      "Year": 2015,
+      "GERD_Percent_GDP": 2.77328,
+      "GERD_Source": "WB",
+      "GERD_WB": 2.77328,
+      "GERD_UIS": 2.77328,
+      "GERD_OECD": 2.773279437
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2016,
+      "GERD_Percent_GDP": 2.83677,
+      "GERD_Source": "WB",
+      "GERD_WB": 2.83677,
+      "GERD_UIS": 2.83677,
+      "GERD_OECD": 2.836779941
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2017,
+      "GERD_Percent_GDP": 2.88315,
+      "GERD_Source": "WB",
+      "GERD_WB": 2.88315,
+      "GERD_UIS": 2.88315,
+      "GERD_OECD": 2.883153473
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2018,
+      "GERD_Percent_GDP": 2.98956,
+      "GERD_Source": "WB",
+      "GERD_WB": 2.98956,
+      "GERD_UIS": 2.98956,
+      "GERD_OECD": 2.989555451
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2019,
+      "GERD_Percent_GDP": 3.14297,
+      "GERD_Source": "WB",
+      "GERD_WB": 3.14297,
+      "GERD_UIS": 3.14297,
+      "GERD_OECD": 3.142978485
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2020,
+      "GERD_Percent_GDP": 3.41788,
+      "GERD_Source": "WB",
+      "GERD_WB": 3.41788,
+      "GERD_UIS": 3.41788,
+      "GERD_OECD": 3.414514176
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2021,
+      "GERD_Percent_GDP": 3.4689,
+      "GERD_Source": "WB",
+      "GERD_WB": 3.4689,
+      "GERD_UIS": 3.4689,
+      "GERD_OECD": 3.462447491
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2022,
+      "GERD_Percent_GDP": 3.48736,
+      "GERD_Source": "WB",
+      "GERD_WB": 3.48736,
+      "GERD_UIS": 3.48736,
+      "GERD_OECD": 3.484327191
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2023,
+      "GERD_Percent_GDP": 3.44716,
+      "GERD_Source": "WB",
+      "GERD_WB": 3.44716,
+      "GERD_UIS": 3.44716,
+      "GERD_OECD": 3.423455829
+    },
+    {
+      "Country_Code": "USA",
+      "Year": 2024,
+      "GERD_Percent_GDP": 3.444858189,
+      "GERD_Source": "OECD",
+      "GERD_WB": NaN,
+      "GERD_UIS": NaN,
+      "GERD_OECD": 3.444858189
+    }
+  ],
+  "usa_oecd_eligible": true,
+  "panel_updates": {
+    "g1_features_panel.csv": {
+      "path": "C:\\Users\\brata\\Downloads\\CS661\\CS661_Dataset\\raw_vault\\02_scimago_country\\g1_features_panel.csv",
+      "rows": 7349,
+      "gerd_non_null": 3182,
+      "india_after": [
+        {
+          "Year": 2015,
+          "GERD_Percent_GDP": 0.6931,
+          "GERD_Source": "WB"
+        },
+        {
+          "Year": 2016,
+          "GERD_Percent_GDP": 0.66984,
+          "GERD_Source": "WB"
+        },
+        {
+          "Year": 2017,
+          "GERD_Percent_GDP": 0.66603,
+          "GERD_Source": "WB"
+        },
+        {
+          "Year": 2018,
+          "GERD_Percent_GDP": 0.66001,
+          "GERD_Source": "WB"
+        },
+        {
+          "Year": 2019,
+          "GERD_Percent_GDP": 0.65942,
+          "GERD_Source": "WB"
+        },
+        {
+          "Year": 2020,
+          "GERD_Percent_GDP": 0.64558,
+          "GERD_Source": "WB"
+        },
+        {
+          "Year": 2021,
+          "GERD_Percent_GDP": null,
+          "GERD_Source": null
+        },
+        {
+          "Year": 2022,
+          "GERD_Percent_GDP": null,
+          "GERD_Source": null
+        },
+        {
+          "Year": 2023,
+          "GERD_Percent_GDP": null,
+          "GERD_Source": null
+        },
+        {
+          "Year": 2024,
+          "GERD_Percent_GDP": null,
+          "GERD_Source": null
+        }
+      ]
+    }
+  },
+  "india_panel_before": [
+    {
+      "Year": 2015,
+      "GERD_Percent_GDP": 0.6931
+    },
+    {
+      "Year": 2016,
+      "GERD_Percent_GDP": 0.66984
+    },
+    {
+      "Year": 2017,
+      "GERD_Percent_GDP": 0.66603
+    },
+    {
+      "Year": 2018,
+      "GERD_Percent_GDP": 0.66001
+    },
+    {
+      "Year": 2019,
+      "GERD_Percent_GDP": 0.65942
+    },
+    {
+      "Year": 2020,
+      "GERD_Percent_GDP": 0.64558
+    },
+    {
+      "Year": 2021,
+      "GERD_Percent_GDP": NaN
+    },
+    {
+      "Year": 2022,
+      "GERD_Percent_GDP": NaN
+    },
+    {
+      "Year": 2023,
+      "GERD_Percent_GDP": NaN
+    },
+    {
+      "Year": 2024,
+      "GERD_Percent_GDP": NaN
+    }
+  ],
+  "india_panel_after": [
+    {
+      "Year": 2015,
+      "GERD_Percent_GDP": 0.6931,
+      "GERD_Source": "WB"
+    },
+    {
+      "Year": 2016,
+      "GERD_Percent_GDP": 0.66984,
+      "GERD_Source": "WB"
+    },
+    {
+      "Year": 2017,
+      "GERD_Percent_GDP": 0.66603,
+      "GERD_Source": "WB"
+    },
+    {
+      "Year": 2018,
+      "GERD_Percent_GDP": 0.66001,
+      "GERD_Source": "WB"
+    },
+    {
+      "Year": 2019,
+      "GERD_Percent_GDP": 0.65942,
+      "GERD_Source": "WB"
+    },
+    {
+      "Year": 2020,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "WB"
+    },
+    {
+      "Year": 2021,
+      "GERD_Percent_GDP": null,
+      "GERD_Source": null
+    },
+    {
+      "Year": 2022,
+      "GERD_Percent_GDP": null,
+      "GERD_Source": null
+    },
+    {
+      "Year": 2023,
+      "GERD_Percent_GDP": null,
+      "GERD_Source": null
+    },
+    {
+      "Year": 2024,
+      "GERD_Percent_GDP": null,
+      "GERD_Source": null
+    }
+  ],
+  "conflict_countries": [
+    {
+      "iso3": "ISR",
+      "n_conflicts": 7,
+      "max_diff": 0.6130583490000001,
+      "mean_diff": 0.49986871871428573
+    },
+    {
+      "iso3": "AUS",
+      "n_conflicts": 12,
+      "max_diff": 0.19960898800000004,
+      "mean_diff": 0.12977008241666663
+    },
+    {
+      "iso3": "TUR",
+      "n_conflicts": 2,
+      "max_diff": 0.137797817,
+      "mean_diff": 0.13103985199999998
+    },
+    {
+      "iso3": "CAN",
+      "n_conflicts": 1,
+      "max_diff": 0.1250043059999999,
+      "mean_diff": 0.1250043059999999
+    },
+    {
+      "iso3": "CHE",
+      "n_conflicts": 4,
+      "max_diff": 0.1180197289999998,
+      "mean_diff": 0.08312568949999999
+    },
+    {
+      "iso3": "RUS",
+      "n_conflicts": 15,
+      "max_diff": 0.08871882500000017,
+      "mean_diff": 0.0756454414
+    },
+    {
+      "iso3": "GBR",
+      "n_conflicts": 1,
+      "max_diff": 0.07722317199999962,
+      "mean_diff": 0.07722317199999962
+    }
+  ]
+}

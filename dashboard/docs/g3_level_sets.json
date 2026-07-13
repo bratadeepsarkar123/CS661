@@ -1,0 +1,421 @@
+{
+  "version": "1.1",
+  "created": "2026-07-12",
+  "updated": "2026-07-12",
+  "purpose": "G3 same-level peer sets. Same OpenAlex level required; same scientific field NOT required. Cross-domain races (e.g. COVID biology vs robotics/quantum) are intentional. One lane active in the UI at a time.",
+  "default_lane_id": "L3_college_cross_domain",
+  "framing": {
+    "metaphor": "school_vs_college",
+    "school": "Broader subjects (Science, EVS, Math) → OpenAlex higher/broader levels e.g. L1",
+    "college": "Finer subjects (Calculus, Genomics, Electronics) → OpenAlex deeper levels e.g. L2/L3",
+    "wrong": "Mix school vs college in one race (e.g. ML L1 vs CRISPR L3)",
+    "right": "Full school-level set OR full college-level set — one abstraction only",
+    "same_field_required": false,
+    "same_level_required": true,
+    "works_count_band": "secondary curation only — do not drop high-volume same-level peers (e.g. Infectious) solely for volume mismatch with CRISPR"
+  },
+  "constraints": {
+    "forbidden_primary_ids": [
+      "C154945302"
+    ],
+    "entity_type": "concept",
+    "no_asjc_scraper": true,
+    "honesty_scrubber_start_year": 1974,
+    "retrospective_tagging_disclaimer": true,
+    "no_fake_milestone_floors": true,
+    "same_openalex_level_required": true,
+    "same_field_not_required": true,
+    "no_live_pool_swap_this_pass": false,
+    "live_pool_lane_id": "L3_college_cross_domain",
+    "live_pool_swapped_at": "2026-07-12"
+  },
+  "openalex_notes": {
+    "concepts_status": "deprecated_but_served_on_works",
+    "levels": "0-5",
+    "ancestors_api": "null_as_of_2026-07-12",
+    "lookup_url_form": "https://api.openalex.org/concepts/https://openalex.org/{ID}",
+    "fetch_script": "CS661_Dataset/raw_vault/04_openalex/fetch_topics_full.py",
+    "river_csv": "CS661_Dataset/raw_vault/04_openalex/topics_full/openalex_topic_country_year.csv"
+  },
+  "lanes": [
+    {
+      "id": "L1_school_methods",
+      "label": "L1 — School-level methods",
+      "metaphor": "school",
+      "abstraction": "Broad method subjects (Science/Math class)",
+      "openalex_level": 1,
+      "why_fair": "All level 1 (same school abstraction). Cross-domain methods OK. Same field not required.",
+      "race_interest": "CN strength in CV/ML vs US/EU in NLP, security, bioinformatics.",
+      "status": "menu_ready_needs_fetch",
+      "concepts": [
+        {
+          "id": "C119857082",
+          "name": "Machine learning",
+          "works_count_approx": 5136981,
+          "in_river": true
+        },
+        {
+          "id": "C31972630",
+          "name": "Computer vision",
+          "works_count_approx": 5568386,
+          "in_river": false
+        },
+        {
+          "id": "C204321447",
+          "name": "Natural language processing",
+          "works_count_approx": 2212456,
+          "in_river": false
+        },
+        {
+          "id": "C2522767166",
+          "name": "Data science",
+          "works_count_approx": 2928092,
+          "in_river": true
+        },
+        {
+          "id": "C38652104",
+          "name": "Computer security",
+          "works_count_approx": 5741285,
+          "in_river": false
+        },
+        {
+          "id": "C60644358",
+          "name": "Bioinformatics",
+          "works_count_approx": 1585912,
+          "in_river": false
+        },
+        {
+          "id": "C150903083",
+          "name": "Biotechnology",
+          "works_count_approx": 2295638,
+          "in_river": false
+        }
+      ],
+      "exclude": [
+        {
+          "id": "C154945302",
+          "name": "Artificial intelligence",
+          "reason": "mega-concept ~36M works"
+        }
+      ]
+    },
+    {
+      "id": "L2_college_midfields",
+      "label": "L2 — College mid-fields",
+      "metaphor": "college",
+      "abstraction": "Applied mid-depth across domains",
+      "openalex_level": 2,
+      "why_fair": "All level 2. Cross-domain (climate + epi + digital) is intentional.",
+      "race_interest": "Climate/epi vs renewable vs deep learning / IoT country timelines.",
+      "status": "demo_ready_localhost_8085",
+      "demo_path": "demos/g3-l2-broader/",
+      "concepts": [
+        {
+          "id": "C188573790",
+          "name": "Renewable energy",
+          "works_count_approx": 1304233,
+          "in_river": true
+        },
+        {
+          "id": "C132651083",
+          "name": "Climate change",
+          "works_count_approx": 1855679,
+          "in_river": true
+        },
+        {
+          "id": "C107130276",
+          "name": "Epidemiology",
+          "works_count_approx": 1374117,
+          "in_river": true
+        },
+        {
+          "id": "C552854447",
+          "name": "Sustainable development",
+          "works_count_approx": 1002553,
+          "in_river": true
+        },
+        {
+          "id": "C108583219",
+          "name": "Deep learning",
+          "works_count_approx": 739214,
+          "in_river": true
+        },
+        {
+          "id": "C115901376",
+          "name": "Automation",
+          "works_count_approx": 720309,
+          "in_river": true
+        },
+        {
+          "id": "C81860439",
+          "name": "Internet of Things",
+          "works_count_approx": 334009,
+          "in_river": true
+        }
+      ],
+      "do_not_use_as_peer": [
+        {
+          "id": "C153180895",
+          "name": "Pattern recognition (psychology)",
+          "reason": "Wrong sense for CS race"
+        }
+      ]
+    },
+    {
+      "id": "L3_college_cross_domain",
+      "label": "L3 — College cross-domain (includes COVID peer)",
+      "metaphor": "college",
+      "abstraction": "Fine specialties across domains at one college depth",
+      "openalex_level": 3,
+      "why_fair": "All level 3. Same field NOT required. Infectious retained despite higher works_count — enables COVID vs robotics/quantum/CRISPR competition.",
+      "race_interest": "2020 COVID biology spike competing with robotics, quantum, CRISPR, energy methods at the same abstraction.",
+      "status": "live_default",
+      "is_default": true,
+      "concepts": [
+        {
+          "id": "C524204448",
+          "name": "Infectious disease",
+          "works_count_approx": 1390000,
+          "in_river": true,
+          "note": "COVID peer — keep; volume alone is not a drop reason"
+        },
+        {
+          "id": "C34413123",
+          "name": "Robotics",
+          "works_count_approx": 226765,
+          "in_river": true
+        },
+        {
+          "id": "C58053490",
+          "name": "Quantum computer",
+          "works_count_approx": 183386,
+          "in_river": true
+        },
+        {
+          "id": "C98108389",
+          "name": "CRISPR",
+          "works_count_approx": 80557,
+          "in_river": true
+        },
+        {
+          "id": "C73916439",
+          "name": "Energy storage",
+          "works_count_approx": 278984,
+          "in_river": true
+        },
+        {
+          "id": "C542589376",
+          "name": "Photovoltaics",
+          "works_count_approx": 94183,
+          "in_river": true
+        },
+        {
+          "id": "C136389625",
+          "name": "Supervised learning",
+          "works_count_approx": 87711,
+          "in_river": true,
+          "note": "L3 AI/ML peer — replaces second Quantum (C169699857) 2026-07-12; verified OpenAlex level=3"
+        }
+      ],
+      "removed_from_live": [
+        {
+          "id": "C169699857",
+          "name": "Quantum information",
+          "reason": "Duplicate Quantum vs locked Quantum computer C58053490"
+        }
+      ],
+      "fetch_before_live_swap": []
+    },
+    {
+      "id": "L3_college_tech_alt",
+      "label": "L3 — College tech/methods alt",
+      "metaphor": "college",
+      "abstraction": "Optional tighter tech/methods cluster at same L3 (not because Infectious is wrong level)",
+      "openalex_level": 3,
+      "why_fair": "All level 3. Alt demo set if product wants less medical volume dominance; default remains L3_college_cross_domain.",
+      "race_interest": "Robotics vs quantum vs CRISPR vs energy storage / PV / supervised learning.",
+      "status": "superseded_by_live_default",
+      "is_default": false,
+      "concepts": [
+        {
+          "id": "C34413123",
+          "name": "Robotics",
+          "works_count_approx": 226765,
+          "in_river": true
+        },
+        {
+          "id": "C58053490",
+          "name": "Quantum computer",
+          "works_count_approx": 183386,
+          "in_river": true
+        },
+        {
+          "id": "C98108389",
+          "name": "CRISPR",
+          "works_count_approx": 80557,
+          "in_river": true
+        },
+        {
+          "id": "C73916439",
+          "name": "Energy storage",
+          "works_count_approx": 278984,
+          "in_river": true
+        },
+        {
+          "id": "C542589376",
+          "name": "Photovoltaics",
+          "works_count_approx": 94183,
+          "in_river": true
+        },
+        {
+          "id": "C169699857",
+          "name": "Quantum information",
+          "works_count_approx": 122561,
+          "in_river": true
+        },
+        {
+          "id": "C136389625",
+          "name": "Supervised learning",
+          "works_count_approx": 87711,
+          "in_river": true
+        }
+      ],
+      "fetch_before_live_swap": []
+    },
+    {
+      "id": "L4_narrow_topics",
+      "label": "L4 — Narrower college topics",
+      "metaphor": "college",
+      "abstraction": "Genomics / QIS class — deeper than L3",
+      "openalex_level": 4,
+      "why_fair": "Same level 4 only. Never race L4 Genomics against L3 CRISPR (school/college mismatch).",
+      "race_interest": "Fine-grain specialization races once set is filled. Cross-field OK.",
+      "status": "partial_needs_more_ids",
+      "concepts": [
+        {
+          "id": "C189206191",
+          "name": "Genomics",
+          "works_count_approx": 359719,
+          "in_river": false,
+          "note": "alternate in topic_id_map"
+        },
+        {
+          "id": "C5320026",
+          "name": "Quantum information science",
+          "works_count_approx": 45883,
+          "in_river": false,
+          "note": "alternate in topic_id_map"
+        },
+        {
+          "id": "C39380314",
+          "name": "Hydrogen economy",
+          "works_count_approx": 18437,
+          "in_river": false
+        }
+      ],
+      "slots_remaining": 4,
+      "candidate_searches_when_budget_resets": [
+        "Superconducting quantum computing",
+        "Genome editing",
+        "CRISPR-Cas systems",
+        "Federated learning",
+        "Perovskite solar cell",
+        "Nanomedicine peers at level 4"
+      ]
+    },
+    {
+      "id": "L2_energy_subrace",
+      "label": "L2 — Energy sub-race",
+      "metaphor": "college",
+      "abstraction": "Energy/materials competition at Renewable's level",
+      "openalex_level": 2,
+      "why_fair": "All level 2. Volume spread within level OK; level match is the gate.",
+      "race_interest": "CN solar/graphene, EU wind, BR biofuel, grid modernization.",
+      "status": "menu_ready_needs_fetch",
+      "concepts": [
+        {
+          "id": "C188573790",
+          "name": "Renewable energy",
+          "works_count_approx": 1304233,
+          "in_river": true
+        },
+        {
+          "id": "C541104983",
+          "name": "Solar energy",
+          "works_count_approx": 430696,
+          "in_river": false
+        },
+        {
+          "id": "C78600449",
+          "name": "Wind power",
+          "works_count_approx": 384717,
+          "in_river": false
+        },
+        {
+          "id": "C53991642",
+          "name": "Biofuel",
+          "works_count_approx": 217709,
+          "in_river": false
+        },
+        {
+          "id": "C30080830",
+          "name": "Graphene",
+          "works_count_approx": 405246,
+          "in_river": false
+        },
+        {
+          "id": "C2987658370",
+          "name": "Fuel cells",
+          "works_count_approx": 137592,
+          "in_river": false
+        },
+        {
+          "id": "C10558101",
+          "name": "Smart grid",
+          "works_count_approx": 104079,
+          "in_river": false
+        }
+      ]
+    }
+  ],
+  "current_live_mixed_set_do_not_keep": {
+    "note": "Legacy mixed-level live 7 — school+college unfair. Replace with L3_college_cross_domain when fetch completes. Do NOT drop Infectious for volume alone.",
+    "concepts": [
+      {
+        "id": "C524204448",
+        "name": "Infectious disease (medical specialty)",
+        "level": 3
+      },
+      {
+        "id": "C188573790",
+        "name": "Renewable energy",
+        "level": 2
+      },
+      {
+        "id": "C119857082",
+        "name": "Machine learning",
+        "level": 1
+      },
+      {
+        "id": "C34413123",
+        "name": "Robotics",
+        "level": 3
+      },
+      {
+        "id": "C58053490",
+        "name": "Quantum computer",
+        "level": 3
+      },
+      {
+        "id": "C2522767166",
+        "name": "Data science",
+        "level": 1
+      },
+      {
+        "id": "C98108389",
+        "name": "CRISPR",
+        "level": 3
+      }
+    ]
+  }
+}

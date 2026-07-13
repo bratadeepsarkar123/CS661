@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C524204448",
+    "wikidata":  "https://www.wikidata.org/wiki/Q788926",
+    "display_name":  "Infectious disease (medical specialty)",
+    "level":  3,
+    "description":  "medical specialty",
+    "works_count":  1387454,
+    "cited_by_count":  19877804,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C524204448",
+                "wikidata":  "https://www.wikidata.org/wiki/Q788926",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/infectious_disease_(medical_specialty)",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/8/8f/Gram_stain_01.jpg",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Gram_stain_01.jpg/100px-Gram_stain_01.jpg",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:524204448",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-06-24T00:00:00"
+}

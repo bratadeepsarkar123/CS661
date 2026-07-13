@@ -1,0 +1,545 @@
+{
+  "river": "C:\\Users\\brata\\Downloads\\CS661\\CS661_Dataset\\raw_vault\\READY_FOR_TEAM\\openalex_topic_country_year.csv",
+  "ml_id": "C119857082",
+  "mega_id": "C154945302",
+  "names": {
+    "C154945302": "Artificial intelligence",
+    "C119857082": "Machine learning"
+  },
+  "viz3_meta": {},
+  "year_table": [
+    {
+      "year": 1970,
+      "raw_global": 2006,
+      "raw_US": 1002,
+      "raw_CN": 9,
+      "raw_IN": 81,
+      "raw_GB": 206,
+      "raw_n_countries": 77,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1971,
+      "raw_global": 1748,
+      "raw_US": 1051,
+      "raw_CN": 5,
+      "raw_IN": 34,
+      "raw_GB": 148,
+      "raw_n_countries": 51,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1972,
+      "raw_global": 2034,
+      "raw_US": 1161,
+      "raw_CN": 3,
+      "raw_IN": 57,
+      "raw_GB": 202,
+      "raw_n_countries": 60,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1973,
+      "raw_global": 2084,
+      "raw_US": 1107,
+      "raw_CN": 6,
+      "raw_IN": 72,
+      "raw_GB": 207,
+      "raw_n_countries": 68,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1974,
+      "raw_global": 2267,
+      "raw_US": 1199,
+      "raw_CN": 6,
+      "raw_IN": 70,
+      "raw_GB": 238,
+      "raw_n_countries": 69,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1975,
+      "raw_global": 2436,
+      "raw_US": 1315,
+      "raw_CN": 5,
+      "raw_IN": 53,
+      "raw_GB": 242,
+      "raw_n_countries": 72,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1976,
+      "raw_global": 2628,
+      "raw_US": 1409,
+      "raw_CN": 12,
+      "raw_IN": 68,
+      "raw_GB": 253,
+      "raw_n_countries": 75,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1977,
+      "raw_global": 2956,
+      "raw_US": 1493,
+      "raw_CN": 9,
+      "raw_IN": 80,
+      "raw_GB": 300,
+      "raw_n_countries": 81,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1978,
+      "raw_global": 2963,
+      "raw_US": 1488,
+      "raw_CN": 9,
+      "raw_IN": 63,
+      "raw_GB": 267,
+      "raw_n_countries": 76,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1979,
+      "raw_global": 3182,
+      "raw_US": 1548,
+      "raw_CN": 11,
+      "raw_IN": 105,
+      "raw_GB": 311,
+      "raw_n_countries": 77,
+      "pool_global": 0,
+      "pool_present": false,
+      "floor_zeroed": true
+    },
+    {
+      "year": 1980,
+      "raw_global": 3396,
+      "raw_US": 1689,
+      "raw_CN": 16,
+      "raw_IN": 83,
+      "raw_GB": 322,
+      "raw_n_countries": 78,
+      "pool_global": 3396,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1981,
+      "raw_global": 3836,
+      "raw_US": 1886,
+      "raw_CN": 37,
+      "raw_IN": 97,
+      "raw_GB": 356,
+      "raw_n_countries": 87,
+      "pool_global": 3836,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1982,
+      "raw_global": 3921,
+      "raw_US": 1903,
+      "raw_CN": 43,
+      "raw_IN": 92,
+      "raw_GB": 340,
+      "raw_n_countries": 89,
+      "pool_global": 3921,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1983,
+      "raw_global": 4244,
+      "raw_US": 2057,
+      "raw_CN": 49,
+      "raw_IN": 93,
+      "raw_GB": 394,
+      "raw_n_countries": 86,
+      "pool_global": 4244,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1984,
+      "raw_global": 4516,
+      "raw_US": 2212,
+      "raw_CN": 55,
+      "raw_IN": 92,
+      "raw_GB": 402,
+      "raw_n_countries": 100,
+      "pool_global": 4516,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1985,
+      "raw_global": 4897,
+      "raw_US": 2327,
+      "raw_CN": 63,
+      "raw_IN": 92,
+      "raw_GB": 443,
+      "raw_n_countries": 90,
+      "pool_global": 4897,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1986,
+      "raw_global": 5487,
+      "raw_US": 2627,
+      "raw_CN": 69,
+      "raw_IN": 109,
+      "raw_GB": 442,
+      "raw_n_countries": 91,
+      "pool_global": 5487,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1987,
+      "raw_global": 6072,
+      "raw_US": 2882,
+      "raw_CN": 103,
+      "raw_IN": 91,
+      "raw_GB": 501,
+      "raw_n_countries": 95,
+      "pool_global": 6072,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1988,
+      "raw_global": 6648,
+      "raw_US": 3118,
+      "raw_CN": 128,
+      "raw_IN": 98,
+      "raw_GB": 557,
+      "raw_n_countries": 100,
+      "pool_global": 6648,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1989,
+      "raw_global": 7659,
+      "raw_US": 3605,
+      "raw_CN": 170,
+      "raw_IN": 98,
+      "raw_GB": 599,
+      "raw_n_countries": 104,
+      "pool_global": 7659,
+      "pool_present": true,
+      "floor_zeroed": false
+    },
+    {
+      "year": 1990,
+      "raw_global": 8425,
+      "raw_US": 3931,
+      "raw_CN": 184,
+      "raw_IN": 124,
+      "raw_GB": 644,
+      "raw_n_countries": 106,
+      "pool_global": 8425,
+      "pool_present": true,
+      "floor_zeroed": false
+    }
+  ],
+  "spot_1978_1980": {
+    "1978": [
+      {
+        "iso": "US",
+        "name": "United States of America",
+        "works": 1488
+      },
+      {
+        "iso": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "works": 267
+      },
+      {
+        "iso": "JP",
+        "name": "Japan",
+        "works": 151
+      },
+      {
+        "iso": "CA",
+        "name": "Canada",
+        "works": 143
+      },
+      {
+        "iso": "DE",
+        "name": "Germany",
+        "works": 120
+      },
+      {
+        "iso": "AU",
+        "name": "Australia",
+        "works": 100
+      },
+      {
+        "iso": "FR",
+        "name": "France",
+        "works": 72
+      },
+      {
+        "iso": "IN",
+        "name": "India",
+        "works": 63
+      },
+      {
+        "iso": "IL",
+        "name": "Israel",
+        "works": 59
+      },
+      {
+        "iso": "RU",
+        "name": "Russian Federation",
+        "works": 51
+      },
+      {
+        "iso": "NL",
+        "name": "Netherlands",
+        "works": 42
+      },
+      {
+        "iso": "IT",
+        "name": "Italy",
+        "works": 39
+      },
+      {
+        "iso": "SE",
+        "name": "Sweden",
+        "works": 30
+      },
+      {
+        "iso": "BE",
+        "name": "Belgium",
+        "works": 24
+      },
+      {
+        "iso": "CH",
+        "name": "Switzerland",
+        "works": 24
+      }
+    ],
+    "1979": [
+      {
+        "iso": "US",
+        "name": "United States of America",
+        "works": 1548
+      },
+      {
+        "iso": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "works": 311
+      },
+      {
+        "iso": "CA",
+        "name": "Canada",
+        "works": 181
+      },
+      {
+        "iso": "JP",
+        "name": "Japan",
+        "works": 155
+      },
+      {
+        "iso": "DE",
+        "name": "Germany",
+        "works": 145
+      },
+      {
+        "iso": "IN",
+        "name": "India",
+        "works": 105
+      },
+      {
+        "iso": "AU",
+        "name": "Australia",
+        "works": 97
+      },
+      {
+        "iso": "FR",
+        "name": "France",
+        "works": 81
+      },
+      {
+        "iso": "NL",
+        "name": "Netherlands",
+        "works": 54
+      },
+      {
+        "iso": "RU",
+        "name": "Russian Federation",
+        "works": 54
+      },
+      {
+        "iso": "IT",
+        "name": "Italy",
+        "works": 31
+      },
+      {
+        "iso": "SE",
+        "name": "Sweden",
+        "works": 31
+      },
+      {
+        "iso": "IL",
+        "name": "Israel",
+        "works": 29
+      },
+      {
+        "iso": "CH",
+        "name": "Switzerland",
+        "works": 25
+      },
+      {
+        "iso": "PL",
+        "name": "Poland",
+        "works": 20
+      }
+    ],
+    "1980": [
+      {
+        "iso": "US",
+        "name": "United States of America",
+        "works": 1689
+      },
+      {
+        "iso": "GB",
+        "name": "United Kingdom of Great Britain and Northern Ireland",
+        "works": 322
+      },
+      {
+        "iso": "CA",
+        "name": "Canada",
+        "works": 188
+      },
+      {
+        "iso": "JP",
+        "name": "Japan",
+        "works": 155
+      },
+      {
+        "iso": "DE",
+        "name": "Germany",
+        "works": 113
+      },
+      {
+        "iso": "AU",
+        "name": "Australia",
+        "works": 104
+      },
+      {
+        "iso": "FR",
+        "name": "France",
+        "works": 88
+      },
+      {
+        "iso": "IN",
+        "name": "India",
+        "works": 83
+      },
+      {
+        "iso": "IT",
+        "name": "Italy",
+        "works": 60
+      },
+      {
+        "iso": "NL",
+        "name": "Netherlands",
+        "works": 60
+      },
+      {
+        "iso": "RU",
+        "name": "Russian Federation",
+        "works": 48
+      },
+      {
+        "iso": "IL",
+        "name": "Israel",
+        "works": 46
+      },
+      {
+        "iso": "CH",
+        "name": "Switzerland",
+        "works": 45
+      },
+      {
+        "iso": "SE",
+        "name": "Sweden",
+        "works": 34
+      },
+      {
+        "iso": "BE",
+        "name": "Belgium",
+        "works": 33
+      }
+    ]
+  },
+  "mega_global_1970_1990": {
+    "1970": 9902,
+    "1971": 9602,
+    "1972": 11051,
+    "1973": 11542,
+    "1974": 12506,
+    "1975": 13170,
+    "1976": 13790,
+    "1977": 14976,
+    "1978": 15679,
+    "1979": 16910,
+    "1980": 18428,
+    "1981": 19744,
+    "1982": 21235,
+    "1983": 23304,
+    "1984": 25195,
+    "1985": 27607,
+    "1986": 30831,
+    "1987": 34928,
+    "1988": 39087,
+    "1989": 42974,
+    "1990": 48701
+  },
+  "verdict": "VILLAIN=HONESTY_FLOOR: raw 1979 already has substantial ML counts; pool hides them until 1980, creating a fake n/a\u2192thousands cliff.",
+  "r79": {
+    "year": 1979,
+    "raw_global": 3182,
+    "raw_US": 1548,
+    "raw_CN": 11,
+    "raw_IN": 105,
+    "raw_GB": 311,
+    "raw_n_countries": 77,
+    "pool_global": 0,
+    "pool_present": false,
+    "floor_zeroed": true
+  },
+  "r80": {
+    "year": 1980,
+    "raw_global": 3396,
+    "raw_US": 1689,
+    "raw_CN": 16,
+    "raw_IN": 83,
+    "raw_GB": 322,
+    "raw_n_countries": 78,
+    "pool_global": 3396,
+    "pool_present": true,
+    "floor_zeroed": false
+  }
+}

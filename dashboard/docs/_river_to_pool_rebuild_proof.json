@@ -1,0 +1,392 @@
+{
+  "built_at": "2026-07-12T15:25:09.878003+00:00",
+  "stub_guard": "ok \u2014 no drinkable stub H at root",
+  "gerd_hierarchy": "CS661_Dataset/raw_vault/READY_FOR_TEAM/gerd_pct_gdp_hierarchical.csv",
+  "G1": {
+    "rows": 5616,
+    "field_updates": 0,
+    "gerd_cleared_before_locf": 1066,
+    "gerd_locf_country_years": 1066,
+    "gerd_locf_countries": 105,
+    "gerd_locf_examples": [
+      {
+        "Country_Code": "AGO",
+        "Year": 2017,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2018,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2019,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2020,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2021,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2022,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2023,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "AGO",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.03229,
+        "GERD_Source": "LOCF:WB:y2016",
+        "carried_from_year": 2016
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2009,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2010,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2011,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2012,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2013,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2014,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2015,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2016,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2017,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2018,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2019,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2020,
+        "GERD_Percent_GDP": 0.14973,
+        "GERD_Source": "LOCF:WB:y2008",
+        "carried_from_year": 2008
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2023,
+        "GERD_Percent_GDP": 0.19997,
+        "GERD_Source": "LOCF:WB:y2022",
+        "carried_from_year": 2022
+      },
+      {
+        "Country_Code": "ALB",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.19997,
+        "GERD_Source": "LOCF:WB:y2022",
+        "carried_from_year": 2022
+      },
+      {
+        "Country_Code": "AND",
+        "Year": 2023,
+        "GERD_Percent_GDP": 0.15818,
+        "GERD_Source": "LOCF:WB:y2022",
+        "carried_from_year": 2022
+      },
+      {
+        "Country_Code": "AND",
+        "Year": 2024,
+        "GERD_Percent_GDP": 0.15818,
+        "GERD_Source": "LOCF:WB:y2022",
+        "carried_from_year": 2022
+      },
+      {
+        "Country_Code": "ARE",
+        "Year": 2012,
+        "GERD_Percent_GDP": 0.47252,
+        "GERD_Source": "LOCF:WB:y2011",
+        "carried_from_year": 2011
+      }
+    ],
+    "USA_2022": {
+      "H_Index": 3388.0,
+      "GDP_Per_Capita_PPP": 77860.9112908848,
+      "GERD_Percent_GDP": 3.48736,
+      "GERD_Source": "WB",
+      "Total_Docs": 447538.91
+    },
+    "USA_2024": {
+      "H_Index": 3388.0,
+      "GDP_Per_Capita_PPP": 85809.9003846359,
+      "GERD_Percent_GDP": 3.444858189,
+      "GERD_Source": "OECD",
+      "Total_Docs": 754039.0
+    },
+    "India_2022": {
+      "H_Index": 1001.0,
+      "GDP_Per_Capita_PPP": 9207.12743040145,
+      "GERD_Percent_GDP": 0.64558,
+      "GERD_Source": "LOCF:WB:y2020",
+      "Total_Docs": 200488.43
+    },
+    "India_GERD_2015_2024": [
+      {
+        "year": 2015,
+        "GERD_Percent_GDP": 0.6931,
+        "GERD_Source": "WB"
+      },
+      {
+        "year": 2016,
+        "GERD_Percent_GDP": 0.66984,
+        "GERD_Source": "WB"
+      },
+      {
+        "year": 2017,
+        "GERD_Percent_GDP": 0.66603,
+        "GERD_Source": "WB"
+      },
+      {
+        "year": 2018,
+        "GERD_Percent_GDP": 0.66001,
+        "GERD_Source": "WB"
+      },
+      {
+        "year": 2019,
+        "GERD_Percent_GDP": 0.65942,
+        "GERD_Source": "WB"
+      },
+      {
+        "year": 2020,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "WB"
+      },
+      {
+        "year": 2021,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "year": 2022,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "year": 2023,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      },
+      {
+        "year": 2024,
+        "GERD_Percent_GDP": 0.64558,
+        "GERD_Source": "LOCF:WB:y2020"
+      }
+    ],
+    "bytes": 1379795
+  },
+  "G2": {
+    "bytes": 246411,
+    "anchors_2022": [
+      {
+        "country": "United States",
+        "pool_ratio": 14.898152,
+        "river_ratio": 14.898152,
+        "exact": true
+      },
+      {
+        "country": "India",
+        "pool_ratio": 0.106393,
+        "river_ratio": 0.106393,
+        "exact": true
+      },
+      {
+        "country": "China",
+        "pool_ratio": 0.364532,
+        "river_ratio": 0.364532,
+        "exact": true
+      },
+      {
+        "country": "United Kingdom",
+        "pool_ratio": 25.161841,
+        "river_ratio": 25.161841,
+        "exact": true
+      }
+    ]
+  },
+  "G3": {
+    "year_min": 1974,
+    "year_max": 2024,
+    "rows": 17882,
+    "lane_id": "L3_college_cross_domain",
+    "display_order": [
+      "Infectious disease",
+      "Robotics",
+      "Quantum computer",
+      "CRISPR",
+      "Energy storage",
+      "Photovoltaics",
+      "Quantum information"
+    ],
+    "allowed_concept_ids": [
+      "C169699857",
+      "C34413123",
+      "C524204448",
+      "C542589376",
+      "C58053490",
+      "C73916439",
+      "C98108389"
+    ],
+    "topic_start_years": {
+      "Infectious disease": 1974,
+      "Robotics": 1974,
+      "Quantum computer": 1974,
+      "CRISPR": 1974,
+      "Energy storage": 1974,
+      "Photovoltaics": 1974,
+      "Quantum information": 1974
+    },
+    "topic_concept_ids": {
+      "Infectious disease": "C524204448",
+      "Robotics": "C34413123",
+      "Quantum computer": "C58053490",
+      "CRISPR": "C98108389",
+      "Energy storage": "C73916439",
+      "Photovoltaics": "C542589376",
+      "Quantum information": "C169699857"
+    },
+    "Quantum_primary": "C58053490",
+    "USA_2022_Infectious": 42577,
+    "India_2022_Infectious": 14419,
+    "honesty_1974": {
+      "Infectious disease": 117,
+      "Robotics": 2,
+      "Quantum computer": 20,
+      "CRISPR": 1,
+      "Energy storage": 28,
+      "Photovoltaics": 4,
+      "Quantum information": 1
+    },
+    "bytes": 860559
+  },
+  "G4": {
+    "years": [
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "USA_2022": {
+      "name": "United States",
+      "region": "North America",
+      "domestic": 3.932,
+      "international": 12.833,
+      "gain": 8.901,
+      "year": 2022,
+      "domestic_papers": 1290088,
+      "international_papers": 445340
+    },
+    "India_2022": {
+      "name": "India",
+      "region": "South Asia",
+      "domestic": 6.395,
+      "international": 14.894,
+      "gain": 8.499,
+      "year": 2022,
+      "domestic_papers": 286977,
+      "international_papers": 89874
+    },
+    "bytes": 141277
+  },
+  "G5": {
+    "manifest_exists": true,
+    "json_files": 23,
+    "action": "KEEP processed JSON \u2014 no demo DATA.getIndiaNetwork"
+  }
+}

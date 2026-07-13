@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C98108389",
+    "wikidata":  "https://www.wikidata.org/wiki/Q412563",
+    "display_name":  "CRISPR",
+    "level":  3,
+    "description":  "family of DNA sequences in bacteria, contain snippets of DNA from viruses that have attacked the bacterium, are used by the bacterium to detect and destroy DNA from further attacks by similar viruses",
+    "works_count":  80557,
+    "cited_by_count":  2095367,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C98108389",
+                "wikidata":  "https://www.wikidata.org/wiki/Q412563",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/crispr",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/8/8d/4QYZ.png",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/4QYZ.png/100px-4QYZ.png",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:98108389",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-06-24T00:00:00"
+}

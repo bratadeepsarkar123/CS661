@@ -6,6 +6,8 @@
 **Date:** 2026-07-12  
 **Secrets:** Never commit `.env`, API keys, or `ag gemini key] .txt`.
 
+**Landing chrome:** two-column shell (left brand intro · right vertical viz-card list) in `index.html` / `style.css` — layout only; Graph 1–5 pipelines unchanged.
+
 ---
 
 ## How to run (teammates)
@@ -26,7 +28,7 @@ cd dashboard
 python -m http.server 8080 --bind 127.0.0.1
 ```
 
-After pulling JS/CSS changes, **hard-refresh** the browser (Ctrl+F5). Script tags use cache-bust query strings like `?v=20260712g24b` in `index.html`.
+After pulling JS/CSS changes, **hard-refresh** the browser (Ctrl+F5). Script tags use cache-bust query strings like `?v=20260712-landing-split` in `index.html`.
 
 **Not in this pack (optional / separate):**
 - `dashboard-g3-dynamic-top7/` — experiment: dynamic Top-7 OpenAlex topics

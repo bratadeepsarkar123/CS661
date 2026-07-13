@@ -1,0 +1,29 @@
+﻿{
+    "id":  "https://openalex.org/C34413123",
+    "wikidata":  "https://www.wikidata.org/wiki/Q170978",
+    "display_name":  "Robotics",
+    "level":  3,
+    "description":  "design, construction, operation, and application of robots",
+    "works_count":  226765,
+    "cited_by_count":  1885636,
+    "summary_stats":  null,
+    "ids":  {
+                "openalex":  "https://openalex.org/C34413123",
+                "wikidata":  "https://www.wikidata.org/wiki/Q170978",
+                "mag":  null,
+                "wikipedia":  "https://en.wikipedia.org/wiki/robotics",
+                "umls_aui":  null,
+                "umls_cui":  null
+            },
+    "image_url":  "https://upload.wikimedia.org/wikipedia/commons/c/c5/Shadow_Hand_Bulb_large.jpg",
+    "image_thumbnail_url":  "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Shadow_Hand_Bulb_large.jpg/66px-Shadow_Hand_Bulb_large.jpg",
+    "international":  {
+
+                      },
+    "ancestors":  null,
+    "related_concepts":  null,
+    "counts_by_year":  null,
+    "works_api_url":  "https://api.openalex.org/works?filter=concepts.id:34413123",
+    "updated_date":  "2026-07-12T04:02:31",
+    "created_date":  "2016-06-24T00:00:00"
+}
